@@ -1,0 +1,3 @@
+- **Built raw, as production renders it** (Karl, 2026-11-02, for the Section Rail Cards and Horizontal Feature Card only): values match production (`.section-highlight`, identical on all 6 review sites), with tokens only where they match exactly. New 2026-11-02.
+- **The rule colors are raw** (#D7D6D2 and #AAA7A4, Bold Coastal's production values): no gray token matches. Measured Vibrant (#C8C4C0) and Modern Earthy (#DDD8D5) use other grays in production (design-vs-production 16.7); this component draws Bold Coastal's on every theme.
+- **Weight:** the headline is SemiBold (`font/weight/semibold`) as in Figma; production's CSS says 600 but the sites load only the 400 and 700 faces, so it renders Bold there.

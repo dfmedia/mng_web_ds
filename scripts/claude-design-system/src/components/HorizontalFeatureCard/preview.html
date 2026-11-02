@@ -1,0 +1,18 @@
+<!-- @dsCard group="WordPress Elements" height=1520 subtitle="Figma: Horizontal Feature Card · 4 variants (Device = production breakpoints)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>HorizontalFeatureCard</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['(≤799px)', 748], ['M (800–1039px)', 520], ['L (1040–1279px)', 448.4], ['XL (≥1280px)', 639.8]];
+  var variants = h(I.SpecimenSection, { title: 'Device', note: 'Production’s breakpoints for this card (identical on all 6 review sites): stacked below 800px, image beside the text from 800px. Drawn at the Figma widths; the card fills its column. Built raw in production’s values (Karl, 2026-11-02).' },
+    h(I.Specimen, { items: devices.map(function (d) {
+      return { label: 'Device=' + d[0] + ' (built ' + d[1] + 'px)', width: d[1] + 32, node: h('div', { style: { width: d[1] } }, h(NS.HorizontalFeatureCard, { device: d[0] })) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(variants);
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!-- @dsCard group="WordPress Elements" height=2060 subtitle="Figma: Feature + List Content Block · 4 variants (Device = production breakpoints)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>FeatureListContentBlock</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['(≤799px)', 748], ['M (800–1039px)', 520], ['L (1040–1279px)', 741.4], ['XL (≥1280px)', 940]];
+  var variants = h(I.SpecimenSection, { title: 'Device', note: 'Production’s breakpoints for this block (identical on all 6 review sites). Below 800px: stacked, with a rule under the feature and a Dark rule under the last item. M: the list under the feature’s text. L and XL: the feature and the list side by side, 20.2px apart. Drawn at the Figma widths; the block fills its column.' },
+    h(I.Specimen, { items: devices.map(function (d) {
+      return { label: 'Device=' + d[0] + ' (built ' + d[1] + 'px)', width: d[1] + 32, node: h('div', { style: { width: d[1] } }, h(NS.FeatureListContentBlock, { device: d[0] })) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(variants);
+</script>
+</body>
+</html>

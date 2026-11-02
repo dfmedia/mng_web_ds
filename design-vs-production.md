@@ -1569,6 +1569,24 @@ Everything else matches: spacing (16px `li` padding + 16px block padding, 12px p
 
 **Status:** Open. Added 2026-11-02.
 
+### 16.7 Section rails (Section Rail Card Narrow / Wide, Horizontal Feature Card, Headline List Item) — per-theme grays and raw values
+
+**Found:** 2026-11-02, measured live on ocregister.com (Bold Coastal) at 1280, 1100, 900 and 700px (Karl resized the window); the `.section-highlight` CSS is identical on all 6 review sites; fonts checked on chicagotribune.com and mcall.com. **Team:** Design (no production fix asked yet). Figma: WordPress Elements ▸ Homepage ▸ Section Rail Card Narrow (`3352:22067`), Section Rail Card Wide (`3709:43975`), Feature + List Content Block (`3484:66933`), Horizontal Feature Card (`3709:41113`), Headline List Item (`3709:40904`).
+
+**Design:** built raw, as production renders it on Bold Coastal (Karl, 2026-11-02, for these components only): production's values with tokens only where one matches exactly; no rounding to the 4 / 8 grid. The old Section Rail Card was split into Narrow and Wide with production's breakpoints (800px for Narrow; 800, 1040 and 1280px for Wide).
+
+**Production (differs from the design):**
+- **Rule between list items:** #D7D6D2 on Bold Coastal (the design's raw value), #C8C4C0 on Measured Vibrant, #DDD8D5 on Modern Earthy. The last item's darker rule below 1040px is #AAA7A4 on Bold Coastal (not measured on the other themes). No gray token matches these; the same grays as Latest Headlines (16.5).
+- **Narrow lead rule:** production's `.section-feature` rule is #D7D6D2; the design's lead is the shared 1Col Article Card, whose rule is `color/gray/500` (#CCCAC7).
+- **Wide lead excerpt:** #38322A on Bold Coastal (the design's raw value; 12.7:1). Not measured on the other themes.
+- **Title gap:** the title's `margin-bottom` is 1em of the theme's eyebrow size (20px Bold Coastal, 17px Measured Vibrant, 21px Modern Earthy). The design is 20px (`spacing/250`) on every theme.
+- **List headline weight:** CSS `font-weight: 600`, rendered Bold (the sites load only the 400 and 700 faces). The design is SemiBold.
+- **Raw values kept** (production's em and percentage values): 7.25px headline to excerpt and 7.5px under the excerpt in the Horizontal Feature Card, the 9.9 / 10.5 / 20.2px column gaps at 1040 and 1280px, 15.5 / 23.5px under the Narrow lead's excerpt.
+
+**Fix:** none asked of production yet. To decide (Karl): whether the section-rail grays and the excerpt color become tokens (they recur in 16.5), whether the Narrow lead's rule should be #D7D6D2, and whether the raw gaps should move to the 4 / 8 grid later.
+
+**Status:** Open. Added 2026-11-02.
+
 ---
 
 ## 17. Zone 1 slideshow (gallery lead) — type, spacing and colors off the design tokens; slide count not announced

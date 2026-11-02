@@ -545,13 +545,48 @@
      "note": "A second Blueconic template; not in Figma yet (Karl, 2026-11-02)."
     },
     {
-     "name": "Horizontal Feature Card",
-     "where": "Homepage, 3362:3022",
-     "status": "To add"
+     "name": "Headline List Item",
+     "where": "Homepage, 3709:40904 (3 variants)",
+     "status": "In system",
+     "note": "New 2026-11-02 (Karl): one headline in a section rail list. Rule = Default, None, Dark. Built raw in production's values.",
+     "updated": "2026-11-02",
+     "component": "HeadlineListItem"
     },
     {
-     "name": "TOP ZONE Block, Feature + List Content Block, Section Rail Card, Photos Block",
-     "where": "Homepage, 3352:19482, 3484:66933, 3352:22067, 3352:20865",
+     "name": "Horizontal Feature Card",
+     "where": "Homepage, 3709:41113 (4 variants)",
+     "status": "In system",
+     "note": "The wide rail's lead. Device = (≤799px), M, L, XL: production's breakpoints. Built raw in production's values (Karl, 2026-11-02).",
+     "updated": "2026-11-02",
+     "component": "HorizontalFeatureCard"
+    },
+    {
+     "name": "Feature + List Content Block",
+     "where": "Homepage, 3484:66933 (4 variants)",
+     "status": "In system",
+     "note": "Horizontal Feature Card and Headline List Items. Device = (≤799px), M, L, XL (was Size = Default / Narrow). Built raw in production's values (Karl, 2026-11-02).",
+     "updated": "2026-11-02",
+     "component": "FeatureListContentBlock"
+    },
+    {
+     "name": "Section Rail Card Narrow",
+     "where": "Homepage, 3352:22067 (2 variants)",
+     "status": "In system",
+     "note": "Split from Section Rail Card (Layout = Narrow), 2026-11-02 (Karl). Device = (≤799px), (≥800px). 1Col lead with in-card overrides. Built raw in production's values.",
+     "updated": "2026-11-02",
+     "component": "SectionRailCardNarrow"
+    },
+    {
+     "name": "Section Rail Card Wide",
+     "where": "Homepage, 3709:43975 (4 variants)",
+     "status": "In system",
+     "note": "Split from Section Rail Card (Layout = Wide), 2026-11-02 (Karl). Device = (≤799px), M, L, XL. Built raw in production's values.",
+     "updated": "2026-11-02",
+     "component": "SectionRailCardWide"
+    },
+    {
+     "name": "TOP ZONE Block, Photos Block",
+     "where": "Homepage, 3352:19482, 3352:20865",
      "status": "To add",
      "note": "Assemblies of the cards above."
     },

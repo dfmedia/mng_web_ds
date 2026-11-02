@@ -45,6 +45,11 @@
       "First",
       "Standard",
       "Sponsored"
+    ],
+    "Rule": [
+      "Default",
+      "None",
+      "Dark"
     ]
   },
   "propertyOrder": [
@@ -1133,6 +1138,134 @@
         "The XL-Desktop email field is narrower than its placeholder text (\"email@address.c…\")."
       ],
       "production": "None yet: a future design. Built from the production Footer (`354:1282`)."
+    },
+    {
+      "slug": "headline-list-item",
+      "name": "Headline List Item",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 8,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3709:40904",
+      "documentationFrame": "3709:40892",
+      "description": "One headline in a section rail's headline list (production `.section-highlight ul.headline-list article.headline-only`). Rule = Default (rule below), None (no rule) or Dark (darker rule right under the text). New 2026-11-02 (Karl); used by Section Rail Card Narrow and Feature + List Content Block.",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02, for the Section Rail Cards and Horizontal Feature Card only): the Figma values match production (CSS `.section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px, fonts checked on chicagotribune.com and mcall.com). Where no token matches a production value, the value stays raw (not rounded to the 4 / 8 grid).",
+        "**Headline:** `Editorial/Titles/HeadlineList`: `font/theme/small-headline-family` SemiBold 15 / 19, −0.15px, `color/gray/black` on `color/gray/max` (21:1). Noto Sans in Bold Coastal and Modern Earthy, Noto Serif in Measured Vibrant, as production. Production's CSS weight is 600; the sites load only the 400 and 700 faces, so it renders Bold.",
+        "**Rule = Default:** 12px (`spacing/150`) below the text, then a 1px #D7D6D2 rule (Bold Coastal's production rule; no token matches, raw).",
+        "**Rule = None:** no rule: the last item in a list from 1040px, and the last item of Section Rail Card Narrow.",
+        "**Rule = Dark:** a 1px #AAA7A4 rule right under the text (raw): the last item below 1040px in wide rails.",
+        "**Spacing between items** is the list's: 16px (`spacing/200`, production `li` margin-bottom).",
+        "**Markup:** `li > article > h3 > a`; the headline is the link."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Per theme in production: the rule is #D7D6D2 on Bold Coastal, #C8C4C0 on Measured Vibrant and #DDD8D5 on Modern Earthy; Figma draws Bold Coastal (design-vs-production 16.7).",
+        "The rule colors are raw: no gray token matches them."
+      ],
+      "production": "Production section rail headline list (`.section-highlight ul.headline-list li article.headline-only`). Measured live on ocregister.com at 1280, 1100, 900 and 700px (Karl resized the window) and the CSS checked on all 6 review sites, 2026-11-02."
+    },
+    {
+      "slug": "horizontal-feature-card",
+      "name": "Horizontal Feature Card",
+      "group": "cards",
+      "layer": "wordpress",
+      "order": 7,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3709:41113",
+      "documentationFrame": "3484:67689",
+      "description": "The lead story of a wide section rail (production `.landing-three-one .section-highlight .feature-medium`): a 4:3 image and the CardSecondary headline with the excerpt, stacked below 800px and side by side from 800px. Device values are production's breakpoints.",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02, for the Section Rail Cards and Horizontal Feature Card only): the Figma values match production (CSS `.section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px, fonts checked on chicagotribune.com and mcall.com). Where no token matches a production value, the value stays raw (not rounded to the 4 / 8 grid).",
+        "**Breakpoints are production's:** `(≤799px)` stacked (built 748), `M (800–1039px)` (built 520), `L (1040–1279px)` (built 448.4) and `XL (≥1280px)` (built 639.8) side by side. The card fills its column.",
+        "**(≤799px):** image full width, 4:3, 8px (`spacing/100`) below it, then the text.",
+        "**M:** image 249.9 × 187.4 (half the width less 10px), 20px to the text column (249.9). The text column has 23.5px below it (the excerpt's 7.5 plus the info's 16) before the list, which sits under the text.",
+        "**L:** image 214.1 × 160.6, 9.9px to the text (214.1). **XL:** image 268.5 × 201.4, 10.5px to the text (351.1). These gaps are production's percentages of the row (raw).",
+        "**Image:** Article Image Placeholder, 4:3 (production's 75% image wrapper), 8px below it.",
+        "**Headline:** `Editorial/Titles/CardSecondary` (`font/theme/heading-family` Bold 26 / 30.3, −0.91px), `color/gray/black`, 21:1; 7.25px to the excerpt (production header 4px + `h3` 3.25px; raw).",
+        "**Excerpt:** `Editorial/Body/Excerpt` (`font/theme/body-family` 15 / 21), #38322A (Bold Coastal's production color; no token matches, raw), 12.7:1; 7.5px below it (raw).",
+        "**Bottom rule** is hidden: production draws the rule below the whole feature only below 800px, in Feature + List Content Block."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| (≤799px) | `wordpress-grid.xs`, `.s` | Stacked, image full width | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | Image floated left (50% − 10px), 20px gap | 520px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | Image and text side by side, 9.9px gap | 448.4px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | Image and text side by side, 10.5px gap | 639.8px | Desktop |",
+      "knownIssues": [
+        "Per theme in production: the excerpt is #38322A on Bold Coastal; the other themes use their own body color (design-vs-production 16.7). Figma draws Bold Coastal.",
+        "Raw values: the 7.25px headline-to-excerpt gap, 7.5px under the excerpt, the 9.9 / 10.5 / 20px image gaps, 23.5px under the M text column and #38322A."
+      ],
+      "production": "Production `.landing-three-one .section-highlight .feature-medium`. Measured live on ocregister.com at 1280, 1100, 900 and 700px (Karl resized the window) and the CSS checked on all 6 review sites, 2026-11-02."
+    },
+    {
+      "slug": "feature-list-content-block",
+      "name": "Feature + List Content Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 9,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3484:66933",
+      "documentationFrame": "3484:67681",
+      "description": "The content of a wide section rail: Horizontal Feature Card and three Headline List Items. Device values are production's breakpoints. Was Size = Default / Narrow until 2026-11-02 (Karl).",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02, for the Section Rail Cards and Horizontal Feature Card only): the Figma values match production (CSS `.section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px, fonts checked on chicagotribune.com and mcall.com). Where no token matches a production value, the value stays raw (not rounded to the 4 / 8 grid).",
+        "**Breakpoints are production's:** `(≤799px)` (built 748), `M (800–1039px)` (built 520), `L (1040–1279px)` (built 741.4), `XL (≥1280px)` (built 940). The block fills its column.",
+        "**(≤799px):** stacked. The feature has 16px below it and a 1px #D7D6D2 rule, then 16px to the list; the last item has Rule = Dark and 16px below it.",
+        "**M:** the feature (image floated left), then the list under the text in the right half: 270.1px from the left (image + 20), a 1px #D7D6D2 rule on top and 16px above the first item; the last item Rule = Dark with 16px below.",
+        "**L:** feature 448.4, 20.2px, list 272.8; no rules above or below the list. **XL:** feature 639.8, 20.2px, list 279.9. The 20.2px gap is production's percentage of the row (raw).",
+        "**List:** Headline List Items 16px (`spacing/200`) apart (production `li` margin-bottom 16px); from 1040px the last has Rule = None."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| (≤799px) | `wordpress-grid.xs`, `.s` | Stacked, rules above the list and under the last item | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | Feature, then the list under the text column | 520px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | Feature and list side by side, 20.2px apart | 741.4px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | Feature and list side by side, 20.2px apart | 940px | Desktop |",
+      "knownIssues": [
+        "Per theme in production: the rules are #D7D6D2 / #AAA7A4 on Bold Coastal, other grays on Measured Vibrant and Modern Earthy (design-vs-production 16.7). Figma draws Bold Coastal.",
+        "Raw values: the #D7D6D2 and #AAA7A4 rules, the 20.2px column gap and the 270.1px list offset at M."
+      ],
+      "production": "Production `.landing-three-one .section-highlight` content (`.feature-medium` + `ul.headline-list`). Measured live on ocregister.com at 1280, 1100, 900 and 700px (Karl resized the window) and the CSS checked on all 6 review sites, 2026-11-02."
+    },
+    {
+      "slug": "section-rail-card-narrow",
+      "name": "Section Rail Card Narrow",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 10,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3352:22067",
+      "documentationFrame": "3484:67667",
+      "description": "A narrow section rail (production `.landing-four-up .section-highlight`): Section Title / Eyebrow, the 1Col Article Card lead and three Headline List Items. Split from Section Rail Card (Layout = Narrow) 2026-11-02 (Karl). Device values are production's breakpoint.",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02, for the Section Rail Cards and Horizontal Feature Card only): the Figma values match production (CSS `.section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px, fonts checked on chicagotribune.com and mcall.com). Where no token matches a production value, the value stays raw (not rounded to the 4 / 8 grid).",
+        "**Breakpoint is production's:** `(≤799px)` (built 340): the lead has a 1px rule under it; `(≥800px)` (built 300): no rule. Otherwise only the width changes: the card fills its column, 100% below 640px, 50% from 640 to 1039px and 25% from 1040px (production: 340 at 360, 330 at 700, 430 at 900, 255 at 1100, 300 at 1280). The Tablet, 1024 and 1100 variants of the old Section Rail Card were swapped to these and removed.",
+        "**Title:** Section Title / Eyebrow (Style = Underline, with the chevron), 20px (`spacing/250`, the Header's bottom padding) to the lead (production title margin-bottom: 1em of Bold Coastal's 20px eyebrow).",
+        "**Lead:** 1Col Article Card (Style = Standard) with overrides inside this card only (Karl, 2026-11-02: the 1Col card is shared, so it isn't changed): 12px from headline to excerpt (Headline Container padding 4px); below the excerpt, Excerpt Container padding 15.5px at `(≤799px)`, then the rule (23.5px from the excerpt), and 23.5px at `(≥800px)`, where the rule is hidden; then the card's 16px (`spacing/200`) to the list. As production: 16px from the rule to the list below 800px, 39.5px from the excerpt to the list from 800px (fixed 2026-11-02: the card had 20px more before the list).",
+        "**List:** three Headline List Items 16px (`spacing/200`) apart, the last with Rule = None."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| (≤799px) | `wordpress-grid.xs`, `.s` | 100% below 640px, 50% at 640–799; rule under the lead | 340px | Mobile |\n| (≥800px) | `wordpress-grid.m`, `.l`, `.xl` | 50% at 800–1039, 25% from 1040; no rule under the lead | 300px | Tablet, Tablet landscape, Desktop |",
+      "knownIssues": [
+        "The title-to-lead gap is 1em of the theme's eyebrow size in production (20 / 17 / 21px); Figma draws Bold Coastal's 20.",
+        "The lead's rule is the 1Col card's `color/gray/500` (#CCCAC7); production's `.section-feature` rule is #D7D6D2 on Bold Coastal, other grays on the other themes (design-vs-production 16.7).",
+        "Raw values: 15.5 / 23.5px under the lead's excerpt (production's 7.5px excerpt margin plus 16px padding)."
+      ],
+      "production": "Production `.landing-four-up .section-highlight` (homepage section rails, four up). Measured live on ocregister.com at 1280, 1100, 900 and 700px (Karl resized the window) and the CSS checked on all 6 review sites, 2026-11-02."
+    },
+    {
+      "slug": "section-rail-card-wide",
+      "name": "Section Rail Card Wide",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 11,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3709:43975",
+      "documentationFrame": "3709:43976",
+      "description": "A wide section rail (production `.landing-three-one .section-highlight`): Section Title / Eyebrow and Feature + List Content Block. Split from Section Rail Card (Layout = Wide) 2026-11-02 (Karl). Device values are production's breakpoints.",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02, for the Section Rail Cards and Horizontal Feature Card only): the Figma values match production (CSS `.section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px, fonts checked on chicagotribune.com and mcall.com). Where no token matches a production value, the value stays raw (not rounded to the 4 / 8 grid).",
+        "**Breakpoints are production's:** `(≤799px)` stacked (built 748; 680 at a 700px window), `M (800–1039px)` (built 520: 60% of the row less 8px), `L (1040–1279px)` (built 741.4: 69.2% less 6px), `XL (≥1280px)` (built 940: 75% less 5px). The card fills its column.",
+        "**Title:** Section Title / Eyebrow (Style = Underline, with the chevron), 20px (`spacing/250`) to the content.",
+        "**Bottom space:** from 800px the rail has 32px (`spacing/400`) padding below it (production `padding-bottom: 2em`; the last rail has none); below 800px none (production uses a 32px margin outside).",
+        "**Content:** Feature + List Content Block with the same Device."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| (≤799px) | `wordpress-grid.xs`, `.s` | Full width, stacked | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | 60% − 8px | 520px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | 69.2% − 6px | 741.4px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | 75% − 5px | 940px | Desktop |",
+      "knownIssues": [
+        "The title-to-content gap is 1em of the theme's eyebrow size in production (20 / 17 / 21px); Figma draws Bold Coastal's 20.",
+        "Per theme in production: the rule colors differ (design-vs-production 16.7)."
+      ],
+      "production": "Production `.landing-three-one .section-highlight` (homepage section rail beside the Blueconic Block). Measured live on ocregister.com at 1280, 1100, 900 and 700px (Karl resized the window) and the CSS checked on all 6 review sites, 2026-11-02."
     }
   ]
 }

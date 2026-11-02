@@ -1,0 +1,25 @@
+/* Section Rail Card Narrow: values from components/wordpress/section-rail-card-narrow (built raw in production's values,
+   Karl 2026-11-02). Fills its column (Figma builds (≤799px) 340, (≥800px) 300; production 100% / 50% / 25% of the row). */
+.mngds-section-rail-card-narrow {
+  box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0;
+  background: var(--mng-section-rail-card-narrow-base-root-background);
+}
+.mngds-section-rail-card-narrow *, .mngds-section-rail-card-narrow *::before, .mngds-section-rail-card-narrow *::after { box-sizing: border-box; }
+/* Title: 20px (spacing/250) to the lead, the Header's bottom padding. The underline spans the card, as in Figma. */
+.mngds-section-rail-card-narrow__header {
+  background: var(--mng-section-rail-card-narrow-base-header-background);
+  padding-bottom: var(--mng-section-rail-card-narrow-base-header-padding-bottom);
+}
+.mngds-section-rail-card-narrow__title { width: 100%; }
+/* Lead: 1Col Article Card (Standard) with this card's overrides only (Karl, 2026-11-02; the 1Col card itself is unchanged):
+   4px (spacing/050) more below the headline (12px to the excerpt); 15.5px (raw) more below the excerpt (23.5px to the rule)
+   below 800px; from 800px the rule is hidden and 23.5px (raw) follow the excerpt instead, then the card's 16px to the list. */
+.mngds-section-rail-card-narrow__lead .mngds-1col-article-card__headline { margin-bottom: var(--mng-spacing-050); }
+.mngds-section-rail-card-narrow__lead .mngds-1col-article-card__excerpt { margin-bottom: 15.5px; }
+.mngds-section-rail-card-narrow--from-800 .mngds-section-rail-card-narrow__lead .mngds-1col-article-card__excerpt { margin-bottom: 23.5px; }
+.mngds-section-rail-card-narrow--from-800 .mngds-section-rail-card-narrow__lead .mngds-1col-article-card__rule { display: none; }
+.mngds-section-rail-card-narrow__list {
+  list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; min-width: 0;
+  gap: var(--mng-section-rail-card-narrow-base-headline-list-gap);
+}
+.mngds-section-rail-card-narrow__item { margin: 0; padding: 0; min-width: 0; }

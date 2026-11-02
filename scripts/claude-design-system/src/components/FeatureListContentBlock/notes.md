@@ -1,0 +1,3 @@
+- **Built raw, as production renders it** (Karl, 2026-11-02): values match production (`.landing-three-one .section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px). Raw values: the #D7D6D2 rules, the 20.2px column gap at L and XL, and the list's offset at M.
+- **Widths** are the Figma widths as shares of the built block (feature 448.4 of 741.4 at L, 639.8 of 940 at XL; at M the list starts after the image's 48.06% and the 20px gap, Figma's 270.1px), so the block keeps production's proportions in any column.
+- **Rules per theme:** the rule colors are Bold Coastal's production grays on every theme here; Measured Vibrant and Modern Earthy use other grays in production (design-vs-production 16.7).

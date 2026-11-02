@@ -1,0 +1,18 @@
+<!-- @dsCard group="WordPress Elements" height=2220 subtitle="Figma: Section Rail Card Wide · 4 variants (Device = production breakpoints)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SectionRailCardWide</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['(≤799px)', 748], ['M (800–1039px)', 520], ['L (1040–1279px)', 741.4], ['XL (≥1280px)', 940]];
+  var variants = h(I.SpecimenSection, { title: 'Device', note: 'Production’s breakpoints for this rail (identical on all 6 review sites): stacked below 800px; from 800px the feature and list go side by side (M: the list under the feature’s text) and the rail has 32px below it. Drawn at the Figma widths; the card fills its column.' },
+    h(I.Specimen, { items: devices.map(function (d) {
+      return { label: 'Device=' + d[0] + ' (built ' + d[1] + 'px)', width: d[1] + 32, node: h('div', { style: { width: d[1] } }, h(NS.SectionRailCardWide, { device: d[0], title: 'News' })) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(variants);
+</script>
+</body>
+</html>

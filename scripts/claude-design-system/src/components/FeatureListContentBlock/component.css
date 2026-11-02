@@ -1,0 +1,35 @@
+/* Feature + List Content Block: values from components/wordpress/feature-list-content-block (built raw in production's
+   values, Karl 2026-11-02). Fills its column: Figma builds (≤799px) 748, M 520, L 741.4, XL 940. */
+.mngds-feature-list-content-block { box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0; }
+.mngds-feature-list-content-block *, .mngds-feature-list-content-block *::before, .mngds-feature-list-content-block *::after { box-sizing: border-box; }
+.mngds-feature-list-content-block__feature { min-width: 0; }
+.mngds-feature-list-content-block__list {
+  list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; min-width: 0;
+  gap: var(--mng-feature-list-content-block-base-headline-list-gap);
+}
+.mngds-feature-list-content-block__item { margin: 0; padding: 0; min-width: 0; }
+/* (≤799px): the feature, 16px, a 1px #D7D6D2 rule (raw), 16px, the list; the last item's Dark rule has 16px below it. */
+.mngds-feature-list-content-block--stacked { gap: var(--mng-feature-list-content-block-device-799px-root-gap); }
+.mngds-feature-list-content-block--stacked .mngds-feature-list-content-block__feature {
+  padding-bottom: var(--mng-feature-list-content-block-device-799px-feature-padding-bottom);
+  border-bottom: var(--mng-feature-list-content-block-device-799px-feature-border-bottom-width) var(--mng-feature-list-content-block-device-799px-feature-border-style) var(--mng-feature-list-content-block-device-799px-feature-border-color);
+}
+.mngds-feature-list-content-block--stacked .mngds-feature-list-content-block__list { padding-bottom: var(--mng-feature-list-content-block-device-799px-headline-list-padding-bottom); }
+/* M: the list sits under the feature's text column (Figma: 270.1px from the left of 520 = the image's 48.06% + 20px), with a
+   1px #D7D6D2 rule (raw) on top, 16px above and below. */
+.mngds-feature-list-content-block__list-column { padding-left: calc(48.06% + var(--mng-horizontal-feature-card-device-m-800-1039px-content-gap)); min-width: 0; }
+.mngds-feature-list-content-block--m .mngds-feature-list-content-block__list {
+  gap: var(--mng-feature-list-content-block-device-m-800-1039px-list-column-headline-list-gap);
+  padding-top: var(--mng-feature-list-content-block-device-m-800-1039px-list-column-headline-list-padding-top);
+  padding-bottom: var(--mng-feature-list-content-block-device-m-800-1039px-list-column-headline-list-padding-bottom);
+  border-top: var(--mng-feature-list-content-block-device-m-800-1039px-list-column-headline-list-border-top-width) var(--mng-feature-list-content-block-device-m-800-1039px-list-column-headline-list-border-style) var(--mng-feature-list-content-block-device-m-800-1039px-list-column-headline-list-border-color);
+}
+/* L and XL: the feature and the list side by side, 20.2px apart (production's share of the row; raw). Feature 448.4 of 741.4
+   (60.48%) at L, 639.8 of 940 (68.06%) at XL; the list fills the rest. */
+.mngds-feature-list-content-block--l, .mngds-feature-list-content-block--xl { flex-direction: row; align-items: flex-start; }
+.mngds-feature-list-content-block--l { gap: var(--mng-feature-list-content-block-device-l-1040-1279px-root-gap); }
+.mngds-feature-list-content-block--xl { gap: var(--mng-feature-list-content-block-device-xl-1280px-root-gap); }
+.mngds-feature-list-content-block--l .mngds-feature-list-content-block__feature { flex: 0 0 60.48%; }
+.mngds-feature-list-content-block--xl .mngds-feature-list-content-block__feature { flex: 0 0 68.06%; }
+.mngds-feature-list-content-block--l .mngds-feature-list-content-block__list,
+.mngds-feature-list-content-block--xl .mngds-feature-list-content-block__list { flex: 1 1 0; }

@@ -1,0 +1,3 @@
+- **Built raw, as production renders it** (Karl, 2026-11-02): values match production (`.landing-three-one .section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px). Split from Section Rail Card (Layout = Wide) on 2026-11-02.
+- **Bottom space:** 32px (`spacing/400`) from 800px only. The exported token is under `base` because the exporter leaves out the (≤799px) variant's 0, so this component applies it at M, L and XL only.
+- **The title gap** is 1em of the theme's eyebrow size in production (20 / 17 / 21px); this card uses 20px (`spacing/250`) on every theme, as Figma.

@@ -1,0 +1,29 @@
+/* Headline List Item: values from components/wordpress/headline-list-item (built raw in production's values, Karl 2026-11-02).
+   Fills its column (built at 300). */
+.mngds-headline-list-item {
+  box-sizing: border-box; display: block; width: 100%; min-width: 0; margin: 0; padding: 0;
+  background: var(--mng-headline-list-item-base-root-background);
+  border-bottom: var(--mng-headline-list-item-base-root-border-bottom-width) var(--mng-headline-list-item-base-root-border-style) transparent;
+}
+/* Rule = Default: 12px (spacing/150) to a 1px #D7D6D2 rule (Bold Coastal's production rule; raw, no token matches). */
+.mngds-headline-list-item--default {
+  padding-bottom: var(--mng-headline-list-item-rule-default-root-padding-bottom);
+  border-bottom-color: var(--mng-headline-list-item-rule-default-root-border-color);
+}
+/* Rule = None: no rule. */
+.mngds-headline-list-item--none { border-bottom: 0; }
+/* Rule = Dark: a 1px #AAA7A4 rule right under the text (raw). */
+.mngds-headline-list-item--dark { border-bottom-color: var(--mng-headline-list-item-rule-dark-root-border-color); }
+/* Headline: Editorial/Titles/HeadlineList, small-headline family SemiBold 15 / 19, -0.15px, color/gray/black. */
+.mngds-headline-list-item__headline {
+  margin: 0; text-align: left; min-width: 0;
+  font-family: var(--mng-headline-list-item-base-headline-font-family);
+  font-size: var(--mng-headline-list-item-base-headline-font-size);
+  font-weight: var(--mng-headline-list-item-base-headline-font-weight);
+  line-height: var(--mng-headline-list-item-base-headline-line-height);
+  letter-spacing: var(--mng-headline-list-item-base-headline-letter-spacing);
+  color: var(--mng-headline-list-item-base-headline-color);
+}
+.mngds-headline-list-item__link { color: inherit; text-decoration: none; }
+.mngds-headline-list-item__link:hover { text-decoration: underline; }
+.mngds-headline-list-item__link:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }

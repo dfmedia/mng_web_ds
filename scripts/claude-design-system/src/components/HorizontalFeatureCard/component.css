@@ -1,0 +1,51 @@
+/* Horizontal Feature Card: values from components/wordpress/horizontal-feature-card (built raw in production's values,
+   Karl 2026-11-02). Fills its column: Figma builds (≤799px) 748, M 520, L 448.4, XL 639.8. */
+.mngds-horizontal-feature-card { box-sizing: border-box; display: block; width: 100%; min-width: 0; margin: 0; }
+.mngds-horizontal-feature-card *, .mngds-horizontal-feature-card *::before, .mngds-horizontal-feature-card *::after { box-sizing: border-box; }
+.mngds-horizontal-feature-card__content { display: flex; flex-direction: column; align-items: flex-start; }
+/* Image: 4:3 (production's 75% image wrapper), 8px (spacing/100) below it. */
+.mngds-horizontal-feature-card__figure { align-self: stretch; flex-shrink: 0; padding-bottom: var(--mng-horizontal-feature-card-base-content-figure-padding-bottom); }
+.mngds-horizontal-feature-card__image { aspect-ratio: 4 / 3; width: 100%; }
+.mngds-horizontal-feature-card__img { width: 100%; height: 100%; }
+/* Text: headline, 7.25px (raw) to the excerpt, 7.5px (raw) below it. */
+.mngds-horizontal-feature-card__text {
+  display: flex; flex-direction: column; align-self: stretch; min-width: 0;
+  gap: var(--mng-horizontal-feature-card-base-content-text-column-gap);
+  padding-bottom: var(--mng-horizontal-feature-card-device-799px-content-text-column-padding-bottom);
+}
+/* Headline: Editorial/Titles/CardSecondary (heading family Bold 26 / 30.3, -0.91px), color/gray/black. */
+.mngds-horizontal-feature-card__headline {
+  margin: 0; text-align: left; min-width: 0;
+  font-family: var(--mng-horizontal-feature-card-base-content-text-column-headline-container-headline-font-family);
+  font-size: var(--mng-horizontal-feature-card-base-content-text-column-headline-container-headline-font-size);
+  font-weight: var(--mng-horizontal-feature-card-base-content-text-column-headline-container-headline-font-weight);
+  line-height: var(--mng-horizontal-feature-card-base-content-text-column-headline-container-headline-line-height);
+  letter-spacing: var(--mng-horizontal-feature-card-base-content-text-column-headline-container-headline-letter-spacing);
+  color: var(--mng-horizontal-feature-card-base-content-text-column-headline-container-headline-color);
+}
+.mngds-horizontal-feature-card__link { color: inherit; text-decoration: none; }
+.mngds-horizontal-feature-card__link:hover { text-decoration: underline; }
+.mngds-horizontal-feature-card__link:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }
+/* Excerpt: Editorial/Body/Excerpt (body family 15 / 21), #38322A (Bold Coastal's production color; raw). */
+.mngds-horizontal-feature-card__excerpt {
+  margin: 0; text-align: left; min-width: 0;
+  font-family: var(--mng-horizontal-feature-card-base-content-text-column-excerpt-container-excerpt-font-family);
+  font-size: var(--mng-horizontal-feature-card-base-content-text-column-excerpt-container-excerpt-font-size);
+  font-weight: var(--mng-horizontal-feature-card-base-content-text-column-excerpt-container-excerpt-font-weight);
+  line-height: var(--mng-horizontal-feature-card-base-content-text-column-excerpt-container-excerpt-line-height);
+  color: var(--mng-horizontal-feature-card-base-content-text-column-excerpt-container-excerpt-color);
+}
+/* From 800px: image and text side by side. Column widths are the Figma (production) widths as shares of the built card,
+   so the card can fill any column: M 249.9 / 520, L 214.1 + 9.9 + 214.1 / 448.4, XL 268.5 + 10.5 + 351.1 / 639.8. */
+.mngds-horizontal-feature-card--m .mngds-horizontal-feature-card__content,
+.mngds-horizontal-feature-card--l .mngds-horizontal-feature-card__content,
+.mngds-horizontal-feature-card--xl .mngds-horizontal-feature-card__content { flex-direction: row; }
+.mngds-horizontal-feature-card--m .mngds-horizontal-feature-card__content { gap: var(--mng-horizontal-feature-card-device-m-800-1039px-content-gap); }
+.mngds-horizontal-feature-card--m .mngds-horizontal-feature-card__figure { width: 48.06%; align-self: flex-start; }
+.mngds-horizontal-feature-card--m .mngds-horizontal-feature-card__text { flex: 1 1 0; padding-bottom: var(--mng-horizontal-feature-card-device-m-800-1039px-content-text-column-padding-bottom); }
+.mngds-horizontal-feature-card--l .mngds-horizontal-feature-card__content { column-gap: 2.21%; }
+.mngds-horizontal-feature-card--l .mngds-horizontal-feature-card__figure { width: 47.75%; align-self: flex-start; }
+.mngds-horizontal-feature-card--l .mngds-horizontal-feature-card__text { width: 47.75%; padding-bottom: var(--mng-horizontal-feature-card-device-l-1040-1279px-content-text-column-padding-bottom); }
+.mngds-horizontal-feature-card--xl .mngds-horizontal-feature-card__content { column-gap: 1.646%; }
+.mngds-horizontal-feature-card--xl .mngds-horizontal-feature-card__figure { width: 41.97%; align-self: flex-start; }
+.mngds-horizontal-feature-card--xl .mngds-horizontal-feature-card__text { width: 54.87%; padding-bottom: var(--mng-horizontal-feature-card-device-xl-1280px-content-text-column-padding-bottom); }

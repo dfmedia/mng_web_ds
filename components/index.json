@@ -354,6 +354,22 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "horizontal-feature-card",
+      "name": "Horizontal Feature Card",
+      "group": "cards",
+      "layer": "wordpress",
+      "path": "components/wordpress/horizontal-feature-card/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3709:41113",
+        "set": "Horizontal Feature Card"
+      },
+      "variants": 4,
+      "instances": 32,
+      "knownIssues": 3,
+      "exported": "2026-11-02"
+    },
+    {
       "slug": "horizontal-thumbnail-card",
       "name": "Horizontal Thumbnail Card",
       "group": "cards",
@@ -450,6 +466,38 @@
       "exported": "2026-11-02"
     },
     {
+      "slug": "feature-list-content-block",
+      "name": "Feature + List Content Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/feature-list-content-block/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3484:66933",
+        "set": "Feature + List Content Block"
+      },
+      "variants": 4,
+      "instances": 28,
+      "knownIssues": 3,
+      "exported": "2026-11-02"
+    },
+    {
+      "slug": "headline-list-item",
+      "name": "Headline List Item",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/headline-list-item/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3709:40904",
+        "set": "Headline List Item"
+      },
+      "variants": 3,
+      "instances": 192,
+      "knownIssues": 3,
+      "exported": "2026-11-02"
+    },
+    {
       "slug": "latest-headlines",
       "name": "Latest Headlines",
       "group": "homepage",
@@ -495,6 +543,38 @@
       "variants": 2,
       "instances": 14,
       "knownIssues": 4,
+      "exported": "2026-11-02"
+    },
+    {
+      "slug": "section-rail-card-narrow",
+      "name": "Section Rail Card Narrow",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/section-rail-card-narrow/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3352:22067",
+        "set": "Section Rail Card Narrow"
+      },
+      "variants": 2,
+      "instances": 30,
+      "knownIssues": 4,
+      "exported": "2026-11-02"
+    },
+    {
+      "slug": "section-rail-card-wide",
+      "name": "Section Rail Card Wide",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/section-rail-card-wide/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3709:43975",
+        "set": "Section Rail Card Wide"
+      },
+      "variants": 4,
+      "instances": 24,
+      "knownIssues": 3,
       "exported": "2026-11-02"
     },
     {

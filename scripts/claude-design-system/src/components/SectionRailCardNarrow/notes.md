@@ -1,0 +1,5 @@
+- **Built raw, as production renders it** (Karl, 2026-11-02): values match production (`.landing-four-up .section-highlight`, identical on all 6 review sites; measured on ocregister.com at 1280, 1100, 900 and 700px). Split from Section Rail Card (Layout = Narrow) on 2026-11-02.
+- **The lead is the shared 1Col Article Card** with overrides inside this card only (Karl, 2026-11-02): 4px more under the headline, 15.5px more under the excerpt (23.5px from 800px, where the rule is hidden). 15.5 and 23.5 are raw: production's 7.5px excerpt margin plus its 16px padding.
+- **Spacing fixed in Figma 2026-11-02:** the card had 20px more between the lead and the list than production; the title's 20px is now the Header's bottom padding, so the lead's 16px is the whole gap (16px from the rule below 800px, 39.5px from the excerpt from 800px, as production).
+- **The lead's rule** is the 1Col card's `color/gray/500` (#CCCAC7); production's `.section-feature` rule is #D7D6D2 on Bold Coastal (design-vs-production 16.7).
+- **The title gap** is 1em of the theme's eyebrow size in production (20 / 17 / 21px); this card uses 20px (`spacing/250`) on every theme, as Figma.

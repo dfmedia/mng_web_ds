@@ -1,0 +1,15 @@
+/* Section Rail Card Wide: values from components/wordpress/section-rail-card-wide (built raw in production's values,
+   Karl 2026-11-02). Fills its column: Figma builds (≤799px) 748, M 520, L 741.4, XL 940 (production 100%, 60% − 8px,
+   69.2% − 6px, 75% − 5px of the row). */
+.mngds-section-rail-card-wide {
+  box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0;
+  gap: var(--mng-section-rail-card-wide-base-root-gap);
+  background: var(--mng-section-rail-card-wide-base-root-background);
+}
+.mngds-section-rail-card-wide__header { background: var(--mng-section-rail-card-wide-base-header-background); }
+.mngds-section-rail-card-wide__title { width: 100%; }
+/* From 800px: 32px (spacing/400) below the rail (production padding-bottom 2em). Below 800px none: production puts its
+   32px outside the rail as a margin. The exported token sits under base because the (≤799px) variant has 0. */
+.mngds-section-rail-card-wide--m, .mngds-section-rail-card-wide--l, .mngds-section-rail-card-wide--xl {
+  padding-bottom: var(--mng-section-rail-card-wide-base-root-padding-bottom);
+}

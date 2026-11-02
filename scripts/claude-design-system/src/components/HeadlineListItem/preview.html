@@ -1,0 +1,17 @@
+<!-- @dsCard group="WordPress Elements" height=520 subtitle="Figma: Headline List Item · 3 variants (Rule)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>HeadlineListItem</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var rules = h(I.SpecimenSection, { title: 'Rule', note: 'Built at 300px; fills its column. Default: 12px (spacing/150) to a 1px #D7D6D2 rule. None: no rule (the last item from 1040px, and in Section Rail Card Narrow). Dark: a 1px #AAA7A4 rule right under the text (the last item below 1040px in wide rails). Rule colors are Bold Coastal’s production values (raw).' },
+    h(I.Specimen, { items: ['Default', 'None', 'Dark'].map(function (r) {
+      return { label: 'Rule=' + r, width: 332, node: h('div', { style: { width: 300 } }, h(NS.HeadlineListItem, { rule: r })) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(rules);
+</script>
+</body>
+</html>
