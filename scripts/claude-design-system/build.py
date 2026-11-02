@@ -69,6 +69,7 @@ COMPONENTS = [
     ("topzone-article-card", "TopZoneArticleCard", "TopZone Article Card", "WordPress Elements"),
     ("latest-headlines-list-item", "LatestHeadlinesListItem", "Latest Headlines List Item", "WordPress Elements"),
     ("latest-headlines", "LatestHeadlines", "Latest Headlines", "WordPress Elements"),
+    ("newsletter-signup", "NewsletterSignup", "Newsletter Signup", "WordPress Elements"),
     ("masthead", "Masthead", "Masthead", "WordPress Elements"),
     ("footer", "Footer", "Footer", "WordPress Elements"),
     ("ad-blocks", "AdBlocks", "Ad Blocks", "WordPress Elements"),

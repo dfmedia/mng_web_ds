@@ -510,14 +510,17 @@
      "name": "Latest Headlines",
      "where": "Homepage, 3476:62396 (3 variants)",
      "status": "In system",
-     "note": "Device = XS (≤639px), S (640–799px), (≥800px): production's breakpoints. Newsletter Signup shows as a placeholder until it is built.",
-     "updated": "2026-10-30",
+     "note": "Device = XS (≤639px), S (640–799px), (≥800px): production's breakpoints. Ends with Newsletter Signup.",
+     "updated": "2026-11-02",
      "component": "LatestHeadlines"
     },
     {
      "name": "Newsletter Signup",
-     "where": "Homepage, 3336:44765",
-     "status": "To add"
+     "where": "Homepage, 3336:44765 (2 variants)",
+     "status": "In system",
+     "note": "Device = (≤799px), (≥800px): the widths Latest Headlines uses (no production breakpoint). Matches production (Karl, 2026-11-02); Button Primary on every theme.",
+     "updated": "2026-11-02",
+     "component": "NewsletterSignup"
     },
     {
      "name": "Most Popular List Item, Blueconic Block (Most Popular)",

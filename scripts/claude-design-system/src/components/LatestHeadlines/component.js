@@ -3,8 +3,7 @@
    List Items (First, Standard..., Sponsored) and Newsletter Signup, 12px (spacing/150) apart. Title to the first item is
    16px (spacing/200). One column at every width; Device only sets production's XS cap (540px, centered).
    Device values are production's breakpoints for this list: XS (639px and below), S (640-799px), (≥800px) (the side column
-   beside the Zone 1 lead). Newsletter Signup is drawn by NewsletterSignup once it is in the system; until then a labeled
-   placeholder holds its place. */
+   beside the Zone 1 lead). The list ends with NewsletterSignup (anonymous view). */
 var LATEST_HEADLINES_SAMPLE = [
   ['Latest headlines Number ONE: This wraps to two lines.', '56 mins ago'],
   ['Latest headlines Number Seven: Wraps to two lines.', '57 mins ago'],
@@ -33,10 +32,7 @@ function LatestHeadlines(props) {
       h(LatestHeadlinesListItem, Object.assign({}, props.sponsored, { type: 'Sponsored', headingLevel: props.headingLevel }))));
   }
   if (showNewsletter) {
-    var nl = props.newsletter != null ? props.newsletter
-      : typeof NewsletterSignup === 'function' ? h(NewsletterSignup, { device: device === 'side' ? 'Desktop' : 'Mobile' })
-      : h('div', { className: 'mngds-latest-headlines__placeholder', role: 'img', 'aria-label': 'Newsletter Signup (not in the system yet)' },
-          'Newsletter Signup', h('br'), 'WordPress Elements 3336:44765');
+    var nl = props.newsletter != null ? props.newsletter : h(NewsletterSignup, { device: device === 'side' ? '(≥800px)' : '(≤799px)' });
     lis.push(h('li', { key: 'nl', className: 'mngds-latest-headlines__item mngds-latest-headlines__newsletter' }, nl));
   }
   return h('div', root,

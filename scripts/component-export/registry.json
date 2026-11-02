@@ -32,6 +32,7 @@
     "Device": [
       "XS (≤639px)",
       "S (640–799px)",
+      "(≤799px)",
       "(≥800px)",
       "M (800–1039px)",
       "L (1040–1279px)",
@@ -552,10 +553,37 @@
         "One variant, `(≥800px)`, covers three production ranges whose only difference is the column width (the list is the same).",
         "Below 640px production caps the list at 540px; the XS variant is drawn at 340.",
         "Production's title-to-list gap is 15 / 17 / 21px by theme; the design is 16px (`spacing/200`) on every theme (design-vs-production 16.5).",
-        "Newsletter Signup instances keep their component's fixed 135px height (next in the P2 list).",
         "The eyebrow's production color and underline differ (design-vs-production 14)."
       ],
       "production": "Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline-list > h2.headline-list-title + ul`), 7 headlines plus the newsletter `li.social-links`. CSS scanned on all 6 review sites 2026-10-30; measured live at 1728px on all 6 and on ocregister.com at 700px (Karl resized the window)."
+    },
+    {
+      "slug": "newsletter-signup",
+      "name": "Newsletter Signup",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 5,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3336:44765",
+      "documentationFrame": "3484:67644",
+      "description": "The newsletter prompt and Sign Up button at the end of Latest Headlines (anonymous view; production `li.social-links .newsletter-simple .newsletter-item`). Built to match production (Karl, 2026-10-30). Device = the two widths Latest Headlines uses; production has no breakpoint for this block.",
+      "rules": [
+        "**Matches production** (Karl, 2026-10-30: components match production, rounded to the nearest multiple of 4 / 8 and its token). Checked on all 6 review sites at 1728px and on ocregister.com at 900 and 700px (Karl resized the window).",
+        "**No production breakpoint:** the layout is the same at every width. The theme CSS pads the item `1em 0` below 1040px (`max-width: 64.9375em`), but inside Latest Headlines that rule is overridden (item padding 0 measured at 900 and 700px). The two Device values are the widths Latest Headlines uses: `(≤799px)` full width (built 340) and `(≥800px)` the side column (built 226). The block fills its column.",
+        "**Layout:** `color/gray/600` block; 16px (`spacing/200`) top padding (production's `li` padding), then the Newsletter frame with 16px on every side (production's `.newsletter-simple` padding): 32px above the prompt, 16px below the button.",
+        "**Prompt:** Noto Bold 15 (`font/size/15`) in `font/theme/small-headline-family` (Noto Sans in Bold Coastal and Modern Earthy, Noto Serif in Measured Vibrant, as production), 16px line height, centered, `color/gray/min` on `color/gray/600`, 16.0:1. 12px (`spacing/150`) to the button (production `margin-bottom: 12px`).",
+        "**Button:** Button Primary (Icon = None, Breakpoint = Desktop), \"Sign Up\", centered (Karl, 2026-10-30: Button Primary on every theme). White on `color/theme/primary`: 5.5:1 Bold Coastal, 6.9:1 Measured Vibrant, 5.2:1 Modern Earthy.",
+        "**The 10px heading padding is gone** (Karl, 2026-10-30): it was kept raw earlier, but production has none.",
+        "**Markup:** production puts the block in the list's last `li`; the prompt is a `p` and the button a link to the site's newsletter preferences page."
+      ],
+      "breakpoints": "| Device (where Latest Headlines uses it) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| (≤799px) | `wordpress-grid.xs`, `wordpress-grid.s` | Same layout, full width (680 wide at a 700px window) | 340px | Mobile, Mobile / Tablet |\n| (≥800px) | `wordpress-grid.m`, `.l`, `.xl` | Same layout, side column (220 at 900px, 224 at 1728px) | 226px | Tablet, Tablet landscape, Desktop |",
+      "knownIssues": [
+        "Production's button is uppercase (\"SIGN UP\"), Noto Sans 600 15px (13px on Measured Vibrant), 41px tall, with a 1px rgba(0,0,0,.15) border; on Modern Earthy it is outlined (transparent, 2px primary border and text). The design keeps Button Primary on every theme (Karl, 2026-10-30; design-vs-production 16.6).",
+        "Production block color is #F1EFEB on Bold Coastal (`color/gray/600`) but #F5F3F0 on Measured Vibrant and #ECEDE7 on Modern Earthy; the design is `color/gray/600` on every theme (design-vs-production 16.6).",
+        "Production prompt color is #0A0908 (Bold Coastal), #1F1E1C (Measured Vibrant), #141414 (Modern Earthy); the design is `color/gray/min` (#141414).",
+        "The prompt text is set per site in production (\"Get the latest news delivered daily!\", \"Sign up for Newsletters and Alerts\", \"Sign up for email newsletters\"); Figma shows Denver Post's."
+      ],
+      "production": "Production `.headline-list li.social-links .newsletter-simple .newsletter-item` (homepage Zone 1, all 6 review sites, measured 2026-10-30 at 1728px; ocregister.com also at 900 and 700px)."
     },
     {
       "slug": "tooltip",

@@ -1,0 +1,26 @@
+/* Newsletter Signup: values from components/wordpress/newsletter-signup (component tokens -> system tokens).
+   Matches production (Karl, 2026-10-30). Fills its column (Figma builds (≤799px) at 340, (≥800px) at 226). */
+.mngds-newsletter-signup {
+  box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0;
+  background: var(--mng-newsletter-signup-base-root-background);
+  padding-top: var(--mng-newsletter-signup-base-root-padding-top);
+}
+.mngds-newsletter-signup *, .mngds-newsletter-signup *::before, .mngds-newsletter-signup *::after { box-sizing: border-box; }
+/* Production's .newsletter-simple: 16px (spacing/200) on every side, so 32px above the prompt and 16px below the button. */
+.mngds-newsletter-signup__newsletter {
+  padding: var(--mng-newsletter-signup-base-newsletter-padding-top) var(--mng-newsletter-signup-base-newsletter-padding-right)
+    var(--mng-newsletter-signup-base-newsletter-padding-bottom) var(--mng-newsletter-signup-base-newsletter-padding-left);
+}
+.mngds-newsletter-signup__item {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: var(--mng-newsletter-signup-base-newsletter-item-gap);
+}
+/* Prompt: theme small-headline family Bold 15 / 16px, color/gray/min on color/gray/600 (16.0:1). */
+.mngds-newsletter-signup__prompt {
+  margin: 0; width: 100%;
+  font-family: var(--mng-newsletter-signup-base-newsletter-item-prompt-font-family);
+  font-size: var(--mng-newsletter-signup-base-newsletter-item-prompt-font-size);
+  font-weight: var(--mng-newsletter-signup-base-newsletter-item-prompt-font-weight);
+  line-height: var(--mng-newsletter-signup-base-newsletter-item-prompt-line-height);
+  color: var(--mng-newsletter-signup-base-newsletter-item-prompt-color);
+}

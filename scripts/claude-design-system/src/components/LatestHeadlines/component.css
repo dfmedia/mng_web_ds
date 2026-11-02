@@ -17,10 +17,3 @@
   gap: var(--mng-latest-headlines-base-list-gap);
 }
 .mngds-latest-headlines__item { margin: 0; padding: 0; min-width: 0; }
-/* Stand-in for Newsletter Signup until it is in the system: its Figma height (135), magenta like the prototype placeholders. */
-.mngds-latest-headlines__placeholder {
-  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
-  height: var(--mng-latest-headlines-base-list-newsletter-signup-height);
-  border: 2px dashed #C2185B; color: #880E4F; background: var(--mng-color-gray-max);
-  font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-13); font-weight: var(--mng-font-weight-bold);
-}

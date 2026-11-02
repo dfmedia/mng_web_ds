@@ -2,7 +2,7 @@
 
 Oct 29, 2026 · @Karl
 
-> **Updated 2026-10-30 (latest)**: P2 step 2, Latest Headlines + Latest Headlines List Item done. **Earlier, 2026-10-30:** P2 started: TopZone Article Card done. **Earlier, 2026-10-30:** Masthead for the other page types built in the Claude DS; P1 done. **Earlier, 2026-10-30 (later):** Masthead for the other page types added to P1 (Karl). **Earlier, 2026-10-30,** for P1 (Masthead, Footer, Ad Blocks): cleaned up in Figma, exported to `components/wordpress/` and **In system** in the Claude DS (Masthead: Page = Home). Status column below. Tracked in `MNG-Web-Design-System-Status.md`, open item 19.
+> **Updated 2026-11-02**: P2 step 3, Newsletter Signup done. **2026-10-30 (latest):** P2 step 2, Latest Headlines + Latest Headlines List Item done. **Earlier, 2026-10-30:** P2 started: TopZone Article Card done. **Earlier, 2026-10-30:** Masthead for the other page types built in the Claude DS; P1 done. **Earlier, 2026-10-30 (later):** Masthead for the other page types added to P1 (Karl). **Earlier, 2026-10-30,** for P1 (Masthead, Footer, Ad Blocks): cleaned up in Figma, exported to `components/wordpress/` and **In system** in the Claude DS (Masthead: Page = Home). Status column below. Tracked in `MNG-Web-Design-System-Status.md`, open item 19.
 
 ## Context
 
@@ -30,8 +30,8 @@ These fill the production homepage layout on the Editor's Picks tab. All are in 
 | Component | Figma | Notes | Where it shows | Status |
 | --- | --- | --- | --- | --- |
 | TopZone Article Card | `3336:46079` | 4 cards in a 2×2 grid beside the Zone 1 lead; switches to thumbnail rows below 800px | Zone 1 | **Done 2026-10-30** (`TopZoneArticleCard`; 15px headline gap kept raw; Device renamed to production's ranges XS / S / M / L / XL; S added from production, Karl) |
-| Latest Headlines + Latest Headlines List Item | `3476:62396`, `3336:46118` | 7 items with headline and time, plus a sponsored item; the Section Title / Eyebrow above it is already in the DS | Zone 1, right column | **Done 2026-10-30** (`LatestHeadlines`, `LatestHeadlinesListItem`; built to match production, Karl: time inline after the headline, 15/19 `color/gray/black` headline, S variant full width, title gap 16px (`spacing/200`); Device = `XS (≤639px)`, `S (640–799px)`, `(≥800px)`. Newsletter Signup shows as a placeholder until step 3) |
-| Newsletter Signup | `3336:44765` | Under Latest Headlines (anonymous view). The 10px padding above and below the heading stays raw (Karl, 2026-10-30) | Zone 1 | Not started |
+| Latest Headlines + Latest Headlines List Item | `3476:62396`, `3336:46118` | 7 items with headline and time, plus a sponsored item; the Section Title / Eyebrow above it is already in the DS | Zone 1, right column | **Done 2026-10-30** (`LatestHeadlines`, `LatestHeadlinesListItem`; built to match production, Karl: time inline after the headline, 15/19 `color/gray/black` headline, S variant full width, title gap 16px (`spacing/200`); Device = `XS (≤639px)`, `S (640–799px)`, `(≥800px)`. Newsletter Signup was a placeholder until step 3) |
+| Newsletter Signup | `3336:44765` | Under Latest Headlines (anonymous view) | Zone 1 | **Done 2026-11-02** (`NewsletterSignup`; built to match production, Karl: 32 / 12 / 16px spacing, the raw 10px dropped because production has none; Button Primary on every theme; no production breakpoint, Device = `(≤799px)`, `(≥800px)`; `LatestHeadlines` now draws it instead of the placeholder) |
 | Most Popular List Item + Blueconic Block | `3352:24171`, `3352:20526` | 10 numbered items, 2 columns (1 below 640px) | Zone 2 | Not started |
 | Section Rail Card + Feature + List Content Block | `3352:22067`, `3484:66933` | Lead (image, headline, excerpt) + 3 headline list | Zone 3 and Zones 8–12 (6 sections) | Not started |
 | Photos Block | `3352:20865` | Assembly of 1Col Article Card (Media Lead) + Horizontal Thumbnail Card ×6 + Show More Affordance, all already in the DS | Zone 7 | Not started |

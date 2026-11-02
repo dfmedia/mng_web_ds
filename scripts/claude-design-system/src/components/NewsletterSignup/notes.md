@@ -1,0 +1,5 @@
+- **Built to match production** (Karl, 2026-10-30; values rounded to the nearest multiple of 4 / 8 and its token), checked on all 6 review sites at 1728px and on ocregister.com at 900 and 700px: 32px above the prompt (the `li`'s 16px plus the block's 16px), 12px to the button, 16px below. The 10px heading padding Figma had (kept raw earlier) is gone: production has none.
+- **No production breakpoint.** The theme CSS pads the item `1em 0` below 1040px, but inside Latest Headlines that rule is overridden (measured: 0 at 900 and 700px). `device` only names the width Latest Headlines uses; both values draw the same layout.
+- **Prompt** follows `font/theme/small-headline-family` (Noto Sans in Bold Coastal and Modern Earthy, Noto Serif in Measured Vibrant), exactly what production renders on each theme.
+- **Button Primary on every theme** (Karl, 2026-10-30). Production's button is uppercase, 15px (13px on Measured Vibrant) and outlined on Modern Earthy; those stay production differences (design-vs-production 16.6).
+- **Block color** is `color/gray/600` on every theme; production uses #F5F3F0 on Measured Vibrant and #ECEDE7 on Modern Earthy (16.6).

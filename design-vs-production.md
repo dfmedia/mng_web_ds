@@ -1551,6 +1551,24 @@ Everything else matches: one column at every width (capped at 540px below 640px,
 
 **Status:** Open. Added 2026-10-30.
 
+### 16.6 Newsletter Signup (end of Latest Headlines) — button style, block color and prompt color
+
+**Found:** 2026-10-30, computed styles on all 6 review sites at 1728px; ocregister.com also at 900 and 700px (Karl resized the window). **Team:** CMS. Figma: WordPress Elements ▸ Homepage ▸ Newsletter Signup (`3336:44765`).
+
+**Design:** built to match production (Karl, 2026-10-30; values rounded to the nearest multiple of 4 / 8 and its token): 32px above the prompt, 12px to the button, 16px below, the same at every width; prompt Bold 15 / 16px in `font/theme/small-headline-family`, `color/gray/min`; block `color/gray/600`; the button is Button Primary on every theme (Karl).
+
+**Production (still different):**
+- **Button:** an uppercase "SIGN UP" link, Noto Sans 600, 15px with 12.19 / 15.94px padding (41px tall) and a 1px rgba(0,0,0,.15) border on Bold Coastal; 13px with 10.56 / 13.81px padding (38px tall) on Measured Vibrant; outlined on Modern Earthy (transparent, 2px primary border, primary text, 43px tall). The design is Button Primary: filled `color/theme/primary`, white Noto Sans Bold 16px Title Case "Sign Up", 40px.
+- **Block color:** #F1EFEB on Bold Coastal (matches `color/gray/600`), #F5F3F0 on Measured Vibrant, #ECEDE7 on Modern Earthy.
+- **Prompt color:** #0A0908 (Bold Coastal), #1F1E1C (Measured Vibrant), #141414 (Modern Earthy, matches). The design is `color/gray/min` (#141414).
+- The prompt text is set per site ("Get the latest news delivered daily!" on ocregister, "Sign up for Newsletters and Alerts" on denverpost, "Sign up for email newsletters" on the other four). Content, not a fix.
+
+Everything else matches: spacing (16px `li` padding + 16px block padding, 12px prompt margin), the prompt's family, size, weight and 16px line height, centered text. The theme rule `.newsletter-simple .newsletter-item { padding: 1em 0 }` below 1040px is overridden inside Latest Headlines (0 at 900 and 700px), so the block has no breakpoint there.
+
+**Fix:** make the Sign Up link the Button Primary style on every theme (Title Case, 16px Bold, 8px / 16px padding, 40px tall, `color/theme/primary` fill); set the block to `color/gray/600` and the prompt to `color/gray/min` on every theme.
+
+**Status:** Open. Added 2026-11-02.
+
 ---
 
 ## 17. Zone 1 slideshow (gallery lead) — type, spacing and colors off the design tokens; slide count not announced

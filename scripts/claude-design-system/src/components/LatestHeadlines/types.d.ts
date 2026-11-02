@@ -27,7 +27,7 @@ export interface LatestHeadlinesProps extends React.HTMLAttributes<HTMLDivElemen
   sponsored?: Partial<LatestHeadlinesListItemProps>;
   /** Show Newsletter Signup at the end of the list (production: anonymous view). Default true. */
   showNewsletter?: boolean;
-  /** Replaces Newsletter Signup (until it is in the system a labeled placeholder shows). */
+  /** Replaces Newsletter Signup. */
   newsletter?: React.ReactNode;
   /** Heading level of the item headlines. Default 3. */
   headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;

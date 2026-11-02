@@ -9,7 +9,7 @@ component_key: a8093d9af051cf493da6a481a57b6c9119f9cbbf
 variants: 3
 tokens: latest-headlines.tokens.json
 skeleton: latest-headlines.html
-exported: 2026-10-30
+exported: 2026-11-02
 ---
 
 # Latest Headlines
@@ -32,18 +32,18 @@ exported: 2026-10-30
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `XS (≤639px)` | 340×829 | [3476:62139](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62139) | 3 | ![](previews/latest-headlines--xs-639px.png) |
-| `S (640–799px)` | 748×665 | [3476:62152](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62152) | 2 | ![](previews/latest-headlines--s-640-799px.png) |
-| `(≥800px)` | 226×1007 | [3476:62164](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62164) | 6 | ![](previews/latest-headlines--800px.png) |
+| `XS (≤639px)` | 340×842 | [3476:62139](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62139) | 3 | ![](previews/latest-headlines--xs-639px.png) |
+| `S (640–799px)` | 748×678 | [3476:62152](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62152) | 2 | ![](previews/latest-headlines--s-640-799px.png) |
+| `(≥800px)` | 226×1004 | [3476:62164](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62164) | 6 | ![](previews/latest-headlines--800px.png) |
 
 ## Anatomy
 
 Default variant `XS (≤639px)` (hidden layers marked):
 
-- **Device=XS (≤639px)** `COMPONENT`: 340×829, vertical, gap 0, padding 0/0/0/0, fixed×hug
+- **Device=XS (≤639px)** `COMPONENT`: 340×842, vertical, gap 0, padding 0/0/0/0, fixed×hug
   - **Header Container** `FRAME`: 340×48, vertical, gap 8, padding 0/0/16/0, fill×hug
     - **Section Title / Eyebrow** `INSTANCE`: 340×32, vertical, gap 8, padding 0/0/0/0, fill×hug, instance of Section Title / Eyebrow (Style=Underline)
-  - **List** `FRAME`: 340×781, vertical, gap 12, padding 0/0/0/0, fill×hug
+  - **List** `FRAME`: 340×794, vertical, gap 12, padding 0/0/0/0, fill×hug
     - **Latest Headlines List Item** `INSTANCE`: 340×44, vertical, gap 4, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=First)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
@@ -52,7 +52,7 @@ Default variant `XS (≤639px)` (hidden layers marked):
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
     - **Latest Headlines List Item** `INSTANCE`: 340×127, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Sponsored)
-    - **Newsletter Signup** `INSTANCE`: 340×135, vertical, gap 8, padding 16/16/16/16, fill×fixed, instance of Newsletter Signup (Device=Mobile)
+    - **Newsletter Signup** `INSTANCE`: 340×116, vertical, gap 0, padding 16/0/0/0, fill×hug, instance of Newsletter Signup (Device=(≤799px))
 
 ## Component tokens
 
@@ -66,22 +66,24 @@ From `latest-headlines.tokens.json`. References point at system tokens (`tokens/
 | `latest-headlines.base.header-container.section-title-eyebrow.icon-color` | `{color.gray.100}` |
 | `latest-headlines.base.list.gap` | `{spacing.150}` |
 | `latest-headlines.base.list.latest-headlines-list-item.icon-color` | #7d161e |
-| `latest-headlines.base.list.newsletter-signup.height` | 135px |
 | `latest-headlines.base.list.newsletter-signup.icon-color` | `{color.gray.min}` |
 | `latest-headlines.base.root.background` | `{color.gray.max}` |
 | `latest-headlines.device-xs-639px.header-container.section-title-eyebrow.width` | 340px |
 | `latest-headlines.device-xs-639px.list.latest-headlines-list-item.height` | 127px |
 | `latest-headlines.device-xs-639px.list.latest-headlines-list-item.width` | 340px |
+| `latest-headlines.device-xs-639px.list.newsletter-signup.height` | 116px |
 | `latest-headlines.device-xs-639px.list.newsletter-signup.width` | 340px |
 | `latest-headlines.device-xs-639px.root.width` | 340px |
 | `latest-headlines.device-s-640-799px.header-container.section-title-eyebrow.width` | 748px |
 | `latest-headlines.device-s-640-799px.list.latest-headlines-list-item.height` | 108px |
 | `latest-headlines.device-s-640-799px.list.latest-headlines-list-item.width` | 748px |
+| `latest-headlines.device-s-640-799px.list.newsletter-signup.height` | 116px |
 | `latest-headlines.device-s-640-799px.list.newsletter-signup.width` | 748px |
 | `latest-headlines.device-s-640-799px.root.width` | 748px |
 | `latest-headlines.device-800px.header-container.section-title-eyebrow.width` | 226px |
 | `latest-headlines.device-800px.list.latest-headlines-list-item.height` | 146px |
 | `latest-headlines.device-800px.list.latest-headlines-list-item.width` | 226px |
+| `latest-headlines.device-800px.list.newsletter-signup.height` | 132px |
 | `latest-headlines.device-800px.list.newsletter-signup.width` | 226px |
 | `latest-headlines.device-800px.root.width` | 226px |
 
@@ -128,9 +130,8 @@ Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline
 1. One variant, `(≥800px)`, covers three production ranges whose only difference is the column width (the list is the same).
 2. Below 640px production caps the list at 540px; the XS variant is drawn at 340.
 3. Production's title-to-list gap is 15 / 17 / 21px by theme; the design is 16px (`spacing/200`) on every theme (design-vs-production 16.5).
-4. Newsletter Signup instances keep their component's fixed 135px height (next in the P2 list).
-5. The eyebrow's production color and underline differ (design-vs-production 14).
-6. **Values not bound to a token** (literal in the component tokens): `base` list.latest-headlines-list-item icon-color = #7d161e.
+4. The eyebrow's production color and underline differ (design-vs-production 14).
+5. **Values not bound to a token** (literal in the component tokens): `base` list.latest-headlines-list-item icon-color = #7d161e.
 
 ## Files
 
@@ -138,4 +139,4 @@ Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline
 - `latest-headlines.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

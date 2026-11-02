@@ -8,7 +8,7 @@
 <script>
   var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
   var devices = [['XS', 'XS (≤639px)', 340], ['S', 'S (640–799px)', 748], ['(≥800px)', '(≥800px)', 226]];
-  var variants = h(I.SpecimenSection, { title: 'Device', note: 'The Zone 1 Latest Headlines rail. Device values are production’s breakpoints for this list (identical on all 6 review sites): one column at every width, full width below 800px (capped at 540px below 640px), the side column beside the Zone 1 lead from 800px. Drawn at the Figma widths; the rail fills its column. Newsletter Signup shows as a placeholder until it is in the system.' },
+  var variants = h(I.SpecimenSection, { title: 'Device', note: 'The Zone 1 Latest Headlines rail. Device values are production’s breakpoints for this list (identical on all 6 review sites): one column at every width, full width below 800px (capped at 540px below 640px), the side column beside the Zone 1 lead from 800px. Drawn at the Figma widths; the rail fills its column.' },
     h(I.Specimen, { items: devices.map(function (d) {
       return { label: 'Device=' + d[1] + ' (built ' + d[2] + 'px)', width: d[2] + 32, node: h('div', { style: { width: d[2] } }, h(NS.LatestHeadlines, { device: d[0] })) };
     }) }));
