@@ -34,6 +34,9 @@
       "S (640–799px)",
       "(≤799px)",
       "(≥800px)",
+      "(≤1039px)",
+      "(640–1039px)",
+      "(≥1040px)",
       "M (800–1039px)",
       "L (1040–1279px)",
       "XL (≥1280px)"
@@ -584,6 +587,58 @@
         "The prompt text is set per site in production (\"Get the latest news delivered daily!\", \"Sign up for Newsletters and Alerts\", \"Sign up for email newsletters\"); Figma shows Denver Post's."
       ],
       "production": "Production `.headline-list li.social-links .newsletter-simple .newsletter-item` (homepage Zone 1, all 6 review sites, measured 2026-10-30 at 1728px; ocregister.com also at 900 and 700px)."
+    },
+    {
+      "slug": "blueconic-list-item",
+      "name": "Blueconic List Item",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 6,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3704:40676",
+      "documentationFrame": "3484:67661",
+      "description": "One numbered headline in the Blueconic Block (homepage Zone 2; production `.dfm-most-popular-flex-container li a`). Was \"Most Popular List Item\" (renamed 2026-11-02, Karl). Device = production's own breakpoint for the item's font metrics.",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02): this block is built in Blueconic, a third-party platform we don't control like our WordPress themes, so its values stay as production has them (not rounded to the 4 / 8 grid), with tokens only where a value matches one exactly.",
+        "**Breakpoint is production's:** `(≤1039px)` (built 340) and `(≥1040px)` (built 459). From 1040px the list's font is `600 1.0625em / 1.05882` with `-0.015em` letter spacing, below it `600 0.9375em / 1.06667`; the items reset the size to 16px, so only the line height and letter spacing change. The item fills its column.",
+        "**Layout:** 16px top padding (the link's `padding-top: 1em`) and 5px bottom padding (`0.3125em`, Bold Coastal), the number circle then the headline, 10px apart (`margin-right: 0.625rem`), centered vertically. Items stack with no gap in the block. One-line rows are 53px and two-line rows 60px on Bold Coastal, as measured.",
+        "**Number:** 32×32 circle (`border-radius: 50%`), `color/theme/primary`, white SemiBold 21 / 32 in `font/theme/small-headline-family` (Noto Sans in Bold Coastal and Modern Earthy, Noto Serif in Measured Vibrant: exactly production's). White on the primary: 5.5:1 Bold Coastal, 6.9:1 Measured Vibrant, 5.2:1 Modern Earthy.",
+        "**Headline:** `Editorial/Titles/BlueconicItem`: `font/theme/heading-family` Bold 16 (`font/size/16`), `color/gray/black` (#000000, production) on `color/gray/max`, 21:1, with 5px below it (the span's `padding-bottom`, Bold Coastal). Line height 17.07px below 1040px; from 1040px 16.94px with −0.32px letter spacing (set on that variant's layers). Production's CSS weight is 600, but the sites load only the 400 and 700 faces, so it renders Bold; Figma has no Noto Serif SemiBold either.",
+        "**Markup:** `li > a > span`; the number is the link's `::before` (`content: counter(section)`), so it isn't separate text for screen readers."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| (≤1039px) | `wordpress-grid.xs`–`m` | Headline 16 / 17.07px | 340px | Mobile, Tablet |\n| (≥1040px) | `wordpress-grid.l`, `.xl` | Headline 16 / 16.94px, −0.32px | 459px | Tablet landscape, Desktop |",
+      "knownIssues": [
+        "Per theme in production: the 5px bottom padding and the 5px under the headline are Bold Coastal only (0 on Measured Vibrant and Modern Earthy). Figma draws Bold Coastal.",
+        "The −0.32px letter spacing is −0.015em of the list's font size on Bold Coastal (21.25px); it is −0.30px on Measured Vibrant and −0.33px on Modern Earthy.",
+        "The headline is Bold in Figma; production's CSS says 600 (rendered Bold)."
+      ],
+      "production": "Production Blueconic \"Most Popular\" / \"Recommended For You\" list (`.landing-three-one .dfm-most-popular-flex-container`), homepage Zone 2. Measured on all 6 review sites at 900px, canoncitydailyrecord at 360px, ocregister and canoncitydailyrecord at 1280px (Karl resized the window), 2026-11-02."
+    },
+    {
+      "slug": "blueconic-block",
+      "name": "Blueconic Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 7,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3352:20526",
+      "documentationFrame": "3484:67652",
+      "description": "The Blueconic Block (homepage Zone 2; production `.dfm-most-popular-flex-container`): the theme eyebrow title, a primary rule and 10 numbered Blueconic List Items in one column below 640px and two from 640px. Was \"Blueconic Block (Most Popular)\" (renamed 2026-11-02, Karl). Device values are production's breakpoints.",
+      "rules": [
+        "**Built raw, as production renders it** (Karl, 2026-11-02): this block is built in Blueconic, a third-party platform we don't control like our WordPress themes, so its values stay as production has them (not rounded to the 4 / 8 grid), with tokens only where a value matches one exactly.",
+        "**Breakpoints are production's:** `XS (≤639px)` one column (built 340; full width, 340 at a 360px window), `(640–1039px)` two CSS columns (built 748), `(≥1040px)` two columns with the larger list metrics (built 940; 459 + 21.25 + 459 at 1280px). The 1024, 1100 and unused Desktop variants were removed and their template instances moved to the range variants (Karl, 2026-11-02). The block fills its column.",
+        "**Title:** the theme eyebrow (`font/theme/eyebrow-family`, `-size`, `-weight`: Noto Sans 20 / 400 Bold Coastal, Noto Sans 17 / 700 Measured Vibrant, Noto Serif 21 / 400 Modern Earthy, as production), uppercase, 3.5% letter spacing, 110% line height, `color/theme/primary` (5.5:1 / 6.9:1 / 5.2:1 on `color/gray/max`). Blueconic sets the text (\"Most Popular\", \"Recommended For You\").",
+        "**List:** 2px `color/theme/primary` rule on top (production `border-top`; none on Measured Vibrant). Padding above and below 11.72px below 1040px and 13.28px from 1040px; columns 18.75px / 21.25px apart. These are Bold Coastal's values: production sets them in em of the list's font size (`0.625em` padding, `1em` column gap), which follows the theme's eyebrow size.",
+        "**Items:** 10 Blueconic List Items, 5 per column from 640px, with no gap between them. From 1040px the items are `Device=(≥1040px)`.",
+        "**Outer space:** production gives the block a top margin of the eyebrow size (20 / 17 / 21px) and, on Bold Coastal, 15px below; the block that holds it sets that space, so it isn't drawn."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| XS (≤639px) | `wordpress-grid.xs` | One column, full width | 340px | Mobile (below 768) |\n| (640–1039px) | `wordpress-grid.s`, `.m` | Two CSS columns, 18.75px apart; list padding 11.72px | 748px | Mobile / Tablet |\n| (≥1040px) | `wordpress-grid.l`, `.xl` | Two columns, 21.25px apart; list padding 13.28px; items 16.94px, −0.32px | 940px | Tablet landscape, Desktop |",
+      "knownIssues": [
+        "Per theme in production: no rule on Measured Vibrant; list padding and column gap scale with the eyebrow size (Measured Vibrant 9.96 / 15.94px, Modern Earthy 12.30 / 19.69px below 1040px). Figma draws Bold Coastal.",
+        "CSS columns balance by height in production, so the split isn't always 5 / 5; Figma draws 5 / 5.",
+        "Blueconic serves a second template on some sites (orlandosentinel and mcall on 2026-11-02: 14 items in 300×136 cards). It isn't in Figma yet (to-do, Karl)."
+      ],
+      "production": "Production Blueconic list (`.landing-three-one .dfm-most-popular-flex-container`), homepage Zone 2. Measured on all 6 review sites at 900px, canoncitydailyrecord at 360px, ocregister and canoncitydailyrecord at 1280px (Karl resized the window), 2026-11-02."
     },
     {
       "slug": "tooltip",

@@ -133,8 +133,10 @@ def props_of(n):
         out.append(('font-family', 'fontFamily', st['font'], sv.get('fontFamily')))
         out.append(('font-size', 'dimension', st['size'], sv.get('fontSize')))
         out.append(('font-weight', 'fontWeight', WEIGHT.get(st['style'].replace(' Italic', '').replace('Italic', 'Regular'), 400), sv.get('fontStyle') or sv.get('fontWeight')))
-        if st['lineHeight'] != 'auto':
-            out.append(('line-height', 'dimension', float(st['lineHeight'].rstrip('px%')), sv.get('lineHeight')))
+        if st['lineHeight'].endswith('%'):  # Figma percent line height -> unitless number (2026-11-02; was written as px)
+            out.append(('line-height', 'number', round(float(st['lineHeight'].rstrip('%')) / 100, 4), sv.get('lineHeight')))
+        elif st['lineHeight'] != 'auto':
+            out.append(('line-height', 'dimension', float(st['lineHeight'].rstrip('px')), sv.get('lineHeight')))
         ls = float(st['letterSpacing'].rstrip('px%'))
         if st['letterSpacing'].endswith('%'):  # Figma percent of the font size -> px (2026-10-30; was written as px)
             ls = round(st['size'] * ls / 100, 3)

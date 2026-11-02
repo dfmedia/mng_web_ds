@@ -70,6 +70,8 @@ COMPONENTS = [
     ("latest-headlines-list-item", "LatestHeadlinesListItem", "Latest Headlines List Item", "WordPress Elements"),
     ("latest-headlines", "LatestHeadlines", "Latest Headlines", "WordPress Elements"),
     ("newsletter-signup", "NewsletterSignup", "Newsletter Signup", "WordPress Elements"),
+    ("blueconic-list-item", "BlueconicListItem", "Blueconic List Item", "WordPress Elements"),
+    ("blueconic-block", "BlueconicBlock", "Blueconic Block", "WordPress Elements"),
     ("masthead", "Masthead", "Masthead", "WordPress Elements"),
     ("footer", "Footer", "Footer", "WordPress Elements"),
     ("ad-blocks", "AdBlocks", "Ad Blocks", "WordPress Elements"),

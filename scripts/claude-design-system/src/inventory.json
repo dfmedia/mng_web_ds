@@ -523,9 +523,26 @@
      "component": "NewsletterSignup"
     },
     {
-     "name": "Most Popular List Item, Blueconic Block (Most Popular)",
-     "where": "Homepage, 3352:24171, 3352:20526",
-     "status": "To add"
+     "name": "Blueconic List Item",
+     "where": "Homepage, 3704:40676 (2 variants)",
+     "status": "In system",
+     "note": "Was Most Popular List Item. Built raw in production's values (a Blueconic block, Karl 2026-11-02). Device = (≤1039px), (≥1040px).",
+     "updated": "2026-11-02",
+     "component": "BlueconicListItem"
+    },
+    {
+     "name": "Blueconic Block",
+     "where": "Homepage, 3352:20526 (3 variants)",
+     "status": "In system",
+     "note": "Was Blueconic Block (Most Popular). Built raw in production's values (Karl 2026-11-02). Device = XS (≤639px), (640–1039px), (≥1040px).",
+     "updated": "2026-11-02",
+     "component": "BlueconicBlock"
+    },
+    {
+     "name": "Blueconic card template (14 items in 300×136 cards)",
+     "where": "Production only (orlandosentinel, mcall, 2026-11-02)",
+     "status": "To design",
+     "note": "A second Blueconic template; not in Figma yet (Karl, 2026-11-02)."
     },
     {
      "name": "Horizontal Feature Card",

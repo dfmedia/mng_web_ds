@@ -1,0 +1,18 @@
+<!-- @dsCard group="WordPress Elements" height=900 subtitle="Figma: Blueconic Block · 3 variants (Device = production breakpoints)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>BlueconicBlock</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['XS', 'XS (≤639px)', 340], ['(640–1039px)', '(640–1039px)', 748], ['(≥1040px)', '(≥1040px)', 940]];
+  var variants = h(I.SpecimenSection, { title: 'Device', note: 'The homepage Zone 2 Blueconic list, built raw in production’s values (a Blueconic block). Device values are production’s breakpoints: one column below 640px, two from 640px, larger list metrics from 1040px. Drawn at the Figma widths; the block fills its column.' },
+    h(I.Specimen, { items: devices.map(function (d) {
+      return { label: 'Device=' + d[1] + ' (built ' + d[2] + 'px)', width: d[2] + 32, node: h('div', { style: { width: d[2] } }, h(NS.BlueconicBlock, { device: d[0] })) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(variants);
+</script>
+</body>
+</html>

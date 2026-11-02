@@ -1,0 +1,38 @@
+/* Blueconic List Item: values from components/wordpress/blueconic-list-item (component tokens -> system tokens).
+   Raw production values on purpose (a Blueconic block; Karl, 2026-11-02). Figma draws Bold Coastal. Fills its column. */
+.mngds-blueconic-list-item { box-sizing: border-box; width: 100%; min-width: 0; margin: 0; background: var(--mng-blueconic-list-item-base-root-background); }
+.mngds-blueconic-list-item *, .mngds-blueconic-list-item *::before, .mngds-blueconic-list-item *::after { box-sizing: border-box; }
+.mngds-blueconic-list-item__link {
+  display: flex; align-items: center; width: 100%; color: inherit; text-decoration: none;
+  gap: var(--mng-blueconic-list-item-base-root-gap);
+  padding: var(--mng-blueconic-list-item-base-root-padding-top) 0 var(--mng-blueconic-list-item-base-root-padding-bottom);
+}
+/* Number circle: 32px color/theme/primary, white SemiBold 21 / 32 in the theme small-headline family (5.2-6.9:1). */
+.mngds-blueconic-list-item__number {
+  flex: 0 0 auto; display: flex; align-items: center; justify-content: center;
+  width: var(--mng-blueconic-list-item-base-bullet-number-width); height: var(--mng-blueconic-list-item-base-bullet-number-height);
+  border-radius: var(--mng-blueconic-list-item-base-bullet-number-border-radius);
+  background: var(--mng-blueconic-list-item-base-bullet-number-background);
+  color: var(--mng-blueconic-list-item-base-bullet-number-number-color);
+  font-family: var(--mng-blueconic-list-item-base-bullet-number-number-font-family);
+  font-size: var(--mng-blueconic-list-item-base-bullet-number-number-font-size);
+  font-weight: var(--mng-blueconic-list-item-base-bullet-number-number-font-weight);
+  line-height: var(--mng-blueconic-list-item-base-bullet-number-number-line-height);
+}
+/* Headline: theme heading family Bold 16, color/gray/black (21:1), 5px below (Bold Coastal's span padding). */
+.mngds-blueconic-list-item__headline {
+  flex: 1 1 0; min-width: 0;
+  padding-bottom: var(--mng-blueconic-list-item-base-headline-container-padding-bottom);
+  font-family: var(--mng-blueconic-list-item-base-headline-container-headline-font-family);
+  font-size: var(--mng-blueconic-list-item-base-headline-container-headline-font-size);
+  font-weight: var(--mng-blueconic-list-item-base-headline-container-headline-font-weight);
+  color: var(--mng-blueconic-list-item-base-headline-container-headline-color);
+  line-height: var(--mng-blueconic-list-item-device-1039px-headline-container-headline-line-height);
+}
+.mngds-blueconic-list-item--1040 .mngds-blueconic-list-item__headline {
+  line-height: var(--mng-blueconic-list-item-device-1040px-headline-container-headline-line-height);
+  letter-spacing: var(--mng-blueconic-list-item-device-1040px-headline-container-headline-letter-spacing);
+}
+.mngds-blueconic-list-item--1040 .mngds-blueconic-list-item__number { letter-spacing: var(--mng-blueconic-list-item-device-1040px-bullet-number-number-letter-spacing); }
+a.mngds-blueconic-list-item__link:hover .mngds-blueconic-list-item__headline { color: var(--mng-color-theme-primary); }
+a.mngds-blueconic-list-item__link:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }

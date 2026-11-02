@@ -1,0 +1,6 @@
+- **Built raw, as production renders it** (Karl, 2026-11-02): the block is built in Blueconic, a third-party platform we don't control like our WordPress themes, so its values stay as production has them (11.72 / 13.28px list padding, 18.75 / 21.25px column gaps), with tokens only where they match exactly. Renamed from "Blueconic Block (Most Popular)" the same day.
+- **Device values are production's breakpoints** (`.dfm-most-popular-flex-container ul`): one column below 640px, two CSS columns from 640px, larger list metrics from 1040px. The old 1024 / 1100 / Desktop width copies were removed in Figma. Future: these move to the MNG Device breakpoints when the system is standardized; not adopted yet.
+- **Columns are CSS columns** as in production, so the split follows the headlines' heights (Figma draws 5 / 5).
+- **Title** is the theme eyebrow (family, size and weight per theme) in `color/theme/primary`, as production; it isn't Section Title / Eyebrow, which is gray with a short underline.
+- **Bold Coastal is drawn:** production sets the list padding and column gap in em of the theme's eyebrow size, and Measured Vibrant has no rule; Figma and this component use Bold Coastal's values on every theme.
+- Blueconic also serves a card template on some sites (14 items in 300×136 cards, orlandosentinel and mcall on 2026-11-02); it isn't designed yet (to-do).

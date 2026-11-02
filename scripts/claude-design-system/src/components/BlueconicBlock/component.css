@@ -1,0 +1,29 @@
+/* Blueconic Block: values from components/wordpress/blueconic-block (component tokens -> system tokens).
+   Raw production values on purpose (a Blueconic block; Karl, 2026-11-02). Figma draws Bold Coastal. Fills its column
+   (Figma builds XS 340, (640–1039px) 748, (≥1040px) 940). No outer margins: the layout around it sets them. */
+.mngds-blueconic-block { box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0; background: var(--mng-blueconic-block-device-xs-639px-root-background); }
+.mngds-blueconic-block *, .mngds-blueconic-block *::before, .mngds-blueconic-block *::after { box-sizing: border-box; }
+/* Title: the theme eyebrow, uppercase, 3.5% tracking, 1.1 line height, color/theme/primary (5.2-6.9:1). */
+.mngds-blueconic-block__title {
+  margin: 0; text-transform: uppercase; letter-spacing: 0.035em;
+  font-family: var(--mng-blueconic-block-base-content-container-header-title-font-family);
+  font-size: var(--mng-blueconic-block-base-content-container-header-title-font-size);
+  font-weight: var(--mng-blueconic-block-base-content-container-header-title-font-weight);
+  line-height: var(--mng-blueconic-block-base-content-container-header-title-line-height);
+  color: var(--mng-blueconic-block-base-content-container-header-title-color);
+}
+/* List: 2px primary rule on top; padding and column gap are Bold Coastal's em values from production. */
+.mngds-blueconic-block__list {
+  list-style: none; margin: 0;
+  border-top: var(--mng-blueconic-block-base-content-container-list-border-top-width) var(--mng-blueconic-block-base-content-container-list-border-style) var(--mng-blueconic-block-base-content-container-list-border-color);
+  padding: var(--mng-blueconic-block-device-xs-639px-content-container-list-padding-top) 0 var(--mng-blueconic-block-device-xs-639px-content-container-list-padding-bottom);
+}
+.mngds-blueconic-block--m .mngds-blueconic-block__list {
+  columns: 2; column-gap: var(--mng-blueconic-block-device-640-1039px-content-container-list-gap);
+  padding: var(--mng-blueconic-block-device-640-1039px-content-container-list-padding-top) 0 var(--mng-blueconic-block-device-640-1039px-content-container-list-padding-bottom);
+}
+.mngds-blueconic-block--l .mngds-blueconic-block__list {
+  columns: 2; column-gap: var(--mng-blueconic-block-device-1040px-content-container-list-gap);
+  padding: var(--mng-blueconic-block-device-1040px-content-container-list-padding-top) 0 var(--mng-blueconic-block-device-1040px-content-container-list-padding-bottom);
+}
+.mngds-blueconic-block__item { margin: 0; padding: 0; break-inside: avoid; }

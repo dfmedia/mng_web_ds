@@ -31,7 +31,7 @@
   - [16. Article card / teaser — layout rules, excerpt color and image fit](#16-article-card--teaser--layout-rules-excerpt-color-and-image-fit)
   - [17. Zone 1 slideshow (gallery lead) — type, spacing and colors off the design tokens; slide count not announced](#17-zone-1-slideshow-gallery-lead--type-spacing-and-colors-off-the-design-tokens-slide-count-not-announced)
   - [18. Load More / Show More Photos — notch off center and colors off the design tokens](#18-load-more--show-more-photos--notch-off-center-and-colors-off-the-design-tokens)
-  - [19. Blueconic Block (Most Popular) — list spacing and item headline](#19-blueconic-block-most-popular--list-spacing-and-item-headline)
+  - [19. Blueconic Block (was Most Popular) — resolved: the design now matches production](#19-blueconic-block-was-most-popular--resolved-the-design-now-matches-production)
   - [20. Video carousel ("Videos from @OCRegister") — fixed-height iframe leaves ~200px of unused blank space at narrow (340–360px) widths](#20-video-carousel-videos-from-ocregister--fixed-height-iframe-leaves-200px-of-unused-blank-space-at-narrow-340360px-widths)
   - [21. Upcoming Events (CitySpark widget) — font family](#21-upcoming-events-cityspark-widget--font-family)
   - [22. Sponsored content badge — needs to be fixed in production](#22-sponsored-content-badge--needs-to-be-fixed-in-production)
@@ -1622,7 +1622,9 @@ When the previous / next buttons change the photo, the "1 of 29" count (`.slide-
 
 ---
 
-## 19. Blueconic Block (Most Popular) — list spacing and item headline
+## 19. Blueconic Block (was Most Popular) — resolved: the design now matches production
+
+**Resolved 2026-11-02 (Karl):** the Blueconic block is built in Blueconic, a third-party platform we don't control like our WordPress themes, so the design now matches production: WordPress Elements **Blueconic List Item** (`3704:40676`, was Most Popular List Item `3352:24171`) and **Blueconic Block** (`3352:20526`) are built raw in production's values, measured on all 6 review sites at 900px, canoncitydailyrecord at 360px and ocregister / canoncitydailyrecord at 1280px. No production change is needed for 19.1–19.3; the history below is kept for reference. Remaining notes (per-theme em values, the Bold Coastal-only 5px, the card template) are in `components/wordpress/blueconic-block/` and `blueconic-list-item/`, Known issues.
 
 **Found:** 2026-10-07, ocregister.com at 360, 768, 1024, 1100 and 1280px (homepage "Most Popular", `.dfm-most-popular-flex-container` inside `landing-three-one` → `.three-one-left`).
 
