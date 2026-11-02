@@ -585,10 +585,18 @@
      "component": "SectionRailCardWide"
     },
     {
-     "name": "TOP ZONE Block, Photos Block",
-     "where": "Homepage, 3352:19482, 3352:20865",
+     "name": "TOP ZONE Block",
+     "where": "Homepage, 3352:19482",
      "status": "To add",
-     "note": "Assemblies of the cards above."
+     "note": "Assembly of the Zone 1 cards above."
+    },
+    {
+     "name": "Photos Block",
+     "where": "Homepage, 3352:20865 (5 variants)",
+     "status": "In system",
+     "note": "Zone 7: 1Col Article Card (Media Lead), 6 Horizontal Thumbnail Cards, Show More Affordance. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02).",
+     "updated": "2026-11-02",
+     "component": "PhotosBlock"
     },
     {
      "name": "Upcoming Events: Widget, Block, Event Card, Date Picker Day, Date Picker Calendar Icon, Calendar Glyph, Header Button, Side Arrow",

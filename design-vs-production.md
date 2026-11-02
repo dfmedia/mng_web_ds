@@ -1587,6 +1587,24 @@ Everything else matches: spacing (16px `li` padding + 16px block padding, 12px p
 
 **Status:** Open. Added 2026-11-02.
 
+### 16.8 Photos Block (homepage Zone 7) — off-grid gaps, per-theme grays, thumbnail image and headline
+
+**Found:** 2026-11-02, CSS `.feature-media` read on all 6 review sites at 1728px (the same layout everywhere; only colors and the title change by theme); layout measured on mcall.com at 360, 900 and 1100px, ocregister.com at 778px and denverpost.com at 1728px. **Team:** CMS. Figma: WordPress Elements ▸ Homepage ▸ Photos Block (`3352:20865`).
+
+**Design:** matches production on the 4 / 8 grid with spacing tokens (`CLAUDE.md`, Design vs. production). Device = production's breakpoints: `XS (≤639px)`, `S (640–799px)`, `M (800–1039px)`, `L (1040–1279px)`, `XL (≥1280px)` (`components/breakpoint-audit.md`).
+
+**Production (differs from the design):**
+- **Off-grid gaps (rounded in the design):** thumbnail image to headline 15px (`.media-feature-secondary figure { margin-right: 0.9375em }`; design 16px, `spacing/200`); lead-to-list column gap 20.16px at 1040px and up (`calc(62.5% − 0.47rem)` / `calc(37.5% − 0.79rem)`, and 61.54% / 38.46% at 1040–1279; design 20px, `spacing/250`); 2-per-row gap below 1040px 20.16px (`calc(50% − 0.63rem)`; design 20px); 11.25px under the lead excerpt (`0.75em`; design 12px, `spacing/150`).
+- **Title gap:** 1em of the theme's eyebrow size (20px Bold Coastal, 17px Measured Vibrant, 21px Modern Earthy); design 20px on every theme. The title itself is entry 14.
+- **Rule between thumbnails:** #D7D6D2 Bold Coastal, #C8C4C0 Measured Vibrant, #DDD8D5 Modern Earthy; design `color/gray/500` (#CCCAC7), the Horizontal Thumbnail Card's rule. The same grays as 16.5, 16.7 and entry 18.
+- **Lead excerpt color:** #38322A Bold Coastal, #484642 Measured Vibrant, #1F1E1E Modern Earthy; design #393938 (the 1Col Article Card's excerpt).
+- **Thumbnail image:** 90 × 50.6px (16:9); design 90 × 51.
+- **Thumbnail headline:** CSS weight 600, rendered Bold (only the 400 and 700 faces load); design SemiBold. Production wraps to as many lines as needed; the design's Mobile thumbnail shows two lines with an ellipsis.
+
+**Fix:** round the gaps to the grid: `figure { margin-right: 1em }`, a 20px (`1.25rem`) gap between the lead and the list and between the two columns (for example `display: grid; gap: 1.25rem` instead of the percentage widths), and `0.8em` (12px) under the excerpt. Colors: to decide with 16.5 and 16.7 (Karl) whether the per-theme grays become tokens or production moves to `color/gray/500`.
+
+**Status:** Open. Added 2026-11-02.
+
 ---
 
 ## 17. Zone 1 slideshow (gallery lead) — type, spacing and colors off the design tokens; slide count not announced

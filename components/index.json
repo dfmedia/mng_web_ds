@@ -546,6 +546,22 @@
       "exported": "2026-11-02"
     },
     {
+      "slug": "photos-block",
+      "name": "Photos Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/photos-block/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3352:20865",
+        "set": "Photos Block"
+      },
+      "variants": 5,
+      "instances": 6,
+      "knownIssues": 4,
+      "exported": "2026-11-02"
+    },
+    {
       "slug": "section-rail-card-narrow",
       "name": "Section Rail Card Narrow",
       "group": "homepage",

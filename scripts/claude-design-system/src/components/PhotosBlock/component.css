@@ -1,0 +1,51 @@
+/* Photos Block: values from components/wordpress/photos-block (matches production on the 4 / 8 grid, 2026-11-02).
+   Fills its column: Figma builds XS 340, S 748, M 585, L 731, XL 940. */
+.mngds-photos-block {
+  box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0;
+  padding: 0 0 var(--mng-photos-block-base-root-padding-bottom) 0;      /* 32px (spacing/400) below the block */
+  background: var(--mng-photos-block-base-root-background);
+}
+.mngds-photos-block__content { display: flex; flex-direction: column; min-width: 0; background: var(--mng-photos-block-base-news-content-background); }
+/* Title, then 20px (spacing/250) to the content */
+.mngds-photos-block__header {
+  padding-bottom: var(--mng-photos-block-base-news-content-3col-header-padding-bottom);
+  background: var(--mng-photos-block-base-news-content-3col-header-background);
+}
+.mngds-photos-block__title { width: 100%; }
+/* Lead and list; 8px (spacing/100) under them, above the Show More Affordance */
+.mngds-photos-block__body {
+  display: flex; flex-direction: column; min-width: 0;
+  padding-bottom: var(--mng-photos-block-base-news-content-section-block-padding-bottom);
+}
+/* L and XL: lead beside the list, 20px (spacing/250) apart; lead 61.5% (L) / 62.5% (XL) of the row as production
+   (Figma 442 / 731 and 580 / 940). */
+.mngds-photos-block--l .mngds-photos-block__body, .mngds-photos-block--xl .mngds-photos-block__body {
+  flex-direction: row; align-items: flex-start; gap: var(--mng-photos-block-base-news-content-section-block-gap);
+}
+.mngds-photos-block--l .mngds-photos-block__lead { flex: 0 0 calc(61.5385% - 7.84px); }
+.mngds-photos-block--xl .mngds-photos-block__lead { flex: 0 0 calc(62.5% - 7.5px); }
+/* Lead (1Col Article Card, Media Lead) overrides: no bottom rule, 12px (spacing/150) headline to excerpt and below. */
+.mngds-photos-block__lead.mngds-1col-article-card { padding-bottom: var(--mng-spacing-150); }
+.mngds-photos-block__lead .mngds-1col-article-card__rule { display: none; }
+.mngds-photos-block__lead .mngds-1col-article-card__excerpt { margin-top: var(--mng-spacing-050); }
+/* Thumbnail list: XS one column; S and M 2 per row, 20px (spacing/250) apart; L and XL one column beside the lead.
+   16px (spacing/200) from each rule to the next thumbnail. */
+.mngds-photos-block__list {
+  list-style: none; margin: 0; padding: 0; min-width: 0; flex: 1 1 0;
+  display: grid; grid-template-columns: minmax(0, 1fr); row-gap: var(--mng-photos-block-base-news-content-section-block-thumbnail-list-gap);
+}
+.mngds-photos-block--s .mngds-photos-block__list, .mngds-photos-block--m .mngds-photos-block__list {
+  grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: var(--mng-photos-block-base-news-content-section-block-thumbnail-list-row-1-gap);
+}
+.mngds-photos-block__item { display: flex; min-width: 0; }
+/* Horizontal Thumbnail Card (Device = Mobile) overrides: no top / bottom padding, 16px (spacing/200) image to headline,
+   the rule 24px (spacing/300) below the content through M (production 16 + 8), 8px (spacing/100) in L and XL.
+   XS and S: 16px (spacing/200) under the image. The last thumbnail has no rule but keeps the space. */
+.mngds-photos-block__thumb.mngds-horizontal-thumbnail-card { padding: 0; gap: var(--mng-spacing-300); flex: 1 1 auto; justify-content: space-between; }
+.mngds-photos-block--l .mngds-photos-block__thumb.mngds-horizontal-thumbnail-card,
+.mngds-photos-block--xl .mngds-photos-block__thumb.mngds-horizontal-thumbnail-card { gap: var(--mng-spacing-100); }
+.mngds-photos-block__thumb .mngds-horizontal-thumbnail-card__content { gap: var(--mng-spacing-200); }
+.mngds-photos-block--xs .mngds-photos-block__thumb .mngds-horizontal-thumbnail-card__media,
+.mngds-photos-block--s .mngds-photos-block__thumb .mngds-horizontal-thumbnail-card__media { margin-bottom: var(--mng-spacing-200); }
+.mngds-photos-block__item:last-child .mngds-horizontal-thumbnail-card__rule { visibility: hidden; }
+.mngds-photos-block__more { width: 100%; }

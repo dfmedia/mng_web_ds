@@ -1266,6 +1266,32 @@
         "Per theme in production: the rule colors differ (design-vs-production 16.7)."
       ],
       "production": "Production `.landing-three-one .section-highlight` (homepage section rail beside the Blueconic Block). Measured live on ocregister.com at 1280, 1100, 900 and 700px (Karl resized the window) and the CSS checked on all 6 review sites, 2026-11-02."
+    },
+    {
+      "slug": "photos-block",
+      "name": "Photos Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 12,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3352:20865",
+      "documentationFrame": "3484:67715",
+      "description": "The homepage Photos block (production `.feature-media`, Zone 7, in the left column of `.landing-three-one`): Section Title / Eyebrow, a 1Col Article Card (Style = Media Lead) lead, 6 Horizontal Thumbnail Cards and the Show More Affordance. Device values are production's breakpoints.",
+      "rules": [
+        "**Matches production on the 4 / 8 grid** (CLAUDE.md, Design vs. production): CSS `.feature-media`, the same layout on all 6 review sites (only the title, rule and excerpt colors change by theme); measured 2026-11-02 at 360, 778, 900, 1100 and 1728px. Production values that aren't multiples of 4 are rounded to the nearest one and its token: 15px image-to-headline gap → 16 (`spacing/200`), 20.16px column gap → 20 (`spacing/250`), 11.25px under the excerpt → 12 (`spacing/150`).",
+        "**Breakpoints are production's:** `XS (≤639px)` one column (built 340), `S (640–799px)` thumbnails 2 per row (built 748), `M (800–1039px)` as S with the excerpt (built 585), `L (1040–1279px)` lead 442 beside the list 269 (built 731), `XL (≥1280px)` lead 580 beside the list 340 (built 940). The block fills its column; in L and XL the lead is 61.5% / 62.5% of the row and the list the rest less the 20px gap.",
+        "**Title:** Section Title / Eyebrow (Style = Underline, with the chevron), 20px (`spacing/250`) to the content.",
+        "**Lead:** 1Col Article Card, Style = Media Lead, with in-block overrides (the card is shared, so it isn't changed): no bottom rule, 12px (`spacing/150`) headline to excerpt, 12px (`spacing/150`) below. No excerpt in XS and S (production hides it below 800px).",
+        "**Thumbnails:** 6 Horizontal Thumbnail Cards (Device = Mobile: 90×51 image) with in-block overrides: no top or bottom padding, 16px (`spacing/200`) image to headline; the rule 24px (`spacing/300`) below the content in XS, S and M (production: the article's 16px margin plus the item's 8px padding), 8px (`spacing/100`) in L and XL; 16px (`spacing/200`) from the rule to the next thumbnail. The last thumbnail has no rule (it keeps the space below). In XS and S the image has 16px (`spacing/200`) below it (production `figure { margin-bottom: 1em }` below 800px). Items in a row share the row's height, so their rules line up. The gallery icon shows only on gallery articles.",
+        "**Show More Affordance** (Label = Show More Photos) 8px (`spacing/100`) below the content; the block has 32px (`spacing/400`) below it."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| XS (≤639px) | `wordpress-grid.xs` | One column, no excerpt | 340px | Mobile |\n| S (640–799px) | `wordpress-grid.s` | Lead, thumbnails 2 per row, no excerpt | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | Lead with excerpt, thumbnails 2 per row | 585px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | Lead 61.5% beside the list | 731px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | Lead 62.5% beside the list | 940px | Desktop |",
+      "knownIssues": [
+        "Per theme in production: the title-to-content gap is 1em of the eyebrow size (20 / 17 / 21px), and the rule (#D7D6D2 / #C8C4C0 / #DDD8D5) and lead excerpt colors differ (design-vs-production 16.8, same grays as 16.5 and 16.7).",
+        "The parts keep their own values: the Horizontal Thumbnail Card image is 90×51 (production 90×50.6, 16:9) and the 1Col Article Card excerpt is its own gray.",
+        "Production's thumbnail headline is CSS weight 600, rendered Bold (only the 400 and 700 faces load); the design is SemiBold."
+      ],
+      "production": "Production `.feature-media` (homepage Photos block, Zone 7, in `.three-one-left`). CSS read on all 6 review sites at 1728px; layout measured on mcall.com at 360, 900 and 1100px (fixed-width same-site frames inside the page, so the window wasn't resized), ocregister.com at 778px and denverpost.com at 1728px, 2026-11-02."
     }
   ]
 }

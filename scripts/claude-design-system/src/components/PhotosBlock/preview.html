@@ -1,0 +1,18 @@
+<!-- @dsCard group="WordPress Elements" height=2760 subtitle="Figma: Photos Block · 5 variants (Device = production breakpoints)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>PhotosBlock</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['XS (≤639px)', 340], ['S (640–799px)', 748], ['M (800–1039px)', 585], ['L (1040–1279px)', 731], ['XL (≥1280px)', 940]];
+  var variants = h(I.SpecimenSection, { title: 'Device', note: 'Production’s breakpoints (the same on all 6 review sites): one column below 640px; thumbnails 2 per row from 640px (the lead’s excerpt from 800px); the lead beside the list from 1040px. Drawn at the Figma widths; the block fills its column. The gallery icon shows only on gallery articles.' },
+    h(I.Specimen, { items: devices.map(function (d) {
+      return { label: 'Device=' + d[0] + ' (built ' + d[1] + 'px)', width: d[1] + 32, node: h('div', { style: { width: d[1] } }, h(NS.PhotosBlock, { device: d[0] })) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(variants);
+</script>
+</body>
+</html>
