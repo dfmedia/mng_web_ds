@@ -1,7 +1,7 @@
 /* Blueconic Block: values from components/wordpress/blueconic-block (component tokens -> system tokens).
    Raw production values on purpose (a Blueconic block; Karl, 2026-11-02). Figma draws Bold Coastal. Fills its column
    (Figma builds XS 340, (640–1039px) 748, (≥1040px) 940). No outer margins: the layout around it sets them. */
-.mngds-blueconic-block { box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0; background: var(--mng-blueconic-block-device-xs-639px-root-background); }
+.mngds-blueconic-block { box-sizing: border-box; display: flex; flex-direction: column; width: 100%; min-width: 0; margin: 0; background: var(--mng-blueconic-block-base-root-background); }
 .mngds-blueconic-block *, .mngds-blueconic-block *::before, .mngds-blueconic-block *::after { box-sizing: border-box; }
 /* Title: the theme eyebrow, uppercase, 3.5% tracking, 1.1 line height, color/theme/primary (5.2-6.9:1). */
 .mngds-blueconic-block__title {
