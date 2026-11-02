@@ -586,9 +586,11 @@
     },
     {
      "name": "TOP ZONE Block",
-     "where": "Homepage, 3352:19482",
-     "status": "To add",
-     "note": "Assembly of the Zone 1 cards above."
+     "where": "Homepage, 3352:19482 (5 variants)",
+     "status": "In system",
+     "note": "Zone 1: Zone 1 Lead Article Card, 4 TopZone Article Cards, Latest Headlines, the Cube ad. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02).",
+     "updated": "2026-11-02",
+     "component": "TopZoneBlock"
     },
     {
      "name": "Photos Block",

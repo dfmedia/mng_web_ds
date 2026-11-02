@@ -1292,6 +1292,32 @@
         "Production's thumbnail headline is CSS weight 600, rendered Bold (only the 400 and 700 faces load); the design is SemiBold."
       ],
       "production": "Production `.feature-media` (homepage Photos block, Zone 7, in `.three-one-left`). CSS read on all 6 review sites at 1728px; layout measured on mcall.com at 360, 900 and 1100px (fixed-width same-site frames inside the page, so the window wasn't resized), ocregister.com at 778px and denverpost.com at 1728px, 2026-11-02."
+    },
+    {
+      "slug": "top-zone-block",
+      "name": "TOP ZONE Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "order": 13,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3352:19482",
+      "documentationFrame": "3484:67592",
+      "description": "The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad. Device values are production's breakpoints.",
+      "rules": [
+        "**Matches production on the 4 / 8 grid** (CLAUDE.md, Design vs. production): the Zone 1 CSS (`.busy`, `.feature-wrapper`, `.feature-left`, `.feature-top`, `.feature-bottom`, `.headline-list`, `.sidebar-ad-container`) is identical on all 6 review sites; measured 2026-11-02 at 360, 778, 900, 1100, 1280 and 1728px. Production's 20.16px column gaps are 20 (`spacing/250`).",
+        "**Breakpoints are production's:** `XS (≤639px)` stacked (built 340), `S (640–799px)` stacked, story cards 2 per row (built 748), `M (800–1039px)` Feature Wrapper beside the ad column (built 989), `L (1040–1279px)` (built 1065), `XL (≥1280px)` (built 1260). The block fills its row.",
+        "**Lead Column:** Zone 1 Lead Article Card (Device = Mobile in XS, M and L; Tablet in S; Desktop in XL), 20px (`spacing/250`) to the Secondary Stories: 4 TopZone Article Cards with the block's Device, 16px (`spacing/200`) between rows; 2 per row, 20px (`spacing/250`) apart, in S, M and XL; one column in XS and L.",
+        "**XS and S:** Lead Column, Latest Headlines (Device = XS / S) and the Cube ad (300×250, centered), 32px (`spacing/400`) apart (production `margin-bottom: 2em` and the ad's `margin-top: 2em`).",
+        "**M, L, XL:** the Feature Wrapper (Lead Column, 20px (`spacing/250`), Latest Headlines (Device = (≥800px))) beside the ad column (Cube 300×1050). Widths as production's percentages: M wrapper 689 = row less the 300px ad (Lead Column 60% − 8 = 405, Latest Headlines 40% − 12 = 264) and **no gap before the ad** (production: `flex-wrap: nowrap` lets the 300px ad push the wrapper; see knownIssues); L wrapper 69.2% − 6 = 731 (500 / 211), 20px, ad column 30.8% − 14 = 314; XL wrapper 75% − 5 = 940 (700 / 220), 20px, ad column 25% − 15 = 300.",
+        "**Bottom space:** L and XL 32px (`spacing/400`) below (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px); XS, S and M none inside the block (the page's 32px between blocks is outside)."
+      ],
+      "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| XS (≤639px) | `wordpress-grid.xs` | Stacked; story cards one column; Latest Headlines max 540px, centered | 340px | Mobile |\n| S (640–799px) | `wordpress-grid.s` | Stacked; story cards 2 per row | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | Feature Wrapper (60% / 40%) beside the 300px ad, no gap | 989px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | Wrapper 69.2% (69.2% / 30.8%), ad column 30.8% | 1065px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | Wrapper 75% (75% / 25%), ad column 25% | 1260px | Desktop |",
+      "knownIssues": [
+        "At 800–1039px production leaves no space between Latest Headlines and the ad (the 40% ad column is narrower than the 300px ad, so the ad fills it and pushes the wrapper). The design keeps production's 0; design-vs-production 16.9 asks whether it should be 20px.",
+        "Production can show more in Zone 1 under the story cards (on mcall.com a video player and a promotion widget); they aren't part of this block.",
+        "The Zone 1 Lead Article Card and Latest Headlines keep their own values and variants (Lead: Device = Desktop / Tablet / Mobile, not renamed yet)."
+      ],
+      "production": "Production `section.feature-primary.busy` (homepage Zone 1). CSS read on all 6 review sites at 1728px (identical); layout measured on mcall.com at 360, 778, 900, 1100 and 1280px (fixed-width same-site frames inside the page, so the window wasn't resized) and at 1728px, 2026-11-02."
     }
   ]
 }

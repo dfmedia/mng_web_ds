@@ -1,0 +1,4 @@
+- **Matches production on the 4 / 8 grid** (2026-11-02): the Zone 1 CSS is identical on all 6 review sites. Production's 20.16px column gaps are 20 (`spacing/250`); the widths are production's percentages, so the block fills any row.
+- **No gap before the ad at M (800–1039px)**, as production: its 40% ad column is narrower than the 300px ad, so the ad pushes the wrapper (design-vs-production 16.9 asks whether it should be 20px).
+- **Bottom space:** 32px (`spacing/400`) from L only (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px). The exported token sits under `base` because the exporter leaves out the other variants' 0.
+- **The parts keep their own variants:** the Zone 1 Lead Article Card is Mobile in XS, M and L, Tablet in S and Desktop in XL (as Figma); Latest Headlines uses its `(≥800px)` variant from M.

@@ -78,6 +78,7 @@ COMPONENTS = [
     ("section-rail-card-narrow", "SectionRailCardNarrow", "Section Rail Card Narrow", "WordPress Elements"),
     ("section-rail-card-wide", "SectionRailCardWide", "Section Rail Card Wide", "WordPress Elements"),
     ("photos-block", "PhotosBlock", "Photos Block", "WordPress Elements"),
+    ("top-zone-block", "TopZoneBlock", "TOP ZONE Block", "WordPress Elements"),
     ("masthead", "Masthead", "Masthead", "WordPress Elements"),
     ("footer", "Footer", "Footer", "WordPress Elements"),
     ("ad-blocks", "AdBlocks", "Ad Blocks", "WordPress Elements"),

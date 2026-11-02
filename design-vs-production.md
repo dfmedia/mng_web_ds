@@ -1605,6 +1605,21 @@ Everything else matches: spacing (16px `li` padding + 16px block padding, 12px p
 
 **Status:** Open. Added 2026-11-02.
 
+### 16.9 TOP ZONE Block (homepage Zone 1) — 20.16px gaps and no space before the ad at 800–1039px
+
+**Found:** 2026-11-02, the Zone 1 CSS (`section.feature-primary.busy`, `.feature-wrapper`, `.feature-left`, `.feature-top`, `.feature-bottom`, `.headline-list`, `.sidebar-ad-container`) read on all 6 review sites at 1728px (identical); layout measured on mcall.com at 360, 778, 900, 1100, 1280 and 1728px. **Team:** CMS. Figma: WordPress Elements ▸ Homepage ▸ TOP ZONE Block (`3352:19482`).
+
+**Design:** matches production on the 4 / 8 grid with spacing tokens (`CLAUDE.md`, Design vs. production): Device = production's breakpoints `XS (≤639px)`, `S (640–799px)`, `M (800–1039px)`, `L (1040–1279px)`, `XL (≥1280px)` (`components/breakpoint-audit.md`); column widths are production's percentages.
+
+**Production (differs from the design):**
+- **Column gaps 20.16px:** the columns are percentages with `justify-content: space-between` (wrapper `calc(75% − 0.32rem)` / ad `calc(25% − 0.94rem)` from 1280px, `calc(69.2308% − 0.39rem)` / `calc(30.7692% − 0.87rem)` at 1040–1279, the same pairs inside the wrapper, `60% − 0.5rem` / `40% − 0.75rem` at 800–1039, and the story cards `50%` less 10.08px), so every gap is 20.16px; the design is 20px (`spacing/250`).
+- **No space before the ad at 800–1039px:** `.feature-primary { flex-wrap: nowrap }` with a `calc(40% − 0.75rem)` ad column narrower than the 300px ad, so the ad pushes the wrapper and Latest Headlines touches it (0px; measured at 900px: wrapper 565, ad 565–865). The design keeps 0 to match; a 20px gap like the other widths is probably what was meant.
+- **Extra content in Zone 1:** on mcall.com a video player (400px) and a promotion widget sit under the story cards; not part of the design's block.
+
+**Fix:** use a 20px (`1.25rem`) `gap` instead of the percentage arithmetic, and give the ad column at 800–1039px a 20px gap (to decide with Karl: design and production both 0 today).
+
+**Status:** Open. Added 2026-11-02.
+
 ---
 
 ## 17. Zone 1 slideshow (gallery lead) — type, spacing and colors off the design tokens; slide count not announced

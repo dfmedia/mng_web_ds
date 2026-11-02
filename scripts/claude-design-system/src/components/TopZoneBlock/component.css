@@ -1,0 +1,48 @@
+/* TOP ZONE Block: values from components/wordpress/top-zone-block (matches production on the 4 / 8 grid, 2026-11-02).
+   Fills its row: Figma builds XS 340, S 748, M 989, L 1065, XL 1260. Column widths are production's percentages
+   (.busy .feature-wrapper / .feature-left / .headline-list / .sidebar-ad-container); its 20.16px gaps are 20 (spacing/250). */
+.mngds-top-zone-block {
+  box-sizing: border-box; display: flex; width: 100%; min-width: 0; margin: 0;
+  background: var(--mng-top-zone-block-base-root-background);
+}
+/* XS, S: stacked, 32px (spacing/400) apart: Lead Column, Latest Headlines, the ad (centered) */
+.mngds-top-zone-block--xs, .mngds-top-zone-block--s { flex-direction: column; gap: var(--mng-top-zone-block-device-xs-639px-root-gap); }
+/* M, L, XL: Feature Wrapper beside the ad column, top-aligned */
+.mngds-top-zone-block--m, .mngds-top-zone-block--l, .mngds-top-zone-block--xl { flex-direction: row; align-items: flex-start; }
+.mngds-top-zone-block--l, .mngds-top-zone-block--xl {
+  gap: var(--mng-top-zone-block-device-l-1040-1279px-root-gap);                      /* 20px (spacing/250) */
+  padding-bottom: var(--mng-top-zone-block-base-root-padding-bottom);                /* 32px (spacing/400), from 1040px */
+}
+/* M: no gap before the ad (production's 40% ad column is narrower than the 300px ad). */
+.mngds-top-zone-block__wrapper {
+  display: flex; flex-direction: row; align-items: flex-start; flex: 1 1 0; min-width: 0;
+  gap: var(--mng-top-zone-block-base-feature-wrapper-gap);
+}
+.mngds-top-zone-block__lead-column {
+  display: flex; flex-direction: column; flex: 1 1 0; min-width: 0;
+  gap: var(--mng-top-zone-block-base-lead-column-gap);                               /* 20px (spacing/250) lead to stories */
+}
+.mngds-top-zone-block--xs .mngds-top-zone-block__lead-column, .mngds-top-zone-block--s .mngds-top-zone-block__lead-column { flex: none; }
+.mngds-top-zone-block__lead { width: 100%; }
+/* Latest Headlines width: M 40% − 12px of the wrapper; L 30.77% − 13.92px; XL 25% − 15.04px (Figma 264 / 211 / 220). */
+.mngds-top-zone-block--m .mngds-top-zone-block__latest { flex: 0 0 calc(40% - 12px); min-width: 0; }
+.mngds-top-zone-block--l .mngds-top-zone-block__latest { flex: 0 0 calc(30.7692% - 13.92px); min-width: 0; }
+.mngds-top-zone-block--xl .mngds-top-zone-block__latest { flex: 0 0 calc(25% - 15.04px); min-width: 0; }
+/* Secondary stories: 16px (spacing/200) between rows; 2 per row, 20px (spacing/250) apart, in S, M and XL. */
+.mngds-top-zone-block__stories {
+  list-style: none; margin: 0; padding: 0; min-width: 0;
+  display: grid; grid-template-columns: minmax(0, 1fr);
+  row-gap: var(--mng-top-zone-block-base-lead-column-secondary-stories-gap);
+}
+.mngds-top-zone-block--s .mngds-top-zone-block__stories, .mngds-top-zone-block--m .mngds-top-zone-block__stories,
+.mngds-top-zone-block--xl .mngds-top-zone-block__stories {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--mng-top-zone-block-base-feature-wrapper-lead-column-secondary-stories-row-1-gap);
+}
+.mngds-top-zone-block__story { display: flex; min-width: 0; }
+.mngds-top-zone-block__story > * { width: 100%; }
+/* Ad column: the Cube centered. XS, S full width (300x250); M 300px; L 30.77% − 13.92px; XL 25% − 15.04px (Figma 314 / 300). */
+.mngds-top-zone-block__rail { display: flex; flex-direction: column; align-items: center; min-width: 0; }
+.mngds-top-zone-block--m .mngds-top-zone-block__rail { flex: 0 0 var(--mng-top-zone-block-device-m-800-1039px-right-rail-width); }
+.mngds-top-zone-block--l .mngds-top-zone-block__rail { flex: 0 0 calc(30.7692% - 13.92px); }
+.mngds-top-zone-block--xl .mngds-top-zone-block__rail { flex: 0 0 calc(25% - 15.04px); }

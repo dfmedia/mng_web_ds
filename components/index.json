@@ -626,6 +626,22 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "top-zone-block",
+      "name": "TOP ZONE Block",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/top-zone-block/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3352:19482",
+        "set": "TOP ZONE Block"
+      },
+      "variants": 5,
+      "instances": 6,
+      "knownIssues": 4,
+      "exported": "2026-11-02"
+    },
+    {
       "slug": "account-menu",
       "name": "AccountMenu",
       "group": "navigation",
