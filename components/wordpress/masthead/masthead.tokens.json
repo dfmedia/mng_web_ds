@@ -11,7 +11,7 @@
       },
       "production": "WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / `--not-top`), audited on the 6 review sites 2026-09-15 (`components/breakpoint-audit.md`), logged out and as an ad-free subscriber. Gaps: design-vs-production 9, 10, 11, 24 and 33.",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-02"
     }
   },
   "masthead": {
@@ -1838,11 +1838,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -1856,6 +1856,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -1884,11 +1891,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -1902,6 +1909,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -1930,11 +1944,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -1948,6 +1962,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -1976,11 +1997,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -1994,6 +2015,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2022,11 +2050,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2040,6 +2068,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2068,11 +2103,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2086,6 +2121,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2114,11 +2156,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2132,6 +2174,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2160,11 +2209,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2178,6 +2227,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2206,11 +2262,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2224,6 +2280,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2252,11 +2315,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2270,6 +2333,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2298,11 +2368,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2316,6 +2386,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -2487,11 +2564,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -2505,6 +2582,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             }
@@ -4500,11 +4584,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4518,6 +4602,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4546,11 +4637,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4564,6 +4655,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4592,11 +4690,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4610,6 +4708,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4638,11 +4743,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4656,6 +4761,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4684,11 +4796,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4702,6 +4814,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4730,11 +4849,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4748,6 +4867,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4776,11 +4902,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4794,6 +4920,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4822,11 +4955,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4840,6 +4973,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4868,11 +5008,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4886,6 +5026,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4914,11 +5061,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4932,6 +5079,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             },
@@ -4960,11 +5114,11 @@
               },
               "font-size": {
                 "$type": "dimension",
-                "$value": "{font.size.16}",
+                "$value": "{font.size.15}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Type Primitives/font/size/16"
+                      "variable": "Type Primitives/font/size/15"
                     }
                   }
                 }
@@ -4978,6 +5132,13 @@
                       "variable": "Type Primitives/font/style/bold"
                     }
                   }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             }

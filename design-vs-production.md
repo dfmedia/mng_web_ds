@@ -1373,6 +1373,23 @@ The headline's flex/width allocation fails to shrink correctly relative to the f
 
 **Fix:** change the border color to the gray/400 value (#A7A6A3). The obituaries masthead's own #CCCCCC border goes away with entry 24.
 
+### 9.4 Top nav items — CSS asks for semi-bold but renders Bold; row height and wrapping
+
+**Found:** 2026-11-02. CSS read on all 6 review sites (identical rules); what renders measured in Chrome on one site per theme (ocregister.com Bold Coastal, chicagotribune.com Measured Vibrant, mcall.com Modern Earthy) at 1046px (1040–1279 tier) and 1286px (1280 and up), plus ocregister.com at 1920px. **Team:** CMS. Figma: WordPress Elements ▸ Menus and Parts ▸ `Masthead` (`456:2572`), the Top Nav row in the XL-Desktop Home, SectionFront and Article variants (Default and AdFree).
+
+**Production:** `.nav-primary .menu > li > a { font: 600 0.9375em/1.73333 "Noto Sans" }` = 15px, weight 600, 26px line height, at every desktop width (an earlier `700 1em/1` rule is overridden; the `max-width: 79.9375em` rule keeps 15px). But the themes' Google Fonts request (`family=Noto+Sans:400,700,800|Noto+Serif:…`) loads no 600 face, so the browser draws weight 600 with the **700 (Bold)** file. Checked two ways on all three themes: `document.fonts.load('600 15px "Noto Sans"')` returns the 700 face, and every nav item's rendered width equals Bold's to the hundredth of a pixel (e.g. "Entertainment" 109.88px Bold vs. 101.82px Regular). Same pattern as the Headline List Item and Related Article List Item (600 in CSS, rendered Bold).
+
+**Design (changed 2026-11-02, Karl):** the nav items match what renders: Noto Sans **Bold 15** (`font/size/15`, `font/style/bold`), **26px** line height (no line-height token), `color/gray/min` on `color/gray/max` (18.4:1). Was Bold 16 (`font/size/16`) with auto line height (22px). The row grew from 54 to 58px (16px padding, `spacing/200`, above and below, unchanged).
+
+**Production differs from the design:**
+- **Weight:** CSS 600, rendered 700. Either is fine visually today because 600 isn't loaded; set the CSS to 700 so the code says what renders. If semi-bold is ever wanted, load the 600 face and tell design, because the design would change too.
+- **Row height:** production's nav row is 48px (26px items, about 11px above and below); the design's is 58px (16px). Karl kept the 16px padding for now (2026-11-02); to decide later (the 4 / 8 grid value would be 12px, `spacing/150`, a 50px row).
+- **Wrapping at 1040–1279px:** items wrap onto two lines (52px tall; the nav row stays 48px). At 1046px: "Chicago / Magazine" on chicagotribune.com; "Local / News", "Photos and / Videos" and "Public / Notices" on mcall.com; nothing on ocregister.com (8 items). At 1234px only "Chicago Magazine" still wraps; at 1286px nothing wraps. The design doesn't show wrapping. Related to 9.1 (the row is still 1102px wide at 1046px on chicagotribune.com).
+
+**Fix:** set `.nav-primary .menu > li > a` to `font-weight: 700`; add `white-space: nowrap` to the nav links together with the overflow fix in 9.1.
+
+**Status:** Open. Added 2026-11-02.
+
 ---
 
 ## 10. Navigation menus — avatar, hidden duplicate links and device-class timing
