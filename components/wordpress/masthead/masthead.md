@@ -9,7 +9,7 @@ component_key: 5cf04e3021e4ccd5357b9d77f3d03e02ed41dc28
 variants: 90
 tokens: masthead.tokens.json
 skeleton: masthead.html
-exported: 2026-10-30
+exported: 2026-11-02
 ---
 
 # Masthead
@@ -34,11 +34,11 @@ exported: 2026-10-30
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×500 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
+| `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×504 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
 | `Default / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [456:3394](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3394) | 0 | ![](previews/masthead--default-xl-desktop-1040px-obituaries.png) |
 | `Default / XL-Desktop (≥1040px) / Dashboard` | 1280×144 | [456:2715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2715) | 7 | ![](previews/masthead--default-xl-desktop-1040px-dashboard.png) |
-| `Default / XL-Desktop (≥1040px) / Home` | 1040×500 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
-| `Default / XL-Desktop (≥1040px) / Article` | 1040×500 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
+| `Default / XL-Desktop (≥1040px) / Home` | 1040×504 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
+| `Default / XL-Desktop (≥1040px) / Article` | 1040×504 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
 | `Default / LG-TabletH (800–1039px) / SectionFront` | 1024×346 | [456:2896](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2896) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-sectionfront.png) |
 | `Default / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [456:3653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3653) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-obituaries.png) |
 | `Default / LG-TabletH (800–1039px) / Dashboard` | 1024×64 | [456:2996](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2996) | 6 | ![](previews/masthead--default-lg-tableth-800-1039px-dashboard.png) |
@@ -59,10 +59,10 @@ exported: 2026-10-30
 | `Default / XS-Fold (≤639px · built 340px) / Dashboard` | 340×104 | [456:3324](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3324) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-dashboard.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Home` | 340×180 | [736:2450](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-2450) | 1 | ![](previews/masthead--default-xs-fold-639px-built-340px-home.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Article` | 340×180 | [824:5197](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5197) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-article.png) |
-| `AdFree / XL-Desktop (≥1040px) / SectionFront` | 1040×218 | [822:3434](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=822-3434) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-sectionfront.png) |
+| `AdFree / XL-Desktop (≥1040px) / SectionFront` | 1040×222 | [822:3434](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=822-3434) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-sectionfront.png) |
 | `AdFree / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [827:6067](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-6067) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-obituaries.png) |
-| `AdFree / XL-Desktop (≥1040px) / Home` | 1040×218 | [819:1845](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1845) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-home.png) |
-| `AdFree / XL-Desktop (≥1040px) / Article` | 1040×218 | [824:4625](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4625) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-article.png) |
+| `AdFree / XL-Desktop (≥1040px) / Home` | 1040×222 | [819:1845](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1845) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-home.png) |
+| `AdFree / XL-Desktop (≥1040px) / Article` | 1040×222 | [824:4625](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4625) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-article.png) |
 | `AdFree / LG-TabletH (800–1039px) / SectionFront` | 1024×64 | [823:3812](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3812) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-sectionfront.png) |
 | `AdFree / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [827:5676](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5676) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-obituaries.png) |
 | `AdFree / LG-TabletH (800–1039px) / Home` | 1024×64 | [823:3758](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3758) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-home.png) |
@@ -129,8 +129,8 @@ exported: 2026-10-30
 
 Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers marked):
 
-- **Device=XL-Desktop (≥1040px), State=Default, Page=SectionFront** `COMPONENT`: 1040×500, vertical, gap 0, padding 0/0/0/0, fixed×hug
-  - **Masthead Container** `FRAME`: 1040×500, vertical, gap 0, padding 0/0/0/0, fill×hug
+- **Device=XL-Desktop (≥1040px), State=Default, Page=SectionFront** `COMPONENT`: 1040×504, vertical, gap 0, padding 0/0/0/0, fixed×hug
+  - **Masthead Container** `FRAME`: 1040×504, vertical, gap 0, padding 0/0/0/0, fill×hug
     - **MastheadTop** `FRAME`: 1040×64, vertical, gap 8, padding 0/0/0/0, fill×hug
       - **Menus Container** `FRAME`: 1040×64, horizontal, gap 14, padding 0/0/0/0, fill×fixed
         - **SectionMenu** `INSTANCE`: 300×64, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of SectionMenu (View=Closed, Device=XL-Desktop, UserType=all)
@@ -160,19 +160,19 @@ Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers
       - **Weather Bug** `INSTANCE`: 345×42, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead)
       - **Section Name** `TEXT`: 278×54, hug×hug, "Section Name", Noto Serif Bold 40px
       - **Ad Blocks** `INSTANCE`: 320×50, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Ad Blocks (Device=All, Name=Sponsorship 1 320x50)
-    - **Container** `FRAME`: 1040×54, vertical, gap 0, padding 0/0/0/0, fill×hug
-      - **Menu** `FRAME`: 1145×54, horizontal, gap 32, padding 16/0/16/0, hug×hug
-        - **Menu Item** `TEXT`: 104×22, hug×hug, "Food & Drink", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 57×22, hug×hug, "Movies", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 47×22, hug×hug, "Music", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 117×22, hug×hug, "Theater & Arts", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 62×22, hug×hug, "Casinos", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 49×22, hug×hug, "Travel", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 49×22, hug×hug, "Books", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 57×22, hug×hug, "Comics", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 53×22, hug×hug, "Events", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 155×22, hug×hug, "Amusements Parks", Noto Sans Bold 16px
-        - **Menu Item** `TEXT`: 75×22, hug×hug, "Shopping", Noto Sans Bold 16px
+    - **Container** `FRAME`: 1040×58, vertical, gap 0, padding 0/0/0/0, fill×hug
+      - **Menu** `FRAME`: 1093×58, horizontal, gap 32, padding 16/0/16/0, hug×hug
+        - **Menu Item** `TEXT`: 97×26, hug×hug, "Food & Drink", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 53×26, hug×hug, "Movies", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 44×26, hug×hug, "Music", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 109×26, hug×hug, "Theater & Arts", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 58×26, hug×hug, "Casinos", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 46×26, hug×hug, "Travel", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 46×26, hug×hug, "Books", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 54×26, hug×hug, "Comics", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 50×26, hug×hug, "Events", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 145×26, hug×hug, "Amusements Parks", Noto Sans Bold 15px
+        - **Menu Item** `TEXT`: 71×26, hug×hug, "Shopping", Noto Sans Bold 15px
       - **Divider** `LINE`: 1040×0, fill×fixed
     - **Trending** `FRAME`: 1040×36, horizontal, gap 32, padding 8/40/8/40, fill×hug
       - **Trending Label** `TEXT`: 78×19, hug×hug, "Trending:", Noto Sans Bold 14px
@@ -369,48 +369,59 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.container.padding-top` | `{spacing.200}` |
 | `masthead.base.masthead-container.container.container.business.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.business.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.business.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.business.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.business.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.business.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.entertainment.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.entertainment.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.entertainment.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.entertainment.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.entertainment.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.entertainment.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.fakeville-local.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.fakeville-local.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.fakeville-local.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.fakeville-local.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.fakeville-local.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.fakeville-local.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.news.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.news.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.news.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.news.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.news.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.news.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.obituaries.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.obituaries.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.obituaries.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.obituaries.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.obituaries.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.obituaries.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.politics.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.politics.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.politics.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.politics.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.politics.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.politics.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.public-notices.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.public-notices.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.public-notices.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.public-notices.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.public-notices.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.public-notices.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.sponsored-content.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.sponsored-content.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.sponsored-content.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.sponsored-content.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.sponsored-content.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.sponsored-content.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.sportsball.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.sportsball.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.sportsball.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.sportsball.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.sportsball.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.sportsball.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.stuff-happening.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.stuff-happening.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.stuff-happening.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.stuff-happening.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.stuff-happening.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.stuff-happening.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.suburbs.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.suburbs.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.container.suburbs.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.container.suburbs.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.container.suburbs.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.container.suburbs.line-height` | 26px |
 | `masthead.base.masthead-container.container.container.vector.background` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.vector.height` | 22.89px |
 | `masthead.base.masthead-container.container.container.vector.width` | 15.79px |
@@ -429,8 +440,9 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.menu.width` | 1202px |
 | `masthead.base.masthead-container.container.menu.menu-item.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.menu.menu-item.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.menu.menu-item.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.container.menu.menu-item.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.container.menu.menu-item.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.menu.menu-item.line-height` | 26px |
 | `masthead.base.masthead-container.container.section-menu-desktop.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.container.section-menu-desktop.height` | 64px |
 | `masthead.base.masthead-container.container.section-menu-desktop.padding-right` | `{spacing.500}` |
@@ -635,48 +647,59 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.top-nav-container.top-nav.width` | 1202px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.business.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.business.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.business.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.business.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.business.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.business.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.entertainment.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.entertainment.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.entertainment.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.entertainment.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.entertainment.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.entertainment.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.fakeville-local.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.fakeville-local.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.fakeville-local.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.fakeville-local.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.fakeville-local.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.fakeville-local.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.news.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.news.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.news.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.news.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.news.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.news.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.obituaries.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.obituaries.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.obituaries.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.obituaries.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.obituaries.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.obituaries.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.politics.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.politics.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.politics.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.politics.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.politics.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.politics.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.public-notices.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.public-notices.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.public-notices.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.public-notices.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.public-notices.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.public-notices.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.sponsored-content.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.sponsored-content.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.sponsored-content.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.sponsored-content.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.sponsored-content.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.sponsored-content.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.sportsball.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.sportsball.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.sportsball.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.sportsball.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.sportsball.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.sportsball.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.stuff-happening.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.stuff-happening.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.stuff-happening.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.stuff-happening.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.stuff-happening.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.stuff-happening.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.suburbs.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.suburbs.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.suburbs.font-size` | `{font.size.16}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.suburbs.font-size` | `{font.size.15}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.suburbs.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.suburbs.line-height` | 26px |
 | `masthead.base.masthead-container.top-nav-container.trending.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.top-nav-container.trending.gap` | `{spacing.400}` |
 | `masthead.base.masthead-container.top-nav-container.trending.padding-bottom` | `{spacing.100}` |
@@ -1273,7 +1296,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 - **Bar:** `color/gray/max`; every variant ends in a 1px `color/gray/400` rule (production #9D9A98, design-vs-production 9.3).
 - **Below 1040px:** one 64px row: hamburger (SectionMenu) left, logo centered, account icon or avatar (AccountMenu) and search right. The Top Leaderboard sits under the rule: 970x250 at 800–1039px and 728x90 at 640–799px with 16px (`spacing/200`) around it; 320x50 at 360px and 320x100 at 340px with 8px (`spacing/100`) around it.
 - **1040px and up, top of the page:** a 64px menus row (All Sections left; Subscribe / Log In or the avatar, then search, 40px `spacing/500` right padding); the weather, date and logo row with Sponsorship 1 320x50 (8px `spacing/100` top and bottom, 40px `spacing/500` sides); the Top Nav (16px `spacing/200` top and bottom, items 32px `spacing/400` apart, centered); the rule; the Trending row (8px top and bottom, 40px sides, 32px apart); then the Top Leaderboard 970x250 with 16px above and below.
-- **Type:** Top Nav items Noto Sans Bold 16 `color/gray/min` (18.4:1). Trending label Noto Sans Bold 14 uppercase `color/theme/primary` (4.75:1 or more on every site; 5.5:1 Bold Coastal); Trending items Noto Sans Regular 15 `color/gray/min`. Section front: the section name under the logo.
+- **Type:** Top Nav items Noto Sans Bold 15 (`font/size/15`, `font/style/bold`), 26px line height, `color/gray/min` (18.4:1); matches what production renders (Karl, 2026-11-02; was Bold 16, auto line height). Production's CSS is 15px / 600 / 26px, but the themes load only the 400, 700 and 800 Noto Sans faces, so it renders Bold (design-vs-production 9.4). Trending label Noto Sans Bold 14 uppercase `color/theme/primary` (4.75:1 or more on every site; 5.5:1 Bold Coastal); Trending items Noto Sans Regular 15 `color/gray/min`. Section front: the section name under the logo.
 - **Top Nav overflow:** the row keeps its natural width and is clipped at both edges when a site has more items than fit (11 on Chicago Tribune and Orlando Sentinel), as production does (design-vs-production 9.1).
 - **Scroll (Scrolled / AdFree-Scrolled):** after about 450px of scrolling (production adds `.headroom--not-top`) the masthead becomes a 64px bar fixed to the top of the viewport, with the rule and `shadow/masthead` (0 3px 3px, black 25%, production's value). The ads under it scroll away. No shadow at the top of the page. On articles at 1040px and up the bar shows the section name, headline and share buttons instead of All Sections / Subscribe / Log In.
 - **Subscribers (AdFree, AdFree-Scrolled):** no ads; the avatar (AccountMenu, loggedIn) replaces Subscribe / Log In. Below 1040px the subscriber bar is the same at the top and when scrolled. AdFree-Scrolled for Home, Section Front and Article added 2026-10-30 (Karl).
@@ -1302,12 +1325,14 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 ## Known issues
 
 1. The Top Nav overflow at 1040–1322px is built in on purpose to match production (design-vs-production 9.1).
-2. Article, Scrolled, XL-Desktop: in Figma the logo touches the section name (the row's content is wider than 1040px with space-between); production's headline overlap is design-vs-production 9.2. Found 2026-10-30.
-3. Obituaries and Dashboard variants aren't audited for the design system yet (open item 17): they keep raw 14px and 2px gaps and 3px / 5px radii.
-4. The 7px top and bottom padding of the weather row (Home, Section Front, Article, Dashboard) was rounded to 8px (`spacing/100`) on 2026-10-30; the row height didn't change. Production not measured.
-5. The logo is the Fakeville Daily News placeholder drawn as vectors, not an instance of the Logo component (status open item 10(d)).
-6. The search bar's own shadow (production 0 3px 3px, 25%) hasn't been checked.
-7. **Values not bound to a token** (literal in the component tokens): `base` button-frame.button border-radius = 5px; `base` button-frame.powered-by-container gap = 2px; `base` button-frame.search-container.search-field gap = 8px; `base` container.button-frame.button border-radius = 5px; `base` container.container.container.search-field border-radius = 3px; `base` container.container.container.search-field gap = 8px; `base` masthead-container gap = 14px; `base` masthead-container.container gap = 14px; `base` masthead-container.header gap = 14px; `base` masthead-container.masthead-container gap = 14px; `base` masthead-container.mastheadtop.menus-container gap = 14px; `base` masthead-container.menus-container gap = 14px; and 17 more.
+2. The Top Nav row is 58px tall (16px `spacing/200` above and below the 26px items); production's is 48px (about 11px). Karl kept 16px for now (2026-11-02; design-vs-production 9.4). The 26px line height has no token.
+3. At 1040–1279px production wraps long nav items onto two lines (Chicago Tribune "Chicago Magazine"; Morning Call "Local News", "Photos and Videos", "Public Notices" at 1046px). The design doesn't show wrapping (design-vs-production 9.4).
+4. Article, Scrolled, XL-Desktop: in Figma the logo touches the section name (the row's content is wider than 1040px with space-between); production's headline overlap is design-vs-production 9.2. Found 2026-10-30.
+5. Obituaries and Dashboard variants aren't audited for the design system yet (open item 17): they keep raw 14px and 2px gaps and 3px / 5px radii.
+6. The 7px top and bottom padding of the weather row (Home, Section Front, Article, Dashboard) was rounded to 8px (`spacing/100`) on 2026-10-30; the row height didn't change. Production not measured.
+7. The logo is the Fakeville Daily News placeholder drawn as vectors, not an instance of the Logo component (status open item 10(d)).
+8. The search bar's own shadow (production 0 3px 3px, 25%) hasn't been checked.
+9. **Values not bound to a token** (literal in the component tokens): `base` button-frame.button border-radius = 5px; `base` button-frame.powered-by-container gap = 2px; `base` button-frame.search-container.search-field gap = 8px; `base` container.button-frame.button border-radius = 5px; `base` container.container.container.search-field border-radius = 3px; `base` container.container.container.search-field gap = 8px; `base` masthead-container gap = 14px; `base` masthead-container.container gap = 14px; `base` masthead-container.header gap = 14px; `base` masthead-container.masthead-container gap = 14px; `base` masthead-container.mastheadtop.menus-container gap = 14px; `base` masthead-container.menus-container gap = 14px; and 17 more.
 
 ## Files
 
@@ -1315,4 +1340,4 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 - `masthead.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -718,8 +718,8 @@
       },
       "variants": 90,
       "instances": 70,
-      "knownIssues": 7,
-      "exported": "2026-10-30"
+      "knownIssues": 9,
+      "exported": "2026-11-02"
     },
     {
       "slug": "search-bar",
