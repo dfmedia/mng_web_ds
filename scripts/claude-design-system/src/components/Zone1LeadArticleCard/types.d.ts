@@ -1,5 +1,5 @@
 export interface Zone1RelatedItem {
-  /** Related article title (Noto Serif Bold 12/15). */
+  /** Related article title (RelatedArticleListItem: heading family Bold 12/19). */
   headline: React.ReactNode;
   /** Relative publish time ("56 mins ago"); omit to hide. */
   time?: React.ReactNode;

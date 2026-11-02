@@ -1,0 +1,41 @@
+/* Related Article List Item: values from components/wordpress/related-article-list-item (matches production on the 4 / 8 grid,
+   2026-11-02; checked on all 6 review sites). Fills its list (built at 295). */
+.mngds-related-article-list-item {
+  box-sizing: border-box; display: flex; flex-direction: row; align-items: flex-start; width: 100%; min-width: 0; margin: 0; padding: 0;
+}
+/* Bullet: a 16px column (production indents the list 1rem) with a 4px round color/gray/black dot, 4px from the top. */
+.mngds-related-article-list-item__bullet {
+  box-sizing: border-box; flex-shrink: 0; display: flex; justify-content: center;
+  width: var(--mng-related-article-list-item-base-bullet-width);
+  padding-top: var(--mng-related-article-list-item-base-bullet-padding-top);
+}
+.mngds-related-article-list-item__dot {
+  display: block; border-radius: 50%;
+  width: var(--mng-related-article-list-item-base-bullet-bullet-dot-width);
+  height: var(--mng-related-article-list-item-base-bullet-bullet-dot-height);
+  background: var(--mng-related-article-list-item-base-bullet-bullet-dot-background);
+}
+/* Title and time share one text block (both inline); the time wraps with the title. */
+.mngds-related-article-list-item__content {
+  flex: 1 1 0; min-width: 0; text-align: left;
+  line-height: var(--mng-related-article-list-item-base-content-headline-and-time-line-height);
+}
+/* Title: theme heading family (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy) Bold 12 / 19,
+   -1% letter spacing, color/gray/black. */
+.mngds-related-article-list-item__headline {
+  display: inline; margin: 0;
+  font-family: var(--mng-related-article-list-item-base-content-headline-and-time-font-family);
+  font-size: var(--mng-related-article-list-item-base-content-headline-and-time-font-size);
+  font-weight: var(--mng-related-article-list-item-base-content-headline-and-time-font-weight);
+  line-height: var(--mng-related-article-list-item-base-content-headline-and-time-line-height);
+  letter-spacing: var(--mng-related-article-list-item-base-content-headline-and-time-letter-spacing);
+  color: var(--mng-related-article-list-item-base-content-headline-and-time-color);
+}
+/* Time: Noto Sans Regular 11, 20.625px line height (from the spec; no line-height token), color/gray/200. */
+.mngds-related-article-list-item__time {
+  display: inline; white-space: nowrap;
+  font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-11); font-weight: var(--mng-font-weight-regular);
+  line-height: 20.625px; letter-spacing: 0; color: var(--mng-color-gray-200);
+}
+.mngds-related-article-list-item__link { color: inherit; text-decoration: none; }
+.mngds-related-article-list-item__link:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }

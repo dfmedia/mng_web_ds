@@ -442,7 +442,8 @@
      "name": "Zone 1 Lead Article Card",
      "where": "Homepage, 3336:46157",
      "status": "In system",
-     "updated": "2026-10-29",
+     "note": "Related items are Related Article List Item since 2026-11-02.",
+     "updated": "2026-11-02",
      "component": "Zone1LeadArticleCard"
     },
     {
@@ -487,8 +488,10 @@
     {
      "name": "Related Article List Item",
      "where": "Homepage, 3334:43017",
-     "status": "To add",
-     "note": "Inside Zone 1 Lead Article Card, from the older export."
+     "status": "In system",
+     "note": "Matches production on the 4 / 8 grid (all 6 review sites). Zone 1 Lead Article Card and TOP ZONE Block draw their Related lists with it.",
+     "updated": "2026-11-02",
+     "component": "RelatedArticleListItem"
     },
     {
      "name": "TopZone Article Card",

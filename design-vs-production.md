@@ -1637,6 +1637,24 @@ Everything else matches: spacing (16px `li` padding + 16px block padding, 12px p
 
 **Status:** Open. Added 2026-11-02.
 
+### 16.10 Related Article List Item (Zone 1 lead's Related list) — title size, item spacing, weight and time color
+
+**Found:** 2026-11-02. CSS `.feature-primary .primary-related` read on all 6 review sites (identical item rules; the title follows each theme's heading family: Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy); measured on ocregister.com at 360, 778, 900, 1100, 1280 and 1371px. orlandosentinel.com and mcall.com read from their stylesheets (their homepages had no Related list that day). **Team:** CMS. Figma: WordPress Elements ▸ Homepage ▸ Related Article List Item (`3334:43017`), used in Zone 1 Lead Article Card (`3336:46157`) and TOP ZONE Block (`3352:19482`).
+
+**Design:** matches production on the 4 / 8 grid (`CLAUDE.md`, Design vs. production): a 16px bullet column (`spacing/200`) with a 4px `color/gray/black` dot, the title (`font/theme/heading-family` Bold 12, 19px line height, −1%, `color/gray/black`) with the time inline after it (Noto Sans Regular 11, 20.625px line height, `color/gray/200`), items 4px (`spacing/050`) apart and hugging their text. Before 2026-11-02 Figma had a 22px bullet column, a 6px `color/gray/min` dot and fixed 41 / 45px items.
+
+**Production (differs from the design):**
+- **Title size 12.25px** (`0.875em` of the list's `0.625em`): the design is 12px (`font/size/12`).
+- **Item spacing 4.375px** (`li { margin-bottom: 0.4375em }`): the design is 4px (`spacing/050`).
+- **Weight:** the title link is CSS 600, but the themes load only the 400, 700 and 800 faces, so it renders Bold, as the design is.
+- **Time color #5D5B5A:** the design is `color/gray/200` (#5E5D5C). Both pass (6.6:1).
+- **Bullet:** production draws the browser's `disc` marker (about 3.3px) in a 1rem indent; the design draws a 4px dot in a 16px column.
+- **Hover:** production turns the title `--primary`; Figma has no hover state.
+
+**Fix:** in `.feature-primary .primary-related`: title 12px (`0.75rem`) at weight 700, `li` margin-bottom 4px (`0.25rem`), time color #5E5D5C (`color/gray/200`). Keep the disc marker or draw the 4px dot, either is fine.
+
+**Status:** Open. Added 2026-11-02.
+
 ---
 
 ## 17. Zone 1 slideshow (gallery lead) — type, spacing and colors off the design tokens; slide count not announced

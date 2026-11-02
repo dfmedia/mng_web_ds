@@ -65,7 +65,7 @@ From `related-article-list-item.tokens.json`. References point at system tokens 
 
 No Breakpoint property: one size at every width.
 
-- **Matches production on the 4 / 8 grid** (Karl, 2026-10-30; CLAUDE.md). CSS `.feature-primary .primary-related` read 2026-11-02 on ocregister.com, denverpost.com (same rules), chicagotribune.com (same item values; only the header rule color differs) and canoncitydailyrecord.com (same, with Noto Sans for the title: Modern Earthy's heading family). orlandosentinel.com and mcall.com couldn't be opened in Chrome that day. Measured on ocregister.com at 360, 778, 900, 1100 and 1280px: the same at every width.
+- **Matches production on the 4 / 8 grid** (Karl, 2026-10-30; CLAUDE.md). CSS `.feature-primary .primary-related` read 2026-11-02 on ocregister.com, denverpost.com (same rules), chicagotribune.com (same item values; only the header rule color differs), canoncitydailyrecord.com (same, with Noto Sans for the title: Modern Earthy's heading family), and orlandosentinel.com and mcall.com (same rules, read from their stylesheets later the same day; their homepages had no Related list). Measured on ocregister.com at 360, 778, 900, 1100 and 1280px: the same at every width.
 - **Bullet:** a 16px column (`spacing/200`; production indents the list 1rem) with a 4px round `color/gray/black` dot, 4px (`spacing/050`) from the top. Production draws the browser's `disc` marker (about 3.3px, black) in that indent. Before 2026-11-02 the design had a 22px column and a 6px `color/gray/min` dot with a 1px `color/gray/600` inside stroke.
 - **Headline and Time** are one text layer, as production sets them inline (`h4` and `time` both `display: inline`). Title: `font/theme/heading-family` Bold 12 (`font/size/12`), 19px line height (production's `h4` line box), −1% letter spacing, `color/gray/black` on `color/gray/max`, 21:1. Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy, as production. Production is 12.25px with CSS weight 600; the sites load only the 400 and 700 faces, so it renders Bold.
 - **Time:** right after the title in the same text layer: Noto Sans Regular 11 (`font/size/11`), 20.625px line height, `color/gray/200`, 6.6:1. It wraps with the title.
@@ -90,7 +90,7 @@ Placed on pages: Homepage ×21.
 
 ## Production
 
-Production `.feature-primary ul.primary-related li` (homepage Zone 1 lead, Related list). CSS read on 4 of the 6 review sites and measured on ocregister.com at 360, 778, 900, 1100, 1280 and 1371px, 2026-11-02.
+Production `.feature-primary ul.primary-related li` (homepage Zone 1 lead, Related list). CSS read on all 6 review sites and measured on ocregister.com at 360, 778, 900, 1100, 1280 and 1371px, 2026-11-02.
 
 ## Known issues
 

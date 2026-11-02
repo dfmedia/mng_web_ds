@@ -32,19 +32,19 @@ exported: 2026-11-02
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `XS (≤639px)` | 340×2252.66 | [3352:19481](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19481) | 2 | ![](previews/top-zone-block--xs-639px.png) |
-| `S (640–799px)` | 748×1523 | [3383:46168](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46168) | 1 | ![](previews/top-zone-block--s-640-799px.png) |
+| `XS (≤639px)` | 340×2248.66 | [3352:19481](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19481) | 2 | ![](previews/top-zone-block--xs-639px.png) |
+| `S (640–799px)` | 748×1540 | [3383:46168](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46168) | 1 | ![](previews/top-zone-block--s-640-799px.png) |
 | `M (800–1039px)` | 989×1050 | [3553:32881](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-32881) | 1 | ![](previews/top-zone-block--m-800-1039px.png) |
-| `L (1040–1279px)` | 1065×1343.66 | [3553:33340](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-33340) | 1 | ![](previews/top-zone-block--l-1040-1279px.png) |
+| `L (1040–1279px)` | 1065×1303.66 | [3553:33340](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-33340) | 1 | ![](previews/top-zone-block--l-1040-1279px.png) |
 | `XL (≥1280px)` | 1260×1082 | [3352:19480](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19480) | 1 | ![](previews/top-zone-block--xl-1280px.png) |
 
 ## Anatomy
 
 Default variant `XS (≤639px)` (hidden layers marked):
 
-- **Device=XS (≤639px)** `COMPONENT`: 340×2252.66, vertical, gap 32, padding 0/0/0/0, fixed×hug
-  - **Lead Column** `FRAME`: 340×1128.66, vertical, gap 20, padding 0/0/0/0, fill×hug
-    - **Zone 1 Lead Article Card** `INSTANCE`: 340×632.66, vertical, gap 8, padding 0/0/16/0, fill×hug, instance of Zone 1 Lead Article Card (Style=Standard, Device=Mobile, Gallery=Image)
+- **Device=XS (≤639px)** `COMPONENT`: 340×2248.66, vertical, gap 32, padding 0/0/0/0, fixed×hug
+  - **Lead Column** `FRAME`: 340×1124.66, vertical, gap 20, padding 0/0/0/0, fill×hug
+    - **Zone 1 Lead Article Card** `INSTANCE`: 340×628.66, vertical, gap 8, padding 0/0/16/0, fill×hug, instance of Zone 1 Lead Article Card (Style=Standard, Device=Mobile, Gallery=Image)
     - **Secondary Stories** `FRAME`: 340×476, vertical, gap 16, padding 0/0/0/0, fill×hug
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
@@ -87,7 +87,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-1.topzone-article-card.width` | 192.5px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-2.topzone-article-card.height` | 189.28px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-2.topzone-article-card.width` | 192.5px |
-| `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 614.66px |
+| `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 600.66px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.zone-1-lead-article-card.width` | 405px |
 | `top-zone-block.device-m-800-1039px.right-rail.width` | 300px |
 | `top-zone-block.device-m-800-1039px.root.width` | 989px |
@@ -98,7 +98,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.height` | 173px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.icon-color` | #e1a1ff |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.width` | 500px |
-| `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 551.66px |
+| `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 511.66px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.zone-1-lead-article-card.width` | 500px |
 | `top-zone-block.device-l-1040-1279px.right-rail.width` | 314px |
 | `top-zone-block.device-l-1040-1279px.root.gap` | `{spacing.250}` |
@@ -111,7 +111,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.secondary-stories.row-1.topzone-article-card.width` | 340px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.secondary-stories.row-2.topzone-article-card.height` | 263.25px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.secondary-stories.row-2.topzone-article-card.width` | 340px |
-| `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 349px |
+| `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 366px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.zone-1-lead-article-card.width` | 700px |
 | `top-zone-block.device-xl-1280px.right-rail.width` | 300px |
 | `top-zone-block.device-xl-1280px.root.gap` | `{spacing.250}` |
@@ -121,7 +121,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.height` | 107px |
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.icon-color` | #e1a1ff |
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.width` | 340px |
-| `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.height` | 632.66px |
+| `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.height` | 628.66px |
 | `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.width` | 340px |
 | `top-zone-block.device-xs-639px.root.gap` | `{spacing.400}` |
 | `top-zone-block.device-xs-639px.root.width` | 340px |
@@ -135,7 +135,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-s-640-799px.lead-column.secondary-stories.row-2.topzone-article-card.height` | 89px |
 | `top-zone-block.device-s-640-799px.lead-column.secondary-stories.row-2.topzone-article-card.icon-color` | #e1a1ff |
 | `top-zone-block.device-s-640-799px.lead-column.secondary-stories.row-2.topzone-article-card.width` | 364px |
-| `top-zone-block.device-s-640-799px.lead-column.zone-1-lead-article-card.height` | 349px |
+| `top-zone-block.device-s-640-799px.lead-column.zone-1-lead-article-card.height` | 366px |
 | `top-zone-block.device-s-640-799px.lead-column.zone-1-lead-article-card.width` | 748px |
 | `top-zone-block.device-s-640-799px.root.gap` | `{spacing.400}` |
 | `top-zone-block.device-s-640-799px.root.width` | 748px |

@@ -3,10 +3,10 @@
    Desktop / Tablet: two columns (text | image or Zone 1 Slideshow), 20 / 32px apart. Mobile: one column, 8px apart:
    headline, image, excerpt, Related list (or headline, excerpt, Related list, slideshow), then a 1px color/gray/500 rule.
    Text column: headline (Noto Serif Bold 29/33, Mobile 25/29), excerpt (Noto Sans 15/19), Related list (header + up to
-   three Related Article List Items: bullet, Noto Serif Bold 12/15 title, Noto Sans 11 time). The headline and each
+   three RelatedArticleListItem: bullet, heading-family Bold 12/19 title with the Noto Sans 11 time inline). The headline and each
    related title are links when they have an `href`. */
 function Zone1LeadArticleCard(props) {
-  /* Figma sample Related items (Related Article List Item; legacy export 3334:43017). */
+  /* Figma sample Related items (Related Article List Item 3334:43017, drawn by RelatedArticleListItem since 2026-11-02). */
   var relatedDefault = [
     { headline: 'Game Day: Turning LeBron James’ record numbers into words', time: '56 mins ago' },
     { headline: 'When will LeBron James break Kareem’s career scoring record?', time: '3 weeks ago' },
@@ -31,14 +31,9 @@ function Zone1LeadArticleCard(props) {
       h('span', { className: 'mngds-zone-1-lead-article-card__related-title', id: relatedId }, props.relatedTitle != null ? props.relatedTitle : 'Related')),
     h('ul', { className: 'mngds-zone-1-lead-article-card__related-body', 'aria-labelledby': relatedId },
       related.map(function (r, i) {
-        var t = r.headline;
         return h('li', { key: r.key != null ? r.key : i, className: 'mngds-zone-1-lead-article-card__related-item' },
-          h('span', { className: 'mngds-zone-1-lead-article-card__bullet', 'aria-hidden': 'true' }),
-          h('span', { className: 'mngds-zone-1-lead-article-card__related-content' },
-            h('span', { className: 'mngds-zone-1-lead-article-card__related-headline' },
-              r.href ? h('a', { className: 'mngds-zone-1-lead-article-card__link', href: r.href, target: r.target, rel: r.target ? 'noopener' : undefined }, t) : t),
-            r.time != null && r.time !== '' ? h('span', { className: 'mngds-zone-1-lead-article-card__related-meta' },
-              r.dateTime ? h('time', { dateTime: r.dateTime }, r.time) : r.time) : null));
+          h(RelatedArticleListItem, { headline: r.headline, href: r.href, target: r.target, time: r.time != null ? r.time : '', dateTime: r.dateTime,
+            headingLevel: Math.min(6, (props.headingLevel || 2) + 2) }));
       }))) : null;
 
   var media;

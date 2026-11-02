@@ -1,0 +1,22 @@
+<!-- @dsCard group="WordPress Elements" height=360 subtitle="Figma: Related Article List Item · 1 variant" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>RelatedArticleListItem</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);} .pv-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:var(--mng-spacing-050);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var items = [
+    { headline: 'Game Day: Turning LeBron James’ record numbers into words', time: '56 mins ago' },
+    { headline: 'When will LeBron James break Kareem’s career scoring record?', time: '3 weeks ago' },
+    { headline: 'For LeBron James, developing ‘unguardable shot’ was key in his evolution as a scorer', time: '1 day ago' }];
+  var one = h(I.SpecimenSection, { title: 'Related Article List Item', note: 'Built at 295px (the Desktop lead’s text column); fills its list. 16px bullet column with a 4px color/gray/black dot, then the title (theme heading family Bold 12 / 19, -1%) and the time (Noto Sans 11, color/gray/200) inline.' },
+    h(I.Specimen, { items: [{ label: 'Default', width: 327, node: h('div', { style: { width: 295 } }, h(NS.RelatedArticleListItem, {})) }] }));
+  var list = h(I.SpecimenSection, { title: 'In a list', note: 'Three items 4px (spacing/050) apart, as in the Zone 1 Lead Article Card. A long title wraps and the time follows it.' },
+    h(I.Specimen, { items: [{ label: 'Width 295', width: 327, node: h('ul', { className: 'pv-list', style: { width: 295 } }, items.map(function (it, i) { return h('li', { key: i }, h(NS.RelatedArticleListItem, it)); })) },
+      { label: 'Width 340 (Mobile)', width: 372, node: h('ul', { className: 'pv-list', style: { width: 340 } }, items.map(function (it, i) { return h('li', { key: i }, h(NS.RelatedArticleListItem, it)); })) }] }));
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null, one, list));
+</script>
+</body>
+</html>

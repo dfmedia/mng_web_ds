@@ -11,7 +11,7 @@
       },
       "production": "Production `.feature-primary .feature-large` (Zone 1 lead).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-02"
     }
   },
   "zone-1-lead-article-card": {
@@ -184,17 +184,17 @@
               "height": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 41,
+                  "value": 62,
                   "unit": "px"
                 }
               },
               "icon-color": {
                 "$type": "color",
-                "$value": "{color.gray.min}",
+                "$value": "{color.gray.black}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Colors/color/gray/min"
+                      "variable": "Colors/color/gray/black"
                     }
                   }
                 }
@@ -790,11 +790,11 @@
             },
             "icon-color": {
               "$type": "color",
-              "$value": "{color.gray.min}",
+              "$value": "{color.gray.black}",
               "$extensions": {
                 "com.mng": {
                   "figma": {
-                    "variable": "Colors/color/gray/min"
+                    "variable": "Colors/color/gray/black"
                   }
                 }
               }

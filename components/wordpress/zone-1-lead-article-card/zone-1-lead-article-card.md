@@ -9,7 +9,7 @@ component_key: 20dc946d8602b998c7cb522bb6e28d102459bf66
 variants: 6
 tokens: zone-1-lead-article-card.tokens.json
 skeleton: zone-1-lead-article-card.html
-exported: 2026-10-30
+exported: 2026-11-02
 ---
 
 # Zone 1 Lead Article Card
@@ -34,31 +34,31 @@ exported: 2026-10-30
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Standard / Desktop / Image` | 706×349 | [3336:46155](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46155) | 2 | ![](previews/zone-1-lead-article-card--standard-desktop-image.png) |
+| `Standard / Desktop / Image` | 706×366 | [3336:46155](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46155) | 2 | ![](previews/zone-1-lead-article-card--standard-desktop-image.png) |
 | `Standard / Desktop / Slideshow` | 706×375 | [3640:50328](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3640-50328) | 0 | ![](previews/zone-1-lead-article-card--standard-desktop-slideshow.png) |
-| `Standard / Mobile / Image` | 340×632.66 | [3336:46156](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46156) | 7 | ![](previews/zone-1-lead-article-card--standard-mobile-image.png) |
-| `Standard / Mobile / Slideshow` | 340×706.01 | [3640:50288](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3640-50288) | 0 | ![](previews/zone-1-lead-article-card--standard-mobile-slideshow.png) |
-| `Standard / Tablet / Image` | 748×349 | [3383:46111](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46111) | 2 | ![](previews/zone-1-lead-article-card--standard-tablet-image.png) |
-| `Standard / Tablet / Slideshow` | 748×349 | [3640:50388](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3640-50388) | 0 | ![](previews/zone-1-lead-article-card--standard-tablet-slideshow.png) |
+| `Standard / Mobile / Image` | 340×628.66 | [3336:46156](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46156) | 7 | ![](previews/zone-1-lead-article-card--standard-mobile-image.png) |
+| `Standard / Mobile / Slideshow` | 340×702.01 | [3640:50288](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3640-50288) | 0 | ![](previews/zone-1-lead-article-card--standard-mobile-slideshow.png) |
+| `Standard / Tablet / Image` | 748×366 | [3383:46111](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46111) | 2 | ![](previews/zone-1-lead-article-card--standard-tablet-image.png) |
+| `Standard / Tablet / Slideshow` | 748×366 | [3640:50388](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3640-50388) | 0 | ![](previews/zone-1-lead-article-card--standard-tablet-slideshow.png) |
 
 ## Anatomy
 
 Default variant `Standard / Desktop / Image` (hidden layers marked):
 
-- **Style=Standard, Device=Desktop, Gallery=Image** `COMPONENT`: 706×349, horizontal, gap 20, padding 0/0/16/0, hug×hug
-  - **1st Col** `FRAME`: 295×333, vertical, gap 4, padding 0/0/0/0, fixed×hug
+- **Style=Standard, Device=Desktop, Gallery=Image** `COMPONENT`: 706×366, horizontal, gap 20, padding 0/0/16/0, hug×hug
+  - **1st Col** `FRAME`: 295×350, vertical, gap 4, padding 0/0/0/0, fixed×hug
     - **Article Status Badge** `INSTANCE`: 0.01×0.01, horizontal, gap 0, padding 0/0/0/0, hug×hug, instance of Article Status Badge (Type=None), **hidden**
     - **Headline Container** `FRAME`: 295×132, horizontal, gap 8, padding 0/0/0/0, fill×hug
       - **Man charged with murder after fatal attack on bicycling doctor in Dana Point** `TEXT`: 295×132, fill×hug, "Man charged with murder after fatal atta", Noto Serif Bold 29px
     - **Excerpt Container** `FRAME`: 295×38, horizontal, gap 8, padding 0/0/0/0, fill×hug
       - **Vanroy Evan Smith, 39, of Long Beach is being held on $1 million bail.** `TEXT`: 295×38, fill×hug, "Vanroy Evan Smith, 39, of Long Beach is ", Noto Sans Regular 15px
-    - **Relate Articles Zone 1 Container** `FRAME`: 295×155, vertical, gap 4, padding 0/0/0/0, fill×hug
+    - **Relate Articles Zone 1 Container** `FRAME`: 295×172, vertical, gap 4, padding 0/0/0/0, fill×hug
       - **Related Articles Header** `FRAME`: 295×16, horizontal, gap 8, padding 0/0/0/0, fill×hug
         - **Header** `TEXT`: 47×16, hug×hug, "Related", Noto Serif Bold 12px
-      - **Related Articles Body** `FRAME`: 295×135, vertical, gap 4, padding 0/0/0/0, fill×hug
-        - **Related Article List Item** `INSTANCE`: 295×45, horizontal, gap 0, padding 0/0/0/0, fixed×fixed, instance of Related Article List Item ()
-        - **Related Article List Item** `INSTANCE`: 295×41, horizontal, gap 0, padding 0/0/0/0, fixed×fixed, instance of Related Article List Item ()
-        - **Related Article List Item** `INSTANCE`: 295×41, horizontal, gap 0, padding 0/0/0/0, fixed×fixed, instance of Related Article List Item ()
+      - **Related Articles Body** `FRAME`: 295×152, vertical, gap 4, padding 0/0/0/0, fill×hug
+        - **Related Article List Item** `INSTANCE`: 295×41, horizontal, gap 0, padding 0/0/0/0, fixed×hug, instance of Related Article List Item ()
+        - **Related Article List Item** `INSTANCE`: 295×41, horizontal, gap 0, padding 0/0/0/0, fixed×hug, instance of Related Article List Item ()
+        - **Related Article List Item** `INSTANCE`: 295×62, horizontal, gap 0, padding 0/0/0/0, fixed×hug, instance of Related Article List Item ()
   - **2nd Col** `FRAME`: 391×271, vertical, gap 8, padding 0/0/0/0, fixed×fixed
     - **Article Image Placeholder** `INSTANCE`: 391×271, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Article Image Placeholder ()
 
@@ -82,8 +82,8 @@ From `zone-1-lead-article-card.tokens.json`. References point at system tokens (
 | `zone-1-lead-article-card.base.1st-col.headline-container.man-charged-with-murder-after-fatal-attack-on-bicycling-doctor-in-dana-point.line-height` | 33px |
 | `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.gap` | 4px |
 | `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-body.gap` | 4px |
-| `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-body.related-article-list-item.height` | 41px |
-| `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-body.related-article-list-item.icon-color` | `{color.gray.min}` |
+| `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-body.related-article-list-item.height` | 62px |
+| `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-body.related-article-list-item.icon-color` | `{color.gray.black}` |
 | `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-body.related-article-list-item.width` | 295px |
 | `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-header.border-bottom-width` | 1px |
 | `zone-1-lead-article-card.base.1st-col.relate-articles-zone-1-container.related-articles-header.border-color` | `{color.gray.200}` |
@@ -139,7 +139,7 @@ From `zone-1-lead-article-card.tokens.json`. References point at system tokens (
 | `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.padding-bottom` | 16px |
 | `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-body.gap` | 4px |
 | `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-body.related-article-list-item.height` | 41px |
-| `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-body.related-article-list-item.icon-color` | `{color.gray.min}` |
+| `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-body.related-article-list-item.icon-color` | `{color.gray.black}` |
 | `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-body.related-article-list-item.width` | 340px |
 | `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-header.border-bottom-width` | 1px |
 | `zone-1-lead-article-card.device-mobile.relate-articles-zone-1-container.related-articles-header.border-color` | `{color.gray.200}` |
@@ -165,6 +165,7 @@ From `zone-1-lead-article-card.tokens.json`. References point at system tokens (
 - **Gallery=Slideshow layout follows the lead's width, not the screen:** two columns when the lead is about 700px wide or more (Desktop: text 295 and slideshow 356, the rest of the 706 card between them; Tablet: the slideshow fills the 358 column); one column when narrower: headline, excerpt, then the Related list, then the slideshow full width. On the homepage the third page column narrows the lead, so it is one column from 800 to 1279px (594 wide at 1024) and below 640px, and two columns from 640 to 799px and from 1280px up (production, checked on develop.denverpost.com 2026-10-26).
 - **The For You featured story** moved to Blocks Lead Article Card (Karl, 2026-10-28); its Style=For You variants were deleted. `Style` has one value (Standard) and is kept so existing instances don't change.
 - **Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`.
+- **Related list** (2026-11-02): a "Related" header, then up to three Related Article List Items (their own component, matched to production that day), 4px (`spacing/050`) apart; the items hug their height (they were fixed at 41 / 45px).
 
 ## Accessibility
 
@@ -197,4 +198,4 @@ Production `.feature-primary .feature-large` (Zone 1 lead).
 - `zone-1-lead-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -1,0 +1,6 @@
+- **New 2026-11-02**, from the current export (`components/wordpress/related-article-list-item/`). Before this the Zone 1 Lead Article Card drew its Related items from the legacy export (22px bullet column, 6px `color/gray/min` dot, title over the time, fixed 41 / 45px items); it now uses this component.
+- **Matches production on the 4 / 8 grid**: `.feature-primary .primary-related` is the same on all 6 review sites (orlandosentinel and mcall checked 2026-11-02 from their stylesheets; their homepages had no Related list that day). Production's 12.25px title and 4.375px item spacing are 12 (`font/size/12`) and 4 (`spacing/050`) here (design-vs-production 16.10).
+- **Title and time are one text block**, as in production and Figma: the time follows the title after a space and wraps with it. Figma draws mixed line heights about 1px taller than browsers (one line 21 vs. 20.63).
+- **Weight:** the title is Bold, as Figma and production render it (production's CSS says 600, but only the 400 and 700 faces load).
+- **Link:** no hover style (Figma has none; production turns the title `--primary` on hover); a 2px `color/gray/black` focus outline.
+- Contrast on `color/gray/max`, all three themes: title `color/gray/black` 21:1, time `color/gray/200` 6.57:1.
