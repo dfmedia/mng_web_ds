@@ -301,6 +301,35 @@
       "production": "Card meta time on production homepages: Noto Sans 13px / 400, #5E5D5C (color/gray/200)."
     },
     {
+      "slug": "related-article-list-item",
+      "name": "Related Article List Item",
+      "group": "article-parts",
+      "layer": "wordpress",
+      "order": 4,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3334:43017",
+      "documentationFrame": "3484:67572",
+      "description": "One related story in the Zone 1 Lead Article Card's Related list (production `.feature-primary ul.primary-related li`): a bullet, then the title with its time inline right after it. No variants. Its own component in the export since 2026-11-02 (it was only in the legacy export).",
+      "rules": [
+        "**Matches production on the 4 / 8 grid** (Karl, 2026-10-30; CLAUDE.md). CSS `.feature-primary .primary-related` read 2026-11-02 on ocregister.com, denverpost.com (same rules), chicagotribune.com (same item values; only the header rule color differs) and canoncitydailyrecord.com (same, with Noto Sans for the title: Modern Earthy's heading family). orlandosentinel.com and mcall.com couldn't be opened in Chrome that day. Measured on ocregister.com at 360, 778, 900, 1100 and 1280px: the same at every width.",
+        "**Bullet:** a 16px column (`spacing/200`; production indents the list 1rem) with a 4px round `color/gray/black` dot, 4px (`spacing/050`) from the top. Production draws the browser's `disc` marker (about 3.3px, black) in that indent. Before 2026-11-02 the design had a 22px column and a 6px `color/gray/min` dot with a 1px `color/gray/600` inside stroke.",
+        "**Headline and Time** are one text layer, as production sets them inline (`h4` and `time` both `display: inline`). Title: `font/theme/heading-family` Bold 12 (`font/size/12`), 19px line height (production's `h4` line box), −1% letter spacing, `color/gray/black` on `color/gray/max`, 21:1. Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy, as production. Production is 12.25px with CSS weight 600; the sites load only the 400 and 700 faces, so it renders Bold.",
+        "**Time:** right after the title in the same text layer: Noto Sans Regular 11 (`font/size/11`), 20.625px line height, `color/gray/200`, 6.6:1. It wraps with the title.",
+        "**Height** hugs the text (Figma had fixed 41 / 45px items, so a two-line title ran into the next item). The 4px (`spacing/050`) between items belongs to the list (Zone 1 Lead Article Card's Related Articles Body; production `li` margin-bottom 4.375px).",
+        "**Width** fills the list; drawn at 295 (the Desktop lead's text column).",
+        "**Markup:** `ul > li > article`, the title an `h4` link followed by a `time` element (both inline). The list is labelled by its \"Related\" header."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Production's title is 12.25px; the design uses 12 (`font/size/12`, the nearest size token). Production's item spacing is 4.375px; the design uses 4 (design-vs-production 16.10).",
+        "Production's time color is #5D5B5A; the design keeps `color/gray/200` (#5E5D5C).",
+        "Production turns the title `--primary` on hover; Figma has no hover state.",
+        "Figma draws mixed line heights about 1px taller than browsers: a one-line item is 21 (production 20.63), two lines 41 (39.63), three 60 (58.63).",
+        "The component tokens carry the title's values for the Headline and Time layer (the exporter reads its first text run); the inline time's values are in the rules above."
+      ],
+      "production": "Production `.feature-primary ul.primary-related li` (homepage Zone 1 lead, Related list). CSS read on 4 of the 6 review sites and measured on ocregister.com at 360, 778, 900, 1100, 1280 and 1371px, 2026-11-02."
+    },
+    {
       "slug": "1col-article-card",
       "name": "1Col Article Card",
       "group": "cards",
@@ -352,7 +381,8 @@
         "**Gallery** (Karl, 2026-10-26): `Gallery=Slideshow` replaces the image with the Zone 1 Slideshow, as production does for gallery leads (`.feature-large .article-slideshow`). Zone 1 has no Gallery Icon Badge.",
         "**Gallery=Slideshow layout follows the lead's width, not the screen:** two columns when the lead is about 700px wide or more (Desktop: text 295 and slideshow 356, the rest of the 706 card between them; Tablet: the slideshow fills the 358 column); one column when narrower: headline, excerpt, then the Related list, then the slideshow full width. On the homepage the third page column narrows the lead, so it is one column from 800 to 1279px (594 wide at 1024) and below 640px, and two columns from 640 to 799px and from 1280px up (production, checked on develop.denverpost.com 2026-10-26).",
         "**The For You featured story** moved to Blocks Lead Article Card (Karl, 2026-10-28); its Style=For You variants were deleted. `Style` has one value (Standard) and is kept so existing instances don't change.",
-        "**Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`."
+        "**Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`.",
+        "**Related list** (2026-11-02): a \"Related\" header, then up to three Related Article List Items (their own component, matched to production that day), 4px (`spacing/050`) apart; the items hug their height (they were fixed at 41 / 45px)."
       ],
       "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline |\n| Tablet | 640px and up (768 template) | Two columns, 32px apart |\n| Desktop | 1024px and up | Two columns, 20px apart (text 295, image 391) |",
       "knownIssues": [
