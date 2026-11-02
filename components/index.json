@@ -258,6 +258,22 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "related-article-list-item",
+      "name": "Related Article List Item",
+      "group": "article-parts",
+      "layer": "wordpress",
+      "path": "components/wordpress/related-article-list-item/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3334:43017",
+        "set": "Related Article List Item"
+      },
+      "variants": 1,
+      "instances": 75,
+      "knownIssues": 5,
+      "exported": "2026-11-02"
+    },
+    {
       "slug": "blocks-article-row",
       "name": "Blocks Article Row",
       "group": "blocks",

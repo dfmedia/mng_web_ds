@@ -10,3 +10,6 @@ claude-credentials
 # Python caches
 __pycache__/
 *.pyc
+
+# Raw Figma dumps from the component exporter (temporary, never committed)
+.tmp-raw*/
