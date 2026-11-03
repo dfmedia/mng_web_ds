@@ -1,4 +1,4 @@
-> **Compiled by Karl Kuschold**, UX/UI Design Lead, MediaNews Group, with Claude (Anthropic). Questions, corrections or requests: [kuschold@medianewsgroup.com](mailto:kuschold@medianewsgroup.com).
+> **Compiled by Karl Kuschold**, UX/UI Design Lead, MediaNews Group, with Claude (Anthropic). Questions, corrections or requests: kuschold@medianewsgroup.com.
 >
 > **Updated {{UPDATED}}.**
 
