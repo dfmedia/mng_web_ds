@@ -15,7 +15,7 @@
   line-height: var(--mng-article-status-badge-type-subscriber-subscriber-only-line-height);
 }
 /* Sponsored: PLACEHOLDER (Karl, 2026-11-03; no production badge to match, design-vs-production 22): color/theme/secondary chip,
-   raw #141414 (Gray-Min) text, same type. Fails AA on Denver Post (1.4:1) and The Baltimore Sun (4.2:1); see notes. */
+   color/gray/min (Gray-Min) text, same type. Fails AA on Denver Post (1.4:1) and The Baltimore Sun (4.2:1); see notes. */
 .mngds-article-status-badge--sponsored {
   background: var(--mng-article-status-badge-type-sponsored-root-background);
   color: var(--mng-article-status-badge-type-sponsored-sponsored-content-color);

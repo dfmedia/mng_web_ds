@@ -7,7 +7,7 @@
 <div id="root"></div>
 <script>
   var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
-  var types = h(I.SpecimenSection, { title: 'Type', note: 'Subscriber: color/theme/primary-dark (follows the theme). Sponsored (placeholder, Karl 2026-11-03; no production badge to match): color/theme/secondary (follows the theme) with raw #141414 text, which fails AA on Denver Post (1.4:1) and The Baltimore Sun. Subscriber text is white. Noto Sans Regular 13 caps, 22.652px line height, 0 × 4px (spacing/050) padding; as wide as its text. None renders nothing.' },
+  var types = h(I.SpecimenSection, { title: 'Type', note: 'Subscriber: color/theme/primary-dark (follows the theme). Sponsored (placeholder, Karl 2026-11-03; no production badge to match): color/theme/secondary (follows the theme) with color/gray/min text, which fails AA on Denver Post (1.4:1) and The Baltimore Sun. Subscriber text is white. Noto Sans Regular 13 caps, 22.652px line height, 0 × 4px (spacing/050) padding; as wide as its text. None renders nothing.' },
     h(I.Specimen, { items: ['Subscriber', 'Sponsored', 'None'].map(function (t) {
       return { label: 'Type=' + t, width: 200, node: t === 'None' ? h('span', { style: { fontFamily: 'var(--mng-font-family-noto-sans)', fontSize: 12, color: 'var(--mng-color-gray-200)' } }, '(nothing)') : h(NS.ArticleStatusBadge, { type: t }) };
     }) }));

@@ -103,20 +103,12 @@
             },
             "icon-color": {
               "$type": "color",
-              "$value": {
-                "colorSpace": "srgb",
-                "components": [
-                  0.0784,
-                  0.0784,
-                  0.0784
-                ],
-                "alpha": 1,
-                "hex": "#141414"
-              },
+              "$value": "{color.gray.min}",
               "$extensions": {
                 "com.mng": {
-                  "rgba": "rgba(20, 20, 20, 1)",
-                  "unbound": true
+                  "figma": {
+                    "variable": "Colors/color/gray/min"
+                  }
                 }
               }
             },

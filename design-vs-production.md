@@ -1797,7 +1797,7 @@ One-line items are unaffected (the 44px height holds), but every extra line adds
 | orlandosentinel.com | "Sponsored Content" section with older stories, no label |
 | canoncitydailyrecord.com | only the CitySpark events widget's own "Sponsored" chips (third party, Open Sans 10px) |
 
-So the design's Sponsored badge is now a **placeholder**, not a production match (Karl): the chip is `color/theme/secondary` with Gray-Min `#141414` text as a raw value (no new token, Karl), in the Subscriber chip's type and padding. Gray-Min on secondary passes 4.5:1 on 20 of 22 themes; it fails on Denver Post 1.43:1 (navy `#003459`) and The Baltimore Sun 4.15:1 (accepted for the placeholder). Nothing to fix in production until a sponsored badge is designed.
+So the design's Sponsored badge is now a **placeholder**, not a production match (Karl): the chip is `color/theme/secondary` with Gray-Min (`color/gray/min`) text (no new token), in the Subscriber chip's type and padding. Gray-Min on secondary passes 4.5:1 on 20 of 22 themes; it fails on Denver Post 1.43:1 (navy `#003459`) and The Baltimore Sun 4.15:1 (accepted for the placeholder). Nothing to fix in production until a sponsored badge is designed.
 
 **Note:** the theme's own `.sponsored-content .sponsored-flag` (a different element) uses `primary-light` with white text, and `secondary` with dark text on images.
 

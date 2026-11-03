@@ -56,7 +56,7 @@ From `article-status-badge.tokens.json`. References point at system tokens (`tok
 | `article-status-badge.type-subscriber.subscriber-only.font-weight` | `{font.weight.regular}` |
 | `article-status-badge.type-subscriber.subscriber-only.line-height` | 22.652px |
 | `article-status-badge.type-sponsored.root.background` | `{color.theme.secondary}` |
-| `article-status-badge.type-sponsored.sponsored-content.color` | #141414 |
+| `article-status-badge.type-sponsored.sponsored-content.color` | `{color.gray.min}` |
 | `article-status-badge.type-sponsored.sponsored-content.font-family` | `{font.family.noto-sans}` |
 | `article-status-badge.type-sponsored.sponsored-content.font-size` | `{font.size.13}` |
 | `article-status-badge.type-sponsored.sponsored-content.font-weight` | `{font.weight.regular}` |
@@ -70,7 +70,7 @@ No Breakpoint property: one size at every width.
 
 - **Matches production** (Karl, 2026-11-02, after a side-by-side of production and Figma). `.subscriber-only-tag` is identical on all 6 review sites (one rule in each theme stylesheet: `boldcoastal.css`, `measuredvibrant.css`, `modernearthy.css`). No homepage had a subscriber-only story that day, so it was drawn by each site's own CSS on a live card (ocregister.com, canoncitydailyrecord.com) to see what renders.
 - **Subscriber:** `color/theme/primary-dark` chip (production `var(--primary-dark)`), white (`color/gray/max`) Noto Sans Regular 13 (`font/size/13`, `font/style/regular`) caps, 22.652px line height, no top or bottom padding and 4px (`spacing/050`) at the sides, so the chip is 22.65px tall and hugs its text. Before 2026-11-02 Figma had SemiBold on `color/theme/primary` with 2px / 5px padding (27px tall). Contrast: 8.0:1 Bold Coastal, 9.3:1 Measured Vibrant, 5.8:1 Modern Earthy.
-- **Sponsored is a placeholder** (Karl, 2026-11-03), not a production match: no sponsored badge to match was live on any of the 6 review sites on 2026-11-02 or 2026-11-03. Production labels sponsored stories with a "Sponsored:" or "Branded:" headline prefix (Denver Post, Chicago Tribune), a section breadcrumb ("Sponsored Content", "Branded Content") or a "Sponsored" type-of-work link on the article (Denver Post); the Nativo vendor label wasn't served (design-vs-production 22). The chip is the site's secondary color (`color/theme/secondary`) with Gray-Min `#141414` text as a raw value (no token, Karl), in the Subscriber chip's type and padding. Was `#7D161E` with white text until 2026-11-03.
+- **Sponsored is a placeholder** (Karl, 2026-11-03), not a production match: no sponsored badge to match was live on any of the 6 review sites on 2026-11-02 or 2026-11-03. Production labels sponsored stories with a "Sponsored:" or "Branded:" headline prefix (Denver Post, Chicago Tribune), a section breadcrumb ("Sponsored Content", "Branded Content") or a "Sponsored" type-of-work link on the article (Denver Post); the Nativo vendor label wasn't served (design-vs-production 22). The chip is the site's secondary color (`color/theme/secondary`) with Gray-Min (`color/gray/min`) text, in the Subscriber chip's type and padding. Was `#7D161E` with white text until 2026-11-03.
 - **None:** draws nothing (a 0 × 0 frame), for cards without a badge.
 - **Placement:** the card puts the badge above the headline and sets the space around it; the chip is as wide as its text (production `width: max-content`, 3px below it in production's own margin).
 - **Font:** Noto Sans, as everywhere in the design. Production asks for "Source Sans Pro", which the sites never load, so readers see Helvetica or Arial unless they have that font installed (design-vs-production 22.1).
@@ -99,8 +99,7 @@ Production `.subscriber-only-tag` (theme stylesheets, identical on all 6 review 
 
 1. Production's side padding is 5px; the design uses 4px (`spacing/050`), the 4 / 8 grid value (design-vs-production 22.1).
 2. Production's font is "Source Sans Pro" (not loaded), so it falls back to Helvetica / Arial; the design is Noto Sans (design-vs-production 22.1).
-3. Sponsored is a placeholder (Karl, 2026-11-03) until production has a sponsored badge to match. Its text is raw `#141414` (Gray-Min, not bound; Karl). Gray-Min on `color/theme/secondary` passes 4.5:1 on 20 of the 22 themes and fails on 2: **Denver Post 1.43:1** (navy `#003459`; white would be 12.8:1) and The Baltimore Sun 4.15:1 (`#98712a`; white is 4.44, also short). Review sites: Bold Coastal 14.9, Measured Vibrant / Chicago Tribune / Orlando Sentinel / Modern Earthy / Morning Call 16.7, Denver Post 1.4 (fails).
-4. **Values not bound to a token** (literal in the component tokens): `type-sponsored` sponsored-content color = #141414.
+3. Sponsored is a placeholder (Karl, 2026-11-03) until production has a sponsored badge to match. Its text is Gray-Min (`color/gray/min`; bound by Karl 2026-11-03, it was briefly a raw `#141414`). Gray-Min on `color/theme/secondary` passes 4.5:1 on 20 of the 22 themes and fails on 2: **Denver Post 1.43:1** (navy `#003459`; white would be 12.8:1) and The Baltimore Sun 4.15:1 (`#98712a`; white is 4.44, also short). Review sites: Bold Coastal 14.9, Measured Vibrant / Chicago Tribune / Orlando Sentinel / Modern Earthy / Morning Call 16.7, Denver Post 1.4 (fails).
 
 ## Files
 
