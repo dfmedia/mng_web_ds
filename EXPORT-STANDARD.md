@@ -293,7 +293,7 @@ Built 2026-10-27 (Seth's issue #7). `scripts/validate/validate.py` (`npm run val
 - a `.DS_Store`, `__pycache__`, `.pyc`, zip or copy-suffixed file (`file (1).md`) is tracked;
 - the Figma snapshot (`scripts/build-tokens/figma-variables.json`) isn't one full read of the main file: wrong file key, no read date, a collection or the `shadow/*` styles missing, or data that doesn't match the counts and fingerprints of the read (edited by hand or merged from older reads).
 
-Raw (non-reference) values in component token files are reported, not failures (Karl, 2026-10-27). The legacy `tokens/colors/mng-colors.tokens.json` is skipped until it's retired (§12, status doc open item 14).
+Raw (non-reference) values in component token files are reported, not failures (Karl, 2026-10-27). The legacy `tokens/colors/mng-colors.tokens.json` was retired 2026-11-03; its data is in `scripts/build-tokens/publications.json` (not a token file, so not validated as one).
 
 **The Figma snapshot** is written only by `scripts/build-tokens/save-snapshot.py`. `extract.js` always reads the whole main file and returns a summary (each collection's variable count and fingerprint); `save-snapshot.py` takes that summary plus the data for any collection that changed, and refuses to save unless every collection matches the summary. It also stops if the Colors collection changed (colors stay as of 2026-10-19 unless Karl approves a change).
 

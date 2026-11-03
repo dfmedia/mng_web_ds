@@ -1,6 +1,6 @@
 # Color Tokens — Decision Log (through 2026-10-19)
 
-> **Superseded for values (2026-09-24).** The current color values for every theme and site live in `mng-colors.tokens.json` in this folder (with `mng-colors.css` and `mng-colors-sites.csv`; engineering fixes are in `design-vs-production.md` entry 5). Keep this file for the history: why tokens were added, renamed, removed or excluded. The newest decisions are in §8–§12.
+> **Superseded for values (2026-09-24).** The current color values for every theme and site live in Figma and the DTCG tokens (`tokens/core/`, `tokens/themes/`, `tokens/sites/`; the publications and audits in `scripts/build-tokens/publications.json`, which replaced `mng-colors.tokens.json` on 2026-11-03), with `mng-colors.css` and `mng-colors-sites.csv` in this folder (engineering fixes are in `design-vs-production.md` entry 5). Keep this file for the history: why tokens were added, renamed, removed or excluded. The newest decisions are in §8–§12.
 >
 > **Changed since this was written:**
 > - The export now includes The Baltimore Sun, Capital Gazette and `subsite-custom`, reversing the exclusions noted below. Those values come from the Figma style guides, not from Figma variables (Figma's Colors collection is capped at 20 modes).
