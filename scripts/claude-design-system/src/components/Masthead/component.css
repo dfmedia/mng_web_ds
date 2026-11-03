@@ -71,7 +71,7 @@
 /* Top Nav: natural width, centered, clipped at both edges when it overflows (production; design-vs-production 9.1) */
 .mngds-masthead__nav { display: flex; justify-content: center; overflow: hidden; }
 .mngds-masthead__nav-list {
-  display: flex; flex-shrink: 0; gap: var(--mng-spacing-400); margin: 0; padding: var(--mng-spacing-200) 0; list-style: none; white-space: nowrap;
+  display: flex; flex-shrink: 0; align-items: center; height: 48px; gap: var(--mng-spacing-400); margin: 0; padding: 0; list-style: none; white-space: nowrap;
 }
 .mngds-masthead__nav-item, .mngds-masthead__trending-item { margin: 0; padding: 0; }
 .mngds-masthead__nav-link { font-size: var(--mng-font-size-15); font-weight: var(--mng-font-weight-bold); line-height: 26px; color: var(--mng-color-gray-min); text-decoration: none; }

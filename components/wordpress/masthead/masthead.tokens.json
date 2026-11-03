@@ -11,7 +11,7 @@
       },
       "production": "WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / `--not-top`), audited on the 6 review sites 2026-09-15 (`components/breakpoint-audit.md`), logged out and as an ad-free subscriber. Gaps: design-vs-production 9, 10, 11, 24 and 33.",
       "layer": "wordpress",
-      "exported": "2026-11-02"
+      "exported": "2026-11-03"
     }
   },
   "masthead": {
@@ -1791,28 +1791,6 @@
                 "unit": "px"
               }
             },
-            "padding-bottom": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "padding-top": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
             "business": {
               "color": {
                 "$type": "color",
@@ -2510,26 +2488,11 @@
                 }
               }
             },
-            "padding-bottom": {
+            "height": {
               "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "padding-top": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
+              "$value": {
+                "value": 48,
+                "unit": "px"
               }
             },
             "width": {
@@ -4530,26 +4493,11 @@
                 }
               }
             },
-            "padding-bottom": {
+            "height": {
               "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "padding-top": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
+              "$value": {
+                "value": 48,
+                "unit": "px"
               }
             },
             "width": {

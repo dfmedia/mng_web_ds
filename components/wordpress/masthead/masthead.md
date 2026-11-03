@@ -9,7 +9,7 @@ component_key: 5cf04e3021e4ccd5357b9d77f3d03e02ed41dc28
 variants: 90
 tokens: masthead.tokens.json
 skeleton: masthead.html
-exported: 2026-11-02
+exported: 2026-11-03
 ---
 
 # Masthead
@@ -34,11 +34,11 @@ exported: 2026-11-02
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×504 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
+| `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×494 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
 | `Default / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [456:3394](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3394) | 0 | ![](previews/masthead--default-xl-desktop-1040px-obituaries.png) |
 | `Default / XL-Desktop (≥1040px) / Dashboard` | 1280×144 | [456:2715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2715) | 7 | ![](previews/masthead--default-xl-desktop-1040px-dashboard.png) |
-| `Default / XL-Desktop (≥1040px) / Home` | 1040×504 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
-| `Default / XL-Desktop (≥1040px) / Article` | 1040×504 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
+| `Default / XL-Desktop (≥1040px) / Home` | 1040×494 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
+| `Default / XL-Desktop (≥1040px) / Article` | 1040×494 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
 | `Default / LG-TabletH (800–1039px) / SectionFront` | 1024×346 | [456:2896](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2896) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-sectionfront.png) |
 | `Default / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [456:3653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3653) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-obituaries.png) |
 | `Default / LG-TabletH (800–1039px) / Dashboard` | 1024×64 | [456:2996](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2996) | 6 | ![](previews/masthead--default-lg-tableth-800-1039px-dashboard.png) |
@@ -59,10 +59,10 @@ exported: 2026-11-02
 | `Default / XS-Fold (≤639px · built 340px) / Dashboard` | 340×104 | [456:3324](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3324) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-dashboard.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Home` | 340×180 | [736:2450](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-2450) | 1 | ![](previews/masthead--default-xs-fold-639px-built-340px-home.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Article` | 340×180 | [824:5197](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5197) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-article.png) |
-| `AdFree / XL-Desktop (≥1040px) / SectionFront` | 1040×222 | [822:3434](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=822-3434) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-sectionfront.png) |
+| `AdFree / XL-Desktop (≥1040px) / SectionFront` | 1040×212 | [822:3434](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=822-3434) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-sectionfront.png) |
 | `AdFree / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [827:6067](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-6067) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-obituaries.png) |
-| `AdFree / XL-Desktop (≥1040px) / Home` | 1040×222 | [819:1845](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1845) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-home.png) |
-| `AdFree / XL-Desktop (≥1040px) / Article` | 1040×222 | [824:4625](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4625) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-article.png) |
+| `AdFree / XL-Desktop (≥1040px) / Home` | 1040×212 | [819:1845](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1845) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-home.png) |
+| `AdFree / XL-Desktop (≥1040px) / Article` | 1040×212 | [824:4625](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4625) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-article.png) |
 | `AdFree / LG-TabletH (800–1039px) / SectionFront` | 1024×64 | [823:3812](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3812) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-sectionfront.png) |
 | `AdFree / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [827:5676](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5676) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-obituaries.png) |
 | `AdFree / LG-TabletH (800–1039px) / Home` | 1024×64 | [823:3758](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3758) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-home.png) |
@@ -129,8 +129,8 @@ exported: 2026-11-02
 
 Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers marked):
 
-- **Device=XL-Desktop (≥1040px), State=Default, Page=SectionFront** `COMPONENT`: 1040×504, vertical, gap 0, padding 0/0/0/0, fixed×hug
-  - **Masthead Container** `FRAME`: 1040×504, vertical, gap 0, padding 0/0/0/0, fill×hug
+- **Device=XL-Desktop (≥1040px), State=Default, Page=SectionFront** `COMPONENT`: 1040×494, vertical, gap 0, padding 0/0/0/0, fixed×hug
+  - **Masthead Container** `FRAME`: 1040×494, vertical, gap 0, padding 0/0/0/0, fill×hug
     - **MastheadTop** `FRAME`: 1040×64, vertical, gap 8, padding 0/0/0/0, fill×hug
       - **Menus Container** `FRAME`: 1040×64, horizontal, gap 14, padding 0/0/0/0, fill×fixed
         - **SectionMenu** `INSTANCE`: 300×64, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of SectionMenu (View=Closed, Device=XL-Desktop, UserType=all)
@@ -160,8 +160,8 @@ Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers
       - **Weather Bug** `INSTANCE`: 345×42, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead)
       - **Section Name** `TEXT`: 278×54, hug×hug, "Section Name", Noto Serif Bold 40px
       - **Ad Blocks** `INSTANCE`: 320×50, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Ad Blocks (Device=All, Name=Sponsorship 1 320x50)
-    - **Container** `FRAME`: 1040×58, vertical, gap 0, padding 0/0/0/0, fill×hug
-      - **Menu** `FRAME`: 1093×58, horizontal, gap 32, padding 16/0/16/0, hug×hug
+    - **Container** `FRAME`: 1040×48, vertical, gap 0, padding 0/0/0/0, fill×hug
+      - **Menu** `FRAME`: 1093×48, horizontal, gap 32, padding 0/0/0/0, hug×fixed
         - **Menu Item** `TEXT`: 97×26, hug×hug, "Food & Drink", Noto Sans Bold 15px
         - **Menu Item** `TEXT`: 53×26, hug×hug, "Movies", Noto Sans Bold 15px
         - **Menu Item** `TEXT`: 44×26, hug×hug, "Music", Noto Sans Bold 15px
@@ -365,8 +365,6 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.ad-blocks.icon-color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.gap` | `{spacing.400}` |
 | `masthead.base.masthead-container.container.container.height` | 48px |
-| `masthead.base.masthead-container.container.container.padding-bottom` | `{spacing.200}` |
-| `masthead.base.masthead-container.container.container.padding-top` | `{spacing.200}` |
 | `masthead.base.masthead-container.container.container.business.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.container.business.font-family` | `{font.family.noto-sans}` |
 | `masthead.base.masthead-container.container.container.business.font-size` | `{font.size.15}` |
@@ -435,8 +433,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.logo-container.vector.height` | 14.21px |
 | `masthead.base.masthead-container.container.logo-container.vector.width` | 9.8px |
 | `masthead.base.masthead-container.container.menu.gap` | `{spacing.400}` |
-| `masthead.base.masthead-container.container.menu.padding-bottom` | `{spacing.200}` |
-| `masthead.base.masthead-container.container.menu.padding-top` | `{spacing.200}` |
+| `masthead.base.masthead-container.container.menu.height` | 48px |
 | `masthead.base.masthead-container.container.menu.width` | 1202px |
 | `masthead.base.masthead-container.container.menu.menu-item.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.menu.menu-item.font-family` | `{font.family.noto-sans}` |
@@ -642,8 +639,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.top-nav-container.divider.height` | 0px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.gap` | `{spacing.400}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.padding-bottom` | `{spacing.200}` |
-| `masthead.base.masthead-container.top-nav-container.top-nav.padding-top` | `{spacing.200}` |
+| `masthead.base.masthead-container.top-nav-container.top-nav.height` | 48px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.width` | 1202px |
 | `masthead.base.masthead-container.top-nav-container.top-nav.business.color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.top-nav-container.top-nav.business.font-family` | `{font.family.noto-sans}` |
@@ -1295,7 +1291,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 
 - **Bar:** `color/gray/max`; every variant ends in a 1px `color/gray/400` rule (production #9D9A98, design-vs-production 9.3).
 - **Below 1040px:** one 64px row: hamburger (SectionMenu) left, logo centered, account icon or avatar (AccountMenu) and search right. The Top Leaderboard sits under the rule: 970x250 at 800–1039px and 728x90 at 640–799px with 16px (`spacing/200`) around it; 320x50 at 360px and 320x100 at 340px with 8px (`spacing/100`) around it.
-- **1040px and up, top of the page:** a 64px menus row (All Sections left; Subscribe / Log In or the avatar, then search, 40px `spacing/500` right padding); the weather, date and logo row with Sponsorship 1 320x50 (8px `spacing/100` top and bottom, 40px `spacing/500` sides); the Top Nav (16px `spacing/200` top and bottom, items 32px `spacing/400` apart, centered); the rule; the Trending row (8px top and bottom, 40px sides, 32px apart); then the Top Leaderboard 970x250 with 16px above and below.
+- **1040px and up, top of the page:** a 64px menus row (All Sections left; Subscribe / Log In or the avatar, then search, 40px `spacing/500` right padding); the weather, date and logo row with Sponsorship 1 320x50 (8px `spacing/100` top and bottom, 40px `spacing/500` sides); the Top Nav (48px tall with the items centered in it, as production; items 32px `spacing/400` apart, centered); the rule; the Trending row (8px top and bottom, 40px sides, 32px apart); then the Top Leaderboard 970x250 with 16px above and below.
 - **Type:** Top Nav items Noto Sans Bold 15 (`font/size/15`, `font/style/bold`), 26px line height, `color/gray/min` (18.4:1); matches what production renders (Karl, 2026-11-02; was Bold 16, auto line height). Production's CSS is 15px / 600 / 26px, but the themes load only the 400, 700 and 800 Noto Sans faces, so it renders Bold (design-vs-production 9.4). Trending label Noto Sans Bold 14 uppercase `color/theme/primary` (4.75:1 or more on every site; 5.5:1 Bold Coastal); Trending items Noto Sans Regular 15 `color/gray/min`. Section front: the section name under the logo.
 - **Top Nav overflow:** the row keeps its natural width and is clipped at both edges when a site has more items than fit (11 on Chicago Tribune and Orlando Sentinel), as production does (design-vs-production 9.1).
 - **Scroll (Scrolled / AdFree-Scrolled):** after about 450px of scrolling (production adds `.headroom--not-top`) the masthead becomes a 64px bar fixed to the top of the viewport, with the rule and `shadow/masthead` (0 3px 3px, black 25%, production's value). The ads under it scroll away. No shadow at the top of the page. On articles at 1040px and up the bar shows the section name, headline and share buttons instead of All Sections / Subscribe / Log In.
@@ -1325,7 +1321,7 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 ## Known issues
 
 1. The Top Nav overflow at 1040–1322px is built in on purpose to match production (design-vs-production 9.1).
-2. The Top Nav row is 58px tall (16px `spacing/200` above and below the 26px items); production's is 48px (about 11px). Karl kept 16px for now (2026-11-02; design-vs-production 9.4). The 26px line height has no token.
+2. The Top Nav row is a fixed 48px with the 26px items centered (11px above and below), as production (Karl, 2026-11-03; was 58px with 16px padding). The 48px height and 26px line height have no tokens.
 3. At 1040–1279px production wraps long nav items onto two lines (Chicago Tribune "Chicago Magazine"; Morning Call "Local News", "Photos and Videos", "Public Notices" at 1046px). The design doesn't show wrapping (design-vs-production 9.4).
 4. Article, Scrolled, XL-Desktop: in Figma the logo touches the section name (the row's content is wider than 1040px with space-between); production's headline overlap is design-vs-production 9.2. Found 2026-10-30.
 5. Obituaries and Dashboard variants aren't audited for the design system yet (open item 17): they keep raw 14px and 2px gaps and 3px / 5px radii.
@@ -1340,4 +1336,4 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 - `masthead.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
