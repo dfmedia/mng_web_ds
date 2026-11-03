@@ -14,7 +14,7 @@ exported: 2026-11-03
 
 # TOP ZONE Block
 
-> The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad. Device values are production's breakpoints.
+> The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad (Show Ad). Device values are production's breakpoints.
 
 ## Figma
 
@@ -28,23 +28,27 @@ exported: 2026-11-03
 |---|---|---|
 | Device | XS (≤639px) | XS (≤639px), S (640–799px), M (800–1039px), L (1040–1279px), XL (≥1280px) |
 
+| Other property | Type | Default |
+|---|---|---|
+| Show Ad | boolean | True |
+
 ## Variants
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `XS (≤639px)` | 340×2244.66 | [3352:19481](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19481) | 2 | ![](previews/top-zone-block--xs-639px.png) |
+| `XS (≤639px)` | 340×2236.01 | [3352:19481](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19481) | 2 | ![](previews/top-zone-block--xs-639px.png) |
 | `S (640–799px)` | 748×1536 | [3383:46168](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46168) | 1 | ![](previews/top-zone-block--s-640-799px.png) |
 | `M (800–1039px)` | 989×1050 | [3553:32881](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-32881) | 1 | ![](previews/top-zone-block--m-800-1039px.png) |
-| `L (1040–1279px)` | 1065×1303.66 | [3553:33340](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-33340) | 1 | ![](previews/top-zone-block--l-1040-1279px.png) |
+| `L (1040–1279px)` | 1065×1401.83 | [3553:33340](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-33340) | 1 | ![](previews/top-zone-block--l-1040-1279px.png) |
 | `XL (≥1280px)` | 1260×1082 | [3352:19480](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19480) | 1 | ![](previews/top-zone-block--xl-1280px.png) |
 
 ## Anatomy
 
 Default variant `XS (≤639px)` (hidden layers marked):
 
-- **Device=XS (≤639px)** `COMPONENT`: 340×2244.66, vertical, gap 32, padding 0/0/0/0, fixed×hug
-  - **Lead Column** `FRAME`: 340×1124.66, vertical, gap 20, padding 0/0/0/0, fill×hug
-    - **Zone 1 Lead Article Card** `INSTANCE`: 340×628.66, vertical, gap 8, padding 0/0/16/0, fill×hug, instance of Zone 1 Lead Article Card (Style=Standard, Device=Mobile, Gallery=Image)
+- **Device=XS (≤639px)** `COMPONENT`: 340×2236.01, vertical, gap 32, padding 0/0/0/0, fixed×hug
+  - **Lead Column** `FRAME`: 340×1116.01, vertical, gap 20, padding 0/0/0/0, fill×hug
+    - **Zone 1 Lead Article Card** `INSTANCE`: 340×620.01, vertical, gap 8, padding 0/0/16/0, fill×hug, instance of Zone 1 Lead Article Card (Style=Standard, Device=Mobile, Gallery=Image)
     - **Secondary Stories** `FRAME`: 340×476, vertical, gap 16, padding 0/0/0/0, fill×hug
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
@@ -87,7 +91,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-1.topzone-article-card.width` | 192.5px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-2.topzone-article-card.height` | 189.28px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-2.topzone-article-card.width` | 192.5px |
-| `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 600.66px |
+| `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 635.41px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.zone-1-lead-article-card.width` | 405px |
 | `top-zone-block.device-m-800-1039px.right-rail.width` | 300px |
 | `top-zone-block.device-m-800-1039px.root.width` | 989px |
@@ -98,7 +102,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.height` | 173px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.icon-color` | #e1a1ff |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.width` | 500px |
-| `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 511.66px |
+| `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.zone-1-lead-article-card.height` | 609.83px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.zone-1-lead-article-card.width` | 500px |
 | `top-zone-block.device-l-1040-1279px.right-rail.width` | 314px |
 | `top-zone-block.device-l-1040-1279px.root.gap` | `{spacing.250}` |
@@ -121,7 +125,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.height` | 107px |
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.icon-color` | #e1a1ff |
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.width` | 340px |
-| `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.height` | 628.66px |
+| `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.height` | 620.01px |
 | `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.width` | 340px |
 | `top-zone-block.device-xs-639px.root.gap` | `{spacing.400}` |
 | `top-zone-block.device-xs-639px.root.width` | 340px |
@@ -156,6 +160,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 - **XS and S:** Lead Column, Latest Headlines (Device = XS / S) and the Cube ad (300×250, centered), 32px (`spacing/400`) apart (production `margin-bottom: 2em` and the ad's `margin-top: 2em`).
 - **M, L, XL:** the Feature Wrapper (Lead Column, 20px (`spacing/250`), Latest Headlines (Device = (≥800px))) beside the ad column (Cube 300×1050). Widths as production's percentages: M wrapper 689 = row less the 300px ad (Lead Column 60% − 8 = 405, Latest Headlines 40% − 12 = 264) and **no gap before the ad** (production: `flex-wrap: nowrap` lets the 300px ad push the wrapper; see knownIssues); L wrapper 69.2% − 6 = 731 (500 / 211), 20px, ad column 30.8% − 14 = 314; XL wrapper 75% − 5 = 940 (700 / 220), 20px, ad column 25% − 15 = 300.
 - **Bottom space:** L and XL 32px (`spacing/400`) below (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px); XS, S and M none inside the block (the page's 32px between blocks is outside).
+- **Show Ad** (boolean, on by default; Karl, 2026-11-03): off for ad-free readers. The ad column keeps its width and stays empty, as production does for signed-in ad-free readers (checked 2026-11-03 on ocregister.com at 360, 768, 900, 1100 and 1280, and dailynews.com and sun-sentinel.com at 360 and 1280: no ad slots load; OC Register and Daily News show a house promo, "View Today's Print Replica", in the column, Sun Sentinel nothing). In XS and S the empty Ad Block Container has no height.
 
 ## Accessibility
 

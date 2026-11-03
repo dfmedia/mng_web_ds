@@ -2,3 +2,4 @@
 - The 1px bottom rule has no height token; 1px is from the skeleton (Bottom Border, `top: 41px; height: 1px`). The nav sits above it so the Active tab's 2px underline overlaps the rule, as the spec says.
 - `homepage-tabs.base.nav.tab-list.tab.width` (85px), `.tab.height` (42px) and `.tab.icon-color` are the exported sizes and placeholder color of the nested instances; the tabs hug their labels instead (85px is the "For You" tab's hug width).
 - No arrow-key navigation: the spec lists only the tablist roles (`ul role=tablist`, `li role=presentation`, `aria-selected`, `aria-controls`). Every tab stays in the Tab order and is selected by click / Enter / Space.
+- **Nav padding** (Karl, 2026-11-03): 8px (`spacing/100`) on both breakpoints and a 1280px max on Desktop, so the first tab's left edge lines up with the page content (the homepage's 8px gutter). Was a 1200px nav with 24px (`spacing/300`) sides at 640px and up and none below.

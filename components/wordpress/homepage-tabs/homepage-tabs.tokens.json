@@ -11,7 +11,7 @@
       },
       "production": "Production World Cup tabs (`ul.sr-nav-tabs > button.tab-btn`, staging.dailylocal.com/world-cup/); differences are design-vs-production entry 12.",
       "layer": "wordpress",
-      "exported": "2026-10-28"
+      "exported": "2026-11-03"
     }
   },
   "homepage-tabs": {
@@ -30,6 +30,28 @@
         }
       },
       "nav": {
+        "padding-left": {
+          "$type": "dimension",
+          "$value": "{spacing.100}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/100"
+              }
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": "{spacing.100}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/100"
+              }
+            }
+          }
+        },
         "tab-list": {
           "gap": {
             "$type": "dimension",
@@ -87,32 +109,10 @@
     },
     "breakpoint-desktop": {
       "nav": {
-        "padding-left": {
-          "$type": "dimension",
-          "$value": "{spacing.300}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/300"
-              }
-            }
-          }
-        },
-        "padding-right": {
-          "$type": "dimension",
-          "$value": "{spacing.300}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/300"
-              }
-            }
-          }
-        },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 1200,
+            "value": 1280,
             "unit": "px"
           }
         }

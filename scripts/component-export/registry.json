@@ -403,17 +403,18 @@
       "description": "The homepage Zone 1 lead story (production lead with Related list); Gallery=Image or Gallery=Slideshow (a photo gallery lead, which shows the Zone 1 Slideshow instead of the image). The For You featured story is its own component, Blocks Lead Article Card (2026-10-28).",
       "rules": [
         "**Headline and excerpt:** (Noto Serif Bold 29/33, −0.87px at 640px and up; 25/29, −0.03em below; excerpt Noto Sans 15/19 `color/gray/100`, 4px below the headline group on Desktop and Tablet, as in production).",
-        "**Layout:** Desktop and Tablet are two columns (text, then image; 20px and 32px apart); Mobile is one column (headline group, image, excerpt, Related list; 8px gaps) with a 1px bottom rule below.",
+        "**Layout:** Desktop and Tablet are two columns (text, then image; 20px (`spacing/250`) apart); Mobile is one column (headline group, image, excerpt, Related list; 8px gaps) with a 1px bottom rule below.",
+        "**Sizes match production** (Karl, 2026-11-03; the lead CSS `.feature-primary .feature-large` is identical on all 6 review sites): the card fills its column. Desktop (1280px and up): text `calc(43.75% − 0.71rem)` and image `calc(56.25% − 0.55rem)`, about 20px apart (`spacing/250`), built 296 + 20 + 384 = 700; a slideshow takes 50% (built 352). Tablet (640–799px): text and image `calc(50% − 0.63rem)` each, 20px apart, built 364 + 20 + 364 = 748 (was 358 + 32 + 358). The photo is 3:2, production's crop, so its height follows its width: 384×256 Desktop, 364×243 Tablet, 340×227 Mobile (was 391×271 and 340×236).",
         "**Gallery** (Karl, 2026-10-26): `Gallery=Slideshow` replaces the image with the Zone 1 Slideshow, as production does for gallery leads (`.feature-large .article-slideshow`). Zone 1 has no Gallery Icon Badge.",
-        "**Gallery=Slideshow layout follows the lead's width, not the screen:** two columns when the lead is about 700px wide or more (Desktop: text 295 and slideshow 356, the rest of the 706 card between them; Tablet: the slideshow fills the 358 column); one column when narrower: headline, excerpt, then the Related list, then the slideshow full width. On the homepage the third page column narrows the lead, so it is one column from 800 to 1279px (594 wide at 1024) and below 640px, and two columns from 640 to 799px and from 1280px up (production, checked on develop.denverpost.com 2026-10-26).",
+        "**Gallery=Slideshow layout follows the lead's width, not the screen:** two columns when the lead is about 700px wide or more (Desktop: text 43.75% and slideshow 50%, the rest of the card between them; Tablet: text and slideshow 50% each, 20px apart); one column when narrower: headline, excerpt, then the Related list, then the slideshow full width. On the homepage the third page column narrows the lead, so it is one column from 800 to 1279px (594 wide at 1024) and below 640px, and two columns from 640 to 799px and from 1280px up (production, checked on develop.denverpost.com 2026-10-26).",
         "**The For You featured story** moved to Blocks Lead Article Card (Karl, 2026-10-28); its Style=For You variants were deleted. `Style` has one value (Standard) and is kept so existing instances don't change.",
         "**Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`.",
         "**Related list** (2026-11-02): a \"Related\" header, then up to three Related Article List Items (their own component, matched to production that day), 4px (`spacing/050`) apart; the items hug their height (they were fixed at 41 / 45px)."
       ],
-      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline |\n| Tablet | 640px and up (768 template) | Two columns, 32px apart |\n| Desktop | 1024px and up | Two columns, 20px apart (text 295, image 391) |",
+      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px, and 800–1279px on the homepage | One column; 25/29 headline below 640px; photo 3:2, full width |\n| Tablet | 640–799px | Two columns, 50% / 50%, 20px apart (built 364 + 20 + 364) |\n| Desktop | 1280px and up | Two columns, 43.75% / 56.25%, 20px apart (built 296 + 20 + 384); slideshow 50% |",
       "knownIssues": [
-        "Tablet: the image (391px) is wider than its 358px column.",
-        "Column gaps 20px (spacing/250) and 32px (no token) are raw values."
+        "Column gap 20px (`spacing/250`) is a raw value in Figma (not bound to the variable).",
+        "Fixed 2026-11-03: the Tablet image (391px) was wider than its 358px column."
       ],
       "production": "Production `.feature-primary .feature-large` (Zone 1 lead)."
     },
@@ -501,11 +502,11 @@
       "description": "The homepage tab bar built from Homepage Tab. Breakpoint = Desktop, Mobile.",
       "rules": [
         "**Bar:** full width, `color/gray/max`, with a 1px `color/gray/300` rule along the bottom; the active underline sits over it.",
-        "**Nav:** max width 1200px, centered, 24px (`spacing/300`) side padding at 640px and up; no side padding below 640px.",
+        "**Nav:** max width 1280px, centered, 8px (`spacing/100`) side padding at every width, so the first tab lines up with the page content's left edge (Karl, 2026-11-03; was 1200px with 24px (`spacing/300`) sides at 640px and up and no side padding below).",
         "**Tabs:** left-aligned, 24px (`spacing/300`) apart; they scroll sideways (scrollbar hidden) if they don't fit.",
         "**Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`."
       ],
-      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | No nav side padding |\n| Desktop | 640px and up | Nav 1200px max, 24px side padding |",
+      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | Nav 8px side padding |\n| Desktop | 640px and up | Nav 1280px max, 8px side padding |",
       "knownIssues": [],
       "group": "navigation",
       "layer": "wordpress",
@@ -890,15 +891,15 @@
       "description": "The featured (lead) story for Blocks (first used at the top of the For You tab feed). State = Default / Hover × Device = Mobile / Tablet / Desktop × Gallery = Image / Slideshow. Built 2026-10-28 from Zone 1 Lead Article Card, Style=For You, as its own component (Karl).",
       "rules": [
         "**Content:** Article Section Kicker 4px (`spacing/050`) above the headline; headline Noto Serif Bold 29/33, −0.87px at 640px and up, 25/29, −0.03em below; excerpt Noto Sans 15/19 `color/gray/100`, 4px below; byline (Article Author and Article Timestamp, 12px `spacing/150` apart, 12px above). No border, badge or Related list.",
-        "**Layout:** follows the lead's width: two columns when it's about 700px wide or more, one column (headline, excerpt, byline, then the image or slideshow) when narrower. The For You feed has no side column, so that means two columns at 640px and up and one column below. Mobile has a 1px bottom rule 20px below the byline.",
-        "**Gallery=Slideshow:** the image is replaced by the Zone 1 Slideshow (Desktop: slideshow 356, text 295; Tablet: the slideshow fills its 358 column).",
+        "**Layout:** follows the lead's width: two columns when it's about 700px wide or more, one column (headline, excerpt, byline, then the image or slideshow) when narrower. The For You feed has no side column, so that means two columns at 640px and up and one column below. Mobile has a 1px bottom rule 20px below the byline. Sizes as Zone 1 Lead Article Card (Karl, 2026-11-03: match production): the card fills its column; Desktop text 43.75% and image 56.25%, Tablet 50% / 50%, 20px (`spacing/250`) apart; photo 3:2 (built 296 + 20 + 384×256 = 700 Desktop, 364 + 20 + 364×243 = 748 Tablet, 340×227 Mobile; was 295 + 20 + 391×271, 358 + 32 + 358 and 340×236).",
+        "**Gallery=Slideshow:** the image is replaced by the Zone 1 Slideshow (Desktop: text 43.75%, slideshow 50%, built 296 and 352; Tablet: 50% each, 20px apart).",
         "**Hover:** the headline is the link and turns `color/theme/primary` (prototype `a:hover`, production `h3 a:hover`). Large text, so 3:1 is enough; theme primary on white is 4.75:1 or more on every site.",
         "**Focus:** not drawn; the prototype has no custom style for the lead, so use the Blocks Card's `outline: 2px solid` `color/gray/black`, `outline-offset: 1px` on the headline link.",
         "**Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`."
       ],
-      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline |\n| Tablet | 640px and up (768 template) | Two columns |\n| Desktop | 1024px and up | Two columns (text 295, image 391 or slideshow 356) |",
+      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline; photo 3:2, full width |\n| Tablet | 640px and up (768 template) | Two columns, 50% / 50%, 20px apart |\n| Desktop | 1024px and up | Two columns, 43.75% / 56.25% (slideshow 50%), 20px apart |",
       "knownIssues": [
-        "Tablet: the image (391px) is wider than its 358px column (as in Zone 1 Lead Article Card)."
+        "Fixed 2026-11-03: the Tablet image (391px) was wider than its 358px column."
       ],
       "production": "New: the For You tab (prototype `.fy-lead`), based on production's Zone 1 lead (`.feature-primary .feature-large`)."
     },
@@ -1360,14 +1361,15 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "3352:19482",
       "documentationFrame": "3484:67592",
-      "description": "The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad. Device values are production's breakpoints.",
+      "description": "The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad (Show Ad). Device values are production's breakpoints.",
       "rules": [
         "**Matches production on the 4 / 8 grid** (CLAUDE.md, Design vs. production): the Zone 1 CSS (`.busy`, `.feature-wrapper`, `.feature-left`, `.feature-top`, `.feature-bottom`, `.headline-list`, `.sidebar-ad-container`) is identical on all 6 review sites; measured 2026-11-02 at 360, 778, 900, 1100, 1280 and 1728px. Production's 20.16px column gaps are 20 (`spacing/250`).",
         "**Breakpoints are production's:** `XS (≤639px)` stacked (built 340), `S (640–799px)` stacked, story cards 2 per row (built 748), `M (800–1039px)` Feature Wrapper beside the ad column (built 989), `L (1040–1279px)` (built 1065), `XL (≥1280px)` (built 1260). The block fills its row.",
         "**Lead Column:** Zone 1 Lead Article Card (Device = Mobile in XS, M and L; Tablet in S; Desktop in XL), 20px (`spacing/250`) to the Secondary Stories: 4 TopZone Article Cards with the block's Device, 16px (`spacing/200`) between rows; 2 per row, 20px (`spacing/250`) apart, in S, M and XL; one column in XS and L.",
         "**XS and S:** Lead Column, Latest Headlines (Device = XS / S) and the Cube ad (300×250, centered), 32px (`spacing/400`) apart (production `margin-bottom: 2em` and the ad's `margin-top: 2em`).",
         "**M, L, XL:** the Feature Wrapper (Lead Column, 20px (`spacing/250`), Latest Headlines (Device = (≥800px))) beside the ad column (Cube 300×1050). Widths as production's percentages: M wrapper 689 = row less the 300px ad (Lead Column 60% − 8 = 405, Latest Headlines 40% − 12 = 264) and **no gap before the ad** (production: `flex-wrap: nowrap` lets the 300px ad push the wrapper; see knownIssues); L wrapper 69.2% − 6 = 731 (500 / 211), 20px, ad column 30.8% − 14 = 314; XL wrapper 75% − 5 = 940 (700 / 220), 20px, ad column 25% − 15 = 300.",
-        "**Bottom space:** L and XL 32px (`spacing/400`) below (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px); XS, S and M none inside the block (the page's 32px between blocks is outside)."
+        "**Bottom space:** L and XL 32px (`spacing/400`) below (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px); XS, S and M none inside the block (the page's 32px between blocks is outside).",
+        "**Show Ad** (boolean, on by default; Karl, 2026-11-03): off for ad-free readers. The ad column keeps its width and stays empty, as production does for signed-in ad-free readers (checked 2026-11-03 on ocregister.com at 360, 768, 900, 1100 and 1280, and dailynews.com and sun-sentinel.com at 360 and 1280: no ad slots load; OC Register and Daily News show a house promo, \"View Today's Print Replica\", in the column, Sun Sentinel nothing). In XS and S the empty Ad Block Container has no height."
       ],
       "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| XS (≤639px) | `wordpress-grid.xs` | Stacked; story cards one column; Latest Headlines max 540px, centered | 340px | Mobile |\n| S (640–799px) | `wordpress-grid.s` | Stacked; story cards 2 per row | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | Feature Wrapper (60% / 40%) beside the 300px ad, no gap | 989px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | Wrapper 69.2% (69.2% / 30.8%), ad column 30.8% | 1065px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | Wrapper 75% (75% / 25%), ad column 25% | 1260px | Desktop |",
       "knownIssues": [

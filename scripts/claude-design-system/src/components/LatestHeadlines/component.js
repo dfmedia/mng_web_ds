@@ -37,6 +37,7 @@ function LatestHeadlines(props) {
   }
   return h('div', root,
     h('div', { className: 'mngds-latest-headlines__header' },
-      h(SectionTitleEyebrow, { style: 'Underline', chevron: false, title: props.title != null ? props.title : 'Latest Headlines', href: props.href })),
+      h(SectionTitleEyebrow, { style: 'Underline', chevron: false, title: props.title != null ? props.title : 'Latest Headlines', href: props.href,
+        className: 'mngds-latest-headlines__title' })),
     h('ul', { className: 'mngds-latest-headlines__list' }, lis));
 }

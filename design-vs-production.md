@@ -1447,8 +1447,9 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 | Tab top/bottom padding | 12px | `spacing/150` (12) |
 | Tab side padding | 18px | `spacing/200` (16) |
 | Gap between tabs | 32px | `spacing/300` (24) |
-| Nav side padding | 24px | `spacing/300` (24) |
-| No side padding below | `(max-width: 500px)` | `(max-width: 639px)` (WordPress grid; see entry 8) |
+| Nav side padding | 24px | `spacing/100` (8) at every width, so the first tab lines up with the page content (Karl, 2026-11-03; was `spacing/300` (24)) |
+| No side padding below | `(max-width: 500px)` | None: 8px at every width (was none below 640px) |
+| Nav width | — | 1280px max, centered (was 1200px) |
 
 **Fix:** update the `sr-nav-tabs` styles to the design column.
 
@@ -1486,13 +1487,21 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 | Property | Production | Design |
 |---|---|---|
 | Title color | wrong on all 6 sites | `color/gray/100` |
-| Underline | only on Modern Earthy (mcall, canoncitydailyrecord): `2px solid` primary. Missing on Bold Coastal (ocregister, denverpost) and Measured Vibrant (chicagotribune, orlandosentinel) | 2px `color/theme/primary` on every theme, as wide as the title |
+| Underline | only on Modern Earthy (mcall, canoncitydailyrecord): `2px solid` primary. Missing on Bold Coastal (ocregister, denverpost) and Measured Vibrant (chicagotribune, orlandosentinel). See 14.1 | 2px `color/theme/primary` on every theme, as wide as the title; across the block's column in Latest Headlines, Section Rail Cards and Photos Block (Karl, 2026-11-03) |
 | Title to underline | `padding-bottom: 0.3125em` = 6.56px (Modern Earthy, 21px); 0.5em = 8.5px with no underline (Measured Vibrant, 17px); 0 with no underline (Bold Coastal, 20px) | `spacing/100` (8px) on every theme |
 | Title to arrow | no gap; the `icon-arrow-right` glyph has `padding-left: 0.3em` (4.14px Measured Vibrant, 4.88px Bold Coastal, 5.12px Modern Earthy) | `spacing/100` (8px), then the 16px arrow icon |
 
 **Fix:** on every theme: set the title color to `color/gray/100`; add the 2px `--primary` underline; set the title's bottom padding to 8px; set the space between the title and its arrow to 8px.
 
 **Status:** Open. Ready for Engineering.
+
+### 14.1 Underline width in blocks (2026-11-03)
+
+**Found:** 2026-11-03 on ocregister.com and dailynews.com (signed in), at 360, 768, 900, 1100 and 1280px: `.headline-list-title span` has a ~1.67px primary bottom border across the whole Latest Headlines column (224px at 1280), and every section title's underline spans its block. sun-sentinel.com's Latest Headlines title has none (Bold style). This differs from what was recorded for ocregister.com on 2026-10-27; the other review sites weren't rechecked.
+
+**Design:** inside Latest Headlines, the Section Rail Cards and Photos Block the title fills the column, so the 2px underline spans it (Figma's Latest Headlines header draws it at the column width; the code's Latest Headlines title was fixed to match on 2026-11-03).
+
+**Fix:** none new; the underline weight (2px) and color are still entry 14.
 
 ---
 

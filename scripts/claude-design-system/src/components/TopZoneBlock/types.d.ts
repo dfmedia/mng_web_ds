@@ -12,8 +12,11 @@ export interface TopZoneBlockProps extends React.HTMLAttributes<HTMLElement> {
   latest?: Partial<LatestHeadlinesProps>;
   /** The right-rail ad: AdBlocks props, or your own element. Default Cube 1 RRail ATF 300x250 (XS, S) / 300x1050 (M up). */
   ad?: Partial<AdBlocksProps> | React.ReactElement;
-  /** Show the ad (anonymous view). Default true; false for subscribers (AdFree). */
+  /** Show the ad (anonymous view). Default true. False for ad-free readers: the ad column keeps its width, as production
+      does (Karl, 2026-11-03), and holds railContent if given. */
   showAd?: boolean;
+  /** What fills the ad column when showAd is false (e.g. production's house promo). Default: nothing (an empty column). */
+  railContent?: React.ReactNode;
   /** Heading level of the lead and story headlines. Default 3. */
   headingLevel?: 1 | 2 | 3 | 4 | 5 | 6;
 }

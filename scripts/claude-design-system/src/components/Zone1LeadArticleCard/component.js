@@ -40,7 +40,7 @@ function Zone1LeadArticleCard(props) {
   if (gallery === 'Slideshow') {
     /* Zone 1 Slideshow: its Breakpoint follows the card's Device; on Mobile it fills the card width (16:9 image area). */
     media = h('div', { className: 'mngds-zone-1-lead-article-card__slideshow' },
-      h(Zone1Slideshow, Object.assign({ breakpoint: device, fill: mobile || undefined }, props.slideshow)));
+      h(Zone1Slideshow, Object.assign({ breakpoint: device, fill: true }, props.slideshow)));
   } else {
     media = h('div', { className: 'mngds-zone-1-lead-article-card__image', 'aria-hidden': props.image ? undefined : 'true' },
       h(ArticleImage, { src: props.image, alt: props.imageAlt, className: 'mngds-zone-1-lead-article-card__img' }));

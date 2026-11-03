@@ -4,21 +4,21 @@
   box-sizing: border-box; display: flex; margin: 0; min-width: 0;
   background: var(--mng-blocks-lead-article-card-base-root-background); padding: 0 0 var(--mng-blocks-lead-article-card-base-root-padding-bottom) 0;
 }
-.mngds-blocks-lead-article-card--desktop { flex-direction: row; align-items: flex-start; justify-content: space-between; width: var(--mng-blocks-lead-article-card-device-desktop-root-width); max-width: 100%; gap: var(--mng-blocks-lead-article-card-device-desktop-root-gap); }
-.mngds-blocks-lead-article-card--tablet { flex-direction: row; align-items: flex-start; width: max-content; max-width: 100%; gap: var(--mng-blocks-lead-article-card-device-tablet-root-gap); }
+/* Desktop and Tablet fill their column, at production's Zone 1 lead split (Karl, 2026-11-03: same as Zone 1 Lead
+   Article Card). The 20px gap is shared evenly. Desktop: text 43.75%, image 56.25% (built 296 + 20 + 384 = 700);
+   a slideshow takes 50% (built 352), the rest between them. Tablet: 50% each (built 364 + 20 + 364 = 748). */
+.mngds-blocks-lead-article-card--desktop { flex-direction: row; align-items: flex-start; justify-content: space-between; width: 100%; gap: var(--mng-blocks-lead-article-card-device-desktop-root-gap); }
+.mngds-blocks-lead-article-card--tablet { flex-direction: row; align-items: flex-start; width: 100%; gap: var(--mng-blocks-lead-article-card-device-tablet-root-gap); }
 .mngds-blocks-lead-article-card--mobile { flex-direction: column; align-items: stretch; width: 100%; gap: var(--mng-blocks-lead-article-card-device-mobile-root-gap); }
 .mngds-blocks-lead-article-card__col1 { display: flex; flex-direction: column; align-items: stretch; flex-shrink: 0; min-width: 0; gap: var(--mng-blocks-lead-article-card-base-1st-col-gap); }
-.mngds-blocks-lead-article-card--desktop .mngds-blocks-lead-article-card__col1 { width: var(--mng-blocks-lead-article-card-device-desktop-1st-col-width); }
-.mngds-blocks-lead-article-card--tablet .mngds-blocks-lead-article-card__col1 { width: var(--mng-blocks-lead-article-card-device-tablet-1st-col-width); }
-.mngds-blocks-lead-article-card__col2 { display: flex; flex-direction: column; align-items: flex-start; flex-shrink: 0; }
-.mngds-blocks-lead-article-card--desktop.mngds-blocks-lead-article-card--image .mngds-blocks-lead-article-card__col2 { width: var(--mng-blocks-lead-article-card-device-desktop-gallery-image-2nd-col-width); height: var(--mng-blocks-lead-article-card-base-2nd-col-height); }
-.mngds-blocks-lead-article-card--desktop.mngds-blocks-lead-article-card--slideshow .mngds-blocks-lead-article-card__col2 { width: var(--mng-blocks-lead-article-card-device-desktop-gallery-slideshow-2nd-col-width); }
-.mngds-blocks-lead-article-card--tablet.mngds-blocks-lead-article-card--image .mngds-blocks-lead-article-card__col2 { width: var(--mng-blocks-lead-article-card-device-tablet-gallery-image-2nd-col-width); height: var(--mng-blocks-lead-article-card-base-2nd-col-height); }
-.mngds-blocks-lead-article-card--tablet.mngds-blocks-lead-article-card--slideshow .mngds-blocks-lead-article-card__col2 { width: var(--mng-blocks-lead-article-card-device-tablet-gallery-slideshow-2nd-col-width); }
-/* Image: 391 x 271 at 640px and up (on Tablet it overflows the 358px column, as in Figma: spec known issue);
-   Mobile: full width x 235.65. */
-.mngds-blocks-lead-article-card__col2 .mngds-blocks-lead-article-card__image { flex-shrink: 0; width: var(--mng-blocks-lead-article-card-base-2nd-col-article-image-placeholder-width); height: var(--mng-blocks-lead-article-card-base-2nd-col-article-image-placeholder-height); }
-.mngds-blocks-lead-article-card--mobile .mngds-blocks-lead-article-card__image { flex-shrink: 0; width: 100%; height: var(--mng-blocks-lead-article-card-base-featured-image-article-image-placeholder-height); }
+.mngds-blocks-lead-article-card--desktop .mngds-blocks-lead-article-card__col1 { width: calc(43.75% - var(--mng-blocks-lead-article-card-device-desktop-root-gap) / 2); }
+.mngds-blocks-lead-article-card--tablet .mngds-blocks-lead-article-card__col1 { width: calc(50% - var(--mng-blocks-lead-article-card-device-tablet-root-gap) / 2); }
+.mngds-blocks-lead-article-card__col2 { display: flex; flex-direction: column; align-items: stretch; flex-shrink: 0; min-width: 0; }
+.mngds-blocks-lead-article-card--desktop.mngds-blocks-lead-article-card--image .mngds-blocks-lead-article-card__col2 { width: calc(56.25% - var(--mng-blocks-lead-article-card-device-desktop-root-gap) / 2); }
+.mngds-blocks-lead-article-card--desktop.mngds-blocks-lead-article-card--slideshow .mngds-blocks-lead-article-card__col2 { width: 50%; }
+.mngds-blocks-lead-article-card--tablet .mngds-blocks-lead-article-card__col2 { width: calc(50% - var(--mng-blocks-lead-article-card-device-tablet-root-gap) / 2); }
+/* Image: production's 3:2 crop at every width; height follows width (built 384 x 256, 364 x 243, 340 x 227). */
+.mngds-blocks-lead-article-card__image { flex-shrink: 0; width: 100%; aspect-ratio: 3 / 2; }
 .mngds-blocks-lead-article-card__img { width: 100%; height: 100%; }
 .mngds-blocks-lead-article-card__slideshow { align-self: stretch; display: flex; flex-direction: column; min-width: 0; }
 .mngds-blocks-lead-article-card--desktop .mngds-blocks-lead-article-card__slideshow-fallback { height: var(--mng-blocks-lead-article-card-device-desktop-2nd-col-zone-1-slideshow-height); }
