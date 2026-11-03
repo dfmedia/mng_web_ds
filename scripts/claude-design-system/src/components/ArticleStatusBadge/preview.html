@@ -1,0 +1,17 @@
+<!-- @dsCard group="WordPress Elements" height=300 subtitle="Figma: Article Status Badge · 3 variants (Type)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ArticleStatusBadge</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var types = h(I.SpecimenSection, { title: 'Type', note: 'Subscriber: color/theme/primary-dark (follows the theme). Sponsored: #7D161E (raw, the same on every theme). White Noto Sans Regular 13 caps, 22.652px line height, 0 × 4px (spacing/050) padding; as wide as its text. None renders nothing.' },
+    h(I.Specimen, { items: ['Subscriber', 'Sponsored', 'None'].map(function (t) {
+      return { label: 'Type=' + t, width: 200, node: t === 'None' ? h('span', { style: { fontFamily: 'var(--mng-font-family-noto-sans)', fontSize: 12, color: 'var(--mng-color-gray-200)' } }, '(nothing)') : h(NS.ArticleStatusBadge, { type: t }) };
+    }) }));
+  ReactDOM.createRoot(document.getElementById('root')).render(types);
+</script>
+</body>
+</html>

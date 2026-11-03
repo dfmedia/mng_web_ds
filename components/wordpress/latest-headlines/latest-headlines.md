@@ -32,18 +32,18 @@ exported: 2026-11-02
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `XS (≤639px)` | 340×842 | [3476:62139](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62139) | 3 | ![](previews/latest-headlines--xs-639px.png) |
-| `S (640–799px)` | 748×678 | [3476:62152](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62152) | 2 | ![](previews/latest-headlines--s-640-799px.png) |
-| `(≥800px)` | 226×1004 | [3476:62164](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62164) | 6 | ![](previews/latest-headlines--800px.png) |
+| `XS (≤639px)` | 340×806 | [3476:62139](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62139) | 3 | ![](previews/latest-headlines--xs-639px.png) |
+| `S (640–799px)` | 748×642 | [3476:62152](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62152) | 2 | ![](previews/latest-headlines--s-640-799px.png) |
+| `(≥800px)` | 226×1000 | [3476:62164](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3476-62164) | 6 | ![](previews/latest-headlines--800px.png) |
 
 ## Anatomy
 
 Default variant `XS (≤639px)` (hidden layers marked):
 
-- **Device=XS (≤639px)** `COMPONENT`: 340×842, vertical, gap 0, padding 0/0/0/0, fixed×hug
+- **Device=XS (≤639px)** `COMPONENT`: 340×806, vertical, gap 0, padding 0/0/0/0, fixed×hug
   - **Header Container** `FRAME`: 340×48, vertical, gap 8, padding 0/0/16/0, fill×hug
     - **Section Title / Eyebrow** `INSTANCE`: 340×32, vertical, gap 8, padding 0/0/0/0, fill×hug, instance of Section Title / Eyebrow (Style=Underline)
-  - **List** `FRAME`: 340×794, vertical, gap 12, padding 0/0/0/0, fill×hug
+  - **List** `FRAME`: 340×758, vertical, gap 12, padding 0/0/0/0, fill×hug
     - **Latest Headlines List Item** `INSTANCE`: 340×44, vertical, gap 4, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=First)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
@@ -51,7 +51,7 @@ Default variant `XS (≤639px)` (hidden layers marked):
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
     - **Latest Headlines List Item** `INSTANCE`: 340×60, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Standard)
-    - **Latest Headlines List Item** `INSTANCE`: 340×127, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Sponsored)
+    - **Latest Headlines List Item** `INSTANCE`: 340×123, vertical, gap 16, padding 0/0/0/0, fill×hug, instance of Latest Headlines List Item (Type=Sponsored)
     - **Newsletter Signup** `INSTANCE`: 340×116, vertical, gap 0, padding 16/0/0/0, fill×hug, instance of Newsletter Signup (Device=(≤799px))
 
 ## Component tokens
@@ -69,19 +69,19 @@ From `latest-headlines.tokens.json`. References point at system tokens (`tokens/
 | `latest-headlines.base.list.newsletter-signup.icon-color` | `{color.gray.min}` |
 | `latest-headlines.base.root.background` | `{color.gray.max}` |
 | `latest-headlines.device-xs-639px.header-container.section-title-eyebrow.width` | 340px |
-| `latest-headlines.device-xs-639px.list.latest-headlines-list-item.height` | 127px |
+| `latest-headlines.device-xs-639px.list.latest-headlines-list-item.height` | 123px |
 | `latest-headlines.device-xs-639px.list.latest-headlines-list-item.width` | 340px |
 | `latest-headlines.device-xs-639px.list.newsletter-signup.height` | 116px |
 | `latest-headlines.device-xs-639px.list.newsletter-signup.width` | 340px |
 | `latest-headlines.device-xs-639px.root.width` | 340px |
 | `latest-headlines.device-s-640-799px.header-container.section-title-eyebrow.width` | 748px |
-| `latest-headlines.device-s-640-799px.list.latest-headlines-list-item.height` | 108px |
+| `latest-headlines.device-s-640-799px.list.latest-headlines-list-item.height` | 104px |
 | `latest-headlines.device-s-640-799px.list.latest-headlines-list-item.width` | 748px |
 | `latest-headlines.device-s-640-799px.list.newsletter-signup.height` | 116px |
 | `latest-headlines.device-s-640-799px.list.newsletter-signup.width` | 748px |
 | `latest-headlines.device-s-640-799px.root.width` | 748px |
 | `latest-headlines.device-800px.header-container.section-title-eyebrow.width` | 226px |
-| `latest-headlines.device-800px.list.latest-headlines-list-item.height` | 146px |
+| `latest-headlines.device-800px.list.latest-headlines-list-item.height` | 142px |
 | `latest-headlines.device-800px.list.latest-headlines-list-item.width` | 226px |
 | `latest-headlines.device-800px.list.newsletter-signup.height` | 132px |
 | `latest-headlines.device-800px.list.newsletter-signup.width` | 226px |
@@ -117,7 +117,8 @@ From `latest-headlines.tokens.json`. References point at system tokens (`tokens/
 Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **11**.
 
 Inside components: TOP ZONE Block ×5.
-6 instances are nested inside other instances.
+Placed on pages: Homepage ×3.
+3 instances are nested inside other instances.
 
 **Built from:** Latest Headlines List Item ×24, Section Title / Eyebrow ×3, Newsletter Signup ×3
 

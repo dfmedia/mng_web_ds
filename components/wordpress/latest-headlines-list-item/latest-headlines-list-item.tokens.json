@@ -11,7 +11,7 @@
       },
       "production": "Production `.headline-list ul > li > article.headline-only` (homepage Zone 1, all 6 review sites, measured 2026-10-30 at 1728px and on ocregister.com at 700px).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-02"
     }
   },
   "latest-headlines-list-item": {
@@ -97,7 +97,7 @@
             "height": {
               "$type": "dimension",
               "$value": {
-                "value": 27,
+                "value": 23,
                 "unit": "px"
               }
             },
@@ -115,7 +115,7 @@
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 153,
+                "value": 149,
                 "unit": "px"
               }
             }

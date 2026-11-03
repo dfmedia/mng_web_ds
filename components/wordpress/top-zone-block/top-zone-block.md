@@ -32,8 +32,8 @@ exported: 2026-11-02
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `XS (≤639px)` | 340×2248.66 | [3352:19481](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19481) | 2 | ![](previews/top-zone-block--xs-639px.png) |
-| `S (640–799px)` | 748×1540 | [3383:46168](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46168) | 1 | ![](previews/top-zone-block--s-640-799px.png) |
+| `XS (≤639px)` | 340×2244.66 | [3352:19481](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19481) | 2 | ![](previews/top-zone-block--xs-639px.png) |
+| `S (640–799px)` | 748×1536 | [3383:46168](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46168) | 1 | ![](previews/top-zone-block--s-640-799px.png) |
 | `M (800–1039px)` | 989×1050 | [3553:32881](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-32881) | 1 | ![](previews/top-zone-block--m-800-1039px.png) |
 | `L (1040–1279px)` | 1065×1303.66 | [3553:33340](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-33340) | 1 | ![](previews/top-zone-block--l-1040-1279px.png) |
 | `XL (≥1280px)` | 1260×1082 | [3352:19480](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-19480) | 1 | ![](previews/top-zone-block--xl-1280px.png) |
@@ -42,7 +42,7 @@ exported: 2026-11-02
 
 Default variant `XS (≤639px)` (hidden layers marked):
 
-- **Device=XS (≤639px)** `COMPONENT`: 340×2248.66, vertical, gap 32, padding 0/0/0/0, fixed×hug
+- **Device=XS (≤639px)** `COMPONENT`: 340×2244.66, vertical, gap 32, padding 0/0/0/0, fixed×hug
   - **Lead Column** `FRAME`: 340×1124.66, vertical, gap 20, padding 0/0/0/0, fill×hug
     - **Zone 1 Lead Article Card** `INSTANCE`: 340×628.66, vertical, gap 8, padding 0/0/16/0, fill×hug, instance of Zone 1 Lead Article Card (Style=Standard, Device=Mobile, Gallery=Image)
     - **Secondary Stories** `FRAME`: 340×476, vertical, gap 16, padding 0/0/0/0, fill×hug
@@ -50,7 +50,7 @@ Default variant `XS (≤639px)` (hidden layers marked):
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
       - **TopZone Article Card** `INSTANCE`: 340×107, vertical, gap 16, padding 0/0/16/0, fill×hug, instance of TopZone Article Card (Device=XS (≤639px))
-  - **Latest Headlines** `INSTANCE`: 340×810, vertical, gap 0, padding 0/0/0/0, fill×hug, instance of Latest Headlines (Device=XS (≤639px))
+  - **Latest Headlines** `INSTANCE`: 340×806, vertical, gap 0, padding 0/0/0/0, fill×hug, instance of Latest Headlines (Device=XS (≤639px))
   - **Ad Block Container** `FRAME`: 340×250, vertical, gap 16, padding 0/0/0/0, fill×hug
     - **Ad Blocks** `INSTANCE`: 300×250, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Ad Blocks (Device=All, Name=Cube 1 RRail ATF 300x250)
 
@@ -80,7 +80,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.base.root.background` | `{color.gray.max}` |
 | `top-zone-block.base.root.padding-bottom` | `{spacing.400}` |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.width` | 689px |
-| `top-zone-block.device-m-800-1039px.feature-wrapper.latest-headlines.height` | 917px |
+| `top-zone-block.device-m-800-1039px.feature-wrapper.latest-headlines.height` | 913px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.latest-headlines.width` | 264px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.width` | 405px |
 | `top-zone-block.device-m-800-1039px.feature-wrapper.lead-column.secondary-stories.row-1.topzone-article-card.height` | 189.28px |
@@ -92,7 +92,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-m-800-1039px.right-rail.width` | 300px |
 | `top-zone-block.device-m-800-1039px.root.width` | 989px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.width` | 731px |
-| `top-zone-block.device-l-1040-1279px.feature-wrapper.latest-headlines.height` | 998px |
+| `top-zone-block.device-l-1040-1279px.feature-wrapper.latest-headlines.height` | 994px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.latest-headlines.width` | 211px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.width` | 500px |
 | `top-zone-block.device-l-1040-1279px.feature-wrapper.lead-column.secondary-stories.topzone-article-card.height` | 173px |
@@ -104,7 +104,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-l-1040-1279px.root.gap` | `{spacing.250}` |
 | `top-zone-block.device-l-1040-1279px.root.width` | 1065px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.width` | 940px |
-| `top-zone-block.device-xl-1280px.feature-wrapper.latest-headlines.height` | 1003px |
+| `top-zone-block.device-xl-1280px.feature-wrapper.latest-headlines.height` | 999px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.latest-headlines.width` | 220px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.width` | 700px |
 | `top-zone-block.device-xl-1280px.feature-wrapper.lead-column.secondary-stories.row-1.topzone-article-card.height` | 263.25px |
@@ -116,7 +116,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-xl-1280px.right-rail.width` | 300px |
 | `top-zone-block.device-xl-1280px.root.gap` | `{spacing.250}` |
 | `top-zone-block.device-xl-1280px.root.width` | 1260px |
-| `top-zone-block.device-xs-639px.latest-headlines.height` | 810px |
+| `top-zone-block.device-xs-639px.latest-headlines.height` | 806px |
 | `top-zone-block.device-xs-639px.latest-headlines.width` | 340px |
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.height` | 107px |
 | `top-zone-block.device-xs-639px.lead-column.secondary-stories.topzone-article-card.icon-color` | #e1a1ff |
@@ -125,7 +125,7 @@ From `top-zone-block.tokens.json`. References point at system tokens (`tokens/co
 | `top-zone-block.device-xs-639px.lead-column.zone-1-lead-article-card.width` | 340px |
 | `top-zone-block.device-xs-639px.root.gap` | `{spacing.400}` |
 | `top-zone-block.device-xs-639px.root.width` | 340px |
-| `top-zone-block.device-s-640-799px.latest-headlines.height` | 646px |
+| `top-zone-block.device-s-640-799px.latest-headlines.height` | 642px |
 | `top-zone-block.device-s-640-799px.latest-headlines.width` | 748px |
 | `top-zone-block.device-s-640-799px.lead-column.secondary-stories.row-1.gap` | `{spacing.250}` |
 | `top-zone-block.device-s-640-799px.lead-column.secondary-stories.row-1.topzone-article-card.height` | 89px |

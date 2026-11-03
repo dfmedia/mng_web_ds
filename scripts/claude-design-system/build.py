@@ -66,6 +66,7 @@ COMPONENTS = [
     ("1col-article-card", "OneColArticleCard", "1Col Article Card", "WordPress Elements"),
     ("horizontal-thumbnail-card", "HorizontalThumbnailCard", "Horizontal Thumbnail Card", "WordPress Elements"),
     ("related-article-list-item", "RelatedArticleListItem", "Related Article List Item", "WordPress Elements"),
+    ("article-status-badge", "ArticleStatusBadge", "Article Status Badge", "WordPress Elements"),
     ("zone-1-lead-article-card", "Zone1LeadArticleCard", "Zone 1 Lead Article Card", "WordPress Elements"),
     ("topzone-article-card", "TopZoneArticleCard", "TopZone Article Card", "WordPress Elements"),
     ("latest-headlines-list-item", "LatestHeadlinesListItem", "Latest Headlines List Item", "WordPress Elements"),

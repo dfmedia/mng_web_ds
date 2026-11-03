@@ -1,0 +1,25 @@
+/* Article Status Badge: values from components/wordpress/article-status-badge (matches production, Karl 2026-11-02;
+   `.subscriber-only-tag` is the same on all 6 review sites). As wide as its text (production `width: max-content`). */
+.mngds-article-status-badge {
+  box-sizing: border-box; display: inline-block; flex-shrink: 0; align-self: flex-start; width: max-content; max-width: 100%;
+  padding: 0 var(--mng-article-status-badge-base-root-padding-right) 0 var(--mng-article-status-badge-base-root-padding-left);
+  text-transform: uppercase; white-space: nowrap; letter-spacing: 0;
+}
+/* Subscriber: color/theme/primary-dark chip, white Noto Sans Regular 13 / 22.652px. 8.0 / 9.3 / 5.8:1 (Bold Coastal / Measured Vibrant / Modern Earthy). */
+.mngds-article-status-badge--subscriber {
+  background: var(--mng-article-status-badge-type-subscriber-root-background);
+  color: var(--mng-article-status-badge-type-subscriber-subscriber-only-color);
+  font-family: var(--mng-article-status-badge-type-subscriber-subscriber-only-font-family);
+  font-size: var(--mng-article-status-badge-type-subscriber-subscriber-only-font-size);
+  font-weight: var(--mng-article-status-badge-type-subscriber-subscriber-only-font-weight);
+  line-height: var(--mng-article-status-badge-type-subscriber-subscriber-only-line-height);
+}
+/* Sponsored: #7D161E (raw by design, design-vs-production 22), same type. 10.5:1. */
+.mngds-article-status-badge--sponsored {
+  background: var(--mng-article-status-badge-type-sponsored-root-background);
+  color: var(--mng-article-status-badge-type-sponsored-sponsored-content-color);
+  font-family: var(--mng-article-status-badge-type-sponsored-sponsored-content-font-family);
+  font-size: var(--mng-article-status-badge-type-sponsored-sponsored-content-font-size);
+  font-weight: var(--mng-article-status-badge-type-sponsored-sponsored-content-font-weight);
+  line-height: var(--mng-article-status-badge-type-sponsored-sponsored-content-line-height);
+}

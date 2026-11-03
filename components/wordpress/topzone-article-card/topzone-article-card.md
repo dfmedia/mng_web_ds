@@ -9,7 +9,7 @@ component_key: 4daecb8ad8cafb30916853070665c768d1fc18e8
 variants: 5
 tokens: topzone-article-card.tokens.json
 skeleton: topzone-article-card.html
-exported: 2026-10-30
+exported: 2026-11-02
 ---
 
 # TopZone Article Card
@@ -33,7 +33,7 @@ exported: 2026-10-30
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `XS (≤639px)` | 340×107 | [3336:46078](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46078) | 12 | ![](previews/topzone-article-card--xs-639px.png) |
-| `S (640–799px)` | 330×89 | [3692:40921](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3692-40921) | 0 | ![](previews/topzone-article-card--s-640-799px.png) |
+| `S (640–799px)` | 330×89 | [3692:40921](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3692-40921) | 8 | ![](previews/topzone-article-card--s-640-799px.png) |
 | `M (800–1039px)` | 197×191.81 | [3553:32800](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-32800) | 8 | ![](previews/topzone-article-card--m-800-1039px.png) |
 | `L (1040–1279px)` | 507×173 | [3553:32811](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3553-32811) | 8 | ![](previews/topzone-article-card--l-1040-1279px.png) |
 | `XL (≥1280px)` | 336×261 | [3336:46077](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46077) | 8 | ![](previews/topzone-article-card--xl-1280px.png) |
@@ -137,10 +137,10 @@ From `topzone-article-card.tokens.json`. References point at system tokens (`tok
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **36**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **44**.
 
-Inside components: TOP ZONE Block ×16.
-Placed on pages: Homepage ×20.
+Inside components: TOP ZONE Block ×20.
+Placed on pages: Homepage ×24.
 
 **Built from:** Article Image Placeholder ×5
 
@@ -161,4 +161,4 @@ Production homepage Zone 1 (`.feature-primary.busy .feature-small`), the four se
 - `topzone-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

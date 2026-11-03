@@ -138,7 +138,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 127,
+              "value": 123,
               "unit": "px"
             }
           },
@@ -194,7 +194,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 108,
+              "value": 104,
               "unit": "px"
             }
           },
@@ -250,7 +250,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 146,
+              "value": 142,
               "unit": "px"
             }
           },

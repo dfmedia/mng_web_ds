@@ -9,7 +9,7 @@ component_key: d527b9d45b9d427355fa4f71183d2232ca6eaf27
 variants: 2
 tokens: 1col-article-card.tokens.json
 skeleton: 1col-article-card.html
-exported: 2026-10-30
+exported: 2026-11-02
 ---
 
 # 1Col Article Card
@@ -39,8 +39,8 @@ exported: 2026-10-30
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Standard` | 296×372 | [3352:24163](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-24163) | 26 | ![](previews/1col-article-card--standard.png) |
-| `Media Lead` | 296×413.5 | [3536:39050](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-39050) | 6 | ![](previews/1col-article-card--media-lead.png) |
+| `Standard` | 296×372 | [3352:24163](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-24163) | 44 | ![](previews/1col-article-card--standard.png) |
+| `Media Lead` | 296×413.5 | [3536:39050](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-39050) | 12 | ![](previews/1col-article-card--media-lead.png) |
 
 ## Anatomy
 
@@ -48,7 +48,7 @@ Default variant `Standard` (hidden layers marked):
 
 - **Style=Standard** `COMPONENT`: 296×372, vertical, gap 8, padding 0/0/16/0, fixed×hug
   - **Article Graphic** `INSTANCE`: 296×222, vertical, gap 8, padding 0/0/0/0, fill×fixed, instance of Article Image Placeholder ()
-  - **SubsOnlyBadge** `INSTANCE`: 127×27, horizontal, gap 8, padding 2/5/2/5, hug×hug, instance of Article Status Badge (Type=Subscriber), **hidden**
+  - **SubsOnlyBadge** `INSTANCE`: 122×23, horizontal, gap 8, padding 0/4/0/4, hug×hug, instance of Article Status Badge (Type=Subscriber), **hidden**
   - **Headline Container** `FRAME`: 296×72, vertical, gap 15, padding 0/0/0/0, fill×hug
     - **Article Headline on News paper homepage in first position on 1col section block** `TEXT`: 296×72, fill×hug, "Article Headline on News paper homepage ", Noto Sans SemiBold 19px
   - **Excerpt Container** `FRAME`: 296×38, horizontal, gap 8, padding 0/0/0/0, fill×hug
@@ -111,9 +111,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **32**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **56**.
 
-Inside components: Section Rail Card ×20, Feature + List Content Block ×6, Photos Block ×6.
+Inside components: Section Rail Card ×12, Photos Block ×6, Section Rail Card Narrow ×2.
+Placed on pages: Homepage ×6.
+30 instances are nested inside other instances.
 
 **Built from:** Article Image Placeholder ×2
 
@@ -131,4 +133,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `1col-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

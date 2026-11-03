@@ -9,7 +9,7 @@ component_key: 264c00580f01ace3ec1483efbb4da877a0238766
 variants: 3
 tokens: latest-headlines-list-item.tokens.json
 skeleton: latest-headlines-list-item.html
-exported: 2026-10-30
+exported: 2026-11-02
 ---
 
 # Latest Headlines List Item
@@ -34,7 +34,7 @@ exported: 2026-10-30
 |---|---|---|---|---|
 | `First` | 226×64 | [3336:46115](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46115) | 14 | ![](previews/latest-headlines-list-item--first.png) |
 | `Standard` | 226×84 | [3336:46116](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46116) | 84 | ![](previews/latest-headlines-list-item--standard.png) |
-| `Sponsored` | 226×146 | [3336:46117](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46117) | 14 | ![](previews/latest-headlines-list-item--sponsored.png) |
+| `Sponsored` | 226×142 | [3336:46117](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3336-46117) | 14 | ![](previews/latest-headlines-list-item--sponsored.png) |
 
 ## Anatomy
 
@@ -59,9 +59,9 @@ From `latest-headlines-list-item.tokens.json`. References point at system tokens
 | `latest-headlines-list-item.base.root.gap` | `{spacing.200}` |
 | `latest-headlines-list-item.base.root.width` | 226px |
 | `latest-headlines-list-item.type-sponsored.content-card.gap` | `{spacing.050}` |
-| `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.height` | 27px |
+| `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.height` | 23px |
 | `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.icon-color` | `{color.gray.max}` |
-| `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.width` | 153px |
+| `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.width` | 149px |
 | `latest-headlines-list-item.type-sponsored.content-card.headline-container.headline.color` | `{color.gray.black}` |
 | `latest-headlines-list-item.type-sponsored.content-card.headline-container.headline.font-family` | `{font.theme.heading-family}` |
 | `latest-headlines-list-item.type-sponsored.content-card.headline-container.headline.font-size` | `{font.size.15}` |
@@ -129,4 +129,4 @@ Production `.headline-list ul > li > article.headline-only` (homepage Zone 1, al
 - `latest-headlines-list-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

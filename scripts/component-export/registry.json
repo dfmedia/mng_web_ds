@@ -330,6 +330,32 @@
       "production": "Production `.feature-primary ul.primary-related li` (homepage Zone 1 lead, Related list). CSS read on all 6 review sites and measured on ocregister.com at 360, 778, 900, 1100, 1280 and 1371px, 2026-11-02."
     },
     {
+      "slug": "article-status-badge",
+      "name": "Article Status Badge",
+      "group": "article-parts",
+      "layer": "wordpress",
+      "order": 5,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3344:63995",
+      "documentationFrame": "3484:67563",
+      "description": "The label above a story's headline that says what kind of story it is: Subscriber (production `.subscriber-only-tag`, a subscriber-only story) or Sponsored (sponsored content); None draws nothing. Used in 1Col Article Card, Section Rail Card Narrow, Photos Block (Subscriber) and Latest Headlines, TopZone Article Card (Sponsored). Its own component in the export since 2026-11-02 (it was only in the legacy export).",
+      "rules": [
+        "**Matches production** (Karl, 2026-11-02, after a side-by-side of production and Figma). `.subscriber-only-tag` is identical on all 6 review sites (one rule in each theme stylesheet: `boldcoastal.css`, `measuredvibrant.css`, `modernearthy.css`). No homepage had a subscriber-only story that day, so it was drawn by each site's own CSS on a live card (ocregister.com, canoncitydailyrecord.com) to see what renders.",
+        "**Subscriber:** `color/theme/primary-dark` chip (production `var(--primary-dark)`), white (`color/gray/max`) Noto Sans Regular 13 (`font/size/13`, `font/style/regular`) caps, 22.652px line height, no top or bottom padding and 4px (`spacing/050`) at the sides, so the chip is 22.65px tall and hugs its text. Before 2026-11-02 Figma had SemiBold on `color/theme/primary` with 2px / 5px padding (27px tall). Contrast: 8.0:1 Bold Coastal, 9.3:1 Measured Vibrant, 5.8:1 Modern Earthy.",
+        "**Sponsored:** the same chip with `#7D161E` (raw: not bound to a theme token, Karl 2026-10-02; it equals only Denver Post's `primary-dark`), white text, 10.5:1. No sponsored badge was live on any of the 6 homepages on 2026-11-02 (production draws it with the Nativo vendor label; design-vs-production 22), so it keeps Figma's color and takes the Subscriber chip's type and padding (Karl).",
+        "**None:** draws nothing (a 0 × 0 frame), for cards without a badge.",
+        "**Placement:** the card puts the badge above the headline and sets the space around it; the chip is as wide as its text (production `width: max-content`, 3px below it in production's own margin).",
+        "**Font:** Noto Sans, as everywhere in the design. Production asks for \"Source Sans Pro\", which the sites never load, so readers see Helvetica or Arial unless they have that font installed (design-vs-production 22.1)."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Production's side padding is 5px; the design uses 4px (`spacing/050`), the 4 / 8 grid value (design-vs-production 22.1).",
+        "Production's font is \"Source Sans Pro\" (not loaded), so it falls back to Helvetica / Arial; the design is Noto Sans (design-vs-production 22.1).",
+        "Sponsored's `#7D161E` is a raw color, not a token (Karl, 2026-10-02: no theme role works on every site)."
+      ],
+      "production": "Production `.subscriber-only-tag` (theme stylesheets, identical on all 6 review sites, read 2026-11-02): `background-color: var(--primary-dark); color: #fff; padding: 0 5px; text-transform: uppercase; margin: auto auto 3px 0; font-family: \"Source Sans Pro\", Helvetica, sans-serif !important; font-size: 13px !important; line-height: 22.652px !important; display: block !important; width: max-content !important`. No weight is set, so it renders Regular. The Sponsored label is the Nativo vendor template (design-vs-production 22)."
+    },
+    {
       "slug": "1col-article-card",
       "name": "1Col Article Card",
       "group": "cards",

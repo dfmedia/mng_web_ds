@@ -36,14 +36,8 @@
 .mngds-latest-headlines-list-item__link:hover { text-decoration: underline; }
 .mngds-latest-headlines-list-item__link:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }
 
-/* Sponsored content badge: Article Status Badge, Type=Sponsored. #7D161E stays raw by design (design-vs-production 22),
-   white (color/gray/max) Noto Sans SemiBold 13 caps, 2px / 5px padding; 10.5:1. */
-.mngds-latest-headlines-list-item__badge {
-  display: inline-flex; align-items: center; padding: 2px 5px; background: #7D161E;
-  color: var(--mng-latest-headlines-list-item-type-sponsored-content-card-badge-container-article-status-badge-icon-color);
-  font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-13); font-weight: var(--mng-font-weight-semibold);
-  line-height: 22.652px; text-transform: uppercase;
-}
+/* Sponsored content badge: ArticleStatusBadge (Type=Sponsored), as wide as its text. */
+.mngds-latest-headlines-list-item__badge { align-self: flex-start; }
 .mngds-latest-headlines-list-item--sponsored .mngds-latest-headlines-list-item__headline {
   width: 100%;
   font-family: var(--mng-latest-headlines-list-item-type-sponsored-content-card-headline-container-headline-font-family);

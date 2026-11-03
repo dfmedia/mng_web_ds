@@ -27,7 +27,7 @@ function LatestHeadlinesListItem(props) {
   }
   var sponsor = props.sponsor != null ? props.sponsor : 'Xcel Energy';
   return h('article', root,
-    h('span', { className: 'mngds-latest-headlines-list-item__badge' }, props.badgeLabel != null ? props.badgeLabel : 'Sponsored content'),
+    h(ArticleStatusBadge, { type: 'Sponsored', label: props.badgeLabel, className: 'mngds-latest-headlines-list-item__badge' }),
     title,
     h('div', { className: 'mngds-latest-headlines-list-item__meta' },
       h('span', { className: 'mngds-latest-headlines-list-item__byline' }, 'By ', sponsor),

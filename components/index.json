@@ -242,6 +242,22 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "article-status-badge",
+      "name": "Article Status Badge",
+      "group": "article-parts",
+      "layer": "wordpress",
+      "path": "components/wordpress/article-status-badge/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3344:63995",
+        "set": "Article Status Badge"
+      },
+      "variants": 3,
+      "instances": 235,
+      "knownIssues": 4,
+      "exported": "2026-11-02"
+    },
+    {
       "slug": "article-timestamp",
       "name": "Article Timestamp",
       "group": "article-parts",
@@ -349,9 +365,9 @@
         "set": "1Col Article Card"
       },
       "variants": 2,
-      "instances": 32,
+      "instances": 56,
       "knownIssues": 1,
-      "exported": "2026-10-30"
+      "exported": "2026-11-02"
     },
     {
       "slug": "gallery-icon-badge",
@@ -413,9 +429,9 @@
         "set": "TopZone Article Card"
       },
       "variants": 5,
-      "instances": 36,
+      "instances": 44,
       "knownIssues": 4,
-      "exported": "2026-10-30"
+      "exported": "2026-11-02"
     },
     {
       "slug": "zone-1-lead-article-card",
@@ -543,7 +559,7 @@
       "variants": 3,
       "instances": 112,
       "knownIssues": 5,
-      "exported": "2026-10-30"
+      "exported": "2026-11-02"
     },
     {
       "slug": "newsletter-signup",

@@ -1782,11 +1782,29 @@ One-line items are unaffected (the 44px height holds), but every extra line adds
 | ocregister.com | #0097A7 | #7D161E | ❌ |
 | chicagotribune.com, orlandosentinel.com, canoncitydailyrecord.com, mcall.com | no Nativo sponsored unit on the homepage checked | #7D161E | not checked |
 
-**Fix:** update the Nativo sponsored-label template on every site to the design badge (#7D161E background, white `gray/max` text, Noto Sans), with Ad Ops. Re-check the other four sites when a sponsored unit is running.
+**Fix:** update the Nativo sponsored-label template on every site to the design badge (#7D161E background, white `gray/max` text, Noto Sans Regular 13px caps, 22.652px line height, 0 4px padding), with Ad Ops. Re-check the other four sites when a sponsored unit is running.
+
+**Update 2026-11-02 (Karl):** the badge now matches production's Subscriber Only chip (22.1): Noto Sans Regular (was SemiBold), 0 × 4px padding (was 2 × 5px), 22.65px tall (was 27). Sponsored keeps #7D161E (raw; it equals only Denver Post's `primary-dark`). No sponsored badge was live on any of the 6 homepages that day (only display-ad and CitySpark labels).
 
 **Note:** the theme's own `.sponsored-content .sponsored-flag` (a different element) uses `primary-light` with white text, and `secondary` with dark text on images.
 
 **Status:** Open.
+
+### 22.1 Subscriber Only badge — font family and side padding
+
+**Found:** 2026-11-02. `.subscriber-only-tag` read on all 6 review sites (one identical rule in `boldcoastal.css`, `measuredvibrant.css` and `modernearthy.css`); no homepage had a subscriber-only story that day, so it was drawn by each site's own CSS on a live card (ocregister.com, canoncitydailyrecord.com). **Team:** CMS. Figma: WordPress Elements ▸ Homepage ▸ Article Status Badge (`3344:63995`), Type=Subscriber; used in 1Col Article Card, Section Rail Card Narrow and Photos Block.
+
+**Production:** `background-color: var(--primary-dark); color: #fff; padding: 0 5px; text-transform: uppercase; font-family: "Source Sans Pro", Helvetica, sans-serif !important; font-size: 13px !important; line-height: 22.652px !important; width: max-content !important`. No weight is set, so it renders Regular. "Source Sans Pro" is never loaded (no web font), so readers see Helvetica or Arial unless the font is installed on their computer.
+
+**Design (changed 2026-11-02 to match production, Karl, after a side-by-side):** `color/theme/primary-dark` chip, white (`color/gray/max`) Noto Sans Regular 13 caps, 22.652px line height, 0 × 4px (`spacing/050`) padding, 22.65px tall. Was SemiBold on `color/theme/primary`, 2 × 5px, 27px tall. Contrast 8.0:1 Bold Coastal, 9.3:1 Measured Vibrant, 5.8:1 Modern Earthy.
+
+**Production differs from the design:**
+- **Font:** "Source Sans Pro" (not loaded; Helvetica / Arial fallback) instead of Noto Sans.
+- **Side padding:** 5px instead of 4px (the 4 / 8 grid value).
+
+**Fix:** in `.subscriber-only-tag` (all three theme stylesheets): `font-family` to the Noto Sans stack (`"Noto Sans", "Helvetica Neue", Arial, sans-serif`, entry 2) and `padding: 0 4px`.
+
+**Status:** Open. Added 2026-11-02.
 
 ---
 

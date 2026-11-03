@@ -1,6 +1,6 @@
 /* 1Col Article Card (WordPress Elements, Homepage, 3536:39065). Style = Standard / Media Lead;
    Show Image, Show Subscriber Badge, Show Excerpt, Show Meta.
-   One column, 8px apart: image (Standard 4:3, Media Lead 16:9), Subscriber badge (Article Status Badge, Type=Subscriber),
+   One column, 8px apart: image (Standard 4:3, Media Lead 16:9), Subscriber badge (ArticleStatusBadge, Type=Subscriber),
    headline (Editorial/Titles/CardQuaternary or TitleMedia), excerpt (Editorial/Body/ExcerptCompact or Excerpt),
    meta ("56 mins ago"), then a 1px color/gray/500 bottom rule and 16px bottom padding.
    The identifier can't start with a digit, so "1Col" is spelled OneCol. The headline is the link when `href` is given. */
@@ -22,7 +22,7 @@ function OneColArticleCard(props) {
   return h('article', root,
     showImage ? h('div', { className: 'mngds-1col-article-card__image', 'aria-hidden': props.image ? undefined : 'true' },
       h(ArticleImage, { src: props.image, alt: props.imageAlt, className: 'mngds-1col-article-card__img' })) : null,
-    showBadge ? h('span', { className: 'mngds-1col-article-card__badge' }, props.badgeLabel != null ? props.badgeLabel : 'Subscriber Only') : null,
+    showBadge ? h(ArticleStatusBadge, { type: 'Subscriber', label: props.badgeLabel, className: 'mngds-1col-article-card__badge' }) : null,
     h(HL, { className: 'mngds-1col-article-card__headline' },
       props.href ? h('a', { className: 'mngds-1col-article-card__link', href: props.href, target: props.target, rel: props.target ? 'noopener' : undefined }, headline) : headline),
     showExcerpt ? h('p', { className: 'mngds-1col-article-card__excerpt' },

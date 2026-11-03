@@ -271,7 +271,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 917,
+              "value": 913,
               "unit": "px"
             }
           },
@@ -379,7 +379,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 998,
+              "value": 994,
               "unit": "px"
             }
           },
@@ -497,7 +497,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 1003,
+              "value": 999,
               "unit": "px"
             }
           },
@@ -608,7 +608,7 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 810,
+            "value": 806,
             "unit": "px"
           }
         },
@@ -701,7 +701,7 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 646,
+            "value": 642,
             "unit": "px"
           }
         },

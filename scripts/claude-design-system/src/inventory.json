@@ -428,7 +428,7 @@
      "name": "1Col Article Card",
      "where": "Homepage, 3536:39065",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-02",
      "component": "OneColArticleCard"
     },
     {
@@ -482,8 +482,10 @@
     {
      "name": "Article Status Badge",
      "where": "Homepage, 3344:63995",
-     "status": "To add",
-     "note": "The Subscriber badge inside 1Col Article Card uses the older export."
+     "status": "In system",
+     "note": "Matches production (Karl, 2026-11-02): Regular, primary-dark (Subscriber) or #7D161E (Sponsored), 0 x 4px. 1Col Article Card and Latest Headlines List Item draw it.",
+     "updated": "2026-11-02",
+     "component": "ArticleStatusBadge"
     },
     {
      "name": "Related Article List Item",
@@ -506,7 +508,7 @@
      "where": "Homepage, 3336:46118 (3 variants)",
      "status": "In system",
      "note": "Type = First, Standard, Sponsored. Matches production (Karl, 2026-10-30): time inline after the headline, 15/19 color/gray/black headline in the theme heading family.",
-     "updated": "2026-10-30",
+     "updated": "2026-11-02",
      "component": "LatestHeadlinesListItem"
     },
     {
