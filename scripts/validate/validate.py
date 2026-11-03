@@ -10,8 +10,7 @@ Standard library only, like the other scripts.
 
 Checks:
   1. Every tokens/**/*.tokens.json and components/**/*.tokens.json file parses, and every token has $value and a
-     $type (on the token or a parent group). tokens/colors/mng-colors.tokens.json is skipped: it is the legacy
-     2026-10-01 color export, not DTCG, still read by make-tokens.py until it is retired (status doc, Seth's step 3).
+     $type (on the token or a parent group).
   2. Every {a.b.c} reference resolves within the file's own layer and the layers above it (EXPORT-STANDARD section 5):
        core                          -> core
        themes, theme site overrides  -> core + the file's resolver contexts (theme -> sub-theme -> site)
@@ -42,7 +41,7 @@ FIGMA_FILE = 'jFHYqhZbJjvWQmDI4myCsd'
 SNAPSHOT = 'scripts/build-tokens/figma-variables.json'
 SNAPSHOT_COLLECTIONS = ['Colors', 'Type Primitives', 'Typeography Tokens', 'Typography Theme', 'Spacing & Radius']
 SNAPSHOT_SHADOWS = ['shadow/sm', 'shadow/md', 'shadow/lg']
-LEGACY = {'tokens/colors/mng-colors.tokens.json'}
+LEGACY = set()  # was the 2026-10-01 color export, retired 2026-11-03 (now scripts/build-tokens/publications.json, not a token file)
 BASE_THEMES = ['bold-coastal', 'modern-earthy', 'measured-vibrant']
 RESOLVER = 'tokens/themes/mng.resolver.json'
 

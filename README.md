@@ -66,11 +66,13 @@ mng_web_ds/
 │                                             JS/TS, Tailwind v4 + v3, WordPress theme.json, flat JSON. Never edit
 └── scripts/                                ← generators that rebuild exports, one folder per export
     ├── build-tokens/                       ← extract.js (Figma plugin code) → save-snapshot.py → figma-variables.json
-    │                                         → make-tokens.py (tokens/) → build.py (dist/, with checks)
+    │                                         → make-tokens.py (tokens/) → build.py (dist/, with checks);
+    │                                         publications.json (publications, sites, theme metadata; hex only
+    │                                         where Figma has none) merged with Figma by color_source.py
     ├── validate/                           ← validate.py (npm run validate; EXPORT-STANDARD §10) + pre-commit hook
     ├── ads-export/                         ← extract.js (Figma plugin code) + build-ads-export.py
     ├── colors-docs/                        ← build-color-docs.py (per-site CSV, mng-colors.css and entry 5 of
-    │                                         design-vs-production, from mng-colors.tokens.json) + notes.json
+    │                                         design-vs-production, from Figma + publications.json) + notes.json
     ├── breakpoint-inventory/               ← scan.js (live CSS scan in Chrome) + scans/ + build-inventory.py
     ├── icon-font/                          ← build.py (tokens/icons/icomoon.css and preview.html, from icons.json)
     ├── claude-design-system/               ← build.py + src/ (component code, previews, README prose): the
@@ -92,7 +94,7 @@ mng_web_ds/
 | Component export (spec, component tokens, skeleton, previews) | Add the component to `scripts/component-export/registry.json`, run `extract.js` in Figma, then `export.py`. Writes `components/<layer>/<slug>/`. |
 | Component audit or checklist | `components/<component-name>.md` |
 | Token values (color, type, spacing, radius, shadows, breakpoints) | Change Figma (shadows are the `shadow/*` effect styles), rerun `scripts/build-tokens/extract.js` and save it with `scripts/build-tokens/save-snapshot.py` (never by hand; CLAUDE.md, Exports), then `npm run build` and `npm run validate`. Writes `tokens/core/`, `tokens/themes/`, `tokens/wordpress/` and `dist/`. On a `review/...` branch with a pull request. |
-| Color decisions, sites CSV | Decisions: `tokens/colors/color-tokens-decision-log.md`. Color values and production mismatches: `tokens/colors/mng-colors.tokens.json`, then run `scripts/colors-docs/build-color-docs.py` (rewrites the sites CSV, `mng-colors.css` and the per-site part of entry 5; notes per theme in `scripts/colors-docs/notes.json`) and `npm run build`. |
+| Color decisions, sites CSV | Decisions: `tokens/colors/color-tokens-decision-log.md`. Color values: change Figma (as for token values). Publications, sites, production audits and mismatches: `scripts/build-tokens/publications.json`, then run `scripts/colors-docs/build-color-docs.py` (rewrites the sites CSV, `mng-colors.css` and the per-site part of entry 5; notes per theme in `scripts/colors-docs/notes.json`) and `npm run build`. |
 | Typography tokens or decisions | `tokens/typography/` |
 | Icon font, glyph map, icon previews | `tokens/icons/` (edit `icons.json`, then run `scripts/icon-font/build.py` to rebuild `icomoon.css` and `preview.html`) |
 | Newspaper logo SVGs, manifest, preview | `logos/` (rebuilt by `scripts/logos-export/build-logos.py`; don't hand-edit the SVGs) |

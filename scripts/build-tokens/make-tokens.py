@@ -3,9 +3,10 @@
 
 Inputs
   scripts/build-tokens/figma-variables.json   Figma variables snapshot (extract.js). Design values.
-  tokens/colors/mng-colors.tokens.json        2026-10-01 color export: publications, sites, sub-themes
-                                              outside Figma (Baltimore Sun, Capital Gazette), production
-                                              audit data. Its hex values match Figma (checked by this script).
+  scripts/build-tokens/publications.json      Publications, sites, theme metadata and production audit data, and hex
+                                              values only where Figma has none (subsite-custom; Baltimore Sun and
+                                              Capital Gazette, past the 20-mode limit). Merged with the Figma snapshot
+                                              by color_source.py (replaced tokens/colors/mng-colors.tokens.json, 2026-11-03).
   scripts/build-tokens/breakpoints.json       The two official breakpoint sets (Karl, 2026-10-14).
 
 Outputs (overwritten)
@@ -25,6 +26,8 @@ Run from the repo top:  python3 scripts/build-tokens/make-tokens.py  (then build
 Stdlib only. Never edit the outputs by hand; change Figma, re-read it with extract.js, rerun.
 """
 import json, os, re, sys
+sys.dont_write_bytecode = True  # importing color_source.py must not leave __pycache__ in the repo
+import color_source
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -84,7 +87,7 @@ def parse_figma_color(v):
 
 fig_snapshot = load('scripts/build-tokens/figma-variables.json')
 fig = fig_snapshot['collections']
-legacy = load('tokens/colors/mng-colors.tokens.json')
+legacy = color_source.load()  # Figma hex values + publications.json, in the old color export's shape
 L = legacy['color']
 fig_colors = {v['name']: v for v in fig['Colors']}
 
