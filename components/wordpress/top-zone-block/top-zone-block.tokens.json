@@ -11,7 +11,7 @@
       },
       "production": "Production `section.feature-primary.busy` (homepage Zone 1). CSS read on all 6 review sites at 1728px (identical); layout measured on mcall.com at 360, 778, 900, 1100 and 1280px (fixed-width same-site frames inside the page, so the window wasn't resized) and at 1728px, 2026-11-02.",
       "layer": "wordpress",
-      "exported": "2026-11-02"
+      "exported": "2026-11-03"
     }
   },
   "top-zone-block": {

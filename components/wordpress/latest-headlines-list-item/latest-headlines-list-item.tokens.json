@@ -11,7 +11,7 @@
       },
       "production": "Production `.headline-list ul > li > article.headline-only` (homepage Zone 1, all 6 review sites, measured 2026-10-30 at 1728px and on ocregister.com at 700px).",
       "layer": "wordpress",
-      "exported": "2026-11-02"
+      "exported": "2026-11-03"
     }
   },
   "latest-headlines-list-item": {
@@ -103,12 +103,20 @@
             },
             "icon-color": {
               "$type": "color",
-              "$value": "{color.gray.max}",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.0784,
+                  0.0784,
+                  0.0784
+                ],
+                "alpha": 1,
+                "hex": "#141414"
+              },
               "$extensions": {
                 "com.mng": {
-                  "figma": {
-                    "variable": "Colors/color/gray/max"
-                  }
+                  "rgba": "rgba(20, 20, 20, 1)",
+                  "unbound": true
                 }
               }
             },

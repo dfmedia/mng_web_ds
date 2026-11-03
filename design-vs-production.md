@@ -1772,7 +1772,7 @@ One-line items are unaffected (the 44px height holds), but every extra line adds
 
 **Found:** 2026-10-02, live check of the six review sites (homepage, Latest Headlines and article lists).
 
-**Figma spec (source of truth):** the "Sponsored content" badge (WordPress Elements, Article Status Badge `Type=Sponsored`, `3344:63995`, and its instances in Latest Headlines, Top Zone and TopZone Article Card) stays **#7D161E with white text** (Karl, 2026-10-02). It is intentionally not bound to a theme token for now: none of the theme roles works on every site (white text fails contrast on the yellow `secondary` themes, and `tertiary` passes on only 9 of 22 themes).
+**Figma spec (source of truth):** the "Sponsored content" badge (WordPress Elements, Article Status Badge `Type=Sponsored`, `3344:63995`, and its instances in Latest Headlines, Top Zone and TopZone Article Card) was **#7D161E with white text** (Karl, 2026-10-02) until 2026-11-03, when it became a placeholder on `color/theme/secondary` (see the update below). Until then it was intentionally not bound to a theme token: none of the theme roles works on every site (white text fails contrast on the yellow `secondary` themes, and `tertiary` passes on only 9 of 22 themes).
 
 **Production:** the live badge is the Nativo native-ad label (inline style set by the vendor template), not a theme class, and it doesn't match the design anywhere checked.
 
@@ -1782,9 +1782,22 @@ One-line items are unaffected (the 44px height holds), but every extra line adds
 | ocregister.com | #0097A7 | #7D161E | ❌ |
 | chicagotribune.com, orlandosentinel.com, canoncitydailyrecord.com, mcall.com | no Nativo sponsored unit on the homepage checked | #7D161E | not checked |
 
-**Fix:** update the Nativo sponsored-label template on every site to the design badge (#7D161E background, white `gray/max` text, Noto Sans Regular 13px caps, 22.652px line height, 0 4px padding), with Ad Ops. Re-check the other four sites when a sponsored unit is running.
+**Fix:** on hold since 2026-11-03 (see the update below): nothing to fix until a sponsored badge is designed; then update the Nativo sponsored-label template on every site to it, with Ad Ops. (Until 2026-11-03 this read: update it to #7D161E with white text.)
 
 **Update 2026-11-02 (Karl):** the badge now matches production's Subscriber Only chip (22.1): Noto Sans Regular (was SemiBold), 0 × 4px padding (was 2 × 5px), 22.65px tall (was 27). Sponsored keeps #7D161E (raw; it equals only Denver Post's `primary-dark`). No sponsored badge was live on any of the 6 homepages that day (only display-ad and CitySpark labels).
+
+**Update 2026-11-03 (Karl): placeholder on the site secondary color.** Re-checked all 6 review sites (homepage scrolled to the end, the sponsored or branded section, and a sponsored article on each). No sponsored badge is live anywhere; the Nativo script loads on all 6 but served no unit. What production does instead:
+
+| Site | How sponsored stories are labelled |
+|---|---|
+| denverpost.com | "Sponsored:" typed into the headline (homepage Real Estate block, Noto Serif Bold, black); on the article, the "Sponsored Content" breadcrumb plus a "Sponsored" type-of-work link that opens an explanation |
+| ocregister.com | "Sponsored Content" section; on the article only the "SPONSORED CONTENT" breadcrumb |
+| chicagotribune.com | "Branded Content" section, headlines start with "Branded:"; "BRANDED CONTENT" breadcrumb |
+| mcall.com | "Branded Content" section (car reviews), no prefix; breadcrumb only |
+| orlandosentinel.com | "Sponsored Content" section with older stories, no label |
+| canoncitydailyrecord.com | only the CitySpark events widget's own "Sponsored" chips (third party, Open Sans 10px) |
+
+So the design's Sponsored badge is now a **placeholder**, not a production match (Karl): the chip is `color/theme/secondary` with Gray-Min `#141414` text as a raw value (no new token, Karl), in the Subscriber chip's type and padding. Gray-Min on secondary passes 4.5:1 on 20 of 22 themes; it fails on Denver Post 1.43:1 (navy `#003459`) and The Baltimore Sun 4.15:1 (accepted for the placeholder). Nothing to fix in production until a sponsored badge is designed.
 
 **Note:** the theme's own `.sponsored-content .sponsored-flag` (a different element) uses `primary-light` with white text, and `secondary` with dark text on images.
 

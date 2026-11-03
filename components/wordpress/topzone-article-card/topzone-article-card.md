@@ -9,7 +9,7 @@ component_key: 4daecb8ad8cafb30916853070665c768d1fc18e8
 variants: 5
 tokens: topzone-article-card.tokens.json
 skeleton: topzone-article-card.html
-exported: 2026-11-02
+exported: 2026-11-03
 ---
 
 # TopZone Article Card
@@ -161,4 +161,4 @@ Production homepage Zone 1 (`.feature-primary.busy .feature-small`), the four se
 - `topzone-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

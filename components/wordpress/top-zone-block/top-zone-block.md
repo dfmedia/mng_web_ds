@@ -9,7 +9,7 @@ component_key: 7a4ff4e26dbe4cde51851d2fa71c64f0c4f6ddd1
 variants: 5
 tokens: top-zone-block.tokens.json
 skeleton: top-zone-block.html
-exported: 2026-11-02
+exported: 2026-11-03
 ---
 
 # TOP ZONE Block
@@ -188,4 +188,4 @@ Production `section.feature-primary.busy` (homepage Zone 1). CSS read on all 6 r
 - `top-zone-block.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: 264c00580f01ace3ec1483efbb4da877a0238766
 variants: 3
 tokens: latest-headlines-list-item.tokens.json
 skeleton: latest-headlines-list-item.html
-exported: 2026-11-02
+exported: 2026-11-03
 ---
 
 # Latest Headlines List Item
@@ -60,7 +60,7 @@ From `latest-headlines-list-item.tokens.json`. References point at system tokens
 | `latest-headlines-list-item.base.root.width` | 226px |
 | `latest-headlines-list-item.type-sponsored.content-card.gap` | `{spacing.050}` |
 | `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.height` | 23px |
-| `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.icon-color` | `{color.gray.max}` |
+| `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.icon-color` | #141414 |
 | `latest-headlines-list-item.type-sponsored.content-card.badge-container.article-status-badge.width` | 149px |
 | `latest-headlines-list-item.type-sponsored.content-card.headline-container.headline.color` | `{color.gray.black}` |
 | `latest-headlines-list-item.type-sponsored.content-card.headline-container.headline.font-family` | `{font.theme.heading-family}` |
@@ -122,6 +122,7 @@ Production `.headline-list ul > li > article.headline-only` (homepage Zone 1, al
 3. The component tokens carry the headline's values for the First and Standard text layer (the exporter reads its first text run); the inline time's values (Noto Sans Regular 13 / 23px, `color/gray/200`) are in the rules above.
 4. Figma wraps the time with the headline text; production does the same with inline elements, so line breaks can differ by a word.
 5. Sponsored is drawn with a sample sponsor (Xcel Energy) and its logo as an image fill; no live sponsored item was on the 6 review sites on 2026-10-30, so Sponsored isn't checked against production.
+6. **Values not bound to a token** (literal in the component tokens): `type-sponsored` content-card.badge-container.article-status-badge icon-color = #141414.
 
 ## Files
 
@@ -129,4 +130,4 @@ Production `.headline-list ul > li > article.headline-only` (homepage Zone 1, al
 - `latest-headlines-list-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: a8093d9af051cf493da6a481a57b6c9119f9cbbf
 variants: 3
 tokens: latest-headlines.tokens.json
 skeleton: latest-headlines.html
-exported: 2026-11-02
+exported: 2026-11-03
 ---
 
 # Latest Headlines
@@ -65,7 +65,7 @@ From `latest-headlines.tokens.json`. References point at system tokens (`tokens/
 | `latest-headlines.base.header-container.section-title-eyebrow.height` | 32px |
 | `latest-headlines.base.header-container.section-title-eyebrow.icon-color` | `{color.gray.100}` |
 | `latest-headlines.base.list.gap` | `{spacing.150}` |
-| `latest-headlines.base.list.latest-headlines-list-item.icon-color` | #7d161e |
+| `latest-headlines.base.list.latest-headlines-list-item.icon-color` | `{color.theme.secondary}` |
 | `latest-headlines.base.list.newsletter-signup.icon-color` | `{color.gray.min}` |
 | `latest-headlines.base.root.background` | `{color.gray.max}` |
 | `latest-headlines.device-xs-639px.header-container.section-title-eyebrow.width` | 340px |
@@ -132,7 +132,6 @@ Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline
 2. Below 640px production caps the list at 540px; the XS variant is drawn at 340.
 3. Production's title-to-list gap is 15 / 17 / 21px by theme; the design is 16px (`spacing/200`) on every theme (design-vs-production 16.5).
 4. The eyebrow's production color and underline differ (design-vs-production 14).
-5. **Values not bound to a token** (literal in the component tokens): `base` list.latest-headlines-list-item icon-color = #7d161e.
 
 ## Files
 
@@ -140,4 +139,4 @@ Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline
 - `latest-headlines.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

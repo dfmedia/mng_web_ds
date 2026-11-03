@@ -11,7 +11,7 @@
       },
       "production": "Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline-list > h2.headline-list-title + ul`), 7 headlines plus the newsletter `li.social-links`. CSS scanned on all 6 review sites 2026-10-30; measured live at 1728px on all 6 and on ocregister.com at 700px (Karl resized the window).",
       "layer": "wordpress",
-      "exported": "2026-11-02"
+      "exported": "2026-11-03"
     }
   },
   "latest-headlines": {
@@ -75,20 +75,12 @@
         "latest-headlines-list-item": {
           "icon-color": {
             "$type": "color",
-            "$value": {
-              "colorSpace": "srgb",
-              "components": [
-                0.4902,
-                0.0863,
-                0.1176
-              ],
-              "alpha": 1,
-              "hex": "#7d161e"
-            },
+            "$value": "{color.theme.secondary}",
             "$extensions": {
               "com.mng": {
-                "rgba": "rgba(125, 22, 30, 1)",
-                "unbound": true
+                "figma": {
+                  "variable": "Colors/color/theme/secondary"
+                }
               }
             }
           }
