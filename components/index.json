@@ -157,9 +157,9 @@
         "set": "ModalsCenter"
       },
       "variants": 6,
-      "instances": 11,
-      "knownIssues": 3,
-      "exported": "2026-10-28"
+      "instances": 12,
+      "knownIssues": 4,
+      "exported": "2026-11-04"
     },
     {
       "slug": "modals-offset",
