@@ -1291,7 +1291,9 @@ Check after the change: the subscribe CTA keeps its 44px min height and its fill
 | Search submit button (`.search-button`, masthead search form; see `components/navigation.md`) | border-radius 5px | Use 4px (`radius/sm`). |
 | Account dropdown panel (masthead; see `components/navigation.md`) | border-radius 0 0 5px 5px | No fix. It's a container, so 5px (`radius/utility`) is correct. |
 
-**Containers keep 5px (`radius/utility`):** InLineMessage containers, ModalsCenter parts, Form Field shapes, check boxes, the status badge and the account dropdown. In Figma their 5px corners are bound to `radius/utility`.
+**Containers keep 5px (`radius/utility`):** InLineMessage containers, ModalsCenter parts, check boxes, the status badge and the account dropdown. In Figma their 5px corners are bound to `radius/utility`.
+
+**Form fields are 3px (`radius/field`)** (Karl, 2026-11-04; was listed above as 5px, which the Figma fields never were): the outline of Form Field, Code Box and Search Field / Obituaries, and the outer corners of a field's icon frame. Bound to the new `radius/field` token in Figma. Production's input radius hasn't been checked on the 6 review sites yet.
 
 **Engineering patch (ready to apply):**
 
