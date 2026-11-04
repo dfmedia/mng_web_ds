@@ -504,7 +504,8 @@
         "**Bar:** full width, `color/gray/max`, with a 1px `color/gray/300` rule along the bottom; the active underline sits over it.",
         "**Nav:** max width 1280px, centered, 8px (`spacing/100`) side padding at every width, so the first tab lines up with the page content's left edge (Karl, 2026-11-03; was 1200px with 24px (`spacing/300`) sides at 640px and up and no side padding below).",
         "**Tabs:** left-aligned, 24px (`spacing/300`) apart; they scroll sideways (scrollbar hidden) if they don't fit.",
-        "**Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`."
+        "**Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`.",
+        "**Keyboard** (WAI-ARIA Tabs pattern, manual activation; Karl, 2026-11-04): only the selected tab is in the Tab order (`tabindex` 0, the others −1); Left / Right move focus between tabs and wrap, Home / End go to the first / last; Enter or Space selects. Manual, not automatic, activation because choosing For You can open the Welcome modal. Developer notes: `components/for-you-interaction-and-accessibility.md`."
       ],
       "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | Nav 8px side padding |\n| Desktop | 640px and up | Nav 1280px max, 8px side padding |",
       "knownIssues": [],
@@ -839,18 +840,19 @@
       "documentationFrame": "3663:31066",
       "description": "The article card for Blocks (first used in the For You tab grid). State = Default / Hover / Focus; Show Gallery Icon. Built 2026-10-28 from 1Col Article Card, Style=For You, as its own component, separate from the Zone article cards (Karl).",
       "rules": [
-        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow.",
+        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow at rest.",
         "**Content:** 16:9 Article Image Placeholder; Article Section Kicker; headline `Editorial/Titles/CardTertiaryCompact` (Noto Serif Bold 16/18.88, `color/gray/min`), max 5 lines; footer with a 1px `color/gray/500` top border, Article Author with Article Timestamp under it.",
         "**Spacing:** 16px (`spacing/200`) body padding; 8px (`spacing/100`) kicker to headline; 12px (`spacing/150`) headline group to footer; 8px (`spacing/100`) above the author.",
         "**Width:** fills its column; 16px gaps; 3-up from 800px, 2-up at 640–799px, 1-up below 640px. Built at 296px.",
-        "**Hover** (the whole card is one link; For You prototype `.card:hover`): border and a 1px outside ring in `color/theme/primary` (CSS `border-color` plus `box-shadow: 0 0 0 1px`), headline `color/theme/primary`. Contrast: theme primary on white passes AA on every site (lowest 4.75:1).",
+        "**Hover** (the whole card is one link; For You prototype `.card:hover`): border and a 1px outside ring in `color/theme/primary` (CSS `border-color` plus `box-shadow: 0 0 0 1px`), headline `color/theme/primary`. Contrast: theme primary on white passes AA on every site (lowest 4.75:1). Plus `shadow/md` under it (0 4px 8px, `color/gray/black` at 20%; Karl, 2026-11-04): in Figma the Hover variant carries the `shadow/md` effect style, and because a layer takes one effect style the ring is drawn in a detached Hover Sample (ring + `shadow/md`) in the Specifications; in code `box-shadow: 0 0 0 1px <primary>, var(--mng-shadow-md)`.",
+        "**Hover animation** (Karl, 2026-11-04): border color and box shadow (ring + `shadow/md`) ease over 150ms in and out (`transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype); the headline color changes at once; none with `prefers-reduced-motion: reduce`. No motion token exists yet. Developer notes: `components/for-you-interaction-and-accessibility.md`.",
         "**Focus** (keyboard; prototype `.card:focus-visible`): `outline: 2px solid` `color/gray/black`, `outline-offset: 1px`.",
         "**Gallery Icon Badge** (`Show Gallery Icon`): Size=Large, 5px in from the image's bottom-right corner."
       ],
       "breakpoints": null,
       "knownIssues": [
         "In code the card body is space-between so footers line up in a row of cards; Figma uses the fixed 12px gap.",
-        "The exporter doesn't write Figma effects yet, so the Hover ring (`box-shadow: 0 0 0 1px`) and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
+        "The exporter doesn't write Figma effects yet, so the Hover ring and `shadow/md` and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
       ],
       "production": "New: the For You tab (prototype `.card`). Production's homepage card hover only turns the headline primary (`h3 a:hover`)."
     },
@@ -865,17 +867,18 @@
       "documentationFrame": "3663:31205",
       "description": "The article row for Blocks (first used in the For You tab feed). State = Default / Hover / Focus × Device = Mobile / Tablet / Desktop; Show Gallery Icon. Built 2026-10-28 from Horizontal Thumbnail Card, Style=For You, as its own component (Karl).",
       "rules": [
-        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow.",
+        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow at rest.",
         "**Image:** Article Image Placeholder pinned top-left. 640px and up: 220px wide, filling the row height (minimum 132, 5:3). Below 640px: 90×54, with white space below it.",
         "**Body:** Article Section Kicker; headline `Editorial/Titles/CardTertiaryCompact` (`color/gray/min`), not clamped; footer with a 1px `color/gray/500` top border, Article Author and Article Timestamp side by side.",
         "**Spacing:** body padding 16px (`spacing/200`), 12px (`spacing/150`) below 640px; 8px (`spacing/100`) kicker to headline; 12px (`spacing/150`) headline group to footer; 8px (`spacing/100`) above the footer content; 12px (`spacing/150`) between author and timestamp.",
-        "**Hover** (prototype `.row:hover`): border and a 1px outside ring in `color/theme/primary`, headline `color/theme/primary`.",
+        "**Hover** (prototype `.row:hover`): border and a 1px outside ring in `color/theme/primary`, headline `color/theme/primary`. Plus `shadow/md` under it (0 4px 8px, `color/gray/black` at 20%; Karl, 2026-11-04): in Figma the Hover variant carries the `shadow/md` effect style, and because a layer takes one effect style the ring is drawn in a detached Hover Sample (ring + `shadow/md`) in the Specifications; in code `box-shadow: 0 0 0 1px <primary>, var(--mng-shadow-md)`.",
+        "**Hover animation** (Karl, 2026-11-04): border color and box shadow (ring + `shadow/md`) ease over 150ms in and out (`transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype); the headline color changes at once; none with `prefers-reduced-motion: reduce`. No motion token exists yet. Developer notes: `components/for-you-interaction-and-accessibility.md`.",
         "**Focus** (prototype `.row:focus-visible`): `outline: 2px solid` `color/gray/black`, `outline-offset: 1px`.",
         "**Gallery Icon Badge:** Size=Large on the 220px image, Size=Small on the 90px image."
       ],
       "breakpoints": "| Device | Viewport | Row |\n|---|---|---|\n| Mobile | below 640px | 90×54 image pinned top-left, 12px body padding; built at 340 |\n| Tablet | 640px and up (768 template) | 220px image, 16px body padding; built at 720 |\n| Desktop | 640px and up (1280 template) | Same as Tablet; built at 848 |",
       "knownIssues": [
-        "The exporter doesn't write Figma effects yet, so the Hover ring (`box-shadow: 0 0 0 1px`) and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
+        "The exporter doesn't write Figma effects yet, so the Hover ring and `shadow/md` and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
       ],
       "production": "New: the For You tab (prototype `.row`)."
     },

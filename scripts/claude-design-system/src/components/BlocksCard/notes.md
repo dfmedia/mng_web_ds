@@ -6,3 +6,5 @@
 - Renders 330.6px tall vs Figma 331.5: the kicker is 12.5px (its line-height token) where the Figma text box is 13, and the headline is 3 × 18.88.
 - The placeholder label in the Figma PNGs has a light halo behind "GRAPHIC / IMAGE". That comes from the runtime `ArticleImage`, not this component.
 - Contrast: headline `color/gray/min` 18.42:1; hover headline `color/theme/primary` 5.45 / 6.87 / 5.20:1 (Bold Coastal / Measured Vibrant / Modern Earthy). All pass.
+- **Hover shadow** (Karl, 2026-11-04): Hover keeps the 1px primary ring and adds `shadow/md` (`var(--mng-shadow-md)`: 0 4px 8px, black at 20%, the token whose usage is "Cards"). In Figma the Hover variant carries the `shadow/md` effect style; a layer takes one effect style, so the ring is drawn in a detached Hover Sample in the Specifications.
+- **Hover animation** (Karl, 2026-11-04): `transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype (`for_you_tab_mvp/index.html` `.card` / `.row`); the headline color isn't animated. `prefers-reduced-motion: reduce` turns it off. The 150ms is raw: the system has no motion tokens yet.

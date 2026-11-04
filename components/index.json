@@ -303,7 +303,7 @@
       "variants": 9,
       "instances": 0,
       "knownIssues": 1,
-      "exported": "2026-10-30"
+      "exported": "2026-11-04"
     },
     {
       "slug": "blocks-card",
@@ -319,7 +319,7 @@
       "variants": 3,
       "instances": 0,
       "knownIssues": 2,
-      "exported": "2026-10-30"
+      "exported": "2026-11-04"
     },
     {
       "slug": "blocks-footer",
@@ -735,7 +735,7 @@
       "variants": 2,
       "instances": 0,
       "knownIssues": 0,
-      "exported": "2026-11-03"
+      "exported": "2026-11-04"
     },
     {
       "slug": "masthead",

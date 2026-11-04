@@ -14,7 +14,7 @@
   items.push({ label: 'Default, Show Gallery Icon = false', width: W, node: h(NS.BlocksCard, { showGalleryIcon: false }) });
   ReactDOM.createRoot(document.getElementById('root')).render(
     h(I.SpecimenSection, { title: 'State',
-      note: 'Built at 296px; fills its column (3-up from 800px, 2-up at 640–799px, 1-up below 640px, 16px gaps). The whole card is one link. Hover: border + 1px outside ring and headline in color/theme/primary. Focus: 2px color/gray/black outline, 1px out.' },
+      note: 'Built at 296px; fills its column (3-up from 800px, 2-up at 640–799px, 1-up below 640px, 16px gaps). The whole card is one link. Hover: border + 1px outside ring and headline in color/theme/primary, plus shadow/md; border and shadow ease 150ms (none with reduced motion). Focus: 2px color/gray/black outline, 1px out.' },
       h(I.Specimen, { items: items })));
 </script>
 </body>

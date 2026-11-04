@@ -345,7 +345,7 @@
      "name": "Homepage Tabs",
      "where": "Menus and Parts, 3629:44974",
      "status": "In system",
-     "updated": "2026-11-03",
+     "updated": "2026-11-04",
      "component": "HomepageTabs"
     },
     {
@@ -366,14 +366,14 @@
      "name": "Blocks Card",
      "where": "Homepage, 3663:31072",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-04",
      "component": "BlocksCard"
     },
     {
      "name": "Blocks Article Row",
      "where": "Homepage, 3663:31214",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-04",
      "component": "BlocksArticleRow"
     },
     {

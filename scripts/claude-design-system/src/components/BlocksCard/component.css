@@ -34,8 +34,9 @@
   padding-top: var(--mng-blocks-card-base-card-body-card-footer-padding-top);
   border-top: var(--mng-blocks-card-base-card-body-card-footer-border-top-width) var(--mng-blocks-card-base-card-body-card-footer-border-style) var(--mng-blocks-card-base-card-body-card-footer-border-color);
 }
-/* Hover (prototype .card:hover): border + 1px outside ring + headline in color/theme/primary. The badge stays default. */
-.mngds-blocks-card:hover, .mngds-blocks-card.is-hover { box-shadow: 0 0 0 var(--mng-blocks-card-base-root-border-width) var(--mng-blocks-card-state-hover-root-border-color); }
+/* Hover (prototype .card:hover): border + 1px outside ring + headline in color/theme/primary, plus shadow/md under the
+   card (Karl, 2026-11-04; Figma: the Hover variant has the shadow/md effect style, the ring is in the Hover Sample). The badge stays default. */
+.mngds-blocks-card:hover, .mngds-blocks-card.is-hover { box-shadow: 0 0 0 var(--mng-blocks-card-base-root-border-width) var(--mng-blocks-card-state-hover-root-border-color), var(--mng-shadow-md); }
 .mngds-blocks-card:hover::after, .mngds-blocks-card.is-hover::after { border-color: var(--mng-blocks-card-state-hover-root-border-color); }
 .mngds-blocks-card:hover .mngds-blocks-card__headline, .mngds-blocks-card.is-hover .mngds-blocks-card__headline { color: var(--mng-blocks-card-state-hover-card-body-headline-container-headline-color); }
 .mngds-blocks-card .mngds-blocks-card__badge:hover {
@@ -45,3 +46,9 @@
 .mngds-blocks-card:focus-visible, .mngds-blocks-card.is-focus { outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px; }
 .mngds-blocks-card.is-focus::after { border-color: var(--mng-blocks-card-state-focus-root-border-color); }
 .mngds-blocks-card.is-focus .mngds-blocks-card__headline { color: var(--mng-blocks-card-state-focus-card-body-headline-container-headline-color); }
+
+/* Hover animation (For You prototype .card / .row, Karl 2026-11-04): border-color and box-shadow (ring + shadow/md)
+   ease over 150ms in and out; the headline color changes at once. No motion token exists yet. Off with reduced motion. */
+.mngds-blocks-card { transition: border-color 150ms ease, box-shadow 150ms ease; }
+.mngds-blocks-card::after { transition: border-color 150ms ease; } /* the card's border is the ::after overlay */
+@media (prefers-reduced-motion: reduce) { .mngds-blocks-card, .mngds-blocks-card::after { transition: none; } }
