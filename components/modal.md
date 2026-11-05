@@ -106,6 +106,15 @@ Sourced directly from the ModalsCenter component's real geometry (not the generi
 - **Open question for dev (2026-11-04):** with an 8px gap the corner Button Modal Close doesn't fit. Proposal: when the card reaches the top of the visible area, the close button moves inside the card's top-right corner. Not in the kit until DigiScrum and CMS confirm (and say where that work would live).
 - **Figma:** MobileScroll variant `3693:1351` rebuilt; samples on the Modal Panels page (renamed "Modal Panels | 2026.11.04"), ModalsCenter Container › Specifications › "Scrolling and on-screen keyboard": MobileScroll in context (keyboard closed), Mobile keyboard open (iOS Safari, visible 414px), TabletH keyboard open (iPad landscape, visible 368px). The old in-context placeholder stays as "Before".
 
+**Screen readers and keyboard (2026-11-05; every modal, including the Embedded Login panel).** Full list in `components/core/modals-center/modals-center.md` › Accessibility and on the Figma spec list.
+
+- **Dialog:** `role="dialog"`, `aria-modal="true"`, named by the title (an `h2`), described by the subtitle; `role="alertdialog"` only for a short message that needs an answer.
+- **Behind it:** masthead, page and ads are `inert` and scroll-locked; the modal is rendered outside them.
+- **Open:** focus goes to the title (`tabindex="-1"`), not a field, so the title is announced and a phone doesn't open the keyboard unasked.
+- **Keyboard:** Tab / Shift+Tab in reading order (title area, body and fields, InLineMessage links, CTAs, close button last), wrapping inside the card; Esc closes; Enter in a field submits.
+- **Close:** a `button` named "Close"; the overlay click is for pointers only. On close, focus returns to the opener (or its replacement, or the start of the main content).
+- **Also:** visible focus never hidden behind the CTA area, masthead or keyboard (WCAG 2.4.11); a scrolling body with nothing focusable gets `tabindex="0"`; field errors per the Form Field validation rules; a new step changes the title and moves focus to it; at most a short fade (none with reduced motion); works at 400% zoom.
+
 ## 7. ModalsOffset (2026-10-27)
 
 Main file, Modal Panels page, `6497:6263`, container "ModalsOffset Container". The "Sign in to [site] with Apple / Google" panel for logged-out readers. No instances yet.
@@ -116,3 +125,4 @@ Main file, Modal Panels page, `6497:6263`, container "ModalsOffset Container". T
 - **Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Apple button is the Button Pay component (Apple's style).
 - **Google account chooser** (GOTcustom, AllOptions): Google's own UI, drawn for reference; not tokenized and probably not in use (Karl, 2026-10-27).
 - **Social One Tap** (Karl, 2026-11-05): where the panel sits and where Float floats are already specified in Figma. It has no text fields, so it never opens the on-screen keyboard; the §6 keyboard rules don't apply.
+- **Screen readers and keyboard** (2026-11-05): not a modal. It appears unasked, so it doesn't take or trap focus and the page stays usable (no `aria-modal`, nothing `inert`); `role="dialog"` named by its title, not a live region; placed in the page order right after the masthead; controls in the normal Tab order, Esc closes while focus is inside, close button named "Close sign-in options"; FixedFooter adds matching bottom padding to the page so focused content isn't hidden under it. Details in `components/core/modals-offset/modals-offset.md` › Accessibility.

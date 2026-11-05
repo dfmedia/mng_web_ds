@@ -353,6 +353,11 @@ From `modals-offset.tokens.json`. References point at system tokens (`tokens/cor
 - No InFocus state in Figma.
 - Text color on its background must meet WCAG AA contrast (4.5:1 for text under 18px) in every theme; theme colors change per site.
 - Icons inside a labelled control are decorative (`aria-hidden`); an icon-only control needs an accessible name (`aria-label`).
+- **Not a modal** (2026-11-05): the panel appears without the reader asking, so it doesn't take focus, doesn't trap Tab and leaves the page usable (no `aria-modal`, nothing `inert`).
+- **Screen readers:** `role="dialog"` (non-modal) named by its title; not a live region, so it isn't announced over what the reader is doing. Put it in the page order right after the masthead, so keyboard and screen reader users reach it early.
+- **Keyboard:** its controls are in the normal Tab order; Esc closes it while focus is inside. The close button is a real `button` named "Close sign-in options", icon `aria-hidden`. When it closes with focus inside, focus moves to the start of the main content.
+- **Buttons:** Sign in with Apple uses Apple's button (named "Sign in with Apple"); the Google account chooser is Google's own UI, and its accessibility is Google's.
+- **FixedFooter:** while the panel shows, the page gets bottom padding equal to its height, so the last content and any focused control can scroll above it (WCAG 2.4.11).
 
 ## Where it is used
 

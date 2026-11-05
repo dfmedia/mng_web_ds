@@ -290,6 +290,16 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 - No InFocus state in Figma.
 - Text color on its background must meet WCAG AA contrast (4.5:1 for text under 18px) in every theme; theme colors change per site.
 - Icons inside a labelled control are decorative (`aria-hidden`); an icon-only control needs an accessible name (`aria-label`).
+- **Screen readers** (2026-11-05): the card is `role="dialog"` with `aria-modal="true"`, named by its title (`aria-labelledby`) and described by the subtitle when there is one (`aria-describedby`). The title is a heading (`h2`). Use `role="alertdialog"` only for a short message that needs an answer (confirm / cancel).
+- **Behind the modal:** everything outside the card (masthead, page, ads) is `inert`, so neither Tab nor a screen reader's reading cursor can reach it, and the page is scroll-locked. Render the modal outside that content (a direct child of `body`) so it isn't made inert with it.
+- **Opening:** focus moves into the card, to the title (`tabindex="-1"`), so the screen reader announces it and reads on, and a phone doesn't open the on-screen keyboard before the reader has seen the modal.
+- **Keyboard:** Tab and Shift+Tab move through the card in reading order (title area, body and its fields, InLineMessage links, CTAs, then the close button) and wrap from last to first, never leaving the card. Esc closes, the same as the close button. Enter in a field submits the form; Enter or Space activates buttons.
+- **Close button:** a real `button` named "Close" (`aria-label`), icon `aria-hidden`; its 32×32 target passes WCAG 2.5.8 (24px minimum). Clicking the overlay is an extra for pointers only: not in the Tab order, not announced.
+- **Closing:** focus goes back to the control that opened the modal. If that control is gone (after signing in, Sign In becomes the account menu), focus goes to its replacement, or to the start of the main content.
+- **Visible focus:** every control shows its focus state (Form Field Focus, the buttons' InFocus), and the focused control is never hidden behind the fixed CTA area, the masthead or the on-screen keyboard (WCAG 2.4.11; the Focus rule in Behavior scrolls it into view).
+- **Scrolling body:** if the Body Container scrolls and holds nothing focusable, it gets `tabindex="0"` and the title as its name, so keyboard users can scroll it with the arrow keys.
+- **Errors and steps:** fields follow the Form Field validation rules (`aria-invalid`, `aria-describedby`, the form-level InLineMessage with `role="alert"`). When the modal moves to a new step (for example "Enter the code"), the title changes and focus moves to it, so the step is announced.
+- **Motion and zoom:** at most a short fade, none with `prefers-reduced-motion`. At 400% zoom (320px wide) compact mode applies and the body scrolls; nothing is cut off.
 
 ## Where it is used
 

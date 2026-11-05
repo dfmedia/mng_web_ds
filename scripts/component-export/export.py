@@ -595,7 +595,9 @@ def main():
         md += ['', '## Accessibility', '',
                '- Keyboard focus: the `InFocus` variant shows the focus ring (see Behavior). Never remove the focus indicator.' if focus else '- No InFocus state in Figma.',
                '- Text color on its background must meet WCAG AA contrast (4.5:1 for text under 18px) in every theme; theme colors change per site.',
-               '- Icons inside a labelled control are decorative (`aria-hidden`); an icon-only control needs an accessible name (`aria-label`).', '',
+               '- Icons inside a labelled control are decorative (`aria-hidden`); an icon-only control needs an accessible name (`aria-label`).']
+        md += ['- %s' % x for x in comp.get('accessibility') or []]
+        md += ['',
                '## Where it is used', '',
                'Scope: instances in the Figma file **%s** only (other files that use the library are not counted). Total: **%d**.' % (fname, total), '']
         if built_into:
