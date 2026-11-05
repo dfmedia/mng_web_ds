@@ -1,24 +1,24 @@
 {
  "$description": "Snapshot of the MNG Web Design System Figma variables and shadow/* effect styles (file jFHYqhZbJjvWQmDI4myCsd), from one full read with scripts/build-tokens/extract.js through the Desktop Bridge plugin, saved by scripts/build-tokens/save-snapshot.py; never edit by hand. \"read\" is the date of that read; \"counts\" and \"hashes\" are what the read reported, and the saved data matches them. Input for make-tokens.py. Dashboard Typography is not included yet (Reader Dashboard tokens are added to core when ready).",
  "file": "jFHYqhZbJjvWQmDI4myCsd",
- "read": "2026-10-27",
+ "read": "2026-11-04",
  "counts": {
   "collections": {
    "Colors": 33,
    "Type Primitives": 31,
    "Typeography Tokens": 110,
    "Typography Theme": 7,
-   "Spacing & Radius": 11
+   "Spacing & Radius": 12
   },
   "effectStyles": 3
  },
  "hashes": {
   "collections": {
-   "Colors": "1aa24d05fad3d4",
+   "Colors": "1b2a14680521c5",
    "Type Primitives": "03e9b7706ae082",
    "Typeography Tokens": "0b5b4326362dd5",
    "Typography Theme": "003945fc31d96f",
-   "Spacing & Radius": "1daf7e21793c3c"
+   "Spacing & Radius": "0eb45994b886cf"
   },
   "effectStyles": "0f6040d9ec89ac"
  },
@@ -265,36 +265,6 @@
     ]
    },
    {
-    "name": "color/theme/primary-lighter",
-    "type": "COLOR",
-    "values": {
-     "MeasuredVibrant": "#717fd1",
-     "ModernEarthy": "#fe521e",
-     "BoldCoastal": "#1799a5",
-     "DenverPost": "#c81632",
-     "Endless Tributes": "#f15f87",
-     "Chicago Tribune": "#717fd1",
-     "South Florida Sun Sentinel": "#4a92af",
-     "Orlando Sentinel": "#5c95dd",
-     "Daily Herald": "#3b97dc",
-     "The Mercury News + East Bay Times": "#a0d0ed",
-     "St. Paul Pioneer Press": "#0187e0",
-     "Petaluma Argus-Courier": "#a8681a",
-     "The Press Democrat": "#d10f14",
-     "The Sonoma Index-Tribune": "#149de6",
-     "Morning Call": "#5399c4",
-     "21C Michigan Sites (Combined)": "#3e7cb2",
-     "NEPA-PMP": "#717fd1",
-     "Boston Herald": "#3c81c7",
-     "Hartford Courant": "#5796bd",
-     "GrowthSpotter": "#529950"
-    },
-    "description": "Theme primary ramp — lighter step, Endless Tributes mode. Corrected 2026.08.27 to match MNG Design System's confirmed color/tributes/primary-lighter (#F15F87) — the prior UI Style Guide value (#A39C8A) was a row-misalignment error that actually matched the Tan swatch, not this ramp step.",
-    "scopes": [
-     "ALL_SCOPES"
-    ]
-   },
-   {
     "name": "color/gray/max",
     "type": "COLOR",
     "values": {
@@ -320,6 +290,36 @@
      "GrowthSpotter": "#ffffff"
     },
     "description": "",
+    "scopes": [
+     "ALL_SCOPES"
+    ]
+   },
+   {
+    "name": "color/theme/primary-lighter",
+    "type": "COLOR",
+    "values": {
+     "MeasuredVibrant": "#717fd1",
+     "ModernEarthy": "#fe521e",
+     "BoldCoastal": "#1799a5",
+     "DenverPost": "#c81632",
+     "Endless Tributes": "#f15f87",
+     "Chicago Tribune": "#717fd1",
+     "South Florida Sun Sentinel": "#4a92af",
+     "Orlando Sentinel": "#5c95dd",
+     "Daily Herald": "#3b97dc",
+     "The Mercury News + East Bay Times": "#a0d0ed",
+     "St. Paul Pioneer Press": "#0187e0",
+     "Petaluma Argus-Courier": "#a8681a",
+     "The Press Democrat": "#d10f14",
+     "The Sonoma Index-Tribune": "#149de6",
+     "Morning Call": "#5399c4",
+     "21C Michigan Sites (Combined)": "#3e7cb2",
+     "NEPA-PMP": "#717fd1",
+     "Boston Herald": "#3c81c7",
+     "Hartford Courant": "#5796bd",
+     "GrowthSpotter": "#529950"
+    },
+    "description": "Theme primary ramp — lighter step, Endless Tributes mode. Corrected 2026.08.27 to match MNG Design System's confirmed color/tributes/primary-lighter (#F15F87) — the prior UI Style Guide value (#A39C8A) was a row-misalignment error that actually matched the Tan swatch, not this ramp step.",
     "scopes": [
      "ALL_SCOPES"
     ]
@@ -2758,7 +2758,7 @@
     "values": {
      "Value": 5
     },
-    "description": "5px. Containers only: Reader Dashboard InLineMessage, modals, form fields, check boxes, status badge, masthead account dropdown. Not for buttons (buttons use radius/sm, 4px).",
+    "description": "5px. Containers only: Reader Dashboard InLineMessage, modals, the check box hover / focus ring, status badge, masthead account dropdown. Not for buttons (radius/sm, 4px) or form fields and the check box square (radius/field, 3px).",
     "scopes": [
      "CORNER_RADIUS"
     ]
@@ -2783,6 +2783,17 @@
     "description": "40px. Added 2026-10-27 (Karl) for ModalsCenter card padding (matches the live Reader Dashboard modal).",
     "scopes": [
      "GAP"
+    ]
+   },
+   {
+    "name": "radius/field",
+    "type": "FLOAT",
+    "values": {
+     "Value": 3
+    },
+    "description": "3px. Form fields: the outline of Form Field, Code Box and Search Field / Obituaries, the outer corners of a field's icon frame, and the check box square (Karl, 2026-11-04). Not for buttons (radius/sm, 4px) or containers (radius/utility, 5px).",
+    "scopes": [
+     "CORNER_RADIUS"
     ]
    }
   ]

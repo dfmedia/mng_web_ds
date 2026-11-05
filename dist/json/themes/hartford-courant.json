@@ -123,6 +123,8 @@
   "radius.utility.rem": "0.3125rem",
   "radius.lg": "8px",
   "radius.lg.rem": "0.5rem",
+  "radius.field": "3px",
+  "radius.field.rem": "0.1875rem",
   "shadow.sm": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
   "shadow.md": "0px 4px 8px 0px rgba(0, 0, 0, 0.2)",
   "shadow.lg": "0px 8px 16px 0px rgba(0, 0, 0, 0.2)",

@@ -100,7 +100,8 @@ export const core = {
   "radius": {
     "sm": "4px",
     "utility": "5px",
-    "lg": "8px"
+    "lg": "8px",
+    "field": "3px"
   },
   "shadow": {
     "sm": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
@@ -2000,6 +2001,7 @@ export const cssVars = {
   "radius.sm": "var(--mng-radius-sm)",
   "radius.utility": "var(--mng-radius-utility)",
   "radius.lg": "var(--mng-radius-lg)",
+  "radius.field": "var(--mng-radius-field)",
   "shadow.sm": "var(--mng-shadow-sm)",
   "shadow.md": "var(--mng-shadow-md)",
   "shadow.lg": "var(--mng-shadow-lg)",

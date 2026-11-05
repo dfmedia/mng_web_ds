@@ -63,6 +63,7 @@
   --radius-sm: 4px;
   --radius-utility: 5px;
   --radius-lg: 8px;
+  --radius-field: 3px;
   --shadow-mng-sm: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   --shadow-mng-md: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   --shadow-mng-lg: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
