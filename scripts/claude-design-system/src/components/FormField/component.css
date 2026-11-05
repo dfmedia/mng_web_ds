@@ -71,23 +71,27 @@
   --ff-border: var(--mng-form-field-state-focus-input-field-container-border-color);
   --ff-border-w: var(--mng-form-field-state-focus-input-field-container-border-width);
 }
-.mngds-form-field--state-error .mngds-form-field__box,
-.mngds-form-field--state-error-focus .mngds-form-field__box {
+/* Error states come after Focus and are at least as specific, so a focused field in error stays red. */
+.mngds-form-field.mngds-form-field--state-error .mngds-form-field__box,
+.mngds-form-field.mngds-form-field--state-error-focus .mngds-form-field__box,
+.mngds-form-field.mngds-form-field--state-error .mngds-form-field__box:focus-within,
+.mngds-form-field.mngds-form-field--state-error-focus .mngds-form-field__box:focus-within {
   --ff-border: var(--mng-form-field-state-error-input-field-container-border-color);
   --ff-border-w: var(--mng-form-field-state-error-input-field-container-border-width);
 }
-.mngds-form-field--state-error-focus .mngds-form-field__box,
-.mngds-form-field--state-error .mngds-form-field__box:focus-within {
+.mngds-form-field.mngds-form-field--state-error-focus .mngds-form-field__box,
+.mngds-form-field.mngds-form-field--state-error .mngds-form-field__box:focus-within,
+.mngds-form-field.mngds-form-field--state-error-focus .mngds-form-field__box:focus-within {
   --ff-border-w: var(--mng-form-field-state-error-focus-input-field-container-border-width);
 }
 .mngds-form-field--state-error .mngds-form-field__status,
 .mngds-form-field--state-error-focus .mngds-form-field__status { color: var(--mng-form-field-state-error-input-field-container-icon-frame-right-icons-icon-color); }
-.mngds-form-field--state-success .mngds-form-field__box {
+.mngds-form-field.mngds-form-field--state-success .mngds-form-field__box {
   --ff-border: var(--mng-form-field-state-success-input-field-container-border-color);
   --ff-border-w: var(--mng-form-field-state-success-input-field-container-border-width);
 }
 .mngds-form-field--state-success .mngds-form-field__status { color: var(--mng-form-field-state-success-input-field-container-icon-frame-right-icons-icon-color); }
-.mngds-form-field--state-disabled .mngds-form-field__box {
+.mngds-form-field.mngds-form-field--state-disabled .mngds-form-field__box {
   --ff-border: var(--mng-form-field-state-disabled-input-field-container-border-color);
   background: var(--mng-form-field-state-disabled-input-field-container-background);
 }

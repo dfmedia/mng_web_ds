@@ -23,18 +23,21 @@
   --cb-border: var(--mng-code-box-state-focus-root-border-color);
   --cb-border-w: var(--mng-code-box-state-focus-root-border-width);
 }
-.mngds-code-box--state-error, .mngds-code-box--state-error-focus {
+/* Error states come after Focus and are at least as specific, so a focused cell in error stays red. */
+.mngds-code-box.mngds-code-box--state-error, .mngds-code-box.mngds-code-box--state-error-focus,
+.mngds-code-box.mngds-code-box--state-error:focus-within, .mngds-code-box.mngds-code-box--state-error-focus:focus-within {
   --cb-border: var(--mng-code-box-state-error-root-border-color);
   --cb-border-w: var(--mng-code-box-state-error-root-border-width);
 }
-.mngds-code-box--state-error-focus, .mngds-code-box--state-error:focus-within {
+.mngds-code-box.mngds-code-box--state-error-focus, .mngds-code-box.mngds-code-box--state-error:focus-within,
+.mngds-code-box.mngds-code-box--state-error-focus:focus-within {
   --cb-border-w: var(--mng-code-box-state-error-focus-root-border-width);
 }
-.mngds-code-box--state-success {
+.mngds-code-box.mngds-code-box--state-success {
   --cb-border: var(--mng-code-box-state-success-root-border-color);
   --cb-border-w: var(--mng-code-box-state-success-root-border-width);
 }
-.mngds-code-box--state-disabled {
+.mngds-code-box.mngds-code-box--state-disabled {
   --cb-border: var(--mng-code-box-state-disabled-root-border-color);
   background: var(--mng-code-box-state-disabled-root-background);
 }
