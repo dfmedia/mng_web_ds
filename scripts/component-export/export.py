@@ -124,6 +124,8 @@ def props_of(n):
         if p.get('type') != 'SOLID':
             return None
         return p
+    if n['type'] == 'TEXT' and not n.get('styles'):  # empty text (e.g. a blank Code Box): Figma returns no style segments (2026-11-04)
+        return out
     if n['type'] == 'TEXT':
         st = n['styles'][0]
         sv = st.get('vars') or vars_
@@ -336,7 +338,7 @@ def node_css(n, parent):
         css.append('overflow:hidden')
     if any(c.get('absolute') for c in n.get('children', []) or []):
         css.append('position:relative')
-    if n['type'] == 'TEXT':
+    if n['type'] == 'TEXT' and n.get('styles'):
         stl = n['styles'][0]; sv = stl.get('vars') or v
         fam = figma_ref(sv.get('fontFamily'))
         famcss = 'var(%s)' % css_var(fam) if fam else "'%s', sans-serif" % stl['font']
@@ -390,7 +392,7 @@ def anatomy(n, depth=0, maxd=6):
         bits.append('%s×%s' % (n['sizing']['h'].lower(), n['sizing']['v'].lower()))
     if n.get('absolute'):
         bits.append('absolute')
-    if n['type'] == 'TEXT':
+    if n['type'] == 'TEXT' and n.get('styles'):
         st = n['styles'][0]
         bits.append('"%s", %s %s %spx' % (n['text'][:40], st['font'], st['style'], fmt(st['size'])))
     if n['type'] == 'INSTANCE':

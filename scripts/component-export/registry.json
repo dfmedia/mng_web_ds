@@ -10,7 +10,13 @@
       "Hover",
       "Pressed",
       "InFocus",
-      "Focus"
+      "Blank",
+      "Filled",
+      "Focus",
+      "Error",
+      "Error Focus",
+      "Success",
+      "Disabled"
     ],
     "Breakpoint": [
       "Desktop",
@@ -27,7 +33,9 @@
     ],
     "Size": [
       "Small",
-      "Large"
+      "Large",
+      "Desktop",
+      "Mobile"
     ],
     "Device": [
       "XS (≤639px)",
@@ -50,13 +58,31 @@
       "Default",
       "None",
       "Dark"
+    ],
+    "status": [
+      "unselected",
+      "selected",
+      "partial"
+    ],
+    "interaction": [
+      "Default",
+      "hover",
+      "pressed",
+      "disabled"
+    ],
+    "inFocus": [
+      "False",
+      "True"
     ]
   },
   "propertyOrder": [
     "Breakpoint",
     "Icon",
     "Style",
-    "State"
+    "State",
+    "status",
+    "interaction",
+    "inFocus"
   ],
   "components": [
     {
@@ -1389,6 +1415,253 @@
         "The Zone 1 Lead Article Card and Latest Headlines keep their own values and variants (Lead: Device = Desktop / Tablet / Mobile, not renamed yet)."
       ],
       "production": "Production `section.feature-primary.busy` (homepage Zone 1). CSS read on all 6 review sites at 1728px (identical); layout measured on mcall.com at 360, 778, 900, 1100 and 1280px (fixed-width same-site frames inside the page, so the window wasn't resized) and at 1728px, 2026-11-02."
+    },
+    {
+      "slug": "form-field",
+      "name": "Form Field",
+      "group": "forms",
+      "layer": "core",
+      "order": 1,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "6963:6863",
+      "documentationFrame": "6977:25931",
+      "description": "Text input for every form: label, an input (56px Desktop / 40px Mobile) with an optional left icon frame, an optional right status or action icon, an optional card badge, and a reserved error row. State = Blank, Filled, Focus, Error, Error Focus, Success, Disabled.",
+      "rules": [
+        "**Input:** `color/gray/max` fill, 1px inside `color/gray/400` border, 3px corners (`radius/field`); width fills the container. Text padding 16px (`spacing/200`) left and right, text vertically centered.",
+        "**Text:** label Noto Sans Regular 16 (Mobile 14), `color/gray/min`. Typed value Noto Sans Regular 18 (Mobile 16), `color/gray/min`. Placeholder the same size in `color/gray/200` (6.5:1 on white). Error message Noto Sans Regular 18 (Mobile 16), `color/feedback/high-error` (5.3:1).",
+        "**Value and placeholder:** two text layers. Show value (on by default) shows the typed text (Value); Show placeholder (off) shows the gray hint (Placeholder). Blank always shows the placeholder (a blank field has no typed value); Focus can show either; the other states default to the typed value and can switch to the placeholder for an empty field.",
+        "**Left icon frame** (Show icon, Icon): 56x56 (Mobile 40x40), `color/gray/600`, a 16px icon centered, padding 20px (`spacing/250`, Mobile 12px `spacing/150`), outer corners `radius/field`. On when a field stands alone; off when several fields appear together. Show label icon adds a 16px icon before the label (8px gap).",
+        "**Right icon frame** (Show right icon, Right icon) and **card badge** (Show card badge, Card badge: the credit card brand badges). In Error and Error Focus the right frame always shows `warning` in `color/feedback/high-error`; in Success it always shows `checkmark3` in `color/feedback/low-success`; there it ignores Show right icon / Right icon.",
+        "**Error row:** always reserved (25px Desktop, 22px Mobile) so the field never changes height; the message is visible only in Error and Error Focus.",
+        "**States:** Focus: 2px inside `color/gray/black` border. Error: 1px `color/feedback/high-error` border, warning icon, message. Error Focus: the user is back in a field that's in error and hasn't typed yet; same as Error with a 2px border; as soon as they type it goes to Focus. Success: 1px `color/feedback/low-success` border (5.0:1) and the checkmark; same layout as Filled. Disabled: `color/gray/500` border, `color/gray/600` fill, label and value `color/gray/300`; not focusable.",
+        "**When to show Success and Error** (Karl, 2026-11-04): Success only after the value has been checked in the browser, on blur (a valid email format, a new password that meets the rules, a re-entered password that matches); never on a sign-in password or any value only the server can confirm. Field-level Error: an empty required field, a bad format, passwords that don't match; it clears as soon as the user types. Form-level errors (wrong email or password, account already exists, server or network failure, social login failure) are not shown on fields: one InLineMessage (Priority=High, PanelType=Alert) banner above the form fields, below any social login buttons. After a failed submit: keep the email, clear the password, mark the affected fields Error, remove any success checks.",
+        "**Focus and keyboard:** if the fix means typing, move focus to the first field in error (the on-screen keyboard stays open); for larger errors, move focus to the banner (the keyboard closes).",
+        "**Accessibility:** `aria-invalid=\"true\"` on fields in error; each field's message (error or helper text) linked with `aria-describedby`; the form-level banner has `role=\"alert\"`. Status is never shown by color alone: Error and Success each have an icon, and errors have a message."
+      ],
+      "breakpoints": "| Size value | Viewport | Behavior |\n|---|---|---|\n| Desktop | Desktop, TabletH, TabletV | 56px-tall input, 16px label, 18px value and error text |\n| Mobile | Mobile, Fold | 40px-tall input, 14px label, 16px value and error text |\n\n*The switch sits between TabletV and Mobile, matching the site CSS (production breakpoint not re-checked for this export, Karl 2026-11-04). The field fills its container's width at every size.*",
+      "knownIssues": [
+        "The older Form Field set (`2832:766`, Device x Flavor) is still used by Embedded Login; it isn't exported and wasn't changed. Embedded Login is moving to this set.",
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "code-box",
+      "name": "Code Box",
+      "group": "forms",
+      "layer": "core",
+      "order": 2,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "6964:7032",
+      "documentationFrame": "6964:7085",
+      "description": "Single-character cell for verification codes and PINs: 36x56 Desktop, 26x40 Mobile. Same states as Form Field (Blank, Filled, Focus, Error, Error Focus, Success, Disabled). Six of them make the Verification Code assembly.",
+      "rules": [
+        "**Cell:** `color/gray/max` fill, 1px inside `color/gray/400` border, 3px corners (`radius/field`), 8px (`spacing/100`) top and bottom padding; the digit is centered, Noto Sans Bold 18 (Mobile 16), `color/gray/min`.",
+        "**States:** Focus 2px `color/gray/black` border; Error 1px `color/feedback/high-error`; Error Focus 2px `color/feedback/high-error`; Success 1px `color/feedback/low-success`, no icon (too narrow); Disabled `color/gray/500` border on `color/gray/600`.",
+        "**Success means complete, not correct:** turn every cell to Success once all digits are entered; only the server can confirm the code. If the server rejects it, set the cells to Error and show the message in the Verification Code's shared error row.",
+        "The label and the error row aren't part of the cell; they come from Form Field Assembly / Verification Code."
+      ],
+      "breakpoints": "| Size value | Viewport | Behavior |\n|---|---|---|\n| Desktop | Desktop, TabletH, TabletV | 36x56 cell, 18px digit |\n| Mobile | Mobile, Fold | 26x40 cell, 16px digit |\n\n*The switch sits between TabletV and Mobile, matching the site CSS (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "checkbox",
+      "name": "CheckBox",
+      "group": "forms",
+      "layer": "core",
+      "order": 3,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "4693:690",
+      "documentationFrame": "7501:27496",
+      "description": "Check box: a 14x14 box inside a 40x40 touch area. status = unselected, selected, partial; interaction = Default, hover, pressed, disabled; inFocus adds the focus ring. The label, terms text and error row come from Form Field Assembly / Checkbox + Terms.",
+      "rules": [
+        "**Box:** 14x14px, `color/gray/max` fill, 1px inside `color/gray/200` border (6.5:1 on white), 3px corners (`radius/field`).",
+        "**Touch area:** 40x40px around the box, 5px corners (`radius/utility`). Hover, pressed and focus show a 2px `color/gray/black` ring outside it; focus can apply to any state.",
+        "**Selected / partial:** `checkmark3` / `minus`, 12x12px, `color/gray/max` (white) on a `color/theme/primary` box; on hover and pressed the box is `color/theme/primary-lighter`.",
+        "**Disabled:** the empty box stays; selected and partial show the same icon in `color/gray/500` on a `color/gray/600` box.",
+        "**Label** (from the assembly): Noto Sans Regular 14px, `color/gray/min`; the box and the first line of text are center-aligned, no padding between the touch area and the text. **Error message:** Noto Sans Regular 18px, `color/feedback/high-error`, directly under, no padding.",
+        "**Pointer:** changes from an arrow to a pointing hand inside the 40x40 touch area."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "White icon on `color/theme/primary-lighter` (hover / pressed) is 1.6:1 on The Mercury News + East Bay Times and 3.0:1 on The Sonoma Index-Tribune (design-vs-production entry 37; colors frozen, Karl to decide).",
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "name-pair",
+      "name": "Form Field Assembly / Name pair",
+      "group": "forms",
+      "layer": "core",
+      "order": 4,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:28636",
+      "documentationFrame": "6965:7166",
+      "description": "First Name and Last Name side by side, each half the row width. Desktop 16px gap (`spacing/200`); Mobile 8px (`spacing/100`). On a very narrow screen, stack them.",
+      "rules": [
+        "First Name and Last Name side by side, each half the row width. Desktop 16px gap (`spacing/200`); Mobile 8px (`spacing/100`). On a very narrow screen, stack them.",
+        "Built from Form Field instances (exposed: set each field's State, Label, Value and Placeholder on the instance). Use Show icon = off inside assemblies.",
+        "**Errors:** the fields' own error rows are hidden and one shared error row below the group (Show error, Error message) covers every field in it; the field in error still gets the red outline. Point that field's `aria-describedby` at the shared message."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "zip-street",
+      "name": "Form Field Assembly / Zip + Street #",
+      "group": "forms",
+      "layer": "core",
+      "order": 5,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:28651",
+      "documentationFrame": "6965:7217",
+      "description": "Street # (fills the row) and Zip Code (sized to 5 digits: 84px Desktop, 78px Mobile), for short address checks. Desktop 16px gap; Mobile 8px.",
+      "rules": [
+        "Street # (fills the row) and Zip Code (sized to 5 digits: 84px Desktop, 78px Mobile), for short address checks. Desktop 16px gap; Mobile 8px.",
+        "Built from Form Field instances (exposed: set each field's State, Label, Value and Placeholder on the instance). Use Show icon = off inside assemblies.",
+        "**Errors:** the fields' own error rows are hidden and one shared error row below the group (Show error, Error message) covers every field in it; the field in error still gets the red outline. Point that field's `aria-describedby` at the shared message."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "zip-phone",
+      "name": "Form Field Assembly / Zip + Phone",
+      "group": "forms",
+      "layer": "core",
+      "order": 6,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:28666",
+      "documentationFrame": "6965:7268",
+      "description": "Zip Code (84px Desktop, 78px Mobile) and Phone Number (fills the row), for quick lookups. Desktop 16px gap; Mobile 8px.",
+      "rules": [
+        "Zip Code (84px Desktop, 78px Mobile) and Phone Number (fills the row), for quick lookups. Desktop 16px gap; Mobile 8px.",
+        "Built from Form Field instances (exposed: set each field's State, Label, Value and Placeholder on the instance). Use Show icon = off inside assemblies.",
+        "**Errors:** the fields' own error rows are hidden and one shared error row below the group (Show error, Error message) covers every field in it; the field in error still gets the red outline. Point that field's `aria-describedby` at the shared message."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "address-block",
+      "name": "Form Field Assembly / Address block",
+      "group": "forms",
+      "layer": "core",
+      "order": 7,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:28741",
+      "documentationFrame": "6965:7359",
+      "description": "Street Address (full width), then City (fills) / State (2 characters) / Zip Code in a row. Desktop 16px gaps, 8px between rows; Mobile 8px gaps, 4px between rows.",
+      "rules": [
+        "Street Address (full width), then City (fills) / State (2 characters) / Zip Code in a row. Desktop 16px gaps, 8px between rows; Mobile 8px gaps, 4px between rows.",
+        "Built from Form Field instances (exposed: set each field's State, Label, Value and Placeholder on the instance). Use Show icon = off inside assemblies.",
+        "**Errors:** the fields' own error rows are hidden and one shared error row below the group (Show error, Error message) covers every field in it; the field in error still gets the red outline. Point that field's `aria-describedby` at the shared message."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "cc-details",
+      "name": "Form Field Assembly / CC details",
+      "group": "forms",
+      "layer": "core",
+      "order": 8,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:28816",
+      "documentationFrame": "6965:7450",
+      "description": "Card Number (optional, Show card number), then Exp. Date / CVV / Zip Code, each sized to its content. Desktop 16px gaps; Mobile 8px gaps, 4px between rows.",
+      "rules": [
+        "Card Number (optional, Show card number), then Exp. Date / CVV / Zip Code, each sized to its content. Desktop 16px gaps; Mobile 8px gaps, 4px between rows.",
+        "Built from Form Field instances (exposed: set each field's State, Label, Value and Placeholder on the instance). Use Show icon = off inside assemblies.",
+        "**Errors:** the fields' own error rows are hidden and one shared error row below the group (Show error, Error message) covers every field in it; the field in error still gets the red outline. Point that field's `aria-describedby` at the shared message."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "password",
+      "name": "Form Field Assembly / Password",
+      "group": "forms",
+      "layer": "core",
+      "order": 9,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:28940",
+      "documentationFrame": "6965:7501",
+      "description": "Password, the requirements hint, then Confirm Password.",
+      "rules": [
+        "**Order:** Password (no error row: its Error Message Container is hidden), the requirements hint directly under it, then Confirm Password with the only error row (Karl, 2026-11-04).",
+        "Built from Form Field instances (exposed: set each field's State, Label, Value and Placeholder on the instance). Use Show icon = off inside assemblies.",
+        "**Hint:** Minimum length is 6 / Include at least 1 letter / Include at least 1 number, Noto Sans Regular 13 (Mobile 12), always shown, `color/feedback/low-success` (Karl kept it green, 2026-11-04).",
+        "**Errors:** an error for either field (empty, rules not met, passwords don't match) shows in the one row under Confirm Password, and the field in error gets the red outline; this is the one exception to \"message under the field\". Point the field in error's `aria-describedby` at that message, and the Password field's at the hint too.",
+        "**Success:** on a new password, Password goes to Success on blur once all three rules are met, and Confirm Password once it matches. Never on a sign-in password.",
+        "Desktop 8px between parts (`spacing/100`); Mobile 4px (`spacing/050`)."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "verification-code",
+      "name": "Form Field Assembly / Verification Code",
+      "group": "forms",
+      "layer": "core",
+      "order": 10,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:29223",
+      "documentationFrame": "6973:24891",
+      "description": "A label, six Code Box cells in a row (4px gap, `spacing/050`) and one shared error row under all six. 8px (`spacing/100`) between label, row and error row.",
+      "rules": [
+        "A label, six Code Box cells in a row (4px gap, `spacing/050`) and one shared error row under all six. 8px (`spacing/100`) between label, row and error row.",
+        "**Success:** once every digit is entered, set all six cells to Code Box Success (green outline, no checkmark): the code is complete, not confirmed. If the server rejects it, set the cells to Error and show the message in the shared row.",
+        "Mobile: 14px label, 26x40 cells, 22px error row with 16px text."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "checkbox-terms",
+      "name": "Form Field Assembly / Checkbox + Terms",
+      "group": "forms",
+      "layer": "core",
+      "order": 11,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7003:29236",
+      "documentationFrame": "6977:25689",
+      "description": "A CheckBox and the terms text in a row, centered on the box (8px gap), with a shared error row below. Desktop: 40px check box, 16px text; Mobile: the check box scaled to 28px, 13px text.",
+      "rules": [
+        "A CheckBox and the terms text in a row, centered on the box (8px gap), with a shared error row below. Desktop: 40px check box, 16px text; Mobile: the check box scaled to 28px, 13px text.",
+        "\"Terms of Service\" and \"Privacy Policy\" are links in product use. Use the CheckBox's own variants for selected, focus, hover, pressed and disabled.",
+        "Error: Show error with the message (\"Please accept terms and conditions.\"), Noto Sans Regular 18 (Mobile 16), `color/feedback/high-error`."
+      ],
+      "breakpoints": "| Size value | Viewport |\n|---|---|\n| Desktop | Desktop, TabletH, TabletV |\n| Mobile | Mobile, Fold |\n\n*Same switch as Form Field (production breakpoint not re-checked for this export, Karl 2026-11-04).*",
+      "knownIssues": [
+        "Not checked against production for this export (Karl, 2026-11-04)."
+      ],
+      "production": "Not checked against production for this export (Karl, 2026-11-04)."
     }
   ]
 }
