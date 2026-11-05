@@ -1,0 +1,21 @@
+<!-- @dsCard group="Core" height=420 subtitle="Figma: Code Box · 14 variants (Size × State)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Code Box</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var STATES = ['Blank', 'Filled', 'Focus', 'Error', 'Error Focus', 'Success', 'Disabled'];
+  function items(size) {
+    return STATES.map(function (st) { return { label: st, node: h(NS.CodeBox, { size: size, state: st, value: st === 'Blank' || st === 'Focus' ? '' : '5', 'aria-label': 'Digit' }) }; });
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Desktop', note: '36x56 cell, Noto Sans Bold 18 digit, 3px corners (radius/field). Focus and Error Focus have a 2px border; Success (green) means every cell is filled, not that the code is right.' },
+      h(I.Specimen, { items: items('Desktop') })),
+    h(I.SpecimenSection, { title: 'Mobile', note: '26x40 cell, 16px digit.' },
+      h(I.Specimen, { items: items('Mobile') }))));
+</script>
+</body>
+</html>

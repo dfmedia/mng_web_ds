@@ -1,0 +1,27 @@
+<!-- @dsCard group="Core" height=420 subtitle="Figma: Form Field Assembly / Checkbox + Terms · 2 variants (Size)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Checkbox + Terms</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  function Demo() {
+    var s = React.useState(false), t = React.useState(false);
+    return h('div', null,
+      h(NS.CheckboxTerms, { checkbox: { status: s[0] ? 'selected' : 'unselected', onChange: function (e) { s[1](e.target.checked); } },
+        showError: t[0] && !s[0] }),
+      h('button', { type: 'button', onClick: function () { t[1](true); }, style: { marginTop: '8px' } }, 'Submit'));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size', note: 'Desktop: 40px check box, 16px text. Mobile: 28px check box, 13px text. The error row is shared under the row.' },
+      h(I.Specimen, { items: [
+        { label: 'Desktop', width: 420, node: h(NS.CheckboxTerms, null) },
+        { label: 'Mobile', width: 326, node: h(NS.CheckboxTerms, { size: 'Mobile' }) },
+        { label: 'Desktop, Show error', width: 420, node: h(NS.CheckboxTerms, { showError: true }) }] })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Submit without checking the box to see the error; check it to clear it.' },
+      h(I.Specimen, { items: [{ label: 'Interactive', width: 420, node: h(Demo) }] }))));
+</script>
+</body>
+</html>

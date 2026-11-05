@@ -1,0 +1,96 @@
+/* Root: label, input box, reserved error row; fills its container. */
+.mngds-form-field { display: flex; flex-direction: column; width: 100%; min-width: 0; box-sizing: border-box; }
+.mngds-form-field__label {
+  display: flex; align-items: center; gap: var(--mng-spacing-100);
+  font-family: var(--mng-form-field-base-label-container-label-text-container-label-font-family);
+  font-weight: var(--mng-form-field-base-label-container-label-text-container-label-font-weight);
+  font-size: var(--mng-form-field-size-desktop-label-container-label-text-container-label-font-size);
+  line-height: normal; color: var(--mng-color-gray-min);
+}
+.mngds-form-field--mobile .mngds-form-field__label { font-size: var(--mng-form-field-size-mobile-label-container-label-text-container-label-font-size); }
+.mngds-form-field__label-icon { flex-shrink: 0; }
+
+/* Input box: Figma's 1px inside stroke as an inset shadow, so a 2px focus border doesn't move the text. */
+.mngds-form-field__box {
+  --ff-border: var(--mng-form-field-state-blank-input-field-container-border-color);
+  --ff-border-w: var(--mng-form-field-state-blank-input-field-container-border-width);
+  display: flex; align-items: stretch; box-sizing: border-box; width: 100%;
+  height: var(--mng-form-field-size-desktop-input-field-container-height);
+  background: var(--mng-form-field-state-blank-input-field-container-background);
+  border-radius: var(--mng-form-field-base-input-field-container-border-radius);
+  box-shadow: inset 0 0 0 var(--ff-border-w) var(--ff-border);
+  overflow: hidden;
+}
+.mngds-form-field--mobile .mngds-form-field__box { height: var(--mng-form-field-size-mobile-input-field-container-height); }
+
+.mngds-form-field__icon-frame, .mngds-form-field__icon-frame-right {
+  flex-shrink: 0; display: flex; align-items: center; justify-content: center; box-sizing: border-box;
+  width: var(--mng-form-field-size-desktop-input-field-container-icon-frame-height);
+  height: 100%;
+}
+.mngds-form-field__icon-frame {
+  background: var(--mng-form-field-base-input-field-container-icon-frame-background);
+  color: var(--mng-form-field-base-input-field-container-icon-frame-icons-icon-color);
+  /* The gray frame sits inside the field's border: inset by the border width top, bottom and left. */
+  margin: var(--ff-border-w) 0 var(--ff-border-w) var(--ff-border-w);
+  height: auto;
+}
+.mngds-form-field--mobile .mngds-form-field__icon-frame,
+.mngds-form-field--mobile .mngds-form-field__icon-frame-right { width: var(--mng-form-field-size-mobile-input-field-container-icon-frame-width); }
+.mngds-form-field__icon-frame-right { color: var(--mng-color-gray-min); }
+
+.mngds-form-field__input-field {
+  flex: 1 1 auto; min-width: 0; display: flex; align-items: center; gap: var(--mng-spacing-100);
+  padding: 0 var(--mng-form-field-base-input-field-container-input-field-padding-right) 0 var(--mng-form-field-base-input-field-container-input-field-padding-left);
+}
+.mngds-form-field__input {
+  flex: 1 1 auto; min-width: 0; margin: 0; padding: 0; border: 0; outline: none; background: transparent;
+  font-family: var(--mng-form-field-base-input-field-container-input-field-text-container-value-font-family);
+  font-weight: var(--mng-form-field-base-input-field-container-input-field-text-container-value-font-weight);
+  font-size: var(--mng-form-field-size-desktop-input-field-container-input-field-text-container-value-font-size);
+  line-height: normal; color: var(--mng-color-gray-min);
+}
+.mngds-form-field--mobile .mngds-form-field__input { font-size: var(--mng-form-field-size-mobile-input-field-container-input-field-text-container-value-font-size); }
+.mngds-form-field__input::placeholder { color: var(--mng-form-field-state-blank-input-field-container-input-field-text-container-placeholder-color); opacity: 1; }
+.mngds-form-field__card-badge { flex-shrink: 0; display: inline-flex; }
+
+/* Error row: always reserved (25px Desktop, 22px Mobile) so the field never changes height. */
+.mngds-form-field__error {
+  margin: 0; min-height: 25px;
+  font-family: var(--mng-form-field-base-error-message-container-error-message-text-font-family);
+  font-weight: var(--mng-form-field-base-error-message-container-error-message-text-font-weight);
+  font-size: var(--mng-form-field-size-desktop-error-message-container-error-message-text-font-size);
+  line-height: normal; color: var(--mng-form-field-base-error-message-container-error-message-text-color);
+}
+.mngds-form-field--mobile .mngds-form-field__error { min-height: 22px; font-size: var(--mng-form-field-size-mobile-error-message-container-error-message-text-font-size); }
+
+/* States. Focus comes from a real focus too (:focus-within). */
+.mngds-form-field--state-filled .mngds-form-field__box { --ff-border: var(--mng-form-field-state-filled-input-field-container-border-color); }
+.mngds-form-field.is-focus .mngds-form-field__box,
+.mngds-form-field:not(.mngds-form-field--state-disabled) .mngds-form-field__box:focus-within {
+  --ff-border: var(--mng-form-field-state-focus-input-field-container-border-color);
+  --ff-border-w: var(--mng-form-field-state-focus-input-field-container-border-width);
+}
+.mngds-form-field--state-error .mngds-form-field__box,
+.mngds-form-field--state-error-focus .mngds-form-field__box {
+  --ff-border: var(--mng-form-field-state-error-input-field-container-border-color);
+  --ff-border-w: var(--mng-form-field-state-error-input-field-container-border-width);
+}
+.mngds-form-field--state-error-focus .mngds-form-field__box,
+.mngds-form-field--state-error .mngds-form-field__box:focus-within {
+  --ff-border-w: var(--mng-form-field-state-error-focus-input-field-container-border-width);
+}
+.mngds-form-field--state-error .mngds-form-field__status,
+.mngds-form-field--state-error-focus .mngds-form-field__status { color: var(--mng-form-field-state-error-input-field-container-icon-frame-right-icons-icon-color); }
+.mngds-form-field--state-success .mngds-form-field__box {
+  --ff-border: var(--mng-form-field-state-success-input-field-container-border-color);
+  --ff-border-w: var(--mng-form-field-state-success-input-field-container-border-width);
+}
+.mngds-form-field--state-success .mngds-form-field__status { color: var(--mng-form-field-state-success-input-field-container-icon-frame-right-icons-icon-color); }
+.mngds-form-field--state-disabled .mngds-form-field__box {
+  --ff-border: var(--mng-form-field-state-disabled-input-field-container-border-color);
+  background: var(--mng-form-field-state-disabled-input-field-container-background);
+}
+.mngds-form-field--state-disabled .mngds-form-field__label,
+.mngds-form-field--state-disabled .mngds-form-field__input,
+.mngds-form-field--state-disabled .mngds-form-field__input::placeholder { color: var(--mng-form-field-state-disabled-label-container-label-text-container-label-color); }

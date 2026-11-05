@@ -1,0 +1,36 @@
+<!-- @dsCard group="Core" height=1500 subtitle="Figma: Form Field · 14 variants (Size × State)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Form Field</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var STATES = ['Blank', 'Filled', 'Focus', 'Error', 'Error Focus', 'Success', 'Disabled'];
+  function items(size) {
+    return STATES.map(function (st) {
+      return { label: st + ' / ' + size, width: size === 'Desktop' ? 512 : 360,
+        node: h(NS.FormField, { size: size, state: st, label: 'Email Address', value: 'you@example.com', placeholder: 'Enter your email',
+          errorMessage: 'Enter a valid email address, like name@example.com.' }) };
+    });
+  }
+  function Demo() {
+    var s = React.useState(''), v = s[0], set = s[1];
+    var t = React.useState(null), touched = t[0], setTouched = t[1];
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+    var state = touched === null ? (v ? 'Filled' : 'Blank') : touched ? (ok ? 'Success' : 'Error') : (v ? 'Filled' : 'Blank');
+    return h(NS.FormField, { label: 'Email Address', type: 'email', value: v, placeholder: 'Enter your email', showPlaceholder: true, state: state,
+      errorMessage: v ? 'Enter a valid email address, like name@example.com.' : 'Enter your email address.',
+      onChange: function (e) { set(e.target.value); setTouched(false); }, onBlur: function () { setTouched(true); } });
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Desktop', note: 'Desktop, TabletH, TabletV: 56px input, 16px label, 18px value and error text. Blank shows the placeholder (color/gray/200); the other states show the typed value (color/gray/min). Error and Error Focus show the warning icon and the message; Success shows the checkmark.' },
+      h(I.Specimen, { items: items('Desktop') })),
+    h(I.SpecimenSection, { title: 'Mobile', note: 'Mobile and Fold: 40px input, 14px label, 16px value and error text.' },
+      h(I.Specimen, { items: items('Mobile') })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Type an email and leave the field: Success when the format is valid, Error when it isn’t (an empty field shows "Enter your email address."). Typing again clears the state; going back into a field in error shows Error Focus.' },
+      h(I.Specimen, { items: [{ label: 'Validated on blur', width: 512, node: h(Demo) }] }))));
+</script>
+</body>
+</html>

@@ -253,8 +253,10 @@
     },
     {
      "name": "CheckBox",
-     "where": "Check Boxes | 2026.02.27, 4693:690",
-     "status": "To add"
+     "where": "Check Boxes | 2026.11.04, 4693:690",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "CheckBox"
     },
     {
      "name": "Toggle switch (selection/toggle)",
@@ -275,19 +277,74 @@
     },
     {
      "name": "Form Field",
-     "where": "Form Fields | 2026.09.24, 6963:6863 (10) and 2832:766 (102)",
-     "status": "To add",
-     "note": "Two sets; confirm which is current."
+     "where": "Form Fields | 2026.11.04, 6963:6863",
+     "status": "In system",
+     "note": "The older set 2832:766 (Device x Flavor, still used by Embedded Login) isn't in the system.",
+     "updated": "2026-11-04",
+     "component": "FormField"
     },
     {
-     "name": "Form Field Assemblies (Name pair, Zip + Street #, Zip + Phone, Address block, CC details, Password, Verification Code, Checkbox + Terms)",
-     "where": "Form Fields",
-     "status": "To add"
+     "name": "Form Field Assembly / Name pair",
+     "where": "Form Fields | 2026.11.04, 7003:28636",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "NamePair"
+    },
+    {
+     "name": "Form Field Assembly / Zip + Street #",
+     "where": "Form Fields | 2026.11.04, 7003:28651",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "ZipStreet"
+    },
+    {
+     "name": "Form Field Assembly / Zip + Phone",
+     "where": "Form Fields | 2026.11.04, 7003:28666",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "ZipPhone"
+    },
+    {
+     "name": "Form Field Assembly / Address block",
+     "where": "Form Fields | 2026.11.04, 7003:28741",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "AddressBlock"
+    },
+    {
+     "name": "Form Field Assembly / CC details",
+     "where": "Form Fields | 2026.11.04, 7003:28816",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "CcDetails"
+    },
+    {
+     "name": "Form Field Assembly / Password",
+     "where": "Form Fields | 2026.11.04, 7003:28940",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "Password"
+    },
+    {
+     "name": "Form Field Assembly / Verification Code",
+     "where": "Form Fields | 2026.11.04, 7003:29223",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "VerificationCode"
+    },
+    {
+     "name": "Form Field Assembly / Checkbox + Terms",
+     "where": "Form Fields | 2026.11.04, 7003:29236",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "CheckboxTerms"
     },
     {
      "name": "Code Box",
-     "where": "Form Fields, 6964:7032",
-     "status": "To add"
+     "where": "Form Fields | 2026.11.04, 6964:7032",
+     "status": "In system",
+     "updated": "2026-11-04",
+     "component": "CodeBox"
     },
     {
      "name": "Search Field / Obituaries",

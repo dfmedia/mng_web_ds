@@ -1,0 +1,7 @@
+- The input border is Figma's inside stroke, drawn as an inset `box-shadow` so the 2px Focus / Error Focus border doesn't move the text; the left icon frame is inset by the border width so the border stays visible around it.
+- `state` forces a documentation look. In use, leave it at Blank / Filled and let real focus show Focus; with `state: 'Error'`, real focus shows Error Focus (2px red), matching the spec's "back in a field in error".
+- Error and Success always show their status icon in the right frame (warning in `color/feedback/high-error`, `checkmark3` in `color/feedback/low-success`), whatever `showRightIcon` says, as in Figma.
+- The warning icon has no accessible name by default (the error message, linked with `aria-describedby`, says what's wrong); the checkmark is named "Valid" so success isn't only a color. Rename with `errorIconLabel` / `successIconLabel`.
+- Error row heights (25px Desktop, 22px Mobile) come from the spec; there's no token for them. The row is a `<p>` linked from the input only while there is an error.
+- Card badges (Visa, MasterCard, AmEx, Discover, PayPal) aren't in the icon font, so `cardBadge` takes the consumer's element.
+- The Figma cursor layers are a documentation drawing of the text caret; the real caret comes from the input.

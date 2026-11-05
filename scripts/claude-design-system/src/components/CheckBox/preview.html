@@ -1,0 +1,26 @@
+<!-- @dsCard group="Core" height=470 subtitle="Figma: CheckBox · 15 variants (status × interaction × inFocus)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>CheckBox</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var COLS = [['enabled', 'Default', 'False'], ['hovered', 'hover', 'False'], ['pressed', 'pressed', 'False'], ['focused', 'Default', 'True'], ['disabled', 'disabled', 'False']];
+  function row(status) {
+    return COLS.map(function (c) { return { label: status + ' / ' + c[0], node: h(NS.CheckBox, { status: status, interaction: c[1], inFocus: c[2], 'aria-label': status + ' ' + c[0] }) }; });
+  }
+  function Demo() {
+    var s = React.useState(false);
+    return h('label', { style: { display: 'flex', alignItems: 'center', fontFamily: 'var(--mng-font-family-noto-sans)', fontSize: 'var(--mng-font-size-14)', color: 'var(--mng-color-gray-min)' } },
+      h(NS.CheckBox, { status: s[0] ? 'selected' : 'unselected', onChange: function (e) { s[1](e.target.checked); } }), 'Email me the newsletter');
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'status × interaction', note: '14x14 box (radius/field) in a 40x40 touch area (radius/utility). Hover, pressed and focus show a 2px gray/black ring; checked boxes use color/theme/primary, and primary-lighter on hover and pressed.' },
+      ['unselected', 'selected', 'partial'].map(function (st) { return h(I.Specimen, { key: st, items: row(st) }); })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Click, or Tab to it and press Space.' },
+      h(I.Specimen, { items: [{ label: 'With a label', node: h(Demo) }] }))));
+</script>
+</body>
+</html>

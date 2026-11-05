@@ -1,0 +1,14 @@
+/* Form Field Assembly / Name pair: rows of Form Fields, one shared error row (25px Desktop, 22px Mobile; heights from the token file). */
+.mngds-name-pair { display: flex; flex-direction: column; gap: var(--mng-spacing-100); width: 100%; min-width: 0; box-sizing: border-box; }
+.mngds-name-pair--mobile { gap: var(--mng-spacing-100); }
+.mngds-name-pair__row { display: flex; align-items: flex-start; gap: var(--mng-spacing-200); min-width: 0; }
+.mngds-name-pair--mobile .mngds-name-pair__row { gap: var(--mng-spacing-100); }
+.mngds-name-pair--stack .mngds-name-pair__row { flex-direction: column; align-items: stretch; }
+.mngds-name-pair__cell { flex: 0 0 auto; min-width: 0; }
+.mngds-name-pair__cell--fill { flex: 1 1 0; }
+.mngds-name-pair__error {
+  margin: 0; min-height: var(--mng-name-pair-size-desktop-error-message-container-shared-height);
+  font-family: var(--mng-font-family-noto-sans); font-weight: var(--mng-font-weight-regular);
+  font-size: var(--mng-font-size-18); line-height: normal; color: var(--mng-color-feedback-high-error);
+}
+.mngds-name-pair--mobile .mngds-name-pair__error { min-height: var(--mng-name-pair-size-mobile-error-message-container-shared-height); font-size: var(--mng-font-size-16); }

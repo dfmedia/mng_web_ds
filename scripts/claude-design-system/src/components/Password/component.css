@@ -1,0 +1,20 @@
+/* Password, hint, Confirm Password + its error row. 8px (spacing/100) between parts on Desktop, 4px (spacing/050) on Mobile. */
+.mngds-password { display: flex; flex-direction: column; gap: var(--mng-password-size-desktop-root-gap); width: 100%; min-width: 0; box-sizing: border-box; }
+.mngds-password--mobile { gap: var(--mng-password-size-mobile-root-gap); }
+.mngds-password__hint {
+  margin: 0; white-space: pre-line;
+  font-family: var(--mng-password-base-minimum-length-is-6-include-at-least-1-letter-include-at-least-1-number-font-family);
+  font-weight: var(--mng-password-base-minimum-length-is-6-include-at-least-1-letter-include-at-least-1-number-font-weight);
+  font-size: var(--mng-password-size-desktop-minimum-length-is-6-include-at-least-1-letter-include-at-least-1-number-font-size);
+  line-height: normal;
+  color: var(--mng-password-base-minimum-length-is-6-include-at-least-1-letter-include-at-least-1-number-color);
+}
+.mngds-password--mobile .mngds-password__hint { font-size: var(--mng-password-size-mobile-minimum-length-is-6-include-at-least-1-letter-include-at-least-1-number-font-size); }
+.mngds-password__confirm { display: flex; flex-direction: column; }
+/* Confirm Password's error row: 25px Desktop, 22px Mobile, as in Form Field. */
+.mngds-password__error {
+  margin: 0; min-height: 25px;
+  font-family: var(--mng-font-family-noto-sans); font-weight: var(--mng-font-weight-regular);
+  font-size: var(--mng-font-size-18); line-height: normal; color: var(--mng-color-feedback-high-error);
+}
+.mngds-password--mobile .mngds-password__error { min-height: 22px; font-size: var(--mng-font-size-16); }

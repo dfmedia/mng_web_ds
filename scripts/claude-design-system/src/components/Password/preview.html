@@ -1,0 +1,22 @@
+<!-- @dsCard group="Core" height=760 subtitle="Figma: Form Field Assembly / Password · 2 variants (Size)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Password</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var blank = { password: { state: 'Blank' }, confirm: { state: 'Blank' } };
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size', note: 'Password (no error row), the requirements directly under it (always shown, green), then Confirm Password with the only error row.' },
+      h(I.Specimen, { items: [
+        { label: 'Desktop', width: 512, node: h(NS.Password, { fields: blank }) },
+        { label: 'Mobile', width: 360, node: h(NS.Password, { size: 'Mobile', fields: blank }) }] })),
+    h(I.SpecimenSection, { title: 'Checked on blur', note: 'Left: both pass (Success). Right: the re-entered password doesn’t match; the message shows in the one error row.' },
+      h(I.Specimen, { items: [
+        { label: 'Success', width: 512, node: h(NS.Password, { fields: { password: { state: 'Success', value: 'abc123' }, confirm: { state: 'Success', value: 'abc123' } } }) },
+        { label: 'Error on Confirm', width: 512, node: h(NS.Password, { fields: { password: { state: 'Success', value: 'abc123' }, confirm: { state: 'Error', value: 'abc124' } }, errorMessage: 'Passwords don’t match.' }) }] }))));
+</script>
+</body>
+</html>
