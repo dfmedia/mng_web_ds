@@ -16,7 +16,7 @@
   },
   "checkbox": {
     "interaction-default": {
-      "frame-248": {
+      "box": {
         "background": {
           "$type": "color",
           "$value": "{color.theme.primary}",
@@ -28,7 +28,7 @@
             }
           }
         },
-        "icons": {
+        "icon": {
           "icon-color": {
             "$type": "color",
             "$value": "{color.gray.max}",
@@ -37,39 +37,11 @@
                 "figma": {
                   "variable": "Colors/color/gray/max"
                 }
-              }
-            }
-          }
-        }
-      },
-      "frame-249": {
-        "background": {
-          "$type": "color",
-          "$value": "{color.theme.primary}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Colors/color/theme/primary"
               }
             }
           }
         },
-        "icons": {
-          "icon-color": {
-            "$type": "color",
-            "$value": "{color.gray.max}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Colors/color/gray/max"
-                }
-              }
-            }
-          }
-        }
-      },
-      "group-248": {
-        "rectangle-8": {
+        "square": {
           "background": {
             "$type": "color",
             "$value": "{color.gray.max}",
@@ -96,7 +68,7 @@
       }
     },
     "interaction-hover": {
-      "frame-248": {
+      "box": {
         "background": {
           "$type": "color",
           "$value": "{color.theme.primary-lighter}",
@@ -108,7 +80,7 @@
             }
           }
         },
-        "icons": {
+        "icon": {
           "icon-color": {
             "$type": "color",
             "$value": "{color.gray.max}",
@@ -117,39 +89,11 @@
                 "figma": {
                   "variable": "Colors/color/gray/max"
                 }
-              }
-            }
-          }
-        }
-      },
-      "frame-249": {
-        "background": {
-          "$type": "color",
-          "$value": "{color.theme.primary-lighter}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Colors/color/theme/primary-lighter"
               }
             }
           }
         },
-        "icons": {
-          "icon-color": {
-            "$type": "color",
-            "$value": "{color.gray.max}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Colors/color/gray/max"
-                }
-              }
-            }
-          }
-        }
-      },
-      "group-248": {
-        "rectangle-8": {
+        "square": {
           "background": {
             "$type": "color",
             "$value": "{color.gray.max}",
@@ -176,7 +120,7 @@
       }
     },
     "interaction-pressed": {
-      "frame-248": {
+      "box": {
         "background": {
           "$type": "color",
           "$value": "{color.theme.primary-lighter}",
@@ -188,7 +132,7 @@
             }
           }
         },
-        "icons": {
+        "icon": {
           "icon-color": {
             "$type": "color",
             "$value": "{color.gray.max}",
@@ -197,39 +141,11 @@
                 "figma": {
                   "variable": "Colors/color/gray/max"
                 }
-              }
-            }
-          }
-        }
-      },
-      "frame-249": {
-        "background": {
-          "$type": "color",
-          "$value": "{color.theme.primary-lighter}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Colors/color/theme/primary-lighter"
               }
             }
           }
         },
-        "icons": {
-          "icon-color": {
-            "$type": "color",
-            "$value": "{color.gray.max}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Colors/color/gray/max"
-                }
-              }
-            }
-          }
-        }
-      },
-      "group-248": {
-        "rectangle-8": {
+        "square": {
           "background": {
             "$type": "color",
             "$value": "{color.gray.max}",
@@ -256,7 +172,7 @@
       }
     },
     "interaction-disabled": {
-      "frame-248": {
+      "box": {
         "background": {
           "$type": "color",
           "$value": "{color.gray.600}",
@@ -268,7 +184,7 @@
             }
           }
         },
-        "icons": {
+        "icon": {
           "icon-color": {
             "$type": "color",
             "$value": "{color.gray.500}",
@@ -277,39 +193,11 @@
                 "figma": {
                   "variable": "Colors/color/gray/500"
                 }
-              }
-            }
-          }
-        }
-      },
-      "frame-249": {
-        "background": {
-          "$type": "color",
-          "$value": "{color.gray.600}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Colors/color/gray/600"
               }
             }
           }
         },
-        "icons": {
-          "icon-color": {
-            "$type": "color",
-            "$value": "{color.gray.500}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Colors/color/gray/500"
-                }
-              }
-            }
-          }
-        }
-      },
-      "group-248": {
-        "rectangle-8": {
+        "square": {
           "background": {
             "$type": "color",
             "$value": "{color.gray.600}",
@@ -335,8 +223,8 @@
         }
       }
     },
-    "status-selected": {
-      "frame-248": {
+    "base": {
+      "box": {
         "border-radius": {
           "$type": "dimension",
           "$value": "{radius.field}",
@@ -362,7 +250,7 @@
             "unit": "px"
           }
         },
-        "icons": {
+        "icon": {
           "height": {
             "$type": "dimension",
             "$value": {
@@ -378,17 +266,15 @@
             }
           }
         }
-      }
-    },
-    "status-partial": {
-      "frame-249": {
+      },
+      "root": {
         "border-radius": {
           "$type": "dimension",
-          "$value": "{radius.field}",
+          "$value": "{radius.utility}",
           "$extensions": {
             "com.mng": {
               "figma": {
-                "variable": "Spacing & Radius/radius/field"
+                "variable": "Spacing & Radius/radius/utility"
               }
             }
           }
@@ -396,52 +282,22 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 14,
+            "value": 40,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 14,
+            "value": 40,
             "unit": "px"
-          }
-        },
-        "icons": {
-          "height": {
-            "$type": "dimension",
-            "$value": {
-              "value": 12,
-              "unit": "px"
-            }
-          },
-          "width": {
-            "$type": "dimension",
-            "$value": {
-              "value": 12,
-              "unit": "px"
-            }
           }
         }
       }
     },
     "status-unselected": {
-      "group-248": {
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 14,
-            "unit": "px"
-          }
-        },
-        "width": {
-          "$type": "dimension",
-          "$value": {
-            "value": 14,
-            "unit": "px"
-          }
-        },
-        "rectangle-8": {
+      "box": {
+        "square": {
           "border-radius": {
             "$type": "dimension",
             "$value": "{radius.field}",
@@ -502,35 +358,6 @@
           "$type": "dimension",
           "$value": {
             "value": 2,
-            "unit": "px"
-          }
-        }
-      }
-    },
-    "base": {
-      "root": {
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "{radius.utility}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/radius/utility"
-              }
-            }
-          }
-        },
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 40,
-            "unit": "px"
-          }
-        },
-        "width": {
-          "$type": "dimension",
-          "$value": {
-            "value": 40,
             "unit": "px"
           }
         }

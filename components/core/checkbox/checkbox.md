@@ -55,8 +55,8 @@ exported: 2026-11-04
 Default variant `unselected / Default / False` (hidden layers marked):
 
 - **status=unselected, inFocus=False, interaction=Default** `COMPONENT`: 40×40, horizontal, gap 8, padding 0/0/0/0, fixed×fixed
-  - **Group 248** `GROUP`: 14×14, fixed×fixed
-    - **Rectangle 8** `RECTANGLE`: 14×14, fixed×fixed
+  - **Box** `GROUP`: 14×14, fixed×fixed
+    - **Square** `RECTANGLE`: 14×14, fixed×fixed
 
 ## Component tokens
 
@@ -64,53 +64,38 @@ From `checkbox.tokens.json`. References point at system tokens (`tokens/core/`, 
 
 | Token | Value |
 |---|---|
-| `checkbox.interaction-default.frame-248.background` | `{color.theme.primary}` |
-| `checkbox.interaction-default.frame-248.icons.icon-color` | `{color.gray.max}` |
-| `checkbox.interaction-default.frame-249.background` | `{color.theme.primary}` |
-| `checkbox.interaction-default.frame-249.icons.icon-color` | `{color.gray.max}` |
-| `checkbox.interaction-default.group-248.rectangle-8.background` | `{color.gray.max}` |
-| `checkbox.interaction-default.group-248.rectangle-8.border-color` | `{color.gray.200}` |
-| `checkbox.interaction-hover.frame-248.background` | `{color.theme.primary-lighter}` |
-| `checkbox.interaction-hover.frame-248.icons.icon-color` | `{color.gray.max}` |
-| `checkbox.interaction-hover.frame-249.background` | `{color.theme.primary-lighter}` |
-| `checkbox.interaction-hover.frame-249.icons.icon-color` | `{color.gray.max}` |
-| `checkbox.interaction-hover.group-248.rectangle-8.background` | `{color.gray.max}` |
-| `checkbox.interaction-hover.group-248.rectangle-8.border-color` | `{color.gray.min}` |
-| `checkbox.interaction-pressed.frame-248.background` | `{color.theme.primary-lighter}` |
-| `checkbox.interaction-pressed.frame-248.icons.icon-color` | `{color.gray.max}` |
-| `checkbox.interaction-pressed.frame-249.background` | `{color.theme.primary-lighter}` |
-| `checkbox.interaction-pressed.frame-249.icons.icon-color` | `{color.gray.max}` |
-| `checkbox.interaction-pressed.group-248.rectangle-8.background` | `{color.gray.max}` |
-| `checkbox.interaction-pressed.group-248.rectangle-8.border-color` | `{color.gray.min}` |
-| `checkbox.interaction-disabled.frame-248.background` | `{color.gray.600}` |
-| `checkbox.interaction-disabled.frame-248.icons.icon-color` | `{color.gray.500}` |
-| `checkbox.interaction-disabled.frame-249.background` | `{color.gray.600}` |
-| `checkbox.interaction-disabled.frame-249.icons.icon-color` | `{color.gray.500}` |
-| `checkbox.interaction-disabled.group-248.rectangle-8.background` | `{color.gray.600}` |
-| `checkbox.interaction-disabled.group-248.rectangle-8.border-color` | `{color.gray.500}` |
-| `checkbox.status-selected.frame-248.border-radius` | `{radius.field}` |
-| `checkbox.status-selected.frame-248.height` | 14px |
-| `checkbox.status-selected.frame-248.width` | 14px |
-| `checkbox.status-selected.frame-248.icons.height` | 12px |
-| `checkbox.status-selected.frame-248.icons.width` | 12px |
-| `checkbox.status-partial.frame-249.border-radius` | `{radius.field}` |
-| `checkbox.status-partial.frame-249.height` | 14px |
-| `checkbox.status-partial.frame-249.width` | 14px |
-| `checkbox.status-partial.frame-249.icons.height` | 12px |
-| `checkbox.status-partial.frame-249.icons.width` | 12px |
-| `checkbox.status-unselected.group-248.height` | 14px |
-| `checkbox.status-unselected.group-248.width` | 14px |
-| `checkbox.status-unselected.group-248.rectangle-8.border-radius` | `{radius.field}` |
-| `checkbox.status-unselected.group-248.rectangle-8.border-style` | solid |
-| `checkbox.status-unselected.group-248.rectangle-8.border-width` | 1px |
-| `checkbox.status-unselected.group-248.rectangle-8.height` | 14px |
-| `checkbox.status-unselected.group-248.rectangle-8.width` | 14px |
-| `checkbox.infocus-true.root.border-color` | `{color.gray.black}` |
-| `checkbox.infocus-true.root.border-style` | solid |
-| `checkbox.infocus-true.root.border-width` | 2px |
+| `checkbox.interaction-default.box.background` | `{color.theme.primary}` |
+| `checkbox.interaction-default.box.icon.icon-color` | `{color.gray.max}` |
+| `checkbox.interaction-default.box.square.background` | `{color.gray.max}` |
+| `checkbox.interaction-default.box.square.border-color` | `{color.gray.200}` |
+| `checkbox.interaction-hover.box.background` | `{color.theme.primary-lighter}` |
+| `checkbox.interaction-hover.box.icon.icon-color` | `{color.gray.max}` |
+| `checkbox.interaction-hover.box.square.background` | `{color.gray.max}` |
+| `checkbox.interaction-hover.box.square.border-color` | `{color.gray.min}` |
+| `checkbox.interaction-pressed.box.background` | `{color.theme.primary-lighter}` |
+| `checkbox.interaction-pressed.box.icon.icon-color` | `{color.gray.max}` |
+| `checkbox.interaction-pressed.box.square.background` | `{color.gray.max}` |
+| `checkbox.interaction-pressed.box.square.border-color` | `{color.gray.min}` |
+| `checkbox.interaction-disabled.box.background` | `{color.gray.600}` |
+| `checkbox.interaction-disabled.box.icon.icon-color` | `{color.gray.500}` |
+| `checkbox.interaction-disabled.box.square.background` | `{color.gray.600}` |
+| `checkbox.interaction-disabled.box.square.border-color` | `{color.gray.500}` |
+| `checkbox.base.box.border-radius` | `{radius.field}` |
+| `checkbox.base.box.height` | 14px |
+| `checkbox.base.box.width` | 14px |
+| `checkbox.base.box.icon.height` | 12px |
+| `checkbox.base.box.icon.width` | 12px |
 | `checkbox.base.root.border-radius` | `{radius.utility}` |
 | `checkbox.base.root.height` | 40px |
 | `checkbox.base.root.width` | 40px |
+| `checkbox.status-unselected.box.square.border-radius` | `{radius.field}` |
+| `checkbox.status-unselected.box.square.border-style` | solid |
+| `checkbox.status-unselected.box.square.border-width` | 1px |
+| `checkbox.status-unselected.box.square.height` | 14px |
+| `checkbox.status-unselected.box.square.width` | 14px |
+| `checkbox.infocus-true.root.border-color` | `{color.gray.black}` |
+| `checkbox.infocus-true.root.border-style` | solid |
+| `checkbox.infocus-true.root.border-width` | 2px |
 
 ## Behavior and breakpoints
 
