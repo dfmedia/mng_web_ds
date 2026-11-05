@@ -279,7 +279,7 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 - **Where scroll is needed** (MobileScroll, 2026-11-04, from the Embedded Login keyboard spec): only the body scrolls. The header and CTA stack are fixed, the Body Container scrolls (`overflow-y: auto`), and the page behind the modal is scroll-locked. The card keeps the 24px (`spacing/300`) margin and fills the screen height when its content is taller.
 - **Scroll indicator:** shown whenever the body overflows; 4px wide, `color/gray/300` (3.84:1 on white, passes the 3:1 non-text check), `radius/sm`, 4px (`spacing/050`) inside the Body Container's top-right edge.
 - **On-screen keyboard:** the modal lives inside the visible area (screen minus keyboard and browser bars), measured with `window.visualViewport` (`height` + `offsetTop`) and re-measured on every `visualViewport` `resize` and `scroll` event (the keyboard changes height while typing; browser bars hide and show). A centered modal stays centered in the visible area, or fills it with 8px (`spacing/100`) gaps top and bottom when taller. The 8px gap applies only while the keyboard is open; otherwise the 24px margin applies. Left and right margins stay 24px. While the keyboard is open the overlay and card cover the masthead (feasibility being checked with DigiScrum and CMS, 2026-11-04).
-- **Compact mode** (visible area under 560px: every phone, tablet landscape): the header shrinks to the icon and title, and the subtitle moves to the top of the body; card padding top and bottom 16px (`spacing/200`, proposed). Only Button Primary stays pinned; the Button Linkstyle links move to the end of the body until the keyboard closes.
+- **Compact mode** (visible area under 560px: every phone, tablet landscape): the header shrinks to the icon and title, and the subtitle moves to the top of the body; card padding top and bottom 16px (`spacing/200`; approved by Karl 2026-11-05). Only Button Primary stays pinned; the Button Linkstyle links move to the end of the body until the keyboard closes.
 - **Focus:** when a field gets focus, scroll the body (never the page; focus with `preventScroll`) so the field's label sits at least 24px (`spacing/300`) below the top of the Body Container and its hint or error is fully above the CTA area. Next / Tab re-runs the rule; closing the keyboard returns the card to its normal placement.
 - **Errors:** placement depends on the content: an InLineMessage fixed between the body and the CTAs, an InLineMessage at the top of the scrolling body, or a field-level error under its field. Whichever is used must be fully visible when it appears.
 - **Not a modal:** inline content such as the Regiwall in an article scrolls the page instead (no scroll lock), so the field and its button sit 16px (`spacing/200`) above the keyboard.
@@ -307,9 +307,8 @@ Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).
 ## Known issues
 
 1. Open question for DigiScrum and CMS (2026-11-04): with the keyboard open and an 8px gap, the corner close button no longer fits. Proposal: move it inside the card's top-right corner when the card reaches the top of the visible area. Not in the kit until dev confirms. Also asked: can the overlay cover the (sticky) masthead while the keyboard is open?
-2. Compact-mode card padding (16px top and bottom) is a proposal waiting for Karl's review (2026-11-04).
-3. Production (Reader Dashboard) differences: design-vs-production entry 31.
-4. **Values not bound to a token** (literal in the component tokens): `base` root background = #000000 @ 0.5.
+2. Production (Reader Dashboard) differences: design-vs-production entry 31.
+3. **Values not bound to a token** (literal in the component tokens): `base` root background = #000000 @ 0.5.
 
 ## Files
 

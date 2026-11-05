@@ -2159,7 +2159,7 @@ Every other mode is 3.2:1 or more on `primary-lighter`, and every mode passes on
 
 **To decide (Karl):** (a) keep the box `theme/primary` on hover and pressed (the ring alone shows the state); (b) use a `color/gray/min` checkmark wherever `primary-lighter` is too light; or (c) darken Mercury News's `primary-lighter` (a color change, on a `review/...` branch).
 
-**Status:** Open, waiting on the design decision.
+**Status:** Open. The Mercury News + East Bay Times need a different solution (Karl, 2026-11-05); not being worked on yet. Noted on the Figma Check Boxes page and in the Claude design system.
 
 ---
 

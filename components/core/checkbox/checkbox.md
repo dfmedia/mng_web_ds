@@ -130,7 +130,7 @@ Not checked against production for this export (Karl, 2026-11-04).
 
 ## Known issues
 
-1. White icon on `color/theme/primary-lighter` (hover / pressed) is 1.6:1 on The Mercury News + East Bay Times and 3.0:1 on The Sonoma Index-Tribune (design-vs-production entry 37; colors frozen, Karl to decide).
+1. White icon on `color/theme/primary-lighter` (hover / pressed) is 1.6:1 on The Mercury News + East Bay Times and 3.0:1 on The Sonoma Index-Tribune (design-vs-production entry 37). The Mercury News + East Bay Times need a different solution (Karl, 2026-11-05); not being worked on yet.
 2. Not checked against production for this export (Karl, 2026-11-04).
 
 ## Files

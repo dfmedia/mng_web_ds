@@ -776,7 +776,7 @@
         "**Where scroll is needed** (MobileScroll, 2026-11-04, from the Embedded Login keyboard spec): only the body scrolls. The header and CTA stack are fixed, the Body Container scrolls (`overflow-y: auto`), and the page behind the modal is scroll-locked. The card keeps the 24px (`spacing/300`) margin and fills the screen height when its content is taller.",
         "**Scroll indicator:** shown whenever the body overflows; 4px wide, `color/gray/300` (3.84:1 on white, passes the 3:1 non-text check), `radius/sm`, 4px (`spacing/050`) inside the Body Container's top-right edge.",
         "**On-screen keyboard:** the modal lives inside the visible area (screen minus keyboard and browser bars), measured with `window.visualViewport` (`height` + `offsetTop`) and re-measured on every `visualViewport` `resize` and `scroll` event (the keyboard changes height while typing; browser bars hide and show). A centered modal stays centered in the visible area, or fills it with 8px (`spacing/100`) gaps top and bottom when taller. The 8px gap applies only while the keyboard is open; otherwise the 24px margin applies. Left and right margins stay 24px. While the keyboard is open the overlay and card cover the masthead (feasibility being checked with DigiScrum and CMS, 2026-11-04).",
-        "**Compact mode** (visible area under 560px: every phone, tablet landscape): the header shrinks to the icon and title, and the subtitle moves to the top of the body; card padding top and bottom 16px (`spacing/200`, proposed). Only Button Primary stays pinned; the Button Linkstyle links move to the end of the body until the keyboard closes.",
+        "**Compact mode** (visible area under 560px: every phone, tablet landscape): the header shrinks to the icon and title, and the subtitle moves to the top of the body; card padding top and bottom 16px (`spacing/200`; approved by Karl 2026-11-05). Only Button Primary stays pinned; the Button Linkstyle links move to the end of the body until the keyboard closes.",
         "**Focus:** when a field gets focus, scroll the body (never the page; focus with `preventScroll`) so the field's label sits at least 24px (`spacing/300`) below the top of the Body Container and its hint or error is fully above the CTA area. Next / Tab re-runs the rule; closing the keyboard returns the card to its normal placement.",
         "**Errors:** placement depends on the content: an InLineMessage fixed between the body and the CTAs, an InLineMessage at the top of the scrolling body, or a field-level error under its field. Whichever is used must be fully visible when it appears.",
         "**Not a modal:** inline content such as the Regiwall in an article scrolls the page instead (no scroll lock), so the field and its button sit 16px (`spacing/200`) above the keyboard.",
@@ -785,7 +785,6 @@
       "breakpoints": "| Device | Screen | Card |\n|---|---|---|\n| Desktop, TabletH, TabletV | 1280, 1024, 768 | 444px, centered; padding 40/40/24/40 |\n| Mobile, Fold | 360, 340 | screen width minus 24px each side; padding 24 |",
       "knownIssues": [
         "Open question for DigiScrum and CMS (2026-11-04): with the keyboard open and an 8px gap, the corner close button no longer fits. Proposal: move it inside the card's top-right corner when the card reaches the top of the visible area. Not in the kit until dev confirms. Also asked: can the overlay cover the (sticky) masthead while the keyboard is open?",
-        "Compact-mode card padding (16px top and bottom) is a proposal waiting for Karl's review (2026-11-04).",
         "Production (Reader Dashboard) differences: design-vs-production entry 31."
       ],
       "production": "Reader Dashboard modal (`react-modal`, `.ReactModal__Content`)."
@@ -809,7 +808,7 @@
       ],
       "breakpoints": "| Device | Location | Width |\n|---|---|---|\n| XLDesktop | Float | 546px |\n| SMMobile (360) | FixedFooter | 328px |\n| XSFold (340) | FixedFooter | 308px |",
       "knownIssues": [
-        "No instances yet; confirm where it's used and where Float sits on the screen with the Embedded login project (status open item 15)."
+        "No instances in the main file yet. This is the Social One Tap panel: where it sits and where Float floats are already specified in Figma (Karl, 2026-11-05). It has no text fields, so it never opens the on-screen keyboard."
       ],
       "production": null
     },
@@ -1487,7 +1486,7 @@
       ],
       "breakpoints": null,
       "knownIssues": [
-        "White icon on `color/theme/primary-lighter` (hover / pressed) is 1.6:1 on The Mercury News + East Bay Times and 3.0:1 on The Sonoma Index-Tribune (design-vs-production entry 37; colors frozen, Karl to decide).",
+        "White icon on `color/theme/primary-lighter` (hover / pressed) is 1.6:1 on The Mercury News + East Bay Times and 3.0:1 on The Sonoma Index-Tribune (design-vs-production entry 37). The Mercury News + East Bay Times need a different solution (Karl, 2026-11-05); not being worked on yet.",
         "Not checked against production for this export (Karl, 2026-11-04)."
       ],
       "production": "Not checked against production for this export (Karl, 2026-11-04)."

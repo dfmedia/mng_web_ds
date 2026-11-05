@@ -368,7 +368,7 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 
 ## Known issues
 
-1. No instances yet; confirm where it's used and where Float sits on the screen with the Embedded login project (status open item 15).
+1. No instances in the main file yet. This is the Social One Tap panel: where it sits and where Float floats are already specified in Figma (Karl, 2026-11-05). It has no text fields, so it never opens the on-screen keyboard.
 2. **Values not bound to a token** (literal in the component tokens): `options-gotcustom` contents.frame-11508.frame-12903.frame-12907.icons icon-color = #4285f4; `base` contents.frame-11508.frame-15.frame-11 gap = 11px; `base` contents.frame-11508.frame-15.frame-11 padding-bottom = 14px; `base` contents.frame-11508.frame-15.frame-11 padding-top = 14px; `base` contents.frame-11508.frame-15.frame-11.frame-2 gap = 1px; `base` contents.frame-11508.frame-15.frame-11.frame-2.philly76-gmail-com font-size = 11px; `base` contents.frame-11508.frame-15.frame-12 gap = 11px; `base` contents.frame-11508.frame-15.frame-12 padding-bottom = 14px; `base` contents.frame-11508.frame-15.frame-12 padding-top = 14px; `base` contents.frame-11508.frame-15.frame-12.frame-3 gap = 1px; `base` contents.frame-11508.frame-15.frame-12.frame-3.gritty-gmail-com font-size = 11px; `base` contents.frame-11508.frame-15.frame-13 padding-bottom = 14px; and 26 more.
 
 ## Files
