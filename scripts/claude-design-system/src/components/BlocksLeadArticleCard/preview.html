@@ -7,11 +7,11 @@
 <div id="root"></div>
 <script>
   var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
-  var stage = { Mobile: 340 + 32, Tablet: 391 + 358 + 32 + 32, Desktop: 706 + 32 };
+  var stage = { Mobile: 340 + 32, Tablet: 748 + 32, Desktop: 700 + 32 };
   var notes = {
-    Mobile: 'Below 640px: one column, 25/29 headline. Image under the headline; slideshow after the byline; 8px gaps; 1px color/gray/500 rule 20px below the byline. Built at 340px.',
-    Tablet: '640px and up (768 template): two 358px columns, 32px apart. The 391px image overflows its column (spec known issue); the slideshow fills it.',
-    Desktop: '1024px and up: text 295 | image 391 (20px gap) or slideshow 356 (706px wide).'
+    Mobile: 'Below 640px: one column, 25/29 headline. Image under the headline; slideshow after the byline; 8px gaps; 1px color/gray/500 rule 20px below the byline. Photo 3:2 (340 × 227). Built at 340px.',
+    Tablet: '640px and up (768 template): fills its column. Text and image 50% each, 20px apart (built 364 | 364 × 243 at 748); the slideshow fills its half. Photo 3:2.',
+    Desktop: '1024px and up: fills its column. Text 43.75% | image 56.25%, 20px apart (built 296 | 384 × 256 at 700), or slideshow 50%. Photo 3:2.'
   };
   function section(dev) {
     var items = [];

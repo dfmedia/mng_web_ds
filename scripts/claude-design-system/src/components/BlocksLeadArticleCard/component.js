@@ -26,7 +26,7 @@ function BlocksLeadArticleCard(props) {
     /* Zone 1 Slideshow is its own component (Zone1Slideshow); its Breakpoint matches the card's Device. */
     media = h('div', { className: 'mngds-blocks-lead-article-card__slideshow' },
       typeof Zone1Slideshow === 'function'
-        ? h(Zone1Slideshow, Object.assign({ breakpoint: device }, props.slideshow))
+        ? h(Zone1Slideshow, Object.assign({ breakpoint: device, fill: true }, props.slideshow))
         : h(ArticleImage, { className: 'mngds-blocks-lead-article-card__slideshow-fallback', alt: 'Photo gallery' }));
   } else {
     media = h('div', { className: 'mngds-blocks-lead-article-card__image', 'aria-hidden': props.image ? undefined : 'true' },

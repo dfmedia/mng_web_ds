@@ -9,7 +9,7 @@ component_key: f3543c3d3a1ab06000ea1bced9cef16e9c49ea63
 variants: 9
 tokens: blocks-article-row.tokens.json
 skeleton: blocks-article-row.html
-exported: 2026-10-30
+exported: 2026-11-04
 ---
 
 # Blocks Article Row
@@ -140,11 +140,12 @@ From `blocks-article-row.tokens.json`. References point at system tokens (`token
 | Tablet | 640px and up (768 template) | 220px image, 16px body padding; built at 720 |
 | Desktop | 640px and up (1280 template) | Same as Tablet; built at 848 |
 
-- **Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow.
+- **Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow at rest.
 - **Image:** Article Image Placeholder pinned top-left. 640px and up: 220px wide, filling the row height (minimum 132, 5:3). Below 640px: 90×54, with white space below it.
 - **Body:** Article Section Kicker; headline `Editorial/Titles/CardTertiaryCompact` (`color/gray/min`), not clamped; footer with a 1px `color/gray/500` top border, Article Author and Article Timestamp side by side.
 - **Spacing:** body padding 16px (`spacing/200`), 12px (`spacing/150`) below 640px; 8px (`spacing/100`) kicker to headline; 12px (`spacing/150`) headline group to footer; 8px (`spacing/100`) above the footer content; 12px (`spacing/150`) between author and timestamp.
-- **Hover** (prototype `.row:hover`): border and a 1px outside ring in `color/theme/primary`, headline `color/theme/primary`.
+- **Hover** (prototype `.row:hover`): border and a 1px outside ring in `color/theme/primary`, headline `color/theme/primary`. Plus `shadow/md` under it (0 4px 8px, `color/gray/black` at 20%; Karl, 2026-11-04): in Figma the Hover variant carries the `shadow/md` effect style, and because a layer takes one effect style the ring is drawn in a detached Hover Sample (ring + `shadow/md`) in the Specifications; in code `box-shadow: 0 0 0 1px <primary>, var(--mng-shadow-md)`.
+- **Hover animation** (Karl, 2026-11-04): border color and box shadow (ring + `shadow/md`) ease over 150ms in and out (`transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype); the headline color changes at once; none with `prefers-reduced-motion: reduce`. No motion token exists yet. Developer notes: `components/for-you-interaction-and-accessibility.md`.
 - **Focus** (prototype `.row:focus-visible`): `outline: 2px solid` `color/gray/black`, `outline-offset: 1px`.
 - **Gallery Icon Badge:** Size=Large on the 220px image, Size=Small on the 90px image.
 
@@ -167,7 +168,7 @@ New: the For You tab (prototype `.row`).
 
 ## Known issues
 
-1. The exporter doesn't write Figma effects yet, so the Hover ring (`box-shadow: 0 0 0 1px`) and the Focus outline are in the rules above, not in the tokens or the HTML skeleton.
+1. The exporter doesn't write Figma effects yet, so the Hover ring and `shadow/md` and the Focus outline are in the rules above, not in the tokens or the HTML skeleton.
 
 ## Files
 
@@ -175,4 +176,4 @@ New: the For You tab (prototype `.row`).
 - `blocks-article-row.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

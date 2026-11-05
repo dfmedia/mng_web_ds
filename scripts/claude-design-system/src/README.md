@@ -86,7 +86,7 @@ Figma: [Fonts](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=1079
 Figma: spacing and radius are variables in the [main file](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/); [Shadows](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7376-25745).
 
 - Spacing is on a 4/8 grid: `mng-spacing-050` 4, `100` 8, `150` 12, `200` 16, `250` 20, `300` 24, `400` 32, `500` 40. Production's 10px and 14px are drift, not part of the system.
-- Corner radius: `mng-radius-sm` (4px) on every button and control; `mng-radius-utility` (5px) on containers only (in-line messages, modals, form fields, status badge); `mng-radius-lg` (8px) on cards.
+- Corner radius: `mng-radius-sm` (4px) on every button and control; `mng-radius-field` (3px) on form field outlines (Form Field, Code Box, search field); `mng-radius-utility` (5px) on containers only (in-line messages, modals, status badge); `mng-radius-lg` (8px) on cards.
 - Shadows are black only: `mng-shadow-sm` sticky bars, `mng-shadow-md` cards, `mng-shadow-lg` anything floating (modals, menus, tooltips). The masthead keeps production's shadow (only when scrolled); it isn't in the system yet.
 - Focus rings: a 2px `mng-color-gray-black` outline, 1px outside the element. The ring never changes the element's size (a 40px button measures 46px with its ring).
 

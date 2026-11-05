@@ -12,6 +12,9 @@
   background: var(--mng-latest-headlines-base-header-container-background);
   padding-bottom: var(--mng-latest-headlines-base-header-container-padding-bottom);
 }
+/* The title fills the column, so its underline spans the full width (Figma header eyebrow width = the root width;
+   production's underline spans the column on all 6 review sites). Was the eyebrow's own max-content width (Karl, 2026-11-03). */
+.mngds-latest-headlines__title { width: 100%; }
 .mngds-latest-headlines__list {
   list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column;
   gap: var(--mng-latest-headlines-base-list-gap);

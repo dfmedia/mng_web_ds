@@ -157,9 +157,9 @@
         "set": "ModalsCenter"
       },
       "variants": 6,
-      "instances": 11,
-      "knownIssues": 3,
-      "exported": "2026-10-28"
+      "instances": 12,
+      "knownIssues": 4,
+      "exported": "2026-11-04"
     },
     {
       "slug": "modals-offset",
@@ -303,7 +303,7 @@
       "variants": 9,
       "instances": 0,
       "knownIssues": 1,
-      "exported": "2026-10-30"
+      "exported": "2026-11-04"
     },
     {
       "slug": "blocks-card",
@@ -319,7 +319,7 @@
       "variants": 3,
       "instances": 0,
       "knownIssues": 2,
-      "exported": "2026-10-30"
+      "exported": "2026-11-04"
     },
     {
       "slug": "blocks-footer",
@@ -351,7 +351,7 @@
       "variants": 12,
       "instances": 0,
       "knownIssues": 2,
-      "exported": "2026-10-30"
+      "exported": "2026-11-03"
     },
     {
       "slug": "1col-article-card",
@@ -447,7 +447,7 @@
       "variants": 6,
       "instances": 11,
       "knownIssues": 3,
-      "exported": "2026-11-02"
+      "exported": "2026-11-03"
     },
     {
       "slug": "zone-1-slideshow",
@@ -735,7 +735,7 @@
       "variants": 2,
       "instances": 0,
       "knownIssues": 0,
-      "exported": "2026-10-28"
+      "exported": "2026-11-04"
     },
     {
       "slug": "masthead",

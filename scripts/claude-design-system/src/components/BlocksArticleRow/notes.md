@@ -5,3 +5,5 @@
 - Badge: Large 5px in on the 220px image; Small 3.75px right / 5px bottom on the 90×54 image (Gallery Icon Badge spec, no tokens). Hovering the row (or the badge) keeps the default badge.
 - Mobile renders 161px tall vs Figma 162 (kicker 12.5 vs the 13px Figma text box).
 - Contrast: as Blocks Card (18.42:1; hover primary 5.45 / 6.87 / 5.20:1).
+- **Hover shadow** (Karl, 2026-11-04): Hover keeps the 1px primary ring and adds `shadow/md` (`var(--mng-shadow-md)`: 0 4px 8px, black at 20%, the token whose usage is "Cards"). In Figma the Hover variant carries the `shadow/md` effect style; a layer takes one effect style, so the ring is drawn in a detached Hover Sample in the Specifications.
+- **Hover animation** (Karl, 2026-11-04): `transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype (`for_you_tab_mvp/index.html` `.card` / `.row`); the headline color isn't animated. `prefers-reduced-motion: reduce` turns it off. The 150ms is raw: the system has no motion tokens yet.

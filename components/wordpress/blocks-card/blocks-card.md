@@ -9,7 +9,7 @@ component_key: 12f9d565a5107bd87fbbb91de42b3985cd934ed6
 variants: 3
 tokens: blocks-card.tokens.json
 skeleton: blocks-card.html
-exported: 2026-10-30
+exported: 2026-11-04
 ---
 
 # Blocks Card
@@ -104,11 +104,12 @@ From `blocks-card.tokens.json`. References point at system tokens (`tokens/core/
 
 No Breakpoint property: one size at every width.
 
-- **Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow.
+- **Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow at rest.
 - **Content:** 16:9 Article Image Placeholder; Article Section Kicker; headline `Editorial/Titles/CardTertiaryCompact` (Noto Serif Bold 16/18.88, `color/gray/min`), max 5 lines; footer with a 1px `color/gray/500` top border, Article Author with Article Timestamp under it.
 - **Spacing:** 16px (`spacing/200`) body padding; 8px (`spacing/100`) kicker to headline; 12px (`spacing/150`) headline group to footer; 8px (`spacing/100`) above the author.
 - **Width:** fills its column; 16px gaps; 3-up from 800px, 2-up at 640–799px, 1-up below 640px. Built at 296px.
-- **Hover** (the whole card is one link; For You prototype `.card:hover`): border and a 1px outside ring in `color/theme/primary` (CSS `border-color` plus `box-shadow: 0 0 0 1px`), headline `color/theme/primary`. Contrast: theme primary on white passes AA on every site (lowest 4.75:1).
+- **Hover** (the whole card is one link; For You prototype `.card:hover`): border and a 1px outside ring in `color/theme/primary` (CSS `border-color` plus `box-shadow: 0 0 0 1px`), headline `color/theme/primary`. Contrast: theme primary on white passes AA on every site (lowest 4.75:1). Plus `shadow/md` under it (0 4px 8px, `color/gray/black` at 20%; Karl, 2026-11-04): in Figma the Hover variant carries the `shadow/md` effect style, and because a layer takes one effect style the ring is drawn in a detached Hover Sample (ring + `shadow/md`) in the Specifications; in code `box-shadow: 0 0 0 1px <primary>, var(--mng-shadow-md)`.
+- **Hover animation** (Karl, 2026-11-04): border color and box shadow (ring + `shadow/md`) ease over 150ms in and out (`transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype); the headline color changes at once; none with `prefers-reduced-motion: reduce`. No motion token exists yet. Developer notes: `components/for-you-interaction-and-accessibility.md`.
 - **Focus** (keyboard; prototype `.card:focus-visible`): `outline: 2px solid` `color/gray/black`, `outline-offset: 1px`.
 - **Gallery Icon Badge** (`Show Gallery Icon`): Size=Large, 5px in from the image's bottom-right corner.
 
@@ -132,7 +133,7 @@ New: the For You tab (prototype `.card`). Production's homepage card hover only 
 ## Known issues
 
 1. In code the card body is space-between so footers line up in a row of cards; Figma uses the fixed 12px gap.
-2. The exporter doesn't write Figma effects yet, so the Hover ring (`box-shadow: 0 0 0 1px`) and the Focus outline are in the rules above, not in the tokens or the HTML skeleton.
+2. The exporter doesn't write Figma effects yet, so the Hover ring and `shadow/md` and the Focus outline are in the rules above, not in the tokens or the HTML skeleton.
 
 ## Files
 
@@ -140,4 +141,4 @@ New: the For You tab (prototype `.card`). Production's homepage card hover only 
 - `blocks-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

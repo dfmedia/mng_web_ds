@@ -11,7 +11,7 @@
       },
       "production": "Production `.feature-primary .feature-large` (Zone 1 lead).",
       "layer": "wordpress",
-      "exported": "2026-11-02"
+      "exported": "2026-11-03"
     }
   },
   "zone-1-lead-article-card": {
@@ -281,21 +281,7 @@
         }
       },
       "2nd-col": {
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 271,
-            "unit": "px"
-          }
-        },
         "article-image-placeholder": {
-          "height": {
-            "$type": "dimension",
-            "$value": {
-              "value": 271,
-              "unit": "px"
-            }
-          },
           "icon-color": {
             "$type": "color",
             "$value": "{color.gray.min}",
@@ -305,13 +291,6 @@
                   "variable": "Colors/color/gray/min"
                 }
               }
-            }
-          },
-          "width": {
-            "$type": "dimension",
-            "$value": {
-              "value": 391,
-              "unit": "px"
             }
           }
         },
@@ -341,7 +320,7 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 235.65,
+            "value": 227,
             "unit": "px"
           }
         },
@@ -349,7 +328,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 235.65,
+              "value": 227,
               "unit": "px"
             }
           },
@@ -441,12 +420,35 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 295,
+            "value": 296,
             "unit": "px"
           }
         }
       },
       "2nd-col": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 256,
+            "unit": "px"
+          }
+        },
+        "article-image-placeholder": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 256,
+              "unit": "px"
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 384,
+              "unit": "px"
+            }
+          }
+        },
         "zone-1-slideshow": {
           "height": {
             "$type": "dimension",
@@ -458,7 +460,7 @@
           "width": {
             "$type": "dimension",
             "$value": {
-              "value": 356,
+              "value": 352,
               "unit": "px"
             }
           }
@@ -480,7 +482,7 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 706,
+            "value": 700,
             "unit": "px"
           }
         }
@@ -491,12 +493,35 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 358,
+            "value": 364,
             "unit": "px"
           }
         }
       },
       "2nd-col": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 243,
+            "unit": "px"
+          }
+        },
+        "article-image-placeholder": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 243,
+              "unit": "px"
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 364,
+              "unit": "px"
+            }
+          }
+        },
         "zone-1-slideshow": {
           "height": {
             "$type": "dimension",
@@ -508,7 +533,7 @@
           "width": {
             "$type": "dimension",
             "$value": {
-              "value": 358,
+              "value": 364,
               "unit": "px"
             }
           }
@@ -518,7 +543,7 @@
         "gap": {
           "$type": "dimension",
           "$value": {
-            "value": 32,
+            "value": 20,
             "unit": "px"
           },
           "$extensions": {
@@ -534,7 +559,7 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 391,
+            "value": 384,
             "unit": "px"
           }
         }
@@ -545,7 +570,7 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 356,
+            "value": 352,
             "unit": "px"
           }
         }
@@ -556,7 +581,7 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 358,
+            "value": 364,
             "unit": "px"
           }
         }
@@ -567,7 +592,7 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 358,
+            "value": 364,
             "unit": "px"
           }
         }

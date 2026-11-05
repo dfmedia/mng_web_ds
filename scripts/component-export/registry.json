@@ -403,17 +403,18 @@
       "description": "The homepage Zone 1 lead story (production lead with Related list); Gallery=Image or Gallery=Slideshow (a photo gallery lead, which shows the Zone 1 Slideshow instead of the image). The For You featured story is its own component, Blocks Lead Article Card (2026-10-28).",
       "rules": [
         "**Headline and excerpt:** (Noto Serif Bold 29/33, −0.87px at 640px and up; 25/29, −0.03em below; excerpt Noto Sans 15/19 `color/gray/100`, 4px below the headline group on Desktop and Tablet, as in production).",
-        "**Layout:** Desktop and Tablet are two columns (text, then image; 20px and 32px apart); Mobile is one column (headline group, image, excerpt, Related list; 8px gaps) with a 1px bottom rule below.",
+        "**Layout:** Desktop and Tablet are two columns (text, then image; 20px (`spacing/250`) apart); Mobile is one column (headline group, image, excerpt, Related list; 8px gaps) with a 1px bottom rule below.",
+        "**Sizes match production** (Karl, 2026-11-03; the lead CSS `.feature-primary .feature-large` is identical on all 6 review sites): the card fills its column. Desktop (1280px and up): text `calc(43.75% − 0.71rem)` and image `calc(56.25% − 0.55rem)`, about 20px apart (`spacing/250`), built 296 + 20 + 384 = 700; a slideshow takes 50% (built 352). Tablet (640–799px): text and image `calc(50% − 0.63rem)` each, 20px apart, built 364 + 20 + 364 = 748 (was 358 + 32 + 358). The photo is 3:2, production's crop, so its height follows its width: 384×256 Desktop, 364×243 Tablet, 340×227 Mobile (was 391×271 and 340×236).",
         "**Gallery** (Karl, 2026-10-26): `Gallery=Slideshow` replaces the image with the Zone 1 Slideshow, as production does for gallery leads (`.feature-large .article-slideshow`). Zone 1 has no Gallery Icon Badge.",
-        "**Gallery=Slideshow layout follows the lead's width, not the screen:** two columns when the lead is about 700px wide or more (Desktop: text 295 and slideshow 356, the rest of the 706 card between them; Tablet: the slideshow fills the 358 column); one column when narrower: headline, excerpt, then the Related list, then the slideshow full width. On the homepage the third page column narrows the lead, so it is one column from 800 to 1279px (594 wide at 1024) and below 640px, and two columns from 640 to 799px and from 1280px up (production, checked on develop.denverpost.com 2026-10-26).",
+        "**Gallery=Slideshow layout follows the lead's width, not the screen:** two columns when the lead is about 700px wide or more (Desktop: text 43.75% and slideshow 50%, the rest of the card between them; Tablet: text and slideshow 50% each, 20px apart); one column when narrower: headline, excerpt, then the Related list, then the slideshow full width. On the homepage the third page column narrows the lead, so it is one column from 800 to 1279px (594 wide at 1024) and below 640px, and two columns from 640 to 799px and from 1280px up (production, checked on develop.denverpost.com 2026-10-26).",
         "**The For You featured story** moved to Blocks Lead Article Card (Karl, 2026-10-28); its Style=For You variants were deleted. `Style` has one value (Standard) and is kept so existing instances don't change.",
         "**Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`.",
         "**Related list** (2026-11-02): a \"Related\" header, then up to three Related Article List Items (their own component, matched to production that day), 4px (`spacing/050`) apart; the items hug their height (they were fixed at 41 / 45px)."
       ],
-      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline |\n| Tablet | 640px and up (768 template) | Two columns, 32px apart |\n| Desktop | 1024px and up | Two columns, 20px apart (text 295, image 391) |",
+      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px, and 800–1279px on the homepage | One column; 25/29 headline below 640px; photo 3:2, full width |\n| Tablet | 640–799px | Two columns, 50% / 50%, 20px apart (built 364 + 20 + 364) |\n| Desktop | 1280px and up | Two columns, 43.75% / 56.25%, 20px apart (built 296 + 20 + 384); slideshow 50% |",
       "knownIssues": [
-        "Tablet: the image (391px) is wider than its 358px column.",
-        "Column gaps 20px (spacing/250) and 32px (no token) are raw values."
+        "Column gap 20px (`spacing/250`) is a raw value in Figma (not bound to the variable).",
+        "Fixed 2026-11-03: the Tablet image (391px) was wider than its 358px column."
       ],
       "production": "Production `.feature-primary .feature-large` (Zone 1 lead)."
     },
@@ -501,11 +502,12 @@
       "description": "The homepage tab bar built from Homepage Tab. Breakpoint = Desktop, Mobile.",
       "rules": [
         "**Bar:** full width, `color/gray/max`, with a 1px `color/gray/300` rule along the bottom; the active underline sits over it.",
-        "**Nav:** max width 1200px, centered, 24px (`spacing/300`) side padding at 640px and up; no side padding below 640px.",
+        "**Nav:** max width 1280px, centered, 8px (`spacing/100`) side padding at every width, so the first tab lines up with the page content's left edge (Karl, 2026-11-03; was 1200px with 24px (`spacing/300`) sides at 640px and up and no side padding below).",
         "**Tabs:** left-aligned, 24px (`spacing/300`) apart; they scroll sideways (scrollbar hidden) if they don't fit.",
-        "**Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`."
+        "**Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`.",
+        "**Keyboard** (WAI-ARIA Tabs pattern, manual activation; Karl, 2026-11-04): only the selected tab is in the Tab order (`tabindex` 0, the others −1); Left / Right move focus between tabs and wrap, Home / End go to the first / last; Enter or Space selects. Manual, not automatic, activation because choosing For You can open the Welcome modal. Developer notes: `components/for-you-interaction-and-accessibility.md`."
       ],
-      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | No nav side padding |\n| Desktop | 640px and up | Nav 1200px max, 24px side padding |",
+      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | Nav 8px side padding |\n| Desktop | 640px and up | Nav 1280px max, 8px side padding |",
       "knownIssues": [],
       "group": "navigation",
       "layer": "wordpress",
@@ -745,11 +747,19 @@
         "**Close:** Button Modal Close (32×32, `pop-up-modal-close`) centered on the card's top-right corner; at least 24px (`spacing/300`) between the card and the screen edge.",
         "**Overlay:** black at 50% over the page below the masthead (no token yet). The masthead stays visible above it in most cases.",
         "**Closing:** the close button, an inline text link, or a click anywhere outside the card.",
-        "**Where scroll is needed** (MobileScroll): no top or bottom margin; the close button stays 8px below the masthead (8px from the top of the viewport without one); the card scrolls inside and the page behind it doesn't."
+        "**Where scroll is needed** (MobileScroll, 2026-11-04, from the Embedded Login keyboard spec): only the body scrolls. The header and CTA stack are fixed, the Body Container scrolls (`overflow-y: auto`), and the page behind the modal is scroll-locked. The card keeps the 24px (`spacing/300`) margin and fills the screen height when its content is taller.",
+        "**Scroll indicator:** shown whenever the body overflows; 4px wide, `color/gray/300` (3.84:1 on white, passes the 3:1 non-text check), `radius/sm`, 4px (`spacing/050`) inside the Body Container's top-right edge.",
+        "**On-screen keyboard:** the modal lives inside the visible area (screen minus keyboard and browser bars), measured with `window.visualViewport` (`height` + `offsetTop`) and re-measured on every `visualViewport` `resize` and `scroll` event (the keyboard changes height while typing; browser bars hide and show). A centered modal stays centered in the visible area, or fills it with 8px (`spacing/100`) gaps top and bottom when taller. The 8px gap applies only while the keyboard is open; otherwise the 24px margin applies. Left and right margins stay 24px. While the keyboard is open the overlay and card cover the masthead (feasibility being checked with DigiScrum and CMS, 2026-11-04).",
+        "**Compact mode** (visible area under 560px: every phone, tablet landscape): the header shrinks to the icon and title, and the subtitle moves to the top of the body; card padding top and bottom 16px (`spacing/200`, proposed). Only Button Primary stays pinned; the Button Linkstyle links move to the end of the body until the keyboard closes.",
+        "**Focus:** when a field gets focus, scroll the body (never the page; focus with `preventScroll`) so the field's label sits at least 24px (`spacing/300`) below the top of the Body Container and its hint or error is fully above the CTA area. Next / Tab re-runs the rule; closing the keyboard returns the card to its normal placement.",
+        "**Errors:** placement depends on the content: an InLineMessage fixed between the body and the CTAs, an InLineMessage at the top of the scrolling body, or a field-level error under its field. Whichever is used must be fully visible when it appears.",
+        "**Not a modal:** inline content such as the Regiwall in an article scrolls the page instead (no scroll lock), so the field and its button sit 16px (`spacing/200`) above the keyboard.",
+        "**Named exception:** the Embedded Login panel keeps its fixed 324px width instead of 444px / screen width minus 48px."
       ],
       "breakpoints": "| Device | Screen | Card |\n|---|---|---|\n| Desktop, TabletH, TabletV | 1280, 1024, 768 | 444px, centered; padding 40/40/24/40 |\n| Mobile, Fold | 360, 340 | screen width minus 24px each side; padding 24 |",
       "knownIssues": [
-        "MobileScroll's scroll bar is a placeholder; revisit with the Embedded login project (Karl, 2026-10-27; status open item 15).",
+        "Open question for DigiScrum and CMS (2026-11-04): with the keyboard open and an 8px gap, the corner close button no longer fits. Proposal: move it inside the card's top-right corner when the card reaches the top of the visible area. Not in the kit until dev confirms. Also asked: can the overlay cover the (sticky) masthead while the keyboard is open?",
+        "Compact-mode card padding (16px top and bottom) is a proposal waiting for Karl's review (2026-11-04).",
         "Production (Reader Dashboard) differences: design-vs-production entry 31."
       ],
       "production": "Reader Dashboard modal (`react-modal`, `.ReactModal__Content`)."
@@ -838,18 +848,19 @@
       "documentationFrame": "3663:31066",
       "description": "The article card for Blocks (first used in the For You tab grid). State = Default / Hover / Focus; Show Gallery Icon. Built 2026-10-28 from 1Col Article Card, Style=For You, as its own component, separate from the Zone article cards (Karl).",
       "rules": [
-        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow.",
+        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow at rest.",
         "**Content:** 16:9 Article Image Placeholder; Article Section Kicker; headline `Editorial/Titles/CardTertiaryCompact` (Noto Serif Bold 16/18.88, `color/gray/min`), max 5 lines; footer with a 1px `color/gray/500` top border, Article Author with Article Timestamp under it.",
         "**Spacing:** 16px (`spacing/200`) body padding; 8px (`spacing/100`) kicker to headline; 12px (`spacing/150`) headline group to footer; 8px (`spacing/100`) above the author.",
         "**Width:** fills its column; 16px gaps; 3-up from 800px, 2-up at 640–799px, 1-up below 640px. Built at 296px.",
-        "**Hover** (the whole card is one link; For You prototype `.card:hover`): border and a 1px outside ring in `color/theme/primary` (CSS `border-color` plus `box-shadow: 0 0 0 1px`), headline `color/theme/primary`. Contrast: theme primary on white passes AA on every site (lowest 4.75:1).",
+        "**Hover** (the whole card is one link; For You prototype `.card:hover`): border and a 1px outside ring in `color/theme/primary` (CSS `border-color` plus `box-shadow: 0 0 0 1px`), headline `color/theme/primary`. Contrast: theme primary on white passes AA on every site (lowest 4.75:1). Plus `shadow/md` under it (0 4px 8px, `color/gray/black` at 20%; Karl, 2026-11-04): in Figma the Hover variant carries the `shadow/md` effect style, and because a layer takes one effect style the ring is drawn in a detached Hover Sample (ring + `shadow/md`) in the Specifications; in code `box-shadow: 0 0 0 1px <primary>, var(--mng-shadow-md)`.",
+        "**Hover animation** (Karl, 2026-11-04): border color and box shadow (ring + `shadow/md`) ease over 150ms in and out (`transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype); the headline color changes at once; none with `prefers-reduced-motion: reduce`. No motion token exists yet. Developer notes: `components/for-you-interaction-and-accessibility.md`.",
         "**Focus** (keyboard; prototype `.card:focus-visible`): `outline: 2px solid` `color/gray/black`, `outline-offset: 1px`.",
         "**Gallery Icon Badge** (`Show Gallery Icon`): Size=Large, 5px in from the image's bottom-right corner."
       ],
       "breakpoints": null,
       "knownIssues": [
         "In code the card body is space-between so footers line up in a row of cards; Figma uses the fixed 12px gap.",
-        "The exporter doesn't write Figma effects yet, so the Hover ring (`box-shadow: 0 0 0 1px`) and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
+        "The exporter doesn't write Figma effects yet, so the Hover ring and `shadow/md` and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
       ],
       "production": "New: the For You tab (prototype `.card`). Production's homepage card hover only turns the headline primary (`h3 a:hover`)."
     },
@@ -864,17 +875,18 @@
       "documentationFrame": "3663:31205",
       "description": "The article row for Blocks (first used in the For You tab feed). State = Default / Hover / Focus × Device = Mobile / Tablet / Desktop; Show Gallery Icon. Built 2026-10-28 from Horizontal Thumbnail Card, Style=For You, as its own component (Karl).",
       "rules": [
-        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow.",
+        "**Container:** `color/gray/max` fill, 1px `color/gray/500` border, `radius/lg` (8px), clips its content. No shadow at rest.",
         "**Image:** Article Image Placeholder pinned top-left. 640px and up: 220px wide, filling the row height (minimum 132, 5:3). Below 640px: 90×54, with white space below it.",
         "**Body:** Article Section Kicker; headline `Editorial/Titles/CardTertiaryCompact` (`color/gray/min`), not clamped; footer with a 1px `color/gray/500` top border, Article Author and Article Timestamp side by side.",
         "**Spacing:** body padding 16px (`spacing/200`), 12px (`spacing/150`) below 640px; 8px (`spacing/100`) kicker to headline; 12px (`spacing/150`) headline group to footer; 8px (`spacing/100`) above the footer content; 12px (`spacing/150`) between author and timestamp.",
-        "**Hover** (prototype `.row:hover`): border and a 1px outside ring in `color/theme/primary`, headline `color/theme/primary`.",
+        "**Hover** (prototype `.row:hover`): border and a 1px outside ring in `color/theme/primary`, headline `color/theme/primary`. Plus `shadow/md` under it (0 4px 8px, `color/gray/black` at 20%; Karl, 2026-11-04): in Figma the Hover variant carries the `shadow/md` effect style, and because a layer takes one effect style the ring is drawn in a detached Hover Sample (ring + `shadow/md`) in the Specifications; in code `box-shadow: 0 0 0 1px <primary>, var(--mng-shadow-md)`.",
+        "**Hover animation** (Karl, 2026-11-04): border color and box shadow (ring + `shadow/md`) ease over 150ms in and out (`transition: border-color 150ms ease, box-shadow 150ms ease`, from the For You prototype); the headline color changes at once; none with `prefers-reduced-motion: reduce`. No motion token exists yet. Developer notes: `components/for-you-interaction-and-accessibility.md`.",
         "**Focus** (prototype `.row:focus-visible`): `outline: 2px solid` `color/gray/black`, `outline-offset: 1px`.",
         "**Gallery Icon Badge:** Size=Large on the 220px image, Size=Small on the 90px image."
       ],
       "breakpoints": "| Device | Viewport | Row |\n|---|---|---|\n| Mobile | below 640px | 90×54 image pinned top-left, 12px body padding; built at 340 |\n| Tablet | 640px and up (768 template) | 220px image, 16px body padding; built at 720 |\n| Desktop | 640px and up (1280 template) | Same as Tablet; built at 848 |",
       "knownIssues": [
-        "The exporter doesn't write Figma effects yet, so the Hover ring (`box-shadow: 0 0 0 1px`) and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
+        "The exporter doesn't write Figma effects yet, so the Hover ring and `shadow/md` and the Focus outline are in the rules above, not in the tokens or the HTML skeleton."
       ],
       "production": "New: the For You tab (prototype `.row`)."
     },
@@ -890,15 +902,15 @@
       "description": "The featured (lead) story for Blocks (first used at the top of the For You tab feed). State = Default / Hover × Device = Mobile / Tablet / Desktop × Gallery = Image / Slideshow. Built 2026-10-28 from Zone 1 Lead Article Card, Style=For You, as its own component (Karl).",
       "rules": [
         "**Content:** Article Section Kicker 4px (`spacing/050`) above the headline; headline Noto Serif Bold 29/33, −0.87px at 640px and up, 25/29, −0.03em below; excerpt Noto Sans 15/19 `color/gray/100`, 4px below; byline (Article Author and Article Timestamp, 12px `spacing/150` apart, 12px above). No border, badge or Related list.",
-        "**Layout:** follows the lead's width: two columns when it's about 700px wide or more, one column (headline, excerpt, byline, then the image or slideshow) when narrower. The For You feed has no side column, so that means two columns at 640px and up and one column below. Mobile has a 1px bottom rule 20px below the byline.",
-        "**Gallery=Slideshow:** the image is replaced by the Zone 1 Slideshow (Desktop: slideshow 356, text 295; Tablet: the slideshow fills its 358 column).",
+        "**Layout:** follows the lead's width: two columns when it's about 700px wide or more, one column (headline, excerpt, byline, then the image or slideshow) when narrower. The For You feed has no side column, so that means two columns at 640px and up and one column below. Mobile has a 1px bottom rule 20px below the byline. Sizes as Zone 1 Lead Article Card (Karl, 2026-11-03: match production): the card fills its column; Desktop text 43.75% and image 56.25%, Tablet 50% / 50%, 20px (`spacing/250`) apart; photo 3:2 (built 296 + 20 + 384×256 = 700 Desktop, 364 + 20 + 364×243 = 748 Tablet, 340×227 Mobile; was 295 + 20 + 391×271, 358 + 32 + 358 and 340×236).",
+        "**Gallery=Slideshow:** the image is replaced by the Zone 1 Slideshow (Desktop: text 43.75%, slideshow 50%, built 296 and 352; Tablet: 50% each, 20px apart).",
         "**Hover:** the headline is the link and turns `color/theme/primary` (prototype `a:hover`, production `h3 a:hover`). Large text, so 3:1 is enough; theme primary on white is 4.75:1 or more on every site.",
         "**Focus:** not drawn; the prototype has no custom style for the lead, so use the Blocks Card's `outline: 2px solid` `color/gray/black`, `outline-offset: 1px` on the headline link.",
         "**Headline font follows the theme** (2026-10-30, Karl): bound to `font/theme/heading-family` (Noto Serif in Bold Coastal and Measured Vibrant, Noto Sans in Modern Earthy), like every other headline; it was bound to Noto Serif itself. The excerpt follows `font/theme/body-family`."
       ],
-      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline |\n| Tablet | 640px and up (768 template) | Two columns |\n| Desktop | 1024px and up | Two columns (text 295, image 391 or slideshow 356) |",
+      "breakpoints": "| Device | Viewport | Layout |\n|---|---|---|\n| Mobile | below 640px | One column; 25/29 headline; photo 3:2, full width |\n| Tablet | 640px and up (768 template) | Two columns, 50% / 50%, 20px apart |\n| Desktop | 1024px and up | Two columns, 43.75% / 56.25% (slideshow 50%), 20px apart |",
       "knownIssues": [
-        "Tablet: the image (391px) is wider than its 358px column (as in Zone 1 Lead Article Card)."
+        "Fixed 2026-11-03: the Tablet image (391px) was wider than its 358px column."
       ],
       "production": "New: the For You tab (prototype `.fy-lead`), based on production's Zone 1 lead (`.feature-primary .feature-large`)."
     },
@@ -1360,14 +1372,15 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "3352:19482",
       "documentationFrame": "3484:67592",
-      "description": "The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad. Device values are production's breakpoints.",
+      "description": "The homepage Zone 1 (production `section.feature-primary.busy`): the Lead Column (Zone 1 Lead Article Card and 4 TopZone Article Cards), Latest Headlines and the right-rail Cube ad (Show Ad). Device values are production's breakpoints.",
       "rules": [
         "**Matches production on the 4 / 8 grid** (CLAUDE.md, Design vs. production): the Zone 1 CSS (`.busy`, `.feature-wrapper`, `.feature-left`, `.feature-top`, `.feature-bottom`, `.headline-list`, `.sidebar-ad-container`) is identical on all 6 review sites; measured 2026-11-02 at 360, 778, 900, 1100, 1280 and 1728px. Production's 20.16px column gaps are 20 (`spacing/250`).",
         "**Breakpoints are production's:** `XS (≤639px)` stacked (built 340), `S (640–799px)` stacked, story cards 2 per row (built 748), `M (800–1039px)` Feature Wrapper beside the ad column (built 989), `L (1040–1279px)` (built 1065), `XL (≥1280px)` (built 1260). The block fills its row.",
         "**Lead Column:** Zone 1 Lead Article Card (Device = Mobile in XS, M and L; Tablet in S; Desktop in XL), 20px (`spacing/250`) to the Secondary Stories: 4 TopZone Article Cards with the block's Device, 16px (`spacing/200`) between rows; 2 per row, 20px (`spacing/250`) apart, in S, M and XL; one column in XS and L.",
         "**XS and S:** Lead Column, Latest Headlines (Device = XS / S) and the Cube ad (300×250, centered), 32px (`spacing/400`) apart (production `margin-bottom: 2em` and the ad's `margin-top: 2em`).",
         "**M, L, XL:** the Feature Wrapper (Lead Column, 20px (`spacing/250`), Latest Headlines (Device = (≥800px))) beside the ad column (Cube 300×1050). Widths as production's percentages: M wrapper 689 = row less the 300px ad (Lead Column 60% − 8 = 405, Latest Headlines 40% − 12 = 264) and **no gap before the ad** (production: `flex-wrap: nowrap` lets the 300px ad push the wrapper; see knownIssues); L wrapper 69.2% − 6 = 731 (500 / 211), 20px, ad column 30.8% − 14 = 314; XL wrapper 75% − 5 = 940 (700 / 220), 20px, ad column 25% − 15 = 300.",
-        "**Bottom space:** L and XL 32px (`spacing/400`) below (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px); XS, S and M none inside the block (the page's 32px between blocks is outside)."
+        "**Bottom space:** L and XL 32px (`spacing/400`) below (production `.busy .feature-wrapper { margin-bottom: 2em }` from 1040px); XS, S and M none inside the block (the page's 32px between blocks is outside).",
+        "**Show Ad** (boolean, on by default; Karl, 2026-11-03): off for ad-free readers. The ad column keeps its width and stays empty, as production does for signed-in ad-free readers (checked 2026-11-03 on ocregister.com at 360, 768, 900, 1100 and 1280, and dailynews.com and sun-sentinel.com at 360 and 1280: no ad slots load; OC Register and Daily News show a house promo, \"View Today's Print Replica\", in the column, Sun Sentinel nothing). In XS and S the empty Ad Block Container has no height."
       ],
       "breakpoints": "| Device (production range) | Grid token | Production layout | Built at | Future MNG Device breakpoint (not adopted yet) |\n|---|---|---|---|---|\n| XS (≤639px) | `wordpress-grid.xs` | Stacked; story cards one column; Latest Headlines max 540px, centered | 340px | Mobile |\n| S (640–799px) | `wordpress-grid.s` | Stacked; story cards 2 per row | 748px | Mobile |\n| M (800–1039px) | `wordpress-grid.m` | Feature Wrapper (60% / 40%) beside the 300px ad, no gap | 989px | Tablet |\n| L (1040–1279px) | `wordpress-grid.l` | Wrapper 69.2% (69.2% / 30.8%), ad column 30.8% | 1065px | Tablet landscape |\n| XL (≥1280px) | `wordpress-grid.xl` | Wrapper 75% (75% / 25%), ad column 25% | 1260px | Desktop |",
       "knownIssues": [

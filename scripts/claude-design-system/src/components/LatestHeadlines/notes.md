@@ -4,3 +4,4 @@
 - **12px (`spacing/150`) between items**, and before Newsletter Signup, as in production (`margin-top: 12px` on every `li` after the first).
 - **Newsletter Signup** (`NewsletterSignup`) ends the list: `(≤799px)` below 800px, `(≥800px)` in the side column. Pass `newsletter` to put your own node there, or `showNewsletter: false` for the subscriber view.
 - The title is Section Title / Eyebrow, Style = Underline, with no chevron (as in Figma); its production color and underline differ (design-vs-production 14).
+- **Title fills the column** (Karl, 2026-11-03): Section Title / Eyebrow sizes to its text by default, so the Underline style's underline stopped at the end of "LATEST HEADLINES". Figma's Header Container draws it at the column width and production's underline spans the column (OC Register, Daily News), so the title now gets `width: 100%`, as Section Rail Card Wide / Narrow and Photos Block already did. (Sun Sentinel uses the Bold style, which has no underline.)

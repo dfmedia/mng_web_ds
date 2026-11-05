@@ -225,7 +225,7 @@
     },
     {
      "name": "ModalsCenter",
-     "where": "Modal Panels | 2025.12.29, 3040:2262",
+     "where": "Modal Panels | 2026.11.04, 3040:2262",
      "status": "In system",
      "updated": "2026-10-29",
      "component": "ModalsCenter"
@@ -345,7 +345,7 @@
      "name": "Homepage Tabs",
      "where": "Menus and Parts, 3629:44974",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-04",
      "component": "HomepageTabs"
     },
     {
@@ -366,21 +366,21 @@
      "name": "Blocks Card",
      "where": "Homepage, 3663:31072",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-04",
      "component": "BlocksCard"
     },
     {
      "name": "Blocks Article Row",
      "where": "Homepage, 3663:31214",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-04",
      "component": "BlocksArticleRow"
     },
     {
      "name": "Blocks Lead Article Card",
      "where": "Homepage, 3663:31557",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-03",
      "component": "BlocksLeadArticleCard"
     },
     {
@@ -442,8 +442,8 @@
      "name": "Zone 1 Lead Article Card",
      "where": "Homepage, 3336:46157",
      "status": "In system",
-     "note": "Related items are Related Article List Item since 2026-11-02.",
-     "updated": "2026-11-02",
+     "note": "Related items are Related Article List Item since 2026-11-02. Fills its column at production's split, photo 3:2 (2026-11-03).",
+     "updated": "2026-11-03",
      "component": "Zone1LeadArticleCard"
     },
     {
@@ -516,7 +516,7 @@
      "where": "Homepage, 3476:62396 (3 variants)",
      "status": "In system",
      "note": "Device = XS (≤639px), S (640–799px), (≥800px): production's breakpoints. Ends with Newsletter Signup.",
-     "updated": "2026-11-02",
+     "updated": "2026-11-03",
      "component": "LatestHeadlines"
     },
     {
@@ -593,8 +593,8 @@
      "name": "TOP ZONE Block",
      "where": "Homepage, 3352:19482 (5 variants)",
      "status": "In system",
-     "note": "Zone 1: Zone 1 Lead Article Card, 4 TopZone Article Cards, Latest Headlines, the Cube ad. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02).",
-     "updated": "2026-11-02",
+     "note": "Zone 1: Zone 1 Lead Article Card, 4 TopZone Article Cards, Latest Headlines, the Cube ad. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02). Show Ad off (ad-free readers) keeps the right column, empty or with railContent (2026-11-03).",
+     "updated": "2026-11-03",
      "component": "TopZoneBlock"
     },
     {

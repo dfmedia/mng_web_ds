@@ -1,4 +1,4 @@
-The homepage Zone 1 (the top of the Editor's Picks homepage): the lead story, four secondary stories, the Latest Headlines rail and the right-rail ad. Pass the lead in `lead`, the four stories in `stories` and the headline list in `latest`; pick `device` for the screen range. Leave the ad out for subscribers with `showAd: false`. The block fills its row.
+The homepage Zone 1 (the top of the Editor's Picks homepage): the lead story, four secondary stories, the Latest Headlines rail and the right-rail ad. Pass the lead in `lead`, the four stories in `stories` and the headline list in `latest`; pick `device` for the screen range. For ad-free readers set `showAd: false`: the ad column stays, empty, as production does; pass `railContent` to show something there instead (production's house promo, for example). The block fills its row.
 
 ```js
 const { TopZoneBlock } = window.mng_web_design_system;
@@ -18,7 +18,8 @@ h(TopZoneBlock, {
 | `stories` | up to 4 TopZone Article Card props (Device follows the block) | 4 Figma samples |
 | `latest` | Latest Headlines props (Device follows the block) | the Figma sample |
 | `ad` | AdBlocks props, or your own element | Cube 1 RRail ATF 300x250 / 300x1050 |
-| `showAd` | `false` hides the ad column (subscribers) | `true` |
+| `showAd` | `false` for ad-free readers: no ad, but the column keeps its width (as production) | `true` |
+| `railContent` | what fills the column when `showAd` is `false` (an element, e.g. a house promo) | empty |
 | `headingLevel` | heading level of the lead and story headlines | `3` |
 
-Renders a `section`: the lead column (lead card and a `ul` of stories), Latest Headlines, and an `aside` with the ad.
+Renders a `section`: the lead column (lead card and a `ul` of stories), Latest Headlines, and an `aside` with the ad (a plain `div` holding `railContent` when `showAd` is `false`).
