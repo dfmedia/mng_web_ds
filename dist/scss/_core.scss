@@ -64,6 +64,7 @@ $mng-spacing-500: 40px;
 $mng-radius-sm: 4px;
 $mng-radius-utility: 5px;
 $mng-radius-lg: 8px;
+$mng-radius-field: 3px;
 $mng-shadow-sm: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 $mng-shadow-md: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 $mng-shadow-lg: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -139,6 +140,7 @@ $mng-core: (
   "radius-sm": $mng-radius-sm,
   "radius-utility": $mng-radius-utility,
   "radius-lg": $mng-radius-lg,
+  "radius-field": $mng-radius-field,
   "shadow-sm": $mng-shadow-sm,
   "shadow-md": $mng-shadow-md,
   "shadow-lg": $mng-shadow-lg,

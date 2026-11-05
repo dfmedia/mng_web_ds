@@ -100,6 +100,7 @@ export declare const core: {
     sm: string;
     utility: string;
     lg: string;
+    field: string;
   };
   shadow: {
     sm: string;

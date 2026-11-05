@@ -1,0 +1,4 @@
+- Border drawn as an inset `box-shadow` (Figma inside stroke) so Focus and Error Focus (2px) don't move the digit.
+- Mobile digit size: 16px (`font/size/16`) from the spec; the token file has one value font size (18) because the Mobile Figma variants' text has no style in the export (blank cells), so the Mobile size uses the system variable.
+- Success has no icon: the cells are too narrow (Karl, 2026-11-04). The Verification Code assembly shows no checkmark either.
+- The Figma cursor layers are a drawing of the caret; the real caret comes from the input.

@@ -1,0 +1,21 @@
+<!-- @dsCard group="Core" height=632 subtitle="Figma: Form Field Assembly / Name pair · 2 variants (Size)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Name pair</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size', note: "First Name and Last Name side by side, each half the row. Desktop 16px gap (spacing/200), Mobile 8px (spacing/100). On a very narrow screen, stack them (stack: true)." },
+      h(I.Specimen, { items: [
+        { label: 'Desktop', width: 512, node: h(NS.NamePair, { size: 'Desktop' }) },
+        { label: 'Mobile', width: 360, node: h(NS.NamePair, { size: 'Mobile' }) }] })),
+    h(I.SpecimenSection, { title: 'Shared error', note: 'The field in error keeps its red outline; the message shows once, under the group.' },
+      h(I.Specimen, { items: [
+        { label: 'Desktop, Show error', width: 512, node: h(NS.NamePair, { showError: true, errorMessage: 'Enter your first name.',
+          fields: { first: { state: 'Error', showValue: false, showPlaceholder: true } } }) }] }))));
+</script>
+</body>
+</html>

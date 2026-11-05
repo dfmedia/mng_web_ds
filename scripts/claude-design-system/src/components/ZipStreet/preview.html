@@ -1,0 +1,21 @@
+<!-- @dsCard group="Core" height=632 subtitle="Figma: Form Field Assembly / Zip + Street # · 2 variants (Size)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Zip + Street #</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size', note: "Street # fills the row; Zip Code is sized to 5 digits (84px Desktop, 78px Mobile). For short address checks." },
+      h(I.Specimen, { items: [
+        { label: 'Desktop', width: 512, node: h(NS.ZipStreet, { size: 'Desktop' }) },
+        { label: 'Mobile', width: 360, node: h(NS.ZipStreet, { size: 'Mobile' }) }] })),
+    h(I.SpecimenSection, { title: 'Shared error', note: 'The field in error keeps its red outline; the message shows once, under the group.' },
+      h(I.Specimen, { items: [
+        { label: 'Desktop, Show error', width: 512, node: h(NS.ZipStreet, { showError: true, errorMessage: 'Enter your street #.',
+          fields: { street: { state: 'Error', showValue: false, showPlaceholder: true } } }) }] }))));
+</script>
+</body>
+</html>

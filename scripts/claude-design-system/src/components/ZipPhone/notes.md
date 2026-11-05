@@ -1,0 +1,3 @@
+- Field widths: fixed fields use the widths Figma auto-sizes them to (from the spec and the token file); they aren't tokens. Fill fields share the rest of the row.
+- The default `value` equals the placeholder (as in the Figma instances, whose text was copied into Placeholder on 2026-11-04); pass `fields` to set real values or placeholders.
+- Shared error row heights come from the token file (`zip-phone...error-message-container-shared.height`); the message text uses the system variables (18px Desktop, 16px Mobile, `color/feedback/high-error`), as in Form Field.

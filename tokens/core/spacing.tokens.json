@@ -154,7 +154,7 @@
         "value": 5,
         "unit": "px"
       },
-      "$description": "5px. Containers only: Reader Dashboard InLineMessage, modals, form fields, check boxes, status badge, masthead account dropdown. Not for buttons (buttons use radius/sm, 4px).",
+      "$description": "5px. Containers only: Reader Dashboard InLineMessage, modals, the check box hover / focus ring, status badge, masthead account dropdown. Not for buttons (radius/sm, 4px) or form fields and the check box square (radius/field, 3px).",
       "$extensions": {
         "com.mng": {
           "figma": {
@@ -177,6 +177,22 @@
             "file": "MNG Web Design System",
             "collection": "Spacing & Radius",
             "variable": "radius/lg"
+          }
+        }
+      }
+    },
+    "field": {
+      "$value": {
+        "value": 3,
+        "unit": "px"
+      },
+      "$description": "3px. Form fields: the outline of Form Field, Code Box and Search Field / Obituaries, the outer corners of a field's icon frame, and the check box square (Karl, 2026-11-04). Not for buttons (radius/sm, 4px) or containers (radius/utility, 5px).",
+      "$extensions": {
+        "com.mng": {
+          "figma": {
+            "file": "MNG Web Design System",
+            "collection": "Spacing & Radius",
+            "variable": "radius/field"
           }
         }
       }

@@ -1,0 +1,3 @@
+- The hint stays `color/feedback/low-success` (green) all the time (Karl, 2026-11-04), even before anything is checked; it reads as guidance.
+- Confirm Password's error row is drawn by this component (the FormField inside has `errorRow: false`) so it can show an error for either field; it looks the same as Form Field's row (25px Desktop, 22px Mobile, from the spec).
+- Token names for the hint come from its Figma layer name (the text itself), hence the long CSS variable names.

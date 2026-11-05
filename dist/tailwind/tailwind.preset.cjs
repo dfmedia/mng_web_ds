@@ -119,7 +119,8 @@ module.exports = {
       "borderRadius": {
         "sm": "4px",
         "utility": "5px",
-        "lg": "8px"
+        "lg": "8px",
+        "field": "3px"
       },
       "boxShadow": {
         "mng-sm": "0px 4px 4px 0px rgba(0, 0, 0, 0.25)",

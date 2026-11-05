@@ -1,0 +1,4 @@
+- The row is a `<label>`, so a click on the text toggles the check box too. Links inside the text still work as links.
+- Mobile scales the check box to 28x28 (as in Figma); its 14px box stays 14px, only the touch area is smaller. 28px still clears the 24px minimum target size.
+- Text color is `color/gray/black` in Figma (the CheckBox spec says `color/gray/min` for labels); kept as the token file has it.
+- Error message sizes (18px Desktop, 16px Mobile, `color/feedback/high-error`) as in Form Field; row heights from the token file.
