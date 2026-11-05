@@ -116,10 +116,10 @@ mng_web_ds/
 
 ## Working in GitHub
 
-- **Repo:** https://github.com/kuscholdMNG/mng_web_ds (branch `main`; renamed from `MNGWebDesignSystem` 2026-10-20, old links redirect).
+- **Repo:** https://github.com/dfmedia/mng_web_ds (branch `main`; renamed from `MNGWebDesignSystem` 2026-10-20 and moved from `kuscholdMNG` to `dfmedia`; old links redirect).
 - **Local copy:** `~/Github/mng_web_ds` on Karl's Mac (moved 2026-10-14, renamed 2026-10-20; `~/Github` also holds `for_you_tab_mvp` and the `mng_apps_*_ds` repos). Work only there. The old Google Drive folder is retired; don't save anything to it.
 - **Commit every change** with a short message that says what changed and why (for example "Add card-teaser hover states"). Git history replaces the dates in file names, so rule 5 still applies: put the date inside the file.
 - **Value changes that need Karl's review** (token values, decisions in the decision logs) go on a branch, such as `review/primary-blue-fix`, with a pull request. Everything else can go straight to `main`.
-- **Push after committing.** Pushing uses a GitHub token saved in `.git/claude-credentials`, which is never committed (git uses it for github.com only). If a push fails with a sign-in error, the token has expired: Karl makes a new fine-grained token (only `mng_web_ds`; Contents, Workflows and Pull requests: read and write; Issues: read) and saves it in Terminal with `cd ~/Github/mng_web_ds && read -s "T?Paste token, then Return: " && printf 'https://kuscholdMNG:%s@github.com\n' "$T" > .git/claude-credentials && chmod 600 .git/claude-credentials && unset T && echo " saved"` (Karl, 2026-10-27).
+- **Push after committing.** Claude pushes from its cloud session, which has access to `dfmedia/mng_web_ds` (Karl, 2026-11-05): commit in `~/Github/mng_web_ds` as usual, bundle the new commits (`git bundle create .export-tmp/push.bundle origin/main..<branch>`, with `.export-tmp/` excluded in `.git/info/exclude`), bring the bundle into the cloud session, push from there, open pull requests with `gh api` (REST), then delete the bundle. The old token in `.git/claude-credentials` (for `kuscholdMNG`) is retired: don't use it or ask for a new one.
 - **Checks.** `npm run validate` before committing (the pre-commit hook runs it once installed: `cp scripts/validate/pre-commit .git/hooks/pre-commit`). GitHub runs the same check on every push; keep it green.
 - **Never commit** credentials, `.DS_Store` files, `__pycache__` / `.pyc` files or zips. `.gitignore` blocks them.
