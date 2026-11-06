@@ -134,8 +134,9 @@ One drawer serves both triggers: the desktop "All Sections" toggle and the hambu
 
 - Rows `Subscribe` (`subscribe-visibility`), `Log In` (`log-in-button`) and `Logout` (`log-out-button`) sit at the end of the list and are shown or hidden by state. Styled like any section row.
 - Seen: **subscriber** (OCR, DP, CT, MCall): Subscribe Now button hidden, Logout shown. **Signed in, not a subscriber** (CCDR): Subscribe Now button, a plain "Subscribe" row and Logout. **Orlando Sentinel** has no account rows in its menu at all.
-- **Logged out:** not checked yet (needs Karl to log out on one site).
-- Weather / date / e-Edition row is hidden at desktop width on all six (it's in the utility bar there). Mobile and tablet need a narrow-window check (Karl resizes).
+- **Logged out** (Denver Post, 768px and 360px, 2026-11-06): Subscribe Now button shown; the list ends with plain **"Subscribe"** and **"Log in"** rows (lowercase "in", styled like any section row); no Logout.
+- **Tablet and mobile** (Denver Post at 768px and 360px, Karl resized the window): the drawer is the same at both widths — 300px wide, below the 64px header, same 14px / 600 rows (41px). The toggle is the × icon alone (the "All Sections" label is hidden below 1040px).
+- **Weather / date / e-Edition row:** hidden at desktop width on all six (it's in the utility bar there); shown at 768px and 360px between Subscribe Now and Home Page: temperature (Helvetica 16px / 700, the Weather Bug exception) with the AccuWeather icon, the date (two lines), and an e-Edition link, **"Digital Replica Edition"** on Denver Post (Noto Sans 12px / 500). Figma's row says "Today's E Edition"; the label is per site.
 
 ### 3.5 Decisions (Karl, 2026-11-06)
 
