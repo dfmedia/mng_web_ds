@@ -1,5 +1,7 @@
 # Navigation
 
+> **Updated 2026-11-06** for the six-site section menu audit and Karl's decisions (§3).
+>
 > **Updated 2026-09-25 — read this first.**
 > - **Where the header lives now.** The production-accurate header is the **Masthead** component set (`456:2572`, 75 variants: Device × State × Page) on the "Menus and Parts" page of **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`, formerly "Website Page Templates"). Its breakpoint audit is `breakpoint-audit.md` (this folder), and its production gaps are design-vs-production entries 7, 9, 28.2 and 33. The account dropdown's source is **AccountMenu** (`910:16425`) in the same file. The pilot Header, Account Trigger, Off-Canvas Section Panel and Account Dropdown Menu components mentioned in §3.2 and §9 were retired on 2026-09-25; the measurements in those sections are still valid.
 > - **Token names.** `color/base/ink` is now `color/theme/near-black` / `color/theme/nav-text` in the main file's Colors collection (see `tokens/colors/`).
@@ -83,41 +85,71 @@ Confirmed at a consistent 1280px width on Chicago Tribune, OC Register, and Orla
 
 ---
 
-## 3. Sub-component: off-canvas section panel ("All Sections")
+## 3. Sub-component: section menu drawer ("All Sections" / hamburger)
 
-One shared component serves two triggers: the desktop "All Sections" overflow toggle *and* every mobile/tablet hamburger menu (confirmed identical panel, same content, on Chicago Tribune at both desktop and 375px). Confirmed live again this pass, at desktop width, using the screenshot-space-click technique (§9) — the trigger is trusted-event-gated like the account/search icons, but a real `computer`-tool click opens it reliably.
+> **Six-site audit, 2026-11-06** (ocregister, denverpost, chicagotribune, orlandosentinel, canoncitydailyrecord, mcall; desktop width, homepages, Karl's own sign-ins). Replaces the Chicago Tribune–only notes from the pilot. Figma source: `SectionMenu` (`456:5837`), `SectionMenuHeader` (`456:5745`) and `SectionMenuItem` (`456:5781`) on Menus and Parts in WordPress Elements; exports in `components/wordpress/section-menu*` (2026-10-30).
 
-- Container: `.wrapper-nav.pushnav.pushnav-left.push-from-left`, `position: fixed`, `x: 0`, sits directly below the header (`y` = header height, `z-index: 1000`)
-- Fixed width: **300px**, does not scale with viewport (re-confirmed)
-- Background: `#FBFBFB` / `rgb(251,251,251)`
-- Full-height, scrollable list (`<ul id="pushnav" class="menu">`)
-- Top-level items: ~14px, weight 600, ~13px padding
-- Contents (Chicago Tribune, in order): Home Page, Subscriber Services, Today's E-Editions, Advertise with Us, Business, Dining, Entertainment, En Español, News, Opinion, Politics, Sports, Chicago Magazine, Suburbs, Classifieds, Jobs, Obituaries, Special Sections, BestReviews, Branded Content, Logout — plus a "Sign up for email newsletters" CTA pinned at the bottom
-- Dark backdrop dims the rest of the page while open
+One drawer serves both triggers: the desktop "All Sections" toggle and the hamburger below 1040px (§2.1). Same markup and CSS on all six sites; only the menu contents differ.
 
-Per-site content varies (this is expected — it mirrors each site's own section list).
+### 3.1 Container and behavior (same on all six sites)
 
-### 3.1 New finding: several top-level items expand into a nested sub-menu (accordion, not drill-down)
+- `.wrapper-nav.pushnav.pushnav-left` inside `nav[aria-label="Main Menu"]`. Closed: `transform: translateX(-315px)`. Open (`.push-from-left`): `position: fixed`, `left: 0`, `top` = header height (64px), `z-index: 1000`, `overflow-y: auto`, slides in with `transform 0.25s ease-in-out`.
+- Width **300px** at every width checked; doesn't scale with the viewport.
+- Page overlay: `body::before`, `rgba(0, 0, 0, 0.5)` (black 50%, the same overlay as the modals; no token yet).
+- Toggle: `div#menu-toggle[role=button][tabindex=0]`, `aria-label` "Open menu of all sections" / "Close menu", `aria-expanded`. Icon swaps `icon-hamburger` ↔ `icon-close`; the "All Sections" label (15px / 600) stays.
+- Order inside the drawer: **Subscribe Now** button → **weather / date / e-Edition** row → **Home Page** row (`icon-home3`, U+E936) → the section list (`ul#pushnav`) → **newsletter** prompt and Sign Up button.
+- No hover, focus-visible or current-page styling on any row (checked: hover leaves color, background and underline unchanged; `current-menu-ancestor` classes carry no style).
 
-Not previously documented — the panel isn't a flat list. On Chicago Tribune, **13 of the 21 top-level items carry sub-menus** (Subscriber Services, Today's E-Editions, Advertise with Us, Business, Dining, Entertainment, News, Opinion, Politics, Sports, Suburbs, Obituaries, Branded Content); the rest (Home Page, En Español, Chicago Magazine, Classifieds, Jobs, Special Sections, BestReviews, Logout, Subscribe/Log In) are plain leaf links.
+### 3.2 Rows
 
-**Trigger & indicator:** each expandable row's `<li>` carries class `menu-item-has-children`; the chevron/arrow glyph is not an `<svg>` or `<img>` — it's an **icon-font glyph** (`font-family: icomoon`) rendered via `::before` on the row's `<a>`, absolutely positioned, right-aligned with `padding-right: 0.9375em` (~15px), vertically centered. Easy to miss in a DOM scan if you're searching for `<svg>`/`<i>` elements or a `background-image`, since it's neither.
+| | Production (all six) | Figma today |
+|---|---|---|
+| Section row | Noto Sans 14px (14.06) / 15px line, weight 600, 13px padding (13.18), 40px tall (40.6) | Noto Sans 16px Bold, 40px tall |
+| Sub-item row | Same type as the section row (no demotion); text starts 29px from the edge (16px indent + 13px padding) | Text at 40px (a hidden icon slot pushes it in) |
+| Chevron | icomoon `::before`, 9px. Closed `arrow-right` (U+E907), open `arrow-down` (U+E905) | `arrow-downSMALL` closed, `arrow-upSmall` open |
+| Text color | Theme nav text: #0A0908 (OCR, DP), #1F1E1C (CT, OS), #1A1A1A (CCDR, MCall) | #141414 |
+| Row background | #FFFFFF (OCR, DP), #FBFBFB (CT, OS), #FAFAFA (CCDR, MCall) | #FFFFFF |
+| Subscribe Now | 230px, 15px / 600, 14px / 10px padding, radius 4px, site primary fill, white text | Button Primary, 268px |
+| Newsletter | Prompt 14px / 700; Sign Up 230px, radius 4px, site primary; divider above | CTAMessage (16px Bold prompt, Button Primary) |
 
-**Expand mechanism — CSS transform + parent-height accordion:**
-- Clicking a row toggles a `submenu-open` class on its `<li>`.
-- The nested `<ul class="sub-menu">` lives inside the parent `<li>` at all times (not injected/removed) and uses `transform: scaleY(...)` with a `0.25s ease-in-out` transition — collapsed state scales it to nothing visible, open state to full height.
-- The parent `<li>` itself has `overflow: hidden` and its `height` is animated between a collapsed value (just the row, e.g. `37.5px`) and an expanded value (row + full sub-menu height, e.g. `228.125px` for Business's 5 sub-items) — this is what actually clips/reveals the sub-menu, not `display`/`visibility`.
-- **Exclusive accordion — confirmed by direct test:** opening "Sports" while "Business" was already open automatically collapsed Business. Only one section can be open at a time; this is not a multi-expand accordion.
+### 3.3 Subcategories: exclusive accordion, two levels only
 
-**Sub-item styling:** same font-size/weight as the parent row (14px / 600 — no visual demotion), indented via the `sub-menu`'s own left offset (~16px), no bullet or icon. The only visual cues that an item is a child are the indent and its position directly under its (currently open) parent.
+- A section with subcategories is an `li.menu-item-has-children` holding its own `ul.sub-menu`. Opening one (`submenu-open`; parent `<a>` gets `aria-expanded="true"`) closes any other: only one open at a time, on every site.
+- **No third level on any of the six sites.**
+- The section row is an `<a href>` that opens its list instead of going anywhere, so most sites repeat the section as its first sub-item ("News › News"). Not consistent: Branded Content (all six), News on Denver Post, Chicago Tribune and Cañon City (they start with Latest Headlines or Local News), Chicago Tribune's Today's E-Editions and Cañon City's Entertainment have no repeat, so those section pages can't be reached from the drawer.
+- Subcategory counts per site (on the page checked):
 
-**A real, separate finding worth flagging — not a bug in what's documented above, but a DOM oddity:** for some categories (confirmed on Sports), the individual team/sub-section links (Chicago Bears, Bulls, Blackhawks, Cubs, White Sox, etc.) also exist as `class="hidden"` **top-level `<li>` siblings** directly in `#pushnav`, separate from the actual working sub-menu nested inside the Sports `<li>`. These hidden top-level duplicates appear to be unused WordPress nav-menu artifacts (leftover flat entries from how the menu was authored in the CMS) rather than part of the working accordion — the real, visible sub-items live inside the parent `<li>`'s own `<ul class="sub-menu">`. Worth flagging to engineering as menu cruft rather than modeling both structures in Figma.
+| Site | Rows (visible) | With subcategories | Largest groups | Site-specific rows |
+|---|---|---|---|---|
+| OC Register | 15 (13) | 8 | Sports 17, North OC 16, South OC 16, Things To Do 15, News 12 | SCNG Premium, The T.E.A. |
+| Denver Post | 14 (12) | 10 | News 17, Sports 15, Outdoors 13, The Know 12, Things To Do 12 | Outdoors, The Know |
+| Chicago Tribune | 34 (20) | 13 | News 14, Entertainment 11, Today's E-Editions 10 (one per paper) | Subscriber Services, Advertise with Us, Suburbs, Chicago Magazine |
+| Orlando Sentinel | 16 (16) | 12 | Sports, Business, Entertainment, Travel 6 each | Daily / Evening e-Edition first; "Services" group last |
+| Cañon City | 16 (15) | 9 | News 11, Marketplace 9 | Submit, On The Record, e-Edition |
+| Morning Call | 15 (15) | 10 | News 11, Sports 9, Things to Do 8 | Daily / Evening e-Edition first |
 
-**Not yet tested:** whether this same nested/accordion structure holds on Denver Post, OC Register, and Orlando Sentinel (only confirmed on Chicago Tribune this pass) — per the shared-theme pattern established throughout this doc, treated as very likely identical but not independently re-verified per-site.
+- Menu cruft for engineering: Chicago Tribune has 12 hidden top-level duplicates (5 team pages, 6 suburb papers, Immigration); Morning Call's "Public Notices" has a single sub-item, "Subscribe" (looks like a misplaced menu item).
 
-### 3.2 In Figma
+### 3.4 Account rows by sign-in state
 
-The live section panel is part of the Masthead set in WordPress Elements. A pilot rebuild modeled the exclusive accordion with a `State=Closed` / `State=Expanded — Business` pair (sub-items at 32px left padding vs. 16px for top-level rows, "›"/"⌄" chevrons) and used the real `icon-home3` glyph for the Home Page row. That pilot was retired on 2026-09-25; the measurements above are what matter.
+- Rows `Subscribe` (`subscribe-visibility`), `Log In` (`log-in-button`) and `Logout` (`log-out-button`) sit at the end of the list and are shown or hidden by state. Styled like any section row.
+- Seen: **subscriber** (OCR, DP, CT, MCall): Subscribe Now button hidden, Logout shown. **Signed in, not a subscriber** (CCDR): Subscribe Now button, a plain "Subscribe" row and Logout. **Orlando Sentinel** has no account rows in its menu at all.
+- **Logged out:** not checked yet (needs Karl to log out on one site).
+- Weather / date / e-Edition row is hidden at desktop width on all six (it's in the utility bar there). Mobile and tablet need a narrow-window check (Karl resizes).
+
+### 3.5 Decisions (Karl, 2026-11-06)
+
+- **Chevrons stay as designed** (down when closed, up when open). Production's › / ⌄ is drift.
+- **Rows are 14px SemiBold**, matching production (was 16px Bold in Figma).
+- **Section rows are a toggle plus a landing link:** the row is a button that opens its list, and the first sub-item is always the section's own page. Production's link-that-toggles is drift.
+- **Add a logged-out state** to `SectionMenu`'s UserType.
+
+### 3.6 Build plan
+
+1. `SectionMenuItem`: 14px SemiBold, sub-item text at 32px (`spacing/400`), remove the leftover hidden icon / chevron layers, add hover and keyboard-focus states, bind text and background to theme tokens.
+2. New `SectionMenuGroup`: a section row plus its sub-items, Closed / Open, for the subcategories.
+3. `SectionMenu`: use `SectionMenuGroup`, one section shown open, UserType adds loggedOut; existing Figma menu items stay.
+4. Documentation container, contrast checks, export, drift doc and Google Sheet, status doc, Claude design system.
 
 ---
 

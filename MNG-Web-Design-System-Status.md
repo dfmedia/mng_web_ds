@@ -171,7 +171,7 @@ The component specs in `components/` (modal, disclosure, empty-state-status-badg
      - [ ] (h) **Unused logo uploads**: the 248 publication logo SVGs uploaded earlier are still in the artifact's file store, no longer shown. Delete them only if Karl wants (can't be undone).
    - **Build-out (from the Inventory)**
      - [ ] (i) SlideShow family with the Obits slideshow (open item 16).
-     - [ ] (j) Pick the next components to add. Core: Button ActionMenu, Button Pay, CheckBox, Toggle switch, Form Field and assemblies, Code Box. WordPress Elements: Breaking News Banner, Section menu (open drawer), Article page parts. (Masthead, Footer and Ad Blocks: done 2026-10-30, open item 19.)
+     - [ ] (j) Pick the next components to add. Core: Button ActionMenu, Button Pay, CheckBox, Toggle switch, Form Field and assemblies, Code Box. WordPress Elements: Breaking News Banner, Section menu (open drawer; **in progress 2026-11-06**: six-site audit, Karl's decisions and the build plan are in `components/navigation.md` §3), Article page parts. (Masthead, Footer and Ad Blocks: done 2026-10-30, open item 19.)
      - [ ] (k) Per-site color themes: at most 8 themes fit; choose which (with `color/theme/subsite-custom`).
      - [ ] (l) Obits and Reader Dashboard v2.0 audits (open item 17).
 
