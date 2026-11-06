@@ -145,6 +145,18 @@ One drawer serves both triggers: the desktop "All Sections" toggle and the hambu
 - **Section rows are a toggle plus a landing link:** the row is a button that opens its list, and the first sub-item is always the section's own page. Production's link-that-toggles is drift.
 - **Add a logged-out state** to `SectionMenu`'s UserType.
 
+### 3.7 Built in Figma (2026-11-06)
+
+WordPress Elements ▸ Menus and Parts:
+
+- **`SectionMenuItem`** (`456:5781`, 21 variants): rows Noto Sans SemiBold 14 (`font/size/14`, `font/style/semibold`), text `color/theme/nav-text`, background `color/surface/nav-panel`, 12px left padding (`spacing/150`), sub-item text at 32px (`spacing/400`; production's 29px rounds to 28, which has no token, so 32); the sub-item's stray visible icon is hidden; new **State** = Default / Hover (label underlined) / InFocus (2px `color/gray/black` ring inside the row, since the drawer clips outside it) on the 6 row variants; `View=open` is now just the row (its nested sub-item moved to `SectionMenuGroup`); newsletter prompt 14px Bold (production). Text case is the text as typed (was Title Case, which turned "and" into "And").
+- **`SectionMenuGroup`** (new, `3740:29156`): View = Closed / Open; Section Row (toggle) + Sub Items (6 subItem rows; the first is the section's own page). Hide or add rows in the instance.
+- **`SectionMenu`** (`456:5837`, now 20 variants): section rows replaced by `SectionMenuGroup` (News open with News, Latest Headlines, Politics, Crime and Public Safety, Education, Weather); nonSub gets a "Subscribe" row before Log Out; new **UserType=loggedOut** (Subscribe, Log In) for all 5 devices; drawer on `color/surface/nav-panel`. Existing menu items kept.
+- Production differences: red-dashed "Production differences" note under Section Menu Group; `design-vs-production.md` 10.4–10.8 (and 10.2 updated); Google Sheet "Other fixes" rows 10.4–10.8.
+- Contrast (row text on `color/surface/nav-panel` #FBFBFB): 16.1:1 (#1F1E1C) to 19.2:1 (#0A0908) in every theme mode; focus ring #000000 20.3:1.
+- **Still to do:** export (`section-menu`, `section-menu-item`, new `section-menu-group`), the Claude design system, and the open items below.
+- **Open questions for Karl:** the Home row's icon sits at 12px like the row text (production 10px, a tie between 8 and 12); LG-TabletH (1024px) shows "All Sections" and no weather row in Figma, but production switches to the hamburger and shows the weather row below 1040px.
+
 ### 3.6 Build plan
 
 1. `SectionMenuItem`: 14px SemiBold, sub-item text at 32px (`spacing/400`), remove the leftover hidden icon / chevron layers, add hover and keyboard-focus states, bind text and background to theme tokens.

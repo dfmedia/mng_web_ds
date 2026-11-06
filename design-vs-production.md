@@ -20,7 +20,7 @@
   - [8. Breakpoints off the official sets — WordPress themes, trust indicators, digisubs (all 6 sites)](#8-breakpoints-off-the-official-sets--wordpress-themes-trust-indicators-digisubs-all-6-sites)
 - **Masthead and navigation**
   - [9. Masthead — nav overflow, article scrolled-state headline and nav bottom border](#9-masthead--nav-overflow-article-scrolled-state-headline-and-nav-bottom-border)
-  - [10. Navigation menus — avatar, hidden duplicate links and device-class timing](#10-navigation-menus--avatar-hidden-duplicate-links-and-device-class-timing)
+  - [10. Navigation menus — section menu drawer, avatar, hidden duplicate links and device-class timing](#10-navigation-menus--section-menu-drawer-avatar-hidden-duplicate-links-and-device-class-timing)
   - [11. Account menu — dropdown shadow isn't the design token](#11-account-menu--dropdown-shadow-isnt-the-design-token)
   - [12. Homepage tabs (World Cup tabs) — font, colors, spacing and breakpoint off the design system](#12-homepage-tabs-world-cup-tabs--font-colors-spacing-and-breakpoint-off-the-design-system)
   - [13. Breaking News bar — Denver Post uses primary-lighter instead of secondary](#13-breaking-news-bar--denver-post-uses-primary-lighter-instead-of-secondary)
@@ -1392,7 +1392,7 @@ The headline's flex/width allocation fails to shrink correctly relative to the f
 
 ---
 
-## 10. Navigation menus — avatar, hidden duplicate links and device-class timing
+## 10. Navigation menus — section menu drawer, avatar, hidden duplicate links and device-class timing
 
 ### 10.1 Cross-site avatar inconsistency for the same logged-in account
 
@@ -1406,6 +1406,8 @@ Cross-site SSO is confirmed working (same session carries from one site to anoth
 
 On some categories (confirmed on Sports), the individual sub-section links (e.g. Chicago Bears, Bulls, Blackhawks, Cubs, White Sox) exist twice: once in the real working sub-menu, and again as `class="hidden"` top-level `<li>` siblings directly in the nav — apparent unused WordPress nav-menu artifacts.
 
+Six-site check 2026-11-06 (section menu drawer): only Chicago Tribune has them, 12 rows (5 team pages, 6 suburb papers, Immigration); none on the other 5 review sites.
+
 **Status:** Open — worth a cleanup pass, low risk/low priority.
 
 ### 10.3 Device-class first-paint timing (Denver Post, mcall.com)
@@ -1415,6 +1417,65 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 **Action needed:** Worth asking engineering whether any component's CSS actually depends on this class being present at first paint. If nothing does, this needs no action.
 
 **Status:** Open — low priority, likely closable with a single confirmation.
+
+### 10.4 Section menu drawer — chevrons point the other way (all 6 sites)
+
+**Figma spec (source of truth):** WordPress Elements ▸ Menus and Parts ▸ `SectionMenuItem` (456:5781) and `SectionMenuGroup` (3740:29156). A section with subcategories shows `arrow-downSMALL` (⌄) when closed and `arrow-upSmall` (⌃) when open (Karl, 2026-11-06: keep the design).
+
+**Production:** icomoon `::before` on the row link, 9px: `arrow-right` (U+E907, ›) when closed, `arrow-down` (U+E905, ⌄) when open. Same CSS on all 6 review sites.
+
+**Action needed:** use ⌄ closed and ⌃ open on every theme (the design icons, or `arrow-down` and a rotated `arrow-down` / an up arrow from the font).
+
+**Status:** Open. Added 2026-11-06. Team: CMS.
+
+### 10.5 Section menu drawer — section rows are links that only open their list; some section pages can't be reached
+
+**Figma spec (source of truth):** `SectionMenuGroup`. The section row is a **button** that opens and closes its list (`aria-expanded`, `aria-controls` on the list); the first sub-item is always the section's own page (Karl, 2026-11-06). One group open at a time; two levels only (matches production).
+
+**Production:** the row is an `<a href>` (with `aria-expanded`) whose click opens the list instead of following the link. Most sections repeat themselves as the first sub-item ("News › News"), but not all: Branded Content (all 6), News on Denver Post, Chicago Tribune and Cañon City (they start with Latest Headlines or Local News), Chicago Tribune's Today's E-Editions and Cañon City's Entertainment have no repeat, so those section pages can't be reached from the drawer.
+
+**Action needed:** make the row a `<button>` with `aria-expanded` and `aria-controls`; make the first sub-item of every group the section's page (a CMS menu change where it's missing). Also clean up two menus: Morning Call's "Public Notices" has one sub-item, "Subscribe" (misplaced); Chicago Tribune's 12 hidden duplicate rows are 10.2.
+
+**Status:** Open. Added 2026-11-06. Team: CMS (markup) and each site's menu editors (menu content).
+
+### 10.6 Section menu drawer — row spacing and type off the 4 / 8 grid
+
+**Figma spec (source of truth):** `SectionMenuItem`: Noto Sans SemiBold 14 (`font/size/14`, `font/style/semibold`; matches production), 40px rows, 12px left padding (`spacing/150`), sub-item text at 32px (`spacing/400`).
+
+**Production (all 6 sites):** rows are 14.0625px / 15px (0.9375em of 15px), 13.18px padding all round (row height 40.6px), sub-items indented 16px + 13.18px = 29.2px. The Subscribe Now and Sign Up buttons are 230px wide (35px side margins) in production and 268px (16px margins) in the design.
+
+**Action needed:** `#pushnav a` font-size 14px, padding 13px 12px (40px rows), sub-menu link left padding 32px; Subscribe Now and Sign Up to Button Primary at the drawer width minus 16px each side.
+
+**Status:** Open. Added 2026-11-06. Team: CMS.
+
+### 10.7 Section menu drawer — background and text colors
+
+**Figma spec (source of truth):** drawer and rows `color/surface/nav-panel` (#FBFBFB, every theme); row text `color/theme/nav-text`. Contrast on #FBFBFB: 16.1:1 (#1F1E1C) to 19.2:1 (#0A0908), every mode passes AA.
+
+**Production:**
+
+| Site (theme) | Drawer background | Row text | Design `nav-text` mode |
+|---|---|---|---|
+| OC Register (Bold Coastal) | #FFFFFF | #0A0908 | #0A0908 ✓ |
+| Denver Post | #FFFFFF | #0A0908 | #141414 |
+| Chicago Tribune | #FBFBFB ✓ | #1F1E1C ✓ | #1F1E1C |
+| Orlando Sentinel | #FBFBFB ✓ | #1F1E1C ✓ | #1F1E1C |
+| Cañon City (Modern Earthy) | #FAFAFA | #1A1A1A ✓ | #1A1A1A |
+| Morning Call | #FAFAFA | #1A1A1A | #141414 |
+
+**Action needed:** set the drawer and row background to #FBFBFB on Bold Coastal, Denver Post and Modern Earthy; set the row text to #141414 on Denver Post and Morning Call. Don't change the tokens.
+
+**Status:** Open. Added 2026-11-06. Team: CMS.
+
+### 10.8 Section menu drawer — no hover or keyboard-focus styling (accessibility)
+
+**Figma spec (source of truth):** `SectionMenuItem` State = Default / Hover / InFocus. Hover underlines the label; InFocus draws a 2px `color/gray/black` ring inside the row (inside, because the drawer clips anything outside its 300px).
+
+**Production:** no style change on hover or focus on any row (all 6 sites); keyboard users can't see where they are.
+
+**Action needed:** add `:hover` (underline) and `:focus-visible` (2px #000000 inset outline) to `#pushnav a` and the section toggles. The focus indicator is required (WCAG 2.4.7).
+
+**Status:** Open, focus required. Added 2026-11-06. Team: CMS.
 
 ---
 
