@@ -17,7 +17,7 @@
 .mngds-masthead--xl-desktop .mngds-masthead__bar-end { justify-content: flex-end; padding-right: var(--mng-spacing-500); }
 .mngds-masthead__menus-middle { flex: 0 0 440px; height: 100%; }
 
-/* SectionMenu, Closed (SectionMenuHeader): 40px icon box with the 16px hamburger; "All Sections" Noto Sans Bold 16 at 1040px+ */
+/* SectionMenu, Closed (SectionMenuHeader): 40px icon box with the 16px hamburger; "All Sections" Noto Sans SemiBold 16 at 1040px+ (2026-11-09) */
 .mngds-masthead__menu-toggle {
   display: inline-flex; align-items: center; gap: var(--mng-spacing-100); height: 64px; margin: 0; padding: 0 var(--mng-spacing-100);
   border: 0; background: none; color: var(--mng-color-gray-min); font: inherit; cursor: pointer;
@@ -25,7 +25,7 @@
 .mngds-masthead:not(.mngds-masthead--xl-desktop) .mngds-masthead__menu-toggle { width: 64px; justify-content: center; padding: 0; }
 .mngds-masthead--md-tablet-v .mngds-masthead__menu-toggle { width: 88px; }
 .mngds-masthead__menu-icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
-.mngds-masthead__menu-title { font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-bold); line-height: normal; white-space: nowrap; }
+.mngds-masthead__menu-title { font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-semibold); line-height: normal; white-space: nowrap; }
 
 /* Logo: Fakeville Daily News placeholder, 235x48 at 800px and up, 147x30 below */
 .mngds-masthead__logo-link { display: inline-flex; align-items: center; justify-content: center; color: var(--mng-color-gray-min); text-decoration: none; flex-shrink: 0; }
@@ -56,17 +56,9 @@
   display: flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 64px;
   padding: var(--mng-spacing-100) var(--mng-spacing-500);
 }
-.mngds-masthead__weather, .mngds-masthead__sponsorship { flex: 1 1 0; display: flex; min-width: 0; }
+.mngds-masthead__weather, .mngds-masthead__sponsorship { flex: 1 1 0; display: flex; align-items: center; min-width: 0; }
+/* Weather: the WeatherBug component (Location = Masthead), production values. */
 .mngds-masthead__sponsorship { justify-content: flex-end; }
-.mngds-masthead__weather { gap: var(--mng-spacing-150); align-items: flex-start; }
-.mngds-masthead__temp { display: flex; align-items: flex-start; }
-.mngds-masthead__temp-value, .mngds-masthead__date-text { font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-bold); line-height: normal; white-space: nowrap; }
-/* Weather Bug temperature: a third-party widget, Helvetica Bold as in Figma and production (Karl, 2026-10-30). No token. */
-.mngds-masthead__temp-value { font-family: Helvetica, Arial, sans-serif; }
-.mngds-masthead__weather-icon { width: 26px; height: 26px; color: var(--mng-color-gray-min); }
-.mngds-masthead__date { display: flex; flex-direction: column; gap: var(--mng-spacing-050); }
-.mngds-masthead__e-edition { font-size: var(--mng-font-size-12); font-weight: var(--mng-font-weight-regular); line-height: normal; color: var(--mng-color-gray-min); text-decoration: none; }
-.mngds-masthead__e-edition:hover { text-decoration: underline; }
 
 /* Top Nav: natural width, centered, clipped at both edges when it overflows (production; design-vs-production 9.1) */
 .mngds-masthead__nav { display: flex; justify-content: center; overflow: hidden; }

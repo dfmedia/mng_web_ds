@@ -1,0 +1,11 @@
+/* SectionMenu: components/wordpress/section-menu. Open: a 300px drawer under the 64px toggle row, on color/surface/nav-panel,
+   with a 1px color/gray/black top border and 12px top padding (spacing/150). Newsletter: 16px above the prompt on XL-Desktop,
+   32px (spacing/400) below 1040px (production 15 / 30px). The page overlay (black 50%) belongs to the page, not drawn here. */
+.mngds-section-menu { box-sizing: border-box; display: inline-flex; flex-direction: column; align-items: flex-start; }
+.mngds-section-menu--open { width: 300px; }
+.mngds-section-menu--open.mngds-section-menu--xl-desktop .mngds-section-menu__header { width: 100%; }
+.mngds-section-menu__drawer {
+  box-sizing: border-box; display: flex; flex-direction: column; width: 300px; padding-top: var(--mng-spacing-150);
+  background: var(--mng-color-surface-nav-panel); border-top: 1px solid var(--mng-color-gray-black);
+}
+.mngds-section-menu:not(.mngds-section-menu--xl-desktop) .mngds-section-menu-item__cta-content { padding-top: var(--mng-spacing-400); }

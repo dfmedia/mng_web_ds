@@ -1,0 +1,25 @@
+<!-- @dsCard group="WordPress Elements" height=1260 subtitle="Figma: SectionMenu · 20 variants" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SectionMenu</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = ['XS-Fold', 'SM-Mobile', 'MD-TabletV', 'LG-TabletH', 'XL-Desktop'];
+  var closedItems = devices.map(function (d) {
+    return { label: 'View=Closed, Device=' + d + ', UserType=all', width: (d === 'XL-Desktop' ? 180 : 64) + 32, node: h(NS.SectionMenu, { device: d, view: 'Closed' }) };
+  });
+  var openItems = [];
+  devices.forEach(function (d) {
+    ['subscriber', 'nonSub', 'loggedOut'].forEach(function (u) {
+      openItems.push({ label: 'View=Open, Device=' + d + ', UserType=' + u, width: 332, node: h(NS.SectionMenu, { device: d, view: 'Open', userType: u, menuId: 'sm-' + d + '-' + u }) });
+    });
+  });
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Closed', note: 'The toggle in the masthead row: "All Sections" at 1040px and up, the hamburger alone below.' }, h(I.Specimen, { items: closedItems })),
+    h(I.SpecimenSection, { title: 'Open: Device × UserType', note: 'Click a section to open it; only one is open at a time. The weather row shows below 1040px.' }, h(I.Specimen, { items: openItems }))));
+</script>
+</body>
+</html>

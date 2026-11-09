@@ -927,7 +927,7 @@
       "variants": 90,
       "instances": 70,
       "knownIssues": 9,
-      "exported": "2026-11-03"
+      "exported": "2026-11-09"
     },
     {
       "slug": "search-bar",
@@ -956,10 +956,26 @@
         "node": "456:5837",
         "set": "SectionMenu"
       },
-      "variants": 15,
+      "variants": 20,
       "instances": 237,
-      "knownIssues": 1,
-      "exported": "2026-10-30"
+      "knownIssues": 2,
+      "exported": "2026-11-09"
+    },
+    {
+      "slug": "section-menu-group",
+      "name": "SectionMenuGroup",
+      "group": "navigation",
+      "layer": "wordpress",
+      "path": "components/wordpress/section-menu-group/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3740:29156",
+        "set": "SectionMenuGroup"
+      },
+      "variants": 2,
+      "instances": 135,
+      "knownIssues": 2,
+      "exported": "2026-11-09"
     },
     {
       "slug": "section-menu-header",
@@ -973,9 +989,9 @@
         "set": "SectionMenuHeader"
       },
       "variants": 6,
-      "instances": 254,
-      "knownIssues": 1,
-      "exported": "2026-10-30"
+      "instances": 259,
+      "knownIssues": 2,
+      "exported": "2026-11-09"
     },
     {
       "slug": "section-menu-item",
@@ -988,10 +1004,10 @@
         "node": "456:5781",
         "set": "SectionMenuItem"
       },
-      "variants": 9,
-      "instances": 159,
-      "knownIssues": 2,
-      "exported": "2026-10-30"
+      "variants": 27,
+      "instances": 1064,
+      "knownIssues": 3,
+      "exported": "2026-11-09"
     },
     {
       "slug": "user-image",
@@ -1052,10 +1068,10 @@
         "node": "654:10020",
         "set": "Weather Bug"
       },
-      "variants": 2,
-      "instances": 39,
+      "variants": 4,
+      "instances": 60,
       "knownIssues": 3,
-      "exported": "2026-10-30"
+      "exported": "2026-11-09"
     }
   ]
 }

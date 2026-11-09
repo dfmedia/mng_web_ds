@@ -9,237 +9,119 @@
         "componentSet": "Weather Bug",
         "page": "Menus and Parts"
       },
-      "production": "Production masthead weather widget.",
+      "production": "Production `.accuweather-wrap`, measured on Denver Post (one link) and Morning Call (two links) 2026-11-09.",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-09"
     }
   },
   "weather-bug": {
-    "location-sectionmenu": {
+    "evening-e-edition-off.location-sectionmenu": {
       "date-and-e-edition": {
         "gap": {
           "$type": "dimension",
-          "$value": "{spacing.100}",
+          "$value": {
+            "value": 10.87,
+            "unit": "px"
+          },
           "$extensions": {
             "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/100"
-              }
-            }
-          }
-        },
-        "wednesday-september-25th-2025": {
-          "color": {
-            "$type": "color",
-            "$value": "{color.gray.min}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Colors/color/gray/min"
-                }
-              }
-            }
-          },
-          "font-family": {
-            "$type": "fontFamily",
-            "$value": "{font.family.noto-sans}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/family/noto-sans"
-                }
-              }
-            }
-          },
-          "font-size": {
-            "$type": "dimension",
-            "$value": "{font.size.15}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/size/15"
-                }
-              }
-            }
-          },
-          "font-weight": {
-            "$type": "fontWeight",
-            "$value": "{font.weight.bold}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/style/bold"
-                }
-              }
+              "unbound": true
             }
           }
         }
-      },
-      "root": {
-        "height": {
+      }
+    },
+    "evening-e-edition-off.location-masthead": {
+      "date-and-e-edition": {
+        "gap": {
           "$type": "dimension",
           "$value": {
-            "value": 80,
+            "value": 11.73,
             "unit": "px"
-          }
-        },
-        "padding-bottom": {
-          "$type": "dimension",
-          "$value": "{spacing.100}",
+          },
           "$extensions": {
             "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/100"
-              }
+              "unbound": true
             }
           }
-        },
-        "padding-left": {
-          "$type": "dimension",
-          "$value": "{spacing.200}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/200"
-              }
-            }
-          }
-        },
-        "padding-right": {
-          "$type": "dimension",
-          "$value": "{spacing.200}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/200"
-              }
-            }
-          }
-        },
-        "padding-top": {
-          "$type": "dimension",
-          "$value": "{spacing.100}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/100"
-              }
-            }
-          }
-        },
-        "width": {
+        }
+      }
+    },
+    "evening-e-edition-on.location-sectionmenu": {
+      "date-and-e-edition": {
+        "gap": {
           "$type": "dimension",
           "$value": {
-            "value": 300,
+            "value": 4.94,
             "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "evening-e-edition-on.location-masthead": {
+      "date-and-e-edition": {
+        "gap": {
+          "$type": "dimension",
+          "$value": {
+            "value": 5.33,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
           }
         }
       }
     },
     "location-masthead": {
       "date-and-e-edition": {
-        "gap": {
+        "width": {
           "$type": "dimension",
-          "$value": "{spacing.050}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/050"
+          "$value": {
+            "value": 213.37,
+            "unit": "px"
+          }
+        },
+        "evening-e-edition": {
+          "color": {
+            "$type": "color",
+            "$value": "{color.theme.nav-text}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/theme/nav-text"
+                }
               }
             }
           }
         },
-        "wednesday-september-25th-2022": {
+        "monday-november-9th-2026": {
           "color": {
             "$type": "color",
-            "$value": "{color.gray.min}",
+            "$value": "{color.theme.nav-text}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Colors/color/gray/min"
-                }
-              }
-            }
-          },
-          "font-family": {
-            "$type": "fontFamily",
-            "$value": "{font.family.noto-sans}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/family/noto-sans"
-                }
-              }
-            }
-          },
-          "font-size": {
-            "$type": "dimension",
-            "$value": "{font.size.16}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/size/16"
-                }
-              }
-            }
-          },
-          "font-weight": {
-            "$type": "fontWeight",
-            "$value": "{font.weight.bold}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/style/bold"
+                  "variable": "Colors/color/theme/nav-text"
                 }
               }
             }
           }
-        }
-      }
-    },
-    "base": {
-      "date-and-e-edition": {
+        },
         "today-s-e-edition": {
           "color": {
             "$type": "color",
-            "$value": "{color.gray.min}",
+            "$value": "{color.theme.nav-text}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Colors/color/gray/min"
-                }
-              }
-            }
-          },
-          "font-family": {
-            "$type": "fontFamily",
-            "$value": "{font.family.noto-sans}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/family/noto-sans"
-                }
-              }
-            }
-          },
-          "font-size": {
-            "$type": "dimension",
-            "$value": "{font.size.12}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/size/12"
-                }
-              }
-            }
-          },
-          "font-weight": {
-            "$type": "fontWeight",
-            "$value": "{font.weight.regular}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/style/regular"
+                  "variable": "Colors/color/theme/nav-text"
                 }
               }
             }
@@ -257,7 +139,239 @@
               }
             }
           }
+        }
+      }
+    },
+    "location-sectionmenu": {
+      "date-and-e-edition": {
+        "evening-e-edition": {
+          "color": {
+            "$type": "color",
+            "$value": "{color.theme.nav-text}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/theme/nav-text"
+                }
+              }
+            }
+          }
         },
+        "monday-november-9th-2026": {
+          "color": {
+            "$type": "color",
+            "$value": "{color.theme.nav-text}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/theme/nav-text"
+                }
+              }
+            }
+          }
+        },
+        "today-s-e-edition": {
+          "color": {
+            "$type": "color",
+            "$value": "{color.theme.nav-text}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/theme/nav-text"
+                }
+              }
+            }
+          }
+        }
+      },
+      "root": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.surface.nav-panel}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/surface/nav-panel"
+              }
+            }
+          }
+        },
+        "padding-bottom": {
+          "$type": "dimension",
+          "$value": {
+            "value": 5,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        },
+        "padding-left": {
+          "$type": "dimension",
+          "$value": {
+            "value": 15,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": {
+            "value": 15,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 300,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "evening-e-edition-on": {
+      "date-and-e-edition": {
+        "evening-e-edition": {
+          "font-family": {
+            "$type": "fontFamily",
+            "$value": "{font.family.noto-sans}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Type Primitives/font/family/noto-sans"
+                }
+              }
+            }
+          },
+          "font-size": {
+            "$type": "dimension",
+            "$value": {
+              "value": 12,
+              "unit": "px"
+            },
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "font-weight": {
+            "$type": "fontWeight",
+            "$value": 500,
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 12.8,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "base": {
+      "date-and-e-edition": {
+        "monday-november-9th-2026": {
+          "font-family": {
+            "$type": "fontFamily",
+            "$value": "{font.family.noto-sans}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Type Primitives/font/family/noto-sans"
+                }
+              }
+            }
+          },
+          "font-size": {
+            "$type": "dimension",
+            "$value": {
+              "value": 15,
+              "unit": "px"
+            },
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "font-weight": {
+            "$type": "fontWeight",
+            "$value": 600,
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 16,
+              "unit": "px"
+            }
+          }
+        },
+        "today-s-e-edition": {
+          "font-family": {
+            "$type": "fontFamily",
+            "$value": "{font.family.noto-sans}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Type Primitives/font/family/noto-sans"
+                }
+              }
+            }
+          },
+          "font-size": {
+            "$type": "dimension",
+            "$value": {
+              "value": 12,
+              "unit": "px"
+            },
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "font-weight": {
+            "$type": "fontWeight",
+            "$value": 500,
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 12.8,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "root": {
         "gap": {
           "$type": "dimension",
           "$value": "{spacing.150}",
@@ -271,14 +385,21 @@
         }
       },
       "weather": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 27.1,
+            "unit": "px"
+          }
+        },
         "87-f": {
           "color": {
             "$type": "color",
-            "$value": "{color.gray.min}",
+            "$value": "{color.theme.nav-text}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Colors/color/gray/min"
+                  "variable": "Colors/color/theme/nav-text"
                 }
               }
             }
@@ -294,12 +415,13 @@
           },
           "font-size": {
             "$type": "dimension",
-            "$value": "{font.size.16}",
+            "$value": {
+              "value": 16,
+              "unit": "px"
+            },
             "$extensions": {
               "com.mng": {
-                "figma": {
-                  "variable": "Type Primitives/font/size/16"
-                }
+                "unbound": true
               }
             }
           },
@@ -311,13 +433,20 @@
                 "unbound": true
               }
             }
+          },
+          "line-height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 16,
+              "unit": "px"
+            }
           }
         },
         "tornado": {
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 26,
+              "value": 26.41,
               "unit": "px"
             }
           },
@@ -335,7 +464,7 @@
           "width": {
             "$type": "dimension",
             "$value": {
-              "value": 26,
+              "value": 26.41,
               "unit": "px"
             }
           }

@@ -1,0 +1,4 @@
+- **Open = Closed with the × icon** (Karl, 2026-11-09): production is one button (`#menu-toggle`) that swaps `icon-hamburger` for `icon-close`; checked on Morning Call.
+- **Design spacing is a choice** (Karl, 2026-11-09): 8px padding, a 40px icon target and "All Sections" 8px after it (20px from the icon). Production puts the icon 15px inside the page margin and the label 4px after it, at 15px. Drift: design-vs-production 10.6.
+- **Label 16px SemiBold** (production 15px SemiBold; size kept, drift).
+- The Figma closed variants draw a 1px color/gray/500 line under the header; it's the masthead's line, so it isn't drawn here.

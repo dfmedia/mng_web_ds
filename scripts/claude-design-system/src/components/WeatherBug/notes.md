@@ -1,0 +1,3 @@
+- **Matches production exactly** (Karl, 2026-11-09): the widget is AccuWeather's, which we don't control, so raw values are allowed (CLAUDE.md). Measured on Denver Post (one link) and Morning Call (two links): temperature Helvetica Bold 16 / 16px and a 26.41px icon in a 27.1px row; date Noto Sans SemiBold 15 / 16px, 12px after the icon; links Noto Sans Medium 12 / 12.8px. Link spacing is production's `margin-top: 5.5%`: 10.87 / 4.94px in the drawer, 11.73 / 5.33px in the masthead (one / two links).
+- **Two links:** several markets publish an evening edition (`eveningEdition`).
+- **The icon** is the Figma "tornado" sample glyph; production draws the current conditions icon from the widget.

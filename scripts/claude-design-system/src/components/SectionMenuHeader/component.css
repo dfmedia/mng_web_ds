@@ -1,0 +1,15 @@
+/* SectionMenuHeader: components/wordpress/section-menu-header. 64px tall on color/gray/max; 40px icon target with the 16px
+   icon; Desktop 8px padding (spacing/100) and "All Sections" Noto Sans SemiBold 16, 8px after the target. TabletV / Mobile:
+   the icon centered in a 64px box (TabletV's Figma frame is 88px wide; the button is the 64px box). */
+.mngds-section-menu-header {
+  box-sizing: border-box; display: inline-flex; align-items: center; gap: var(--mng-spacing-100); height: 64px; margin: 0;
+  padding: 0 var(--mng-spacing-100); border: 0; background: var(--mng-color-gray-max); color: var(--mng-color-gray-min);
+  font: inherit; cursor: pointer;
+}
+.mngds-section-menu-header--tablet-v, .mngds-section-menu-header--mobile { width: 64px; padding: 0; justify-content: center; }
+.mngds-section-menu-header__icon { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; }
+.mngds-section-menu-header__label {
+  font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-semibold);
+  line-height: normal; white-space: nowrap;
+}
+.mngds-section-menu-header:focus-visible, .mngds-section-menu-header.is-infocus { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }

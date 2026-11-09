@@ -11,7 +11,7 @@
       },
       "production": "WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / `--not-top`), audited on the 6 review sites 2026-09-15 (`components/breakpoint-audit.md`), logged out and as an ad-free subscriber. Gaps: design-vs-production 9, 10, 11, 24 and 33.",
       "layer": "wordpress",
-      "exported": "2026-11-03"
+      "exported": "2026-11-09"
     }
   },
   "masthead": {
@@ -2795,231 +2795,50 @@
               }
             }
           },
-          "weather-and-date": {
-            "background": {
-              "$type": "color",
-              "$value": "{color.gray.max}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Colors/color/gray/max"
-                  }
-                }
-              }
-            },
-            "gap": {
-              "$type": "dimension",
-              "$value": "{spacing.150}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/150"
-                  }
-                }
-              }
-            },
-            "opacity": {
-              "$type": "number",
-              "$value": 0
-            },
-            "date-and-e-edition": {
-              "gap": {
-                "$type": "dimension",
-                "$value": "{spacing.050}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/050"
-                    }
-                  }
-                }
-              },
-              "today-s-e-edition": {
-                "color": {
-                  "$type": "color",
-                  "$value": "{color.gray.min}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Colors/color/gray/min"
-                      }
-                    }
-                  }
-                },
-                "font-family": {
-                  "$type": "fontFamily",
-                  "$value": "{font.family.noto-sans}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/family/noto-sans"
-                      }
-                    }
-                  }
-                },
-                "font-size": {
-                  "$type": "dimension",
-                  "$value": "{font.size.12}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/size/12"
-                      }
-                    }
-                  }
-                },
-                "font-weight": {
-                  "$type": "fontWeight",
-                  "$value": "{font.weight.regular}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/style/regular"
-                      }
-                    }
-                  }
-                }
-              },
-              "wednesday-september-25th-2022": {
-                "color": {
-                  "$type": "color",
-                  "$value": "{color.gray.min}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Colors/color/gray/min"
-                      }
-                    }
-                  }
-                },
-                "font-family": {
-                  "$type": "fontFamily",
-                  "$value": "{font.family.noto-sans}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/family/noto-sans"
-                      }
-                    }
-                  }
-                },
-                "font-size": {
-                  "$type": "dimension",
-                  "$value": "{font.size.16}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/size/16"
-                      }
-                    }
-                  }
-                },
-                "font-weight": {
-                  "$type": "fontWeight",
-                  "$value": "{font.weight.bold}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/style/bold"
-                      }
-                    }
-                  }
-                }
-              }
-            },
-            "weather": {
-              "87-f": {
-                "color": {
-                  "$type": "color",
-                  "$value": "{color.gray.min}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Colors/color/gray/min"
-                      }
-                    }
-                  }
-                },
-                "font-family": {
-                  "$type": "fontFamily",
-                  "$value": "{font.family.noto-sans}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/family/noto-sans"
-                      }
-                    }
-                  }
-                },
-                "font-size": {
-                  "$type": "dimension",
-                  "$value": "{font.size.16}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/size/16"
-                      }
-                    }
-                  }
-                },
-                "font-weight": {
-                  "$type": "fontWeight",
-                  "$value": "{font.weight.bold}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Type Primitives/font/style/bold"
-                      }
-                    }
-                  }
-                }
-              },
-              "tornado": {
-                "height": {
-                  "$type": "dimension",
-                  "$value": {
-                    "value": 26,
-                    "unit": "px"
-                  }
-                },
-                "icon-color": {
-                  "$type": "color",
-                  "$value": "{color.gray.min}",
-                  "$extensions": {
-                    "com.mng": {
-                      "figma": {
-                        "variable": "Colors/color/gray/min"
-                      }
-                    }
-                  }
-                },
-                "width": {
-                  "$type": "dimension",
-                  "$value": {
-                    "value": 26,
-                    "unit": "px"
-                  }
-                }
-              }
-            }
-          },
           "weather-bug": {
             "height": {
               "$type": "dimension",
               "$value": {
-                "value": 42,
+                "value": 40.73,
                 "unit": "px"
               }
             },
             "icon-color": {
               "$type": "color",
-              "$value": "{color.gray.min}",
+              "$value": "{color.theme.nav-text}",
               "$extensions": {
                 "com.mng": {
                   "figma": {
-                    "variable": "Colors/color/gray/min"
+                    "variable": "Colors/color/theme/nav-text"
                   }
                 }
+              }
+            }
+          },
+          "weather-bug-spacer-hidden": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 40.73,
+                "unit": "px"
+              }
+            },
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.theme.nav-text}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/theme/nav-text"
+                  }
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 285.78,
+                "unit": "px"
               }
             }
           }
@@ -5847,17 +5666,17 @@
             "height": {
               "$type": "dimension",
               "$value": {
-                "value": 42,
+                "value": 40.73,
                 "unit": "px"
               }
             },
             "icon-color": {
               "$type": "color",
-              "$value": "{color.gray.min}",
+              "$value": "{color.theme.nav-text}",
               "$extensions": {
                 "com.mng": {
                   "figma": {
-                    "variable": "Colors/color/gray/min"
+                    "variable": "Colors/color/theme/nav-text"
                   }
                 }
               }
@@ -5865,7 +5684,7 @@
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 345,
+                "value": 285.78,
                 "unit": "px"
               }
             }
@@ -10094,7 +9913,7 @@
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 345,
+                "value": 285.78,
                 "unit": "px"
               }
             }

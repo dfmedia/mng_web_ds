@@ -1,0 +1,4 @@
+/* SectionMenuGroup: components/wordpress/section-menu-group. Fills the drawer on color/surface/nav-panel. */
+.mngds-section-menu-group { width: 100%; background: var(--mng-color-surface-nav-panel); }
+.mngds-section-menu-group__list { margin: 0; padding: 0; list-style: none; }
+.mngds-section-menu-group__list[hidden] { display: none; }

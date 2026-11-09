@@ -1,0 +1,23 @@
+<!-- @dsCard group="WordPress Elements" height=330 subtitle="Figma: Weather Bug · 4 variants" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>WeatherBug</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var items = [];
+  ['SectionMenu', 'Masthead'].forEach(function (loc) {
+    ['Off', 'On'].forEach(function (ev) {
+      var w = loc === 'SectionMenu' ? 300 : 286;
+      items.push({ label: 'Location=' + loc + ', Evening e-Edition=' + ev, width: w + 32,
+        node: h('div', { style: { width: w } }, h(NS.WeatherBug, { location: loc, eveningEdition: ev })) });
+    });
+  });
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(I.SpecimenSection, { title: 'Location × Evening e-Edition', note: 'Matches production exactly (AccuWeather, third-party). The link labels change by market; these are placeholders.' },
+      h(I.Specimen, { items: items })));
+</script>
+</body>
+</html>

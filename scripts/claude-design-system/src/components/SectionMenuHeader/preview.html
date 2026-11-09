@@ -1,0 +1,22 @@
+<!-- @dsCard group="WordPress Elements" height=260 subtitle="Figma: SectionMenuHeader · 6 variants" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SectionMenuHeader</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var items = [];
+  ['Desktop', 'TabletV', 'Mobile'].forEach(function (d) {
+    ['Closed', 'Open'].forEach(function (v) {
+      items.push({ label: 'View=' + v + ', Device=' + d, width: (d === 'Desktop' ? 180 : 64) + 32, node: h(NS.SectionMenuHeader, { device: d, view: v }) });
+    });
+  });
+  items.push({ label: 'Desktop, InFocus', width: 212, node: h(NS.SectionMenuHeader, { device: 'Desktop', state: 'InFocus' }) });
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(I.SpecimenSection, { title: 'View × Device', note: 'One button: only the icon changes between Closed and Open. "All Sections" at 1040px and up.' },
+      h(I.Specimen, { items: items })));
+</script>
+</body>
+</html>

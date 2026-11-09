@@ -1,0 +1,4 @@
+- **Built from the 2026-11-09 Figma** (Karl): 36px rows (production 37.5px), text and Home icon at 16px (design choice; production 13 / 10px), sub-items at 32px, Title Case forced (production shows labels as typed). Drift: design-vs-production 10.6.
+- **Chevrons:** ⌄ closed / ⌃ open (Karl kept the design; production shows › / ⌄, drift 10.4). Drawn with the font's `arrow-down` / `arrow-up`.
+- **States:** production has no hover, pressed or focus styling (drift 10.8); the focus ring sits inside the row because the drawer clips outside it.
+- **CTAButton / CTAMessage:** Button Primary keeps its own 8px side margin, so the visible button starts 44px from the drawer edge (36 + 8; production 35px).

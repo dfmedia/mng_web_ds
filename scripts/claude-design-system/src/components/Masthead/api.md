@@ -28,7 +28,8 @@ h(Masthead, { state: 'Scrolled', device: 'XL-Desktop' })                        
 | `scrollRoot` | scroll container element, when it isn't the page | viewport |
 | `ads`, `renderAd(name)` | show or replace the Sponsorship 1 / Top Leaderboard placeholders | `true` |
 | `navItems`, `trending` | strings or `{ label, href, onClick }` | the Figma sample (Section Front has its own nav sample) |
-| `date`, `temperature`, `eEditionLabel`, `eEditionHref` | weather bug text (1040px and up) | the Figma sample |
+| `date`, `temperature`, `eEditionLabel`, `eEditionHref` | weather bug text (1040px and up; `WeatherBug`, Location = Masthead) | the Figma sample |
+| `eveningEdition`, `eveningLabel`, `eveningHref` | the second e-Edition link (several markets) | off |
 | `user` | `{ name, initials, imageSrc }`: the subscriber's avatar | initials of "Reader" |
 | `onMenuClick`, `menuOpen`, `menuId` | the All Sections / hamburger button (`aria-expanded`, `aria-controls`) | |
 | `onSearchClick`, `onSubscribe`, `onLogIn`, `subscribeHref`, `logInHref`, `onAccountClick` | actions | |

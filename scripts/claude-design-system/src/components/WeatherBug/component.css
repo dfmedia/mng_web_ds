@@ -1,0 +1,26 @@
+/* Weather Bug: third-party (AccuWeather), so every value matches production exactly, raw where no variable exists
+   (Karl, 2026-11-09; components/wordpress/weather-bug). Text color/theme/nav-text (16:1 or better on both backgrounds). */
+.mngds-weather-bug { box-sizing: border-box; display: flex; align-items: center; gap: var(--mng-spacing-150); color: var(--mng-color-theme-nav-text); }
+.mngds-weather-bug *, .mngds-weather-bug *::before, .mngds-weather-bug *::after { box-sizing: border-box; }
+/* SectionMenu: the drawer row, 0 15px 5px, on color/surface/nav-panel; the date column fills the rest. */
+.mngds-weather-bug--section-menu { width: 100%; padding: 0 15px 5px; background: var(--mng-color-surface-nav-panel); }
+/* Masthead: no padding (the masthead places it), 213.37px date column, color/gray/max. */
+.mngds-weather-bug--masthead { background: var(--mng-color-gray-max); }
+/* Temperature + icon: one 27.1px row, top-aligned; the pair is centered on the date column. */
+.mngds-weather-bug__current { display: flex; align-items: flex-start; height: 27.1px; flex-shrink: 0; }
+/* Temperature: Helvetica Bold 16 / 16px on purpose (the widget's font; Karl, 2026-10-30). */
+.mngds-weather-bug__temp { font-family: Helvetica, Arial, sans-serif; font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-bold); line-height: 16px; white-space: nowrap; }
+.mngds-weather-bug__icon { width: 26.41px; height: 26.41px; flex-shrink: 0; }
+.mngds-weather-bug__date { display: flex; flex-direction: column; align-items: flex-start; flex: 1 1 auto; min-width: 0; }
+.mngds-weather-bug--masthead .mngds-weather-bug__date { flex: 0 0 213.37px; width: 213.37px; }
+.mngds-weather-bug__date-text { font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-15); font-weight: var(--mng-font-weight-semibold); line-height: 16px; }
+/* Links: Noto Sans Medium 12 / 12.8px, as typed; production margin-top: 5.5% of the column. */
+.mngds-weather-bug__link {
+  margin-top: 10.87px; font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-12); font-weight: var(--mng-font-weight-medium);
+  line-height: 12.8px; color: inherit; text-decoration: none;
+}
+.mngds-weather-bug--two .mngds-weather-bug__link { margin-top: 4.94px; }
+.mngds-weather-bug--masthead .mngds-weather-bug__link { margin-top: 11.73px; }
+.mngds-weather-bug--masthead.mngds-weather-bug--two .mngds-weather-bug__link { margin-top: 5.33px; }
+.mngds-weather-bug__link:hover { text-decoration: underline; }
+.mngds-weather-bug__link:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }

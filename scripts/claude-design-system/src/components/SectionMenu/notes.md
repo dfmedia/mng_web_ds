@@ -1,0 +1,3 @@
+- **Built from the 2026-11-09 Figma** after the six-site audit and the five-width check on Denver Post (components/navigation.md §3). Production differences: design-vs-production 10.4–10.8.
+- **Below 1040px** the toggle is the icon only and the weather row shows (production switches at 1040px; LG-TabletH matches production since 2026-11-09).
+- **Not drawn:** the page overlay (black 50%) and the slide-in animation (`transform 0.25s ease-in-out`); they belong to the page.
