@@ -1438,17 +1438,32 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 
 **Status:** Open. Added 2026-11-06. Team: CMS (markup) and each site's menu editors (menu content).
 
-### 10.6 Section menu drawer — row spacing and type off the 4 / 8 grid
+### 10.6 Section menu drawer — row height, padding, spacing and title case
 
-**Figma spec (source of truth):** `SectionMenuItem`: Noto Sans SemiBold 14 (`font/size/14`, `font/style/semibold`; matches production), 40px rows, 12px left padding (`spacing/150`), sub-item text at 32px (`spacing/400`).
+**Figma spec (source of truth):** `SectionMenuItem`, `SectionMenuGroup`, `SectionMenuHeader` and `SectionMenu` (WordPress Elements ▸ Menus and Parts), updated 2026-11-09 (Karl) from Denver Post measured at 1728, 1280, 1024, 768, 360 and 340px (logged out). Noto Sans SemiBold 14 rows (`font/size/14`, `font/style/semibold`; matches production).
 
-**Production (all 6 sites):** rows are 14.0625px / 15px (0.9375em of 15px), 13.18px padding all round (row height 40.6px), sub-items indented 16px + 13.18px = 29.2px. The Subscribe Now and Sign Up buttons are 230px wide (35px side margins) in production and 268px (16px margins) in the design.
+| | Production (Denver Post at all six widths; row CSS identical on all 6 review sites) | Design | Why |
+|---|---|---|---|
+| Row height | 37.5px (the `li` clips its 40.6px link) | 36px | Rounded to the 4 / 8 grid (Karl) |
+| Row text and Home icon from the left | text 13.18px, Home icon 10px | 16px (`spacing/200`), all aligned | **Design choice** (Karl, 2026-11-09) |
+| Sub-item text from the left | 29.2px | 32px (`spacing/400`) | Rounded; 28px has no token |
+| × in the open header | page margin + 15px: 58px at 1728, 46 at 1280, 41 at 1024, 34 at 768, 24 at 360, 23.5 at 340 | 16px from the left at every width (`spacing/200`) | Nearest multiple of 8 (Karl) |
+| "All Sections" after the × | 4px | 4px (`spacing/050`) | Matches |
+| Space above Subscribe Now | 12px drawer padding + 12px margin | 12 + 12 (`spacing/150`) | Matches |
+| Subscribe Now / Sign Up side margins | 35px (230px buttons) | 36px (`spacing/450`, 228px buttons) | Rounded; new token (pull request #14) |
+| Subscribe Now height | 44px | 40px (Button Primary, 8px padding kept) | Design component (Karl) |
+| Below Subscribe Now | 12px | 12px (`spacing/150`) | Matches |
+| Weather row padding (below 1040px) | 0 15px 5px; e-Edition 10.87px below the date | 0 16px 4px; 12px (`spacing/150`) | Rounded |
+| Below the last row | 48px | 48px (`spacing/600`) | Matches; new token (pull request #14) |
+| Newsletter: divider to prompt | 15px at desktop; 30px below 1040px | 16px (`spacing/200`) at desktop; 32px (`spacing/400`) below 1040px | Rounded |
+| Newsletter: prompt to button / below button | 12px / 15px | 12px / 16px | Rounded |
+| Label case | as typed in the CMS menu (no `text-transform`) | Title Case forced (Karl, 2026-11-09) | No automatic "proper" title case exists in CSS or Figma; `capitalize` also capitalizes "and", "of" |
 
-**Action needed:** `#pushnav a` font-size 14px, padding 13px 12px (40px rows), sub-menu link left padding 32px; Subscribe Now and Sign Up to Button Primary at the drawer width minus 16px each side.
+**Action needed:** `#pushnav > li` 36px tall with the text vertically centered; 16px left padding on rows and the Home link, 32px on sub-items; the open-state × 16px from the left edge of the screen; 36px side margins on Subscribe Now and Sign Up; weather row padding 0 16px 4px and 12px above the e-Edition link; newsletter 16px above the prompt at desktop and 32px below 1040px, 16px below the button; `text-transform: capitalize` on row and sub-item labels.
 
-**Status:** Open. Added 2026-11-06. Team: CMS.
+**Status:** Open. Added 2026-11-06; rewritten 2026-11-09 after the five-width check. Team: CMS.
 
-### 10.7 Section menu drawer — background and text colors
+### 10.7 Section menu drawer — background, text and line colors
 
 **Figma spec (source of truth):** drawer and rows `color/surface/nav-panel` (#FBFBFB, every theme); row text `color/theme/nav-text`. Contrast on #FBFBFB: 16.1:1 (#1F1E1C) to 19.2:1 (#0A0908), every mode passes AA.
 
@@ -1463,17 +1478,19 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 | Cañon City (Modern Earthy) | #FAFAFA | #1A1A1A ✓ | #1A1A1A |
 | Morning Call | #FAFAFA | #1A1A1A | #141414 |
 
-**Action needed:** set the drawer and row background to #FBFBFB on Bold Coastal, Denver Post and Modern Earthy; set the row text to #141414 on Denver Post and Morning Call. Don't change the tokens.
+Lines: the drawer's top border (under the header, the full 300px) and the divider above the newsletter are 1px **#0A0908** in production (all 6 sites); the design uses the nearest gray, `color/gray/black` (#000000) (Karl, 2026-11-09).
+
+**Action needed:** set the drawer and row background to #FBFBFB on Bold Coastal, Denver Post and Modern Earthy; set the row text to #141414 on Denver Post and Morning Call; set the drawer's top border and the newsletter divider to #000000. Don't change the tokens.
 
 **Status:** Open. Added 2026-11-06. Team: CMS.
 
 ### 10.8 Section menu drawer — no hover or keyboard-focus styling (accessibility)
 
-**Figma spec (source of truth):** `SectionMenuItem` State = Default / Hover / InFocus. Hover underlines the label; InFocus draws a 2px `color/gray/black` ring inside the row (inside, because the drawer clips anything outside its 300px).
+**Figma spec (source of truth):** `SectionMenuItem` State = Default / Hover / Pressed / InFocus. Hover underlines the label; Pressed underlines it and fills the row with `color/gray/600` (#F1EFEB; text 14.5:1 or better) (Karl, 2026-11-09); InFocus draws a 2px `color/gray/black` ring inside the row (inside, because the drawer clips anything outside its 300px).
 
 **Production:** no style change on hover or focus on any row (all 6 sites); keyboard users can't see where they are.
 
-**Action needed:** add `:hover` (underline) and `:focus-visible` (2px #000000 inset outline) to `#pushnav a` and the section toggles. The focus indicator is required (WCAG 2.4.7).
+**Action needed:** add `:hover` (underline), `:active` (underline and #F1EFEB background) and `:focus-visible` (2px #000000 inset outline) to `#pushnav a` and the section toggles. The focus indicator is required (WCAG 2.4.7).
 
 **Status:** Open, focus required. Added 2026-11-06. Team: CMS.
 

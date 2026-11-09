@@ -1,6 +1,6 @@
 # Navigation
 
-> **Updated 2026-11-06** for the six-site section menu audit and Karl's decisions (§3).
+> **Updated 2026-11-09** for the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
 >
 > **Updated 2026-09-25 — read this first.**
 > - **Where the header lives now.** The production-accurate header is the **Masthead** component set (`456:2572`, 75 variants: Device × State × Page) on the "Menus and Parts" page of **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`, formerly "Website Page Templates"). Its breakpoint audit is `breakpoint-audit.md` (this folder), and its production gaps are design-vs-production entries 7, 9, 28.2 and 33. The account dropdown's source is **AccountMenu** (`910:16425`) in the same file. The pilot Header, Account Trigger, Off-Canvas Section Panel and Account Dropdown Menu components mentioned in §3.2 and §9 were retired on 2026-09-25; the measurements in those sections are still valid.
@@ -104,7 +104,7 @@ One drawer serves both triggers: the desktop "All Sections" toggle and the hambu
 
 | | Production (all six) | Figma today |
 |---|---|---|
-| Section row | Noto Sans 14px (14.06) / 15px line, weight 600, 13px padding (13.18), 40px tall (40.6) | Noto Sans 16px Bold, 40px tall |
+| Section row | Noto Sans 14px (14.06) / 15px line, weight 600, 13px padding (13.18); the link is 40.6px but its `li` clips it to **37.5px**, so rows are 37.5px apart (corrected 2026-11-09) | Noto Sans 16px Bold, 40px tall |
 | Sub-item row | Same type as the section row (no demotion); text starts 29px from the edge (16px indent + 13px padding) | Text at 40px (a hidden icon slot pushes it in) |
 | Chevron | icomoon `::before`, 9px. Closed `arrow-right` (U+E907), open `arrow-down` (U+E905) | `arrow-downSMALL` closed, `arrow-upSmall` open |
 | Text color | Theme nav text: #0A0908 (OCR, DP), #1F1E1C (CT, OS), #1A1A1A (CCDR, MCall) | #141414 |
@@ -145,6 +145,13 @@ One drawer serves both triggers: the desktop "All Sections" toggle and the hambu
 - **Section rows are a toggle plus a landing link:** the row is a button that opens its list, and the first sub-item is always the section's own page. Production's link-that-toggles is drift.
 - **Add a logged-out state** to `SectionMenu`'s UserType.
 
+### 3.6 Build plan
+
+1. `SectionMenuItem`: 14px SemiBold, sub-item text at 32px (`spacing/400`), remove the leftover hidden icon / chevron layers, add hover and keyboard-focus states, bind text and background to theme tokens.
+2. New `SectionMenuGroup`: a section row plus its sub-items, Closed / Open, for the subcategories.
+3. `SectionMenu`: use `SectionMenuGroup`, one section shown open, UserType adds loggedOut; existing Figma menu items stay.
+4. Documentation container, contrast checks, export, drift doc and Google Sheet, status doc, Claude design system.
+
 ### 3.7 Built in Figma (2026-11-06)
 
 WordPress Elements ▸ Menus and Parts:
@@ -154,15 +161,36 @@ WordPress Elements ▸ Menus and Parts:
 - **`SectionMenu`** (`456:5837`, now 20 variants): section rows replaced by `SectionMenuGroup` (News open with News, Latest Headlines, Politics, Crime and Public Safety, Education, Weather); nonSub gets a "Subscribe" row before Log Out; new **UserType=loggedOut** (Subscribe, Log In) for all 5 devices; drawer on `color/surface/nav-panel`. Existing menu items kept.
 - Production differences: red-dashed "Production differences" note under Section Menu Group; `design-vs-production.md` 10.4–10.8 (and 10.2 updated); Google Sheet "Other fixes" rows 10.4–10.8.
 - Contrast (row text on `color/surface/nav-panel` #FBFBFB): 16.1:1 (#1F1E1C) to 19.2:1 (#0A0908) in every theme mode; focus ring #000000 20.3:1.
-- **Still to do:** export (`section-menu`, `section-menu-item`, new `section-menu-group`), the Claude design system, and the open items below.
-- **Open questions for Karl:** the Home row's icon sits at 12px like the row text (production 10px, a tie between 8 and 12); LG-TabletH (1024px) shows "All Sections" and no weather row in Figma, but production switches to the hamburger and shows the weather row below 1040px.
+- **Still to do:** export (`section-menu`, `section-menu-item`, new `section-menu-group`) and the Claude design system, held until Karl signs off on the 2026-11-09 changes (§3.9).
+- ~~Open questions~~ answered 2026-11-09 (Karl): Home icon and rows both at 16px; LG-TabletH matches production (§3.9).
 
-### 3.6 Build plan
+### 3.8 Header and spacing at every width (Denver Post, logged out, 2026-11-09)
 
-1. `SectionMenuItem`: 14px SemiBold, sub-item text at 32px (`spacing/400`), remove the leftover hidden icon / chevron layers, add hover and keyboard-focus states, bind text and background to theme tokens.
-2. New `SectionMenuGroup`: a section row plus its sub-items, Closed / Open, for the subcategories.
-3. `SectionMenu`: use `SectionMenuGroup`, one section shown open, UserType adds loggedOut; existing Figma menu items stay.
-4. Documentation container, contrast checks, export, drift doc and Google Sheet, status doc, Claude design system.
+Karl resized the window; the drawer was opened by script (no clicks). Same at every width unless noted:
+
+| Width | Toggle | × from the left | "All Sections" | Weather row | Newsletter: divider to prompt |
+|---|---|---|---|---|---|
+| 1728 | 140 × 64 | 58px (43px page margin + 15) | shown, 4px after the × | hidden | 15px |
+| 1280 (1249 page) | 140 × 64 | 46px | shown | hidden | 15px |
+| 1024 | 50 × 64 | 41px | hidden | shown, 61px | 30px |
+| 768 | 50 × 64 | 34px | hidden | shown | 30px |
+| 360 | 50 × 64 | 24px | hidden | shown | 30px |
+| 340 | 50 × 64 | 23.5px | hidden | shown | 30px |
+
+- Drawer: 300px, `top: 64px`, **1px #0A0908 top border** across the drawer (not under the toggle only), white on Denver Post; 12px top padding, 48px bottom padding, then a **1px #0A0908 divider** above the newsletter.
+- Subscribe Now: 230 × 44, margins 12px 35px. Home row: 36px, icon at 10px, 15px SemiBold #000000. Rows 37.5px apart, text at 13.18px. Newsletter: prompt 14px Bold centered, 12px, Sign Up 230 × 40, 15px below.
+- Weather row (below 1040px): padding 0 15px 5px; temperature Helvetica 16px Bold + 26px icon; date 15px SemiBold, 12px to the right; "Digital Replica Edition" 12px Medium, 10.87px below.
+
+### 3.9 Changes from the five-width check (Karl, 2026-11-09)
+
+- **Rows 36px** (production 37.5); **row text, Home icon and the header × all 16px from the left** (`spacing/200`; design choice for the rows, rounding for the ×); sub-items stay at 32px. Text size unchanged.
+- **Lines:** the drawer's top border and the newsletter divider use `color/gray/black` (#000000, the nearest gray to #0A0908); the drawer's top border spans the full 300px; the header's own divider is hidden in the open state.
+- **Spacing to production:** 12px drawer top padding (`spacing/150`); Subscribe Now 12px above and below, 36px sides (`spacing/450`, new); Button Primary keeps its 8px padding; weather row 0 16 4, 12px above the e-Edition link; 48px below the last row (`spacing/600`, new); newsletter 16px above the prompt at XL-Desktop and 32px on the other devices, 12px to the button, 16px below, 36px sides.
+- **States:** new **Pressed** (underline + `color/gray/600` tile); Hover stays underline only.
+- **Title Case forced** on row and sub-item labels (no automatic proper title case exists).
+- **LG-TabletH matches production:** × only (no "All Sections"), weather row shown; the closed toggle is the TabletV hamburger.
+- New tokens `spacing/450` (36) and `spacing/600` (48): added in the main file, pull request #14 (`review/spacing-450-600`, stacked on #13). They're bound in WordPress Elements once the library is published.
+- Drift: `design-vs-production.md` 10.6 (rewritten), 10.7 (lines), 10.8 (Pressed).
 
 ---
 
