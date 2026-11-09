@@ -60,7 +60,9 @@ $mng-spacing-200: 16px;
 $mng-spacing-250: 20px;
 $mng-spacing-300: 24px;
 $mng-spacing-400: 32px;
+$mng-spacing-450: 36px;
 $mng-spacing-500: 40px;
+$mng-spacing-600: 48px;
 $mng-radius-sm: 4px;
 $mng-radius-utility: 5px;
 $mng-radius-lg: 8px;
@@ -136,7 +138,9 @@ $mng-core: (
   "spacing-250": $mng-spacing-250,
   "spacing-300": $mng-spacing-300,
   "spacing-400": $mng-spacing-400,
+  "spacing-450": $mng-spacing-450,
   "spacing-500": $mng-spacing-500,
+  "spacing-600": $mng-spacing-600,
   "radius-sm": $mng-radius-sm,
   "radius-utility": $mng-radius-utility,
   "radius-lg": $mng-radius-lg,
