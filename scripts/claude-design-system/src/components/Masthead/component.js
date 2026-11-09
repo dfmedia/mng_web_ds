@@ -131,7 +131,7 @@ function MastheadAccount(p) {
     status = h('button', { type: 'button', className: 'mngds-masthead__account', 'aria-haspopup': 'true', 'aria-expanded': 'false',
         'aria-label': p.accountLabel || name, onClick: p.onAccountClick },
       h(MastheadAvatar, { user: p.user, unknown: !p.adFree }),
-      h('span', { className: 'mngds-masthead__chevron' }, h(Icon, { name: 'arrow-down', size: 10 })));
+      h('span', { className: 'mngds-masthead__chevron' }, h(Icon, { name: 'arrow-down', size: 12 })));
   }
   return h('div', { className: 'mngds-masthead__account-menu' }, status, search);
 }

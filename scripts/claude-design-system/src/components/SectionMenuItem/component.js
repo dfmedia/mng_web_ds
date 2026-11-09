@@ -31,7 +31,7 @@ function SectionMenuItem(props) {
   var inner = [
     icon ? h('span', { key: 'i', className: base + '__icon' }, h(Icon, { name: props.iconName || 'home3', size: 16 })) : null,
     h('span', { key: 'l', className: base + '__label' }, props.label || (sub ? 'SubSection Item Name' : 'Section Item Name')),
-    hasSubs ? h('span', { key: 'c', className: base + '__chevron' }, h(Icon, { name: open ? 'arrow-up' : 'arrow-down', size: 16 })) : null
+    hasSubs ? h('span', { key: 'c', className: base + '__chevron' }, h(Icon, { name: open ? 'arrow-up' : 'arrow-down', size: 12 })) : null
   ];
   if (hasSubs) {
     return h('button', Object.assign(rest(props, used), { type: 'button', className: cls, 'aria-expanded': open ? 'true' : 'false',

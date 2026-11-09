@@ -1421,13 +1421,13 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 
 **Status:** Open — low priority, likely closable with a single confirmation.
 
-### 10.4 Section menu drawer — chevrons point the other way (all 6 sites)
+### 10.4 Section menu drawer — chevrons point the other way and are larger (all 6 sites)
 
-**Figma spec (source of truth):** WordPress Elements ▸ Menus and Parts ▸ `SectionMenuItem` (456:5781) and `SectionMenuGroup` (3740:29156). A section with subcategories shows `arrow-downSMALL` (⌄) when closed and `arrow-upSmall` (⌃) when open (Karl, 2026-11-06: keep the design).
+**Figma spec (source of truth):** WordPress Elements ▸ Menus and Parts ▸ `SectionMenuItem` (456:5781) and `SectionMenuGroup` (3740:29156). A section with subcategories shows `arrow-downSMALL` (⌄) when closed and `arrow-upSmall` (⌃) when open (Karl, 2026-11-06: keep the design). Each is a 12 × 8 arrow (12px wide; 12px tall if it pointed sideways) centered in a 16px icon, in a 40px box at the right edge (Karl, 2026-11-09: keep the 12px size).
 
-**Production:** icomoon `::before` on the row link, 9px: `arrow-right` (U+E907, ›) when closed, `arrow-down` (U+E905, ⌄) when open. Same CSS on all 6 review sites.
+**Production:** icomoon `::before` on the row link, 9px: `arrow-right` (U+E907, ›) when closed, `arrow-down` (U+E905, ⌄) when open. Same CSS on all 6 review sites. At 9px the visible arrow is 5.6 × 9 closed and 9 × 5.6 open (Denver Post, measured 2026-11-09), about three quarters of the design's size, and it sits 7–9px from the drawer's right edge.
 
-**Action needed:** use ⌄ closed and ⌃ open on every theme (the design icons, or `arrow-down` and a rotated `arrow-down` / an up arrow from the font).
+**Action needed:** use ⌄ closed and ⌃ open on every theme (the design icons, or `arrow-down` and a rotated `arrow-down` / an up arrow from the font), drawn 12px wide: the font icons at `font-size: 12px` (up from 9px).
 
 **Status:** Open. Added 2026-11-06. Team: CMS.
 

@@ -11,7 +11,8 @@
 .mngds-section-menu-item--sub-item { padding-left: var(--mng-spacing-400); }
 .mngds-section-menu-item__icon { display: inline-flex; width: 16px; height: 16px; flex-shrink: 0; }
 .mngds-section-menu-item__label { flex: 1 1 auto; min-width: 0; }
-/* Chevron: 16px in a 40px box at the right edge (⌄ closed, ⌃ open; the design keeps these, design-vs-production 10.4). */
+/* Chevron: Figma's arrow-downSMALL / arrow-upSmall is a 12 x 8 arrow in a 16px icon, centered in a 40px box at the right edge.
+   The font's arrow-down / arrow-up at 12px draws the same 12px-wide arrow (⌄ closed, ⌃ open; design-vs-production 10.4). */
 .mngds-section-menu-item__chevron { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 36px; flex-shrink: 0; }
 /* States: Hover underlines the label; Pressed adds the color/gray/600 tile; InFocus a 2px color/gray/black ring inside the row
    (the drawer clips anything outside its 300px). */

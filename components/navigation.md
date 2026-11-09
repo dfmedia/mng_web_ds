@@ -106,7 +106,7 @@ One drawer serves both triggers: the desktop "All Sections" toggle and the hambu
 |---|---|---|
 | Section row | Noto Sans 14px (14.06) / 15px line, weight 600, 13px padding (13.18); the link is 40.6px but its `li` clips it to **37.5px**, so rows are 37.5px apart (corrected 2026-11-09) | Noto Sans 16px Bold, 40px tall |
 | Sub-item row | Same type as the section row (no demotion); text starts 29px from the edge (16px indent + 13px padding) | Text at 40px (a hidden icon slot pushes it in) |
-| Chevron | icomoon `::before`, 9px. Closed `arrow-right` (U+E907), open `arrow-down` (U+E905) | `arrow-downSMALL` closed, `arrow-upSmall` open |
+| Chevron | icomoon `::before`, 9px (arrow 5.6 × 9 closed, 9 × 5.6 open). Closed `arrow-right` (U+E907), open `arrow-down` (U+E905) | `arrow-downSMALL` closed, `arrow-upSmall` open: a 12 × 8 arrow in a 16px icon (drift 10.4) |
 | Text color | Theme nav text: #0A0908 (OCR, DP), #1F1E1C (CT, OS), #1A1A1A (CCDR, MCall) | #141414 |
 | Row background | #FFFFFF (OCR, DP), #FBFBFB (CT, OS), #FAFAFA (CCDR, MCall) | #FFFFFF |
 | Subscribe Now | 230px, 15px / 600, 14px / 10px padding, radius 4px, site primary fill, white text | Button Primary, 268px |
@@ -140,7 +140,7 @@ One drawer serves both triggers: the desktop "All Sections" toggle and the hambu
 
 ### 3.5 Decisions (Karl, 2026-11-06)
 
-- **Chevrons stay as designed** (down when closed, up when open). Production's › / ⌄ is drift.
+- **Chevrons stay as designed** (down when closed, up when open), and so does their size: 12px wide, larger than production's 9px (Karl, 2026-11-09). Production's › / ⌄ and size are drift (10.4).
 - **Rows are 14px SemiBold**, matching production (was 16px Bold in Figma).
 - **Section rows are a toggle plus a landing link:** the row is a button that opens its list, and the first sub-item is always the section's own page. Production's link-that-toggles is drift.
 - **Add a logged-out state** to `SectionMenu`'s UserType.
