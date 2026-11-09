@@ -1,6 +1,6 @@
 # Navigation
 
-> **Updated 2026-11-09** for the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
+> **Updated 2026-11-09** for the Weather Bug's second e-Edition link and market labels (§3.11), and the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
 >
 > **Updated 2026-09-25 — read this first.**
 > - **Where the header lives now.** The production-accurate header is the **Masthead** component set (`456:2572`, 75 variants: Device × State × Page) on the "Menus and Parts" page of **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`, formerly "Website Page Templates"). Its breakpoint audit is `breakpoint-audit.md` (this folder), and its production gaps are design-vs-production entries 7, 9, 28.2 and 33. The account dropdown's source is **AccountMenu** (`910:16425`) in the same file. The pilot Header, Account Trigger, Off-Canvas Section Panel and Account Dropdown Menu components mentioned in §3.2 and §9 were retired on 2026-09-25; the measurements in those sections are still valid.
@@ -199,6 +199,12 @@ Karl resized the window; the drawer was opened by script (no clicks). Same at ev
 - **Subscribe Now:** Button Primary, 40px tall, 8px padding (production 44px). Drift: 10.6. Newsletter prompt spans the full drawer; only the Sign Up button has the 36px side margins (a "Button Container" frame, `spacing/450`).
 - **Weather row matches production exactly** (AccuWeather widget, not ours; raw values allowed, Karl): Weather Bug `Location=SectionMenu` (`654:10019`): padding 0 15 5, 12px gap (`spacing/150`), temperature Helvetica Bold 16 / 16 with a 26.41px icon in a 27.1px row (top-aligned), the pair centered on the date column; date Noto Sans SemiBold 15 / 16; e-Edition Noto Sans Medium 12 / 12.8, 10.87px below (production `margin-top: 5.5%`); text `color/theme/nav-text`; no fill (the drawer shows through); 60.87px tall (production 60.7). Instance overrides in `SectionMenuItem` and `SectionMenu` were reset. Morning Call's widget shows two links (Daily e-Edition, Evening e-Edition).
 - `spacing/450` and `spacing/600` are now bound (library published): Subscribe Now and Sign Up side margins 36px, 48px above the newsletter divider.
+
+### 3.11 Weather Bug: a second e-Edition link, labels by market (Karl, 2026-11-09)
+
+- **New variant property `Evening e-Edition` = Off / On** on Weather Bug (`654:10020`), for both Locations. On adds a second link under the first: "Today’s e-Edition" and "Evening e-Edition" (Morning Call and Orlando Sentinel publish both). Off is the default (one link). The property is exposed through `SectionMenuItem`'s Weather row (nested instance), so it can be switched in any drawer.
+- SectionMenu, On: production spacing from Morning Call (300px drawer): 4.94px above each link (`margin-top: 5.5%`), row 72.47px tall (Figma 72.88). Masthead, On: same layout as the masthead's Off variant plus the second link (the masthead variant isn't production-exact; on Morning Call at 1046px the links are 5.33px apart and the date is 15px SemiBold / 16px).
+- **The e-Edition labels change by market.** The text in Figma is a placeholder; production uses each site's own wording, for example "Digital Replica Edition" (Denver Post), "Daily e-Edition" / "Evening e-Edition" (Morning Call), "e-Edition" (OC Register, Cañon City). Not built as options; noted here and in the Weather Bug component description. Labels are shown as typed (no forced case; production `text-transform: none`).
 
 ---
 
