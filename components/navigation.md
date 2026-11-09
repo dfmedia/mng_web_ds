@@ -183,14 +183,22 @@ Karl resized the window; the drawer was opened by script (no clicks). Same at ev
 
 ### 3.9 Changes from the five-width check (Karl, 2026-11-09)
 
-- **Rows 36px** (production 37.5); **row text, Home icon and the header × all 16px from the left** (`spacing/200`; design choice for the rows, rounding for the ×); sub-items stay at 32px. Text size unchanged.
+- **Rows 36px** (production 37.5); **row text and Home icon 16px from the left** (`spacing/200`, design choice); sub-items stay at 32px. Text size unchanged. (The header × also moved to 16px here; replaced in §3.10.)
 - **Lines:** the drawer's top border and the newsletter divider use `color/gray/black` (#000000, the nearest gray to #0A0908); the drawer's top border spans the full 300px; the header's own divider is hidden in the open state.
-- **Spacing to production:** 12px drawer top padding (`spacing/150`); Subscribe Now 12px above and below, 36px sides (`spacing/450`, new); Button Primary keeps its 8px padding; weather row 0 16 4, 12px above the e-Edition link; 48px below the last row (`spacing/600`, new); newsletter 16px above the prompt at XL-Desktop and 32px on the other devices, 12px to the button, 16px below, 36px sides.
+- **Spacing to production:** 12px drawer top padding (`spacing/150`); Subscribe Now 12px above and below, 36px sides (`spacing/450`, new); Button Primary keeps its 8px padding; weather row (replaced in §3.10 by production's exact values); 48px below the last row (`spacing/600`, new); newsletter 16px above the prompt at XL-Desktop and 32px on the other devices, 12px to the button, 16px below, 36px sides.
 - **States:** new **Pressed** (underline + `color/gray/600` tile); Hover stays underline only.
 - **Title Case forced** on row and sub-item labels (no automatic proper title case exists).
 - **LG-TabletH matches production:** × only (no "All Sections"), weather row shown; the closed toggle is the TabletV hamburger.
-- New tokens `spacing/450` (36) and `spacing/600` (48): added in the main file, pull request #14 (`review/spacing-450-600`, stacked on #13). They're bound in WordPress Elements once the library is published.
+- New tokens `spacing/450` (36) and `spacing/600` (48): added in the main file, pull request #14 (`review/spacing-450-600`, stacked on #13). Bound in WordPress Elements on 2026-11-09 after Karl published the library (§3.10).
 - Drift: `design-vs-production.md` 10.6 (rewritten), 10.7 (lines), 10.8 (Pressed).
+
+### 3.10 Toggle, label and weather row (Karl, later on 2026-11-09)
+
+- **Toggle is the same in both states.** Checked on Morning Call at 1728px: one element (`#menu-toggle`, 15px padding), only the icon swaps (`icon-hamburger` ↔ `icon-close`); position, size and the 4px gap to "All Sections" don't change (closed icon at 57.8px, open at 58.2px: scrollbar). In Figma the open × had been moved to 16px; `SectionMenuHeader`'s Open variants are now copies of the Closed ones with the `close` icon (XL-Desktop: icon at 20px, label at 56px; TabletV / Mobile: icon centered at 24px). The header's own divider stays hidden when open (the drawer's top border is the line). Drift: 10.6.
+- **"All Sections" label:** 16px SemiBold in both states (`font/style/semibold`; was Bold). Production is 15px SemiBold; size kept. Drift: 10.6.
+- **Subscribe Now:** Button Primary, 40px tall, 8px padding (production 44px). Drift: 10.6. Newsletter prompt spans the full drawer; only the Sign Up button has the 36px side margins (a "Button Container" frame, `spacing/450`).
+- **Weather row matches production exactly** (AccuWeather widget, not ours; raw values allowed, Karl): Weather Bug `Location=SectionMenu` (`654:10019`): padding 0 15 5, 12px gap (`spacing/150`), temperature Helvetica Bold 16 / 16 with a 26.41px icon in a 27.1px row (top-aligned), the pair centered on the date column; date Noto Sans SemiBold 15 / 16; e-Edition Noto Sans Medium 12 / 12.8, 10.87px below (production `margin-top: 5.5%`); text `color/theme/nav-text`; no fill (the drawer shows through); 60.87px tall (production 60.7). Instance overrides in `SectionMenuItem` and `SectionMenu` were reset. Morning Call's widget shows two links (Daily e-Edition, Evening e-Edition).
+- `spacing/450` and `spacing/600` are now bound (library published): Subscribe Now and Sign Up side margins 36px, 48px above the newsletter divider.
 
 ---
 

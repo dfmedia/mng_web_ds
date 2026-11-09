@@ -1447,21 +1447,22 @@ A device-signal CSS class is added client-side (confirmed not server-side) sligh
 | Row height | 37.5px (the `li` clips its 40.6px link) | 36px | Rounded to the 4 / 8 grid (Karl) |
 | Row text and Home icon from the left | text 13.18px, Home icon 10px | 16px (`spacing/200`), all aligned | **Design choice** (Karl, 2026-11-09) |
 | Sub-item text from the left | 29.2px | 32px (`spacing/400`) | Rounded; 28px has no token |
-| × in the open header | page margin + 15px: 58px at 1728, 46 at 1280, 41 at 1024, 34 at 768, 24 at 360, 23.5 at 340 | 16px from the left at every width (`spacing/200`) | Nearest multiple of 8 (Karl) |
-| "All Sections" after the × | 4px | 4px (`spacing/050`) | Matches |
+| Toggle (hamburger closed, × open; same element, only the icon changes) | 15px padding inside the page margin: icon at 58px at 1728, 46 at 1280, 41 at 1024, 34 at 768, 24 at 360, 23.5 at 340; "All Sections" 4px after the icon | Both states the same (`SectionMenuHeader`): XL-Desktop 8px padding (`spacing/100`) + 40px target, icon at 20px, "All Sections" 20px after the icon; below desktop the icon is centered in a 64px box (24px) | Design component; drift (Karl, 2026-11-09) |
+| "All Sections" label | Noto Sans 15px SemiBold | 16px SemiBold (`font/size/16`, `font/style/semibold`) | Drift: size kept (Karl, 2026-11-09) |
 | Space above Subscribe Now | 12px drawer padding + 12px margin | 12 + 12 (`spacing/150`) | Matches |
 | Subscribe Now / Sign Up side margins | 35px (230px buttons) | 36px (`spacing/450`, 228px buttons) | Rounded; new token (pull request #14) |
-| Subscribe Now height | 44px | 40px (Button Primary, 8px padding kept) | Design component (Karl) |
+| Subscribe Now height | 44px (14px / 10px padding) | 40px (Button Primary styling and 8px padding kept) | Drift: design component (Karl, 2026-11-09) |
 | Below Subscribe Now | 12px | 12px (`spacing/150`) | Matches |
-| Weather row padding (below 1040px) | 0 15px 5px; e-Edition 10.87px below the date | 0 16px 4px; 12px (`spacing/150`) | Rounded |
 | Below the last row | 48px | 48px (`spacing/600`) | Matches; new token (pull request #14) |
 | Newsletter: divider to prompt | 15px at desktop; 30px below 1040px | 16px (`spacing/200`) at desktop; 32px (`spacing/400`) below 1040px | Rounded |
 | Newsletter: prompt to button / below button | 12px / 15px | 12px / 16px | Rounded |
 | Label case | as typed in the CMS menu (no `text-transform`) | Title Case forced (Karl, 2026-11-09) | No automatic "proper" title case exists in CSS or Figma; `capitalize` also capitalizes "and", "of" |
 
-**Action needed:** `#pushnav > li` 36px tall with the text vertically centered; 16px left padding on rows and the Home link, 32px on sub-items; the open-state × 16px from the left edge of the screen; 36px side margins on Subscribe Now and Sign Up; weather row padding 0 16px 4px and 12px above the e-Edition link; newsletter 16px above the prompt at desktop and 32px below 1040px, 16px below the button; `text-transform: capitalize` on row and sub-item labels.
+**Weather row (below 1040px):** not drift. It's the AccuWeather widget, which we don't control, so the design matches production exactly with raw values (Karl, 2026-11-09): padding 0 15px 5px; temperature Helvetica Bold 16 / 16px with a 26.41px icon, top-aligned, the pair centered on the date column; date Noto Sans SemiBold 15 / 16px, 12px to the right; e-Edition link Noto Sans Medium 12 / 12.8px, 10.87px below the date (production: `margin-top: 5.5%` of the 197.6px column); 60.7px tall. Measured on Denver Post and Morning Call; Morning Call shows two links (Daily e-Edition, Evening e-Edition).
 
-**Status:** Open. Added 2026-11-06; rewritten 2026-11-09 after the five-width check. Team: CMS.
+**Action needed:** `#pushnav > li` 36px tall with the text vertically centered; 16px left padding on rows and the Home link, 32px on sub-items; the toggle as in the design (XL-Desktop: 8px padding, 40px icon target, label 20px after the icon, 16px SemiBold; below desktop: icon centered in a 64px box); 36px side margins on Subscribe Now and Sign Up and Subscribe Now 40px tall (Button Primary); newsletter 16px above the prompt at desktop and 32px below 1040px, 16px below the button; `text-transform: capitalize` on row and sub-item labels.
+
+**Status:** Open. Added 2026-11-06; rewritten 2026-11-09 after the five-width check; toggle, label and weather row updated later on 2026-11-09 (Karl). Team: CMS.
 
 ### 10.7 Section menu drawer — background, text and line colors
 
