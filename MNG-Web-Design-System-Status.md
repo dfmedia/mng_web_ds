@@ -73,6 +73,7 @@ The mercurynews.com and eastbaytimes.com sites were removed from the list on 202
 | `spacing/050` / `100` / `150` | 4 / 8 / 12 |
 | `spacing/200` / `250` / `300` | 16 / 20 / 24 |
 | `spacing/400` / `500` | 32 / 40 (added 2026-10-27, Karl: ModalsOffset FixedFooter and ModalsCenter card padding; pull request) |
+| `spacing/450` / `600` | 36 / 48 (added 2026-11-09, Karl: section menu drawer, Subscribe Now / Sign Up side margins and the space above the newsletter divider; branch `review/spacing-450-600`, pull request) |
 | `radius/sm` / `radius/utility` / `radius/lg` | 4 / 5 / 8 |
 | `radius/field` | 3 (added 2026-11-04, Karl: form field outlines; in Figma, not yet in the token files) |
 

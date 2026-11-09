@@ -1,14 +1,14 @@
 {
  "$description": "Snapshot of the MNG Web Design System Figma variables and shadow/* effect styles (file jFHYqhZbJjvWQmDI4myCsd), from one full read with scripts/build-tokens/extract.js through the Desktop Bridge plugin, saved by scripts/build-tokens/save-snapshot.py; never edit by hand. \"read\" is the date of that read; \"counts\" and \"hashes\" are what the read reported, and the saved data matches them. Input for make-tokens.py. Dashboard Typography is not included yet (Reader Dashboard tokens are added to core when ready).",
  "file": "jFHYqhZbJjvWQmDI4myCsd",
- "read": "2026-11-04",
+ "read": "2026-11-09",
  "counts": {
   "collections": {
    "Colors": 33,
    "Type Primitives": 31,
    "Typeography Tokens": 110,
    "Typography Theme": 7,
-   "Spacing & Radius": 12
+   "Spacing & Radius": 14
   },
   "effectStyles": 3
  },
@@ -18,7 +18,7 @@
    "Type Primitives": "03e9b7706ae082",
    "Typeography Tokens": "0b5b4326362dd5",
    "Typography Theme": "003945fc31d96f",
-   "Spacing & Radius": "0eb45994b886cf"
+   "Spacing & Radius": "1ee232b556ebf5"
   },
   "effectStyles": "0f6040d9ec89ac"
  },
@@ -2794,6 +2794,28 @@
     "description": "3px. Form fields: the outline of Form Field, Code Box and Search Field / Obituaries, the outer corners of a field's icon frame, and the check box square (Karl, 2026-11-04). Not for buttons (radius/sm, 4px) or containers (radius/utility, 5px).",
     "scopes": [
      "CORNER_RADIUS"
+    ]
+   },
+   {
+    "name": "spacing/450",
+    "type": "FLOAT",
+    "values": {
+     "Value": 36
+    },
+    "description": "36px. Added 2026-11-09 (Karl) for the section menu drawer: Subscribe Now and Sign Up side margins (production 35px).",
+    "scopes": [
+     "GAP"
+    ]
+   },
+   {
+    "name": "spacing/600",
+    "type": "FLOAT",
+    "values": {
+     "Value": 48
+    },
+    "description": "48px. Added 2026-11-09 (Karl) for the section menu drawer: space below the last row, above the newsletter divider (production 48px).",
+    "scopes": [
+     "GAP"
     ]
    }
   ]

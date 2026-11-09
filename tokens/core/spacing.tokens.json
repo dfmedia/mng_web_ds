@@ -114,6 +114,22 @@
         }
       }
     },
+    "450": {
+      "$value": {
+        "value": 36,
+        "unit": "px"
+      },
+      "$description": "36px. Added 2026-11-09 (Karl) for the section menu drawer: Subscribe Now and Sign Up side margins (production 35px).",
+      "$extensions": {
+        "com.mng": {
+          "figma": {
+            "file": "MNG Web Design System",
+            "collection": "Spacing & Radius",
+            "variable": "spacing/450"
+          }
+        }
+      }
+    },
     "500": {
       "$value": {
         "value": 40,
@@ -126,6 +142,22 @@
             "file": "MNG Web Design System",
             "collection": "Spacing & Radius",
             "variable": "spacing/500"
+          }
+        }
+      }
+    },
+    "600": {
+      "$value": {
+        "value": 48,
+        "unit": "px"
+      },
+      "$description": "48px. Added 2026-11-09 (Karl) for the section menu drawer: space below the last row, above the newsletter divider (production 48px).",
+      "$extensions": {
+        "com.mng": {
+          "figma": {
+            "file": "MNG Web Design System",
+            "collection": "Spacing & Radius",
+            "variable": "spacing/600"
           }
         }
       }
