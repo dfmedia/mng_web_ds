@@ -219,7 +219,7 @@ Karl resized the window; the drawer was opened by script (no clicks). Same at ev
 ### 3.12 Signed off, exported and published (Karl, 2026-11-09)
 
 - **Toggle spacing stays as designed** (Karl): XL-Desktop 8px padding, 40px icon target, "All Sections" 20px after the icon; it's a design choice, logged in design-vs-production 10.6 so production changes to match.
-- **Visible button inset:** Subscribe Now and Sign Up sit in a 36px (`spacing/450`) side margin, and Button Primary keeps its own 8px margin, so the visible buttons start 44px from the drawer edge and are 212px wide (production 35px / 230px). Recorded in 10.6.
+- **Visible button inset:** Subscribe Now and Sign Up sit in a 36px (`spacing/450`) side margin, and Button Primary keeps its own 8px margin, so the visible buttons start 44px from the drawer edge and are 212px wide (production 35px / 230px). Karl accepted this as the design (2026-11-09); recorded in 10.6.
 - **Export** (2026-11-09): `section-menu`, `section-menu-header`, `section-menu-item`, new `section-menu-group`, `weather-bug` and `masthead` re-exported to `components/wordpress/` on branch `feature/side-nav-export`, pull request #15 (stacked on #14, whose `spacing/450` / `600` the tokens reference). Merge order #12 → #13 → #14 → #15.
 - **Claude design system** (version 56, 2026-11-09): new `SectionMenu`, `SectionMenuHeader`, `SectionMenuItem`, `SectionMenuGroup` and `WeatherBug`; `Masthead` uses `WeatherBug` and a SemiBold "All Sections". Previews checked in a headless render in all three themes.
 - **Breakpoint:** the drawer's 1040px switch is listed in `components/breakpoint-audit.md` (site-wide catalog).
