@@ -9,7 +9,7 @@ component_key: 5cf04e3021e4ccd5357b9d77f3d03e02ed41dc28
 variants: 90
 tokens: masthead.tokens.json
 skeleton: masthead.html
-exported: 2026-11-03
+exported: 2026-11-09
 ---
 
 # Masthead
@@ -157,7 +157,7 @@ Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers
         - **AccountMenu Container** `FRAME`: 300×64, horizontal, gap 16, padding 0/40/0/0, fixed×fixed
           - **AccountMenu** `INSTANCE`: 293×64, horizontal, gap 8, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=XL-Desktop, UserType=loggedOut)
     - **Container** `FRAME`: 1040×64, horizontal, gap 14, padding 8/40/8/40, fill×fixed
-      - **Weather Bug** `INSTANCE`: 345×42, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead)
+      - **Weather Bug** `INSTANCE`: 285.78×40.73, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead, Evening e-Edition=Off)
       - **Section Name** `TEXT`: 278×54, hug×hug, "Section Name", Noto Serif Bold 40px
       - **Ad Blocks** `INSTANCE`: 320×50, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Ad Blocks (Device=All, Name=Sponsorship 1 320x50)
     - **Container** `FRAME`: 1040×48, vertical, gap 0, padding 0/0/0/0, fill×hug
@@ -463,27 +463,11 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.vector.background` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.vector.height` | 22.89px |
 | `masthead.base.masthead-container.container.vector.width` | 15.79px |
-| `masthead.base.masthead-container.container.weather-and-date.background` | `{color.gray.max}` |
-| `masthead.base.masthead-container.container.weather-and-date.gap` | `{spacing.150}` |
-| `masthead.base.masthead-container.container.weather-and-date.opacity` | 0 |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.gap` | `{spacing.050}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.today-s-e-edition.color` | `{color.gray.min}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.today-s-e-edition.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.today-s-e-edition.font-size` | `{font.size.12}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.today-s-e-edition.font-weight` | `{font.weight.regular}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.wednesday-september-25th-2022.color` | `{color.gray.min}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.wednesday-september-25th-2022.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.wednesday-september-25th-2022.font-size` | `{font.size.16}` |
-| `masthead.base.masthead-container.container.weather-and-date.date-and-e-edition.wednesday-september-25th-2022.font-weight` | `{font.weight.bold}` |
-| `masthead.base.masthead-container.container.weather-and-date.weather.87-f.color` | `{color.gray.min}` |
-| `masthead.base.masthead-container.container.weather-and-date.weather.87-f.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.weather-and-date.weather.87-f.font-size` | `{font.size.16}` |
-| `masthead.base.masthead-container.container.weather-and-date.weather.87-f.font-weight` | `{font.weight.bold}` |
-| `masthead.base.masthead-container.container.weather-and-date.weather.tornado.height` | 26px |
-| `masthead.base.masthead-container.container.weather-and-date.weather.tornado.icon-color` | `{color.gray.min}` |
-| `masthead.base.masthead-container.container.weather-and-date.weather.tornado.width` | 26px |
-| `masthead.base.masthead-container.container.weather-bug.height` | 42px |
-| `masthead.base.masthead-container.container.weather-bug.icon-color` | `{color.gray.min}` |
+| `masthead.base.masthead-container.container.weather-bug.height` | 40.73px |
+| `masthead.base.masthead-container.container.weather-bug.icon-color` | `{color.theme.nav-text}` |
+| `masthead.base.masthead-container.container.weather-bug-spacer-hidden.height` | 40.73px |
+| `masthead.base.masthead-container.container.weather-bug-spacer-hidden.icon-color` | `{color.theme.nav-text}` |
+| `masthead.base.masthead-container.container.weather-bug-spacer-hidden.width` | 285.78px |
 | `masthead.base.masthead-container.divider.border-color` | `{color.gray.400}` |
 | `masthead.base.masthead-container.divider.border-style` | solid |
 | `masthead.base.masthead-container.divider.border-width` | 1px |
@@ -765,9 +749,9 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.weather-ad-row.logo.logo-vectors.vector.background` | `{color.gray.min}` |
 | `masthead.base.masthead-container.weather-ad-row.logo.logo-vectors.vector.height` | 22.89px |
 | `masthead.base.masthead-container.weather-ad-row.logo.logo-vectors.vector.width` | 15.79px |
-| `masthead.base.masthead-container.weather-ad-row.weather-bug.height` | 42px |
-| `masthead.base.masthead-container.weather-ad-row.weather-bug.icon-color` | `{color.gray.min}` |
-| `masthead.base.masthead-container.weather-ad-row.weather-bug.width` | 345px |
+| `masthead.base.masthead-container.weather-ad-row.weather-bug.height` | 40.73px |
+| `masthead.base.masthead-container.weather-ad-row.weather-bug.icon-color` | `{color.theme.nav-text}` |
+| `masthead.base.masthead-container.weather-ad-row.weather-bug.width` | 285.78px |
 | `masthead.base.mastheadtop.background` | `{color.gray.max}` |
 | `masthead.base.mastheadtop.menus-container.background` | `{color.gray.max}` |
 | `masthead.base.mastheadtop.menus-container.gap` | 14px |
@@ -1165,7 +1149,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 104px |
-| `masthead.state-default.masthead-container.container.weather-bug.width` | 345px |
+| `masthead.state-default.masthead-container.container.weather-bug.width` | 285.78px |
 | `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 293px |
 | `masthead.state-default.section-menu.navmenu.width` | 366px |
 | `masthead.state-adfree.masthead-container.container.weather-bug.width` | 333px |
@@ -1311,7 +1295,7 @@ Scope: instances in the Figma file **WordPress Elements** only (other files that
 
 Placed on pages: Menus and Parts ×55, Homepage ×6, Article Page ×4, Section Front ×2.
 
-**Built from:** SectionMenu ×90, AccountMenu ×88, Icons ×40, Ad Blocks ×29, Weather Bug ×10, NavMenu ×6, SocialButtons ×2, tornado ×1
+**Built from:** SectionMenu ×90, AccountMenu ×88, Icons ×40, Ad Blocks ×29, Weather Bug ×11, NavMenu ×6, SocialButtons ×2
 Icon variants: `search` ×20, `equalizer2` ×20.
 
 ## Production
@@ -1336,4 +1320,4 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 - `masthead.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

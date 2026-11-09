@@ -27,6 +27,10 @@ export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   date?: string;
   temperature?: string;
   eEditionLabel?: string;
+  /** Weather Bug: second link (several markets publish an evening edition). true adds it. */
+  eveningEdition?: boolean;
+  eveningLabel?: string;
+  eveningHref?: string;
   eEditionHref?: string;
   sectionsLabel?: string;
   onMenuClick?: (e: React.MouseEvent) => void;

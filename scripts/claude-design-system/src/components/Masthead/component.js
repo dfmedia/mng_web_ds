@@ -2,7 +2,7 @@
    Top of the page (Default / AdFree) in flow; the condensed content (Scrolled / AdFree-Scrolled) sticks to the top of the
    scroll area once the reader scrolls (production: headroom.js .headroom--not-top). The device comes from the rendered width
    (WordPress grid: 1040 / 800 / 640 / 360) unless `device` forces one. Parts drawn here: SectionMenu (closed), AccountMenu
-   (closed: UserStatus, UserPic, the search button), Weather Bug, SocialButtons, NavMenu (closed), Ad Blocks. */
+   (closed: UserStatus, UserPic, the search button), WeatherBug (its own component since 2026-11-09), SocialButtons, NavMenu (closed), Ad Blocks. */
 var MASTHEAD_NAV = ['News', 'Fakeville Local', 'Sportsball', 'Stuff Happening', 'Obituaries', 'Sponsored Content',
   'Public Notices', 'Business', 'Politics', 'Entertainment', 'Suburbs'];
 var MASTHEAD_TRENDING = ['Dragon sightings near Fakeville shire', 'Pseudonyms up 3-1', 'Fire Storms in the forecast',
@@ -226,12 +226,8 @@ function Masthead(props) {
   };
   var weather = function () {
     return h('div', { className: 'mngds-masthead__weather' },
-      h('div', { className: 'mngds-masthead__temp' },
-        h('span', { className: 'mngds-masthead__temp-value' }, props.temperature || '87°F'),
-        h('svg', { className: 'mngds-masthead__weather-icon', viewBox: '0 0 26 26', 'aria-hidden': 'true', focusable: 'false' }, h('path', { d: MASTHEAD_TORNADO, fill: 'currentColor' }))),
-      h('div', { className: 'mngds-masthead__date' },
-        h('span', { className: 'mngds-masthead__date-text' }, props.date || 'Wednesday, September 25th, 2022'),
-        h('a', { className: 'mngds-masthead__e-edition', href: props.eEditionHref || '#' }, props.eEditionLabel || 'Today’s E Edition')));
+      h(WeatherBug, { location: 'Masthead', eveningEdition: props.eveningEdition, temperature: props.temperature, date: props.date,
+        eEditionLabel: props.eEditionLabel, eEditionHref: props.eEditionHref, eveningLabel: props.eveningLabel, eveningHref: props.eveningHref }));
   };
 
   if (page === 'Obituaries') {

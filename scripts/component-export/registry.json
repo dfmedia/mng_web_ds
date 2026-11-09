@@ -1001,17 +1001,21 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5837",
       "documentationFrame": "3349:66621",
-      "description": "The hamburger / All Sections toggle (View=Closed) and the section menu drawer it opens (View=Open). Device = the 5 Masthead widths; UserType (all, subscriber, nonSub) changes the drawer's call to action.",
+      "description": "The section menu drawer (\"All Sections\" at 1040px and up, the hamburger below) and its closed toggle. View = Closed / Open; Device = the 5 Masthead widths; UserType = all (Closed), subscriber, nonSub, loggedOut changes the calls to action and account rows.",
       "rules": [
-        "**Closed:** the hamburger icon (and \"All Sections\" at 1040px and up) in the masthead's 64px row.",
-        "**Open:** a drawer under the masthead with SectionMenuHeader, the Weather Bug (SectionMenu location) and SectionMenuItem rows; non-subscribers get a Subscribe call to action.",
-        "**Accessibility:** the toggle is a button with aria-expanded and aria-controls pointing at the drawer; Esc closes it and returns focus to the toggle."
+        "**Closed:** the SectionMenuHeader toggle in the masthead's 64px row: hamburger and \"All Sections\" (16px SemiBold) on XL-Desktop, hamburger only below.",
+        "**Open:** a 300px drawer under the 64px header on `color/surface/nav-panel`, with a 1px `color/gray/black` top border and 12px top padding (`spacing/150`). The toggle keeps its place and only swaps the hamburger for the × (same as production).",
+        "**Order:** Subscribe Now (nonSub, loggedOut; Button Primary 40px, 12px above and below, 36px sides `spacing/450`) → Weather Bug (below 1040px) → Home (home3 icon) → sections (SectionMenuGroup; one open at a time, two levels) → account rows (subscriber: Log Out; nonSub: Subscribe, Log Out; loggedOut: Subscribe, Log In) → 48px (`spacing/600`) → 1px `color/gray/black` divider → newsletter sign-up.",
+        "**Rows:** 36px, Noto Sans SemiBold 14, Title Case, text and Home icon 16px from the left (`spacing/200`), sub-items at 32px (`spacing/400`).",
+        "**Accessibility:** the toggle is a button with aria-expanded and aria-controls pointing at the drawer; Esc closes it and returns focus to the toggle. Each section row is a button (aria-expanded, aria-controls); its first sub-item is the section's own page.",
+        "Labels in the drawer are placeholders: each site's menu comes from its CMS (sections, sub-sections and the e-Edition labels vary by market)."
       ],
-      "breakpoints": "| Device | Viewport | Built at |\n|---|---|---|\n| XS-Fold | below 640px | 340px |\n| SM-Mobile | below 640px | 360px |\n| MD-TabletV | 640–799px | 768px |\n| LG-TabletH | 800–1039px | 1024px |\n| XL-Desktop | 1040px and up | 1040px (Masthead) / 1280px |",
+      "breakpoints": "| Device | Viewport | Built at | Toggle | Weather row | Newsletter: divider to prompt |\n|---|---|---|---|---|---|\n| XS-Fold | below 640px | 340px | hamburger / × only | shown | 32px |\n| SM-Mobile | below 640px | 360px | hamburger / × only | shown | 32px |\n| MD-TabletV | 640–799px | 768px | hamburger / × only | shown | 32px |\n| LG-TabletH | 800–1039px | 1024px | hamburger / × only | shown | 32px |\n| XL-Desktop | 1040px and up | 1280px | icon + \"All Sections\" | hidden (it's in the masthead) | 16px |\n\nProduction switches at 1040px (`max-width: 64.9375em`), checked on Denver Post at 1728, 1280, 1024, 768, 360 and 340px (2026-11-09). The drawer is 300px at every width.",
       "knownIssues": [
-        "Variant descriptions are empty; the set description documents the grid."
+        "Variant descriptions are empty; the set description documents the grid.",
+        "Production differs: chevrons, section rows as links, row height and padding, toggle spacing, colors, hover / pressed / focus (design-vs-production 10.4–10.8)."
       ],
-      "production": "Production section menu (`.sections-menu`), checked with the Masthead audit 2026-09-15."
+      "production": "Production section menu (`.wrapper-nav.pushnav`, `ul#pushnav`): six-site audit 2026-11-06 and five-width check on Denver Post 2026-11-09 (components/navigation.md §3)."
     },
     {
       "slug": "section-menu-header",
@@ -1022,15 +1026,19 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5745",
       "documentationFrame": null,
-      "description": "The top of the section menu drawer and its closed trigger. View = Closed / Open; Device = Desktop, TabletV, Mobile.",
+      "description": "The section menu toggle: hamburger when the drawer is closed, × when it's open; the same size and place in both states. View = Closed / Open; Device = Desktop (icon + \"All Sections\"), TabletV, Mobile (icon only).",
       "rules": [
-        "Used inside SectionMenu only."
+        "Used inside SectionMenu and the Masthead.",
+        "**Desktop:** 8px padding (`spacing/100`), 40px icon target, \"All Sections\" Noto Sans SemiBold 16 8px after it (the label starts 20px after the icon). **TabletV / Mobile:** icon centered in a 64px box.",
+        "**Open = Closed** with the `close` icon (production is one button that swaps its icon). The header's divider is hidden when open; the drawer's top border is the line.",
+        "A button with aria-expanded and aria-controls; the visible label (or aria-label \"Open menu of all sections\" / \"Close menu\" when icon only) names it."
       ],
       "breakpoints": null,
       "knownIssues": [
-        "No documentation container yet."
+        "No documentation container yet.",
+        "Production differs: the icon sits 15px inside the page margin with \"All Sections\" 4px after it at 15px (design-vs-production 10.6)."
       ],
-      "production": "Production section menu header."
+      "production": "Production `#menu-toggle` (15px padding, `icon-hamburger` / `icon-close`, `.menu-label` 15px / 600), checked on Denver Post and Morning Call 2026-11-09."
     },
     {
       "slug": "section-menu-item",
@@ -1041,23 +1049,49 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5781",
       "documentationFrame": null,
-      "description": "One row of the section menu drawer: kind = main, subItem, Weather, CTAButton, CTAMessage; withSubItems adds a chevron and View sets its open state; leftIcon adds an icon.",
+      "description": "One row of the section menu drawer: kind = main (section link), subItem (sub-section link), Weather (Weather Bug row), CTAButton (Subscribe Now) or CTAMessage (newsletter sign-up); withSubItems adds the chevron (⌄ closed, ⌃ open) and View sets its open state; leftIcon adds an icon (home3 on Home); State = Default, Hover, Pressed, InFocus on main and subItem rows.",
       "rules": [
-        "Used inside SectionMenu only.",
-        "Rows with sub-items are disclosure buttons (aria-expanded)."
+        "Used inside SectionMenu and SectionMenuGroup.",
+        "**Rows:** 36px tall, Noto Sans SemiBold 14 (`font/size/14`, `font/style/semibold`), Title Case, text `color/theme/nav-text` on `color/surface/nav-panel`; 16px left padding (`spacing/200`) with the Home icon aligned; sub-items at 32px (`spacing/400`).",
+        "**States:** Hover underlines the label; Pressed underlines it on `color/gray/600`; InFocus draws a 2px `color/gray/black` ring inside the row (the drawer clips outside it).",
+        "**CTAButton:** Button Primary (40px, its own 8px padding) with 12px above and below (`spacing/150`) and 36px sides (`spacing/450`). **CTAMessage:** 48px space (`spacing/600`), a 1px `color/gray/black` divider, the prompt (Noto Sans Bold 14, centered, full width) 16px below it, 12px to the Sign Up button (36px sides), 16px below.",
+        "Rows with sub-items are disclosure buttons (aria-expanded, aria-controls)."
       ],
       "breakpoints": null,
       "knownIssues": [
-        "No documentation container yet. Raw values with no token: 2px and 10px spacing."
+        "No documentation container yet.",
+        "The Weather row's Weather Bug is exposed so its Evening e-Edition option can be set from any drawer."
       ],
-      "production": "Production section menu items."
+      "production": "Production `#pushnav` rows (all 6 review sites, 2026-11-06; widths on Denver Post 2026-11-09). Differences: design-vs-production 10.4–10.8."
+    },
+    {
+      "slug": "section-menu-group",
+      "name": "SectionMenuGroup",
+      "group": "navigation",
+      "layer": "wordpress",
+      "order": 7,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3740:29156",
+      "documentationFrame": null,
+      "description": "A section with subcategories in the section menu drawer: Section Row (a SectionMenuItem toggle) and Sub Items (subItem rows). View = Closed / Open.",
+      "rules": [
+        "The Section Row is a button that opens and closes the list (aria-expanded, aria-controls); the first sub-item is always the section's own page (Karl, 2026-11-06).",
+        "Only one group is open at a time (exclusive accordion, as in production); two levels only (no third level on any review site).",
+        "Hide or add Sub Item rows in the instance; the sample shows 6."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "No documentation container yet.",
+        "Production differs: section rows are links that only open their list, and some groups have no landing link (design-vs-production 10.5)."
+      ],
+      "production": "Production `li.menu-item-has-children` with `ul.sub-menu` (all 6 review sites, 2026-11-06)."
     },
     {
       "slug": "account-menu",
       "name": "AccountMenu",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 7,
+      "order": 8,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "910:16425",
       "documentationFrame": "910:15618",
@@ -1079,7 +1113,7 @@
       "name": "SearchBar",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 8,
+      "order": 9,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5910",
       "documentationFrame": "456:5908",
@@ -1099,7 +1133,7 @@
       "name": "UserImage",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 9,
+      "order": 10,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5708",
       "documentationFrame": null,
@@ -1119,7 +1153,7 @@
       "name": "UserPic",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 10,
+      "order": 11,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5674",
       "documentationFrame": null,
@@ -1137,7 +1171,7 @@
       "name": "UserStatus",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 11,
+      "order": 12,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5728",
       "documentationFrame": "456:5671",
@@ -1157,28 +1191,28 @@
       "name": "Weather Bug",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 12,
+      "order": 13,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "654:10020",
       "documentationFrame": null,
-      "description": "Current temperature and weather icon with the date and the Today's E Edition link. Location = Masthead or SectionMenu.",
+      "description": "Current temperature and weather icon with the date and the e-Edition link(s). Location = Masthead (1040px and up) or SectionMenu (the open drawer, below 1040px); Evening e-Edition = Off (one link) / On (two links: Today’s e-Edition, Evening e-Edition).",
       "rules": [
-        "Masthead: top of the page at 1040px and up, left of the logo.",
-        "SectionMenu: inside the open drawer.",
-        "**Temperature:** Helvetica Bold 16, on purpose: the weather is a third-party widget we can't control (Karl, 2026-10-30). The date and E Edition link are Noto Sans."
+        "**Matches production exactly** (AccuWeather widget, third-party; raw values allowed, Karl 2026-11-09): temperature Helvetica Bold 16 / 16px with a 26.41px icon, top-aligned, the pair centered on the date column; date Noto Sans SemiBold 15 / 16px, 12px after the icon; links Noto Sans Medium 12 / 12.8px, shown as typed; text `color/theme/nav-text`.",
+        "**SectionMenu:** padding 0 15px 5px, `color/surface/nav-panel`; links 10.87px (one) / 4.94px (two) below the date (production `margin-top: 5.5%`). **Masthead:** no padding (the masthead places it), 213.37px date column, `color/gray/max`; links 11.73px / 5.33px apart.",
+        "Several markets publish two editions (Evening e-Edition = On). The link labels change by market (for example \"Digital Replica Edition\", \"Daily e-Edition\", \"e-Edition\"); the labels in Figma are placeholders."
       ],
       "breakpoints": null,
       "knownIssues": [
         "No documentation container yet."
       ],
-      "production": "Production masthead weather widget."
+      "production": "Production `.accuweather-wrap`, measured on Denver Post (one link) and Morning Call (two links) 2026-11-09."
     },
     {
       "slug": "footer",
       "name": "Footer",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 13,
+      "order": 14,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "354:1282",
       "documentationFrame": "803:1835",

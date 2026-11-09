@@ -1,0 +1,35 @@
+/* SectionMenuItem: components/wordpress/section-menu-item. Rows 36px, 300px drawer width (fills it), Noto Sans SemiBold 14,
+   Title Case, color/theme/nav-text on color/surface/nav-panel (16.1:1 or better; 14.5:1 on the Pressed tile). */
+.mngds-section-menu-item { box-sizing: border-box; display: block; width: 100%; margin: 0; background: var(--mng-color-surface-nav-panel); }
+.mngds-section-menu-item *, .mngds-section-menu-item *::before, .mngds-section-menu-item *::after { box-sizing: border-box; }
+.mngds-section-menu-item--main, .mngds-section-menu-item--sub-item {
+  display: flex; align-items: center; gap: var(--mng-spacing-100); height: 36px; padding: 0 0 0 var(--mng-spacing-200);
+  border: 0; color: var(--mng-color-theme-nav-text); text-align: left; text-decoration: none; cursor: pointer;
+  font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-14); font-weight: var(--mng-font-weight-semibold);
+  line-height: normal; text-transform: capitalize;
+}
+.mngds-section-menu-item--sub-item { padding-left: var(--mng-spacing-400); }
+.mngds-section-menu-item__icon { display: inline-flex; width: 16px; height: 16px; flex-shrink: 0; }
+.mngds-section-menu-item__label { flex: 1 1 auto; min-width: 0; }
+/* Chevron: 16px in a 40px box at the right edge (⌄ closed, ⌃ open; the design keeps these, design-vs-production 10.4). */
+.mngds-section-menu-item__chevron { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 36px; flex-shrink: 0; }
+/* States: Hover underlines the label; Pressed adds the color/gray/600 tile; InFocus a 2px color/gray/black ring inside the row
+   (the drawer clips anything outside its 300px). */
+.mngds-section-menu-item:hover .mngds-section-menu-item__label, .mngds-section-menu-item.is-hover .mngds-section-menu-item__label,
+.mngds-section-menu-item:active .mngds-section-menu-item__label, .mngds-section-menu-item.is-pressed .mngds-section-menu-item__label { text-decoration: underline; }
+.mngds-section-menu-item--main:active, .mngds-section-menu-item--sub-item:active, .mngds-section-menu-item.is-pressed { background: var(--mng-color-gray-600); }
+.mngds-section-menu-item:focus-visible, .mngds-section-menu-item.is-infocus { outline: 2px solid var(--mng-color-gray-black); outline-offset: -2px; }
+/* CTAButton: Subscribe Now, 12px above and below (spacing/150), 36px sides (spacing/450); Button Primary keeps its own 8px. */
+.mngds-section-menu-item--cta-button { padding: var(--mng-spacing-150) var(--mng-spacing-450); }
+/* CTAMessage: 48px (spacing/600), 1px color/gray/black divider, prompt 16px below (32px below 1040px: SectionMenu sets it),
+   12px to Sign Up (36px sides), 16px below. */
+.mngds-section-menu-item--cta-message { padding-top: var(--mng-spacing-600); }
+.mngds-section-menu-item__cta-content {
+  display: flex; flex-direction: column; gap: var(--mng-spacing-150); border-top: 1px solid var(--mng-color-gray-black);
+  padding: var(--mng-spacing-200) 0;
+}
+.mngds-section-menu-item__cta-text {
+  margin: 0; text-align: center; color: var(--mng-color-theme-nav-text);
+  font-family: var(--mng-font-family-noto-sans); font-size: var(--mng-font-size-14); font-weight: var(--mng-font-weight-bold); line-height: normal;
+}
+.mngds-section-menu-item__cta-button { padding: 0 var(--mng-spacing-450); }

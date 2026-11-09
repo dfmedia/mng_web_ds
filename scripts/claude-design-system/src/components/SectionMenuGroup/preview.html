@@ -1,0 +1,20 @@
+<!-- @dsCard group="WordPress Elements" height=360 subtitle="Figma: SectionMenuGroup · 2 variants" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SectionMenuGroup</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(I.SpecimenSection, { title: 'View', note: 'The first sub-item is the section’s own page. Click the row to open and close.' },
+      h(I.Specimen, { items: ['Closed', 'Open'].map(function (v) {
+        return { label: 'View=' + v, width: 332, node: h('div', { style: { width: 300 } }, h(function () {
+          var s = React.useState(v === 'Open');
+          return h(NS.SectionMenuGroup, { view: s[0] ? 'Open' : 'Closed', listId: 'g-' + v, onToggle: function () { s[1](!s[0]); } });
+        })) };
+      }) })));
+</script>
+</body>
+</html>

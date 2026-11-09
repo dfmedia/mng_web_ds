@@ -9,9 +9,9 @@
         "componentSet": "SectionMenuHeader",
         "page": "Menus and Parts"
       },
-      "production": "Production section menu header.",
+      "production": "Production `#menu-toggle` (15px padding, `icon-hamburger` / `icon-close`, `.menu-label` 15px / 600), checked on Denver Post and Morning Call 2026-11-09.",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-09"
     }
   },
   "section-menu-header": {
@@ -93,11 +93,11 @@
           },
           "font-weight": {
             "$type": "fontWeight",
-            "$value": "{font.weight.bold}",
+            "$value": "{font.weight.semibold}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Type Primitives/font/style/bold"
+                  "variable": "Type Primitives/font/style/semibold"
                 }
               }
             }
@@ -195,93 +195,6 @@
               "unit": "px"
             }
           },
-          "container": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 40,
-                "unit": "px"
-              }
-            },
-            "padding-bottom": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "padding-left": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "padding-right": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "padding-top": {
-              "$type": "dimension",
-              "$value": "{spacing.200}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/200"
-                  }
-                }
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 40,
-                "unit": "px"
-              }
-            },
-            "icons": {
-              "height": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 16,
-                  "unit": "px"
-                }
-              },
-              "icon-color": {
-                "$type": "color",
-                "$value": "{color.gray.min}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Colors/color/gray/min"
-                    }
-                  }
-                }
-              },
-              "width": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 16,
-                  "unit": "px"
-                }
-              }
-            }
-          },
           "icons": {
             "height": {
               "$type": "dimension",
@@ -311,6 +224,28 @@
           }
         }
       },
+      "root": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.gray.max}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/max"
+              }
+            }
+          }
+        },
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 64,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "view-closed": {
       "divider": {
         "border-color": {
           "$type": "color",
@@ -338,26 +273,6 @@
           "$type": "dimension",
           "$value": {
             "value": 0,
-            "unit": "px"
-          }
-        }
-      },
-      "root": {
-        "background": {
-          "$type": "color",
-          "$value": "{color.gray.max}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Colors/color/gray/max"
-              }
-            }
-          }
-        },
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 64,
             "unit": "px"
           }
         }

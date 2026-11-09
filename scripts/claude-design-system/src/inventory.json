@@ -678,8 +678,8 @@
      "name": "Masthead",
      "where": "Menus and Parts, 456:2572 (90 variants)",
      "status": "In system",
-     "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Not built: the open section menu, account dropdown and search field.",
-     "updated": "2026-11-02",
+     "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. Not built here: the account dropdown and search field (the open section menu is SectionMenu).",
+     "updated": "2026-11-09",
      "component": "Masthead"
     },
     {
@@ -689,10 +689,36 @@
      "note": "Two copies."
     },
     {
-     "name": "Section menu: SectionMenu, SectionMenuHeader, SectionMenuItem",
-     "where": "Menus and Parts, 456:5837, 456:5745, 456:5781",
-     "status": "To add",
-     "note": "Exported 2026-10-30 (components/wordpress/). The closed toggle is drawn inside Masthead; the open drawer isn’t built."
+     "name": "SectionMenu (section menu toggle and drawer)",
+     "where": "Menus and Parts, 456:5837 (20 variants)",
+     "note": "Built 2026-11-09 after the six-site audit and the five-width check (components/navigation.md §3): toggle, drawer with Subscribe Now, weather row below 1040px, Home, sections (one open at a time), account rows by reader type, newsletter sign-up. Drift: design-vs-production 10.4–10.8.",
+     "component": "SectionMenu",
+     "status": "In system",
+     "updated": "2026-11-09"
+    },
+    {
+     "name": "SectionMenuHeader",
+     "where": "Menus and Parts, 456:5745 (6 variants)",
+     "note": "Built 2026-11-09: hamburger / × in the same place; \"All Sections\" SemiBold 16 at 1040px and up.",
+     "component": "SectionMenuHeader",
+     "status": "In system",
+     "updated": "2026-11-09"
+    },
+    {
+     "name": "SectionMenuItem",
+     "where": "Menus and Parts, 456:5781 (27 variants)",
+     "note": "Built 2026-11-09: main, subItem, Weather, CTAButton, CTAMessage; Default, Hover, Pressed, InFocus.",
+     "component": "SectionMenuItem",
+     "status": "In system",
+     "updated": "2026-11-09"
+    },
+    {
+     "name": "SectionMenuGroup",
+     "where": "Menus and Parts, 3740:29156 (2 variants)",
+     "note": "New 2026-11-06, built here 2026-11-09: a section and its subcategories (toggle + landing link).",
+     "component": "SectionMenuGroup",
+     "status": "In system",
+     "updated": "2026-11-09"
     },
     {
      "name": "AccountMenu",
@@ -720,8 +746,10 @@
     {
      "name": "Weather Bug",
      "where": "Menus and Parts, 654:10020",
-     "status": "To add",
-     "note": "Exported 2026-10-30; drawn inside Masthead. The temperature is a third-party widget and stays Helvetica (Karl, 2026-10-30)."
+     "status": "In system",
+     "note": "Built 2026-11-09: both Locations, one or two e-Edition links, every value from production (AccuWeather, third-party; Karl). The link labels change by market.",
+     "updated": "2026-11-09",
+     "component": "WeatherBug"
     },
     {
      "name": "Footer",

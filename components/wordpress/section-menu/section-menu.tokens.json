@@ -9,9 +9,9 @@
         "componentSet": "SectionMenu",
         "page": "Menus and Parts"
       },
-      "production": "Production section menu (`.sections-menu`), checked with the Masthead audit 2026-09-15.",
+      "production": "Production section menu (`.wrapper-nav.pushnav`, `ul#pushnav`): six-site audit 2026-11-06 and five-width check on Denver Post 2026-11-09 (components/navigation.md §3).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-09"
     }
   },
   "section-menu": {
@@ -19,41 +19,408 @@
       "container": {
         "background": {
           "$type": "color",
-          "$value": "{color.gray.max}",
+          "$value": "{color.surface.nav-panel}",
           "$extensions": {
             "com.mng": {
               "figma": {
-                "variable": "Colors/color/gray/max"
+                "variable": "Colors/color/surface/nav-panel"
               }
             }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.gray.black}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/black"
+              }
+            }
+          }
+        },
+        "border-style": {
+          "$type": "strokeStyle",
+          "$value": "solid"
+        },
+        "border-top-width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1,
+            "unit": "px"
           }
         },
         "padding-top": {
           "$type": "dimension",
-          "$value": "{spacing.100}",
+          "$value": "{spacing.150}",
           "$extensions": {
             "com.mng": {
               "figma": {
-                "variable": "Spacing & Radius/spacing/100"
+                "variable": "Spacing & Radius/spacing/150"
               }
             }
           }
         },
-        "sectionmenuitem": {
+        "sectionmenugroup-business": {
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 156,
+              "value": 36,
               "unit": "px"
             }
           },
           "icon-color": {
             "$type": "color",
-            "$value": "{color.gray.min}",
+            "$value": "{color.surface.nav-panel}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Colors/color/gray/min"
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-local": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-marketplace": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-news": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 252,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-obituaries": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-opinion": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-real-estate": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-sports": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenugroup-things-to-do": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        },
+        "sectionmenuitem": {
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.theme.nav-text}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/theme/nav-text"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "root": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.surface.nav-panel}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/surface/nav-panel"
+              }
+            }
+          }
+        }
+      }
+    },
+    "device-xl-desktop": {
+      "container": {
+        "sectionmenuitem": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 151,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "device-md-tabletv": {
+      "container": {
+        "sectionmenuitem": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 167,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "device-sm-mobile": {
+      "container": {
+        "sectionmenuitem": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 167,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "device-xs-fold": {
+      "container": {
+        "sectionmenuitem": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 167,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "device-lg-tableth": {
+      "container": {
+        "sectionmenuitem": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 167,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "usertype-loggedout": {
+      "container": {
+        "sectionmenuitem-log-in": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
                 }
               }
             }
@@ -69,6 +436,44 @@
       }
     },
     "base": {
+      "container": {
+        "sectionmenuitem-subscribe": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 36,
+              "unit": "px"
+            }
+          },
+          "icon-color": {
+            "$type": "color",
+            "$value": "{color.surface.nav-panel}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Colors/color/surface/nav-panel"
+                }
+              }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 88,
+            "unit": "px"
+          }
+        }
+      },
       "sectionmenuheader": {
         "height": {
           "$type": "dimension",
@@ -112,6 +517,17 @@
         }
       }
     },
+    "device-xl-desktop.usertype-loggedout": {
+      "sectionmenuheader": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 300,
+            "unit": "px"
+          }
+        }
+      }
+    },
     "device-md-tabletv.usertype-all": {
       "sectionmenuheader": {
         "width": {
@@ -135,6 +551,17 @@
       }
     },
     "device-md-tabletv.usertype-nonsub": {
+      "sectionmenuheader": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 64,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "device-md-tabletv.usertype-loggedout": {
       "sectionmenuheader": {
         "width": {
           "$type": "dimension",
@@ -178,6 +605,17 @@
         }
       }
     },
+    "device-sm-mobile.usertype-loggedout": {
+      "sectionmenuheader": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 64,
+            "unit": "px"
+          }
+        }
+      }
+    },
     "device-xs-fold.usertype-all": {
       "sectionmenuheader": {
         "width": {
@@ -211,12 +649,23 @@
         }
       }
     },
+    "device-xs-fold.usertype-loggedout": {
+      "sectionmenuheader": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 64,
+            "unit": "px"
+          }
+        }
+      }
+    },
     "device-lg-tableth.usertype-all": {
       "sectionmenuheader": {
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 300,
+            "value": 88,
             "unit": "px"
           }
         }
@@ -227,7 +676,7 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 300,
+            "value": 64,
             "unit": "px"
           }
         }
@@ -238,7 +687,18 @@
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 300,
+            "value": 64,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "device-lg-tableth.usertype-loggedout": {
+      "sectionmenuheader": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 64,
             "unit": "px"
           }
         }

@@ -1,0 +1,1 @@
+- **Toggle + landing link** (Karl, 2026-11-06): production's section rows are links that only open their list, and several groups have no link to the section page (design-vs-production 10.5).

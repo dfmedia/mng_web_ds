@@ -1,0 +1,32 @@
+<!-- @dsCard group="WordPress Elements" height=760 subtitle="Figma: SectionMenuItem · 27 variants" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SectionMenuItem</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var rows = [
+    { n: 'leftIcon=no, withSubItems=no, View=default, kind=main', p: { kind: 'main' } },
+    { n: 'leftIcon=yes, withSubItems=no, View=default, kind=main', p: { kind: 'main', leftIcon: 'yes' } },
+    { n: 'leftIcon=no, withSubItems=yes, View=closed, kind=main', p: { kind: 'main', withSubItems: 'yes', view: 'closed' } },
+    { n: 'leftIcon=no, withSubItems=yes, View=open, kind=main', p: { kind: 'main', withSubItems: 'yes', view: 'open' } },
+    { n: 'leftIcon=yes, withSubItems=yes, View=closed, kind=main', p: { kind: 'main', leftIcon: 'yes', withSubItems: 'yes', view: 'closed' } },
+    { n: 'kind=subItem', p: { kind: 'subItem' } }
+  ];
+  var items = [];
+  rows.forEach(function (r) {
+    ['Default', 'Hover', 'Pressed', 'InFocus'].forEach(function (s) {
+      items.push({ label: r.n + ', State=' + s, width: 332, node: h('div', { style: { width: 300 } }, h(NS.SectionMenuItem, Object.assign({ state: s }, r.p))) });
+    });
+  });
+  var others = ['Weather', 'CTAButton', 'CTAMessage'].map(function (k) {
+    return { label: 'kind=' + k, width: 332, node: h('div', { style: { width: 300 } }, h(NS.SectionMenuItem, { kind: k })) };
+  });
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Rows × State', note: '36px rows, Noto Sans SemiBold 14, Title Case. Hover underlines; Pressed adds the color/gray/600 tile; InFocus rings the row inside.' }, h(I.Specimen, { items: items })),
+    h(I.SpecimenSection, { title: 'Weather, CTAButton, CTAMessage' }, h(I.Specimen, { items: others }))));
+</script>
+</body>
+</html>
