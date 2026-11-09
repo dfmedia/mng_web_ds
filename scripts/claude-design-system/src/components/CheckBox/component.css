@@ -1,0 +1,50 @@
+/* 40x40 touch area (radius/utility); the hover / pressed / focus ring is a 2px gray/black outline outside it. */
+.mngds-checkbox {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box;
+  width: var(--mng-checkbox-base-root-width); height: var(--mng-checkbox-base-root-height);
+  border-radius: var(--mng-checkbox-base-root-border-radius);
+}
+.mngds-checkbox__input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
+.mngds-checkbox--disabled .mngds-checkbox__input { cursor: default; }
+
+/* Box: 14x14, radius/field. Unselected: white with a 1px inside gray/200 border (6.5:1). */
+.mngds-checkbox__box {
+  display: flex; align-items: center; justify-content: center; box-sizing: border-box;
+  width: var(--mng-checkbox-status-unselected-box-square-width); height: var(--mng-checkbox-status-unselected-box-square-height);
+  border-radius: var(--mng-checkbox-status-unselected-box-square-border-radius);
+  background: var(--mng-checkbox-interaction-default-box-square-background);
+  box-shadow: inset 0 0 0 var(--mng-checkbox-status-unselected-box-square-border-width) var(--mng-checkbox-interaction-default-box-square-border-color);
+}
+.mngds-checkbox__icon { color: var(--mng-checkbox-interaction-default-box-icon-icon-color); }
+/* Selected / partial: white icon on color/theme/primary, no border. */
+.mngds-checkbox--selected .mngds-checkbox__box, .mngds-checkbox--partial .mngds-checkbox__box {
+  background: var(--mng-checkbox-interaction-default-box-background); box-shadow: none;
+}
+
+/* Hover and pressed (forced or real): the ring, a gray/min border on the empty box, primary-lighter on a checked one. */
+.mngds-checkbox.is-hover, .mngds-checkbox.is-pressed, .mngds-checkbox.is-infocus,
+.mngds-checkbox:not(.mngds-checkbox--disabled):hover, .mngds-checkbox:not(.mngds-checkbox--disabled):active,
+.mngds-checkbox:has(.mngds-checkbox__input:focus-visible) {
+  box-shadow: 0 0 0 var(--mng-checkbox-infocus-true-root-border-width) var(--mng-checkbox-infocus-true-root-border-color);
+}
+.mngds-checkbox--unselected.is-hover .mngds-checkbox__box, .mngds-checkbox--unselected.is-pressed .mngds-checkbox__box,
+.mngds-checkbox--unselected:not(.mngds-checkbox--disabled):hover .mngds-checkbox__box,
+.mngds-checkbox--unselected:not(.mngds-checkbox--disabled):active .mngds-checkbox__box {
+  box-shadow: inset 0 0 0 var(--mng-checkbox-status-unselected-box-square-border-width) var(--mng-checkbox-interaction-hover-box-square-border-color);
+}
+.mngds-checkbox--selected.is-hover .mngds-checkbox__box, .mngds-checkbox--selected.is-pressed .mngds-checkbox__box,
+.mngds-checkbox--partial.is-hover .mngds-checkbox__box, .mngds-checkbox--partial.is-pressed .mngds-checkbox__box,
+.mngds-checkbox--selected:not(.mngds-checkbox--disabled):hover .mngds-checkbox__box, .mngds-checkbox--partial:not(.mngds-checkbox--disabled):hover .mngds-checkbox__box,
+.mngds-checkbox--selected:not(.mngds-checkbox--disabled):active .mngds-checkbox__box, .mngds-checkbox--partial:not(.mngds-checkbox--disabled):active .mngds-checkbox__box {
+  background: var(--mng-checkbox-interaction-hover-box-background);
+}
+
+/* Disabled: gray/600 box, gray/500 border or icon. */
+.mngds-checkbox--disabled .mngds-checkbox__box {
+  background: var(--mng-checkbox-interaction-disabled-box-square-background);
+  box-shadow: inset 0 0 0 var(--mng-checkbox-status-unselected-box-square-border-width) var(--mng-checkbox-interaction-disabled-box-square-border-color);
+}
+.mngds-checkbox--disabled.mngds-checkbox--selected .mngds-checkbox__box, .mngds-checkbox--disabled.mngds-checkbox--partial .mngds-checkbox__box {
+  background: var(--mng-checkbox-interaction-disabled-box-background); box-shadow: none;
+}
+.mngds-checkbox--disabled .mngds-checkbox__icon { color: var(--mng-checkbox-interaction-disabled-box-icon-icon-color); }

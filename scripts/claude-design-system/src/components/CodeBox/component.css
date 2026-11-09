@@ -1,0 +1,44 @@
+/* Cell: Figma's inside stroke as an inset shadow, so a 2px focus border doesn't move the digit. */
+.mngds-code-box {
+  --cb-border: var(--mng-code-box-state-blank-root-border-color);
+  --cb-border-w: var(--mng-code-box-state-blank-root-border-width);
+  display: inline-flex; align-items: center; justify-content: center; box-sizing: border-box; flex-shrink: 0;
+  width: var(--mng-code-box-size-desktop-root-width); height: var(--mng-code-box-size-desktop-root-height);
+  padding: var(--mng-code-box-base-root-padding-top) 0 var(--mng-code-box-base-root-padding-bottom);
+  background: var(--mng-code-box-state-blank-root-background);
+  border-radius: var(--mng-code-box-base-root-border-radius);
+  box-shadow: inset 0 0 0 var(--cb-border-w) var(--cb-border);
+}
+.mngds-code-box--mobile { width: var(--mng-code-box-size-mobile-root-width); height: var(--mng-code-box-size-mobile-root-height); }
+.mngds-code-box__input {
+  width: 100%; margin: 0; padding: 0; border: 0; outline: none; background: transparent; text-align: center;
+  font-family: var(--mng-code-box-base-text-container-value-font-family);
+  font-weight: var(--mng-code-box-base-text-container-value-font-weight);
+  font-size: var(--mng-code-box-base-text-container-value-font-size);
+  line-height: normal; color: var(--mng-code-box-base-text-container-value-color);
+}
+.mngds-code-box--mobile .mngds-code-box__input { font-size: var(--mng-font-size-16); }
+
+.mngds-code-box.is-focus, .mngds-code-box:not(.mngds-code-box--state-disabled):focus-within {
+  --cb-border: var(--mng-code-box-state-focus-root-border-color);
+  --cb-border-w: var(--mng-code-box-state-focus-root-border-width);
+}
+/* Error states come after Focus and are at least as specific, so a focused cell in error stays red. */
+.mngds-code-box.mngds-code-box--state-error, .mngds-code-box.mngds-code-box--state-error-focus,
+.mngds-code-box.mngds-code-box--state-error:focus-within, .mngds-code-box.mngds-code-box--state-error-focus:focus-within {
+  --cb-border: var(--mng-code-box-state-error-root-border-color);
+  --cb-border-w: var(--mng-code-box-state-error-root-border-width);
+}
+.mngds-code-box.mngds-code-box--state-error-focus, .mngds-code-box.mngds-code-box--state-error:focus-within,
+.mngds-code-box.mngds-code-box--state-error-focus:focus-within {
+  --cb-border-w: var(--mng-code-box-state-error-focus-root-border-width);
+}
+.mngds-code-box.mngds-code-box--state-success {
+  --cb-border: var(--mng-code-box-state-success-root-border-color);
+  --cb-border-w: var(--mng-code-box-state-success-root-border-width);
+}
+.mngds-code-box.mngds-code-box--state-disabled {
+  --cb-border: var(--mng-code-box-state-disabled-root-border-color);
+  background: var(--mng-code-box-state-disabled-root-background);
+}
+.mngds-code-box--state-disabled .mngds-code-box__input { color: var(--mng-color-gray-300); }

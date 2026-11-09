@@ -361,7 +361,8 @@
       "radius": {
         "sm": "4px",
         "utility": "5px",
-        "lg": "8px"
+        "lg": "8px",
+        "field": "3px"
       },
       "breakpoint": {
         "fold": "340px",

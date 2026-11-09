@@ -3,6 +3,7 @@
 - Close: Button Modal Close centered on the card's top-right corner (skeleton: left 428px, top −16.5px on a 444px card); MobileScroll keeps it in the Controls Overlay, 8px from the top and right of the screen.
 - MobileScroll: the card scrolls in a native scrolling container inside the screen. The Figma Scroll Bar / Scroll Indicator (8×96 `color/gray/300`) and the overlay's 123px gap are a placeholder (known issue 1) and are not drawn.
 - Hidden Figma layers become slots: Form Field → `children` (no Form Field component in this system yet; the MobileScroll preview omits it, so it doesn't reach past the screen like the Figma preview), InLineMessage (ModalError) → `message`.
+- Gaps against the Accessibility rules (2026-11-05), to fix with the keyboard rebuild (status open item 15(e)): focus moves to the card, not the title; the page behind isn't made `inert` (only Tab is kept inside); the title isn't an `h2`; a scrolling body with nothing focusable isn't focusable.
 - Esc closes in fixed mode (the spec lists the close button, an inline link and a click outside; Esc is the standard dialog key).
 - The previews are drawn with CSS `zoom` (50% / 75%); at those scales Chrome rounds a few line boxes (the card reads 350px instead of 347px). Unzoomed, every Device matches the Figma card size.
 - Title Noto Sans Bold 20 is 27px in Figma; browsers compute `line-height: normal` as 27.24px, so text-only measurements may differ by under 1px.

@@ -130,6 +130,182 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "address-block",
+      "name": "Form Field Assembly / Address block",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/address-block/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:28741",
+        "set": "Form Field Assembly / Address block"
+      },
+      "variants": 2,
+      "instances": 0,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "cc-details",
+      "name": "Form Field Assembly / CC details",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/cc-details/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:28816",
+        "set": "Form Field Assembly / CC details"
+      },
+      "variants": 2,
+      "instances": 6,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "checkbox",
+      "name": "CheckBox",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/checkbox/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "4693:690",
+        "set": "CheckBox"
+      },
+      "variants": 15,
+      "instances": 35,
+      "knownIssues": 2,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "checkbox-terms",
+      "name": "Form Field Assembly / Checkbox + Terms",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/checkbox-terms/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:29236",
+        "set": "Form Field Assembly / Checkbox + Terms"
+      },
+      "variants": 2,
+      "instances": 15,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "code-box",
+      "name": "Code Box",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/code-box/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "6964:7032",
+        "set": "Code Box"
+      },
+      "variants": 14,
+      "instances": 54,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "form-field",
+      "name": "Form Field",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/form-field/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "6963:6863",
+        "set": "Form Field"
+      },
+      "variants": 14,
+      "instances": 134,
+      "knownIssues": 2,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "name-pair",
+      "name": "Form Field Assembly / Name pair",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/name-pair/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:28636",
+        "set": "Form Field Assembly / Name pair"
+      },
+      "variants": 2,
+      "instances": 0,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "password",
+      "name": "Form Field Assembly / Password",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/password/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:28940",
+        "set": "Form Field Assembly / Password"
+      },
+      "variants": 2,
+      "instances": 1,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "verification-code",
+      "name": "Form Field Assembly / Verification Code",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/verification-code/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:29223",
+        "set": "Form Field Assembly / Verification Code"
+      },
+      "variants": 2,
+      "instances": 3,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "zip-phone",
+      "name": "Form Field Assembly / Zip + Phone",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/zip-phone/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:28666",
+        "set": "Form Field Assembly / Zip + Phone"
+      },
+      "variants": 2,
+      "instances": 0,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
+      "slug": "zip-street",
+      "name": "Form Field Assembly / Zip + Street #",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/zip-street/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7003:28651",
+        "set": "Form Field Assembly / Zip + Street #"
+      },
+      "variants": 2,
+      "instances": 0,
+      "knownIssues": 1,
+      "exported": "2026-11-04"
+    },
+    {
       "slug": "inline-message-dashsubsnonsub",
       "name": "InLineMessage: DashSubsNonSub (non-subscriber CTA panel)",
       "group": "in-line-content",

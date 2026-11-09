@@ -1,0 +1,27 @@
+<!-- @dsCard group="Core" height=894 subtitle="Figma: Form Field Assembly / Verification Code · 2 variants (Size)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Verification Code</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  function Demo() {
+    var s = React.useState('');
+    return h(NS.VerificationCode, { value: s[0], onChange: s[1], state: s[0].length === 6 ? 'Success' : undefined });
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size', note: 'Six Code Box cells 4px apart, under the label, with one shared error row.' },
+      h(I.Specimen, { items: [
+        { label: 'Desktop', node: h(NS.VerificationCode, { defaultValue: '123' }) },
+        { label: 'Mobile', node: h(NS.VerificationCode, { size: 'Mobile', defaultValue: '123' }) }] })),
+    h(I.SpecimenSection, { title: 'Complete and rejected', note: 'Success: every cell filled (not confirmed; no checkmark). Error: the server rejected the code.' },
+      h(I.Specimen, { items: [
+        { label: 'Success', node: h(NS.VerificationCode, { defaultValue: '123456', state: 'Success' }) },
+        { label: 'Error', node: h(NS.VerificationCode, { defaultValue: '123456', state: 'Error', showError: true, errorMessage: 'That code didn’t work.' }) }] })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Type or paste a 6-digit code.' },
+      h(I.Specimen, { items: [{ label: 'Interactive', node: h(Demo) }] }))));
+</script>
+</body>
+</html>

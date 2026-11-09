@@ -120,6 +120,8 @@
   --mng-radius-utility-rem: 0.3125rem;
   --mng-radius-lg: 8px;
   --mng-radius-lg-rem: 0.5rem;
+  --mng-radius-field: 3px;
+  --mng-radius-field-rem: 0.1875rem;
   --mng-shadow-sm: 0px var(--mng-spacing-050) var(--mng-spacing-050) 0px rgba(0, 0, 0, 0.25);
   --mng-shadow-md: 0px var(--mng-spacing-050) var(--mng-spacing-100) 0px rgba(0, 0, 0, 0.2);
   --mng-shadow-lg: 0px var(--mng-spacing-100) var(--mng-spacing-200) 0px rgba(0, 0, 0, 0.2);

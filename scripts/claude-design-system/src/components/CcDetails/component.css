@@ -1,0 +1,14 @@
+/* Form Field Assembly / CC details: rows of Form Fields, one shared error row (25px Desktop, 22px Mobile; heights from the token file). */
+.mngds-cc-details { display: flex; flex-direction: column; gap: var(--mng-spacing-100); width: 100%; min-width: 0; box-sizing: border-box; }
+.mngds-cc-details--mobile { gap: var(--mng-cc-details-size-mobile-root-gap); }
+.mngds-cc-details__row { display: flex; align-items: flex-start; gap: var(--mng-spacing-200); min-width: 0; }
+.mngds-cc-details--mobile .mngds-cc-details__row { gap: var(--mng-spacing-100); }
+.mngds-cc-details--stack .mngds-cc-details__row { flex-direction: column; align-items: stretch; }
+.mngds-cc-details__cell { flex: 0 0 auto; min-width: 0; }
+.mngds-cc-details__cell--fill { flex: 1 1 0; }
+.mngds-cc-details__error {
+  margin: 0; min-height: var(--mng-cc-details-size-desktop-error-message-container-shared-height);
+  font-family: var(--mng-font-family-noto-sans); font-weight: var(--mng-font-weight-regular);
+  font-size: var(--mng-font-size-18); line-height: normal; color: var(--mng-color-feedback-high-error);
+}
+.mngds-cc-details--mobile .mngds-cc-details__error { min-height: var(--mng-cc-details-size-mobile-error-message-container-shared-height); font-size: var(--mng-font-size-16); }

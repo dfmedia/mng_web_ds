@@ -1,0 +1,3 @@
+- No checkmark after the row (Karl, 2026-11-04): the browser only knows the code is complete; Success is the green outline on every cell.
+- The cell behavior (auto-advance, Backspace, arrows, paste, `one-time-code`) isn't in the Figma spec; it's the standard pattern for this control. Each cell is named "Digit n of 6" and the group is labelled by the visible label.
+- The label color is `color/gray/black` in Figma (Form Field labels are `color/gray/min`); kept as the token file has it.

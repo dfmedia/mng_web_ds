@@ -1,0 +1,17 @@
+/* Label, row of cells (4px apart, spacing/050), shared error row; 8px (spacing/100) between them. */
+.mngds-verification-code { display: inline-flex; flex-direction: column; gap: var(--mng-verification-code-base-root-gap); min-width: 0; }
+.mngds-verification-code__label {
+  font-family: var(--mng-verification-code-base-label-font-family); font-weight: var(--mng-verification-code-base-label-font-weight);
+  font-size: var(--mng-verification-code-size-desktop-label-font-size); line-height: normal;
+  color: var(--mng-verification-code-base-label-color);
+}
+.mngds-verification-code--mobile .mngds-verification-code__label { font-size: var(--mng-verification-code-size-mobile-label-font-size); }
+.mngds-verification-code__row { display: flex; gap: var(--mng-verification-code-base-code-box-row-gap); }
+.mngds-verification-code__error {
+  margin: 0; min-height: var(--mng-verification-code-size-desktop-error-message-container-shared-height);
+  font-family: var(--mng-font-family-noto-sans); font-weight: var(--mng-font-weight-regular);
+  font-size: var(--mng-font-size-18); line-height: normal; color: var(--mng-color-feedback-high-error);
+}
+.mngds-verification-code--mobile .mngds-verification-code__error {
+  min-height: var(--mng-verification-code-size-mobile-error-message-container-shared-height); font-size: var(--mng-font-size-16);
+}
