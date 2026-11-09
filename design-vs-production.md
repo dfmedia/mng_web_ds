@@ -14,6 +14,7 @@
   - [3. Color Tokens — Universal Grays and Alert colors (all three themes)](#3-color-tokens--universal-grays-and-alert-colors-all-three-themes)
   - [4. Color Tokens — Endless Tributes (obituaries) palette](#4-color-tokens--endless-tributes-obituaries-palette)
   - [5. Color Tokens — theme and sub-theme color fixes (every publication)](#5-color-tokens--theme-and-sub-theme-color-fixes-every-publication)
+  - [37. Check box — white checkmark on primary-lighter fails 3:1 (The Mercury News + East Bay Times)](#37-check-box--white-checkmark-on-primary-lighter-fails-31-the-mercury-news--east-bay-times)
 - **Spacing, radius and breakpoints**
   - [6. Spacing — 10px and 14px values off the 4/8 grid](#6-spacing--10px-and-14px-values-off-the-48-grid)
   - [7. Radius — buttons are 4px; 5px on a button is drift](#7-radius--buttons-are-4px-5px-on-a-button-is-drift)
@@ -1291,7 +1292,9 @@ Check after the change: the subscribe CTA keeps its 44px min height and its fill
 | Search submit button (`.search-button`, masthead search form; see `components/navigation.md`) | border-radius 5px | Use 4px (`radius/sm`). |
 | Account dropdown panel (masthead; see `components/navigation.md`) | border-radius 0 0 5px 5px | No fix. It's a container, so 5px (`radius/utility`) is correct. |
 
-**Containers keep 5px (`radius/utility`):** InLineMessage containers, ModalsCenter parts, Form Field shapes, check boxes, the status badge and the account dropdown. In Figma their 5px corners are bound to `radius/utility`.
+**Containers keep 5px (`radius/utility`):** InLineMessage containers, ModalsCenter parts, the check box's 40x40 hover / focus ring, the status badge and the account dropdown. In Figma their 5px corners are bound to `radius/utility`.
+
+**Form fields are 3px (`radius/field`)** (Karl, 2026-11-04; was listed above as 5px, which the Figma fields never were): the outline of Form Field, Code Box and Search Field / Obituaries, the outer corners of a field's icon frame, and the 14x14 check box square. Bound to the new `radius/field` token in Figma. Production's input radius hasn't been checked on the 6 review sites yet.
 
 **Engineering patch (ready to apply):**
 
@@ -1526,8 +1529,9 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 | Tab top/bottom padding | 12px | `spacing/150` (12) |
 | Tab side padding | 18px | `spacing/200` (16) |
 | Gap between tabs | 32px | `spacing/300` (24) |
-| Nav side padding | 24px | `spacing/300` (24) |
-| No side padding below | `(max-width: 500px)` | `(max-width: 639px)` (WordPress grid; see entry 8) |
+| Nav side padding | 24px | `spacing/100` (8) at every width, so the first tab lines up with the page content (Karl, 2026-11-03; was `spacing/300` (24)) |
+| No side padding below | `(max-width: 500px)` | None: 8px at every width (was none below 640px) |
+| Nav width | — | 1280px max, centered (was 1200px) |
 
 **Fix:** update the `sr-nav-tabs` styles to the design column.
 
@@ -1565,13 +1569,21 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 | Property | Production | Design |
 |---|---|---|
 | Title color | wrong on all 6 sites | `color/gray/100` |
-| Underline | only on Modern Earthy (mcall, canoncitydailyrecord): `2px solid` primary. Missing on Bold Coastal (ocregister, denverpost) and Measured Vibrant (chicagotribune, orlandosentinel) | 2px `color/theme/primary` on every theme, as wide as the title |
+| Underline | only on Modern Earthy (mcall, canoncitydailyrecord): `2px solid` primary. Missing on Bold Coastal (ocregister, denverpost) and Measured Vibrant (chicagotribune, orlandosentinel). See 14.1 | 2px `color/theme/primary` on every theme, as wide as the title; across the block's column in Latest Headlines, Section Rail Cards and Photos Block (Karl, 2026-11-03) |
 | Title to underline | `padding-bottom: 0.3125em` = 6.56px (Modern Earthy, 21px); 0.5em = 8.5px with no underline (Measured Vibrant, 17px); 0 with no underline (Bold Coastal, 20px) | `spacing/100` (8px) on every theme |
 | Title to arrow | no gap; the `icon-arrow-right` glyph has `padding-left: 0.3em` (4.14px Measured Vibrant, 4.88px Bold Coastal, 5.12px Modern Earthy) | `spacing/100` (8px), then the 16px arrow icon |
 
 **Fix:** on every theme: set the title color to `color/gray/100`; add the 2px `--primary` underline; set the title's bottom padding to 8px; set the space between the title and its arrow to 8px.
 
 **Status:** Open. Ready for Engineering.
+
+### 14.1 Underline width in blocks (2026-11-03)
+
+**Found:** 2026-11-03 on ocregister.com and dailynews.com (signed in), at 360, 768, 900, 1100 and 1280px: `.headline-list-title span` has a ~1.67px primary bottom border across the whole Latest Headlines column (224px at 1280), and every section title's underline spans its block. sun-sentinel.com's Latest Headlines title has none (Bold style). This differs from what was recorded for ocregister.com on 2026-10-27; the other review sites weren't rechecked.
+
+**Design:** inside Latest Headlines, the Section Rail Cards and Photos Block the title fills the column, so the 2px underline spans it (Figma's Latest Headlines header draws it at the column width; the code's Latest Headlines title was fixed to match on 2026-11-03).
+
+**Fix:** none new; the underline weight (2px) and color are still entry 14.
 
 ---
 
@@ -2205,6 +2217,28 @@ Only one instance of the disclosure pattern (Login Methods on Profile) was found
 **Fix (production):** `.colophon` links to #5E5D5C (`color/gray/200`; 1 step from today's #5D5B5A), and the band to #F1EFEB (`color/gray/600`) instead of #F5F5F5. The type size difference (16px design vs 13.44px production) is a separate open question.
 
 **Status:** Open, URGENT: design fixed 2026-10-30; production change next.
+
+---
+
+## 37. Check box — white checkmark on primary-lighter fails 3:1 (The Mercury News + East Bay Times)
+
+**Found:** 2026-11-04, while cleaning up the Check Boxes page (main file, CheckBox `4693:690`). A contrast failure in the design: colors are frozen as of 2026-10-19, so this is logged for a decision, not changed.
+
+**Design (Figma):** a selected or partial check box shows a white (`color/gray/max`) checkmark or minus on a `color/theme/primary` box, and on hover and pressed the box changes to `color/theme/primary-lighter`. The icon is a graphic, so it needs 3:1 against the box.
+
+| Publication (Colors mode) | `theme/primary` | White on it | `theme/primary-lighter` (hover / pressed) | White on it |
+|---|---|---|---|---|
+| The Mercury News + East Bay Times | #006DA3 | 5.7:1 | #A0D0ED | **1.6:1 (fails)** |
+| The Sonoma Index-Tribune | #0E70A4 | 5.4:1 | #149DE6 | 3.0:1 (just passes) |
+| Endless Tributes, Orlando Sentinel, Morning Call | | 9.5 / 4.7 / 6.6:1 | | 3.1:1 |
+
+Every other mode is 3.2:1 or more on `primary-lighter`, and every mode passes on `primary`. The light `primary-lighter` box is also only 1.6:1 against the white page on Mercury News, but the 2px black hover / pressed ring marks the control there.
+
+**Production:** not checked (Karl, 2026-11-04).
+
+**To decide (Karl):** (a) keep the box `theme/primary` on hover and pressed (the ring alone shows the state); (b) use a `color/gray/min` checkmark wherever `primary-lighter` is too light; or (c) darken Mercury News's `primary-lighter` (a color change, on a `review/...` branch).
+
+**Status:** Open, waiting on the design decision.
 
 ---
 

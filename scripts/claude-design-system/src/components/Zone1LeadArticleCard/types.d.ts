@@ -13,8 +13,8 @@ export interface Zone1RelatedItem {
 export interface Zone1LeadArticleCardProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'style'> {
   /** Figma Style. One value (Standard), kept so existing instances don't change. An object is passed through as inline styles. */
   style?: 'Standard' | React.CSSProperties;
-  /** Figma Device. Desktop (1024px and up): text 295 | image 391, 20px apart. Tablet (640px and up, 768 template):
-      two 358px columns, 32px apart. Mobile (below 640px, or any lead narrower than about 700px): one column, 25/29 headline.
+  /** Figma Device; every Device fills its column. Desktop (1280px and up on the homepage): text 43.75% | image 56.25%,
+      20px apart. Tablet (640–799px): text and image 50% each, 20px apart. Mobile (below 640px, or any lead narrower than about 700px): one column, 25/29 headline.
       Default 'Mobile' (the Figma default). */
   device?: 'Desktop' | 'Mobile' | 'Tablet';
   /** Figma Gallery. Image (default) or Slideshow (a photo-gallery lead: the Zone 1 Slideshow replaces the image). */

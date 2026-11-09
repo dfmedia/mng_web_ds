@@ -18,4 +18,6 @@ h(HomepageTabs, {
 | `onChange` | `(index, event) => void` | |
 | `aria-label` | name of the tablist | |
 
+Keyboard (WAI-ARIA Tabs pattern, manual activation): Tab reaches only the selected tab; Left / Right move between tabs (wrapping), Home / End go to the first / last; Enter or Space selects. Choosing a tab doesn't move focus; the page's panel follows `aria-controls`.
+
 Renders a full-width bar: `ul role="tablist"` > `li role="presentation"` > `HomepageTab` (`button role="tab"`, `aria-selected`, `aria-controls`). The bar fills its container; Figma's 1280 / 360 widths are the frame sizes.

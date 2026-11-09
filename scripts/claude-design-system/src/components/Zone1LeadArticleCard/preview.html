@@ -7,11 +7,11 @@
 <div id="root"></div>
 <script>
   var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
-  var stage = { Desktop: 706 + 32, Tablet: 358 + 32 + 391 + 32, Mobile: 340 + 32 };
+  var stage = { Desktop: 700 + 32, Tablet: 748 + 32, Mobile: 340 + 32 };
   var notes = {
-    Desktop: '1024px and up: text 295 | image 391 (20px gap), or text 295 | Zone 1 Slideshow 356 across the 706px card. Headline Bold 29/33 in the theme’s heading font (Noto Serif; Noto Sans in Modern Earthy).',
-    Tablet: '640px and up (768 template): two 358px columns, 32px apart. The 391px image overflows its column (spec known issue 1); the slideshow fills it.',
-    Mobile: 'Below 640px (and any lead narrower than about 700px): one column, 8px gaps, 25/29 headline; image under the headline, slideshow after the Related list; 1px color/gray/500 rule at the bottom. Built at 340px; fills its container.'
+    Desktop: '1280px and up on the homepage: fills its column. Text 43.75% | image 56.25%, 20px apart (built 296 | 384 × 256 at 700), or text 43.75% | Zone 1 Slideshow 50%. Photo 3:2. Headline Bold 29/33 in the theme’s heading font (Noto Serif; Noto Sans in Modern Earthy).',
+    Tablet: '640–799px: fills its column. Text and image 50% each, 20px apart (built 364 | 364 × 243 at 748); the slideshow fills its half. Photo 3:2.',
+    Mobile: 'Below 640px (and any lead narrower than about 700px): one column, 8px gaps, 25/29 headline; image under the headline, slideshow after the Related list; 1px color/gray/500 rule at the bottom. Photo 3:2 (340 × 227). Built at 340px; fills its container.'
   };
   function section(dev) {
     var items = ['Image', 'Slideshow'].map(function (g) {

@@ -20,4 +20,4 @@ h(BlocksLeadArticleCard, { device: 'Mobile', gallery: 'Slideshow', href: url, he
 | `href`, `target` | makes the headline a link | |
 | `headingLevel` | 1–6 | `2` |
 
-Layout: Desktop is 706px (text 295 | image 391 or slideshow 356, 20px gap); Tablet is two 358px columns 32px apart (the 391px image overflows its column, as in Figma); Mobile fills its container: headline, image, excerpt, byline (or headline, excerpt, byline, slideshow), 8px apart, then a 1px `color/gray/500` rule. Nested components: `ArticleSectionKicker`, `ArticleAuthor`, `ArticleTimestamp`, `Zone1Slideshow` and the runtime `ArticleImage`.
+Layout: every Device fills its column, at the Zone 1 lead's production split (Karl, 2026-11-03). Desktop: text 43.75% | image 56.25% (or slideshow 50%), 20px apart; built 296 | 384 at 700. Tablet: 50% each, 20px apart; built 364 | 364 at 748. The photo is 3:2 at every width; Mobile fills its container: headline, image, excerpt, byline (or headline, excerpt, byline, slideshow), 8px apart, then a 1px `color/gray/500` rule. Nested components: `ArticleSectionKicker`, `ArticleAuthor`, `ArticleTimestamp`, `Zone1Slideshow` and the runtime `ArticleImage`.
