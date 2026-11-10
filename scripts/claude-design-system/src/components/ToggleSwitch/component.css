@@ -1,0 +1,57 @@
+/* 64x40 touch area (radius/utility, 8px around the slider); the focus ring is a 2px gray/black outline outside it. */
+.mngds-toggle-switch {
+  position: relative; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box;
+  width: var(--mng-toggle-switch-base-root-width); height: var(--mng-toggle-switch-base-root-height);
+  padding: var(--mng-toggle-switch-base-root-padding-top) var(--mng-toggle-switch-base-root-padding-right) var(--mng-toggle-switch-base-root-padding-bottom) var(--mng-toggle-switch-base-root-padding-left);
+  border-radius: var(--mng-toggle-switch-base-root-border-radius);
+}
+.mngds-toggle-switch__input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
+.mngds-toggle-switch--disabled .mngds-toggle-switch__input { cursor: default; }
+
+/* Slider: 48x24, fully round, 2px around the handle. Off: white with a 1px inside gray/400 border; handle at the left. */
+.mngds-toggle-switch__slider {
+  display: flex; align-items: center; justify-content: flex-start; box-sizing: border-box; flex-shrink: 0;
+  width: var(--mng-toggle-switch-base-slider-width); height: var(--mng-toggle-switch-base-slider-height);
+  padding: var(--mng-toggle-switch-base-slider-padding-top) var(--mng-toggle-switch-base-slider-padding-right) var(--mng-toggle-switch-base-slider-padding-bottom) var(--mng-toggle-switch-base-slider-padding-left);
+  border-radius: var(--mng-toggle-switch-base-slider-border-radius);
+  background: var(--mng-toggle-switch-status-unselected-interaction-default-slider-background);
+  box-shadow: inset 0 0 0 var(--mng-toggle-switch-base-slider-border-width) var(--mng-toggle-switch-base-slider-border-color);
+}
+.mngds-toggle-switch__handle {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: var(--mng-toggle-switch-base-slider-handle-width); height: var(--mng-toggle-switch-base-slider-handle-height);
+  border-radius: var(--mng-toggle-switch-base-slider-handle-border-radius);
+  background: var(--mng-toggle-switch-status-unselected-interaction-default-slider-handle-background);
+}
+.mngds-toggle-switch__icon {
+  width: var(--mng-toggle-switch-icon-true-slider-handle-icon-width); height: var(--mng-toggle-switch-icon-true-slider-handle-icon-height);
+  color: var(--mng-toggle-switch-interaction-default-slider-handle-icon-icon-color);
+}
+/* On: gray/500 slider, no border; color/theme/primary handle at the right. */
+.mngds-toggle-switch--selected .mngds-toggle-switch__slider {
+  justify-content: flex-end; box-shadow: none;
+  background: var(--mng-toggle-switch-status-selected-interaction-default-slider-background);
+}
+.mngds-toggle-switch--selected .mngds-toggle-switch__handle { background: var(--mng-toggle-switch-status-selected-interaction-default-slider-handle-background); }
+
+/* Hover and pressed (forced or real): darker handle. Off: gray/200; on: color/theme/primary-darker. */
+.mngds-toggle-switch--unselected.is-hover .mngds-toggle-switch__handle, .mngds-toggle-switch--unselected.is-pressed .mngds-toggle-switch__handle,
+.mngds-toggle-switch--unselected:not(.mngds-toggle-switch--disabled):hover .mngds-toggle-switch__handle,
+.mngds-toggle-switch--unselected:not(.mngds-toggle-switch--disabled):active .mngds-toggle-switch__handle {
+  background: var(--mng-toggle-switch-status-unselected-interaction-hover-slider-handle-background);
+}
+.mngds-toggle-switch--selected.is-hover .mngds-toggle-switch__handle, .mngds-toggle-switch--selected.is-pressed .mngds-toggle-switch__handle,
+.mngds-toggle-switch--selected:not(.mngds-toggle-switch--disabled):hover .mngds-toggle-switch__handle,
+.mngds-toggle-switch--selected:not(.mngds-toggle-switch--disabled):active .mngds-toggle-switch__handle {
+  background: var(--mng-toggle-switch-status-selected-interaction-hover-slider-handle-background);
+}
+
+/* Disabled: gray/500 slider, white handle, gray/400 icon. */
+.mngds-toggle-switch--disabled .mngds-toggle-switch__slider { background: var(--mng-toggle-switch-status-unselected-interaction-disabled-slider-background); box-shadow: none; }
+.mngds-toggle-switch--disabled .mngds-toggle-switch__handle { background: var(--mng-toggle-switch-status-unselected-interaction-disabled-slider-handle-background); }
+.mngds-toggle-switch--disabled .mngds-toggle-switch__icon { color: var(--mng-toggle-switch-interaction-disabled-slider-handle-icon-icon-color); }
+
+/* InFocus (forced or keyboard focus): 2px gray/black ring outside the touch area. */
+.mngds-toggle-switch.is-infocus, .mngds-toggle-switch:has(.mngds-toggle-switch__input:focus-visible) {
+  box-shadow: 0 0 0 var(--mng-toggle-switch-infocus-true-root-border-width) var(--mng-toggle-switch-infocus-true-root-border-color);
+}

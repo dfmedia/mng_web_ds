@@ -1714,6 +1714,37 @@
         "Not checked against production for this export (Karl, 2026-11-04)."
       ],
       "production": "Not checked against production for this export (Karl, 2026-11-04)."
+    },
+    {
+      "slug": "toggle-switch",
+      "name": "Toggle Switch",
+      "group": "forms",
+      "layer": "core",
+      "order": 12,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "5216:61",
+      "documentationFrame": "7538:7731",
+      "description": "Toggle switch (on / off), built like CheckBox (Karl, 2026-11-10): a 48x24 slider inside a 64x40 touch area. status = unselected (off), selected (on); interaction = Default, hover, pressed, disabled; inFocus adds the focus ring; icon = False, True (close / checkmark3 in the handle). The label isn't part of the atom.",
+      "rules": [
+        "**Touch area:** 64x40px (the whole switch), 5px corners (`radius/utility`), 8px (`spacing/100`) around the slider; it includes the 40x40 area around the handle. Focus shows a 2px `color/gray/black` ring outside it and can apply to any state.",
+        "**Slider:** 48x24px, fully round (12px corners), 2px around the 20x20 handle.",
+        "**Off** (`status=unselected`): `color/gray/max` slider with a 1px inside `color/gray/400` border; `color/gray/300` handle at the left (3.8:1 on white).",
+        "**On** (`status=selected`): `color/gray/500` slider; `color/theme/primary` handle at the right (3:1 or better on gray/500 in every theme except Orlando Sentinel, 2.9:1).",
+        "**Icon** (`icon=True`): `close` (off) or `checkmark3` (on), 12x12px, `color/gray/max` on the handle.",
+        "**Hover and pressed:** the handle turns `color/theme/primary-darker` (on; 4.0:1 or better on gray/500) or `color/gray/200` (off; 6.4:1 on white) (Karl, 2026-11-10; it was site-primary-lighter and gray-400, both under 3:1).",
+        "**Disabled:** `color/gray/500` slider, `color/gray/max` handle, icon `color/gray/400`.",
+        "**Label** (not part of the atom): Noto Sans Regular 14px, `color/gray/min`; the switch and the first line of text are center-aligned, no padding between the touch area and the text.",
+        "**Pointer:** changes from an arrow to a pointing hand inside the touch area.",
+        "**Accessibility:** a real checkbox input with `role=\"switch\"` (or a `button` with `role=\"switch\"`), `aria-checked` true / false, named by its label. Space toggles it; the label never changes with the state. Disabled uses `disabled` (or `aria-disabled`).",
+        "**Documentation stage:** the samples sit on `color/gray/600`, not the usual `gray/500`, because the On slider is gray/500 (Karl, 2026-11-10)."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Orlando Sentinel: the On handle (`color/theme/primary` #1776C4) is 2.9:1 on the `color/gray/500` slider, just under 3:1.",
+        "The On slider (`color/gray/500`) is 1.6:1 on a white page; the handle carries the state (3:1 or better except Orlando Sentinel).",
+        "Not in production yet (Karl, 2026-11-10)."
+      ],
+      "production": "Not in production yet (Karl, 2026-11-10)."
     }
   ]
 }

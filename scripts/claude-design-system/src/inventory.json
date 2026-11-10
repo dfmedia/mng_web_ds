@@ -259,15 +259,11 @@
      "component": "CheckBox"
     },
     {
-     "name": "Toggle switch (selection/toggle)",
-     "where": "Toggle Switches | 2026.03.02, 5216:61",
-     "status": "To add"
-    },
-    {
-     "name": "Switch (on the Radio Buttons page)",
-     "where": "Style Guide | Radio Buttons, 1415:3456",
-     "status": "To review",
-     "note": "Likely belongs on Toggle Switches (open item 3)."
+     "name": "Toggle Switch",
+     "where": "Toggle Switches | 2026.11.10, 5216:61",
+     "status": "In system",
+     "updated": "2026-11-10",
+     "component": "ToggleSwitch"
     },
     {
      "name": "Radio buttons",

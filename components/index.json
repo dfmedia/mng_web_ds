@@ -258,6 +258,22 @@
       "exported": "2026-11-04"
     },
     {
+      "slug": "toggle-switch",
+      "name": "Toggle Switch",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/toggle-switch/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "5216:61",
+        "set": "Toggle Switch"
+      },
+      "variants": 20,
+      "instances": 35,
+      "knownIssues": 4,
+      "exported": "2026-11-10"
+    },
+    {
       "slug": "verification-code",
       "name": "Form Field Assembly / Verification Code",
       "group": "forms",

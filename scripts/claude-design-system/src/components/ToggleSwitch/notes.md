@@ -1,0 +1,7 @@
+- A native `<input type="checkbox" role="switch">` sits invisibly over the 64x40 touch area (as in `CheckBox`), so keyboard, form and screen-reader behavior are the browser's; screen readers announce it as a switch, on or off.
+- Focus ring: 2px `color/gray/black` outside the touch area, `radius/utility` corners, drawn as an outer `box-shadow`; forced with `inFocus`, real on keyboard `:focus-visible`. Figma shows it only on InFocus (no ring on hover or pressed).
+- The slider's 1px `color/gray/400` border is an inset `box-shadow`, drawn only when off and not disabled (Figma draws it only there; the export lists it under `base` because only those variants have it).
+- The handle jumps from left to right with no animation: the spec gives none.
+- Raw values from the spec: the slider's 12px corners, 2px padding and the handle's 10px corners (no tokens: listed in Known issues).
+- Close and check icons: the icon font's glyphs are drawn smaller than their 12px em square (about 8px), so they read smaller than in the Figma previews.
+- The Figma `Cursors` instances on the documentation page are drawings of the pointer; the real cursor is `pointer` on the input.

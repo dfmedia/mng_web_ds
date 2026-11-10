@@ -61,6 +61,7 @@ COMPONENTS = [
     ("password", "Password", "Form Field Assembly / Password", "Core"),
     ("verification-code", "VerificationCode", "Form Field Assembly / Verification Code", "Core"),
     ("checkbox-terms", "CheckboxTerms", "Form Field Assembly / Checkbox + Terms", "Core"),
+    ("toggle-switch", "ToggleSwitch", "Toggle Switch", "Core"),
     # WordPress Elements
     ("homepage-tabs", "HomepageTabs", "Homepage Tabs", "WordPress Elements"),
     ("homepage-tab", "HomepageTab", "Homepage Tab", "WordPress Elements"),
