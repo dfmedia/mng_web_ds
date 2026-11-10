@@ -1,4 +1,4 @@
-/* 64x40 touch area (radius/utility, 8px around the slider); the focus ring is a 2px gray/black outline outside it. */
+/* 64x40 touch area (radius/utility, 8px around the slider). The focus ring goes around the handle, not the touch area. */
 .mngds-toggle-switch {
   position: relative; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box;
   width: var(--mng-toggle-switch-base-root-width); height: var(--mng-toggle-switch-base-root-height);
@@ -18,7 +18,7 @@
   box-shadow: inset 0 0 0 var(--mng-toggle-switch-base-slider-border-width) var(--mng-toggle-switch-base-slider-border-color);
 }
 .mngds-toggle-switch__handle {
-  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  position: relative; display: flex; align-items: center; justify-content: center; flex-shrink: 0;
   width: var(--mng-toggle-switch-base-slider-handle-width); height: var(--mng-toggle-switch-base-slider-handle-height);
   border-radius: var(--mng-toggle-switch-base-slider-handle-border-radius);
   background: var(--mng-toggle-switch-status-unselected-interaction-default-slider-handle-background);
@@ -51,7 +51,11 @@
 .mngds-toggle-switch--disabled .mngds-toggle-switch__handle { background: var(--mng-toggle-switch-status-unselected-interaction-disabled-slider-handle-background); }
 .mngds-toggle-switch--disabled .mngds-toggle-switch__icon { color: var(--mng-toggle-switch-interaction-disabled-slider-handle-icon-icon-color); }
 
-/* InFocus (forced or keyboard focus): 2px gray/black ring outside the touch area. */
-.mngds-toggle-switch.is-infocus, .mngds-toggle-switch:has(.mngds-toggle-switch__input:focus-visible) {
-  box-shadow: 0 0 0 var(--mng-toggle-switch-infocus-true-root-border-width) var(--mng-toggle-switch-infocus-true-root-border-color);
+/* InFocus (forced or keyboard focus): a 2px gray/black ring outside the 40x40 circle around the handle (Figma
+   Focus Ring: the touch-area height around the 20px handle), moving with it. Not on hover or pressed. */
+.mngds-toggle-switch.is-infocus .mngds-toggle-switch__handle::after,
+.mngds-toggle-switch:has(.mngds-toggle-switch__input:focus-visible) .mngds-toggle-switch__handle::after {
+  content: ""; position: absolute; pointer-events: none; border-radius: 50%;
+  inset: calc((var(--mng-toggle-switch-base-root-height) - var(--mng-toggle-switch-base-slider-handle-height)) / -2);
+  box-shadow: 0 0 0 var(--mng-toggle-switch-infocus-true-focus-ring-border-width) var(--mng-toggle-switch-infocus-true-focus-ring-border-color);
 }

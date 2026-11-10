@@ -16,7 +16,7 @@
   },
   "toggle-switch": {
     "infocus-true": {
-      "root": {
+      "focus-ring": {
         "border-color": {
           "$type": "color",
           "$value": "{color.gray.black}",

@@ -14,7 +14,7 @@ exported: 2026-11-10
 
 # Toggle Switch
 
-> Toggle switch (on / off), built like CheckBox (Karl, 2026-11-10): a 48x24 slider inside a 64x40 touch area. status = unselected (off), selected (on); interaction = Default, hover, pressed, disabled; inFocus adds the focus ring; icon = False, True (close / checkmark3 in the handle). The label isn't part of the atom.
+> Toggle switch (on / off), built like CheckBox (Karl, 2026-11-10): a 48x24 slider inside a 64x40 touch area. status = unselected (off), selected (on); interaction = Default, hover, pressed, disabled; inFocus adds the focus ring around the handle; icon = False, True (close / checkmark3 in the handle). The label isn't part of the atom.
 
 ## Figma
 
@@ -71,9 +71,9 @@ From `toggle-switch.tokens.json`. References point at system tokens (`tokens/cor
 
 | Token | Value |
 |---|---|
-| `toggle-switch.infocus-true.root.border-color` | `{color.gray.black}` |
-| `toggle-switch.infocus-true.root.border-style` | solid |
-| `toggle-switch.infocus-true.root.border-width` | 2px |
+| `toggle-switch.infocus-true.focus-ring.border-color` | `{color.gray.black}` |
+| `toggle-switch.infocus-true.focus-ring.border-style` | solid |
+| `toggle-switch.infocus-true.focus-ring.border-width` | 2px |
 | `toggle-switch.base.root.border-radius` | `{radius.utility}` |
 | `toggle-switch.base.root.height` | 40px |
 | `toggle-switch.base.root.padding-bottom` | `{spacing.100}` |
@@ -121,7 +121,8 @@ From `toggle-switch.tokens.json`. References point at system tokens (`tokens/cor
 
 No Breakpoint property: one size at every width.
 
-- **Touch area:** 64x40px (the whole switch), 5px corners (`radius/utility`), 8px (`spacing/100`) around the slider; it includes the 40x40 area around the handle. Focus shows a 2px `color/gray/black` ring outside it and can apply to any state.
+- **Touch area:** 64x40px (the whole switch), 5px corners (`radius/utility`), 8px (`spacing/100`) around the slider; it includes the 40x40 area around the handle.
+- **Focus:** a 2px `color/gray/black` ring outside the 40x40 circle around the handle, not the whole switch (Karl, 2026-11-10). It moves with the handle and can apply to any state. No ring on hover or pressed.
 - **Slider:** 48x24px, fully round (12px corners), 2px around the 20x20 handle.
 - **Off** (`status=unselected`): `color/gray/max` slider with a 1px inside `color/gray/400` border; `color/gray/300` handle at the left (3.8:1 on white).
 - **On** (`status=selected`): `color/gray/500` slider; `color/theme/primary` handle at the right (3:1 or better on gray/500 in every theme except Orlando Sentinel, 2.9:1).

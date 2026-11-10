@@ -20,7 +20,7 @@
       h(NS.ToggleSwitch, { status: s[0] ? 'selected' : 'unselected', icon: p.icon, onChange: function (e) { s[1](e.target.checked); } }), 'Email me breaking news alerts');
   }
   ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
-    h(I.SpecimenSection, { title: 'status × interaction', note: 'A 48x24 slider in a 64x40 touch area (radius/utility). Off: white slider, gray/400 border, gray/300 handle. On: gray/500 slider, color/theme/primary handle. Hover and pressed darken the handle (gray/200, primary-darker). Focus shows a 2px gray/black ring. Samples sit on gray/600 because the On slider is gray/500.' },
+    h(I.SpecimenSection, { title: 'status × interaction', note: 'A 48x24 slider in a 64x40 touch area (radius/utility). Off: white slider, gray/400 border, gray/300 handle. On: gray/500 slider, color/theme/primary handle. Hover and pressed darken the handle (gray/200, primary-darker). Focus shows a 2px gray/black ring around the handle. Samples sit on gray/600 because the On slider is gray/500.' },
       [['unselected', false], ['unselected', true], ['selected', false], ['selected', true]].map(function (r) { return h(I.Specimen, { key: r[0] + r[1], items: row(r[0], r[1]) }); })),
     h(I.SpecimenSection, { title: 'Try it', note: 'Click, or Tab to it and press Space. The switch and the first line of the label are center-aligned, with no gap after the 64x40 touch area.' },
       h(I.Specimen, { items: [{ label: 'Off, with a label', node: h(Demo) }, { label: 'On, with the handle icon', node: h(Demo, { on: true, icon: true }) }] }))));
