@@ -7,7 +7,7 @@
         "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
         "node": "3040:2262",
         "componentSet": "ModalsCenter",
-        "page": "Modal Panels | 2026.11.05"
+        "page": "Modal Panels | 2026.11.10"
       },
       "production": "Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).",
       "layer": "core",
@@ -175,18 +175,18 @@
                 }
               }
             },
-            "button-modal-close": {
+            "button-in-line-close": {
               "height": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 32,
+                  "value": 40,
                   "unit": "px"
                 }
               },
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 32,
+                  "value": 40,
                   "unit": "px"
                 }
               }
@@ -402,169 +402,6 @@
         }
       }
     },
-    "device-tableth": {
-      "desktop": {
-        "modal-container": {
-          "button-modal-close": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 32,
-                "unit": "px"
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 32,
-                "unit": "px"
-              }
-            }
-          },
-          "content-frame": {
-            "padding-left": {
-              "$type": "dimension",
-              "$value": "{spacing.500}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/500"
-                  }
-                }
-              }
-            },
-            "padding-right": {
-              "$type": "dimension",
-              "$value": "{spacing.500}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/500"
-                  }
-                }
-              }
-            },
-            "padding-top": {
-              "$type": "dimension",
-              "$value": "{spacing.500}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/500"
-                  }
-                }
-              }
-            },
-            "body-container": {
-              "padding-bottom": {
-                "$type": "dimension",
-                "$value": "{spacing.300}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/300"
-                    }
-                  }
-                }
-              },
-              "padding-left": {
-                "$type": "dimension",
-                "$value": "{spacing.300}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/300"
-                    }
-                  }
-                }
-              },
-              "padding-right": {
-                "$type": "dimension",
-                "$value": "{spacing.300}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/300"
-                    }
-                  }
-                }
-              },
-              "padding-top": {
-                "$type": "dimension",
-                "$value": "{spacing.300}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/300"
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      },
-      "root": {
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 768,
-            "unit": "px"
-          }
-        },
-        "padding-bottom": {
-          "$type": "dimension",
-          "$value": "{spacing.500}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/500"
-              }
-            }
-          }
-        },
-        "padding-left": {
-          "$type": "dimension",
-          "$value": "{spacing.500}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/500"
-              }
-            }
-          }
-        },
-        "padding-right": {
-          "$type": "dimension",
-          "$value": "{spacing.500}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/500"
-              }
-            }
-          }
-        },
-        "padding-top": {
-          "$type": "dimension",
-          "$value": "{spacing.500}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/500"
-              }
-            }
-          }
-        },
-        "width": {
-          "$type": "dimension",
-          "$value": {
-            "value": 1024,
-            "unit": "px"
-          }
-        }
-      }
-    },
     "device-desktop": {
       "desktop": {
         "modal-container": {
@@ -707,6 +544,153 @@
           "$type": "dimension",
           "$value": {
             "value": 1280,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "device-tableth": {
+      "desktop": {
+        "modal-container": {
+          "content-frame": {
+            "padding-left": {
+              "$type": "dimension",
+              "$value": "{spacing.500}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Spacing & Radius/spacing/500"
+                  }
+                }
+              }
+            },
+            "padding-right": {
+              "$type": "dimension",
+              "$value": "{spacing.500}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Spacing & Radius/spacing/500"
+                  }
+                }
+              }
+            },
+            "padding-top": {
+              "$type": "dimension",
+              "$value": "{spacing.500}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Spacing & Radius/spacing/500"
+                  }
+                }
+              }
+            },
+            "body-container": {
+              "padding-bottom": {
+                "$type": "dimension",
+                "$value": "{spacing.300}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/300"
+                    }
+                  }
+                }
+              },
+              "padding-left": {
+                "$type": "dimension",
+                "$value": "{spacing.300}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/300"
+                    }
+                  }
+                }
+              },
+              "padding-right": {
+                "$type": "dimension",
+                "$value": "{spacing.300}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/300"
+                    }
+                  }
+                }
+              },
+              "padding-top": {
+                "$type": "dimension",
+                "$value": "{spacing.300}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/300"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "root": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 768,
+            "unit": "px"
+          }
+        },
+        "padding-bottom": {
+          "$type": "dimension",
+          "$value": "{spacing.500}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/500"
+              }
+            }
+          }
+        },
+        "padding-left": {
+          "$type": "dimension",
+          "$value": "{spacing.500}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/500"
+              }
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": "{spacing.500}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/500"
+              }
+            }
+          }
+        },
+        "padding-top": {
+          "$type": "dimension",
+          "$value": "{spacing.500}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/500"
+              }
+            }
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1024,
             "unit": "px"
           }
         }
@@ -931,6 +915,19 @@
                 }
               },
               "padding-top": {
+                "$type": "dimension",
+                "$value": "{spacing.200}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/200"
+                    }
+                  }
+                }
+              }
+            },
+            "header": {
+              "padding-right": {
                 "$type": "dimension",
                 "$value": "{spacing.200}",
                 "$extensions": {
@@ -1236,18 +1233,18 @@
                 }
               }
             },
-            "button-modal-close": {
+            "button-in-line-close": {
               "height": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 32,
+                  "value": 40,
                   "unit": "px"
                 }
               },
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 32,
+                  "value": 40,
                   "unit": "px"
                 }
               }
@@ -1305,6 +1302,17 @@
                   "com.mng": {
                     "figma": {
                       "variable": "Spacing & Radius/spacing/100"
+                    }
+                  }
+                }
+              },
+              "padding-right": {
+                "$type": "dimension",
+                "$value": "{spacing.200}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/200"
                     }
                   }
                 }
@@ -1793,18 +1801,18 @@
                 }
               }
             },
-            "button-modal-close": {
+            "button-in-line-close": {
               "height": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 32,
+                  "value": 40,
                   "unit": "px"
                 }
               },
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 32,
+                  "value": 40,
                   "unit": "px"
                 }
               }
@@ -1862,6 +1870,17 @@
                   "com.mng": {
                     "figma": {
                       "variable": "Spacing & Radius/spacing/100"
+                    }
+                  }
+                }
+              },
+              "padding-right": {
+                "$type": "dimension",
+                "$value": "{spacing.200}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/200"
                     }
                   }
                 }

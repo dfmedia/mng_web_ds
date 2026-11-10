@@ -156,7 +156,7 @@
      "where": "Buttons, 5335:16196",
      "status": "In system",
      "note": "Exported as Pop-Up Modal Close.",
-     "updated": "2026-10-29",
+     "updated": "2026-11-10",
      "component": "ButtonModalClose"
     },
     {
@@ -164,7 +164,7 @@
      "where": "Buttons, 5335:16200",
      "status": "In system",
      "note": "Exported as In-Line Close.",
-     "updated": "2026-10-29",
+     "updated": "2026-11-10",
      "component": "ButtonInLineClose"
     },
     {
@@ -225,7 +225,7 @@
     },
     {
      "name": "ModalsCenter",
-     "where": "Modal Panels | 2026.11.05, 3040:2262",
+     "where": "Modal Panels | 2026.11.10, 3040:2262",
      "status": "In system",
      "updated": "2026-11-10",
      "component": "ModalsCenter"

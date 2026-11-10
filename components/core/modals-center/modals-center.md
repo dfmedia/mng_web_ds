@@ -18,7 +18,7 @@ exported: 2026-11-10
 
 ## Figma
 
-- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Modal Panels | 2026.11.05**
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Modal Panels | 2026.11.10**
 - Component set: [`ModalsCenter` · 3040:2262](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=3040-2262) · key `ee63f90bb43e86ecf93d65870821a8291c205a01`
 - Documentation frame: [ModalsCenter Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7418-3457) · overview: [previews/modals-center--documentation.png](previews/modals-center--documentation.png)
 
@@ -62,7 +62,7 @@ Default variant `Desktop` (hidden layers marked):
           - **Button Linkstyle** `INSTANCE`: 121×38, horizontal, gap 8, padding 8/8/8/8, hug×hug, instance of Button Linkstyle (Icon=None, Style=1 Row, State=Default)
           - **Button Primary** `INSTANCE`: 138×40, vertical, gap 8, padding 0/8/0/8, fixed×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
           - **Button Linkstyle** `INSTANCE`: 121×38, horizontal, gap 8, padding 8/8/8/8, hug×hug, instance of Button Linkstyle (Icon=None, Style=1 Row, State=Default)
-        - **Button Modal Close** `INSTANCE`: 32×32, horizontal, gap 0, padding 0/0/0/0, fixed×fixed, absolute, instance of Button Modal Close (State=Default)
+        - **Button In-Line Close** `INSTANCE`: 40×40, horizontal, gap 8, padding 0/0/0/0, hug×hug, absolute, instance of Button In-Line Close (State=Default)
 
 ## Component tokens
 
@@ -86,8 +86,8 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-center.base.desktop.modal-container.content-frame.body-container.body-content.body-content.font-family` | `{font.family.noto-sans}` |
 | `modals-center.base.desktop.modal-container.content-frame.body-container.body-content.body-content.font-size` | `{font.size.16}` |
 | `modals-center.base.desktop.modal-container.content-frame.body-container.body-content.body-content.font-weight` | `{font.weight.regular}` |
-| `modals-center.base.desktop.modal-container.content-frame.button-modal-close.height` | 32px |
-| `modals-center.base.desktop.modal-container.content-frame.button-modal-close.width` | 32px |
+| `modals-center.base.desktop.modal-container.content-frame.button-in-line-close.height` | 40px |
+| `modals-center.base.desktop.modal-container.content-frame.button-in-line-close.width` | 40px |
 | `modals-center.base.desktop.modal-container.content-frame.cta.gap` | `{spacing.100}` |
 | `modals-center.base.desktop.modal-container.content-frame.cta.button-linkstyle.height` | 38px |
 | `modals-center.base.desktop.modal-container.content-frame.cta.button-linkstyle.width` | 121px |
@@ -106,21 +106,6 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-center.base.desktop.modal-container.content-frame.header.text-container.title.title.font-size` | `{font.size.20}` |
 | `modals-center.base.desktop.modal-container.content-frame.header.text-container.title.title.font-weight` | `{font.weight.bold}` |
 | `modals-center.base.root.background` | #000000 @ 0.5 |
-| `modals-center.device-tableth.desktop.modal-container.button-modal-close.height` | 32px |
-| `modals-center.device-tableth.desktop.modal-container.button-modal-close.width` | 32px |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.padding-left` | `{spacing.500}` |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.padding-right` | `{spacing.500}` |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.padding-top` | `{spacing.500}` |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-bottom` | `{spacing.300}` |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-left` | `{spacing.300}` |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-right` | `{spacing.300}` |
-| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-top` | `{spacing.300}` |
-| `modals-center.device-tableth.root.height` | 768px |
-| `modals-center.device-tableth.root.padding-bottom` | `{spacing.500}` |
-| `modals-center.device-tableth.root.padding-left` | `{spacing.500}` |
-| `modals-center.device-tableth.root.padding-right` | `{spacing.500}` |
-| `modals-center.device-tableth.root.padding-top` | `{spacing.500}` |
-| `modals-center.device-tableth.root.width` | 1024px |
 | `modals-center.device-desktop.desktop.modal-container.content-frame.padding-left` | `{spacing.500}` |
 | `modals-center.device-desktop.desktop.modal-container.content-frame.padding-right` | `{spacing.500}` |
 | `modals-center.device-desktop.desktop.modal-container.content-frame.padding-top` | `{spacing.500}` |
@@ -134,6 +119,19 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-center.device-desktop.root.padding-right` | `{spacing.500}` |
 | `modals-center.device-desktop.root.padding-top` | `{spacing.500}` |
 | `modals-center.device-desktop.root.width` | 1280px |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.padding-left` | `{spacing.500}` |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.padding-right` | `{spacing.500}` |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.padding-top` | `{spacing.500}` |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-bottom` | `{spacing.300}` |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-left` | `{spacing.300}` |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-right` | `{spacing.300}` |
+| `modals-center.device-tableth.desktop.modal-container.content-frame.body-container.padding-top` | `{spacing.300}` |
+| `modals-center.device-tableth.root.height` | 768px |
+| `modals-center.device-tableth.root.padding-bottom` | `{spacing.500}` |
+| `modals-center.device-tableth.root.padding-left` | `{spacing.500}` |
+| `modals-center.device-tableth.root.padding-right` | `{spacing.500}` |
+| `modals-center.device-tableth.root.padding-top` | `{spacing.500}` |
+| `modals-center.device-tableth.root.width` | 1024px |
 | `modals-center.device-tabletv.desktop.modal-container.content-frame.padding-left` | `{spacing.500}` |
 | `modals-center.device-tabletv.desktop.modal-container.content-frame.padding-right` | `{spacing.500}` |
 | `modals-center.device-tabletv.desktop.modal-container.content-frame.padding-top` | `{spacing.500}` |
@@ -154,6 +152,7 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-center.device-mobile.desktop.modal-container.content-frame.body-container.padding-left` | `{spacing.200}` |
 | `modals-center.device-mobile.desktop.modal-container.content-frame.body-container.padding-right` | `{spacing.200}` |
 | `modals-center.device-mobile.desktop.modal-container.content-frame.body-container.padding-top` | `{spacing.200}` |
+| `modals-center.device-mobile.desktop.modal-container.content-frame.header.padding-right` | `{spacing.200}` |
 | `modals-center.device-mobile.root.height` | 800px |
 | `modals-center.device-mobile.root.padding-bottom` | `{spacing.300}` |
 | `modals-center.device-mobile.root.padding-left` | `{spacing.300}` |
@@ -182,14 +181,15 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.body-container.body-content.body-content.font-family` | `{font.family.noto-sans}` |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.body-container.body-content.body-content.font-size` | `{font.size.16}` |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.body-container.body-content.body-content.font-weight` | `{font.weight.regular}` |
-| `modals-center.device-fold.fold-modal.modal-container.content-frame.button-modal-close.height` | 32px |
-| `modals-center.device-fold.fold-modal.modal-container.content-frame.button-modal-close.width` | 32px |
+| `modals-center.device-fold.fold-modal.modal-container.content-frame.button-in-line-close.height` | 40px |
+| `modals-center.device-fold.fold-modal.modal-container.content-frame.button-in-line-close.width` | 40px |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.cta.gap` | `{spacing.100}` |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.cta.button-linkstyle.height` | 38px |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.cta.button-linkstyle.width` | 121px |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.cta.button-primary.height` | 40px |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.cta.button-primary.width` | 138px |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.header.gap` | `{spacing.100}` |
+| `modals-center.device-fold.fold-modal.modal-container.content-frame.header.padding-right` | `{spacing.200}` |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.header.icon-container.icons.height` | 16px |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.header.icon-container.icons.icon-color` | `{color.gray.min}` |
 | `modals-center.device-fold.fold-modal.modal-container.content-frame.header.icon-container.icons.width` | 16px |
@@ -235,14 +235,15 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.body-container.form-field.width` | 232px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.body-container.scroll-indicator.background` | `{color.gray.300}` |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.body-container.scroll-indicator.border-radius` | `{radius.sm}` |
-| `modals-center.device-mobilescroll.mobile.modal-container.content-frame.button-modal-close.height` | 32px |
-| `modals-center.device-mobilescroll.mobile.modal-container.content-frame.button-modal-close.width` | 32px |
+| `modals-center.device-mobilescroll.mobile.modal-container.content-frame.button-in-line-close.height` | 40px |
+| `modals-center.device-mobilescroll.mobile.modal-container.content-frame.button-in-line-close.width` | 40px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.cta.gap` | `{spacing.100}` |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.cta.button-linkstyle.height` | 38px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.cta.button-linkstyle.width` | 121px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.cta.button-primary.height` | 40px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.cta.button-primary.width` | 138px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.header.gap` | `{spacing.100}` |
+| `modals-center.device-mobilescroll.mobile.modal-container.content-frame.header.padding-right` | `{spacing.200}` |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.header.icon-container.icons.height` | 16px |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.header.icon-container.icons.icon-color` | `{color.gray.min}` |
 | `modals-center.device-mobilescroll.mobile.modal-container.content-frame.header.icon-container.icons.width` | 16px |
@@ -273,7 +274,7 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 - **Spacing:** 16px (`spacing/200`) between the header, Body Container, InLineMessage and CTA stack; 8px (`spacing/100`) between CTAs and between the header icon and title; the optional header icon sits in its own container (so the subtitle lines up under the title) and is aligned to the title's first line by baseline alignment (`align-items: baseline`), no padding.
 - **Body Container:** 1px `color/gray/500` border, `radius/sm`; padding 24px (`spacing/300`), 16px (`spacing/200`) on Mobile and Fold.
 - **Text:** title Noto Sans Bold 20, subtitle and body Noto Sans Regular 16, all `color/gray/min`. CTAs: Button Linkstyle (`color/theme/primary`) and Button Primary, stacked and centered.
-- **Close:** Button Modal Close (32×32, `pop-up-modal-close`) centered on the card's top-right corner; at least 24px (`spacing/300`) between the card and the screen edge.
+- **Close** (Karl, 2026-11-10): Button In-Line Close (`in-line-close`: 40×40 target, 28px box, 12px icon) inside the card's top-right corner, flush with its top and right edges, on every Device and in every modal (it was Button Modal Close centered on the corner). On Mobile and Fold the header keeps 16px (`spacing/200`) clear on its right so the title and subtitle wrap before the button; on Desktop and tablets the 40px card padding already clears it. At least 24px (`spacing/300`) between the card and the screen edge.
 - **Overlay:** black at 50% over the page below the masthead (no token yet). The masthead stays visible above it in most cases.
 - **Closing:** the close button, an inline text link, or a click anywhere outside the card.
 - **Where scroll is needed** (MobileScroll, 2026-11-04, from the Embedded Login keyboard spec): only the body scrolls. The header and CTA stack are fixed, the Body Container scrolls (`overflow-y: auto`), and the page behind the modal is scroll-locked. The card keeps the 24px (`spacing/300`) margin and fills the screen height when its content is taller.
@@ -294,7 +295,7 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 - **Behind the modal:** everything outside the card (masthead, page, ads) is `inert`, so neither Tab nor a screen reader's reading cursor can reach it, and the page is scroll-locked. Render the modal outside that content (a direct child of `body`) so it isn't made inert with it.
 - **Opening:** focus moves into the card, to the title (`tabindex="-1"`), so the screen reader announces it and reads on, and a phone doesn't open the on-screen keyboard before the reader has seen the modal.
 - **Keyboard:** Tab and Shift+Tab move through the card in reading order (title area, body and its fields, InLineMessage links, CTAs, then the close button) and wrap from last to first, never leaving the card. Esc closes, the same as the close button. Enter in a field submits the form; Enter or Space activates buttons.
-- **Close button:** a real `button` named "Close" (`aria-label`), icon `aria-hidden`; its 32×32 target passes WCAG 2.5.8 (24px minimum). Clicking the overlay is an extra for pointers only: not in the Tab order, not announced.
+- **Close button:** a real `button` named "Close" (`aria-label`), icon `aria-hidden`; its 40×40 target passes WCAG 2.5.8 (24px minimum). Clicking the overlay is an extra for pointers only: not in the Tab order, not announced.
 - **Closing:** focus goes back to the control that opened the modal. If that control is gone (after signing in, Sign In becomes the account menu), focus goes to its replacement, or to the start of the main content.
 - **Visible focus:** every control shows its focus state (Form Field Focus, the buttons' InFocus), and the focused control is never hidden behind the fixed CTA area, the masthead or the on-screen keyboard (WCAG 2.4.11; the Focus rule in Behavior scrolls it into view).
 - **Scrolling body:** if the Body Container scrolls and holds nothing focusable, it gets `tabindex="0"` and the title as its name, so keyboard users can scroll it with the arrow keys.
@@ -305,9 +306,9 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 
 Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **12**.
 
-Placed on pages: Modal Panels | 2026.11.05 ×6, Buttons | 2026.09.30 ×1.
+Placed on pages: Modal Panels | 2026.11.10 ×6, Buttons | 2026.09.30 ×1.
 
-**Built from:** Button Linkstyle ×12, Icons ×6, Button Primary ×6, Button Modal Close ×6, Form Field ×1
+**Built from:** Button Linkstyle ×12, Icons ×6, Button Primary ×6, Button In-Line Close ×6, Form Field ×1
 Icon variants: `notification` ×6.
 
 ## Production
@@ -316,7 +317,7 @@ Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).
 
 ## Known issues
 
-1. Open question for DigiScrum and CMS (2026-11-04): with the keyboard open and an 8px gap, the corner close button no longer fits. Proposal: move it inside the card's top-right corner when the card reaches the top of the visible area. Not in the kit until dev confirms. Also asked: can the overlay cover the (sticky) masthead while the keyboard is open?
+1. Open question for DigiScrum and CMS (2026-11-04): can the overlay and card cover the (sticky) masthead while the keyboard is open? (The other 2026-11-04 question, the close button with an 8px gap, is settled: since 2026-11-10 the close button sits inside the card.)
 2. Production (Reader Dashboard) differences: design-vs-production entry 31.
 3. **Values not bound to a token** (literal in the component tokens): `base` root background = #000000 @ 0.5.
 

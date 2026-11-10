@@ -149,8 +149,8 @@ function ModalsCenter(props) {
       scroll.overflow ? h('span', { className: 'mngds-modals-center__indicator', 'aria-hidden': 'true', style: { top: scroll.top + 'px', height: scroll.size + 'px' } }) : null) : null,
     props.message ? h('div', { className: 'mngds-modals-center__message' }, props.message) : null,
     cta && (!Array.isArray(cta) || cta.some(Boolean)) ? h('div', { className: 'mngds-modals-center__cta' }, cta) : null,
-    /* Close is last in the Tab order (spec, 2026-11-05). */
-    h(ButtonModalClose, { className: 'mngds-modals-center__close', label: props.closeLabel || 'Close', onClick: props.onClose }));
+    /* Close: Button In-Line Close inside the card's top-right corner (2026-11-10); last in the Tab order (2026-11-05). */
+    h(ButtonInLineClose, { className: 'mngds-modals-center__close', label: props.closeLabel || 'Close', onClick: props.onClose }));
 
   var used = ['device', 'inline', 'open', 'offsetTop', 'title', 'subtitle', 'showIcon', 'iconName', 'body', 'message', 'actions',
     'topLinkLabel', 'bottomLinkLabel', 'primaryLabel', 'onTopLink', 'onBottomLink', 'onPrimary', 'topLinkHref', 'bottomLinkHref',

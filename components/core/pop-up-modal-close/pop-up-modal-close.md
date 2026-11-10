@@ -9,12 +9,12 @@ component_key: 790ce7e08b7c4a4da2f4c22f29a5525fdcbea997
 variants: 4
 tokens: pop-up-modal-close.tokens.json
 skeleton: pop-up-modal-close.html
-exported: 2026-10-28
+exported: 2026-11-10
 ---
 
 # Pop-Up Modal Close
 
-> Circular 32px close (X) button for pop-up modals (ModalsCenter, Modals/*). Light-gray circle at rest, white on Hover/Pressed; InFocus keeps the Default look and adds the ring.
+> Circular 32px close (X) button. Light-gray circle at rest, white on Hover/Pressed; InFocus keeps the Default look and adds the ring. No longer used on ModalsCenter: since 2026-11-10 modals use In-Line Close inside the card's corner (Karl).
 
 ## Figma
 
@@ -32,7 +32,7 @@ exported: 2026-10-28
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default` | 32×32 | [5335:16193](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16193) | 28 | ![](previews/pop-up-modal-close--default.png) |
+| `Default` | 32×32 | [5335:16193](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16193) | 8 | ![](previews/pop-up-modal-close--default.png) |
 | `Hover` | 32×32 | [5335:16194](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16194) | 1 | ![](previews/pop-up-modal-close--hover.png) |
 | `Pressed` | 32×32 | [7078:7686](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7078-7686) | 1 | ![](previews/pop-up-modal-close--pressed.png) |
 | `InFocus` | 32×32 | [5335:16195](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16195) | 1 | ![](previews/pop-up-modal-close--infocus.png) |
@@ -82,7 +82,7 @@ From `pop-up-modal-close.tokens.json`. References point at system tokens (`token
 No Breakpoint property: one size at every width.
 
 - Single size at every breakpoint (32×32 in every state). No Breakpoint property.
-- Sits in the modal header, top-right; see ModalsCenter in the main file.
+- Was the ModalsCenter close button, centered on the card's top-right corner, until 2026-11-10; modals now use In-Line Close inside the corner (Karl).
 - **Focus ring:** InFocus adds one `Focus Ring` frame, absolutely positioned 1px outside the element, with a 2px OUTSIDE stroke bound to `color/gray/black`. It draws outside the component and never changes its size or moves anything inside or around it (the 32px circle reads as 38px with the ring). In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;` or an absolutely positioned pseudo-element; never a border or padding change.
 
 ## Accessibility
@@ -93,10 +93,9 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **31**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **11**.
 
-Inside components: Modals ×7, ModalsCenter ×6.
-Placed on pages: Modal Panels | 2025.12.29 ×12.
+Inside components: Modals ×6.
 
 **Built from:** Icons ×4
 Icon variants: `close` ×4.
@@ -116,4 +115,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `pop-up-modal-close.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-10 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

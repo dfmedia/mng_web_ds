@@ -205,10 +205,10 @@
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "5335:16196",
       "documentationFrame": "7078:7807",
-      "description": "Circular 32px close (X) button for pop-up modals (ModalsCenter, Modals/*). Light-gray circle at rest, white on Hover/Pressed; InFocus keeps the Default look and adds the ring.",
+      "description": "Circular 32px close (X) button. Light-gray circle at rest, white on Hover/Pressed; InFocus keeps the Default look and adds the ring. No longer used on ModalsCenter: since 2026-11-10 modals use In-Line Close inside the card's corner (Karl).",
       "rules": [
         "Single size at every breakpoint (32×32 in every state). No Breakpoint property.",
-        "Sits in the modal header, top-right; see ModalsCenter in the main file.",
+        "Was the ModalsCenter close button, centered on the card's top-right corner, until 2026-11-10; modals now use In-Line Close inside the corner (Karl).",
         "**Focus ring:** InFocus adds one `Focus Ring` frame, absolutely positioned 1px outside the element, with a 2px OUTSIDE stroke bound to `color/gray/black`. It draws outside the component and never changes its size or moves anything inside or around it (the 32px circle reads as 38px with the ring). In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;` or an absolutely positioned pseudo-element; never a border or padding change."
       ],
       "breakpoints": null,
@@ -226,7 +226,7 @@
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "5335:16200",
       "documentationFrame": "7078:7975",
-      "description": "Close (X) button for in-line panels and alerts (InLineMessage, ModalsOffset). Bare 12px icon in a 40px hit area at rest; the 28px `Box` gets a white fill and 1px near-black border on Hover/Pressed.",
+      "description": "Close (X) button for in-line panels, alerts and modals (InLineMessage, ModalsOffset, ModalsCenter since 2026-11-10). Bare 12px icon in a 40px hit area at rest; the 28px `Box` gets a white fill and 1px near-black border on Hover/Pressed.",
       "rules": [
         "Single size at every breakpoint (40×40 hit area). No Breakpoint property.",
         "Every state has the same layers (`Button` › `Box` › `Icon`); the `Box` has no fill or border in Default and InFocus.",
@@ -770,7 +770,7 @@
         "**Spacing:** 16px (`spacing/200`) between the header, Body Container, InLineMessage and CTA stack; 8px (`spacing/100`) between CTAs and between the header icon and title; the optional header icon sits in its own container (so the subtitle lines up under the title) and is aligned to the title's first line by baseline alignment (`align-items: baseline`), no padding.",
         "**Body Container:** 1px `color/gray/500` border, `radius/sm`; padding 24px (`spacing/300`), 16px (`spacing/200`) on Mobile and Fold.",
         "**Text:** title Noto Sans Bold 20, subtitle and body Noto Sans Regular 16, all `color/gray/min`. CTAs: Button Linkstyle (`color/theme/primary`) and Button Primary, stacked and centered.",
-        "**Close:** Button Modal Close (32×32, `pop-up-modal-close`) centered on the card's top-right corner; at least 24px (`spacing/300`) between the card and the screen edge.",
+        "**Close** (Karl, 2026-11-10): Button In-Line Close (`in-line-close`: 40×40 target, 28px box, 12px icon) inside the card's top-right corner, flush with its top and right edges, on every Device and in every modal (it was Button Modal Close centered on the corner). On Mobile and Fold the header keeps 16px (`spacing/200`) clear on its right so the title and subtitle wrap before the button; on Desktop and tablets the 40px card padding already clears it. At least 24px (`spacing/300`) between the card and the screen edge.",
         "**Overlay:** black at 50% over the page below the masthead (no token yet). The masthead stays visible above it in most cases.",
         "**Closing:** the close button, an inline text link, or a click anywhere outside the card.",
         "**Where scroll is needed** (MobileScroll, 2026-11-04, from the Embedded Login keyboard spec): only the body scrolls. The header and CTA stack are fixed, the Body Container scrolls (`overflow-y: auto`), and the page behind the modal is scroll-locked. The card keeps the 24px (`spacing/300`) margin and fills the screen height when its content is taller.",
@@ -784,7 +784,7 @@
       ],
       "breakpoints": "| Device | Screen | Card |\n|---|---|---|\n| Desktop, TabletH, TabletV | 1280, 1024, 768 | 444px, centered; padding 40/40/24/40 |\n| Mobile, Fold | 360, 340 | screen width minus 24px each side; padding 24 |",
       "knownIssues": [
-        "Open question for DigiScrum and CMS (2026-11-04): with the keyboard open and an 8px gap, the corner close button no longer fits. Proposal: move it inside the card's top-right corner when the card reaches the top of the visible area. Not in the kit until dev confirms. Also asked: can the overlay cover the (sticky) masthead while the keyboard is open?",
+        "Open question for DigiScrum and CMS (2026-11-04): can the overlay and card cover the (sticky) masthead while the keyboard is open? (The other 2026-11-04 question, the close button with an 8px gap, is settled: since 2026-11-10 the close button sits inside the card.)",
         "Production (Reader Dashboard) differences: design-vs-production entry 31."
       ],
       "production": "Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).",
@@ -793,7 +793,7 @@
         "**Behind the modal:** everything outside the card (masthead, page, ads) is `inert`, so neither Tab nor a screen reader's reading cursor can reach it, and the page is scroll-locked. Render the modal outside that content (a direct child of `body`) so it isn't made inert with it.",
         "**Opening:** focus moves into the card, to the title (`tabindex=\"-1\"`), so the screen reader announces it and reads on, and a phone doesn't open the on-screen keyboard before the reader has seen the modal.",
         "**Keyboard:** Tab and Shift+Tab move through the card in reading order (title area, body and its fields, InLineMessage links, CTAs, then the close button) and wrap from last to first, never leaving the card. Esc closes, the same as the close button. Enter in a field submits the form; Enter or Space activates buttons.",
-        "**Close button:** a real `button` named \"Close\" (`aria-label`), icon `aria-hidden`; its 32×32 target passes WCAG 2.5.8 (24px minimum). Clicking the overlay is an extra for pointers only: not in the Tab order, not announced.",
+        "**Close button:** a real `button` named \"Close\" (`aria-label`), icon `aria-hidden`; its 40×40 target passes WCAG 2.5.8 (24px minimum). Clicking the overlay is an extra for pointers only: not in the Tab order, not announced.",
         "**Closing:** focus goes back to the control that opened the modal. If that control is gone (after signing in, Sign In becomes the account menu), focus goes to its replacement, or to the start of the main content.",
         "**Visible focus:** every control shows its focus state (Form Field Focus, the buttons' InFocus), and the focused control is never hidden behind the fixed CTA area, the masthead or the on-screen keyboard (WCAG 2.4.11; the Focus rule in Behavior scrolls it into view).",
         "**Scrolling body:** if the Body Container scrolls and holds nothing focusable, it gets `tabindex=\"0\"` and the title as its name, so keyboard users can scroll it with the arrow keys.",

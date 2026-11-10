@@ -34,7 +34,7 @@ export interface ModalsCenterProps extends React.HTMLAttributes<HTMLDivElement> 
   bottomLinkHref?: string;
   /** Called by the close button, a click on the overlay, and Esc (fixed mode). */
   onClose?: (e: React.SyntheticEvent | KeyboardEvent) => void;
-  /** Accessible name of the close button. Default 'Close'. */
+  /** Accessible name of the close button (Button In-Line Close, inside the card's top-right corner). Default 'Close'. */
   closeLabel?: string;
   /** 'alertdialog' only for a short message that needs an answer (confirm / cancel). Default 'dialog'. */
   role?: 'dialog' | 'alertdialog';

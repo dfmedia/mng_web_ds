@@ -16,7 +16,7 @@
   function screen(device, zoom, extra) {
     return h('div', { style: { zoom: zoom } }, h(NS.ModalsCenter, Object.assign({ device: device, inline: true }, extra)));
   }
-  /* The card alone at 100%: the screen's overlay and height removed (room left for the close button). */
+  /* The card alone at 100%: the screen's overlay and height removed. */
   function card(device, extra) {
     var phone = device === 'Mobile' || device === 'FOLD';
     var style = phone ? { height: 'auto', background: 'none' } : { width: 'auto', height: 'auto', background: 'none', padding: '16px' };
@@ -36,7 +36,7 @@
   }
   ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
     h(I.SpecimenSection, { title: 'The card',
-      note: 'Shown at 100%. Desktop, TabletH and TabletV: a 444px card, padding 40 / 40 / 24 / 40. Mobile and Fold: the screen width minus 24px each side (312 at 360, 292 at 340), padding 24, Body Container padding 16. Button Modal Close sits on the card’s top-right corner.' },
+      note: 'Shown at 100%. Desktop, TabletH and TabletV: a 444px card, padding 40 / 40 / 24 / 40. Mobile and Fold: the screen width minus 24px each side (312 at 360, 292 at 340), padding 24, Body Container padding 16. Button In-Line Close sits inside the card’s top-right corner (40×40, flush with the edges); on phones the header keeps 16px clear on its right so the title wraps before it.' },
       h(I.Specimen, { items: [
         { label: 'Device=Desktop, TabletH, TabletV (444px card)', node: card('Desktop') },
         { label: 'Device=Mobile (360 screen)', node: card('Mobile') },
@@ -58,7 +58,7 @@
         { label: 'Device=MobileScroll (360×800), keyboard closed', node: screen('MobileScroll', 1, { body: LONG, children: field() }) }
       ] })),
     h(I.SpecimenSection, { title: 'On-screen keyboard and compact mode (simulated)',
-      note: 'With the keyboard open the modal lives in the visible area (window.visualViewport): centered in it, or filling it with 8px gaps top and bottom when taller; the overlay covers the masthead. Under 560px of visible area (every phone, tablet landscape) compact mode applies: the subtitle moves into the body, card padding top and bottom is 16px, and only Button Primary stays pinned (the links move to the end of the body). The close button doesn’t fit in an 8px gap: open question for dev (2026-11-04), so it is drawn where it is today. In real use all of this is automatic; here keyboardOpen and visibleHeight simulate it.' },
+      note: 'With the keyboard open the modal lives in the visible area (window.visualViewport): centered in it, or filling it with 8px gaps top and bottom when taller; the overlay covers the masthead. Under 560px of visible area (every phone, tablet landscape) compact mode applies: the subtitle moves into the body, card padding top and bottom is 16px, and only Button Primary stays pinned (the links move to the end of the body). The close button sits inside the card, so it still fits. In real use all of this is automatic; here keyboardOpen and visibleHeight simulate it.' },
       h(I.Specimen, { items: [
         { label: 'Mobile, keyboard open, iOS Safari (360 wide, 414px visible), 100%', node: screen('Mobile', 1, { body: SHORT, children: field(), keyboardOpen: true, visibleHeight: 414 }) },
         { label: 'TabletH, keyboard open, iPad landscape (1024 wide, 368px visible), 50%', node: screen('TabletH', 0.5, { body: SHORT, children: field('Desktop'), keyboardOpen: true, visibleHeight: 368 }) }

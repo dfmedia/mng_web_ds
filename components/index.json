@@ -93,9 +93,9 @@
         "set": "Button In-Line Close"
       },
       "variants": 4,
-      "instances": 112,
+      "instances": 108,
       "knownIssues": 2,
-      "exported": "2026-10-28"
+      "exported": "2026-11-10"
     },
     {
       "slug": "non-button-hyperlink",
@@ -125,9 +125,9 @@
         "set": "Button Modal Close"
       },
       "variants": 4,
-      "instances": 31,
+      "instances": 11,
       "knownIssues": 2,
-      "exported": "2026-10-28"
+      "exported": "2026-11-10"
     },
     {
       "slug": "address-block",

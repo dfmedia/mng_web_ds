@@ -29,7 +29,7 @@ h(ModalsCenter, { device: 'TabletV', inline: true })
 | `topLinkLabel`, `primaryLabel`, `bottomLinkLabel` | default CTA stack; `null` hides one | `'CTA Hyperlink'`, `'CTA Button'`, `'CTA Hyperlink'` |
 | `onTopLink`, `onPrimary`, `onBottomLink`, `…Href` | CTA handlers or links | |
 | `actions` | replaces the CTA stack | |
-| `onClose`, `closeLabel` | close button, overlay click, Esc | `'Close'` |
+| `onClose`, `closeLabel` | close button (Button In-Line Close, inside the card's top-right corner), overlay click, Esc | `'Close'` |
 | `role` | `'dialog'`, or `'alertdialog'` for a short message that needs an answer | `'dialog'` |
 | `compact` | force compact mode on or off (header = icon + title, subtitle and links move into the body, card padding 16 top and bottom) | automatic: visible area under 560px |
 | `keyboardOpen` | force the keyboard-open layout (8px gaps, covers the masthead) | automatic in fixed mode |

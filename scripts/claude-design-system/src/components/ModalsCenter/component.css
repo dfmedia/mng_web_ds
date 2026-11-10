@@ -27,7 +27,8 @@
   --mc-sub-ff: var(--mng-modals-center-base-desktop-modal-container-content-frame-header-text-container-subtitle-subtitle-font-family);
   --mc-sub-fs: var(--mng-modals-center-base-desktop-modal-container-content-frame-header-text-container-subtitle-subtitle-font-size);
   --mc-sub-fw: var(--mng-modals-center-base-desktop-modal-container-content-frame-header-text-container-subtitle-subtitle-font-weight);
-  --mc-close-w: var(--mng-modals-center-base-desktop-modal-container-content-frame-button-modal-close-width); --mc-close-h: var(--mng-modals-center-base-desktop-modal-container-content-frame-button-modal-close-height);
+  --mc-close-w: var(--mng-modals-center-base-desktop-modal-container-content-frame-button-in-line-close-width); --mc-close-h: var(--mng-modals-center-base-desktop-modal-container-content-frame-button-in-line-close-height);
+  --mc-header-pr: 0px;
   --mc-card-w: var(--mng-modals-center-base-desktop-width);
 }
 .mngds-modals-center--desktop {
@@ -59,7 +60,6 @@
   --mc-body-pr: var(--mng-modals-center-device-tableth-desktop-modal-container-content-frame-body-container-padding-right);
   --mc-body-pb: var(--mng-modals-center-device-tableth-desktop-modal-container-content-frame-body-container-padding-bottom);
   --mc-body-pl: var(--mng-modals-center-device-tableth-desktop-modal-container-content-frame-body-container-padding-left);
-  --mc-close-w: var(--mng-modals-center-device-tableth-desktop-modal-container-button-modal-close-width); --mc-close-h: var(--mng-modals-center-device-tableth-desktop-modal-container-button-modal-close-height);
 }
 .mngds-modals-center--tablet-v {
   --mc-root-w: var(--mng-modals-center-device-tabletv-root-width);
@@ -90,6 +90,7 @@
   --mc-body-pr: var(--mng-modals-center-device-mobile-desktop-modal-container-content-frame-body-container-padding-right);
   --mc-body-pb: var(--mng-modals-center-device-mobile-desktop-modal-container-content-frame-body-container-padding-bottom);
   --mc-body-pl: var(--mng-modals-center-device-mobile-desktop-modal-container-content-frame-body-container-padding-left);
+  --mc-header-pr: var(--mng-modals-center-device-mobile-desktop-modal-container-content-frame-header-padding-right);
   --mc-card-w: auto;
 }
 .mngds-modals-center--fold {
@@ -134,7 +135,8 @@
   --mc-body-pr: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-body-container-padding-right);
   --mc-body-pb: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-body-container-padding-bottom);
   --mc-body-pl: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-body-container-padding-left);
-  --mc-close-w: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-button-modal-close-width); --mc-close-h: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-button-modal-close-height);
+  --mc-close-w: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-button-in-line-close-width); --mc-close-h: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-button-in-line-close-height);
+  --mc-header-pr: var(--mng-modals-center-device-fold-fold-modal-modal-container-content-frame-header-padding-right);
   --mc-card-w: auto;
 }
 .mngds-modals-center--mobile-scroll {
@@ -179,7 +181,8 @@
   --mc-root-pr: var(--mng-modals-center-device-mobilescroll-root-padding-right);
   --mc-root-pb: var(--mng-modals-center-device-mobilescroll-root-padding-bottom);
   --mc-root-pl: var(--mng-modals-center-device-mobilescroll-root-padding-left);
-  --mc-close-w: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-button-modal-close-width); --mc-close-h: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-button-modal-close-height);
+  --mc-close-w: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-button-in-line-close-width); --mc-close-h: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-button-in-line-close-height);
+  --mc-header-pr: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-header-padding-right);
   --mc-card-w: auto;
 }
 
@@ -217,9 +220,11 @@
 }
 /* Compact mode (visible area under 560px): card padding top and bottom 16px (spacing/200). */
 .mngds-modals-center--compact .mngds-modals-center__content { padding-top: var(--mng-spacing-200); padding-bottom: var(--mng-spacing-200); }
-/* Close: centered on the card's top-right corner, last in the Tab order. */
-.mngds-modals-center__close { position: absolute; top: calc(var(--mc-close-h) / -2); right: calc(var(--mc-close-w) / -2); z-index: 2; width: var(--mc-close-w); height: var(--mc-close-h); }
-.mngds-modals-center__header { align-self: stretch; flex-shrink: 0; display: flex; flex-direction: row; align-items: baseline; gap: var(--mc-header-gap); }
+/* Close (2026-11-10): Button In-Line Close inside the card's top-right corner, flush with its top and right
+   edges; last in the Tab order. */
+.mngds-modals-center__content > .mngds-modals-center__close { position: absolute; top: 0; right: 0; z-index: 2; width: var(--mc-close-w); height: var(--mc-close-h); }
+/* Header: on Mobile and Fold it keeps 16px (spacing/200) clear on its right so the title wraps before the close button. */
+.mngds-modals-center__header { align-self: stretch; flex-shrink: 0; display: flex; flex-direction: row; align-items: baseline; gap: var(--mc-header-gap); padding-right: var(--mc-header-pr, 0px); }
 .mngds-modals-center__icon-container { display: flex; align-items: center; }
 .mngds-modals-center__icon { width: var(--mc-icon-w); height: var(--mc-icon-h); color: var(--mc-icon-color); display: inline-flex; align-items: center; justify-content: center; }
 .mngds-modals-center__text { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; }
