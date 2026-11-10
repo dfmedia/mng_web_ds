@@ -334,8 +334,8 @@
       },
       "variants": 6,
       "instances": 12,
-      "knownIssues": 4,
-      "exported": "2026-11-04"
+      "knownIssues": 3,
+      "exported": "2026-11-10"
     },
     {
       "slug": "modals-offset",

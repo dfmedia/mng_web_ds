@@ -175,57 +175,80 @@
   --mc-body-pr: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-body-container-padding-right);
   --mc-body-pb: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-body-container-padding-bottom);
   --mc-body-pl: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-body-container-padding-left);
-  --mc-close-w: var(--mng-modals-center-device-mobilescroll-controls-overlay-button-modal-close-width); --mc-close-h: var(--mng-modals-center-device-mobilescroll-controls-overlay-button-modal-close-height);
+  --mc-root-pt: var(--mng-modals-center-device-mobilescroll-root-padding-top);
+  --mc-root-pr: var(--mng-modals-center-device-mobilescroll-root-padding-right);
+  --mc-root-pb: var(--mng-modals-center-device-mobilescroll-root-padding-bottom);
+  --mc-root-pl: var(--mng-modals-center-device-mobilescroll-root-padding-left);
+  --mc-close-w: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-button-modal-close-width); --mc-close-h: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-button-modal-close-height);
   --mc-card-w: auto;
 }
 
 /* Screen: the 50% black overlay (base.root.background). Fixed over the viewport (below `offsetTop`), or
-   in flow at the Figma Device size with `inline` (previews, design canvases). */
+   in flow at the Figma Device size with `inline` (previews, design canvases). The root padding is the
+   card's margin to the screen edge (24px on phones, 40px on desktop and tablets). */
 .mngds-modals-center {
+  --mc-indicator-bg: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-body-container-scroll-indicator-background);
+  --mc-indicator-radius: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-content-frame-body-container-scroll-indicator-border-radius);
+  --mc-focus-gap: var(--mng-spacing-300);
   box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center;
   padding: var(--mc-root-pt, 0) var(--mc-root-pr, 0) var(--mc-root-pb, 0) var(--mc-root-pl, 0);
   background: var(--mng-modals-center-base-root-background);
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; overflow-y: auto;
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; overflow: hidden;
 }
-.mngds-modals-center--inline { position: relative; z-index: auto; width: var(--mc-root-w); height: var(--mc-root-h); max-width: 100%; overflow: hidden; }
-/* Desktop / Tablets: 444px card, centered. Mobile / Fold: screen width minus the 24px root padding. */
-.mngds-modals-center__card { box-sizing: border-box; width: var(--mc-card-w); max-width: 100%; flex-shrink: 0; margin: auto 0; }
-.mngds-modals-center--mobile .mngds-modals-center__card, .mngds-modals-center--fold .mngds-modals-center__card { align-self: stretch; }
+.mngds-modals-center--inline { position: relative; z-index: auto; width: var(--mc-root-w); height: var(--mc-root-h); max-width: 100%; }
+/* Keyboard open: 8px (spacing/100) gaps top and bottom instead of the margin; left and right stay. */
+.mngds-modals-center--keyboard { padding-top: var(--mng-spacing-100); padding-bottom: var(--mng-spacing-100); }
+/* Desktop / Tablets: 444px card, centered. Mobile / Fold: the screen width minus the root padding.
+   The card never grows past the screen: when its content is taller, it fills the height and the body scrolls. */
+.mngds-modals-center__card {
+  box-sizing: border-box; width: var(--mc-card-w); max-width: 100%; max-height: 100%; min-height: 0;
+  display: flex; flex-direction: column; flex: 0 1 auto;
+}
+.mngds-modals-center--mobile .mngds-modals-center__card, .mngds-modals-center--fold .mngds-modals-center__card,
+.mngds-modals-center--mobile-scroll .mngds-modals-center__card { align-self: stretch; }
 /* Content Frame = the dialog card. */
 .mngds-modals-center__content {
   position: relative; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; gap: var(--mc-gap);
+  flex: 0 1 auto; min-height: 0;
   padding: var(--mc-pt) var(--mc-pr) var(--mc-pb) var(--mc-pl);
   /* 1px border drawn inside (Figma inside stroke, as in the skeleton) so the padding stays measured from the edge. */
   background: var(--mc-bg); border-radius: var(--mc-radius);
-  box-shadow: inset 0 0 0 var(--mc-bw) var(--mc-bc), var(--mng-shadow-lg); outline: none; text-align: left;
+  box-shadow: inset 0 0 0 var(--mc-bw) var(--mc-bc), var(--mng-shadow-lg); text-align: left;
 }
-/* Close: centered on the card's top-right corner. */
-.mngds-modals-center__close { position: absolute; top: calc(var(--mc-close-h) / -2); right: calc(var(--mc-close-w) / -2); z-index: 1; width: var(--mc-close-w); height: var(--mc-close-h); }
-.mngds-modals-center__header { align-self: stretch; display: flex; flex-direction: row; align-items: baseline; gap: var(--mc-header-gap); }
+/* Compact mode (visible area under 560px): card padding top and bottom 16px (spacing/200). */
+.mngds-modals-center--compact .mngds-modals-center__content { padding-top: var(--mng-spacing-200); padding-bottom: var(--mng-spacing-200); }
+/* Close: centered on the card's top-right corner, last in the Tab order. */
+.mngds-modals-center__close { position: absolute; top: calc(var(--mc-close-h) / -2); right: calc(var(--mc-close-w) / -2); z-index: 2; width: var(--mc-close-w); height: var(--mc-close-h); }
+.mngds-modals-center__header { align-self: stretch; flex-shrink: 0; display: flex; flex-direction: row; align-items: baseline; gap: var(--mc-header-gap); }
 .mngds-modals-center__icon-container { display: flex; align-items: center; }
 .mngds-modals-center__icon { width: var(--mc-icon-w); height: var(--mc-icon-h); color: var(--mc-icon-color); display: inline-flex; align-items: center; justify-content: center; }
 .mngds-modals-center__text { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; }
-.mngds-modals-center__title { margin: 0; font-family: var(--mc-title-ff); font-size: var(--mc-title-fs); font-weight: var(--mc-title-fw); line-height: normal; color: var(--mc-title-color); }
+.mngds-modals-center__title { margin: 0; font-family: var(--mc-title-ff); font-size: var(--mc-title-fs); font-weight: var(--mc-title-fw); line-height: normal; color: var(--mc-title-color); outline: none; }
 .mngds-modals-center__subtitle { margin: 0; font-family: var(--mc-sub-ff); font-size: var(--mc-sub-fs); font-weight: var(--mc-sub-fw); line-height: normal; color: var(--mc-sub-color); }
+/* Body Container: the only part that scrolls. The border is drawn on top (::after) so text scrolls under it. */
 .mngds-modals-center__body {
-  align-self: stretch; box-sizing: border-box; display: flex; flex-direction: column; gap: var(--mng-spacing-200);
+  position: relative; align-self: stretch; box-sizing: border-box; display: flex; flex-direction: column;
+  flex: 0 1 auto; min-height: 0; border-radius: var(--mc-body-radius); overflow: hidden;
+}
+.mngds-modals-center__body::after {
+  content: ''; position: absolute; inset: 0; border-radius: inherit; pointer-events: none;
+  box-shadow: inset 0 0 0 var(--mc-body-bw) var(--mc-body-bc);
+}
+.mngds-modals-center__body-scroll {
+  box-sizing: border-box; display: flex; flex-direction: column; gap: var(--mng-spacing-200);
+  flex: 0 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
   padding: var(--mc-body-pt) var(--mc-body-pr) var(--mc-body-pb) var(--mc-body-pl);
-  box-shadow: inset 0 0 0 var(--mc-body-bw) var(--mc-body-bc); border-radius: var(--mc-body-radius);
+  scrollbar-width: none; -ms-overflow-style: none;
 }
+.mngds-modals-center__body-scroll::-webkit-scrollbar { display: none; }
+.mngds-modals-center__body-scroll:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: -2px; }
 .mngds-modals-center__body-text { margin: 0; font-family: var(--mc-body-ff); font-size: var(--mc-body-fs); font-weight: var(--mc-body-fw); line-height: normal; color: var(--mc-body-color); white-space: pre-line; }
-.mngds-modals-center__message { align-self: stretch; }
-.mngds-modals-center__cta { align-self: stretch; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--mc-cta-gap); }
-
-/* MobileScroll: no top or bottom margin; the card scrolls inside the screen and the close button stays
-   8px from the top (Controls Overlay). */
-.mngds-modals-center--mobile-scroll { padding: 0; justify-content: flex-start; overflow: hidden; }
-.mngds-modals-center__scroller {
-  box-sizing: border-box; align-self: stretch; flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain;
-  padding: var(--mng-modals-center-device-mobilescroll-mobile-modal-container-padding-top) var(--mng-modals-center-device-mobilescroll-mobile-padding-right) var(--mng-modals-center-device-mobilescroll-mobile-modal-container-padding-bottom) var(--mng-modals-center-device-mobilescroll-mobile-padding-left);
+/* Scroll indicator: 4px wide, color/gray/300, radius/sm, 4px (spacing/050) inside the top-right edge. */
+.mngds-modals-center__indicator {
+  position: absolute; right: var(--mng-spacing-050); width: 4px; z-index: 1; pointer-events: none;
+  background: var(--mc-indicator-bg); border-radius: var(--mc-indicator-radius);
 }
-.mngds-modals-center__controls {
-  position: absolute; top: 0; right: 0; z-index: 2; display: flex; flex-direction: column; align-items: flex-end; pointer-events: none;
-  padding: var(--mng-modals-center-device-mobilescroll-controls-overlay-padding-top) var(--mng-modals-center-device-mobilescroll-controls-overlay-padding-right) 0 0;
-}
-.mngds-modals-center__controls > * { pointer-events: auto; }
-.mngds-modals-center--mobile-scroll .mngds-modals-center__close { position: static; }
+/* Compact mode: the Button Linkstyle links move to the end of the body, stacked and centered. */
+.mngds-modals-center__moved-links { align-self: stretch; display: flex; flex-direction: column; align-items: center; gap: var(--mc-cta-gap); }
+.mngds-modals-center__message { align-self: stretch; flex-shrink: 0; }
+.mngds-modals-center__cta { align-self: stretch; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: var(--mc-cta-gap); }

@@ -680,6 +680,12 @@ def main():
     bcss = "\n".join(css)
     if "</style" in bcss.lower():
         raise SystemExit("bundle.css contains </style")
+    # Every --mng- variable a component uses must exist (a renamed or removed token otherwise fails silently;
+    # ModalsCenter's MobileScroll did, 2026-11-10).
+    defined = set(re.findall(r"(--mng-[a-z0-9-]+)\s*:", (proj / "tokens.css").read_text() + bcss))
+    missing = sorted(set(re.findall(r"var\(\s*(--mng-[a-z0-9-]+)", bcss)) - defined)
+    if missing:
+        raise SystemExit("bundle.css uses CSS variables that no token defines:\n  " + "\n  ".join(missing))
     (proj / "components/bundle.css").write_text(bcss)
     (proj / "components/index.d.ts").write_text("\n".join(dts))
 

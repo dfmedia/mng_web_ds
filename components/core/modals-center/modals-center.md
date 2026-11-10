@@ -9,7 +9,7 @@ component_key: ee63f90bb43e86ecf93d65870821a8291c205a01
 variants: 6
 tokens: modals-center.tokens.json
 skeleton: modals-center.html
-exported: 2026-11-04
+exported: 2026-11-10
 ---
 
 # ModalsCenter
@@ -18,7 +18,7 @@ exported: 2026-11-04
 
 ## Figma
 
-- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Modal Panels | 2026.11.04**
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Modal Panels | 2026.11.05**
 - Component set: [`ModalsCenter` · 3040:2262](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=3040-2262) · key `ee63f90bb43e86ecf93d65870821a8291c205a01`
 - Documentation frame: [ModalsCenter Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7418-3457) · overview: [previews/modals-center--documentation.png](previews/modals-center--documentation.png)
 
@@ -305,7 +305,7 @@ From `modals-center.tokens.json`. References point at system tokens (`tokens/cor
 
 Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **12**.
 
-Placed on pages: Modal Panels | 2026.11.04 ×6, Buttons | 2026.09.30 ×1.
+Placed on pages: Modal Panels | 2026.11.05 ×6, Buttons | 2026.09.30 ×1.
 
 **Built from:** Button Linkstyle ×12, Icons ×6, Button Primary ×6, Button Modal Close ×6, Form Field ×1
 Icon variants: `notification` ×6.
@@ -326,4 +326,4 @@ Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).
 - `modals-center.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-10 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

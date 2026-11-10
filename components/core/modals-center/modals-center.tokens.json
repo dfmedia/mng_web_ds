@@ -7,11 +7,11 @@
         "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
         "node": "3040:2262",
         "componentSet": "ModalsCenter",
-        "page": "Modal Panels | 2026.11.04"
+        "page": "Modal Panels | 2026.11.05"
       },
       "production": "Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).",
       "layer": "core",
-      "exported": "2026-11-04"
+      "exported": "2026-11-10"
     }
   },
   "modals-center": {

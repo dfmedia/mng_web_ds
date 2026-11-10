@@ -1,5 +1,5 @@
 export interface ModalsCenterProps extends React.HTMLAttributes<HTMLDivElement> {
-  /** Figma Device. Desktop/TabletH/TabletV: 444px card; Mobile/FOLD: screen width minus 24px each side; MobileScroll: the card scrolls inside the screen. Default 'Desktop'. */
+  /** Figma Device. Desktop/TabletH/TabletV: 444px card; Mobile/FOLD: screen width minus 24px each side; MobileScroll: Mobile with more content than fits (only the body scrolls). Default 'Desktop'. */
   device?: 'Desktop' | 'TabletH' | 'TabletV' | 'Mobile' | 'FOLD' | 'MobileScroll';
   /** Render in flow at the Device's Figma screen size (previews, canvases) instead of fixed over the viewport. */
   inline?: boolean;
@@ -36,5 +36,13 @@ export interface ModalsCenterProps extends React.HTMLAttributes<HTMLDivElement> 
   onClose?: (e: React.SyntheticEvent | KeyboardEvent) => void;
   /** Accessible name of the close button. Default 'Close'. */
   closeLabel?: string;
+  /** 'alertdialog' only for a short message that needs an answer (confirm / cancel). Default 'dialog'. */
+  role?: 'dialog' | 'alertdialog';
+  /** Force compact mode (header = icon + title; subtitle and links move into the body; card padding 16 top and bottom). Default: automatic, visible area under 560px. */
+  compact?: boolean;
+  /** Force the keyboard-open layout (8px gaps top and bottom, covers the masthead). Default: automatic in fixed mode (window.visualViewport). */
+  keyboardOpen?: boolean;
+  /** With inline: the visible area's height in px (draws a keyboard-open screen). */
+  visibleHeight?: number;
 }
 export declare function ModalsCenter(props: ModalsCenterProps): React.ReactElement | null;

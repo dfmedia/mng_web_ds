@@ -17,18 +17,22 @@ h(ModalsCenter, { device: 'TabletV', inline: true })
 
 | Prop | Values | Default |
 |---|---|---|
-| `device` | `'Desktop'`, `'TabletH'`, `'TabletV'`, `'Mobile'`, `'FOLD'`, `'MobileScroll'` | `'Desktop'` |
-| `inline` | render in flow at the Device's Figma size (1280×960, 1024×768, 768×1024, 360×800, 340×882, 360×960) | `false` (fixed) |
+| `device` | `'Desktop'`, `'TabletH'`, `'TabletV'`, `'Mobile'`, `'FOLD'`, `'MobileScroll'` (Mobile with more content than fits) | `'Desktop'` |
+| `inline` | render in flow at the Device's Figma size (1280×960, 1024×768, 768×1024, 360×800, 340×882, 360×800) | `false` (fixed) |
 | `open` | `false` renders nothing | `true` |
 | `offsetTop` | fixed mode: space above the overlay for the masthead | `0` |
 | `title`, `subtitle` | text; `subtitle: null` hides it | `'Header Title'`, `'Sub-Title Text'` |
 | `showIcon`, `iconName` | header icon | `true`, `'notification'` |
 | `body` | Body Container text; `null` hides it | `'Body Section (As Needed)'` |
-| `children` | extra Body Container content (e.g. a form field) | |
+| `children` | extra Body Container content (e.g. a `FormField`) | |
 | `message` | InLineMessage between the body and the CTAs | |
 | `topLinkLabel`, `primaryLabel`, `bottomLinkLabel` | default CTA stack; `null` hides one | `'CTA Hyperlink'`, `'CTA Button'`, `'CTA Hyperlink'` |
 | `onTopLink`, `onPrimary`, `onBottomLink`, `…Href` | CTA handlers or links | |
 | `actions` | replaces the CTA stack | |
 | `onClose`, `closeLabel` | close button, overlay click, Esc | `'Close'` |
+| `role` | `'dialog'`, or `'alertdialog'` for a short message that needs an answer | `'dialog'` |
+| `compact` | force compact mode on or off (header = icon + title, subtitle and links move into the body, card padding 16 top and bottom) | automatic: visible area under 560px |
+| `keyboardOpen` | force the keyboard-open layout (8px gaps, covers the masthead) | automatic in fixed mode |
+| `visibleHeight` | with `inline`: the visible area's height in px, to draw a keyboard-open screen | |
 
-In fixed mode (no `inline`) focus moves to the dialog when it opens, Tab stays inside it, Esc calls `onClose`, and focus returns to where it was when the modal unmounts. With `inline` the same markup renders without the focus handling, so documentation pages stay usable.
+In fixed mode (no `inline`) the modal is rendered at the end of `body` and everything else is made `inert`; the page can't scroll; focus moves to the title; Tab goes through the body, the CTAs and then the close button, and wraps; Esc calls `onClose`; focus returns to where it was when the modal unmounts. When the content is taller than the screen, only the body scrolls, with the scroll indicator. With the on-screen keyboard open the modal fits the visible area, and under 560px it switches to compact mode. With `inline` the same markup renders without the focus and page handling, so documentation pages stay usable.

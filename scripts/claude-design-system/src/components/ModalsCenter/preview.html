@@ -1,4 +1,4 @@
-<!-- @dsCard group="Core" height=2085 subtitle="Figma: ModalsCenter · 6 variants (Device)" -->
+<!-- @dsCard group="Core" height=4000 subtitle="Figma: ModalsCenter · 6 variants (Device)" -->
 <!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><title>ModalsCenter</title>
@@ -8,29 +8,63 @@
 <script>
   var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
   var LONG = 'Body Section (As Needed) All of this text is just to push the container past the end of the screen.\nAll of this text is just to push the container past the end of the screen. All of this text is just to push the container past the end of the screen.\n\nAll of this text is just to push the container past the end of the screen.All of this text is just to push the container past the end of the screen.\nAll of this text is just to push the container past the end of the screen.\n\nAll of this text is just to push the container past the end of the screen. All of this text is just to push the container past the end of the screen.\nAll of this text is just to push the container past the end of the screen.';
+  var SHORT = 'Body Section (As Needed) All of this text is just to push the container past the end of the screen.';
+  function field(size) {
+    return h(NS.FormField, { size: size || 'Mobile', label: 'Field Label', showValue: false, showPlaceholder: true, placeholder: 'Place holder text', showIcon: false, errorRow: false });
+  }
+  /* A whole Figma screen (overlay included), scaled. */
   function screen(device, zoom, extra) {
     return h('div', { style: { zoom: zoom } }, h(NS.ModalsCenter, Object.assign({ device: device, inline: true }, extra)));
   }
+  /* The card alone at 100%: the screen's overlay and height removed (room left for the close button). */
+  function card(device, extra) {
+    var phone = device === 'Mobile' || device === 'FOLD';
+    var style = phone ? { height: 'auto', background: 'none' } : { width: 'auto', height: 'auto', background: 'none', padding: '16px' };
+    return h(NS.ModalsCenter, Object.assign({ device: device, inline: true, style: style }, extra));
+  }
   function Demo() {
-    var s = React.useState(false);
+    var s = React.useState(false), open = s[0], set = s[1];
+    function close() { set(false); }
     return h('div', null,
-      h(NS.ButtonPrimary, { label: 'Open modal', onClick: function () { s[1](true); } }),
-      s[0] ? h(NS.ModalsCenter, { device: 'Desktop', onClose: function () { s[1](false); },
-        onPrimary: function () { s[1](false); }, onTopLink: function () { s[1](false); }, onBottomLink: function () { s[1](false); } }) : null);
+      h(NS.ButtonPrimary, { label: 'Open modal', onClick: function () { set(true); } }),
+      open ? h(NS.ModalsCenter, { device: window.innerWidth < 768 ? 'Mobile' : 'Desktop',
+        title: 'Verify your email', subtitle: 'We sent a code to you@example.com.',
+        body: 'Enter the 6-digit code from the email to finish signing in. The code expires in 10 minutes.',
+        primaryLabel: 'Continue', topLinkLabel: null, bottomLinkLabel: 'Resend code',
+        onClose: close, onPrimary: close, onBottomLink: close },
+        field(window.innerWidth < 768 ? 'Mobile' : 'Desktop')) : null);
   }
   ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
-    h(I.SpecimenSection, { title: 'Device (inline, scaled)',
-      note: 'Each variant is the whole screen with the 50% black overlay. Desktop, TabletH and TabletV: a 444px card, centered, padding 40/40/24/40. Mobile and FOLD: the screen width minus 24px each side, padding 24. Button Modal Close sits on the card’s top-right corner. Shown with inline: true at 45% (desktop and tablets) and 65% (phones).' },
+    h(I.SpecimenSection, { title: 'The card',
+      note: 'Shown at 100%. Desktop, TabletH and TabletV: a 444px card, padding 40 / 40 / 24 / 40. Mobile and Fold: the screen width minus 24px each side (312 at 360, 292 at 340), padding 24, Body Container padding 16. Button Modal Close sits on the card’s top-right corner.' },
       h(I.Specimen, { items: [
-        { label: 'Device=Desktop (1280×960, 45%)', node: screen('Desktop', 0.45) },
-        { label: 'Device=TabletH (1024×768, 45%)', node: screen('TabletH', 0.45) },
-        { label: 'Device=TabletV (768×1024, 45%)', node: screen('TabletV', 0.45) },
-        { label: 'Device=Mobile (360×800, 65%)', node: screen('Mobile', 0.65) },
-        { label: 'Device=FOLD (340×882, 65%)', node: screen('FOLD', 0.65) },
-        { label: 'Device=MobileScroll (360×960, 65%)', node: screen('MobileScroll', 0.65, { body: LONG }) }
+        { label: 'Device=Desktop, TabletH, TabletV (444px card)', node: card('Desktop') },
+        { label: 'Device=Mobile (360 screen)', node: card('Mobile') },
+        { label: 'Device=FOLD (340 screen)', node: card('FOLD') }
       ] })),
-    h(I.SpecimenSection, { title: 'As a modal',
-      note: 'Without inline the overlay is fixed over the viewport (offsetTop leaves the masthead visible). Focus moves into the dialog and stays there; the close button, Esc, a CTA or a click outside the card closes it.' },
+    h(I.SpecimenSection, { title: 'On the screen',
+      note: 'Each Figma variant is the screen below the masthead with the 50% black overlay, so the card is shown in place. All drawn at 30%, so their sizes compare. MobileScroll is Mobile with more content than fits: the card fills the screen inside its 24px margin and only the body scrolls.' },
+      h(I.Specimen, { items: [
+        { label: 'Device=Desktop (1280×960)', node: screen('Desktop', 0.3) },
+        { label: 'Device=TabletH (1024×768)', node: screen('TabletH', 0.3) },
+        { label: 'Device=TabletV (768×1024)', node: screen('TabletV', 0.3) },
+        { label: 'Device=Mobile (360×800)', node: screen('Mobile', 0.3) },
+        { label: 'Device=MobileScroll (360×800)', node: screen('MobileScroll', 0.3, { body: LONG }) },
+        { label: 'Device=FOLD (340×882)', node: screen('FOLD', 0.3) }
+      ] })),
+    h(I.SpecimenSection, { title: 'When the content doesn’t fit (Device=MobileScroll)',
+      note: 'Shown at 100%. The header and CTA stack stay put; only the Body Container scrolls (scroll it). The scroll indicator (4px, color/gray/300, 3.84:1 on white) shows whenever the body overflows, 4px inside its top-right edge. The page behind is scroll-locked. The same applies on every Device when the content is taller than the screen.' },
+      h(I.Specimen, { items: [
+        { label: 'Device=MobileScroll (360×800), keyboard closed', node: screen('MobileScroll', 1, { body: LONG, children: field() }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'On-screen keyboard and compact mode (simulated)',
+      note: 'With the keyboard open the modal lives in the visible area (window.visualViewport): centered in it, or filling it with 8px gaps top and bottom when taller; the overlay covers the masthead. Under 560px of visible area (every phone, tablet landscape) compact mode applies: the subtitle moves into the body, card padding top and bottom is 16px, and only Button Primary stays pinned (the links move to the end of the body). The close button doesn’t fit in an 8px gap: open question for dev (2026-11-04), so it is drawn where it is today. In real use all of this is automatic; here keyboardOpen and visibleHeight simulate it.' },
+      h(I.Specimen, { items: [
+        { label: 'Mobile, keyboard open, iOS Safari (360 wide, 414px visible), 100%', node: screen('Mobile', 1, { body: SHORT, children: field(), keyboardOpen: true, visibleHeight: 414 }) },
+        { label: 'TabletH, keyboard open, iPad landscape (1024 wide, 368px visible), 50%', node: screen('TabletH', 0.5, { body: SHORT, children: field('Desktop'), keyboardOpen: true, visibleHeight: 368 }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'As a modal (try it)',
+      note: 'Without inline the modal is fixed over the viewport and rendered at the end of the page, and everything else is made inert. Focus moves to the title; Tab goes through the field, the CTAs and then the close button, and wraps. Esc, the close button, a CTA or a click outside the card closes it, and focus goes back to the button.' },
       h(Demo))));
 </script>
 </body>
