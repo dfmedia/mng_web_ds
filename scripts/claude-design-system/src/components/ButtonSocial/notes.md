@@ -1,0 +1,8 @@
+- Rebuilt in place on 2026-11-11 (Karl): the Embedded Login file uses it, so its label, icon and button layers were kept and only their values changed; Embedded Login's instances keep their labels and icons. New: Icon position=only (round, icon only), pressed and focused for every icon position, the Label and Icon properties.
+- Fully round ends (Karl, 2026-11-11: "the corner radius is only dependent on the height"): `border-radius: 9999px`, no token. Figma uses 999.
+- The 8px side margin stays part of the component, like Button Tertiary (Karl, 2026-11-11).
+- Hover and pressed use Button Tertiary's styling (Karl, 2026-11-11): Default `color/gray/600` + `color/gray/400` border; hover and pressed `color/gray/max` + `color/gray/500` border. The label is Noto Sans Regular (Tertiary's is Bold).
+- The 1px border is an inset `box-shadow`, so it adds no width. The focus ring is an `outline` with a 1px offset, which follows the round corners.
+- Icon-only buttons take their accessible name from `aria-label` (falls back to `label`).
+- Contrast: the label is 16:1 on gray/600 and 18:1 on white. The border is faint on a white page (gray/400 2.4:1, gray/500 1.6:1): the Default gray fill marks the edge; a hovered white button on white barely does.
+- Not checked against production.

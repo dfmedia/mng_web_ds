@@ -42,6 +42,7 @@ COMPONENTS = [
     ("button-primary", "ButtonPrimary", "Button Primary", "Core"),
     ("button-secondary", "ButtonSecondary", "Button Secondary", "Core"),
     ("button-tertiary", "ButtonTertiary", "Button Tertiary", "Core"),
+    ("button-social", "ButtonSocial", "Button Social", "Core"),
     ("button-linkstyle", "ButtonLinkstyle", "Button Linkstyle", "Core"),
     ("action-button", "ButtonAction", "Button Action", "Core"),
     ("in-line-close", "ButtonInLineClose", "Button In-Line Close", "Core"),

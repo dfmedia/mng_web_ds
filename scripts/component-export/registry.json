@@ -1797,6 +1797,32 @@
         "Production still has Button ActionMenu's open menu (only the other choice, no check). design-vs-production.md entry 38.2."
       ],
       "production": "Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2. Team: DigiScrum (not CMS); the Dropdown Menu should exist in the React component library when they get to this update (Karl, 2026-11-11)."
+    },
+    {
+      "slug": "button-social",
+      "name": "Button Social",
+      "group": "buttons",
+      "layer": "core",
+      "order": 9,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "6516:5394",
+      "documentationFrame": "7558:5006",
+      "description": "Social sign-in and secondary pill button (Embedded Login: Apple ID, Facebook and Google sign-in, the round icon buttons, Continue, Create Account). Icon position = None, left, right, only (round, icon only); interaction = Default, hover, pressed; inFocus adds the focus ring. Rebuilt in place 2026-11-11 so Embedded Login's instances keep their labels and icons.",
+      "rules": [
+        "**Size:** 40px tall. With a label the `Button` hugs it (16px `spacing/200` side padding) or fills its container; `Icon position=only` is a 40x40 circle.",
+        "**Margin:** the variant root keeps an 8px (`spacing/100`) left and right margin, like Button Tertiary, so the visible button is 16px narrower than the instance (Karl, 2026-11-11).",
+        "**Shape:** fully round ends at any height: the corner radius is half the height. Figma uses 999; CSS `border-radius: 9999px`. No token (Karl, 2026-11-11: the radius depends only on the height).",
+        "**Contents:** Icon (16px, the `Icon` instance-swap property) and Label (Noto Sans Regular 16px, `color/gray/min`, the `Label` text property) with an 8px (`spacing/100`) gap. Each variant holds only the icon it shows.",
+        "**Colors:** Default `color/gray/600` with a 1px inside `color/gray/400` border (label 16:1); hover and pressed `color/gray/max` with a 1px inside `color/gray/500` border (label 18:1), the same as Button Tertiary (Karl, 2026-11-11).",
+        "**Focus ring:** the Default button plus a `Focus Ring` frame 1px outside it, 2px `color/gray/black`, round like the button. In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;`.",
+        "**Brand icons** keep their own colors (Google's multicolor G; Facebook blue in Embedded Login).",
+        "**Accessibility:** a button (or link) named by its label; an icon-only button needs an accessible name (e.g. `aria-label=\"Continue with Apple\"`). Icons are decorative."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Borders are faint on a white page: `color/gray/400` is 2.4:1 and the hover `color/gray/500` 1.6:1 against white; the Default gray fill marks the edge, a hovered white button on white barely does."
+      ],
+      "production": "Used in the Embedded Login designs; not checked against production."
     }
   ]
 }

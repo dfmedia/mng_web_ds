@@ -66,6 +66,22 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "button-social",
+      "name": "Button Social",
+      "group": "buttons",
+      "layer": "core",
+      "path": "components/core/button-social/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "6516:5394",
+        "set": "Button Social"
+      },
+      "variants": 16,
+      "instances": 11,
+      "knownIssues": 2,
+      "exported": "2026-11-11"
+    },
+    {
       "slug": "button-tertiary",
       "name": "Button Tertiary",
       "group": "buttons",

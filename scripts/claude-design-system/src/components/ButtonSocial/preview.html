@@ -1,0 +1,36 @@
+<!-- @dsCard group="Core" height=720 subtitle="Figma: Button Social · 16 variants (Icon position × interaction × inFocus)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ButtonSocial</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.demo-col{display:flex;flex-direction:column;gap:8px;width:292px;}
+.demo-row{display:flex;}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var COLS = [['enabled', 'Default', 'False'], ['hovered', 'hover', 'False'], ['pressed', 'pressed', 'False'], ['focused', 'Default', 'True']];
+  function row(pos) {
+    return COLS.map(function (c) { return { label: pos + ' / ' + c[0], node: h(NS.ButtonSocial, { iconPosition: pos, interaction: c[1], inFocus: c[2], 'aria-label': pos === 'only' ? 'Open' : undefined }) }; });
+  }
+  var FB = '#1877F2';
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Icon position × interaction', note: '40px tall, fully round ends (half the height), 8px side margin. Default: gray/600 with a 1px gray/400 border (label 16:1). Hover and pressed: white with a gray/500 border (18:1), as on Button Tertiary. Focus: a 2px gray/black ring 1px outside. Icon position=only is a 40x40 circle.' },
+      ['None', 'left', 'right', 'only'].map(function (p) { return h(I.Specimen, { key: p, items: row(p) }); })),
+    h(I.SpecimenSection, { title: 'Embedded Login', note: 'Sign-in buttons fill the column; the round icon buttons sit 16px apart (two 8px margins); Continue and Create Account fill the footer. Brand icons keep their own colors.' },
+      h(I.Specimen, { items: [
+        { label: 'Sign-in (fill)', node: h('div', { className: 'demo-col' },
+          h(NS.ButtonSocial, { iconPosition: 'left', icon: 'appleinc', label: 'Apple ID', fill: true }),
+          h(NS.ButtonSocial, { iconPosition: 'left', icon: 'facebook', iconColor: FB, label: 'Facebook', fill: true }),
+          h(NS.ButtonSocial, { iconPosition: 'left', icon: 'google-color', label: 'Google', fill: true })) },
+        { label: 'Icon only', node: h('div', { className: 'demo-row' },
+          h(NS.ButtonSocial, { iconPosition: 'only', icon: 'appleinc', 'aria-label': 'Continue with Apple' }),
+          h(NS.ButtonSocial, { iconPosition: 'only', icon: 'facebook', iconColor: FB, 'aria-label': 'Continue with Facebook' }),
+          h(NS.ButtonSocial, { iconPosition: 'only', icon: 'google-color', 'aria-label': 'Continue with Google' }),
+          h(NS.ButtonSocial, { iconPosition: 'only', icon: 'email', 'aria-label': 'Continue with email' })) },
+        { label: 'Footer (fill)', node: h('div', { className: 'demo-col', style: { width: 308 } },
+          h(NS.ButtonSocial, { label: 'Continue', fill: true }), h(NS.ButtonSocial, { label: 'Create Account', fill: true })) }
+      ] }))));
+</script>
+</body>
+</html>
