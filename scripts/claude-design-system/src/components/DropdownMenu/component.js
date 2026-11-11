@@ -2,7 +2,8 @@
    (Karl, 2026-11-10: a copy of Button ActionMenu rebuilt as a drop-down; Button ActionMenu stays as it is for
    the designs that use it). The open menu lists every choice as a DropdownMenuItem with a check on the current
    one. The trigger is as wide as its longest choice, so the chevron sits far enough right for every item
-   (Karl, 2026-11-11): every label is stacked, invisibly, in the same grid cell.
+   (Karl, 2026-11-11): every label is stacked, invisibly, in the same grid cell. Square corners; when open and
+   focused, the trigger's ring is drawn on top of the menu (Karl, 2026-11-11).
    `open`, `interaction` and `inFocus` force documentation states; without `open` the menu opens and closes
    itself. `showChevron: false` is the read-only row (no menu). `inline` keeps the open menu in the flow. */
 var DROPDOWN_MENU_DEFAULT_OPTIONS = [{ value: 'owner', label: 'Owner', icon: 'crown' }, { value: 'guest', label: 'Guest' }];

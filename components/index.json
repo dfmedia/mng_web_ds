@@ -220,7 +220,7 @@
         "node": "7543:1880",
         "set": "Dropdown Menu"
       },
-      "variants": 10,
+      "variants": 12,
       "instances": 7,
       "knownIssues": 1,
       "exported": "2026-11-11"

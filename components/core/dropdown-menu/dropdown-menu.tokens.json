@@ -256,21 +256,6 @@
         }
       }
     },
-    "open-false": {
-      "trigger": {
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "{radius.sm}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/radius/sm"
-              }
-            }
-          }
-        }
-      }
-    },
     "infocus-true": {
       "trigger": {
         "focus-ring": {
@@ -281,17 +266,6 @@
               "com.mng": {
                 "figma": {
                   "variable": "Colors/color/gray/black"
-                }
-              }
-            }
-          },
-          "border-radius": {
-            "$type": "dimension",
-            "$value": "{radius.sm}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Spacing & Radius/radius/sm"
                 }
               }
             }
