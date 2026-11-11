@@ -62,6 +62,8 @@ COMPONENTS = [
     ("verification-code", "VerificationCode", "Form Field Assembly / Verification Code", "Core"),
     ("checkbox-terms", "CheckboxTerms", "Form Field Assembly / Checkbox + Terms", "Core"),
     ("toggle-switch", "ToggleSwitch", "Toggle Switch", "Core"),
+    ("dropdown-menu-item", "DropdownMenuItem", "Dropdown Menu Item", "Core"),
+    ("dropdown-menu", "DropdownMenu", "Dropdown Menu", "Core"),
     # WordPress Elements
     ("homepage-tabs", "HomepageTabs", "Homepage Tabs", "WordPress Elements"),
     ("homepage-tab", "HomepageTab", "Homepage Tab", "WordPress Elements"),
@@ -534,6 +536,20 @@ def component_readme(slug, ident, figma, sec, layer):
 
 
 # ---------------------------------------------------------------- icons
+def next_icons_svg(d):
+    """Icons waiting for the next font build (icons.json nextFontBuild.add): their SVG artwork, black fills
+    turned into currentColor and sized 1em, so Icon can draw them until the font has them."""
+    out = {}
+    for i in d.get("nextFontBuild", {}).get("add", []):
+        f = REPO / "tokens/icons" / i.get("artwork", "")
+        if not f.is_file():
+            continue
+        svg = re.sub(r"\s+", " ", f.read_text()).strip()
+        svg = re.sub(r'fill="(black|#000000|#000)"', 'fill="currentColor"', svg)
+        svg = re.sub(r'<svg([^>]*?) width="[^"]*" height="[^"]*"', r'<svg\1 width="1em" height="1em" aria-hidden="true" focusable="false"', svg, count=1)
+        out[i["name"]] = svg
+    return out
+
 def icons_payload():
     d = load("tokens/icons/icons.json")
     icons = {i["name"]: i["codepoint"].replace("U+", "").lower() for i in d["icons"]}
@@ -655,6 +671,7 @@ def main():
           .replace("/*ICONS*/{}", json.dumps(icons, separators=(",", ":")))
           .replace("/*ICON_CATEGORIES*/{}", json.dumps(cats, separators=(",", ":")))
           .replace("/*ICON_META*/{}", json.dumps(imeta, separators=(",", ":"), ensure_ascii=False))
+          .replace("/*NEXT_ICONS*/{}", json.dumps(next_icons_svg(idoc), separators=(",", ":")))
           .replace("/*PLACEHOLDER_LOGO*/''", json.dumps(placeholder_logo_svg()))]
     css = [(SRC / "base.css").read_text(), theme_css(role_map, type_theme)]
     ctcss, ntok = component_tokens_css()

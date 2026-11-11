@@ -1723,7 +1723,7 @@
       "order": 12,
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "5216:61",
-      "documentationFrame": "7538:7731",
+      "documentationFrame": "7543:1536",
       "description": "Toggle switch (on / off), built like CheckBox (Karl, 2026-11-10): a 48x24 slider inside a 64x40 touch area. status = unselected (off), selected (on); interaction = Default, hover, pressed, disabled; inFocus adds the focus ring around the handle; icon = False, True (close / checkmark3 in the handle). The label isn't part of the atom.",
       "rules": [
         "**Touch area:** 64x40px (the whole switch), 5px corners (`radius/utility`), 8px (`spacing/100`) around the slider; it includes the 40x40 area around the handle.",
@@ -1743,6 +1743,56 @@
       "knownIssues": [
         "Orlando Sentinel: the On handle (`color/theme/primary` #1776C4) is 2.9:1 on the `color/gray/500` slider, just under 3:1.",
         "The On slider (`color/gray/500`) is 1.6:1 on a white page; the handle carries the state (3:1 or better except Orlando Sentinel).",
+        "Not in production yet (Karl, 2026-11-10)."
+      ],
+      "production": "Not in production yet (Karl, 2026-11-10)."
+    },
+    {
+      "slug": "dropdown-menu",
+      "name": "Dropdown Menu",
+      "group": "forms",
+      "layer": "core",
+      "order": 13,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7543:1880",
+      "documentationFrame": "7545:9599",
+      "description": "Drop-down menu: a trigger that opens a list of choices (Karl, 2026-11-10: a copy of Button ActionMenu rebuilt as a drop-down; Button ActionMenu stays as it is for the designs that use it). First use: the role picker (Owner / Guest) in the Reader Dashboard Subscription Access panel. open = False, True; interaction = Default, hover, pressed; inFocus adds the focus ring; Style = white, gray.",
+      "rules": [
+        "**Trigger:** 100x40px by default (set the width to fit the longest option), 8px (`spacing/100`) side padding, 4px (`spacing/050`) gaps, 4px corners (`radius/sm`).",
+        "**Contents:** a 16px Icon Slot (an icon such as the crown, or empty, so every label starts at the same place), the label in Noto Sans Bold 12px `color/gray/min`, and the chevron (`arrow-downSMALL`; `arrow-upSmall` when open) at the right edge (Karl, 2026-11-11).",
+        "**Style:** `white` is `color/gray/max` (label 18:1); `gray` is `color/gray/600`, for rows on gray/600 (label 16:1).",
+        "**Hover and pressed:** a 1px inside `color/gray/400` border. Default has no border.",
+        "**Focus:** the Default trigger plus a 2px `color/gray/black` ring 1px outside it, with `radius/sm` corners, like the other focus rings (Karl, 2026-11-11).",
+        "**Open:** the trigger keeps the gray/400 border with square bottom corners, and the menu hangs below it: a stack of Dropdown Menu Item rows as wide as the trigger, every choice listed, a check on the current one, `shadow/lg`.",
+        "**Read-only:** Show chevron off (the account owner's own row in Subscription Access).",
+        "**Accessibility:** a button with `aria-haspopup=\"listbox\"` and `aria-expanded`, named by its label; the menu is a listbox of options with `aria-selected` on the current one. Enter, Space or Down Arrow opens it; arrows move, Enter picks, Esc closes and focus returns to the trigger.",
+        "**Button ActionMenu** (Buttons page) is the older version, kept as it is for the designs that use it (Karl, 2026-11-10)."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Not in production yet (Karl, 2026-11-10)."
+      ],
+      "production": "Not in production yet (Karl, 2026-11-10)."
+    },
+    {
+      "slug": "dropdown-menu-item",
+      "name": "Dropdown Menu Item",
+      "group": "forms",
+      "layer": "core",
+      "order": 14,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7543:1879",
+      "documentationFrame": "7545:9902",
+      "description": "One option row of a Dropdown Menu; stack as many as the menu needs (Karl, 2026-11-10). status = unselected, selected (a check marks the current choice); interaction = Default, hover, pressed; inFocus adds the focus ring.",
+      "rules": [
+        "**Row:** 40px tall, as wide as the menu, 8px (`spacing/100`) side padding, 4px (`spacing/050`) gaps, square corners.",
+        "**Contents:** a 16px Icon Slot (icon or empty, so every label starts at the same place), the label in Noto Sans Bold 12px `color/gray/min`, and, when selected, a `checkmark3` 12px wide (12x9) at the right edge (Karl, 2026-11-11).",
+        "**Default:** `color/gray/500` with a 1px inside `color/gray/400` border (label 11.3:1). **Hover and pressed:** `color/gray/400` (label 7.6:1).",
+        "**Focus:** a 2px `color/gray/black` ring 1px outside the row, square corners like the row (Karl, 2026-11-11).",
+        "**Accessibility:** `role=\"option\"` with `aria-selected` on the current choice; the check is decorative."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
         "Not in production yet (Karl, 2026-11-10)."
       ],
       "production": "Not in production yet (Karl, 2026-11-10)."

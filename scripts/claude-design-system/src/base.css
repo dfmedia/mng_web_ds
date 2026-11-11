@@ -10,6 +10,7 @@
   display: inline-block; flex-shrink: 0;
 }
 .mngds-icon--layered { position: relative; }
+.mngds-icon > svg { display: block; } /* next-build icons drawn from SVG (runtime.js NEXT_ICONS) */
 .mngds-icon__layer + .mngds-icon__layer { margin-left: -1em; }
 
 /* ---- Article image / Article Image Placeholder (WordPress Elements 3334:42380) */

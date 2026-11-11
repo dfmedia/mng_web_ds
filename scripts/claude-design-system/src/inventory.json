@@ -178,7 +178,8 @@
     {
      "name": "Button ActionMenu",
      "where": "Buttons, 6037:4652",
-     "status": "To add"
+     "status": "Not a component",
+     "note": "Kept in Figma as it is for the designs that use it (Karl, 2026-11-10); the system version is Dropdown Menu."
     },
     {
      "name": "Button Pay",
@@ -264,6 +265,20 @@
      "status": "In system",
      "updated": "2026-11-10",
      "component": "ToggleSwitch"
+    },
+    {
+     "name": "Dropdown Menu",
+     "where": "Dropdown Menus | 2026.11.11, 7543:1880",
+     "status": "In system",
+     "updated": "2026-11-11",
+     "component": "DropdownMenu"
+    },
+    {
+     "name": "Dropdown Menu Item",
+     "where": "Dropdown Menus | 2026.11.11, 7543:1879",
+     "status": "In system",
+     "updated": "2026-11-11",
+     "component": "DropdownMenuItem"
     },
     {
      "name": "Radio buttons",

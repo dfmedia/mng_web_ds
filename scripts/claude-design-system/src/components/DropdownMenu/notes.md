@@ -1,0 +1,10 @@
+- A copy of Button ActionMenu rebuilt as a drop-down (Karl, 2026-11-10). Button ActionMenu (Buttons page, 6037:4652) stays as it is in Figma for the designs that use it, and isn't built here.
+- Fits the longest choice (Karl, 2026-11-11): every choice's label is stacked, hidden, in the same grid cell as the shown one, so the trigger is as wide as the longest and its chevron sits right of every item's label and check. The menu is as wide as the trigger. `width` fixes the width instead (Figma: set the instance width).
+- The Icon Slot is always 16px, so labels start at the same place with or without an icon (Karl, 2026-11-11).
+- Accessibility: the trigger is a `button` with `aria-haspopup="listbox"` and `aria-expanded`; the menu is a `listbox` of `option` rows (`DropdownMenuItem`) with `aria-selected` on the current one. Focus moves into the list (roving focus: each option is focusable with `tabIndex=-1`) and back to the trigger on Enter or Esc. With `aria-label`, the trigger reads "Role: Owner".
+- Focus ring: an `outline` 2px `color/gray/black`, 1px offset, following the trigger's `radius/sm` corners (Karl, 2026-11-11), like the buttons.
+- The trigger's 1px `color/gray/400` border is an inset `box-shadow`, drawn on hover, pressed and open only (the export lists it under `base` because only those variants have it).
+- Chevron: the Figma artwork is `arrow-downSMALL` / `arrow-upSmall` (Icons, 4693:18 / 4693:14), which isn't in the icon font; the font's `arrow-down` / `arrow-up` are used.
+- Shadow: the open menu uses `shadow/lg` (`--mng-shadow-lg`); the component export doesn't carry effect styles yet.
+- In product use the open menu sits over the page (absolute, z-index 10); `inline` keeps it in the flow for documentation.
+- Not in production yet (Karl, 2026-11-10).

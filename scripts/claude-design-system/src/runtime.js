@@ -6,6 +6,8 @@ var h = React.createElement;
 var ICONS = /*ICONS*/{};
 var ICON_CATEGORIES = /*ICON_CATEGORIES*/{};
 var ICON_META = /*ICON_META*/{};
+/* Icons in the next font build (icons.json nextFontBuild.add), drawn from their SVG until the font has them. */
+var NEXT_ICONS = /*NEXT_ICONS*/{};
 
 function cx() {
   var out = [];
@@ -40,7 +42,8 @@ function rest(props, used) {
 function Icon(props) {
   var name = props.name;
   var cp = ICONS[name];
-  if (!cp && typeof console !== 'undefined') console.warn('[mng_web_design_system] Unknown icon "' + name + '". Names: tokens/icons/icons.json.');
+  var next = !cp && NEXT_ICONS[name];
+  if (!cp && !next && typeof console !== 'undefined') console.warn('[mng_web_design_system] Unknown icon "' + name + '". Names: tokens/icons/icons.json.');
   var size = props.size == null ? 16 : props.size;
   var label = props.label;
   var layers = ICON_META[name] && ICON_META[name].layers;
@@ -51,8 +54,9 @@ function Icon(props) {
     role: label ? 'img' : undefined,
     'aria-label': label || undefined,
     'aria-hidden': label ? undefined : 'true',
-    'data-icon': name
-  }), layers ? layers.map(function (l, i) {
+    'data-icon': name,
+    dangerouslySetInnerHTML: next ? { __html: next } : undefined
+  }), next ? undefined : layers ? layers.map(function (l, i) {
       return h('span', { key: i, className: 'mngds-icon__layer', style: { color: l[1] } }, String.fromCodePoint(parseInt(l[0], 16)));
     }) : cp ? String.fromCodePoint(parseInt(cp, 16)) : '');
 }

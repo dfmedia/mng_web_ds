@@ -1,0 +1,6 @@
+- One row of `DropdownMenu`'s listbox (Karl, 2026-11-10). Every label starts after the 16px Icon Slot, which holds an icon or stays empty (Karl, 2026-11-11).
+- Check: `checkmark3`, 12px wide (Karl, 2026-11-11). The icon font draws its glyph a little smaller than its 12px em square, so it reads smaller than in the Figma previews.
+- The 1px `color/gray/400` border is an inset `box-shadow`, so it doesn't add to the 40px height; stacked rows show a 2px line between them, as in Figma.
+- Focus ring: an `outline` 2px `color/gray/black`, 1px offset, square corners (Karl, 2026-11-11). A focused row is raised (`z-index: 1`) so the next row doesn't cover its ring.
+- Hover and pressed are both `color/gray/400` (label 7.6:1); Default `color/gray/500` (11.3:1).
+- Not in production yet (Karl, 2026-11-10).

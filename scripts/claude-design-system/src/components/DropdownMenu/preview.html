@@ -1,0 +1,41 @@
+<!-- @dsCard group="Core" height=1180 subtitle="Figma: Dropdown Menu · 10 variants (open × interaction × inFocus × Style)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>DropdownMenu</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.demo-row{display:flex;align-items:center;gap:16px;font-family:var(--mng-font-family-noto-sans);font-size:var(--mng-font-size-14);color:var(--mng-color-gray-min);}
+.demo-panel{display:flex;flex-direction:column;gap:8px;padding:16px;background:var(--mng-color-gray-max);min-height:200px;}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var COLS = [['enabled', 'Default', 'False'], ['hovered', 'hover', 'False'], ['pressed', 'pressed', 'False'], ['focused', 'Default', 'True']];
+  function row(tone) {
+    return COLS.map(function (c) { return { label: 'Style=' + tone + ' / ' + c[0], node: h(NS.DropdownMenu, { style: tone, interaction: c[1], inFocus: c[2], open: false }) }; })
+      .concat([{ label: 'Style=' + tone + ' / open', node: h(NS.DropdownMenu, { style: tone, open: true, inline: true }) }]);
+  }
+  var ROLES = [{ value: 'owner', label: 'Owner', icon: 'crown' }, { value: 'guest', label: 'Guest' }, { value: 'manager', label: 'Account Manager' }];
+  function Demo() {
+    var s = React.useState('guest');
+    return h('div', { className: 'demo-panel' },
+      h('div', { className: 'demo-row' }, h('span', { style: { width: 150 } }, 'you@example.com'),
+        h(NS.DropdownMenu, { options: ROLES, value: 'owner', showChevron: false, 'aria-label': 'Role' })),
+      h('div', { className: 'demo-row' }, h('span', { style: { width: 150 } }, 'family@example.com'),
+        h(NS.DropdownMenu, { options: ROLES, value: s[0], onChange: function (v) { s[1](v); }, 'aria-label': 'Role' })),
+      h('div', { className: 'demo-row' }, 'Picked: ' + s[0]));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'interaction × inFocus × Style', note: 'Trigger: a 16px Icon Slot (crown, or empty), the label in Noto Sans Bold 12px, and the chevron at the right edge. Style=white: gray/max (label 18:1); Style=gray: gray/600 (16:1). Hover, pressed and open add a 1px inside gray/400 border. Focus: a 2px gray/black ring 1px outside, radius/sm corners. Open: every choice is listed below as a Dropdown Menu Item, with a check on the current one, shadow/lg.' },
+      h(I.Specimen, { items: row('white') }), h(I.Specimen, { items: row('gray') })),
+    h(I.SpecimenSection, { title: 'As wide as the longest choice', note: 'The trigger fits its longest choice, so its chevron sits right of every item’s label and check, whichever is selected (Karl, 2026-11-11). Labels start at the same place whether or not there’s an icon. Set `width` to fix the width instead.' },
+      h(I.Specimen, { items: [
+        { label: 'Owner selected (3 choices)', node: h(NS.DropdownMenu, { options: ROLES, value: 'owner', open: true, inline: true }) },
+        { label: 'Guest selected, Guest hovered', node: h(NS.DropdownMenu, { options: ROLES.map(function (o) { return o.value === 'guest' ? Object.assign({ interaction: 'hover' }, o) : o; }), value: 'guest', open: true, inline: true }) },
+        { label: 'Read-only (Show chevron off)', node: h(NS.DropdownMenu, { options: ROLES, value: 'owner', showChevron: false }) },
+        { label: 'width: 160', node: h(NS.DropdownMenu, { options: ROLES, value: 'owner', width: 160, open: true, inline: true }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'The role column of the Reader Dashboard Subscription Access panel. Click the second trigger, or Tab to it and press Enter, Space or Down Arrow; arrows move, Enter picks, Esc closes and focus goes back to the trigger. A click outside closes it.' },
+      h(I.Specimen, { items: [{ label: 'Subscription Access roles', node: h(Demo), white: true }] }))));
+</script>
+</body>
+</html>

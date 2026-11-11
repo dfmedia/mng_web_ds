@@ -1,0 +1,55 @@
+/* At least 100px wide; as wide as the longest choice otherwise (set `width` to fix it). */
+.mngds-dropdown-menu {
+  position: relative; display: inline-flex; flex-direction: column; vertical-align: middle; box-sizing: border-box;
+  min-width: var(--mng-dropdown-menu-base-root-width);
+}
+/* Trigger: 40px tall, 8px side padding, 4px gaps, radius/sm. Style=white: gray/max (label 18:1); Style=gray: gray/600 (16:1). */
+.mngds-dropdown-menu__trigger {
+  appearance: none; margin: 0; border: 0; font: inherit; text-align: left; cursor: pointer;
+  display: flex; align-items: center; box-sizing: border-box; width: 100%;
+  height: var(--mng-dropdown-menu-base-trigger-height);
+  padding: 0 var(--mng-dropdown-menu-base-trigger-padding-right) 0 var(--mng-dropdown-menu-base-trigger-padding-left);
+  gap: var(--mng-dropdown-menu-base-trigger-gap);
+  border-radius: var(--mng-dropdown-menu-open-false-trigger-border-radius);
+  background: var(--mng-dropdown-menu-style-white-trigger-background);
+  color: var(--mng-dropdown-menu-base-trigger-label-color);
+}
+.mngds-dropdown-menu--gray .mngds-dropdown-menu__trigger { background: var(--mng-dropdown-menu-style-gray-trigger-background); }
+.mngds-dropdown-menu__trigger--static { cursor: default; }
+.mngds-dropdown-menu__icon-slot {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: var(--mng-dropdown-menu-base-trigger-icon-slot-width); height: var(--mng-dropdown-menu-base-trigger-icon-slot-height);
+}
+.mngds-dropdown-menu__icon { color: var(--mng-dropdown-menu-base-trigger-icon-slot-icon-icon-color); }
+/* Every choice's label sits in the same grid cell (the others hidden), so the trigger fits the longest one. */
+.mngds-dropdown-menu__labels { display: grid; flex: 1 1 auto; min-width: 0; }
+.mngds-dropdown-menu__label {
+  grid-area: 1 / 1; white-space: nowrap; line-height: normal;
+  font-family: var(--mng-dropdown-menu-base-trigger-label-font-family); font-size: var(--mng-dropdown-menu-base-trigger-label-font-size);
+  font-weight: var(--mng-dropdown-menu-base-trigger-label-font-weight); color: var(--mng-dropdown-menu-base-trigger-label-color);
+}
+.mngds-dropdown-menu__label--sizer { visibility: hidden; }
+.mngds-dropdown-menu__chevron {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: var(--mng-dropdown-menu-base-trigger-chevron-width); height: var(--mng-dropdown-menu-base-trigger-chevron-height);
+  color: var(--mng-dropdown-menu-base-trigger-chevron-icon-color);
+}
+/* Hover and pressed (forced or real), and open: a 1px inside gray/400 border. Default has none. */
+.mngds-dropdown-menu.is-hover .mngds-dropdown-menu__trigger, .mngds-dropdown-menu.is-pressed .mngds-dropdown-menu__trigger,
+.mngds-dropdown-menu.is-open .mngds-dropdown-menu__trigger,
+.mngds-dropdown-menu:not(.mngds-dropdown-menu--read-only) .mngds-dropdown-menu__trigger:hover,
+.mngds-dropdown-menu:not(.mngds-dropdown-menu--read-only) .mngds-dropdown-menu__trigger:active {
+  box-shadow: inset 0 0 0 var(--mng-dropdown-menu-base-trigger-border-width) var(--mng-dropdown-menu-base-trigger-border-color);
+}
+.mngds-dropdown-menu.is-open .mngds-dropdown-menu__trigger { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+/* InFocus (forced or keyboard focus): a 2px gray/black ring 1px outside the trigger, radius/sm corners (Karl, 2026-11-11). */
+.mngds-dropdown-menu.is-infocus .mngds-dropdown-menu__trigger, .mngds-dropdown-menu__trigger:focus-visible {
+  outline: var(--mng-dropdown-menu-infocus-true-trigger-focus-ring-border-width) var(--mng-dropdown-menu-infocus-true-trigger-focus-ring-border-style) var(--mng-dropdown-menu-infocus-true-trigger-focus-ring-border-color);
+  outline-offset: 1px;
+}
+/* Open: the menu hangs below the trigger, as wide as it, with shadow/lg. */
+.mngds-dropdown-menu__menu {
+  position: absolute; top: 100%; left: 0; right: 0; z-index: 10;
+  display: flex; flex-direction: column; box-shadow: var(--mng-shadow-lg);
+}
+.mngds-dropdown-menu--inline .mngds-dropdown-menu__menu { position: relative; top: auto; }

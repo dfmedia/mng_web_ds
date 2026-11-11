@@ -1,0 +1,39 @@
+/* Row: 40px tall, as wide as the menu, 8px side padding, 4px gaps, square corners.
+   Default: color/gray/500 with a 1px inside color/gray/400 border (label 11.3:1). */
+.mngds-dropdown-menu-item {
+  position: relative; display: flex; align-items: center; box-sizing: border-box; width: 100%;
+  min-width: var(--mng-dropdown-menu-item-base-root-width); height: var(--mng-dropdown-menu-item-base-root-height);
+  padding: 0 var(--mng-dropdown-menu-item-base-root-padding-right) 0 var(--mng-dropdown-menu-item-base-root-padding-left);
+  gap: var(--mng-dropdown-menu-item-status-selected-root-gap);
+  background: var(--mng-dropdown-menu-item-interaction-default-root-background);
+  box-shadow: inset 0 0 0 var(--mng-dropdown-menu-item-base-root-border-width) var(--mng-dropdown-menu-item-base-root-border-color);
+  cursor: pointer; user-select: none;
+}
+.mngds-dropdown-menu-item__content { display: flex; align-items: center; flex: 1 1 auto; min-width: 0; gap: var(--mng-dropdown-menu-item-base-content-gap); }
+.mngds-dropdown-menu-item__icon-slot {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: var(--mng-dropdown-menu-item-base-content-icon-slot-width); height: var(--mng-dropdown-menu-item-base-content-icon-slot-height);
+}
+.mngds-dropdown-menu-item__icon { color: var(--mng-dropdown-menu-item-base-content-icon-slot-icon-icon-color); }
+.mngds-dropdown-menu-item__label {
+  font-family: var(--mng-dropdown-menu-item-base-content-label-font-family); font-size: var(--mng-dropdown-menu-item-base-content-label-font-size);
+  font-weight: var(--mng-dropdown-menu-item-base-content-label-font-weight); line-height: normal;
+  color: var(--mng-dropdown-menu-item-base-content-label-color); white-space: nowrap;
+}
+/* The current choice: checkmark3, 12px wide, at the right edge (Karl, 2026-11-11). */
+.mngds-dropdown-menu-item__check {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: var(--mng-dropdown-menu-item-status-selected-check-width); height: var(--mng-dropdown-menu-item-status-selected-check-height);
+  color: var(--mng-dropdown-menu-item-status-selected-check-icon-color);
+}
+/* Hover and pressed (forced or real): color/gray/400 (label 7.6:1). */
+.mngds-dropdown-menu-item.is-hover, .mngds-dropdown-menu-item:hover { background: var(--mng-dropdown-menu-item-interaction-hover-root-background); }
+.mngds-dropdown-menu-item.is-pressed, .mngds-dropdown-menu-item:active { background: var(--mng-dropdown-menu-item-interaction-pressed-root-background); }
+/* InFocus (forced or keyboard focus): a 2px color/gray/black ring 1px outside the row, square corners (Karl, 2026-11-11).
+   Raised above its neighbors so the ring isn't covered by the next row. */
+.mngds-dropdown-menu-item.is-infocus, .mngds-dropdown-menu-item:focus-visible {
+  z-index: 1;
+  outline: var(--mng-dropdown-menu-item-infocus-true-focus-ring-border-width) var(--mng-dropdown-menu-item-infocus-true-focus-ring-border-style) var(--mng-dropdown-menu-item-infocus-true-focus-ring-border-color);
+  outline-offset: 1px;
+}
+.mngds-dropdown-menu-item:focus:not(:focus-visible):not(.is-infocus) { outline: none; }

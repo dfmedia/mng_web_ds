@@ -210,6 +210,38 @@
       "exported": "2026-11-04"
     },
     {
+      "slug": "dropdown-menu",
+      "name": "Dropdown Menu",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/dropdown-menu/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7543:1880",
+        "set": "Dropdown Menu"
+      },
+      "variants": 10,
+      "instances": 7,
+      "knownIssues": 1,
+      "exported": "2026-11-11"
+    },
+    {
+      "slug": "dropdown-menu-item",
+      "name": "Dropdown Menu Item",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/dropdown-menu-item/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7543:1879",
+        "set": "Dropdown Menu Item"
+      },
+      "variants": 8,
+      "instances": 13,
+      "knownIssues": 1,
+      "exported": "2026-11-11"
+    },
+    {
       "slug": "form-field",
       "name": "Form Field",
       "group": "forms",
@@ -271,7 +303,7 @@
       "variants": 20,
       "instances": 35,
       "knownIssues": 4,
-      "exported": "2026-11-10"
+      "exported": "2026-11-11"
     },
     {
       "slug": "verification-code",

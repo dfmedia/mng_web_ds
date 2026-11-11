@@ -1,0 +1,25 @@
+<!-- @dsCard group="Core" height=620 subtitle="Figma: Dropdown Menu Item · 8 variants (status × interaction × inFocus)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>DropdownMenuItem</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.demo-stack{display:flex;flex-direction:column;width:160px;}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var COLS = [['enabled', 'Default', 'False'], ['hovered', 'hover', 'False'], ['pressed', 'pressed', 'False'], ['focused', 'Default', 'True']];
+  function row(status) {
+    return COLS.map(function (c) { return { label: status + ' / ' + c[0], node: h('div', { style: { width: 100 } }, h(NS.DropdownMenuItem, { status: status, interaction: c[1], inFocus: c[2] })) }; });
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'status × interaction', note: 'Row: 40px tall, as wide as the menu, 8px side padding, 4px gaps, square corners. Default: gray/500 with a 1px inside gray/400 border (label 11.3:1). Hover and pressed: gray/400 (7.6:1). Selected adds checkmark3, 12px wide, at the right edge. Focus: a 2px gray/black ring 1px outside, square corners.' },
+      h(I.Specimen, { items: row('unselected') }), h(I.Specimen, { items: row('selected') })),
+    h(I.SpecimenSection, { title: 'A stack of options', note: 'Three rows at 160px. Every label starts after the 16px Icon Slot, whether it holds an icon or not; the check sits at the right edge.' },
+      h(I.Specimen, { items: [{ label: 'Owner (icon, selected), Guest (hover), Account Manager', node: h('div', { className: 'demo-stack', role: 'listbox', 'aria-label': 'Role' },
+        h(NS.DropdownMenuItem, { label: 'Owner', status: 'selected' }),
+        h(NS.DropdownMenuItem, { label: 'Guest', showIcon: false, interaction: 'hover' }),
+        h(NS.DropdownMenuItem, { label: 'Account Manager', showIcon: false })) }] }))));
+</script>
+</body>
+</html>
