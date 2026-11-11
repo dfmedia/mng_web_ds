@@ -3,4 +3,4 @@
 - The 1px `color/gray/400` border is an inset `box-shadow`, so it doesn't add to the 40px height; stacked rows show a 2px line between them, as in Figma.
 - Focus ring: an `outline` 2px `color/gray/black`, 1px offset, square corners (Karl, 2026-11-11). A focused row is raised (`z-index: 1`) so the next row doesn't cover its ring.
 - Hover and pressed are both `color/gray/400` (label 7.6:1); Default `color/gray/500` (11.3:1).
-- Not in production yet (Karl, 2026-11-10).
+- Production still has the old Button ActionMenu (design-vs-production.md entry 38).

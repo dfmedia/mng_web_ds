@@ -14,7 +14,7 @@ exported: 2026-11-11
 
 # Dropdown Menu
 
-> Drop-down menu: a trigger that opens a list of choices (Karl, 2026-11-10: a copy of Button ActionMenu rebuilt as a drop-down; Button ActionMenu stays as it is for the designs that use it). First use: the role picker (Owner / Guest) in the Reader Dashboard Subscription Access panel. open = False, True; interaction = Default, hover, pressed; inFocus adds the focus ring (on top of the menu when open); Style = white, gray.
+> Drop-down menu: a trigger that opens a list of choices (Karl, 2026-11-10: Button ActionMenu rebuilt as a drop-down; it replaced Button ActionMenu everywhere on 2026-11-11 and Button ActionMenu was removed). First use: the role picker (Owner / Guest) in the Reader Dashboard Subscription Access panel. open = False, True; interaction = Default, hover, pressed; inFocus adds the focus ring (on top of the menu when open); Style = white, gray.
 
 ## Figma
 
@@ -41,13 +41,13 @@ exported: 2026-11-11
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `white / Default / False / False` | 100×40 | [7543:1881](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1881) | 3 | ![](previews/dropdown-menu--white-default-false-false.png) |
+| `white / Default / False / False` | 100×40 | [7543:1881](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1881) | 21 | ![](previews/dropdown-menu--white-default-false-false.png) |
 | `white / Default / False / True` | 100×120 | [7543:1901](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1901) | 2 | ![](previews/dropdown-menu--white-default-false-true.png) |
 | `white / Default / True / False` | 100×40 | [7543:1953](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1953) | 1 | ![](previews/dropdown-menu--white-default-true-false.png) |
 | `white / Default / True / True` | 100×120 | [7545:10202](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7545-10202) | 1 | ![](previews/dropdown-menu--white-default-true-true.png) |
 | `white / hover / False / False` | 100×40 | [7543:1891](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1891) | 0 | ![](previews/dropdown-menu--white-hover-false-false.png) |
 | `white / pressed / False / False` | 100×40 | [7543:1997](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1997) | 0 | ![](previews/dropdown-menu--white-pressed-false-false.png) |
-| `gray / Default / False / False` | 100×40 | [7543:1917](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1917) | 1 | ![](previews/dropdown-menu--gray-default-false-false.png) |
+| `gray / Default / False / False` | 100×40 | [7543:1917](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1917) | 13 | ![](previews/dropdown-menu--gray-default-false-false.png) |
 | `gray / Default / False / True` | 100×120 | [7543:1937](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1937) | 0 | ![](previews/dropdown-menu--gray-default-false-true.png) |
 | `gray / Default / True / False` | 100×40 | [7543:1975](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1975) | 0 | ![](previews/dropdown-menu--gray-default-true-false.png) |
 | `gray / Default / True / True` | 100×120 | [7545:10212](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7545-10212) | 0 | ![](previews/dropdown-menu--gray-default-true-true.png) |
@@ -112,7 +112,7 @@ No Breakpoint property: one size at every width.
 - **Read-only:** Show chevron off (the account owner's own row in Subscription Access).
 - **Rows in the open menu** are exposed nested instances: each row's Label, Show icon, Icon, status, interaction and inFocus can be set on the Dropdown Menu instance, e.g. a hovered row (Karl, 2026-11-11).
 - **Accessibility:** a button with `aria-haspopup="listbox"` and `aria-expanded`, named by its label; the menu is a listbox of options with `aria-selected` on the current one. Enter, Space or Down Arrow opens it; arrows move, Enter picks, Esc closes and focus returns to the trigger.
-- **Button ActionMenu** (Buttons page) is the older version, kept as it is for the designs that use it (Karl, 2026-11-10).
+- **Replaces Button ActionMenu** (Karl, 2026-11-11): InLineMessage (DashSubsAcctShareALL), Reader Dashboard v2.0 and Account Selector Feat. use it; Button ActionMenu was removed from the Buttons page. Changes for dev: `design-vs-production.md` entry 38.
 
 ## Accessibility
 
@@ -122,19 +122,21 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **8**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **38**.
 
+Inside components: InLineMessage ×15.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×15.
 
 **Built from:** Icons ×24, Dropdown Menu Item ×8
 Icon variants: `crown` ×12, `arrow-downSMALL` ×8, `arrow-upSmall` ×4.
 
 ## Production
 
-Not in production yet (Karl, 2026-11-10).
+Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon).
 
 ## Known issues
 
-1. Not in production yet (Karl, 2026-11-10).
+1. Production still has the old Button ActionMenu: closed 99x42 (now 100x40), open menu shows only the other choice (now every choice with a check), focus only when open (now a 2px square ring 1px outside, on top of the menu), no listbox semantics. design-vs-production.md entry 38.1–38.4.
 
 ## Files
 

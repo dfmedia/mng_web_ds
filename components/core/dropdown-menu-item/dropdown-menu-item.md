@@ -122,11 +122,11 @@ Icon variants: `crown` ×8, `checkmark3` ×4.
 
 ## Production
 
-Not in production yet (Karl, 2026-11-10).
+Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2.
 
 ## Known issues
 
-1. Not in production yet (Karl, 2026-11-10).
+1. Production still has Button ActionMenu's open menu (only the other choice, no check). design-vs-production.md entry 38.2.
 
 ## Files
 

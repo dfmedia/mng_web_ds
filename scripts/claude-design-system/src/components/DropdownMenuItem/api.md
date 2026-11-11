@@ -16,4 +16,4 @@ h('div', { role: 'listbox', 'aria-label': 'Role' },
 | `showIcon` / `icon` | Figma Show icon and Icon (instance swap): an icon name for the 16px Icon Slot; the slot stays when it's off | `true` / `'crown'` |
 | other props | passed to the row (`id`, `tabIndex`, `onClick`, `onKeyDown`, ...) | |
 
-Rendered as `role="option"`. Not in production yet.
+Rendered as `role="option"`. Production still has the old Button ActionMenu (design-vs-production.md entry 38).

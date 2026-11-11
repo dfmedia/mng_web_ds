@@ -23,4 +23,4 @@ h(DropdownMenu, { options: roles, value: 'owner', showChevron: false, 'aria-labe
 | `inline` | keeps the open menu in the flow instead of over the page | `false` |
 | `aria-label`, `aria-labelledby`, `id`, `disabled` | naming and ids for the trigger and listbox | |
 
-Keyboard: Enter, Space or Down / Up Arrow opens it on the current choice; arrows, Home and End move; Enter or Space picks; Esc closes and focus goes back to the trigger; Tab closes and moves on. A click outside closes it. Not in production yet.
+Keyboard: Enter, Space or Down / Up Arrow opens it on the current choice; arrows, Home and End move; Enter or Space picks; Esc closes and focus goes back to the trigger; Tab closes and moves on. A click outside closes it. Production still has the old Button ActionMenu (design-vs-production.md entry 38).

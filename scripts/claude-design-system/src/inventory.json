@@ -178,8 +178,9 @@
     {
      "name": "Button ActionMenu",
      "where": "Buttons, 6037:4652",
-     "status": "Not a component",
-     "note": "Kept in Figma as it is for the designs that use it (Karl, 2026-11-10); the system version is Dropdown Menu."
+     "status": "Removed",
+     "note": "Replaced by Dropdown Menu everywhere and removed from the Buttons page (Karl, 2026-11-11); production changes: design-vs-production.md entry 38.",
+     "updated": "2026-11-11"
     },
     {
      "name": "Button Pay",
@@ -271,14 +272,16 @@
      "where": "Dropdown Menus | 2026.11.11, 7543:1880",
      "status": "In system",
      "updated": "2026-11-11",
-     "component": "DropdownMenu"
+     "component": "DropdownMenu",
+     "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
     },
     {
      "name": "Dropdown Menu Item",
      "where": "Dropdown Menus | 2026.11.11, 7543:1879",
      "status": "In system",
      "updated": "2026-11-11",
-     "component": "DropdownMenuItem"
+     "component": "DropdownMenuItem",
+     "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
     },
     {
      "name": "Radio buttons",

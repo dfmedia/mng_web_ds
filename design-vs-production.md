@@ -53,6 +53,7 @@
   - [32. Reader Dashboard — Disclosure](#32-reader-dashboard--disclosure)
   - [33. Reader Dashboard masthead — shows the top nav-links row and "TRENDING:" bar, which the design excludes](#33-reader-dashboard-masthead--shows-the-top-nav-links-row-and-trending-bar-which-the-design-excludes)
   - [34. Reader Dashboard — breakpoints (questions for DigiScrum)](#34-reader-dashboard--breakpoints-questions-for-digiscrum)
+  - [38. Reader Dashboard — Subscription Access role picker: Button ActionMenu replaced by Dropdown Menu](#38-reader-dashboard--subscription-access-role-picker-button-actionmenu-replaced-by-dropdown-menu)
 - [Notes (reading live colors, renumbering, removed entries)](#notes)
 
 ---
@@ -2239,6 +2240,40 @@ Every other mode is 3.2:1 or more on `primary-lighter`, and every mode passes on
 **To decide (Karl):** (a) keep the box `theme/primary` on hover and pressed (the ring alone shows the state); (b) use a `color/gray/min` checkmark wherever `primary-lighter` is too light; or (c) darken Mercury News's `primary-lighter` (a color change, on a `review/...` branch).
 
 **Status:** Open. The Mercury News + East Bay Times need a different solution (Karl, 2026-11-05); not being worked on yet. Noted on the Figma Check Boxes page and in the Claude design system.
+
+---
+
+## 38. Reader Dashboard — Subscription Access role picker: Button ActionMenu replaced by Dropdown Menu
+
+**Found:** 2026-11-11. A design change, not a production finding: Button ActionMenu was rebuilt as the **Dropdown Menu** (main file, Dropdown Menus page: `Dropdown Menu` `7543:1880`, rows `Dropdown Menu Item` `7543:1879`) and replaced Button ActionMenu everywhere (Karl, 2026-11-11): in InLineMessage (Location=DashSubsAcctShareALL; Desktop, Mobile, FOLD), and through it in Reader Dashboard v2.0 and Account Selector Feat. Button ActionMenu was removed from the Buttons page.
+
+**Where:** the role column (Owner / Guest) of the Subscription Access panel (Reader Dashboard ▸ Subscription ▸ Shared Account Members). Spec: [`components/core/dropdown-menu/dropdown-menu.md`](components/core/dropdown-menu/dropdown-menu.md) and [`dropdown-menu-item.md`](components/core/dropdown-menu-item/dropdown-menu-item.md); live demo: `DropdownMenu` in the MNG Web Design System in Claude.
+
+**Production:** was built from Button ActionMenu; not checked live. Dev won't have time for these changes soon (Karl, 2026-11-11), so they're logged here for later.
+
+### 38.1 Closed size: 100x40 (was 99x42)
+
+The closed dropdown is 100px wide and 40px tall (8px `spacing/100` side padding, 4px `spacing/050` gaps), so each user row in the panel is 2px shorter (Desktop user list 370px to 360px). Label (Noto Sans Bold 12px, `color/gray/min`), crown, chevron position and colors are unchanged: `color/gray/max` on white rows, `color/gray/600` on gray rows (labels 18:1 and 16:1). Hover and pressed add a 1px inside `color/gray/400` border, as before.
+
+**Status:** Open. Low priority (Karl, 2026-11-11).
+
+### 38.2 Open menu lists every choice, with a check on the current one
+
+Before: the open menu showed only the other choice (Owner open showed one Guest row, 82px tall in all). Now every choice is listed in order as a 40px row, with a `checkmark3` (12px wide) at the right edge of the current one: Owner (checked), then Guest. With two choices the open dropdown is 120px tall, so it covers more of what's below it (in Account Sharing v3 it overlaps the Add Another User button; it opens over the page and doesn't push content down). Rows: `color/gray/500` with a 1px inside `color/gray/400` border (label 11.3:1), `color/gray/400` on hover and pressed (7.6:1); the menu has `shadow/lg`; the open trigger keeps its gray/400 border. Every label starts after a 16px icon slot, so Guest (no crown) lines up with Owner.
+
+**Status:** Open. Low priority (Karl, 2026-11-11).
+
+### 38.3 Focus ring: 2px, 1px outside, square, on top of the menu
+
+Keyboard focus shows a 2px `color/gray/black` ring 1px outside the trigger with square corners, closed or open; when the menu is open the ring is drawn over the menu, not behind it (Karl, 2026-11-11). A focused menu row gets the same ring, square, drawn over its neighbors. Button ActionMenu only drew a focus state with the menu open.
+
+**Status:** Open. Low priority (Karl, 2026-11-11).
+
+### 38.4 Keyboard and screen readers
+
+The trigger is a button with `aria-haspopup="listbox"` and `aria-expanded`, named by its label (e.g. "Role: Owner"); the menu is a `listbox` of `option` rows with `aria-selected` on the current one. Enter, Space or Down Arrow opens it on the current choice; Up / Down, Home and End move; Enter or Space picks; Esc closes and returns focus to the trigger; Tab closes and moves on; a click outside closes it. The account owner's own row is read-only: no chevron and not a button.
+
+**Status:** Open. Low priority (Karl, 2026-11-11).
 
 ---
 

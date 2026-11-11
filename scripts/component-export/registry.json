@@ -1756,7 +1756,7 @@
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "7543:1880",
       "documentationFrame": "7545:9599",
-      "description": "Drop-down menu: a trigger that opens a list of choices (Karl, 2026-11-10: a copy of Button ActionMenu rebuilt as a drop-down; Button ActionMenu stays as it is for the designs that use it). First use: the role picker (Owner / Guest) in the Reader Dashboard Subscription Access panel. open = False, True; interaction = Default, hover, pressed; inFocus adds the focus ring (on top of the menu when open); Style = white, gray.",
+      "description": "Drop-down menu: a trigger that opens a list of choices (Karl, 2026-11-10: Button ActionMenu rebuilt as a drop-down; it replaced Button ActionMenu everywhere on 2026-11-11 and Button ActionMenu was removed). First use: the role picker (Owner / Guest) in the Reader Dashboard Subscription Access panel. open = False, True; interaction = Default, hover, pressed; inFocus adds the focus ring (on top of the menu when open); Style = white, gray.",
       "rules": [
         "**Trigger:** 100x40px by default (set the width to fit the longest option), 8px (`spacing/100`) side padding, 4px (`spacing/050`) gaps, square corners (radius 0, Karl, 2026-11-11).",
         "**Contents:** a 16px Icon Slot (an icon such as the crown, or empty, so every label starts at the same place), the label in Noto Sans Bold 12px `color/gray/min`, and the chevron (`arrow-downSMALL`; `arrow-upSmall` when open) at the right edge (Karl, 2026-11-11).",
@@ -1767,13 +1767,13 @@
         "**Read-only:** Show chevron off (the account owner's own row in Subscription Access).",
         "**Rows in the open menu** are exposed nested instances: each row's Label, Show icon, Icon, status, interaction and inFocus can be set on the Dropdown Menu instance, e.g. a hovered row (Karl, 2026-11-11).",
         "**Accessibility:** a button with `aria-haspopup=\"listbox\"` and `aria-expanded`, named by its label; the menu is a listbox of options with `aria-selected` on the current one. Enter, Space or Down Arrow opens it; arrows move, Enter picks, Esc closes and focus returns to the trigger.",
-        "**Button ActionMenu** (Buttons page) is the older version, kept as it is for the designs that use it (Karl, 2026-11-10)."
+        "**Replaces Button ActionMenu** (Karl, 2026-11-11): InLineMessage (DashSubsAcctShareALL), Reader Dashboard v2.0 and Account Selector Feat. use it; Button ActionMenu was removed from the Buttons page. Changes for dev: `design-vs-production.md` entry 38."
       ],
       "breakpoints": null,
       "knownIssues": [
-        "Not in production yet (Karl, 2026-11-10)."
+        "Production still has the old Button ActionMenu: closed 99x42 (now 100x40), open menu shows only the other choice (now every choice with a check), focus only when open (now a 2px square ring 1px outside, on top of the menu), no listbox semantics. design-vs-production.md entry 38.1–38.4."
       ],
-      "production": "Not in production yet (Karl, 2026-11-10)."
+      "production": "Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon)."
     },
     {
       "slug": "dropdown-menu-item",
@@ -1794,9 +1794,9 @@
       ],
       "breakpoints": null,
       "knownIssues": [
-        "Not in production yet (Karl, 2026-11-10)."
+        "Production still has Button ActionMenu's open menu (only the other choice, no check). design-vs-production.md entry 38.2."
       ],
-      "production": "Not in production yet (Karl, 2026-11-10)."
+      "production": "Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2."
     }
   ]
 }

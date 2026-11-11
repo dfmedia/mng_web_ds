@@ -1,4 +1,4 @@
-- A copy of Button ActionMenu rebuilt as a drop-down (Karl, 2026-11-10). Button ActionMenu (Buttons page, 6037:4652) stays as it is in Figma for the designs that use it, and isn't built here.
+- Button ActionMenu rebuilt as a drop-down (Karl, 2026-11-10). On 2026-11-11 it replaced Button ActionMenu everywhere (InLineMessage, Reader Dashboard v2.0, Account Selector Feat.) and Button ActionMenu was removed.
 - Fits the longest choice (Karl, 2026-11-11): every choice's label is stacked, hidden, in the same grid cell as the shown one, so the trigger is as wide as the longest and its chevron sits right of every item's label and check. The menu is as wide as the trigger. `width` fixes the width instead (Figma: set the instance width).
 - The Icon Slot is always 16px, so labels start at the same place with or without an icon (Karl, 2026-11-11).
 - Accessibility: the trigger is a `button` with `aria-haspopup="listbox"` and `aria-expanded`; the menu is a `listbox` of `option` rows (`DropdownMenuItem`) with `aria-selected` on the current one. Focus moves into the list (roving focus: each option is focusable with `tabIndex=-1`) and back to the trigger on Enter or Esc. With `aria-label`, the trigger reads "Role: Owner".
@@ -8,4 +8,4 @@
 - Shadow: the open menu uses `shadow/lg` (`--mng-shadow-lg`); the component export doesn't carry effect styles yet.
 - Figma exposes each open-menu row on the Dropdown Menu instance (Karl, 2026-11-11), so a row can be drawn hovered, pressed or focused; here an option's `interaction` / `inFocus` fields do the same for documentation (real hover and keyboard focus apply on their own).
 - In product use the open menu sits over the page (absolute, z-index 10); `inline` keeps it in the flow for documentation.
-- Not in production yet (Karl, 2026-11-10).
+- Production (Reader Dashboard Subscription Access) still has the old Button ActionMenu; the changes for dev are in `design-vs-production.md` entry 38 (closed 100x40, every choice listed with a check, the focus ring, listbox keyboard rules). Dev won't get to it soon (Karl, 2026-11-11).

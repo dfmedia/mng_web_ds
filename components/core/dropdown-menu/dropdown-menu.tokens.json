@@ -9,7 +9,7 @@
         "componentSet": "Dropdown Menu",
         "page": "Dropdown Menus | 2026.11.11"
       },
-      "production": "Not in production yet (Karl, 2026-11-10).",
+      "production": "Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon).",
       "layer": "core",
       "exported": "2026-11-11"
     }

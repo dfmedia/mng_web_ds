@@ -9,7 +9,7 @@
         "componentSet": "Dropdown Menu Item",
         "page": "Dropdown Menus | 2026.11.11"
       },
-      "production": "Not in production yet (Karl, 2026-11-10).",
+      "production": "Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2.",
       "layer": "core",
       "exported": "2026-11-11"
     }
