@@ -2253,7 +2253,7 @@ Every other mode is 3.2:1 or more on `primary-lighter`, and every mode passes on
 
 **Team:** DigiScrum, not CMS (Karl, 2026-11-11). When they get to this update, the Dropdown Menu (and its Dropdown Menu Item rows) should exist in the React component library and be used here.
 
-**Figma:** every role picker in Account Selector Feat. (Account Sharing v3, Show Login Methods v3) carries a Development annotation saying the component was updated after the feature went to production, pointing here.
+**Figma:** the role pickers on Account Selector Feat.'s Account Sharing v3 page carry a Development annotation saying the component was updated after the feature went to production, pointing here.
 
 ### 38.1 Closed size: 100x40 (was 99x42)
 
