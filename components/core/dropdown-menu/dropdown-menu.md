@@ -132,7 +132,7 @@ Icon variants: `crown` ×12, `arrow-downSMALL` ×8, `arrow-upSmall` ×4.
 
 ## Production
 
-Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon).
+Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon). Team: DigiScrum (not CMS); the Dropdown Menu should exist in the React component library when they get to this update (Karl, 2026-11-11).
 
 ## Known issues
 

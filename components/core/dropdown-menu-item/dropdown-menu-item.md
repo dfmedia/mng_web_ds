@@ -122,7 +122,7 @@ Icon variants: `crown` ×8, `checkmark3` ×4.
 
 ## Production
 
-Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2.
+Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2. Team: DigiScrum (not CMS); the Dropdown Menu should exist in the React component library when they get to this update (Karl, 2026-11-11).
 
 ## Known issues
 

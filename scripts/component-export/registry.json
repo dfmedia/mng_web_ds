@@ -1773,7 +1773,7 @@
       "knownIssues": [
         "Production still has the old Button ActionMenu: closed 99x42 (now 100x40), open menu shows only the other choice (now every choice with a check), focus only when open (now a 2px square ring 1px outside, on top of the menu), no listbox semantics. design-vs-production.md entry 38.1–38.4."
       ],
-      "production": "Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon)."
+      "production": "Production (Reader Dashboard Subscription Access) was built from Button ActionMenu and hasn't been updated; not checked live. Changes for dev: design-vs-production.md entry 38 (Karl, 2026-11-11: dev won't have time soon). Team: DigiScrum (not CMS); the Dropdown Menu should exist in the React component library when they get to this update (Karl, 2026-11-11)."
     },
     {
       "slug": "dropdown-menu-item",
@@ -1796,7 +1796,7 @@
       "knownIssues": [
         "Production still has Button ActionMenu's open menu (only the other choice, no check). design-vs-production.md entry 38.2."
       ],
-      "production": "Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2."
+      "production": "Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2. Team: DigiScrum (not CMS); the Dropdown Menu should exist in the React component library when they get to this update (Karl, 2026-11-11)."
     }
   ]
 }

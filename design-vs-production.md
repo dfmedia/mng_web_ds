@@ -2251,6 +2251,10 @@ Every other mode is 3.2:1 or more on `primary-lighter`, and every mode passes on
 
 **Production:** was built from Button ActionMenu; not checked live. Dev won't have time for these changes soon (Karl, 2026-11-11), so they're logged here for later.
 
+**Team:** DigiScrum, not CMS (Karl, 2026-11-11). When they get to this update, the Dropdown Menu (and its Dropdown Menu Item rows) should exist in the React component library and be used here.
+
+**Figma:** every role picker in Account Selector Feat. (Account Sharing v3, Show Login Methods v3) carries a Development annotation saying the component was updated after the feature went to production, pointing here.
+
 ### 38.1 Closed size: 100x40 (was 99x42)
 
 The closed dropdown is 100px wide and 40px tall (8px `spacing/100` side padding, 4px `spacing/050` gaps), so each user row in the panel is 2px shorter (Desktop user list 370px to 360px). Label (Noto Sans Bold 12px, `color/gray/min`), crown, chevron position and colors are unchanged: `color/gray/max` on white rows, `color/gray/600` on gray rows (labels 18:1 and 16:1). Hover and pressed add a 1px inside `color/gray/400` border, as before.
