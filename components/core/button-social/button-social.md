@@ -106,7 +106,7 @@ From `button-social.tokens.json`. References point at system tokens (`tokens/cor
 
 No Breakpoint property: one size at every width.
 
-- **Size:** 40px tall. With a label the `Button` hugs it (16px `spacing/200` side padding) or fills its container; `Icon position=only` is a 40x40 circle.
+- **Size:** 40px tall. The `Button` fills the instance's width inside the 8px margin (the variant root has a fixed width that hugs the label by default), so an instance set wider fills its column, as Embedded Login does (Karl, 2026-11-11). 16px `spacing/200` side padding; `Icon position=only` is a 40x40 circle that stays round.
 - **Margin:** the variant root keeps an 8px (`spacing/100`) left and right margin, like Button Tertiary, so the visible button is 16px narrower than the instance (Karl, 2026-11-11).
 - **Shape:** fully round ends at any height: the corner radius is half the height. Figma uses 999; CSS `border-radius: 9999px`. No token (Karl, 2026-11-11: the radius depends only on the height).
 - **Contents:** Icon (16px, the `Icon` instance-swap property) and Label (Noto Sans Regular 16px, `color/gray/min`, the `Label` text property) with an 8px (`spacing/100`) gap. Each variant holds only the icon it shows.
