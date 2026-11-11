@@ -66,15 +66,15 @@
       "exported": "2026-10-28"
     },
     {
-      "slug": "button-social",
-      "name": "Button Social",
+      "slug": "button-social-login",
+      "name": "Button Social-Login",
       "group": "buttons",
       "layer": "core",
-      "path": "components/core/button-social/",
+      "path": "components/core/button-social-login/",
       "figma": {
         "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
         "node": "6516:5394",
-        "set": "Button Social"
+        "set": "Button Social-Login"
       },
       "variants": 16,
       "instances": 11,

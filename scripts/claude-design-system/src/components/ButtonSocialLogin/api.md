@@ -1,10 +1,10 @@
 The pill button for social sign-in and the Embedded Login footer CTAs. Give an icon-only button an `aria-label`.
 
 ```js
-const { ButtonSocial } = window.mng_web_design_system;
-h(ButtonSocial, { iconPosition: 'left', icon: 'google-color', label: 'Google', fill: true, onClick: signIn })
-h(ButtonSocial, { iconPosition: 'only', icon: 'appleinc', 'aria-label': 'Continue with Apple' })
-h(ButtonSocial, { label: 'Continue', fill: true })
+const { ButtonSocialLogin } = window.mng_web_design_system;
+h(ButtonSocialLogin, { iconPosition: 'left', icon: 'google-color', label: 'Google', fill: true, onClick: signIn })
+h(ButtonSocialLogin, { iconPosition: 'only', icon: 'appleinc', 'aria-label': 'Continue with Apple' })
+h(ButtonSocialLogin, { label: 'Continue', fill: true })
 ```
 
 | Prop | Values | Default |

@@ -1,4 +1,4 @@
-export interface ButtonSocialProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ButtonSocialLoginProps extends React.HTMLAttributes<HTMLDivElement> {
   /** Figma Icon position. 'only' is a 40x40 circle without a label. Default 'None'. */
   iconPosition?: 'None' | 'left' | 'right' | 'only';
   /** Figma Icon (instance swap): an icon name. Default 'new-tab'. */
@@ -20,4 +20,4 @@ export interface ButtonSocialProps extends React.HTMLAttributes<HTMLDivElement> 
   onClick?: (e: React.MouseEvent) => void;
   'aria-label'?: string;
 }
-export declare function ButtonSocial(props: ButtonSocialProps): React.ReactElement;
+export declare function ButtonSocialLogin(props: ButtonSocialLoginProps): React.ReactElement;

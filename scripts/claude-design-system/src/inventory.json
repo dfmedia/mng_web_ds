@@ -189,11 +189,11 @@
      "note": "No export yet; its radius isn't recorded."
     },
     {
-     "name": "Button Social",
+     "name": "Button Social-Login",
      "where": "Buttons, 6516:5394",
      "status": "In system",
      "updated": "2026-11-11",
-     "component": "ButtonSocial",
+     "component": "ButtonSocialLogin",
      "note": "Rebuilt in place 2026-11-11 (Embedded Login uses it): pill, 16 variants incl. icon only."
     },
     {

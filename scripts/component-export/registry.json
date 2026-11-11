@@ -1799,15 +1799,15 @@
       "production": "Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's single option row; see design-vs-production.md entry 38.2. Team: DigiScrum (not CMS); the Dropdown Menu should exist in the React component library when they get to this update (Karl, 2026-11-11)."
     },
     {
-      "slug": "button-social",
-      "name": "Button Social",
+      "slug": "button-social-login",
+      "name": "Button Social-Login",
       "group": "buttons",
       "layer": "core",
       "order": 9,
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "6516:5394",
       "documentationFrame": "7558:5006",
-      "description": "Social sign-in and secondary pill button (Embedded Login: Apple ID, Facebook and Google sign-in, the round icon buttons, Continue, Create Account). Icon position = None, left, right, only (round, icon only); interaction = Default, hover, pressed; inFocus adds the focus ring. Rebuilt in place 2026-11-11 so Embedded Login's instances keep their labels and icons.",
+      "description": "Social sign-in and secondary pill button (Embedded Login: Apple ID, Facebook and Google sign-in, the round icon buttons, Continue, Create Account). Icon position = None, left, right, only (round, icon only); interaction = Default, hover, pressed; inFocus adds the focus ring. Rebuilt in place 2026-11-11 so Embedded Login's instances keep their labels and icons. Renamed from Button Social 2026-11-11 (Karl).",
       "rules": [
         "**Size:** 40px tall. The `Button` fills the instance's width inside the 8px margin (the variant root has a fixed width that hugs the label by default), so an instance set wider fills its column, as Embedded Login does (Karl, 2026-11-11). 16px `spacing/200` side padding; `Icon position=only` is a 40x40 circle that stays round.",
         "**Margin:** the variant root keeps an 8px (`spacing/100`) left and right margin, like Button Tertiary, so the visible button is 16px narrower than the instance (Karl, 2026-11-11).",
