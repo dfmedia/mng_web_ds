@@ -1816,12 +1816,11 @@
         "**Colors:** Default `color/gray/600` with a 1px inside `color/gray/400` border (label 16:1); hover and pressed `color/gray/max` with a 1px inside `color/gray/500` border (label 18:1), the same as Button Tertiary (Karl, 2026-11-11).",
         "**Focus ring:** the Default button plus a `Focus Ring` frame 1px outside it, 2px `color/gray/black`, round like the button. In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;`.",
         "**Brand icons** keep their own colors (Google's multicolor G; Facebook blue in Embedded Login).",
-        "**Accessibility:** a button (or link) named by its label; an icon-only button needs an accessible name (e.g. `aria-label=\"Continue with Apple\"`). Icons are decorative."
+        "**Accessibility:** a button (or link) named by its label; an icon-only button needs an accessible name (e.g. `aria-label=\"Continue with Apple\"`). Icons are decorative.",
+        "**Borders:** faint on a white page (`color/gray/400` 2.4:1, hover `color/gray/500` 1.6:1), as on Button Tertiary; accepted (Karl, 2026-11-11)."
       ],
       "breakpoints": null,
-      "knownIssues": [
-        "Borders are faint on a white page: `color/gray/400` is 2.4:1 and the hover `color/gray/500` 1.6:1 against white; the Default gray fill marks the edge, a hovered white button on white barely does."
-      ],
+      "knownIssues": [],
       "production": "Used in the Embedded Login designs; not checked against production."
     }
   ]

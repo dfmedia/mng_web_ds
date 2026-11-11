@@ -114,6 +114,7 @@ No Breakpoint property: one size at every width.
 - **Focus ring:** the Default button plus a `Focus Ring` frame 1px outside it, 2px `color/gray/black`, round like the button. In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;`.
 - **Brand icons** keep their own colors (Google's multicolor G; Facebook blue in Embedded Login).
 - **Accessibility:** a button (or link) named by its label; an icon-only button needs an accessible name (e.g. `aria-label="Continue with Apple"`). Icons are decorative.
+- **Borders:** faint on a white page (`color/gray/400` 2.4:1, hover `color/gray/500` 1.6:1), as on Button Tertiary; accepted (Karl, 2026-11-11).
 
 ## Accessibility
 
@@ -135,8 +136,7 @@ Used in the Embedded Login designs; not checked against production.
 
 ## Known issues
 
-1. Borders are faint on a white page: `color/gray/400` is 2.4:1 and the hover `color/gray/500` 1.6:1 against white; the Default gray fill marks the edge, a hovered white button on white barely does.
-2. **Values not bound to a token** (literal in the component tokens): `base` button border-radius = 999px; `infocus-true` button.focus-ring border-radius = 999px.
+1. **Values not bound to a token** (literal in the component tokens): `base` button border-radius = 999px; `infocus-true` button.focus-ring border-radius = 999px.
 
 ## Files
 

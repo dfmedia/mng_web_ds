@@ -4,5 +4,5 @@
 - Hover and pressed use Button Tertiary's styling (Karl, 2026-11-11): Default `color/gray/600` + `color/gray/400` border; hover and pressed `color/gray/max` + `color/gray/500` border. The label is Noto Sans Regular (Tertiary's is Bold).
 - The 1px border is an inset `box-shadow`, so it adds no width. The focus ring is an `outline` with a 1px offset, which follows the round corners.
 - Icon-only buttons take their accessible name from `aria-label` (falls back to `label`).
-- Contrast: the label is 16:1 on gray/600 and 18:1 on white. The border is faint on a white page (gray/400 2.4:1, gray/500 1.6:1): the Default gray fill marks the edge; a hovered white button on white barely does.
+- Contrast: the label is 16:1 on gray/600 and 18:1 on white. The border is faint on a white page (gray/400 2.4:1, gray/500 1.6:1): the Default gray fill marks the edge; a hovered white button on white barely does. Accepted as is (Karl, 2026-11-11).
 - Not checked against production.
