@@ -17,7 +17,7 @@
       h(NS.CheckBox, { status: s[0] ? 'selected' : 'unselected', onChange: function (e) { s[1](e.target.checked); } }), 'Email me the newsletter');
   }
   ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
-    h(I.SpecimenSection, { title: 'status × interaction', note: '14x14 box (radius/field) in a 40x40 touch area (radius/utility). Hover, pressed and focus show a 2px gray/black ring; checked boxes use color/theme/primary, and primary-lighter on hover and pressed.' },
+    h(I.SpecimenSection, { title: 'status × interaction', note: '14x14 box (radius/field) in a 40x40 touch area (radius/utility). Focus shows a 2px gray/black ring, on any state (hover and pressed have none); checked boxes use color/theme/primary, and primary-lighter on hover and pressed.' },
       ['unselected', 'selected', 'partial'].map(function (st) { return h(I.Specimen, { key: st, items: row(st) }); })),
     h(I.SpecimenSection, { title: 'Try it', note: 'Click, or Tab to it and press Space.' },
       h(I.Specimen, { items: [{ label: 'With a label', node: h(Demo) }] }))));

@@ -6,5 +6,6 @@
 - The trigger's 1px `color/gray/400` border is an inset `box-shadow`, drawn on hover, pressed and open only (the export lists it under `base` because only those variants have it).
 - Chevron: the Figma artwork is `arrow-downSMALL` / `arrow-upSmall` (Icons, 4693:18 / 4693:14), which isn't in the icon font; the font's `arrow-down` / `arrow-up` are used.
 - Shadow: the open menu uses `shadow/lg` (`--mng-shadow-lg`); the component export doesn't carry effect styles yet.
+- Figma exposes each open-menu row on the Dropdown Menu instance (Karl, 2026-11-11), so a row can be drawn hovered, pressed or focused; here an option's `interaction` / `inFocus` fields do the same for documentation (real hover and keyboard focus apply on their own).
 - In product use the open menu sits over the page (absolute, z-index 10); `inline` keeps it in the flow for documentation.
 - Not in production yet (Karl, 2026-11-10).

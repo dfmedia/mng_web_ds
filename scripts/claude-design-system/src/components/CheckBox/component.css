@@ -1,4 +1,4 @@
-/* 40x40 touch area (radius/utility); the hover / pressed / focus ring is a 2px gray/black outline outside it. */
+/* 40x40 touch area (radius/utility); the focus ring is a 2px gray/black outline outside it. Hover and pressed have no ring (Karl, 2026-11-11). */
 .mngds-checkbox {
   position: relative; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box;
   width: var(--mng-checkbox-base-root-width); height: var(--mng-checkbox-base-root-height);
@@ -21,12 +21,11 @@
   background: var(--mng-checkbox-interaction-default-box-background); box-shadow: none;
 }
 
-/* Hover and pressed (forced or real): the ring, a gray/min border on the empty box, primary-lighter on a checked one. */
-.mngds-checkbox.is-hover, .mngds-checkbox.is-pressed, .mngds-checkbox.is-infocus,
-.mngds-checkbox:not(.mngds-checkbox--disabled):hover, .mngds-checkbox:not(.mngds-checkbox--disabled):active,
-.mngds-checkbox:has(.mngds-checkbox__input:focus-visible) {
+/* InFocus (forced or keyboard focus): the ring, on any status and interaction. */
+.mngds-checkbox.is-infocus, .mngds-checkbox:has(.mngds-checkbox__input:focus-visible) {
   box-shadow: 0 0 0 var(--mng-checkbox-infocus-true-root-border-width) var(--mng-checkbox-infocus-true-root-border-color);
 }
+/* Hover and pressed (forced or real): a gray/min border on the empty box, primary-lighter on a checked one. No ring. */
 .mngds-checkbox--unselected.is-hover .mngds-checkbox__box, .mngds-checkbox--unselected.is-pressed .mngds-checkbox__box,
 .mngds-checkbox--unselected:not(.mngds-checkbox--disabled):hover .mngds-checkbox__box,
 .mngds-checkbox--unselected:not(.mngds-checkbox--disabled):active .mngds-checkbox__box {

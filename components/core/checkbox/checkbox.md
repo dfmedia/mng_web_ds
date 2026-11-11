@@ -9,7 +9,7 @@ component_key: e32ad97473603da98a47d63eca30342e498b2ab2
 variants: 15
 tokens: checkbox.tokens.json
 skeleton: checkbox.html
-exported: 2026-11-04
+exported: 2026-11-11
 ---
 
 # CheckBox
@@ -18,7 +18,7 @@ exported: 2026-11-04
 
 ## Figma
 
-- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Check Boxes | 2026.11.04**
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Check Boxes | 2026.11.05**
 - Component set: [`CheckBox` · 4693:690](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=4693-690) · key `e32ad97473603da98a47d63eca30342e498b2ab2`
 - Documentation frame: [CheckBox Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7501-27496) · overview: [previews/checkbox--documentation.png](previews/checkbox--documentation.png)
 
@@ -102,7 +102,7 @@ From `checkbox.tokens.json`. References point at system tokens (`tokens/core/`, 
 No Breakpoint property: one size at every width.
 
 - **Box:** 14x14px, `color/gray/max` fill, 1px inside `color/gray/200` border (6.5:1 on white), 3px corners (`radius/field`).
-- **Touch area:** 40x40px around the box, 5px corners (`radius/utility`). Hover, pressed and focus show a 2px `color/gray/black` ring outside it; focus can apply to any state.
+- **Touch area:** 40x40px around the box, 5px corners (`radius/utility`). Focus (inFocus) shows a 2px `color/gray/black` ring outside it and can apply to any status and interaction; hover and pressed have no ring (Karl, 2026-11-11).
 - **Selected / partial:** `checkmark3` / `minus`, 12x12px, `color/gray/max` (white) on a `color/theme/primary` box; on hover and pressed the box is `color/theme/primary-lighter`.
 - **Disabled:** the empty box stays; selected and partial show the same icon in `color/gray/500` on a `color/gray/600` box.
 - **Label** (from the assembly): Noto Sans Regular 14px, `color/gray/min`; the box and the first line of text are center-aligned, no padding between the touch area and the text. **Error message:** Noto Sans Regular 18px, `color/feedback/high-error`, directly under, no padding.
@@ -118,7 +118,7 @@ No Breakpoint property: one size at every width.
 
 Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **35**.
 
-Inside components: InLineMessage ×13, Form Field ×7, Form Field Assembly  ×2.
+Inside components: InLineMessage ×13, Form Field OLD ×6, Form Field Assembly  ×2, Form Field ×1.
 Placed on pages: In-Line Content Containers | 2026.01.02 ×3.
 
 **Built from:** Icons ×10
@@ -139,4 +139,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `checkbox.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-11 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

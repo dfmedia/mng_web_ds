@@ -42,7 +42,7 @@ exported: 2026-11-11
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `white / Default / False / False` | 100×40 | [7543:1881](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1881) | 3 | ![](previews/dropdown-menu--white-default-false-false.png) |
-| `white / Default / False / True` | 100×120 | [7543:1901](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1901) | 1 | ![](previews/dropdown-menu--white-default-false-true.png) |
+| `white / Default / False / True` | 100×120 | [7543:1901](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1901) | 2 | ![](previews/dropdown-menu--white-default-false-true.png) |
 | `white / Default / True / False` | 100×40 | [7543:1953](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1953) | 1 | ![](previews/dropdown-menu--white-default-true-false.png) |
 | `white / Default / True / True` | 100×120 | [7545:10202](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7545-10202) | 1 | ![](previews/dropdown-menu--white-default-true-true.png) |
 | `white / hover / False / False` | 100×40 | [7543:1891](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1891) | 0 | ![](previews/dropdown-menu--white-hover-false-false.png) |
@@ -110,6 +110,7 @@ No Breakpoint property: one size at every width.
 - **Focus:** the Default trigger plus a 2px `color/gray/black` ring 1px outside it, square corners like the trigger (Karl, 2026-11-11). Open and focused (`open=True, inFocus=True`): the ring is drawn on top of the menu, not behind it (Karl, 2026-11-11).
 - **Open:** the trigger keeps the gray/400 border and the menu hangs below it: a stack of Dropdown Menu Item rows as wide as the trigger, every choice listed, a check on the current one, `shadow/lg`.
 - **Read-only:** Show chevron off (the account owner's own row in Subscription Access).
+- **Rows in the open menu** are exposed nested instances: each row's Label, Show icon, Icon, status, interaction and inFocus can be set on the Dropdown Menu instance, e.g. a hovered row (Karl, 2026-11-11).
 - **Accessibility:** a button with `aria-haspopup="listbox"` and `aria-expanded`, named by its label; the menu is a listbox of options with `aria-selected` on the current one. Enter, Space or Down Arrow opens it; arrows move, Enter picks, Esc closes and focus returns to the trigger.
 - **Button ActionMenu** (Buttons page) is the older version, kept as it is for the designs that use it (Karl, 2026-11-10).
 
@@ -121,7 +122,7 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **7**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **8**.
 
 
 **Built from:** Icons ×24, Dropdown Menu Item ×8

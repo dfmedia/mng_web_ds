@@ -1531,7 +1531,7 @@
       "description": "Check box: a 14x14 box inside a 40x40 touch area. status = unselected, selected, partial; interaction = Default, hover, pressed, disabled; inFocus adds the focus ring. The label, terms text and error row come from Form Field Assembly / Checkbox + Terms.",
       "rules": [
         "**Box:** 14x14px, `color/gray/max` fill, 1px inside `color/gray/200` border (6.5:1 on white), 3px corners (`radius/field`).",
-        "**Touch area:** 40x40px around the box, 5px corners (`radius/utility`). Hover, pressed and focus show a 2px `color/gray/black` ring outside it; focus can apply to any state.",
+        "**Touch area:** 40x40px around the box, 5px corners (`radius/utility`). Focus (inFocus) shows a 2px `color/gray/black` ring outside it and can apply to any status and interaction; hover and pressed have no ring (Karl, 2026-11-11).",
         "**Selected / partial:** `checkmark3` / `minus`, 12x12px, `color/gray/max` (white) on a `color/theme/primary` box; on hover and pressed the box is `color/theme/primary-lighter`.",
         "**Disabled:** the empty box stays; selected and partial show the same icon in `color/gray/500` on a `color/gray/600` box.",
         "**Label** (from the assembly): Noto Sans Regular 14px, `color/gray/min`; the box and the first line of text are center-aligned, no padding between the touch area and the text. **Error message:** Noto Sans Regular 18px, `color/feedback/high-error`, directly under, no padding.",
@@ -1765,6 +1765,7 @@
         "**Focus:** the Default trigger plus a 2px `color/gray/black` ring 1px outside it, square corners like the trigger (Karl, 2026-11-11). Open and focused (`open=True, inFocus=True`): the ring is drawn on top of the menu, not behind it (Karl, 2026-11-11).",
         "**Open:** the trigger keeps the gray/400 border and the menu hangs below it: a stack of Dropdown Menu Item rows as wide as the trigger, every choice listed, a check on the current one, `shadow/lg`.",
         "**Read-only:** Show chevron off (the account owner's own row in Subscription Access).",
+        "**Rows in the open menu** are exposed nested instances: each row's Label, Show icon, Icon, status, interaction and inFocus can be set on the Dropdown Menu instance, e.g. a hovered row (Karl, 2026-11-11).",
         "**Accessibility:** a button with `aria-haspopup=\"listbox\"` and `aria-expanded`, named by its label; the menu is a listbox of options with `aria-selected` on the current one. Enter, Space or Down Arrow opens it; arrows move, Enter picks, Esc closes and focus returns to the trigger.",
         "**Button ActionMenu** (Buttons page) is the older version, kept as it is for the designs that use it (Karl, 2026-11-10)."
       ],
