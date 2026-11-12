@@ -2322,9 +2322,9 @@ ocregister.com shows the bookmark and then the share buttons with only an 8px ga
 
 **Status:** Open.
 
-### 39.6 Obituaries: share buttons 11.69px apart with 14.85px icons; the design is 8px and 22px
+### 39.6 Obituaries: share buttons 11.69px apart with 14.85px icons; the design is 8px and 18px
 
-The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; ocregister.com and denverpost.com, the same Endless Tributes template) are the same feature as the article share bar (Karl, 2026-11-12). Their colors match the design: 40x40 circles in the obituaries theme's `color/theme/primary` (`#8D092D` on screen), hover `color/theme/primary-light` (`#C00C3D`; `#C00D3D` on screen). The design (Karl, 2026-11-12): 40x40 buttons, 8px (`spacing/100`) apart, 22x22 icons centered. Production: 11.69px apart (`margin-right`), 14.85px icons. Whether the article share bar's icons also go from 18px to 22px is being compared in WordPress Elements ("Compare: article vs obituary share buttons").
+The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; ocregister.com and denverpost.com, the same Endless Tributes template) are the same feature as the article share bar (Karl, 2026-11-12). Their colors match the design, which uses the obituaries theme's color tokens: 40x40 circles in `color/theme/primary` (`#8D092D` on screen), hover `color/theme/primary-light` (`#C00C3D`; `#C00D3D` on screen), icons `color/gray/max`. The design (Karl, 2026-11-12): 40x40 buttons, 8px (`spacing/100`) apart, 18px icons centered, the same as the article share bar (22px icons were compared and not chosen). Production: 11.69px apart (`margin-right`), 14.85px icons.
 
 **Status:** Open.
 
