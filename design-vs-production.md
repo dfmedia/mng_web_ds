@@ -2328,9 +2328,9 @@ The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; 
 
 **Status:** Open.
 
-### 39.7 Obituaries: a dotted blue line under each share button instead of the dark-red bottom border
+### 39.7 Obituaries: a dotted blue line under each share button
 
-The obituary share buttons (denverpost.com, checked 2026-11-12) have no 2px bottom border; instead each one carries a 1px dotted `#003459` bottom border, a link underline style leaking onto the buttons, which shows as a faint dotted arc under each circle. The design gives them the same 2px `color/theme/primary-dark` bottom border as the article bar's Bold Coastal buttons (Endless Tributes: `#770000`), and no dotted line.
+The obituary page's share buttons (Facebook, Email, Copy link; denverpost.com, checked on screen 2026-11-12) each have a 1px dotted `#003459` bottom border, a link underline style leaking onto the buttons. It shows as a faint dotted blue arc along the bottom of each dark-red circle. The design has no border or shadow on obituary share buttons at all (Karl, 2026-11-12: the obituary theme doesn't have them). Remove the dotted border.
 
 **Status:** Open.
 
