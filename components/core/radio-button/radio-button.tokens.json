@@ -329,17 +329,6 @@
         }
       },
       "root": {
-        "border-radius": {
-          "$type": "dimension",
-          "$value": "{radius.utility}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/radius/utility"
-              }
-            }
-          }
-        },
         "padding-left": {
           "$type": "dimension",
           "$value": "{spacing.150}",
@@ -350,14 +339,16 @@
               }
             }
           }
-        },
-        "padding-right": {
+        }
+      },
+      "touch-area": {
+        "border-radius": {
           "$type": "dimension",
-          "$value": "{spacing.150}",
+          "$value": "{radius.utility}",
           "$extensions": {
             "com.mng": {
               "figma": {
-                "variable": "Spacing & Radius/spacing/150"
+                "variable": "Spacing & Radius/radius/utility"
               }
             }
           }
@@ -478,8 +469,45 @@
         }
       }
     },
-    "infocus-true": {
+    "label-false": {
       "root": {
+        "padding-bottom": {
+          "$type": "dimension",
+          "$value": "{spacing.150}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/150"
+              }
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": "{spacing.150}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/150"
+              }
+            }
+          }
+        },
+        "padding-top": {
+          "$type": "dimension",
+          "$value": "{spacing.150}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/150"
+              }
+            }
+          }
+        }
+      }
+    },
+    "infocus-true": {
+      "touch-area": {
         "border-color": {
           "$type": "color",
           "$value": "{color.gray.black}",
@@ -500,32 +528,6 @@
           "$value": {
             "value": 2,
             "unit": "px"
-          }
-        }
-      }
-    },
-    "label-false": {
-      "root": {
-        "padding-bottom": {
-          "$type": "dimension",
-          "$value": "{spacing.150}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/150"
-              }
-            }
-          }
-        },
-        "padding-top": {
-          "$type": "dimension",
-          "$value": "{spacing.150}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Spacing & Radius/spacing/150"
-              }
-            }
           }
         }
       }

@@ -18,4 +18,4 @@ h(RadioButton, { name: 'size', value: 's', 'aria-label': 'Small' })   // circle 
 | `inFocus` | `'True'`, `'False'` (forces the focus ring) | `'False'` |
 | `name`, `value`, `id`, `required`, `disabled`, `aria-label`, `aria-labelledby`, `aria-describedby` | passed to the input | |
 
-The whole control (circle and label) is clickable; the pointer turns into a hand there. Tab moves into the group, the arrow keys move the choice, Space selects.
+The circle's 40x40 touch area and the label are clickable; the pointer turns into a hand there, and the focus ring goes around the touch area, not the label. Tab moves into the group, the arrow keys move the choice, Space selects.

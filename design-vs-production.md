@@ -2342,7 +2342,7 @@ The obituary page's share buttons (Facebook, Email, Copy link; denverpost.com, c
 
 **Found:** 2026-11-12, while building the **Radio Button** component (main file, Radio Buttons page, `7589:29335`). The only radio buttons in production are on the subscription checkouts: the payment-method choice ("Credit/Debit Card", "Google Pay"). Our WordPress themes have no radio styles. Same rules on all 6 review sites (checked in Chrome, 2026-11-12): `checkout.<site>.com` for ocregister, denverpost and canoncitydailyrecord (`style_simple*.css`), `subscription.<site>.com` for chicagotribune, orlandosentinel and mcall (`style_tribunecustom*.css`).
 
-**Design (Figma):** a 16px circle in a control at least 40px tall (12px left and right; 12px above and below without a label, 8px with one). Unselected: `color/gray/max` fill, 1px inside `color/gray/200` border (6.6:1 on white). Selected: `color/theme/primary` circle with an 8px `color/gray/max` dot; hover and pressed `color/theme/primary-lighter`. Label Noto Sans SemiBold 18 / 24, `color/gray/100`, 8px from the circle. Disabled: `color/gray/600` circle, `color/gray/500` border or dot, `color/gray/300` label. Focus: a 2px `color/gray/black` ring outside the whole control.
+**Design (Figma):** a 16px circle in a 40x40 touch area (12px around it); a label starts 8px after the circle, inside the touch area, and the control stays 40px tall. Unselected: `color/gray/max` fill, 1px inside `color/gray/200` border (6.6:1 on white). Selected: `color/theme/primary` circle with an 8px `color/gray/max` dot; hover and pressed `color/theme/primary-lighter`. Label Noto Sans SemiBold 18 / 24, `color/gray/100`, 8px from the circle. Disabled: `color/gray/600` circle, `color/gray/500` border or dot, `color/gray/300` label. Focus: a 2px `color/gray/black` ring outside the 40x40 touch area around the circle, not the label (Karl, 2026-11-12).
 
 | | Production | Design |
 |---|---|---|
@@ -2356,7 +2356,7 @@ The obituary page's share buttons (Facebook, Email, Copy link; denverpost.com, c
 
 ### 40.1 The radio input is hidden with `display: none`
 
-`.radio input[type=radio]{display:none}` removes the input from the keyboard and screen reader order; only the styled `span.radio__switch` shows. Keep a real `input type="radio"` in the tab order (visually hidden, not `display: none`), grouped by `name` in a `fieldset` with a `legend`, and show the focus ring on the control.
+`.radio input[type=radio]{display:none}` removes the input from the keyboard and screen reader order; only the styled `span.radio__switch` shows. Keep a real `input type="radio"` in the tab order (visually hidden, not `display: none`), grouped by `name` in a `fieldset` with a `legend`, and show the focus ring around the circle's 40x40 touch area.
 
 **Status:** Open.
 

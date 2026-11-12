@@ -1,6 +1,6 @@
 - A native `<input type="radio">` sits invisibly over the whole control (inside a `<label>`), so keyboard, form and screen-reader behavior are the browser's: arrow keys move the choice within a `name` group.
-- The ring (2px `color/gray/black` outside the control, `radius/utility` corners) is drawn as an outer `box-shadow`, around the circle and the label. It's the focus ring only (inFocus, or keyboard `:focus-visible`); hover and pressed show no ring, as on CheckBox.
-- `min-height: 40px` isn't a token: the 40px comes from the padding (12 + 16 + 12 without a label, 8 + 24 + 8 with one), and the min-height keeps a longer label from shrinking it.
+- The ring (2px `color/gray/black`, `radius/utility` corners) is an outer `box-shadow` on a 40x40 `::before` (Figma's "Touch Area"), around the circle and not the label; it overlaps the start of the label, which is fine (Karl, 2026-11-12). It's the focus ring only (inFocus, or keyboard `:focus-visible`); hover and pressed show no ring, as on CheckBox.
+- The touch area's 40x40 isn't a token: it's 12 + 16 + 12 (`spacing/150` around the 16px circle). With a label the control is 8 + 24 + 8 = 40px tall.
 - The dot's `border-radius: 50%` and the circle's 8px radius are the round shape; Figma draws the dot as an ellipse.
 - Production differs (the checkout's payment-method choice): a `#d6d6d6` border (1.4:1), a 5px black dot, no hover, focus or disabled styles, and the input is `display: none`. See design-vs-production entry 40.
 - Contrast: the white dot on `color/theme/primary-lighter` (hover / pressed) is 1.6:1 on The Mercury News + East Bay Times, as on the check box (entry 37).

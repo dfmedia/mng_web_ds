@@ -1807,16 +1807,16 @@
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "7589:29335",
       "documentationFrame": "7589:29336",
-      "description": "Radio button: a 16px circle in a control at least 40px tall, with or without its label. status = unselected, selected; interaction = Default, hover, pressed, disabled; inFocus adds the focus ring; label = True, False (the text is the Label property). For one choice from a short list.",
+      "description": "Radio button: a 16px circle in a 40x40 touch area, with or without its label. status = unselected, selected; interaction = Default, hover, pressed, disabled; inFocus adds the focus ring (around the touch area, not the label); label = True, False (the text is the Label property). For one choice from a short list.",
       "rules": [
         "**Circle:** 16x16px, fully round. Unselected: `color/gray/max` fill, 1px inside `color/gray/200` border (6.6:1 on white).",
-        "**Control (touch area):** at least 40px tall, 5px corners (`radius/utility`); 12px (`spacing/150`) left and right; 12px above and below without a label, 8px (`spacing/100`) with one.",
+        "**Touch area:** 40x40px, 12px (`spacing/150`) around the circle, 5px corners (`radius/utility`). With a label the control stays 40px tall: the label starts 8px (`spacing/100`) after the circle, inside the touch area, with 8px (`spacing/100`) above and below.",
         "**Label:** Noto Sans SemiBold 18px (`font/size/18`, `font/style/semibold`), 24px line height, `color/gray/100` (11.6:1 on white), 8px (`spacing/100`) from the circle (production 10px; Karl, 2026-11-12).",
         "**Selected:** `color/theme/primary` circle with an 8px `color/gray/max` dot (like CheckBox's selected box; Karl, 2026-11-12); hover and pressed `color/theme/primary-lighter`. Review sites: dot 4.8–9.3:1 on primary, 3.1–5.8:1 on primary-lighter.",
         "**Unselected hover / pressed:** the border turns `color/gray/min`.",
         "**Disabled:** `color/gray/600` circle; unselected keeps a 1px `color/gray/500` border, selected shows a `color/gray/500` dot; label `color/gray/300` (disabled text is exempt from contrast).",
-        "**Focus (inFocus):** a 2px `color/gray/black` ring outside the whole control (circle and label), 5px corners; any status. Hover and pressed have no ring.",
-        "**Pointer:** changes from an arrow to a pointing hand anywhere inside the control."
+        "**Focus (inFocus):** a 2px `color/gray/black` ring outside the 40x40 touch area around the circle, not the label, 5px corners; it overlaps the start of the label, which is fine (Karl, 2026-11-12). Any status; hover and pressed have no ring.",
+        "**Pointer:** changes from an arrow to a pointing hand on the circle's touch area or the label."
       ],
       "breakpoints": null,
       "knownIssues": [
@@ -1827,7 +1827,7 @@
       "accessibility": [
         "A real `input type=\"radio\"` for each choice, grouped by `name` inside a `fieldset` with a `legend`; the label is a `label` tied to its input.",
         "Keyboard: Tab moves into and out of the group (to the selected choice, or the first); arrow keys move the choice within the group; Space selects the focused choice.",
-        "Focus is the 2px `color/gray/black` ring outside the whole control (WCAG 2.4.7); the circle's border is 6.6:1 (WCAG 1.4.11)."
+        "Focus is the 2px `color/gray/black` ring around the circle's 40x40 touch area (WCAG 2.4.7); the circle's border is 6.6:1 (WCAG 1.4.11)."
       ]
     },
     {

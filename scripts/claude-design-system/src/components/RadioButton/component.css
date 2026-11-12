@@ -1,16 +1,20 @@
-/* The whole control is the touch area (at least 40px tall, radius/utility); the focus ring is a 2px gray/black outline
-   outside it, around the circle and the label. Hover and pressed have no ring. */
+/* The 40x40 touch area (12px around the 16px circle, radius/utility) carries the focus ring: a 2px gray/black outline
+   outside it, around the circle and not the label; it may overlap the start of the label (Karl, 2026-11-12). With a label,
+   the label starts 8px after the circle, inside the touch area, and the control stays 40px tall. Hover and pressed have no ring. */
 .mngds-radio-button {
-  position: relative; display: inline-flex; align-items: center; box-sizing: border-box; vertical-align: middle;
-  min-height: 40px; cursor: pointer;
+  position: relative; display: inline-flex; align-items: center; box-sizing: border-box; vertical-align: middle; cursor: pointer;
   gap: var(--mng-radio-button-label-true-root-gap);
-  padding: var(--mng-radio-button-label-false-root-padding-top) var(--mng-radio-button-base-root-padding-right)
+  padding: var(--mng-radio-button-label-false-root-padding-top) var(--mng-radio-button-label-false-root-padding-right)
     var(--mng-radio-button-label-false-root-padding-bottom) var(--mng-radio-button-base-root-padding-left);
-  border-radius: var(--mng-radio-button-base-root-border-radius);
 }
 .mngds-radio-button--label {
-  padding-top: var(--mng-radio-button-label-true-root-padding-top);
+  padding-top: var(--mng-radio-button-label-true-root-padding-top); padding-right: 0;
   padding-bottom: var(--mng-radio-button-label-true-root-padding-bottom);
+}
+/* Touch area: 40x40 at the control's top left (Figma "Touch Area"). */
+.mngds-radio-button::before {
+  content: ""; position: absolute; left: 0; top: 0; width: 40px; height: 40px; box-sizing: border-box; pointer-events: none;
+  border-radius: var(--mng-radio-button-base-touch-area-border-radius);
 }
 .mngds-radio-button__input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
 .mngds-radio-button--disabled, .mngds-radio-button--disabled .mngds-radio-button__input { cursor: default; }
@@ -39,9 +43,9 @@
   color: var(--mng-radio-button-interaction-default-label-color);
 }
 
-/* InFocus (forced or keyboard focus): the ring, on any status. */
-.mngds-radio-button.is-infocus, .mngds-radio-button:has(.mngds-radio-button__input:focus-visible) {
-  box-shadow: 0 0 0 var(--mng-radio-button-infocus-true-root-border-width) var(--mng-radio-button-infocus-true-root-border-color);
+/* InFocus (forced or keyboard focus): the ring around the touch area, on any status. */
+.mngds-radio-button.is-infocus::before, .mngds-radio-button:has(.mngds-radio-button__input:focus-visible)::before {
+  box-shadow: 0 0 0 var(--mng-radio-button-infocus-true-touch-area-border-width) var(--mng-radio-button-infocus-true-touch-area-border-color);
 }
 /* Hover and pressed (forced or real): gray/min border when empty, primary-lighter when selected. No ring. */
 .mngds-radio-button--unselected.is-hover .mngds-radio-button__circle, .mngds-radio-button--unselected.is-pressed .mngds-radio-button__circle,
