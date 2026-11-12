@@ -1,870 +1,877 @@
 {
- "$about": "Every element and component of the MNG Web Design System, present and future, for the README's Inventory section. Edit here; build.py renders it and checks that every built component is listed as In system or Partial. Figma component lists read with the Desktop Bridge plugin on 2026-10-29 (main file and WordPress Elements); Reader Dashboard v2.0 from Reader-Dashboard-Library-Impact-Map.md: its audit isn't complete (Karl, 2026-10-29). Obits isn't connected to the system yet; audit it in the future.",
- "statuses": {
-  "In system": "Built here, with a live preview card.",
-  "Partial": "Built here, but only part of the Figma component or family.",
-  "To add": "In Figma; not built here yet.",
-  "To design": "Planned; no Figma component yet.",
-  "To review": "In Figma, but old, duplicated or unclear: decide before building.",
-  "Not a component": "Reference, template, mock-up of OS or third-party UI, or kept on purpose; not planned for the system.",
-  "Removed": "Left out of the system on purpose."
- },
- "groups": [
-  {
-   "name": "Foundations",
-   "items": [
-    {
-     "name": "Colors: Universal Grays, Alerts, Endless Tributes, theme ramps",
-     "where": "Main file, Colors collection; Color Pallets | 2026.10.19",
-     "status": "In system",
-     "note": "Bold Coastal, Measured Vibrant, Modern Earthy.",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Per-site color themes (sub-themes and site overrides, 97 publications)",
-     "where": "tokens/themes/, tokens/sites/",
-     "status": "To add",
-     "note": "At most 8 themes fit in one system; plan which ones. color/theme/subsite-custom comes with them."
-    },
-    {
-     "name": "Endless Tributes (obituaries) theme",
-     "where": "tokens/themes/endless-tributes.tokens.json",
-     "status": "To add",
-     "note": "Its colors are in the system as mng-color-tributes-*; the theme file isn't a theme here yet."
-    },
-    {
-     "name": "Typography: families, sizes, weights, Editorial styles, per-theme roles and eyebrow",
-     "where": "Main file, Type Primitives, Typography Tokens, Typography Theme",
-     "status": "In system",
-     "note": "No italic or Black token.",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Dashboard Typography",
-     "where": "Reader Dashboard v2.0 collection",
-     "status": "To add",
-     "note": "Reader Dashboard isn't in the token files yet."
-    },
-    {
-     "name": "Spacing and radius",
-     "where": "Main file, Spacing & Radius",
-     "status": "In system",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Shadows sm / md / lg",
-     "where": "Main file, Shadows | 2026.10.23",
-     "status": "In system",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "shadow/masthead",
-     "where": "WordPress Elements effect style",
-     "status": "To add",
-     "note": "Not exported yet (tokens/wordpress/ when it is)."
-    },
-    {
-     "name": "Breakpoints: MNG Device and WordPress grid",
-     "where": "tokens/core/, tokens/wordpress/",
-     "status": "In system",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Icon font (171 icons)",
-     "where": "Main file, Icons | 2026.08.28",
-     "status": "In system",
-     "note": "Icon component.",
-     "updated": "2026-10-29",
-     "component": "Icon"
-    },
-    {
-     "name": "Icons, next font build (17 new, 2 redrawn)",
-     "where": "tokens/icons/svg-missing/",
-     "status": "Partial",
-     "note": "Assets only until the font ships.",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Placeholder logos (Fakeville Daily News, Newspaper Town Times, Newspaper Town News)",
-     "where": "Main file, FAKE NEWSPAPER LOGOS 3051:2728; logos/placeholder/",
-     "status": "In system",
-     "note": "Assets › Placeholder Logos.",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Newspaper logos (124 publications)",
-     "where": "Newspaper Logos, Favicons, User Pics (oXaN4tEoa4GsH4x7kWpAFZ); logos/",
-     "status": "Removed",
-     "note": "Kept out of the system on purpose (Karl, 2026-10-29); the Overview links to Figma and the repo's logos folder.",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Logo component (Publication × Layout × Color, 190 variants)",
-     "where": "Newspaper Logos, Favicons, User Pics (oXaN4tEoa4GsH4x7kWpAFZ), 389:385",
-     "status": "To add",
-     "note": "Not in the main library yet."
-    },
-    {
-     "name": "Fonts page (fallbacks, font changes)",
-     "where": "Main file, Fonts | 2026.09.10",
-     "status": "Not a component",
-     "note": "Reference."
-    }
-   ]
+  "$about": "Every element and component of the MNG Web Design System, present and future, for the README's Inventory section. Edit here; build.py renders it and checks that every built component is listed as In system or Partial. Figma component lists read with the Desktop Bridge plugin on 2026-10-29 (main file and WordPress Elements); Reader Dashboard v2.0 from Reader-Dashboard-Library-Impact-Map.md: its audit isn't complete (Karl, 2026-10-29). Obits isn't connected to the system yet; audit it in the future.",
+  "statuses": {
+    "In system": "Built here, with a live preview card.",
+    "Partial": "Built here, but only part of the Figma component or family.",
+    "To add": "In Figma; not built here yet.",
+    "To design": "Planned; no Figma component yet.",
+    "To review": "In Figma, but old, duplicated or unclear: decide before building.",
+    "Not a component": "Reference, template, mock-up of OS or third-party UI, or kept on purpose; not planned for the system.",
+    "Removed": "Left out of the system on purpose."
   },
-  {
-   "name": "Core: MNG Web Design System (main file)",
-   "items": [
+  "groups": [
     {
-     "name": "Button Primary",
-     "where": "Buttons | 2026.09.30, 5328:15928",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ButtonPrimary"
+      "name": "Foundations",
+      "items": [
+        {
+          "name": "Colors: Universal Grays, Alerts, Endless Tributes, theme ramps",
+          "where": "Main file, Colors collection; Color Pallets | 2026.10.19",
+          "status": "In system",
+          "note": "Bold Coastal, Measured Vibrant, Modern Earthy.",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Per-site color themes (sub-themes and site overrides, 97 publications)",
+          "where": "tokens/themes/, tokens/sites/",
+          "status": "To add",
+          "note": "At most 8 themes fit in one system; plan which ones. color/theme/subsite-custom comes with them."
+        },
+        {
+          "name": "Endless Tributes (obituaries) theme",
+          "where": "tokens/themes/endless-tributes.tokens.json",
+          "status": "To add",
+          "note": "Its colors are in the system as mng-color-tributes-*; the theme file isn't a theme here yet."
+        },
+        {
+          "name": "Typography: families, sizes, weights, Editorial styles, per-theme roles and eyebrow",
+          "where": "Main file, Type Primitives, Typography Tokens, Typography Theme",
+          "status": "In system",
+          "note": "No italic or Black token.",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Dashboard Typography",
+          "where": "Reader Dashboard v2.0 collection",
+          "status": "To add",
+          "note": "Reader Dashboard isn't in the token files yet."
+        },
+        {
+          "name": "Spacing and radius",
+          "where": "Main file, Spacing & Radius",
+          "status": "In system",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Shadows sm / md / lg",
+          "where": "Main file, Shadows | 2026.10.23",
+          "status": "In system",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "shadow/masthead",
+          "where": "WordPress Elements effect style",
+          "status": "To add",
+          "note": "Not exported yet (tokens/wordpress/ when it is)."
+        },
+        {
+          "name": "Breakpoints: MNG Device and WordPress grid",
+          "where": "tokens/core/, tokens/wordpress/",
+          "status": "In system",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Icon font (171 icons)",
+          "where": "Main file, Icons | 2026.08.28",
+          "status": "In system",
+          "note": "Icon component.",
+          "updated": "2026-10-29",
+          "component": "Icon"
+        },
+        {
+          "name": "Icons, next font build (17 new, 2 redrawn)",
+          "where": "tokens/icons/svg-missing/",
+          "status": "Partial",
+          "note": "Assets only until the font ships.",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Placeholder logos (Fakeville Daily News, Newspaper Town Times, Newspaper Town News)",
+          "where": "Main file, FAKE NEWSPAPER LOGOS 3051:2728; logos/placeholder/",
+          "status": "In system",
+          "note": "Assets › Placeholder Logos.",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Newspaper logos (124 publications)",
+          "where": "Newspaper Logos, Favicons, User Pics (oXaN4tEoa4GsH4x7kWpAFZ); logos/",
+          "status": "Removed",
+          "note": "Kept out of the system on purpose (Karl, 2026-10-29); the Overview links to Figma and the repo's logos folder.",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Logo component (Publication × Layout × Color, 190 variants)",
+          "where": "Newspaper Logos, Favicons, User Pics (oXaN4tEoa4GsH4x7kWpAFZ), 389:385",
+          "status": "To add",
+          "note": "Not in the main library yet."
+        },
+        {
+          "name": "Fonts page (fallbacks, font changes)",
+          "where": "Main file, Fonts | 2026.09.10",
+          "status": "Not a component",
+          "note": "Reference."
+        }
+      ]
     },
     {
-     "name": "Button Secondary",
-     "where": "Buttons, 5333:16013",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ButtonSecondary"
+      "name": "Core: MNG Web Design System (main file)",
+      "items": [
+        {
+          "name": "Button Primary",
+          "where": "Buttons | 2026.09.30, 5328:15928",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ButtonPrimary"
+        },
+        {
+          "name": "Button Secondary",
+          "where": "Buttons, 5333:16013",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ButtonSecondary"
+        },
+        {
+          "name": "Button Tertiary",
+          "where": "Buttons, 5333:16089",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ButtonTertiary"
+        },
+        {
+          "name": "Button Linkstyle",
+          "where": "Buttons, 5428:3953",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ButtonLinkstyle"
+        },
+        {
+          "name": "Button Action",
+          "where": "Buttons, 7075:6357",
+          "status": "In system",
+          "note": "Exported as Action Button.",
+          "updated": "2026-10-29",
+          "component": "ButtonAction"
+        },
+        {
+          "name": "Button Modal Close",
+          "where": "Buttons, 5335:16196",
+          "status": "In system",
+          "note": "Exported as Pop-Up Modal Close.",
+          "updated": "2026-11-10",
+          "component": "ButtonModalClose"
+        },
+        {
+          "name": "Button In-Line Close",
+          "where": "Buttons, 5335:16200",
+          "status": "In system",
+          "note": "Exported as In-Line Close.",
+          "updated": "2026-11-10",
+          "component": "ButtonInLineClose"
+        },
+        {
+          "name": "Hyperlink",
+          "where": "Buttons, 6282:5568",
+          "status": "In system",
+          "note": "Exported as Non-Button Hyperlink.",
+          "updated": "2026-10-29",
+          "component": "Hyperlink"
+        },
+        {
+          "name": "Button ActionMenu",
+          "where": "Buttons, 6037:4652",
+          "status": "Removed",
+          "note": "Replaced by Dropdown Menu everywhere and removed from the Buttons page (Karl, 2026-11-11); production changes: design-vs-production.md entry 38.",
+          "updated": "2026-11-11"
+        },
+        {
+          "name": "Button Pay",
+          "where": "Buttons, 5333:16009",
+          "status": "To add",
+          "note": "No export yet; its radius isn't recorded."
+        },
+        {
+          "name": "Button Social-Login",
+          "where": "Buttons, 6516:5394",
+          "status": "In system",
+          "updated": "2026-11-11",
+          "component": "ButtonSocialLogin",
+          "note": "Rebuilt in place 2026-11-11 (Embedded Login uses it): pill, 16 variants incl. icon only."
+        },
+        {
+          "name": "SocialButtons, Social Media Button, Button_Save",
+          "where": "WordPress Elements, Menus and Parts (3788:44356, 3788:44313, 3788:44251)",
+          "status": "To add",
+          "updated": "2026-11-12",
+          "note": "The article share bar. Cleaned up in place 2026-11-12 against the 6 review sites plus twincities.com: Social Media Button is Network (10, with LinkedIn) x Theme (Bold Coastal, Measured Vibrant, Modern Earthy) x interaction x inFocus; SocialButtons has a show/hide property per button; Button_Save is Checked x interaction x inFocus. Not exported yet. Drift entry 39. More rule: up to 6 buttons, then More (Popover) as the 7th."
+        },
+        {
+          "name": "Popover",
+          "where": "Main file, Tooltips page (7574:28804)",
+          "status": "To add",
+          "updated": "2026-11-12",
+          "note": "A floating panel for buttons or links, opened by a trigger; the Toggletip's look with a Content slot; Placement Top / Bottom. First use: the share bar's More panel. Not exported yet."
+        },
+        {
+          "name": "Action Button (older set)",
+          "where": "Buttons, 5417:3876",
+          "status": "To review",
+          "note": "Older library set; Button Action replaces it."
+        },
+        {
+          "name": "User Account, Submenu, Section Menu, User Image, Button/Round/ModernEarthy",
+          "where": "Buttons page",
+          "status": "To review",
+          "note": "Older sets on the Buttons page."
+        },
+        {
+          "name": "Button (old sets in Frame 13001)",
+          "where": "Buttons, 1390:379, 5345:3224",
+          "status": "Not a component",
+          "note": "Kept as they are (Karl, 2026-10-02)."
+        },
+        {
+          "name": "ChromeShareAPI, SafariShareAPI, Apple Pay",
+          "where": "Buttons page",
+          "status": "Not a component",
+          "note": "Mock-ups of browser and OS UI."
+        },
+        {
+          "name": "Tooltip / Toggletip",
+          "where": "Tooltips | 2026.10.23, 7372:25744",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "Tooltip"
+        },
+        {
+          "name": "ModalsCenter",
+          "where": "Modal Panels | 2026.11.10, 3040:2262",
+          "status": "In system",
+          "updated": "2026-11-10",
+          "component": "ModalsCenter"
+        },
+        {
+          "name": "ModalsOffset",
+          "where": "Modal Panels, 6497:6263",
+          "status": "Removed",
+          "note": "Not part of the design system (Karl, 2026-10-29).",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Modals/Desktop",
+          "where": "Modal Panels, 4694:1966",
+          "status": "To review",
+          "note": "Older modal on the same page."
+        },
+        {
+          "name": "InLineMessage",
+          "where": "In-Line Content Containers | 2026.01.02, 2776:2 (114 variants)",
+          "status": "Partial",
+          "note": "Only the DashSubsNonSub panel is built. Rebuild to about 25 variants is open item 6.",
+          "updated": "2026-10-29",
+          "component": "InLineMessageDashSubsNonSub"
+        },
+        {
+          "name": "CheckBox",
+          "where": "Check Boxes | 2026.11.04, 4693:690",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "CheckBox"
+        },
+        {
+          "name": "Toggle Switch",
+          "where": "Toggle Switches | 2026.11.10, 5216:61",
+          "status": "In system",
+          "updated": "2026-11-10",
+          "component": "ToggleSwitch"
+        },
+        {
+          "name": "Dropdown Menu",
+          "where": "Dropdown Menus | 2026.11.11, 7543:1880",
+          "status": "In system",
+          "updated": "2026-11-11",
+          "component": "DropdownMenu",
+          "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
+        },
+        {
+          "name": "Dropdown Menu Item",
+          "where": "Dropdown Menus | 2026.11.11, 7543:1879",
+          "status": "In system",
+          "updated": "2026-11-11",
+          "component": "DropdownMenuItem",
+          "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
+        },
+        {
+          "name": "Radio buttons",
+          "where": "Style Guide | Radio Buttons",
+          "status": "To design",
+          "note": "No radio component yet."
+        },
+        {
+          "name": "Form Field",
+          "where": "Form Fields | 2026.11.04, 6963:6863",
+          "status": "In system",
+          "note": "The older set 2832:766 (Device x Flavor, still used by Embedded Login) isn't in the system.",
+          "updated": "2026-11-04",
+          "component": "FormField"
+        },
+        {
+          "name": "Form Field Assembly / Name pair",
+          "where": "Form Fields | 2026.11.04, 7003:28636",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "NamePair"
+        },
+        {
+          "name": "Form Field Assembly / Zip + Street #",
+          "where": "Form Fields | 2026.11.04, 7003:28651",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "ZipStreet"
+        },
+        {
+          "name": "Form Field Assembly / Zip + Phone",
+          "where": "Form Fields | 2026.11.04, 7003:28666",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "ZipPhone"
+        },
+        {
+          "name": "Form Field Assembly / Address block",
+          "where": "Form Fields | 2026.11.04, 7003:28741",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "AddressBlock"
+        },
+        {
+          "name": "Form Field Assembly / CC details",
+          "where": "Form Fields | 2026.11.04, 7003:28816",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "CcDetails"
+        },
+        {
+          "name": "Form Field Assembly / Password",
+          "where": "Form Fields | 2026.11.04, 7003:28940",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "Password"
+        },
+        {
+          "name": "Form Field Assembly / Verification Code",
+          "where": "Form Fields | 2026.11.04, 7003:29223",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "VerificationCode"
+        },
+        {
+          "name": "Form Field Assembly / Checkbox + Terms",
+          "where": "Form Fields | 2026.11.04, 7003:29236",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "CheckboxTerms"
+        },
+        {
+          "name": "Code Box",
+          "where": "Form Fields | 2026.11.04, 6964:7032",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "CodeBox"
+        },
+        {
+          "name": "Search Field / Obituaries",
+          "where": "Form Fields, 6996:27351",
+          "status": "To add"
+        },
+        {
+          "name": "Dropdown menu (Bootstrap-style)",
+          "where": "*** Dropdown Menus page; source AccountMenu 910:15610 (WordPress Elements)",
+          "status": "To design",
+          "note": "Open item 1."
+        },
+        {
+          "name": "Cursors",
+          "where": "Icons | 2026.08.28, 1412:914",
+          "status": "To review",
+          "note": "Cursor set; decide whether it belongs."
+        },
+        {
+          "name": "Date selector, progress indicators, loading animation",
+          "where": "Style Guide pages (no components)",
+          "status": "To design",
+          "note": "Loading animation needs timing and easing docs (open item 4)."
+        },
+        {
+          "name": "Themes style guide",
+          "where": "Style Guide | Themes",
+          "status": "To design",
+          "note": "Placeholder text (open item 5)."
+        },
+        {
+          "name": "Slider carousel",
+          "where": "Slider Carousel | 2024.08.10 (no components)",
+          "status": "To design",
+          "note": "Goes with the SlideShow family."
+        },
+        {
+          "name": "ReaderDash Templates, Page Body Templates",
+          "where": "***Breakpoints and Page Templates | 2026.05.19",
+          "status": "Not a component",
+          "note": "Page templates."
+        },
+        {
+          "name": "Old Reader Dashboard panels (41)",
+          "where": "Elements to be detailed still",
+          "status": "Not a component",
+          "note": "Superseded by Reader Dashboard v2.0."
+        }
+      ]
     },
     {
-     "name": "Button Tertiary",
-     "where": "Buttons, 5333:16089",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ButtonTertiary"
+      "name": "WordPress Elements",
+      "items": [
+        {
+          "name": "Homepage Tabs",
+          "where": "Menus and Parts, 3629:44974",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "HomepageTabs"
+        },
+        {
+          "name": "Homepage Tab",
+          "where": "Menus and Parts, 3629:44949",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "HomepageTab"
+        },
+        {
+          "name": "Section Title / Eyebrow",
+          "where": "Homepage, 3333:42278",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "SectionTitleEyebrow"
+        },
+        {
+          "name": "Blocks Card",
+          "where": "Homepage, 3663:31072",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "BlocksCard"
+        },
+        {
+          "name": "Blocks Article Row",
+          "where": "Homepage, 3663:31214",
+          "status": "In system",
+          "updated": "2026-11-04",
+          "component": "BlocksArticleRow"
+        },
+        {
+          "name": "Blocks Lead Article Card",
+          "where": "Homepage, 3663:31557",
+          "status": "In system",
+          "updated": "2026-11-03",
+          "component": "BlocksLeadArticleCard"
+        },
+        {
+          "name": "Blocks Footer (was Footer_w_signup)",
+          "where": "Homepage, Blocks section, 801:1755",
+          "status": "To add",
+          "note": "Future footer with the email signup. Exported 2026-10-30; left out of the Claude system for now (Karl, 2026-10-30)."
+        },
+        {
+          "name": "Gallery Icon Badge",
+          "where": "Homepage, 3665:32148",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "GalleryIconBadge"
+        },
+        {
+          "name": "Article Section Kicker",
+          "where": "Homepage, 3609:39112",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ArticleSectionKicker"
+        },
+        {
+          "name": "Article Author",
+          "where": "Homepage, 3609:39115",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ArticleAuthor"
+        },
+        {
+          "name": "Article Timestamp",
+          "where": "Homepage, 3621:38794",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ArticleTimestamp"
+        },
+        {
+          "name": "Show More Affordance",
+          "where": "Homepage, 3634:49423",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "ShowMoreAffordance"
+        },
+        {
+          "name": "1Col Article Card",
+          "where": "Homepage, 3536:39065",
+          "status": "In system",
+          "updated": "2026-11-02",
+          "component": "OneColArticleCard"
+        },
+        {
+          "name": "Horizontal Thumbnail Card",
+          "where": "Homepage, 3362:2992",
+          "status": "In system",
+          "updated": "2026-10-29",
+          "component": "HorizontalThumbnailCard"
+        },
+        {
+          "name": "Zone 1 Lead Article Card",
+          "where": "Homepage, 3336:46157",
+          "status": "In system",
+          "note": "Related items are Related Article List Item since 2026-11-02. Fills its column at production's split, photo 3:2 (2026-11-03).",
+          "updated": "2026-11-03",
+          "component": "Zone1LeadArticleCard"
+        },
+        {
+          "name": "Zone 1 Slideshow (with Slideshow Arrow)",
+          "where": "Homepage, 3640:50278 and 3641:50772",
+          "status": "Partial",
+          "note": "One variant of the SlideShow component. Next step (Karl, 2026-10-29): build the SlideShow family together with the Obits slideshow.",
+          "updated": "2026-10-29",
+          "component": "Zone1Slideshow"
+        },
+        {
+          "name": "SlideShow family: Obits slideshow",
+          "where": "Obits (not connected to the design system yet)",
+          "status": "To review",
+          "note": "Obits isn't connected yet: audit it in the future (Karl, 2026-10-29), then build it with the SlideShow family."
+        },
+        {
+          "name": "Photo Carousel Widget: PhotoCarousel, Image Viewer, FilmStrip, Figcaption, Slide Controls, Slide Counter, Button Backward / Forward, Image and Caption Collection",
+          "where": "Photo Carousel Widget, 1345:29271, 3286:42186, 3286:42587",
+          "status": "To review",
+          "note": "Three copies of the set (Light and Dark modes); consolidate with the SlideShow family."
+        },
+        {
+          "name": "Videos from OCRegister Carousel, Video Tile Image Placeholder",
+          "where": "Homepage, 3419:55120, 3419:55122, 3419:55114",
+          "status": "To review",
+          "note": "Two copies; Flourish embed in production."
+        },
+        {
+          "name": "Article Image Placeholder",
+          "where": "Homepage, 3334:42380",
+          "status": "Partial",
+          "note": "Built into the cards (runtime ArticleImage), not its own card.",
+          "updated": "2026-10-29"
+        },
+        {
+          "name": "Article Status Badge",
+          "where": "Homepage, 3344:63995",
+          "status": "In system",
+          "note": "Matches production (Karl, 2026-11-02): Regular, primary-dark (Subscriber) or #7D161E (Sponsored), 0 x 4px. 1Col Article Card and Latest Headlines List Item draw it.",
+          "updated": "2026-11-02",
+          "component": "ArticleStatusBadge"
+        },
+        {
+          "name": "Related Article List Item",
+          "where": "Homepage, 3334:43017",
+          "status": "In system",
+          "note": "Matches production on the 4 / 8 grid (all 6 review sites). Zone 1 Lead Article Card and TOP ZONE Block draw their Related lists with it.",
+          "updated": "2026-11-02",
+          "component": "RelatedArticleListItem"
+        },
+        {
+          "name": "TopZone Article Card",
+          "where": "Homepage, 3336:46079 (4 variants)",
+          "status": "In system",
+          "note": "Device = production's ranges XS / S / M / L / XL. Headlines follow the theme; the 15px headline-group gap stays raw (Karl). The Article Status Badge is hidden in Figma and not drawn.",
+          "updated": "2026-10-30",
+          "component": "TopZoneArticleCard"
+        },
+        {
+          "name": "Latest Headlines List Item",
+          "where": "Homepage, 3336:46118 (3 variants)",
+          "status": "In system",
+          "note": "Type = First, Standard, Sponsored. Matches production (Karl, 2026-10-30): time inline after the headline, 15/19 color/gray/black headline in the theme heading family.",
+          "updated": "2026-11-02",
+          "component": "LatestHeadlinesListItem"
+        },
+        {
+          "name": "Latest Headlines",
+          "where": "Homepage, 3476:62396 (3 variants)",
+          "status": "In system",
+          "note": "Device = XS (≤639px), S (640–799px), (≥800px): production's breakpoints. Ends with Newsletter Signup.",
+          "updated": "2026-11-03",
+          "component": "LatestHeadlines"
+        },
+        {
+          "name": "Newsletter Signup",
+          "where": "Homepage, 3336:44765 (2 variants)",
+          "status": "In system",
+          "note": "Device = (≤799px), (≥800px): the widths Latest Headlines uses (no production breakpoint). Matches production (Karl, 2026-11-02); Button Primary on every theme.",
+          "updated": "2026-11-02",
+          "component": "NewsletterSignup"
+        },
+        {
+          "name": "Blueconic List Item",
+          "where": "Homepage, 3704:40676 (2 variants)",
+          "status": "In system",
+          "note": "Was Most Popular List Item. Built raw in production's values (a Blueconic block, Karl 2026-11-02). Device = (≤1039px), (≥1040px).",
+          "updated": "2026-11-02",
+          "component": "BlueconicListItem"
+        },
+        {
+          "name": "Blueconic Block",
+          "where": "Homepage, 3352:20526 (3 variants)",
+          "status": "In system",
+          "note": "Was Blueconic Block (Most Popular). Built raw in production's values (Karl 2026-11-02). Device = XS (≤639px), (640–1039px), (≥1040px).",
+          "updated": "2026-11-02",
+          "component": "BlueconicBlock"
+        },
+        {
+          "name": "Blueconic card template (14 items in 300×136 cards)",
+          "where": "Production only (orlandosentinel, mcall, 2026-11-02)",
+          "status": "To design",
+          "note": "A second Blueconic template; not in Figma yet (Karl, 2026-11-02)."
+        },
+        {
+          "name": "Headline List Item",
+          "where": "Homepage, 3709:40904 (3 variants)",
+          "status": "In system",
+          "note": "New 2026-11-02 (Karl): one headline in a section rail list. Rule = Default, None, Dark. Built raw in production's values.",
+          "updated": "2026-11-02",
+          "component": "HeadlineListItem"
+        },
+        {
+          "name": "Horizontal Feature Card",
+          "where": "Homepage, 3709:41113 (4 variants)",
+          "status": "In system",
+          "note": "The wide rail's lead. Device = (≤799px), M, L, XL: production's breakpoints. Built raw in production's values (Karl, 2026-11-02).",
+          "updated": "2026-11-02",
+          "component": "HorizontalFeatureCard"
+        },
+        {
+          "name": "Feature + List Content Block",
+          "where": "Homepage, 3484:66933 (4 variants)",
+          "status": "In system",
+          "note": "Horizontal Feature Card and Headline List Items. Device = (≤799px), M, L, XL (was Size = Default / Narrow). Built raw in production's values (Karl, 2026-11-02).",
+          "updated": "2026-11-02",
+          "component": "FeatureListContentBlock"
+        },
+        {
+          "name": "Section Rail Card Narrow",
+          "where": "Homepage, 3352:22067 (2 variants)",
+          "status": "In system",
+          "note": "Split from Section Rail Card (Layout = Narrow), 2026-11-02 (Karl). Device = (≤799px), (≥800px). 1Col lead with in-card overrides. Built raw in production's values.",
+          "updated": "2026-11-02",
+          "component": "SectionRailCardNarrow"
+        },
+        {
+          "name": "Section Rail Card Wide",
+          "where": "Homepage, 3709:43975 (4 variants)",
+          "status": "In system",
+          "note": "Split from Section Rail Card (Layout = Wide), 2026-11-02 (Karl). Device = (≤799px), M, L, XL. Built raw in production's values.",
+          "updated": "2026-11-02",
+          "component": "SectionRailCardWide"
+        },
+        {
+          "name": "TOP ZONE Block",
+          "where": "Homepage, 3352:19482 (5 variants)",
+          "status": "In system",
+          "note": "Zone 1: Zone 1 Lead Article Card, 4 TopZone Article Cards, Latest Headlines, the Cube ad. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02). Show Ad off (ad-free readers) keeps the right column, empty or with railContent (2026-11-03).",
+          "updated": "2026-11-03",
+          "component": "TopZoneBlock"
+        },
+        {
+          "name": "Photos Block",
+          "where": "Homepage, 3352:20865 (5 variants)",
+          "status": "In system",
+          "note": "Zone 7: 1Col Article Card (Media Lead), 6 Horizontal Thumbnail Cards, Show More Affordance. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02).",
+          "updated": "2026-11-02",
+          "component": "PhotosBlock"
+        },
+        {
+          "name": "Upcoming Events: Widget, Block, Event Card, Date Picker Day, Date Picker Calendar Icon, Calendar Glyph, Header Button, Side Arrow",
+          "where": "Homepage, 3557:24236 and parts",
+          "status": "To add",
+          "note": "Event Card also has a copy on Menus and Parts (3395:51867)."
+        },
+        {
+          "name": "Show More Affordance (tokens, future reference)",
+          "where": "Homepage, 3634:49427",
+          "status": "Not a component",
+          "note": "Reference copy."
+        },
+        {
+          "name": "Masthead",
+          "where": "Menus and Parts, 456:2572 (90 variants)",
+          "status": "In system",
+          "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. Not built here: the account dropdown and search field (the open section menu is SectionMenu).",
+          "updated": "2026-11-09",
+          "component": "Masthead"
+        },
+        {
+          "name": "Breaking News Banner",
+          "where": "Menus and Parts, 506:5632; Article Page, 148:640",
+          "status": "To add",
+          "note": "Two copies."
+        },
+        {
+          "name": "SectionMenu (section menu toggle and drawer)",
+          "where": "Menus and Parts, 456:5837 (20 variants)",
+          "note": "Built 2026-11-09 after the six-site audit and the five-width check (components/navigation.md §3): toggle, drawer with Subscribe Now, weather row below 1040px, Home, sections (one open at a time), account rows by reader type, newsletter sign-up. Drift: design-vs-production 10.4–10.8.",
+          "component": "SectionMenu",
+          "status": "In system",
+          "updated": "2026-11-09"
+        },
+        {
+          "name": "SectionMenuHeader",
+          "where": "Menus and Parts, 456:5745 (6 variants)",
+          "note": "Built 2026-11-09: hamburger / × in the same place; \"All Sections\" SemiBold 16 at 1040px and up.",
+          "component": "SectionMenuHeader",
+          "status": "In system",
+          "updated": "2026-11-09"
+        },
+        {
+          "name": "SectionMenuItem",
+          "where": "Menus and Parts, 456:5781 (27 variants)",
+          "note": "Built 2026-11-09: main, subItem, Weather, CTAButton, CTAMessage; Default, Hover, Pressed, InFocus.",
+          "component": "SectionMenuItem",
+          "status": "In system",
+          "updated": "2026-11-09"
+        },
+        {
+          "name": "SectionMenuGroup",
+          "where": "Menus and Parts, 3740:29156 (2 variants)",
+          "note": "New 2026-11-06, built here 2026-11-09: a section and its subcategories (toggle + landing link).",
+          "component": "SectionMenuGroup",
+          "status": "In system",
+          "updated": "2026-11-09"
+        },
+        {
+          "name": "AccountMenu",
+          "where": "Menus and Parts, 910:16425",
+          "status": "To add",
+          "note": "Exported 2026-10-30. The closed control is drawn inside Masthead; the dropdown isn’t built."
+        },
+        {
+          "name": "User: UserImage, UserPic, UserStatus",
+          "where": "Menus and Parts, 456:5708, 456:5674, 456:5728",
+          "status": "To add",
+          "note": "Exported 2026-10-30; drawn inside Masthead (30px avatar, Subscribe / Log In). UserImage monogram sizes are avatar art (open item 9)."
+        },
+        {
+          "name": "AlertLevel",
+          "where": "Menus and Parts, 456:5683",
+          "status": "To add"
+        },
+        {
+          "name": "SearchBar",
+          "where": "Menus and Parts, 456:5910",
+          "status": "To add",
+          "note": "Exported 2026-10-30. The search button is drawn inside Masthead; the open field isn’t built."
+        },
+        {
+          "name": "Weather Bug",
+          "where": "Menus and Parts, 654:10020",
+          "status": "In system",
+          "note": "Built 2026-11-09: both Locations, one or two e-Edition links, every value from production (AccuWeather, third-party; Karl). The link labels change by market.",
+          "updated": "2026-11-09",
+          "component": "WeatherBug"
+        },
+        {
+          "name": "Footer",
+          "where": "Menus and Parts, 354:1282",
+          "status": "In system",
+          "note": "All 5 devices; production spacing kept on purpose. Legal links color/gray/200 since 2026-10-30 (contrast fix).",
+          "updated": "2026-10-30",
+          "component": "Footer"
+        },
+        {
+          "name": "Logo / Wordmark (placeholder draft)",
+          "where": "Menus and Parts, 3338:47048",
+          "status": "To review",
+          "note": "Superseded by the Logo component?"
+        },
+        {
+          "name": "Article page: Breadcrumbs, Article Header, AuthorImage, Byline, TrinityAudioPlayer, TrendingNowSpecial",
+          "where": "Article Page, 1110:19469, 1110:19437, 1101:19212, 1110:19503, 1110:19507, 1226:3977",
+          "status": "To add"
+        },
+        {
+          "name": "RelatedArticleCard, RelatedArticlesImages",
+          "where": "Article Page, 1252:4225 and 1271:3201; 1232:2925 and 1271:3305",
+          "status": "To review",
+          "note": "Two copies of each."
+        },
+        {
+          "name": "ObitMastHead",
+          "where": "Obits: ET and Local, 1139:22369",
+          "status": "To add",
+          "note": "Obits isn't connected yet: part of the future Obits audit (Karl, 2026-10-29)."
+        },
+        {
+          "name": "Engage Paywall Modal",
+          "where": "Paywalls, 1495:23511",
+          "status": "To add",
+          "note": "Paywalls get their own review."
+        },
+        {
+          "name": "Ad Blocks",
+          "where": "Ads and Sponsored, 517:4304 (37 variants)",
+          "status": "In system",
+          "note": "All 37 units; Mobile Adhesion close button and fixed position.",
+          "updated": "2026-10-30",
+          "component": "AdBlocks"
+        },
+        {
+          "name": "RevContent",
+          "where": "Ads and Sponsored, 506:3865",
+          "status": "Not a component",
+          "note": "Not built to production; skipped (Karl, 2026-10-08)."
+        },
+        {
+          "name": "Page templates: Section Front, Reader Dashboard v2, Stand Alone Pages, Article Search Results, Author Page, Donation Form, AMP Mobile",
+          "where": "WordPress Elements pages (no components)",
+          "status": "Not a component",
+          "note": "Templates."
+        }
+      ]
     },
     {
-     "name": "Button Linkstyle",
-     "where": "Buttons, 5428:3953",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ButtonLinkstyle"
-    },
-    {
-     "name": "Button Action",
-     "where": "Buttons, 7075:6357",
-     "status": "In system",
-     "note": "Exported as Action Button.",
-     "updated": "2026-10-29",
-     "component": "ButtonAction"
-    },
-    {
-     "name": "Button Modal Close",
-     "where": "Buttons, 5335:16196",
-     "status": "In system",
-     "note": "Exported as Pop-Up Modal Close.",
-     "updated": "2026-11-10",
-     "component": "ButtonModalClose"
-    },
-    {
-     "name": "Button In-Line Close",
-     "where": "Buttons, 5335:16200",
-     "status": "In system",
-     "note": "Exported as In-Line Close.",
-     "updated": "2026-11-10",
-     "component": "ButtonInLineClose"
-    },
-    {
-     "name": "Hyperlink",
-     "where": "Buttons, 6282:5568",
-     "status": "In system",
-     "note": "Exported as Non-Button Hyperlink.",
-     "updated": "2026-10-29",
-     "component": "Hyperlink"
-    },
-    {
-     "name": "Button ActionMenu",
-     "where": "Buttons, 6037:4652",
-     "status": "Removed",
-     "note": "Replaced by Dropdown Menu everywhere and removed from the Buttons page (Karl, 2026-11-11); production changes: design-vs-production.md entry 38.",
-     "updated": "2026-11-11"
-    },
-    {
-     "name": "Button Pay",
-     "where": "Buttons, 5333:16009",
-     "status": "To add",
-     "note": "No export yet; its radius isn't recorded."
-    },
-    {
-     "name": "Button Social-Login",
-     "where": "Buttons, 6516:5394",
-     "status": "In system",
-     "updated": "2026-11-11",
-     "component": "ButtonSocialLogin",
-     "note": "Rebuilt in place 2026-11-11 (Embedded Login uses it): pill, 16 variants incl. icon only."
-    },
-    {
-     "name": "SocialButtons, Social Media Button, Button_Save",
-     "where": "WordPress Elements, Menus and Parts (3788:44356, 3788:44313, 3788:44251)",
-     "status": "To add",
-     "updated": "2026-11-12",
-     "note": "The article share bar. Cleaned up in place 2026-11-12 against the 6 review sites plus twincities.com: Social Media Button is Network (9) x Theme (Bold Coastal, Measured Vibrant, Modern Earthy) x interaction x inFocus; SocialButtons has a show/hide property per button; Button_Save is Checked x interaction x inFocus. Not exported yet. Drift entry 39."
-    },
-    {
-     "name": "Action Button (older set)",
-     "where": "Buttons, 5417:3876",
-     "status": "To review",
-     "note": "Older library set; Button Action replaces it."
-    },
-    {
-     "name": "User Account, Submenu, Section Menu, User Image, Button/Round/ModernEarthy",
-     "where": "Buttons page",
-     "status": "To review",
-     "note": "Older sets on the Buttons page."
-    },
-    {
-     "name": "Button (old sets in Frame 13001)",
-     "where": "Buttons, 1390:379, 5345:3224",
-     "status": "Not a component",
-     "note": "Kept as they are (Karl, 2026-10-02)."
-    },
-    {
-     "name": "ChromeShareAPI, SafariShareAPI, Apple Pay",
-     "where": "Buttons page",
-     "status": "Not a component",
-     "note": "Mock-ups of browser and OS UI."
-    },
-    {
-     "name": "Tooltip / Toggletip",
-     "where": "Tooltips | 2026.10.23, 7372:25744",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "Tooltip"
-    },
-    {
-     "name": "ModalsCenter",
-     "where": "Modal Panels | 2026.11.10, 3040:2262",
-     "status": "In system",
-     "updated": "2026-11-10",
-     "component": "ModalsCenter"
-    },
-    {
-     "name": "ModalsOffset",
-     "where": "Modal Panels, 6497:6263",
-     "status": "Removed",
-     "note": "Not part of the design system (Karl, 2026-10-29).",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Modals/Desktop",
-     "where": "Modal Panels, 4694:1966",
-     "status": "To review",
-     "note": "Older modal on the same page."
-    },
-    {
-     "name": "InLineMessage",
-     "where": "In-Line Content Containers | 2026.01.02, 2776:2 (114 variants)",
-     "status": "Partial",
-     "note": "Only the DashSubsNonSub panel is built. Rebuild to about 25 variants is open item 6.",
-     "updated": "2026-10-29",
-     "component": "InLineMessageDashSubsNonSub"
-    },
-    {
-     "name": "CheckBox",
-     "where": "Check Boxes | 2026.11.04, 4693:690",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "CheckBox"
-    },
-    {
-     "name": "Toggle Switch",
-     "where": "Toggle Switches | 2026.11.10, 5216:61",
-     "status": "In system",
-     "updated": "2026-11-10",
-     "component": "ToggleSwitch"
-    },
-    {
-     "name": "Dropdown Menu",
-     "where": "Dropdown Menus | 2026.11.11, 7543:1880",
-     "status": "In system",
-     "updated": "2026-11-11",
-     "component": "DropdownMenu",
-     "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
-    },
-    {
-     "name": "Dropdown Menu Item",
-     "where": "Dropdown Menus | 2026.11.11, 7543:1879",
-     "status": "In system",
-     "updated": "2026-11-11",
-     "component": "DropdownMenuItem",
-     "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
-    },
-    {
-     "name": "Radio buttons",
-     "where": "Style Guide | Radio Buttons",
-     "status": "To design",
-     "note": "No radio component yet."
-    },
-    {
-     "name": "Form Field",
-     "where": "Form Fields | 2026.11.04, 6963:6863",
-     "status": "In system",
-     "note": "The older set 2832:766 (Device x Flavor, still used by Embedded Login) isn't in the system.",
-     "updated": "2026-11-04",
-     "component": "FormField"
-    },
-    {
-     "name": "Form Field Assembly / Name pair",
-     "where": "Form Fields | 2026.11.04, 7003:28636",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "NamePair"
-    },
-    {
-     "name": "Form Field Assembly / Zip + Street #",
-     "where": "Form Fields | 2026.11.04, 7003:28651",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "ZipStreet"
-    },
-    {
-     "name": "Form Field Assembly / Zip + Phone",
-     "where": "Form Fields | 2026.11.04, 7003:28666",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "ZipPhone"
-    },
-    {
-     "name": "Form Field Assembly / Address block",
-     "where": "Form Fields | 2026.11.04, 7003:28741",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "AddressBlock"
-    },
-    {
-     "name": "Form Field Assembly / CC details",
-     "where": "Form Fields | 2026.11.04, 7003:28816",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "CcDetails"
-    },
-    {
-     "name": "Form Field Assembly / Password",
-     "where": "Form Fields | 2026.11.04, 7003:28940",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "Password"
-    },
-    {
-     "name": "Form Field Assembly / Verification Code",
-     "where": "Form Fields | 2026.11.04, 7003:29223",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "VerificationCode"
-    },
-    {
-     "name": "Form Field Assembly / Checkbox + Terms",
-     "where": "Form Fields | 2026.11.04, 7003:29236",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "CheckboxTerms"
-    },
-    {
-     "name": "Code Box",
-     "where": "Form Fields | 2026.11.04, 6964:7032",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "CodeBox"
-    },
-    {
-     "name": "Search Field / Obituaries",
-     "where": "Form Fields, 6996:27351",
-     "status": "To add"
-    },
-    {
-     "name": "Dropdown menu (Bootstrap-style)",
-     "where": "*** Dropdown Menus page; source AccountMenu 910:15610 (WordPress Elements)",
-     "status": "To design",
-     "note": "Open item 1."
-    },
-    {
-     "name": "Cursors",
-     "where": "Icons | 2026.08.28, 1412:914",
-     "status": "To review",
-     "note": "Cursor set; decide whether it belongs."
-    },
-    {
-     "name": "Date selector, progress indicators, loading animation",
-     "where": "Style Guide pages (no components)",
-     "status": "To design",
-     "note": "Loading animation needs timing and easing docs (open item 4)."
-    },
-    {
-     "name": "Themes style guide",
-     "where": "Style Guide | Themes",
-     "status": "To design",
-     "note": "Placeholder text (open item 5)."
-    },
-    {
-     "name": "Slider carousel",
-     "where": "Slider Carousel | 2024.08.10 (no components)",
-     "status": "To design",
-     "note": "Goes with the SlideShow family."
-    },
-    {
-     "name": "ReaderDash Templates, Page Body Templates",
-     "where": "***Breakpoints and Page Templates | 2026.05.19",
-     "status": "Not a component",
-     "note": "Page templates."
-    },
-    {
-     "name": "Old Reader Dashboard panels (41)",
-     "where": "Elements to be detailed still",
-     "status": "Not a component",
-     "note": "Superseded by Reader Dashboard v2.0."
+      "name": "Reader Dashboard v2.0",
+      "items": [
+        {
+          "name": "Navigation: NavMenu, NavItem, NavItemLabel, IndicatorLeft / IndicatorRight",
+          "where": "Reader Dashboard v2.0, Components | 2026.02.25",
+          "status": "To add",
+          "note": "Also used by the site nav in WordPress Elements."
+        },
+        {
+          "name": "Newsletter and subscription tiles: NewsletterSublist, Title-Bar Container, Title-SubLevel",
+          "where": "Components | 2026.02.25",
+          "status": "To add"
+        },
+        {
+          "name": "Tile layout: Tile Body Content, Item Tile",
+          "where": "Components | 2026.02.25",
+          "status": "To add"
+        },
+        {
+          "name": "MobAp1, MobAp2, CCUpdateError, MarketsListsItems, PaymentPlan, AcctSharingALL",
+          "where": "Components | 2026.02.25",
+          "status": "To add"
+        },
+        {
+          "name": "The rest of its 21 component sets",
+          "where": "Reader Dashboard v2.0 (PhXogWaQcnNSnQqxyRu4b2)",
+          "status": "To review",
+          "note": "Full list when the file is read again with the Desktop Bridge plugin. A v2.1 upgrade is planned (open item 2)."
+        }
+      ],
+      "note": "Audit not complete (Karl, 2026-10-29): this list comes from Reader-Dashboard-Library-Impact-Map.md (2026-09-02), not a full read of the file. It's good enough for now; review the whole file before building any of it."
     }
-   ]
-  },
-  {
-   "name": "WordPress Elements",
-   "items": [
-    {
-     "name": "Homepage Tabs",
-     "where": "Menus and Parts, 3629:44974",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "HomepageTabs"
-    },
-    {
-     "name": "Homepage Tab",
-     "where": "Menus and Parts, 3629:44949",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "HomepageTab"
-    },
-    {
-     "name": "Section Title / Eyebrow",
-     "where": "Homepage, 3333:42278",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "SectionTitleEyebrow"
-    },
-    {
-     "name": "Blocks Card",
-     "where": "Homepage, 3663:31072",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "BlocksCard"
-    },
-    {
-     "name": "Blocks Article Row",
-     "where": "Homepage, 3663:31214",
-     "status": "In system",
-     "updated": "2026-11-04",
-     "component": "BlocksArticleRow"
-    },
-    {
-     "name": "Blocks Lead Article Card",
-     "where": "Homepage, 3663:31557",
-     "status": "In system",
-     "updated": "2026-11-03",
-     "component": "BlocksLeadArticleCard"
-    },
-    {
-     "name": "Blocks Footer (was Footer_w_signup)",
-     "where": "Homepage, Blocks section, 801:1755",
-     "status": "To add",
-     "note": "Future footer with the email signup. Exported 2026-10-30; left out of the Claude system for now (Karl, 2026-10-30)."
-    },
-    {
-     "name": "Gallery Icon Badge",
-     "where": "Homepage, 3665:32148",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "GalleryIconBadge"
-    },
-    {
-     "name": "Article Section Kicker",
-     "where": "Homepage, 3609:39112",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ArticleSectionKicker"
-    },
-    {
-     "name": "Article Author",
-     "where": "Homepage, 3609:39115",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ArticleAuthor"
-    },
-    {
-     "name": "Article Timestamp",
-     "where": "Homepage, 3621:38794",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ArticleTimestamp"
-    },
-    {
-     "name": "Show More Affordance",
-     "where": "Homepage, 3634:49423",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "ShowMoreAffordance"
-    },
-    {
-     "name": "1Col Article Card",
-     "where": "Homepage, 3536:39065",
-     "status": "In system",
-     "updated": "2026-11-02",
-     "component": "OneColArticleCard"
-    },
-    {
-     "name": "Horizontal Thumbnail Card",
-     "where": "Homepage, 3362:2992",
-     "status": "In system",
-     "updated": "2026-10-29",
-     "component": "HorizontalThumbnailCard"
-    },
-    {
-     "name": "Zone 1 Lead Article Card",
-     "where": "Homepage, 3336:46157",
-     "status": "In system",
-     "note": "Related items are Related Article List Item since 2026-11-02. Fills its column at production's split, photo 3:2 (2026-11-03).",
-     "updated": "2026-11-03",
-     "component": "Zone1LeadArticleCard"
-    },
-    {
-     "name": "Zone 1 Slideshow (with Slideshow Arrow)",
-     "where": "Homepage, 3640:50278 and 3641:50772",
-     "status": "Partial",
-     "note": "One variant of the SlideShow component. Next step (Karl, 2026-10-29): build the SlideShow family together with the Obits slideshow.",
-     "updated": "2026-10-29",
-     "component": "Zone1Slideshow"
-    },
-    {
-     "name": "SlideShow family: Obits slideshow",
-     "where": "Obits (not connected to the design system yet)",
-     "status": "To review",
-     "note": "Obits isn't connected yet: audit it in the future (Karl, 2026-10-29), then build it with the SlideShow family."
-    },
-    {
-     "name": "Photo Carousel Widget: PhotoCarousel, Image Viewer, FilmStrip, Figcaption, Slide Controls, Slide Counter, Button Backward / Forward, Image and Caption Collection",
-     "where": "Photo Carousel Widget, 1345:29271, 3286:42186, 3286:42587",
-     "status": "To review",
-     "note": "Three copies of the set (Light and Dark modes); consolidate with the SlideShow family."
-    },
-    {
-     "name": "Videos from OCRegister Carousel, Video Tile Image Placeholder",
-     "where": "Homepage, 3419:55120, 3419:55122, 3419:55114",
-     "status": "To review",
-     "note": "Two copies; Flourish embed in production."
-    },
-    {
-     "name": "Article Image Placeholder",
-     "where": "Homepage, 3334:42380",
-     "status": "Partial",
-     "note": "Built into the cards (runtime ArticleImage), not its own card.",
-     "updated": "2026-10-29"
-    },
-    {
-     "name": "Article Status Badge",
-     "where": "Homepage, 3344:63995",
-     "status": "In system",
-     "note": "Matches production (Karl, 2026-11-02): Regular, primary-dark (Subscriber) or #7D161E (Sponsored), 0 x 4px. 1Col Article Card and Latest Headlines List Item draw it.",
-     "updated": "2026-11-02",
-     "component": "ArticleStatusBadge"
-    },
-    {
-     "name": "Related Article List Item",
-     "where": "Homepage, 3334:43017",
-     "status": "In system",
-     "note": "Matches production on the 4 / 8 grid (all 6 review sites). Zone 1 Lead Article Card and TOP ZONE Block draw their Related lists with it.",
-     "updated": "2026-11-02",
-     "component": "RelatedArticleListItem"
-    },
-    {
-     "name": "TopZone Article Card",
-     "where": "Homepage, 3336:46079 (4 variants)",
-     "status": "In system",
-     "note": "Device = production's ranges XS / S / M / L / XL. Headlines follow the theme; the 15px headline-group gap stays raw (Karl). The Article Status Badge is hidden in Figma and not drawn.",
-     "updated": "2026-10-30",
-     "component": "TopZoneArticleCard"
-    },
-    {
-     "name": "Latest Headlines List Item",
-     "where": "Homepage, 3336:46118 (3 variants)",
-     "status": "In system",
-     "note": "Type = First, Standard, Sponsored. Matches production (Karl, 2026-10-30): time inline after the headline, 15/19 color/gray/black headline in the theme heading family.",
-     "updated": "2026-11-02",
-     "component": "LatestHeadlinesListItem"
-    },
-    {
-     "name": "Latest Headlines",
-     "where": "Homepage, 3476:62396 (3 variants)",
-     "status": "In system",
-     "note": "Device = XS (≤639px), S (640–799px), (≥800px): production's breakpoints. Ends with Newsletter Signup.",
-     "updated": "2026-11-03",
-     "component": "LatestHeadlines"
-    },
-    {
-     "name": "Newsletter Signup",
-     "where": "Homepage, 3336:44765 (2 variants)",
-     "status": "In system",
-     "note": "Device = (≤799px), (≥800px): the widths Latest Headlines uses (no production breakpoint). Matches production (Karl, 2026-11-02); Button Primary on every theme.",
-     "updated": "2026-11-02",
-     "component": "NewsletterSignup"
-    },
-    {
-     "name": "Blueconic List Item",
-     "where": "Homepage, 3704:40676 (2 variants)",
-     "status": "In system",
-     "note": "Was Most Popular List Item. Built raw in production's values (a Blueconic block, Karl 2026-11-02). Device = (≤1039px), (≥1040px).",
-     "updated": "2026-11-02",
-     "component": "BlueconicListItem"
-    },
-    {
-     "name": "Blueconic Block",
-     "where": "Homepage, 3352:20526 (3 variants)",
-     "status": "In system",
-     "note": "Was Blueconic Block (Most Popular). Built raw in production's values (Karl 2026-11-02). Device = XS (≤639px), (640–1039px), (≥1040px).",
-     "updated": "2026-11-02",
-     "component": "BlueconicBlock"
-    },
-    {
-     "name": "Blueconic card template (14 items in 300×136 cards)",
-     "where": "Production only (orlandosentinel, mcall, 2026-11-02)",
-     "status": "To design",
-     "note": "A second Blueconic template; not in Figma yet (Karl, 2026-11-02)."
-    },
-    {
-     "name": "Headline List Item",
-     "where": "Homepage, 3709:40904 (3 variants)",
-     "status": "In system",
-     "note": "New 2026-11-02 (Karl): one headline in a section rail list. Rule = Default, None, Dark. Built raw in production's values.",
-     "updated": "2026-11-02",
-     "component": "HeadlineListItem"
-    },
-    {
-     "name": "Horizontal Feature Card",
-     "where": "Homepage, 3709:41113 (4 variants)",
-     "status": "In system",
-     "note": "The wide rail's lead. Device = (≤799px), M, L, XL: production's breakpoints. Built raw in production's values (Karl, 2026-11-02).",
-     "updated": "2026-11-02",
-     "component": "HorizontalFeatureCard"
-    },
-    {
-     "name": "Feature + List Content Block",
-     "where": "Homepage, 3484:66933 (4 variants)",
-     "status": "In system",
-     "note": "Horizontal Feature Card and Headline List Items. Device = (≤799px), M, L, XL (was Size = Default / Narrow). Built raw in production's values (Karl, 2026-11-02).",
-     "updated": "2026-11-02",
-     "component": "FeatureListContentBlock"
-    },
-    {
-     "name": "Section Rail Card Narrow",
-     "where": "Homepage, 3352:22067 (2 variants)",
-     "status": "In system",
-     "note": "Split from Section Rail Card (Layout = Narrow), 2026-11-02 (Karl). Device = (≤799px), (≥800px). 1Col lead with in-card overrides. Built raw in production's values.",
-     "updated": "2026-11-02",
-     "component": "SectionRailCardNarrow"
-    },
-    {
-     "name": "Section Rail Card Wide",
-     "where": "Homepage, 3709:43975 (4 variants)",
-     "status": "In system",
-     "note": "Split from Section Rail Card (Layout = Wide), 2026-11-02 (Karl). Device = (≤799px), M, L, XL. Built raw in production's values.",
-     "updated": "2026-11-02",
-     "component": "SectionRailCardWide"
-    },
-    {
-     "name": "TOP ZONE Block",
-     "where": "Homepage, 3352:19482 (5 variants)",
-     "status": "In system",
-     "note": "Zone 1: Zone 1 Lead Article Card, 4 TopZone Article Cards, Latest Headlines, the Cube ad. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02). Show Ad off (ad-free readers) keeps the right column, empty or with railContent (2026-11-03).",
-     "updated": "2026-11-03",
-     "component": "TopZoneBlock"
-    },
-    {
-     "name": "Photos Block",
-     "where": "Homepage, 3352:20865 (5 variants)",
-     "status": "In system",
-     "note": "Zone 7: 1Col Article Card (Media Lead), 6 Horizontal Thumbnail Cards, Show More Affordance. Device = XS, S, M, L, XL: production's breakpoints. Matches production on the 4 / 8 grid (2026-11-02).",
-     "updated": "2026-11-02",
-     "component": "PhotosBlock"
-    },
-    {
-     "name": "Upcoming Events: Widget, Block, Event Card, Date Picker Day, Date Picker Calendar Icon, Calendar Glyph, Header Button, Side Arrow",
-     "where": "Homepage, 3557:24236 and parts",
-     "status": "To add",
-     "note": "Event Card also has a copy on Menus and Parts (3395:51867)."
-    },
-    {
-     "name": "Show More Affordance (tokens, future reference)",
-     "where": "Homepage, 3634:49427",
-     "status": "Not a component",
-     "note": "Reference copy."
-    },
-    {
-     "name": "Masthead",
-     "where": "Menus and Parts, 456:2572 (90 variants)",
-     "status": "In system",
-     "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. Not built here: the account dropdown and search field (the open section menu is SectionMenu).",
-     "updated": "2026-11-09",
-     "component": "Masthead"
-    },
-    {
-     "name": "Breaking News Banner",
-     "where": "Menus and Parts, 506:5632; Article Page, 148:640",
-     "status": "To add",
-     "note": "Two copies."
-    },
-    {
-     "name": "SectionMenu (section menu toggle and drawer)",
-     "where": "Menus and Parts, 456:5837 (20 variants)",
-     "note": "Built 2026-11-09 after the six-site audit and the five-width check (components/navigation.md §3): toggle, drawer with Subscribe Now, weather row below 1040px, Home, sections (one open at a time), account rows by reader type, newsletter sign-up. Drift: design-vs-production 10.4–10.8.",
-     "component": "SectionMenu",
-     "status": "In system",
-     "updated": "2026-11-09"
-    },
-    {
-     "name": "SectionMenuHeader",
-     "where": "Menus and Parts, 456:5745 (6 variants)",
-     "note": "Built 2026-11-09: hamburger / × in the same place; \"All Sections\" SemiBold 16 at 1040px and up.",
-     "component": "SectionMenuHeader",
-     "status": "In system",
-     "updated": "2026-11-09"
-    },
-    {
-     "name": "SectionMenuItem",
-     "where": "Menus and Parts, 456:5781 (27 variants)",
-     "note": "Built 2026-11-09: main, subItem, Weather, CTAButton, CTAMessage; Default, Hover, Pressed, InFocus.",
-     "component": "SectionMenuItem",
-     "status": "In system",
-     "updated": "2026-11-09"
-    },
-    {
-     "name": "SectionMenuGroup",
-     "where": "Menus and Parts, 3740:29156 (2 variants)",
-     "note": "New 2026-11-06, built here 2026-11-09: a section and its subcategories (toggle + landing link).",
-     "component": "SectionMenuGroup",
-     "status": "In system",
-     "updated": "2026-11-09"
-    },
-    {
-     "name": "AccountMenu",
-     "where": "Menus and Parts, 910:16425",
-     "status": "To add",
-     "note": "Exported 2026-10-30. The closed control is drawn inside Masthead; the dropdown isn’t built."
-    },
-    {
-     "name": "User: UserImage, UserPic, UserStatus",
-     "where": "Menus and Parts, 456:5708, 456:5674, 456:5728",
-     "status": "To add",
-     "note": "Exported 2026-10-30; drawn inside Masthead (30px avatar, Subscribe / Log In). UserImage monogram sizes are avatar art (open item 9)."
-    },
-    {
-     "name": "AlertLevel",
-     "where": "Menus and Parts, 456:5683",
-     "status": "To add"
-    },
-    {
-     "name": "SearchBar",
-     "where": "Menus and Parts, 456:5910",
-     "status": "To add",
-     "note": "Exported 2026-10-30. The search button is drawn inside Masthead; the open field isn’t built."
-    },
-    {
-     "name": "Weather Bug",
-     "where": "Menus and Parts, 654:10020",
-     "status": "In system",
-     "note": "Built 2026-11-09: both Locations, one or two e-Edition links, every value from production (AccuWeather, third-party; Karl). The link labels change by market.",
-     "updated": "2026-11-09",
-     "component": "WeatherBug"
-    },
-    {
-     "name": "Footer",
-     "where": "Menus and Parts, 354:1282",
-     "status": "In system",
-     "note": "All 5 devices; production spacing kept on purpose. Legal links color/gray/200 since 2026-10-30 (contrast fix).",
-     "updated": "2026-10-30",
-     "component": "Footer"
-    },
-    {
-     "name": "Logo / Wordmark (placeholder draft)",
-     "where": "Menus and Parts, 3338:47048",
-     "status": "To review",
-     "note": "Superseded by the Logo component?"
-    },
-    {
-     "name": "Article page: Breadcrumbs, Article Header, AuthorImage, Byline, TrinityAudioPlayer, TrendingNowSpecial",
-     "where": "Article Page, 1110:19469, 1110:19437, 1101:19212, 1110:19503, 1110:19507, 1226:3977",
-     "status": "To add"
-    },
-    {
-     "name": "RelatedArticleCard, RelatedArticlesImages",
-     "where": "Article Page, 1252:4225 and 1271:3201; 1232:2925 and 1271:3305",
-     "status": "To review",
-     "note": "Two copies of each."
-    },
-    {
-     "name": "ObitMastHead",
-     "where": "Obits: ET and Local, 1139:22369",
-     "status": "To add",
-     "note": "Obits isn't connected yet: part of the future Obits audit (Karl, 2026-10-29)."
-    },
-    {
-     "name": "Engage Paywall Modal",
-     "where": "Paywalls, 1495:23511",
-     "status": "To add",
-     "note": "Paywalls get their own review."
-    },
-    {
-     "name": "Ad Blocks",
-     "where": "Ads and Sponsored, 517:4304 (37 variants)",
-     "status": "In system",
-     "note": "All 37 units; Mobile Adhesion close button and fixed position.",
-     "updated": "2026-10-30",
-     "component": "AdBlocks"
-    },
-    {
-     "name": "RevContent",
-     "where": "Ads and Sponsored, 506:3865",
-     "status": "Not a component",
-     "note": "Not built to production; skipped (Karl, 2026-10-08)."
-    },
-    {
-     "name": "Page templates: Section Front, Reader Dashboard v2, Stand Alone Pages, Article Search Results, Author Page, Donation Form, AMP Mobile",
-     "where": "WordPress Elements pages (no components)",
-     "status": "Not a component",
-     "note": "Templates."
-    }
-   ]
-  },
-  {
-   "name": "Reader Dashboard v2.0",
-   "items": [
-    {
-     "name": "Navigation: NavMenu, NavItem, NavItemLabel, IndicatorLeft / IndicatorRight",
-     "where": "Reader Dashboard v2.0, Components | 2026.02.25",
-     "status": "To add",
-     "note": "Also used by the site nav in WordPress Elements."
-    },
-    {
-     "name": "Newsletter and subscription tiles: NewsletterSublist, Title-Bar Container, Title-SubLevel",
-     "where": "Components | 2026.02.25",
-     "status": "To add"
-    },
-    {
-     "name": "Tile layout: Tile Body Content, Item Tile",
-     "where": "Components | 2026.02.25",
-     "status": "To add"
-    },
-    {
-     "name": "MobAp1, MobAp2, CCUpdateError, MarketsListsItems, PaymentPlan, AcctSharingALL",
-     "where": "Components | 2026.02.25",
-     "status": "To add"
-    },
-    {
-     "name": "The rest of its 21 component sets",
-     "where": "Reader Dashboard v2.0 (PhXogWaQcnNSnQqxyRu4b2)",
-     "status": "To review",
-     "note": "Full list when the file is read again with the Desktop Bridge plugin. A v2.1 upgrade is planned (open item 2)."
-    }
-   ],
-   "note": "Audit not complete (Karl, 2026-10-29): this list comes from Reader-Dashboard-Library-Impact-Map.md (2026-09-02), not a full read of the file. It's good enough for now; review the whole file before building any of it."
-  }
- ]
+  ]
 }

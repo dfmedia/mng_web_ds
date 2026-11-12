@@ -2304,13 +2304,15 @@ Facebook is outlined in the old Facebook blue `#3B5998` (both sites) and Cañon 
 
 ### 39.3 Button order differs by site
 
-ocregister.com: Facebook, X, Reddit, Print, Gift. denverpost.com: Facebook, Reddit, X, Gift. chicagotribune.com: Facebook, Bluesky, X, Print, Email, Gift. orlandosentinel.com: Facebook, Bluesky, X, Gift. canoncitydailyrecord.com and mcall.com: Facebook, X, Gift. twincities.com: Facebook, Bluesky, Reddit, X, Print, Email, More, Gift. The design keeps one order, Twin Cities' (Facebook, Bluesky, Reddit, X, Print, Email, Share more, Gift, then Link), and each site turns on the buttons it uses. Which buttons a site shows is its own choice and isn't drift.
+ocregister.com: Facebook, X, Reddit, Print, Gift. denverpost.com: Facebook, Reddit, X, Gift. chicagotribune.com: Facebook, Bluesky, X, Print, Email, Gift. orlandosentinel.com: Facebook, Bluesky, X, Gift. canoncitydailyrecord.com and mcall.com: Facebook, X, Gift. twincities.com: Facebook, Bluesky, Reddit, X, Print, Email, More, Gift. The design keeps one order (Facebook, Bluesky, Reddit, X, Print, Email, LinkedIn, Link, then Gift, then More), and each site turns on the buttons it uses; Gift is always the last button before More (Karl, 2026-11-12). Which buttons a site shows is its own choice and isn't drift.
 
 **Status:** Open (order only).
 
-### 39.4 Twin Cities' More button: 2.5px border, and it shrinks in the article header
+### 39.4 Twin Cities' More button and panel are broken; one rule for when More appears
 
-twincities.com's More button is white with a 2.5px `color/theme/primary` border, 43x43 in the bar at the end of the article (the other buttons are 40x40). In the condensed article header it shrinks to 20x20. The design: 40x40 with a 2px border, the same size in both bars.
+Checked live with Karl, 2026-11-12. **End of the article:** More is 43x43 with a 2.5px border; clicking it opens a transparent panel laid over the start of the bar, holding LinkedIn and a second Gift, which pile up on top of Facebook, Bluesky and Reddit. **Article header:** More shrinks to 20x20; its panel (white, 1px `#AAA7A4` border, 3px corners, caret) is 30px tall, so the 40px LinkedIn button spills out of it.
+
+**Design:** More is a 40x40 white circle with a 2px `color/theme/primary` border in both bars (filled with the theme color while open). It opens a **Popover** (main library, Tooltips page; the Toggletip's look: white, 1px border, 4px corners, shadow/lg, caret) below the button, 8px from it, with the extra buttons in a row, 8px apart; no second Gift. **Rule (Karl, 2026-11-12):** a site shows up to 6 share buttons with no More; with more than 6, the first 6 show (Gift is always one of them) and More is the 7th, holding the rest. Twin Cities: Facebook, Bluesky, Reddit, X, Print, Gift, More (Email, LinkedIn). Chicago (6 buttons) keeps no More.
 
 **Status:** Open.
 
@@ -2319,6 +2321,12 @@ twincities.com's More button is white with a 2.5px `color/theme/primary` border,
 ocregister.com shows the bookmark and then the share buttons with only an 8px gap. The design has a 1px `color/gray/500` divider, 40px tall, right after the Save button (Karl, 2026-11-12: it's supposed to be in production).
 
 **Status:** Open.
+
+### 39.6 Obituaries: share buttons 11.69px apart with 14.85px icons
+
+The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; ocregister.com and denverpost.com, the same Endless Tributes template) are 40x40 circles in `color/theme/primary` of the Endless Tributes palette (`#8D092D` on screen; hover `#C00D3D`, `color/theme/primary-light`), matching the design. They're 11.69px apart (`margin-right`) with 14.85px icons; the article share bar uses 8px and 18px. Obituary pages have no share bar in the masthead. Design for obituaries to be decided (Karl).
+
+**Status:** Open (to decide).
 
 ---
 
