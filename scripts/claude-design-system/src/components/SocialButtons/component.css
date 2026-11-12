@@ -6,7 +6,7 @@
 .mngds-social-buttons__panel-items { display: flex; align-items: center; gap: var(--mng-spacing-100); }
 /* Obituaries (theme 'Endless Tributes'): the filled style in the Endless Tributes colors (color/tributes/primary,
    hover primary-light), which the component tokens can't pick up from a page theme. */
-.mngds-social-buttons--endless-tributes .mngds-social-media-button { background: var(--mng-color-tributes-primary); color: var(--mng-color-gray-max); }
+.mngds-social-buttons--endless-tributes .mngds-social-media-button { background: var(--mng-color-tributes-primary); color: var(--mng-color-gray-max); box-shadow: inset 0 -2px 0 var(--mng-color-tributes-primary-dark); }
 .mngds-social-buttons--endless-tributes .mngds-social-media-button:hover, .mngds-social-buttons--endless-tributes .mngds-social-media-button:active,
 .mngds-social-buttons--endless-tributes .mngds-social-media-button.is-hover, .mngds-social-buttons--endless-tributes .mngds-social-media-button.is-pressed { background: var(--mng-color-tributes-primary-light); }
 .mngds-social-buttons--endless-tributes .mngds-social-media-button--network-share-more { background: var(--mng-color-gray-max); color: var(--mng-color-tributes-primary); box-shadow: inset 0 0 0 2px var(--mng-color-tributes-primary); }

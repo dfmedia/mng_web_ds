@@ -110,7 +110,7 @@ No Breakpoint property: one size at every width.
 - **More rule (Karl, 2026-11-12):** up to 6 share buttons show with no More; with more than 6, the first 6 show (Gift is always one of them) and More is the 7th, holding the rest.
 - **More panel:** More open shows a Popover, Placement=Bottom, centered on the More button with 8px between the button and the caret, holding the extra buttons in a row 8px apart. Esc or a click outside closes it and focus returns to More.
 - **Themes:** Bold Coastal, Endless Tributes and TwinCities use the Bold Coastal button style; colors come from each site's color mode (obituaries: the Endless Tributes theme). Measured Vibrant and Modern Earthy use their own styles.
-- **Obituaries:** the "Share this obituary:" buttons (Facebook, Email, Copy link) are the same feature: Theme=Endless Tributes, 40x40, 8px apart, 18px icons (Karl, 2026-11-12).
+- **Obituaries:** the "Share this obituary:" buttons (Facebook, Email, Copy link) are the same feature: Theme=Endless Tributes, 40x40, 8px apart, 18px icons (Karl, 2026-11-12), with the Bold Coastal 2px `color/theme/primary-dark` bottom border like the article bar.
 - **Accessibility:** a group named "Share this article" (or "Share this obituary"); More is a button with `aria-expanded` and `aria-controls` pointing at the panel.
 
 ## Accessibility
@@ -130,7 +130,7 @@ Placed on pages: Article Page ×1.
 
 ## Production
 
-Checked 2026-11-12 on the 6 review sites plus twincities.com (article bars) and the ocregister.com and denverpost.com obituary pages. Differences: design-vs-production entry 39 (39.1–39.6).
+Checked 2026-11-12 on the 6 review sites plus twincities.com (article bars) and the ocregister.com and denverpost.com obituary pages. Differences: design-vs-production entry 39 (39.1–39.7).
 
 ## Known issues
 

@@ -2286,9 +2286,9 @@ The trigger is a button with `aria-haspopup="listbox"` and `aria-expanded`, name
 
 **Found:** 2026-11-12, checking one article on each of the 6 review sites plus twincities.com at desktop width (1728–1920px). Both share bars were read: the one in the condensed article header and the one at the end of the article (`#sharing-sticky`, `#sharing-bottom`); they match.
 
-**Where:** article pages, every theme. Figma: WordPress Elements, Menus and Parts: `SocialButtons` (`3788:44356`), `Social Media Button` (`3788:44313`), `Button_Save` (`3788:44251`), cleaned up 2026-11-12 to match production: 40px round buttons, 18px icons (gift 22px), Bold Coastal filled with the theme color (hover `color/theme/primary-light`), Measured Vibrant outlined in `color/theme/primary-dark` with a `color/theme/primary` icon (hover fills `color/theme/primary`), Modern Earthy outlined 2px in each network's brand color (hover fills it). Save (only shown on ocregister.com) is a 24px bookmark in the theme color, followed by a 1px `color/gray/500` divider (Karl, 2026-11-12: the divider is supposed to be in production).
+**Where:** article pages, every theme. Figma: WordPress Elements, Menus and Parts: `SocialButtons` (`3788:44356`), `Social Media Button` (`3788:44313`), `Button_Save` (`3788:44251`), cleaned up 2026-11-12 to match production: 40px round buttons, 18px icons (gift 22px), Bold Coastal filled with the theme color with a 2px `color/theme/primary-dark` bottom border (hover `color/theme/primary-light`; the border stays), Measured Vibrant outlined in `color/theme/primary-dark` with a `color/theme/primary` icon (hover fills `color/theme/primary`), Modern Earthy outlined 2px in each network's brand color (hover fills it). Save (only shown on ocregister.com) is a 24px bookmark in the theme color, followed by a 1px `color/gray/500` divider (Karl, 2026-11-12: the divider is supposed to be in production).
 
-**Matches production:** button size (40x40, round), icon size (18px icon-font glyphs; the gift is a 22px-tall image), theme colors and hover fills. Cañon City renders the NEPA-PMP palette (primary `#3F51B5`, primary-dark `#32408F`; Subscribe button `#32408F` on screen), so its Gift outline in `color/theme/primary` is right.
+**Matches production:** button size (40x40, round), icon size (18px icon-font glyphs; the gift is a 22px-tall image), theme colors and hover fills, and Bold Coastal's 2px bottom border in the theme's dark primary on every button but More (`border-bottom: 2px solid var(--primary-dark)`, kept on hover; on screen #0A5962 ocregister.com, #7D161E denverpost.com, #0065A8 twincities.com; restored in Figma 2026-11-12 after the cleanup had dropped it). Cañon City renders the NEPA-PMP palette (primary `#3F51B5`, primary-dark `#32408F`; Subscribe button `#32408F` on screen), so its Gift outline in `color/theme/primary` is right.
 
 ### 39.1 Space between share buttons: 6.25px; the design is 8px
 
@@ -2325,6 +2325,12 @@ ocregister.com shows the bookmark and then the share buttons with only an 8px ga
 ### 39.6 Obituaries: share buttons 11.69px apart with 14.85px icons; the design is 8px and 18px
 
 The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; ocregister.com and denverpost.com, the same Endless Tributes template) are the same feature as the article share bar (Karl, 2026-11-12). Their colors match the design, which uses the obituaries theme's color tokens: 40x40 circles in `color/theme/primary` (`#8D092D` on screen), hover `color/theme/primary-light` (`#C00C3D`; `#C00D3D` on screen), icons `color/gray/max`. The design (Karl, 2026-11-12): 40x40 buttons, 8px (`spacing/100`) apart, 18px icons centered, the same as the article share bar (22px icons were compared and not chosen). Production: 11.69px apart (`margin-right`), 14.85px icons.
+
+**Status:** Open.
+
+### 39.7 Obituaries: a dotted blue line under each share button instead of the dark-red bottom border
+
+The obituary share buttons (denverpost.com, checked 2026-11-12) have no 2px bottom border; instead each one carries a 1px dotted `#003459` bottom border, a link underline style leaking onto the buttons, which shows as a faint dotted arc under each circle. The design gives them the same 2px `color/theme/primary-dark` bottom border as the article bar's Bold Coastal buttons (Endless Tributes: `#770000`), and no dotted line.
 
 **Status:** Open.
 

@@ -353,31 +353,41 @@ From `social-media-button.tokens.json`. References point at system tokens (`toke
 | `social-media-button.interaction-pressed.network-linkedin.theme-measured-vibrant.root.background` | `{color.theme.primary}` |
 | `social-media-button.interaction-pressed.network-linkedin.theme-modern-earthy.icon.icon-color` | `{color.gray.max}` |
 | `social-media-button.interaction-pressed.network-linkedin.theme-modern-earthy.root.background` | #0a66c2 |
+| `social-media-button.base.root.border-bottom-width` | 2px |
+| `social-media-button.base.root.border-radius` | 999px |
+| `social-media-button.base.root.border-style` | solid |
+| `social-media-button.base.root.height` | 40px |
+| `social-media-button.base.root.width` | 40px |
+| `social-media-button.network-facebook.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-facebook.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-facebook.theme-modern-earthy.root.border-color` | #1877f2 |
+| `social-media-button.network-bluesky.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-bluesky.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-bluesky.theme-modern-earthy.root.border-color` | #1185fe |
+| `social-media-button.network-reddit.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-reddit.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-reddit.theme-modern-earthy.root.border-color` | #ff4500 |
+| `social-media-button.network-x.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-x.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-x.theme-modern-earthy.root.border-color` | `{color.gray.black}` |
+| `social-media-button.network-print.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-print.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-print.theme-modern-earthy.root.border-color` | `{color.theme.primary}` |
+| `social-media-button.network-email.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-email.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-email.theme-modern-earthy.root.border-color` | `{color.theme.primary}` |
 | `social-media-button.network-share-more.theme-bold-coastal.root.border-color` | `{color.theme.primary}` |
 | `social-media-button.network-share-more.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-share-more.theme-modern-earthy.root.border-color` | `{color.theme.primary}` |
+| `social-media-button.network-gift.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-gift.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-gift.theme-modern-earthy.root.border-color` | `{color.theme.primary}` |
+| `social-media-button.network-link.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-link.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-link.theme-modern-earthy.root.border-color` | `{color.theme.primary}` |
+| `social-media-button.network-linkedin.theme-bold-coastal.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-linkedin.theme-measured-vibrant.root.border-color` | `{color.theme.primary-dark}` |
 | `social-media-button.network-linkedin.theme-modern-earthy.root.border-color` | #0a66c2 |
-| `social-media-button.base.root.border-radius` | 999px |
-| `social-media-button.base.root.border-style` | solid |
-| `social-media-button.base.root.height` | 40px |
-| `social-media-button.base.root.width` | 40px |
 | `social-media-button.theme-measured-vibrant.root.border-width` | 1px |
 | `social-media-button.theme-modern-earthy.root.border-width` | 2px |
 | `social-media-button.theme-bold-coastal.root.border-width` | 2px |
@@ -387,7 +397,7 @@ From `social-media-button.tokens.json`. References point at system tokens (`toke
 No Breakpoint property: one size at every width.
 
 - **Size:** 40x40, fully round (CSS `border-radius: 50%`). Icons 18px icon-font glyphs, centered (gift 22px), matching production (Karl, 2026-11-12).
-- **Bold Coastal** (OC, Denver, Twin Cities, Endless Tributes): `color/theme/primary` fill, `color/gray/max` icon, no border; hover and pressed `color/theme/primary-light`. Share more: `color/gray/max` with a 2px inside `color/theme/primary` border and a `color/theme/primary` icon; hover and pressed fill `color/theme/primary`, icon `color/gray/max`.
+- **Bold Coastal** (OC, Denver, Twin Cities, Endless Tributes): `color/theme/primary` fill, `color/gray/max` icon, a 2px inside bottom border in `color/theme/primary-dark` (no top or side borders; it stays on hover and pressed); hover and pressed `color/theme/primary-light`. Share more: `color/gray/max` with a 2px inside `color/theme/primary` border and a `color/theme/primary` icon; hover and pressed fill `color/theme/primary`, icon `color/gray/max`.
 - **Measured Vibrant** (Chicago, Orlando): no fill, 1px inside `color/theme/primary-dark` border, `color/theme/primary` icon; hover and pressed fill `color/theme/primary`, icon `color/gray/max`.
 - **Modern Earthy** (Cañon City, Morning Call): no fill, 2px inside border and icon in the network's current brand color (Karl, 2026-11-12): Facebook #1877F2, Bluesky #1185FE, Reddit #FF4500, X `color/gray/black`, LinkedIn #0A66C2; Print, Email, Share more, Gift and Link `color/theme/primary`. Hover and pressed fill with that color, icon `color/gray/max`. Brand colors are vendor colors, not MNG tokens.
 - **Focus ring:** 2px `color/gray/black`, 1px outside the circle, round (CSS `outline: 2px solid; outline-offset: 1px`).

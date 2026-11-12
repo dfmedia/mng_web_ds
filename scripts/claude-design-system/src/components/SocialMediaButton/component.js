@@ -1,6 +1,6 @@
 /* SocialMediaButton (WordPress Elements, Menus and Parts, 3788:44313). One round share button of the article share bar
    (cleaned up in place 2026-11-12, Karl). network picks the icon (and, on Modern Earthy, the brand color); theme picks
-   the style: Bold Coastal filled, Measured Vibrant 1px outline, Modern Earthy 2px outline in the network's brand color.
+   the style: Bold Coastal filled with a 2px primary-dark bottom border, Measured Vibrant 1px outline, Modern Earthy 2px outline in the network's brand color.
    Colors come from the site's theme variables. `interaction` and `inFocus` force documentation states. */
 var SOCIAL_NETWORKS = {
   'Facebook': ['facebook', 'Share on Facebook'],

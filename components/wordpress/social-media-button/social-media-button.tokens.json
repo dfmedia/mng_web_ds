@@ -2589,6 +2589,62 @@
         }
       }
     },
+    "base": {
+      "root": {
+        "border-bottom-width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 2,
+            "unit": "px"
+          }
+        },
+        "border-radius": {
+          "$type": "dimension",
+          "$value": {
+            "value": 999,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        },
+        "border-style": {
+          "$type": "strokeStyle",
+          "$value": "solid"
+        },
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 40,
+            "unit": "px"
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 40,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "network-facebook.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        }
+      }
+    },
     "network-facebook.theme-measured-vibrant": {
       "root": {
         "border-color": {
@@ -2622,6 +2678,21 @@
             "com.mng": {
               "rgba": "rgba(24, 119, 242, 1)",
               "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "network-bluesky.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
             }
           }
         }
@@ -2665,6 +2736,21 @@
         }
       }
     },
+    "network-reddit.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        }
+      }
+    },
     "network-reddit.theme-measured-vibrant": {
       "root": {
         "border-color": {
@@ -2703,6 +2789,21 @@
         }
       }
     },
+    "network-x.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        }
+      }
+    },
     "network-x.theme-measured-vibrant": {
       "root": {
         "border-color": {
@@ -2733,6 +2834,21 @@
         }
       }
     },
+    "network-print.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        }
+      }
+    },
     "network-print.theme-measured-vibrant": {
       "root": {
         "border-color": {
@@ -2757,6 +2873,21 @@
             "com.mng": {
               "figma": {
                 "variable": "Colors/color/theme/primary"
+              }
+            }
+          }
+        }
+      }
+    },
+    "network-email.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
               }
             }
           }
@@ -2838,6 +2969,21 @@
         }
       }
     },
+    "network-gift.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        }
+      }
+    },
     "network-gift.theme-measured-vibrant": {
       "root": {
         "border-color": {
@@ -2868,6 +3014,21 @@
         }
       }
     },
+    "network-link.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        }
+      }
+    },
     "network-link.theme-measured-vibrant": {
       "root": {
         "border-color": {
@@ -2892,6 +3053,21 @@
             "com.mng": {
               "figma": {
                 "variable": "Colors/color/theme/primary"
+              }
+            }
+          }
+        }
+      }
+    },
+    "network-linkedin.theme-bold-coastal": {
+      "root": {
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
               }
             }
           }
@@ -2932,40 +3108,6 @@
               "rgba": "rgba(10, 102, 194, 1)",
               "unbound": true
             }
-          }
-        }
-      }
-    },
-    "base": {
-      "root": {
-        "border-radius": {
-          "$type": "dimension",
-          "$value": {
-            "value": 999,
-            "unit": "px"
-          },
-          "$extensions": {
-            "com.mng": {
-              "unbound": true
-            }
-          }
-        },
-        "border-style": {
-          "$type": "strokeStyle",
-          "$value": "solid"
-        },
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 40,
-            "unit": "px"
-          }
-        },
-        "width": {
-          "$type": "dimension",
-          "$value": {
-            "value": 40,
-            "unit": "px"
           }
         }
       }
