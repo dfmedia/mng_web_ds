@@ -185,8 +185,9 @@
     {
      "name": "Button Pay",
      "where": "Buttons, 5333:16009",
-     "status": "To add",
-     "note": "No export yet; its radius isn't recorded."
+     "status": "Removed",
+     "note": "Retired (Karl, 2026-11-12): Apple, Google and PayPal allow only their own wallet buttons, and the checkouts draw those with the vendors' code. Reference set for the product owners: Button Pay Vendor (proposal, Figma only).",
+     "updated": "2026-11-12"
     },
     {
      "name": "Button Social-Login",

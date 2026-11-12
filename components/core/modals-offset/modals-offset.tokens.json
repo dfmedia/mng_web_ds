@@ -7,11 +7,11 @@
         "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
         "node": "6497:6263",
         "componentSet": "ModalsOffset",
-        "page": "Modal Panels | 2025.12.29"
+        "page": "Modal Panels | 2026.11.10"
       },
       "production": null,
       "layer": "core",
-      "exported": "2026-10-28"
+      "exported": "2026-11-12"
     }
   },
   "modals-offset": {
@@ -33,18 +33,18 @@
         }
       },
       "contents": {
-        "button-pay": {
+        "button-social-login-vendor": {
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 58,
+              "value": 40,
               "unit": "px"
             }
           },
           "width": {
             "$type": "dimension",
             "$value": {
-              "value": 249,
+              "value": 292,
               "unit": "px"
             }
           }
@@ -61,18 +61,18 @@
               }
             }
           },
-          "button-pay": {
+          "button-social-login-vendor": {
             "height": {
               "$type": "dimension",
               "$value": {
-                "value": 58,
+                "value": 40,
                 "unit": "px"
               }
             },
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 249,
+                "value": 292,
                 "unit": "px"
               }
             }
@@ -2179,18 +2179,18 @@
                 }
               }
             },
-            "button-pay": {
+            "button-social-login-vendor": {
               "height": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 58,
+                  "value": 40,
                   "unit": "px"
                 }
               },
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 249,
+                  "value": 292,
                   "unit": "px"
                 }
               }

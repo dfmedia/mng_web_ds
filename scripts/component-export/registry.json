@@ -815,7 +815,7 @@
         "**Panel:** `color/gray/max`, 1px `color/gray/500` border, `radius/utility` (5px), `shadow/lg`; Button In-Line Close (40×40) at the top right.",
         "**Float (desktop):** 546px wide; 24px (`spacing/300`) padding; 16px (`spacing/200`) between the title and the buttons; 8px (`spacing/100`) inside the groups.",
         "**FixedFooter (360, 340):** 328 / 308px wide, 16px from each screen edge; 16px (`spacing/200`) padding and gap; the title keeps 32px (`spacing/400`) on its right to clear the close button.",
-        "**Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Apple button is Button Pay (Apple's style).",
+        "**Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Sign in with Apple button is Button Social-Login Vendor, Brand=Apple (proposal; replaced Button Pay 2026-11-12).",
         "**Google account chooser** (GOTcustom, AllOptions): Google's own UI, shown for reference; not tokenized."
       ],
       "breakpoints": "| Device | Location | Width |\n|---|---|---|\n| XLDesktop | Float | 546px |\n| SMMobile (360) | FixedFooter | 328px |\n| XSFold (340) | FixedFooter | 308px |",
