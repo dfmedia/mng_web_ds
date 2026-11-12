@@ -39,6 +39,7 @@
 - **Article page**
   - [23. Article breadcrumbs — label font family and text color](#23-article-breadcrumbs--label-font-family-and-text-color)
   - [35. Article "type of work" popup — should be the Toggletip](#35-article-type-of-work-popup--should-be-the-toggletip)
+  - [39. Share bar (SocialButtons) — button spacing, old brand colors, button order and the More button](#39-share-bar-socialbuttons--button-spacing-old-brand-colors-button-order-and-the-more-button)
 - **Obituaries**
   - [24. Obituaries masthead — shadow and bottom border don't match the main masthead](#24-obituaries-masthead--shadow-and-bottom-border-dont-match-the-main-masthead)
   - [25. Obituaries navigation — hamburger and "All Sections" both visible at desktop width](#25-obituaries-navigation--hamburger-and-all-sections-both-visible-at-desktop-width)
@@ -2278,6 +2279,40 @@ Keyboard focus shows a 2px `color/gray/black` ring 1px outside the trigger with 
 The trigger is a button with `aria-haspopup="listbox"` and `aria-expanded`, named by its label (e.g. "Role: Owner"); the menu is a `listbox` of `option` rows with `aria-selected` on the current one. Enter, Space or Down Arrow opens it on the current choice; Up / Down, Home and End move; Enter or Space picks; Esc closes and returns focus to the trigger; Tab closes and moves on; a click outside closes it. The account owner's own row is read-only: no chevron and not a button.
 
 **Status:** Open. Low priority (Karl, 2026-11-11).
+
+---
+
+## 39. Share bar (SocialButtons) — button spacing, old brand colors, button order and the More button
+
+**Found:** 2026-11-12, checking one article on each of the 6 review sites plus twincities.com at desktop width (1728–1920px). Both share bars were read: the one in the condensed article header and the one at the end of the article (`#sharing-sticky`, `#sharing-bottom`); they match.
+
+**Where:** article pages, every theme. Figma: WordPress Elements, Menus and Parts: `SocialButtons` (`3788:44356`), `Social Media Button` (`3788:44313`), `Button_Save` (`3788:44251`), cleaned up 2026-11-12 to match production: 40px round buttons, 18px icons (gift 22px), Bold Coastal filled with the theme color (hover `color/theme/primary-light`), Measured Vibrant outlined in `color/theme/primary-dark` with a `color/theme/primary` icon (hover fills `color/theme/primary`), Modern Earthy outlined 2px in each network's brand color (hover fills it). Save (only shown on ocregister.com) is a 24px bookmark in the theme color with no divider.
+
+**Matches production:** button size (40x40, round), icon size (18px icon-font glyphs; the gift is a 22px-tall image), theme colors, hover fills, and the Save button.
+
+### 39.1 Space between share buttons: 6.25px; the design is 8px
+
+Every share button has `margin-right: 6.25px` (all 7 sites, both bars). The design uses 8px (`spacing/100`), the nearest step on the 4 / 8 grid.
+
+**Status:** Open.
+
+### 39.2 Modern Earthy outlines use old brand colors (Cañon City, Morning Call)
+
+Facebook is outlined in the old Facebook blue `#3B5998` (both sites) and Cañon City's X button in the old Twitter blue `#00ACED`. The design uses the current brand colors (Karl, 2026-11-12): Facebook `#1877F2`, X black (`color/gray/black`, as Morning Call already shows), Reddit `#FF4500`, Bluesky `#1185FE`. Print, Email, Share more, Gift and Link use `color/theme/primary`.
+
+**Status:** Open.
+
+### 39.3 Button order differs by site
+
+ocregister.com: Facebook, X, Reddit, Print, Gift. denverpost.com: Facebook, Reddit, X, Gift. chicagotribune.com: Facebook, Bluesky, X, Print, Email, Gift. orlandosentinel.com: Facebook, Bluesky, X, Gift. canoncitydailyrecord.com and mcall.com: Facebook, X, Gift. twincities.com: Facebook, Bluesky, Reddit, X, Print, Email, More, Gift. The design keeps one order, Twin Cities' (Facebook, Bluesky, Reddit, X, Print, Email, Share more, Gift, then Link), and each site turns on the buttons it uses. Which buttons a site shows is its own choice and isn't drift.
+
+**Status:** Open (order only).
+
+### 39.4 Twin Cities' More button: 2.5px border, and it shrinks in the article header
+
+twincities.com's More button is white with a 2.5px `color/theme/primary` border, 43x43 in the bar at the end of the article (the other buttons are 40x40). In the condensed article header it shrinks to 20x20. The design: 40x40 with a 2px border, the same size in both bars.
+
+**Status:** Open.
 
 ---
 

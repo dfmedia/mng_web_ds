@@ -199,9 +199,9 @@
     {
      "name": "SocialButtons, Social Media Button, Button_Save",
      "where": "WordPress Elements, Menus and Parts (3788:44356, 3788:44313, 3788:44251)",
-     "status": "To review",
-     "updated": "2026-11-11",
-     "note": "The article share bar; moved to WordPress Elements by Karl 2026-11-11. Clean up the existing components in place (WordPress Elements uses them), checked against the 6 review sites."
+     "status": "To add",
+     "updated": "2026-11-12",
+     "note": "The article share bar. Cleaned up in place 2026-11-12 against the 6 review sites plus twincities.com: Social Media Button is Network (9) x Theme (Bold Coastal, Measured Vibrant, Modern Earthy) x interaction x inFocus; SocialButtons has a show/hide property per button; Button_Save is Checked x interaction x inFocus. Not exported yet. Drift entry 39."
     },
     {
      "name": "Action Button (older set)",
