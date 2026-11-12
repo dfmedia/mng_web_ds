@@ -2322,11 +2322,11 @@ ocregister.com shows the bookmark and then the share buttons with only an 8px ga
 
 **Status:** Open.
 
-### 39.6 Obituaries: share buttons 11.69px apart with 14.85px icons
+### 39.6 Obituaries: share buttons 11.69px apart with 14.85px icons; the design is 8px and 22px
 
-The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; ocregister.com and denverpost.com, the same Endless Tributes template) are 40x40 circles in `color/theme/primary` of the Endless Tributes palette (`#8D092D` on screen; hover `#C00D3D`, `color/theme/primary-light`), matching the design. They're 11.69px apart (`margin-right`) with 14.85px icons; the article share bar uses 8px and 18px. Obituary pages have no share bar in the masthead. Design for obituaries to be decided (Karl).
+The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; ocregister.com and denverpost.com, the same Endless Tributes template) are the same feature as the article share bar (Karl, 2026-11-12). Their colors match the design: 40x40 circles in the obituaries theme's `color/theme/primary` (`#8D092D` on screen), hover `color/theme/primary-light` (`#C00C3D`; `#C00D3D` on screen). The design (Karl, 2026-11-12): 40x40 buttons, 8px (`spacing/100`) apart, 22x22 icons centered. Production: 11.69px apart (`margin-right`), 14.85px icons. Whether the article share bar's icons also go from 18px to 22px is being compared in WordPress Elements ("Compare: article vs obituary share buttons").
 
-**Status:** Open (to decide).
+**Status:** Open.
 
 ---
 
