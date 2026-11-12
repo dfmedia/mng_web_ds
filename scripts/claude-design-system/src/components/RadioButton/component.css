@@ -1,0 +1,67 @@
+/* The whole control is the touch area (at least 40px tall, radius/utility); the focus ring is a 2px gray/black outline
+   outside it, around the circle and the label. Hover and pressed have no ring. */
+.mngds-radio-button {
+  position: relative; display: inline-flex; align-items: center; box-sizing: border-box; vertical-align: middle;
+  min-height: 40px; cursor: pointer;
+  gap: var(--mng-radio-button-label-true-root-gap);
+  padding: var(--mng-radio-button-label-false-root-padding-top) var(--mng-radio-button-base-root-padding-right)
+    var(--mng-radio-button-label-false-root-padding-bottom) var(--mng-radio-button-base-root-padding-left);
+  border-radius: var(--mng-radio-button-base-root-border-radius);
+}
+.mngds-radio-button--label {
+  padding-top: var(--mng-radio-button-label-true-root-padding-top);
+  padding-bottom: var(--mng-radio-button-label-true-root-padding-bottom);
+}
+.mngds-radio-button__input { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; opacity: 0; cursor: pointer; z-index: 1; }
+.mngds-radio-button--disabled, .mngds-radio-button--disabled .mngds-radio-button__input { cursor: default; }
+
+/* Circle: 16x16, round. Unselected: white with a 1px inside gray/200 border (6.6:1). */
+.mngds-radio-button__circle {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box;
+  width: var(--mng-radio-button-base-circle-width); height: var(--mng-radio-button-base-circle-height);
+  border-radius: var(--mng-radio-button-base-circle-border-radius);
+  background: var(--mng-radio-button-status-unselected-interaction-default-circle-background);
+  box-shadow: inset 0 0 0 var(--mng-radio-button-status-unselected-circle-border-width) var(--mng-radio-button-interaction-default-circle-border-color);
+}
+/* Selected: color/theme/primary circle with an 8px white dot, no border. */
+.mngds-radio-button--selected .mngds-radio-button__circle {
+  background: var(--mng-radio-button-status-selected-interaction-default-circle-background); box-shadow: none;
+}
+.mngds-radio-button__dot {
+  width: var(--mng-radio-button-status-selected-circle-dot-width); height: var(--mng-radio-button-status-selected-circle-dot-height);
+  border-radius: 50%; background: var(--mng-radio-button-interaction-default-circle-dot-background);
+}
+.mngds-radio-button__label {
+  font-family: var(--mng-radio-button-label-true-label-font-family);
+  font-size: var(--mng-radio-button-label-true-label-font-size);
+  font-weight: var(--mng-radio-button-label-true-label-font-weight);
+  line-height: var(--mng-radio-button-label-true-label-line-height);
+  color: var(--mng-radio-button-interaction-default-label-color);
+}
+
+/* InFocus (forced or keyboard focus): the ring, on any status. */
+.mngds-radio-button.is-infocus, .mngds-radio-button:has(.mngds-radio-button__input:focus-visible) {
+  box-shadow: 0 0 0 var(--mng-radio-button-infocus-true-root-border-width) var(--mng-radio-button-infocus-true-root-border-color);
+}
+/* Hover and pressed (forced or real): gray/min border when empty, primary-lighter when selected. No ring. */
+.mngds-radio-button--unselected.is-hover .mngds-radio-button__circle, .mngds-radio-button--unselected.is-pressed .mngds-radio-button__circle,
+.mngds-radio-button--unselected:not(.mngds-radio-button--disabled):hover .mngds-radio-button__circle,
+.mngds-radio-button--unselected:not(.mngds-radio-button--disabled):active .mngds-radio-button__circle {
+  box-shadow: inset 0 0 0 var(--mng-radio-button-status-unselected-circle-border-width) var(--mng-radio-button-interaction-hover-circle-border-color);
+}
+.mngds-radio-button--selected.is-hover .mngds-radio-button__circle, .mngds-radio-button--selected.is-pressed .mngds-radio-button__circle,
+.mngds-radio-button--selected:not(.mngds-radio-button--disabled):hover .mngds-radio-button__circle,
+.mngds-radio-button--selected:not(.mngds-radio-button--disabled):active .mngds-radio-button__circle {
+  background: var(--mng-radio-button-status-selected-interaction-hover-circle-background);
+}
+
+/* Disabled: gray/600 circle; gray/500 border (empty) or dot (selected); gray/300 label. */
+.mngds-radio-button--disabled .mngds-radio-button__circle {
+  background: var(--mng-radio-button-status-unselected-interaction-disabled-circle-background);
+  box-shadow: inset 0 0 0 var(--mng-radio-button-status-unselected-circle-border-width) var(--mng-radio-button-interaction-disabled-circle-border-color);
+}
+.mngds-radio-button--disabled.mngds-radio-button--selected .mngds-radio-button__circle {
+  background: var(--mng-radio-button-status-selected-interaction-disabled-circle-background); box-shadow: none;
+}
+.mngds-radio-button--disabled .mngds-radio-button__dot { background: var(--mng-radio-button-interaction-disabled-circle-dot-background); }
+.mngds-radio-button--disabled .mngds-radio-button__label { color: var(--mng-radio-button-interaction-disabled-label-color); }

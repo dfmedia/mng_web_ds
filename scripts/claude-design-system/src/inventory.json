@@ -319,10 +319,11 @@
      "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
     },
     {
-     "name": "Radio buttons",
-     "where": "Style Guide | Radio Buttons",
-     "status": "To design",
-     "note": "No radio component yet."
+     "name": "Radio Button",
+     "where": "Radio Buttons | 2026.11.12, 7589:29335",
+     "status": "In system",
+     "updated": "2026-11-12",
+     "component": "RadioButton"
     },
     {
      "name": "Form Field",

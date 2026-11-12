@@ -48,6 +48,8 @@
 - **Ads and page layout**
   - [28. Ad slots — sizes, lazy registration, disclosure label and mobile adhesion](#28-ad-slots--sizes-lazy-registration-disclosure-label-and-mobile-adhesion)
   - [29. Main content container width — Chicago Tribune vs. Denver Post](#29-main-content-container-width--chicago-tribune-vs-denver-post)
+- **Subscription checkout (Naviga)**
+  - [40. Radio button — payment-method choice: border contrast, no focus, keyboard and states](#40-radio-button--payment-method-choice-border-contrast-no-focus-keyboard-and-states)
 - **Reader Dashboard**
   - [30. Reader Dashboard — Typography (2026-09-10)](#30-reader-dashboard--typography-2026-09-10)
   - [31. Reader Dashboard — Modal](#31-reader-dashboard--modal)
@@ -2331,6 +2333,42 @@ The obituary page's "Share this obituary:" buttons (Facebook, Email, Copy link; 
 ### 39.7 Obituaries: a dotted blue line under each share button
 
 The obituary page's share buttons (Facebook, Email, Copy link; denverpost.com, checked on screen 2026-11-12) each have a 1px dotted `#003459` bottom border, a link underline style leaking onto the buttons. It shows as a faint dotted blue arc along the bottom of each dark-red circle. The design has no border or shadow on obituary share buttons at all (Karl, 2026-11-12: the obituary theme doesn't have them). Remove the dotted border.
+
+**Status:** Open.
+
+---
+
+## 40. Radio button — payment-method choice: border contrast, no focus, keyboard and states
+
+**Found:** 2026-11-12, while building the **Radio Button** component (main file, Radio Buttons page, `7589:29335`). The only radio buttons in production are on the subscription checkouts: the payment-method choice ("Credit/Debit Card", "Google Pay"). Our WordPress themes have no radio styles. Same rules on all 6 review sites (checked in Chrome, 2026-11-12): `checkout.<site>.com` for ocregister, denverpost and canoncitydailyrecord (`style_simple*.css`), `subscription.<site>.com` for chicagotribune, orlandosentinel and mcall (`style_tribunecustom*.css`).
+
+**Design (Figma):** a 16px circle in a control at least 40px tall (12px left and right; 12px above and below without a label, 8px with one). Unselected: `color/gray/max` fill, 1px inside `color/gray/200` border (6.6:1 on white). Selected: `color/theme/primary` circle with an 8px `color/gray/max` dot; hover and pressed `color/theme/primary-lighter`. Label Noto Sans SemiBold 18 / 24, `color/gray/100`, 8px from the circle. Disabled: `color/gray/600` circle, `color/gray/500` border or dot, `color/gray/300` label. Focus: a 2px `color/gray/black` ring outside the whole control.
+
+| | Production | Design |
+|---|---|---|
+| Border | 1px `#d6d6d6` (**1.4:1 on white, fails 3:1**) | 1px `color/gray/200` (6.6:1) |
+| Fill | `#f8f8f8` | `color/gray/max` |
+| Selected | 5px black dot on the light circle | `color/theme/primary` circle, 8px white dot |
+| Label gap | 10px (`margin-right`) | 8px (`spacing/100`; Karl, 2026-11-12: a tie, 8 chosen) |
+| Label | Lato (MNG checkouts) 18px / 600, line height 25.71px, `#333` | Noto Sans SemiBold 18, 24px line height, `color/gray/100` |
+| Hover, pressed, disabled | none | see Design |
+| Focus | **none: the input is `display: none`**, so it can't be reached or chosen with the keyboard | 2px `color/gray/black` ring |
+
+### 40.1 The radio input is hidden with `display: none`
+
+`.radio input[type=radio]{display:none}` removes the input from the keyboard and screen reader order; only the styled `span.radio__switch` shows. Keep a real `input type="radio"` in the tab order (visually hidden, not `display: none`), grouped by `name` in a `fieldset` with a `legend`, and show the focus ring on the control.
+
+**Status:** Open.
+
+### 40.2 The circle's border fails non-text contrast
+
+`#d6d6d6` on white is 1.4:1; WCAG 1.4.11 needs 3:1. Use `color/gray/200` (`#5E5D5C`, 6.6:1).
+
+**Status:** Open.
+
+### 40.3 Selected, hover, pressed and disabled states
+
+Production has no hover, pressed or disabled styles, and shows selected as a 5px black dot. Use the design's states (above). The Mercury News + East Bay Times have the same light `primary-lighter` as the check box (entry 37): a white dot on it is 1.6:1.
 
 **Status:** Open.
 

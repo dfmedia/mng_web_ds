@@ -64,6 +64,7 @@ COMPONENTS = [
     ("verification-code", "VerificationCode", "Form Field Assembly / Verification Code", "Core"),
     ("checkbox-terms", "CheckboxTerms", "Form Field Assembly / Checkbox + Terms", "Core"),
     ("toggle-switch", "ToggleSwitch", "Toggle Switch", "Core"),
+    ("radio-button", "RadioButton", "Radio Button", "Core"),
     ("dropdown-menu-item", "DropdownMenuItem", "Dropdown Menu Item", "Core"),
     ("dropdown-menu", "DropdownMenu", "Dropdown Menu", "Core"),
     # WordPress Elements

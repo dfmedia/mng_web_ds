@@ -1,0 +1,32 @@
+<!-- @dsCard group="Core" height=760 subtitle="Figma: Radio Button · 20 variants (status × interaction × inFocus × label)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Radio Button</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var COLS = [['enabled', 'Default', 'False'], ['hovered', 'hover', 'False'], ['pressed', 'pressed', 'False'], ['focused', 'Default', 'True'], ['disabled', 'disabled', 'False']];
+  function row(status, withLabel) {
+    return COLS.map(function (c) {
+      return { label: status + (withLabel ? ' + label' : '') + ' / ' + c[0],
+        node: h(NS.RadioButton, { status: status, interaction: c[1], inFocus: c[2], name: 'doc-' + status + withLabel + c[0], label: withLabel ? 'Radio label' : undefined, 'aria-label': withLabel ? undefined : status + ' ' + c[0] }) };
+    });
+  }
+  function Demo() {
+    var s = React.useState('Credit/Debit Card');
+    return h('fieldset', { style: { border: 0, margin: 0, padding: 0 } },
+      h('legend', { style: { fontFamily: 'var(--mng-font-family-noto-sans)', fontSize: 'var(--mng-font-size-16)', fontWeight: 'var(--mng-font-weight-bold)', color: 'var(--mng-color-gray-min)' } }, 'Payment'),
+      ['Credit/Debit Card', 'Google Pay'].map(function (m) {
+        return h('div', { key: m }, h(NS.RadioButton, { name: 'payment', value: m, label: m, status: s[0] === m ? 'selected' : 'unselected', onChange: function () { s[1](m); } }));
+      }));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'status × interaction', note: '16px circle in a control at least 40px tall (radius/utility). Focus shows a 2px gray/black ring around the whole control (hover and pressed have none); selected uses color/theme/primary with a white dot, and primary-lighter on hover and pressed.' },
+      [['unselected', false], ['selected', false], ['unselected', true], ['selected', true]].map(function (r) { return h(I.Specimen, { key: r[0] + r[1], items: row(r[0], r[1]) }); })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Click a choice, or Tab into the group and use the arrow keys.' },
+      h(I.Specimen, { items: [{ label: 'Payment method (a fieldset with a legend)', node: h(Demo) }] }))));
+</script>
+</body>
+</html>

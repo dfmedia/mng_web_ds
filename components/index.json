@@ -306,6 +306,22 @@
       "exported": "2026-11-04"
     },
     {
+      "slug": "radio-button",
+      "name": "Radio Button",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/radio-button/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7589:29335",
+        "set": "Radio Button"
+      },
+      "variants": 20,
+      "instances": 5,
+      "knownIssues": 3,
+      "exported": "2026-11-12"
+    },
+    {
       "slug": "toggle-switch",
       "name": "Toggle Switch",
       "group": "forms",
