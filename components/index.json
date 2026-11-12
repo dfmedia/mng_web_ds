@@ -418,6 +418,22 @@
       "exported": "2026-10-28"
     },
     {
+      "slug": "popover",
+      "name": "Popover",
+      "group": "overlays",
+      "layer": "core",
+      "path": "components/core/popover/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7574:28804",
+        "set": "Popover"
+      },
+      "variants": 2,
+      "instances": 2,
+      "knownIssues": 1,
+      "exported": "2026-11-12"
+    },
+    {
       "slug": "tooltip",
       "name": "Tooltip",
       "group": "overlays",
@@ -592,6 +608,54 @@
       "instances": 0,
       "knownIssues": 2,
       "exported": "2026-11-03"
+    },
+    {
+      "slug": "button-save",
+      "name": "Button_Save",
+      "group": "buttons",
+      "layer": "wordpress",
+      "path": "components/wordpress/button-save/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3788:44251",
+        "set": "Button_Save"
+      },
+      "variants": 8,
+      "instances": 19,
+      "knownIssues": 0,
+      "exported": "2026-11-12"
+    },
+    {
+      "slug": "social-buttons",
+      "name": "SocialButtons",
+      "group": "buttons",
+      "layer": "wordpress",
+      "path": "components/wordpress/social-buttons/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3788:44356",
+        "set": "SocialButtons"
+      },
+      "variants": 5,
+      "instances": 14,
+      "knownIssues": 0,
+      "exported": "2026-11-12"
+    },
+    {
+      "slug": "social-media-button",
+      "name": "Social Media Button",
+      "group": "buttons",
+      "layer": "wordpress",
+      "path": "components/wordpress/social-media-button/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3788:44313",
+        "set": "Social Media Button"
+      },
+      "variants": 120,
+      "instances": 238,
+      "knownIssues": 1,
+      "exported": "2026-11-12"
     },
     {
       "slug": "1col-article-card",

@@ -1822,6 +1822,94 @@
       "breakpoints": null,
       "knownIssues": [],
       "production": "Used in the Embedded Login designs; not checked against production."
+    },
+    {
+      "slug": "social-media-button",
+      "name": "Social Media Button",
+      "group": "buttons",
+      "layer": "wordpress",
+      "order": 10,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3788:44313",
+      "documentationFrame": "3788:44306",
+      "description": "One round share button of the article share bar. Network = Facebook, Bluesky, Reddit, X, Print, Email, LinkedIn, Link, Gift, Share more; Theme = Bold Coastal, Measured Vibrant, Modern Earthy (the three button styles; each site's colors come from its color mode); interaction = Default, hover, pressed; inFocus adds the focus ring. Cleaned up in place 2026-11-12 against the 6 review sites plus twincities.com.",
+      "rules": [
+        "**Size:** 40x40, fully round (CSS `border-radius: 50%`). Icons 18px icon-font glyphs, centered (gift 22px), matching production (Karl, 2026-11-12).",
+        "**Bold Coastal** (OC, Denver, Twin Cities, Endless Tributes): `color/theme/primary` fill, `color/gray/max` icon, no border; hover and pressed `color/theme/primary-light`. Share more: `color/gray/max` with a 2px inside `color/theme/primary` border and a `color/theme/primary` icon; hover and pressed fill `color/theme/primary`, icon `color/gray/max`.",
+        "**Measured Vibrant** (Chicago, Orlando): no fill, 1px inside `color/theme/primary-dark` border, `color/theme/primary` icon; hover and pressed fill `color/theme/primary`, icon `color/gray/max`.",
+        "**Modern Earthy** (Cañon City, Morning Call): no fill, 2px inside border and icon in the network's current brand color (Karl, 2026-11-12): Facebook #1877F2, Bluesky #1185FE, Reddit #FF4500, X `color/gray/black`, LinkedIn #0A66C2; Print, Email, Share more, Gift and Link `color/theme/primary`. Hover and pressed fill with that color, icon `color/gray/max`. Brand colors are vendor colors, not MNG tokens.",
+        "**Focus ring:** 2px `color/gray/black`, 1px outside the circle, round (CSS `outline: 2px solid; outline-offset: 1px`).",
+        "**Accessibility:** a link or button named for its action (\"Share on Facebook\", \"Share by email\", \"Print\", \"Copy link\", \"Gift this article\", \"More share options\"); the icon is decorative. Icons on the outline styles are graphics and need 3:1."
+      ],
+      "breakpoints": null,
+      "knownIssues": [],
+      "production": "Article share bars (`#sharing-sticky`, `#sharing-bottom`) checked on the 6 review sites plus twincities.com, 2026-11-12. Differences: design-vs-production entry 39."
+    },
+    {
+      "slug": "button-save",
+      "name": "Button_Save",
+      "group": "buttons",
+      "layer": "wordpress",
+      "order": 11,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3788:44251",
+      "documentationFrame": "3788:44243",
+      "description": "The Save (bookmark) button at the start of the article share bar. Checked = no (bookmark3 outline) or yes (bookmark2 filled); interaction = Default, hover, pressed; inFocus adds the focus ring.",
+      "rules": [
+        "**Size:** 40x40, 8px (`spacing/100`) side padding; the bookmark is a 24px icon-font glyph, centered, matching production.",
+        "**Colors:** icon `color/theme/primary`; hover and pressed `color/theme/primary-light`. No fill, no border.",
+        "**Focus ring:** 2px `color/gray/black`, 1px outside the 40x40 box, square corners.",
+        "**Accessibility:** a toggle button, `aria-pressed` true when saved; named \"Save this article to read later\" (production's label)."
+      ],
+      "breakpoints": null,
+      "knownIssues": [],
+      "production": "Shown only on ocregister.com of the review sites (2026-11-12): 24px bookmark, `color/theme/primary`, hover `primary-light`."
+    },
+    {
+      "slug": "social-buttons",
+      "name": "SocialButtons",
+      "group": "buttons",
+      "layer": "wordpress",
+      "order": 12,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "3788:44356",
+      "documentationFrame": "3793:48498",
+      "description": "The article share bar (in the condensed article header and at the end of the article) and the obituary \"Share this obituary\" buttons. Theme = Bold Coastal, Measured Vibrant, Modern Earthy, Endless Tributes, TwinCities; one show/hide property per button (Save, Facebook, Bluesky, Reddit, X, Print, Email, LinkedIn, Link, Gift, Share more) and More open. Built from Button_Save, Social Media Button and the Popover.",
+      "rules": [
+        "**Row:** 40px tall, buttons 8px (`spacing/100`) apart (production 6.25px, design-vs-production 39.1).",
+        "**Order:** Save, then Facebook, Bluesky, Reddit, X, Print, Email, LinkedIn, Link, then Gift, then More (Karl, 2026-11-12). Each site turns on the buttons it uses.",
+        "**Save:** Button_Save followed by a 1px `color/gray/500` divider, 40px tall (Karl, 2026-11-12; production has none, 39.5).",
+        "**More rule (Karl, 2026-11-12):** up to 6 share buttons show with no More; with more than 6, the first 6 show (Gift is always one of them) and More is the 7th, holding the rest.",
+        "**More panel:** More open shows a Popover, Placement=Bottom, centered on the More button with 8px between the button and the caret, holding the extra buttons in a row 8px apart. Esc or a click outside closes it and focus returns to More.",
+        "**Themes:** Bold Coastal, Endless Tributes and TwinCities use the Bold Coastal button style; colors come from each site's color mode (obituaries: the Endless Tributes theme). Measured Vibrant and Modern Earthy use their own styles.",
+        "**Obituaries:** the \"Share this obituary:\" buttons (Facebook, Email, Copy link) are the same feature: Theme=Endless Tributes, 40x40, 8px apart, 18px icons (Karl, 2026-11-12).",
+        "**Accessibility:** a group named \"Share this article\" (or \"Share this obituary\"); More is a button with `aria-expanded` and `aria-controls` pointing at the panel."
+      ],
+      "breakpoints": null,
+      "knownIssues": [],
+      "production": "Checked 2026-11-12 on the 6 review sites plus twincities.com (article bars) and the ocregister.com and denverpost.com obituary pages. Differences: design-vs-production entry 39 (39.1–39.6)."
+    },
+    {
+      "slug": "popover",
+      "name": "Popover",
+      "group": "overlays",
+      "layer": "core",
+      "order": 4,
+      "file": "jFHYqhZbJjvWQmDI4myCsd",
+      "node": "7574:28804",
+      "documentationFrame": "7574:28806",
+      "description": "A small floating panel that holds interactive content (buttons or links), opened by a trigger button. The Toggletip's look with a Content slot. Placement = Top, Bottom.",
+      "rules": [
+        "**Look:** the Toggletip's: `color/gray/max` box, 1px inside border (the Toggletip's border color), `radius/sm` (4px), `shadow/lg`, 12x6 caret centered on the box pointing at the trigger.",
+        "**Padding and gaps:** 8px (`spacing/100`) inside the box; items in the Content slot sit in a row, 8px apart; the box hugs them.",
+        "**Placement:** Bottom (below the trigger, caret on top) or Top (above it, caret below); centered on the trigger, 8px between the trigger and the caret tip.",
+        "**Not a tooltip:** a Popover takes keyboard focus; use Tooltip or Toggletip for text that describes a control (Karl, 2026-11-12).",
+        "**Behavior:** the trigger is a button with `aria-expanded` and `aria-controls`; when it opens, focus moves to the first item; Tab and the arrow keys move between items; Esc or a click outside closes it and returns focus to the trigger.",
+        "**First use:** the share bar's More panel (SocialButtons, WordPress Elements)."
+      ],
+      "breakpoints": null,
+      "knownIssues": [],
+      "production": "New in the design (2026-11-12). Production's Twin Cities More panel is the closest pattern and is broken (design-vs-production 39.4)."
     }
   ]
 }
