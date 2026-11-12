@@ -15,7 +15,8 @@ h(Masthead, { state: 'Scrolled', device: 'XL-Desktop' })                        
 | `page` | `'Home'`, `'SectionFront'`, `'Article'`, `'Obituaries'`, `'Dashboard'` | `'Home'` |
 | `sectionName` | Section Front / Article: the section name (weather row at 1040px and up; Article's condensed bar) | `'Section Name'` |
 | `articleTitle` | Article: the headline in the condensed bar at 1040px and up (one line, ellipsis); `''` hides it | the Figma sample |
-| `onShare(name)`, `onSave`, `saved` | Article SocialButtons: `name` is the icon name (`facebook`, `email`, `x`, `reddit`, `gift2-share-01`, `link`); Save is `aria-pressed` | |
+| `onShare(network, e)`, `onSave`, `saved` | Article share bar (the `SocialButtons` component): `network` is `'Facebook'`, `'Reddit'`, `'X'`, `'Email'`, `'Link'` or `'Gift'`; `saved` / `onSave` are Save's state | |
+| `shareTheme`, `shareNetworks` | passed to `SocialButtons` as `theme` and `networks` | `'Bold Coastal'`; Facebook, Reddit, X, Email, Link, Gift |
 | `pageTitle` | Obituaries: the page title | `'Obituaries'` |
 | `obitsSearchPlaceholder`, `onObitsSearch(query)`, `onObitsFilter` | Obituaries: the search form (`role="search"`, labelled input) and the filter button | `'Search Obituaries by Name'` |
 | `submitObituaryHref`, `onSubmitObituary` | Obituaries: Submit an Obituary | `'#'` |

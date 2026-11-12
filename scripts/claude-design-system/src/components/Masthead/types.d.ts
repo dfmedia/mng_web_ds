@@ -51,8 +51,12 @@ export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   sectionName?: string;
   /** Article: the headline in the condensed bar at 1040px and up; '' hides it. */
   articleTitle?: string;
-  /** Article SocialButtons: called with the icon name ('facebook', 'email', 'x', 'reddit', 'gift2-share-01', 'link'). */
-  onShare?: (name: string, e: React.MouseEvent) => void;
+  /** Article share bar (SocialButtons): called with the network ('Facebook', 'Reddit', 'X', 'Email', 'Link', 'Gift'). */
+  onShare?: (network: string, e: React.MouseEvent) => void;
+  /** SocialButtons theme for the article bar. Default 'Bold Coastal' (as in Figma). */
+  shareTheme?: 'Bold Coastal' | 'Measured Vibrant' | 'Modern Earthy' | 'Endless Tributes' | 'TwinCities';
+  /** SocialButtons networks for the article bar. Default Facebook, Reddit, X, Email, Link, Gift. */
+  shareNetworks?: string[];
   onSave?: (e: React.MouseEvent) => void;
   saved?: boolean;
   /** Obituaries: the page title. Default 'Obituaries'. */

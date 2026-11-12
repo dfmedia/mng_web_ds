@@ -11,9 +11,8 @@ var MASTHEAD_TRENDING = ['Dragon sightings near Fakeville shire', 'Pseudonyms up
 var MASTHEAD_TORNADO = 'M1.82 3.98C1.70 3.77 1.62 3.52 1.62 3.25C1.62 2.82 1.81 2.47 2.04 2.21C2.26 1.96 2.56 1.75 2.87 1.58C3.50 1.24 4.36 0.96 5.34 0.73C7.33 0.27 10.04 0 13 0C15.95 0 18.66 0.27 20.65 0.73C21.63 0.96 22.49 1.24 23.12 1.58C23.43 1.75 23.73 1.96 23.95 2.21C24.18 2.47 24.37 2.82 24.37 3.25C24.37 4.89 23.80 5.86 23.34 6.66C23.27 6.77 23.21 6.88 23.15 6.99C22.92 7.41 22.73 7.81 22.64 8.30C22.57 8.68 22.55 9.15 22.62 9.75C22.87 9.72 23.13 9.79 23.32 9.98C23.64 10.30 23.64 10.81 23.32 11.13C23.22 11.23 23.10 11.34 22.97 11.45C23.30 13.26 23.11 14.68 22.48 15.86C21.75 17.22 20.48 18.10 19.20 18.87C18.87 19.07 18.53 19.27 18.19 19.46C15.85 20.82 13.44 22.21 12.12 25.48C12.03 25.71 11.84 25.89 11.60 25.96C11.37 26.03 11.11 25.99 10.91 25.85L10.91 25.85L10.90 25.85L10.90 25.84L10.88 25.83C10.87 25.82 10.85 25.81 10.82 25.79C10.78 25.76 10.72 25.71 10.64 25.64C10.49 25.52 10.29 25.33 10.07 25.09C9.62 24.62 9.09 23.90 8.73 22.95C8.49 22.33 8.34 21.62 8.32 20.85C8.20 20.70 8.12 20.51 8.12 20.31L8.12 20.30L8.12 20.30L8.12 20.29L8.12 20.28C8.12 20.27 8.12 20.26 8.12 20.24C8.12 20.22 8.13 20.19 8.13 20.15C8.14 20.08 8.16 19.99 8.20 19.89C8.25 19.77 8.33 19.64 8.44 19.52C8.59 18.73 8.88 17.87 9.37 16.97C9.19 16.87 9.04 16.71 8.97 16.50C8.83 16.08 9.06 15.62 9.49 15.47C9.85 15.35 10.18 15.28 10.49 15.24C10.57 15.13 10.65 15.03 10.74 14.92C11.20 14.35 11.39 13.89 11.45 13.53C11.50 13.18 11.43 12.86 11.25 12.52C10.84 11.78 9.92 11.05 8.63 10.20C8.31 9.99 7.98 9.78 7.64 9.56C7.57 9.52 7.51 9.48 7.44 9.43C6.67 9.27 5.99 9.08 5.43 8.89C5.00 8.75 4.77 8.29 4.91 7.86C4.93 7.82 4.94 7.78 4.96 7.74C4.84 7.64 4.71 7.55 4.59 7.45C3.43 6.51 2.37 5.39 1.82 3.98ZM5.03 5.68C5.21 5.85 5.41 6.02 5.61 6.18C6.38 6.80 7.22 7.36 8.07 7.91C10.58 8.42 13.98 8.72 16.90 8.14C17.34 8.05 17.77 8.33 17.85 8.77C17.94 9.21 17.66 9.64 17.22 9.73C15.24 10.12 13.09 10.15 11.11 9.98C11.76 10.51 12.32 11.09 12.67 11.74C13.00 12.35 13.16 13.02 13.05 13.77C12.97 14.30 12.76 14.83 12.42 15.37C12.54 15.40 12.66 15.43 12.77 15.45L12.79 15.46C13.57 15.65 14.19 15.80 15.18 15.47C15.60 15.33 16.06 15.56 16.20 15.99C16.35 16.41 16.12 16.87 15.69 17.02C14.25 17.50 13.24 17.25 12.40 17.04L12.39 17.03C12.03 16.94 11.70 16.86 11.35 16.83C10.74 17.73 10.37 18.54 10.17 19.27C10.40 19.34 10.65 19.44 10.92 19.58C11.32 19.78 11.48 20.27 11.28 20.67C11.08 21.07 10.60 21.23 10.19 21.03C10.11 20.99 10.03 20.95 9.95 20.92C9.97 21.48 10.09 21.96 10.25 22.37C10.47 22.97 10.80 23.46 11.10 23.82C12.72 20.72 15.30 19.24 17.42 18.03C17.75 17.84 18.06 17.66 18.37 17.48C19.62 16.72 20.54 16.03 21.05 15.09C21.40 14.45 21.59 13.62 21.47 12.46C20.17 13.17 18.37 13.81 16.25 13.81C15.80 13.81 15.43 13.44 15.43 13C15.43 12.55 15.80 12.18 16.25 12.18C18.34 12.18 20.06 11.45 21.15 10.77C21.14 10.75 21.14 10.73 21.14 10.72C20.92 9.62 20.91 8.76 21.04 8.01C21.18 7.26 21.46 6.69 21.73 6.20C21.80 6.07 21.87 5.95 21.94 5.83C22.05 5.65 22.15 5.47 22.24 5.30C21.77 5.47 21.23 5.63 20.65 5.76C18.66 6.22 15.95 6.5 13 6.5C10.04 6.5 7.33 6.22 5.34 5.76C5.24 5.74 5.13 5.71 5.03 5.68ZM22.69 3.25C22.62 3.18 22.51 3.10 22.34 3.01C21.90 2.77 21.21 2.53 20.28 2.31C18.45 1.89 15.87 1.62 13 1.62C10.12 1.62 7.54 1.89 5.71 2.31C4.78 2.53 4.09 2.77 3.65 3.01C3.48 3.10 3.37 3.18 3.30 3.25C3.37 3.31 3.48 3.39 3.65 3.48C4.09 3.72 4.78 3.96 5.71 4.18C7.54 4.60 10.12 4.87 13 4.87C15.87 4.87 18.45 4.60 20.28 4.18C21.21 3.96 21.90 3.72 22.34 3.48C22.51 3.39 22.62 3.31 22.69 3.25Z';
 var MASTHEAD_SECTION_NAV = ['Food & Drink', 'Movies', 'Music', 'Theater & Arts', 'Casinos', 'Travel', 'Books', 'Comics', 'Events',
   'Amusements Parks', 'Shopping'];
-/* SocialButtons (Article, condensed bar at 1040px and up): production icon-font names, as in Figma. */
-var MASTHEAD_SOCIAL = [['facebook', 'Share on Facebook'], ['email', 'Share by email'], ['x', 'Share on X'], ['reddit', 'Share on Reddit'],
-  ['gift2-share-01', 'Gift this article'], ['link', 'Copy link']];
+/* SocialButtons (Article, condensed bar at 1040px and up): the networks Figma's Masthead shows, in SocialButtons' order. */
+var MASTHEAD_SOCIAL = ['Facebook', 'Reddit', 'X', 'Email', 'Link', 'Gift'];
 /* Endless Tributes "powered by" logo (partner artwork, WordPress Elements 456:3443), exported 2026-10-30, 106x28. */
 var MASTHEAD_ET_LOGO = [
   ['#141414', 1, 'M35 8H39.9V10H35V13.2H40.4V15.2H32.9V3.1H40.3V5H35V8Z M44.4 3.1L50.5 11.4V3.1H52.6V15.2H50.7L44.6 6.8V15.2H42.5V3.1H44.4Z M65.2 9.1C65.2 12.6 62.7 15.2 59.2 15.2H55.2V3.1H59.2C62.7 3.1 65.2 5.6 65.2 9.1ZM63.1 9.1C63.1 6.9 61.6 5 59.2 5H57.3V13.2H59.2C61.6 13.2 63.1 11.3 63.1 9.1Z M67.1 3.1H69.2V13.2H74.4V15.2H67.1V3.1Z M78 8H82.9V10H78V13.2H83.4V15.2H75.9V3.1H83.3V5H78V8Z M89.3 10.1C87.5 9.5 85.5 8.5 85.5 6.3C85.5 4.6 87 2.9 89.5 2.9C92 2.9 93.5 4.8 93.5 4.8L92 6.2C92 6.2 91 4.9 89.5 4.9C88.4 4.9 87.6 5.5 87.6 6.3C87.6 7.4 88.6 7.7 90.2 8.3C92.1 9 93.7 9.8 93.7 12C93.7 14.2 91.7 15.4 89.4 15.4C86.3 15.4 84.9 12.9 84.9 12.9L86.5 11.6C86.5 11.6 87.5 13.4 89.4 13.4C90.5 13.4 91.6 13 91.6 12C91.6 11 90.8 10.6 89.3 10.1Z M99.7 10.1C97.9 9.5 95.9 8.5 95.9 6.3C95.9 4.6 97.4 2.9 99.9 2.9C102.5 2.9 103.9 4.8 103.9 4.8L102.4 6.2C102.4 6.2 101.4 4.9 99.9 4.9C98.8 4.9 98 5.5 98 6.3C98 7.4 99 7.7 100.7 8.3C102.5 9 104.1 9.8 104.1 12C104.1 14.2 102.1 15.4 99.8 15.4C96.8 15.4 95.3 12.9 95.3 12.9L96.9 11.6C96.9 11.6 98 13.4 99.8 13.4C100.9 13.4 102 13 102 12C102 11 101.2 10.6 99.7 10.1Z M26.2 2.1H1.9V26.5H26.2V2.1Z'],
@@ -21,16 +20,11 @@ var MASTHEAD_ET_LOGO = [
   ['#ffffff', 1, 'M3.6 7.8V12.3V16.2V20.6V24.6H7.4H13.5V20.6H7.4V16.2H10.9V12.3H7.4V7.8H13.5V3.9H7.4H3.6V7.8Z'],
   ['#ffffff', 0.5, 'M24.3 20.6V16.2V12.3V7.8V3.9H20.4H18V7.8H20.4V12.3H12.8V16.2H20.4V20.6H18V24.6H20.4H24.3V20.6Z']];
 
-/* SocialButtons (Theme = Bold Coastal, 328x40): Save (bookmark3, color/theme/primary, color/gray/500 rule on its right),
-   then six 40px color/theme/primary circles with a 2px color/theme/primary-dark bottom edge and 22px color/gray/max icons. */
+/* The condensed article bar's share bar is the SocialButtons component (Theme = Bold Coastal in Figma; Save, then the
+   share buttons). Karl, 2026-11-12: use SocialButtons here instead of the Masthead's own copy. */
 function MastheadSocial(p) {
-  return h('div', { className: 'mngds-masthead__social', role: 'group', 'aria-label': p.label || 'Share this article' },
-    h('button', { type: 'button', className: 'mngds-masthead__save', 'aria-label': p.saveLabel || 'Save article', 'aria-pressed': p.saved ? 'true' : 'false',
-      onClick: p.onSave }, h(Icon, { name: 'bookmark3', size: 22 })),
-    MASTHEAD_SOCIAL.map(function (s) {
-      return h('button', { key: s[0], type: 'button', className: 'mngds-masthead__share', 'aria-label': s[1],
-        onClick: p.onShare ? function (e) { p.onShare(s[0], e); } : undefined }, h(Icon, { name: s[0], size: 22 }));
-    }));
+  return h(SocialButtons, { className: 'mngds-masthead__social', theme: p.theme || 'Bold Coastal', networks: p.networks || MASTHEAD_SOCIAL,
+    saved: p.saved, onSave: p.onSave, onShare: p.onShare, label: p.label });
 }
 
 /* Article, condensed at 1040px and up: hamburger (64px, no title), 176x36 logo, "Section Name | headline" (Noto Serif Bold 16,
@@ -156,7 +150,7 @@ function MastheadBar(p) {
 var MASTHEAD_PROPS = ['page', 'device', 'state', 'adFree', 'ads', 'sticky', 'scrollRoot', 'scrollThreshold', 'navItems', 'navLabel', 'trending', 'trendingLabel',
   'date', 'temperature', 'eEditionLabel', 'eEditionHref', 'sectionsLabel', 'onMenuClick', 'menuOpen', 'menuId', 'onSearchClick', 'onSubscribe', 'onLogIn',
   'subscribeHref', 'logInHref', 'onAccountClick', 'user', 'logo', 'siteName', 'homeHref', 'renderAd', 'className', 'sectionName', 'articleTitle',
-  'onShare', 'onSave', 'saved', 'pageTitle', 'obitsSearchPlaceholder', 'onObitsSearch', 'onObitsFilter', 'submitObituaryHref', 'onSubmitObituary',
+  'onShare', 'onSave', 'saved', 'shareTheme', 'shareNetworks', 'pageTitle', 'obitsSearchPlaceholder', 'onObitsSearch', 'onObitsFilter', 'submitObituaryHref', 'onSubmitObituary',
   'dashboardLabel', 'onDashboardMenuClick', 'dashboardMenuOpen'];
 
 function Masthead(props) {
@@ -199,7 +193,7 @@ function Masthead(props) {
   };
   var extra = {
     article: { sectionName: sectionName, articleTitle: props.articleTitle != null ? props.articleTitle : 'Roughly forty characters of the article title',
-      social: { onShare: props.onShare, onSave: props.onSave, saved: props.saved } },
+      social: { onShare: props.onShare, onSave: props.onSave, saved: props.saved, theme: props.shareTheme, networks: props.shareNetworks } },
     obits: { id: props.id ? props.id + '-obits-search' : undefined, placeholder: props.obitsSearchPlaceholder || 'Search Obituaries by Name',
       onSearch: props.onObitsSearch, onFilter: props.onObitsFilter, submitHref: props.submitObituaryHref, onSubmit: props.onSubmitObituary },
     navMenu: { label: props.dashboardLabel, onClick: props.onDashboardMenuClick, open: props.dashboardMenuOpen }
