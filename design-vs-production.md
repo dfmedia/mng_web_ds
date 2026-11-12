@@ -2286,9 +2286,9 @@ The trigger is a button with `aria-haspopup="listbox"` and `aria-expanded`, name
 
 **Found:** 2026-11-12, checking one article on each of the 6 review sites plus twincities.com at desktop width (1728–1920px). Both share bars were read: the one in the condensed article header and the one at the end of the article (`#sharing-sticky`, `#sharing-bottom`); they match.
 
-**Where:** article pages, every theme. Figma: WordPress Elements, Menus and Parts: `SocialButtons` (`3788:44356`), `Social Media Button` (`3788:44313`), `Button_Save` (`3788:44251`), cleaned up 2026-11-12 to match production: 40px round buttons, 18px icons (gift 22px), Bold Coastal filled with the theme color (hover `color/theme/primary-light`), Measured Vibrant outlined in `color/theme/primary-dark` with a `color/theme/primary` icon (hover fills `color/theme/primary`), Modern Earthy outlined 2px in each network's brand color (hover fills it). Save (only shown on ocregister.com) is a 24px bookmark in the theme color with no divider.
+**Where:** article pages, every theme. Figma: WordPress Elements, Menus and Parts: `SocialButtons` (`3788:44356`), `Social Media Button` (`3788:44313`), `Button_Save` (`3788:44251`), cleaned up 2026-11-12 to match production: 40px round buttons, 18px icons (gift 22px), Bold Coastal filled with the theme color (hover `color/theme/primary-light`), Measured Vibrant outlined in `color/theme/primary-dark` with a `color/theme/primary` icon (hover fills `color/theme/primary`), Modern Earthy outlined 2px in each network's brand color (hover fills it). Save (only shown on ocregister.com) is a 24px bookmark in the theme color, followed by a 1px `color/gray/500` divider (Karl, 2026-11-12: the divider is supposed to be in production).
 
-**Matches production:** button size (40x40, round), icon size (18px icon-font glyphs; the gift is a 22px-tall image), theme colors, hover fills, and the Save button.
+**Matches production:** button size (40x40, round), icon size (18px icon-font glyphs; the gift is a 22px-tall image), theme colors and hover fills. Cañon City renders the NEPA-PMP palette (primary `#3F51B5`, primary-dark `#32408F`; Subscribe button `#32408F` on screen), so its Gift outline in `color/theme/primary` is right.
 
 ### 39.1 Space between share buttons: 6.25px; the design is 8px
 
@@ -2311,6 +2311,12 @@ ocregister.com: Facebook, X, Reddit, Print, Gift. denverpost.com: Facebook, Redd
 ### 39.4 Twin Cities' More button: 2.5px border, and it shrinks in the article header
 
 twincities.com's More button is white with a 2.5px `color/theme/primary` border, 43x43 in the bar at the end of the article (the other buttons are 40x40). In the condensed article header it shrinks to 20x20. The design: 40x40 with a 2px border, the same size in both bars.
+
+**Status:** Open.
+
+### 39.5 Save: no divider between Save and the share buttons
+
+ocregister.com shows the bookmark and then the share buttons with only an 8px gap. The design has a 1px `color/gray/500` divider, 40px tall, right after the Save button (Karl, 2026-11-12: it's supposed to be in production).
 
 **Status:** Open.
 
