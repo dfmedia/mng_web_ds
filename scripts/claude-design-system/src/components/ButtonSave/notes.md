@@ -1,0 +1,4 @@
+- Figma name Button_Save (WordPress Elements). Cleaned up in place 2026-11-12 (Karl): the old State / Theme properties (and the "Defaul" typo) became Checked × interaction × inFocus.
+- Matches production (ocregister.com, the only review site showing Save): 24px bookmark, color/theme/primary, hover primary-light.
+- In the share bar it's followed by a 1px color/gray/500 divider (Karl, 2026-11-12; production has none, design-vs-production 39.5).
+- A toggle button: `aria-pressed` follows `checked`.

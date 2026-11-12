@@ -1,0 +1,15 @@
+/* A 40px row, buttons 8px (spacing/100) apart. Save: Button_Save + a 1px gray/500 divider, 40px tall. */
+.mngds-social-buttons { display: inline-flex; align-items: center; gap: var(--mng-social-buttons-base-root-gap); height: var(--mng-social-buttons-base-root-height); }
+.mngds-social-buttons__save { display: inline-flex; align-items: center; }
+.mngds-social-buttons__divider { display: block; flex-shrink: 0; width: var(--mng-social-buttons-base-save-divider-width); height: var(--mng-social-buttons-base-save-divider-height); background: var(--mng-social-buttons-base-save-divider-background); }
+.mngds-social-buttons__more { position: relative; display: inline-flex; }
+.mngds-social-buttons__panel-items { display: flex; align-items: center; gap: var(--mng-spacing-100); }
+/* Obituaries (theme 'Endless Tributes'): the filled style in the Endless Tributes colors (color/tributes/primary,
+   hover primary-light), which the component tokens can't pick up from a page theme. */
+.mngds-social-buttons--endless-tributes .mngds-social-media-button { background: var(--mng-color-tributes-primary); color: var(--mng-color-gray-max); }
+.mngds-social-buttons--endless-tributes .mngds-social-media-button:hover, .mngds-social-buttons--endless-tributes .mngds-social-media-button:active,
+.mngds-social-buttons--endless-tributes .mngds-social-media-button.is-hover, .mngds-social-buttons--endless-tributes .mngds-social-media-button.is-pressed { background: var(--mng-color-tributes-primary-light); }
+.mngds-social-buttons--endless-tributes .mngds-social-media-button--network-share-more { background: var(--mng-color-gray-max); color: var(--mng-color-tributes-primary); box-shadow: inset 0 0 0 2px var(--mng-color-tributes-primary); }
+.mngds-social-buttons--endless-tributes .mngds-social-media-button--network-share-more:hover, .mngds-social-buttons--endless-tributes .mngds-social-media-button--network-share-more.is-pressed { background: var(--mng-color-tributes-primary); color: var(--mng-color-gray-max); }
+.mngds-social-buttons--endless-tributes .mngds-button-save { color: var(--mng-color-tributes-primary); }
+.mngds-social-buttons--endless-tributes .mngds-button-save:hover, .mngds-social-buttons--endless-tributes .mngds-button-save.is-hover, .mngds-social-buttons--endless-tributes .mngds-button-save.is-pressed { color: var(--mng-color-tributes-primary-light); }

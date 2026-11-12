@@ -1,0 +1,4 @@
+- New 2026-11-12 (Karl): the share bar's More panel looked like the Toggletip, but it holds buttons and takes keyboard focus, so it's its own component with the same look (Karl agreed) rather than a third Tooltip type.
+- In Figma the content goes in a Content slot (a Figma slot), so any buttons or links can be dropped in.
+- The caret overlaps the box by 1px (root gap -1px), as on the Toggletip, so no seam shows.
+- The placeholder text in the Figma slot (Noto Sans 14) is only a placeholder; real content brings its own styles.

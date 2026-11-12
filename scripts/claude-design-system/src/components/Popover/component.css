@@ -1,0 +1,23 @@
+/* Root: caret + box in a column, overlapping by 1px (root gap -1px) so no seam shows, like the Toggletip. */
+.mngds-popover { display: inline-flex; flex-direction: column; align-items: center; width: max-content; }
+.mngds-popover__box {
+  box-sizing: border-box; display: flex;
+  padding: var(--mng-popover-base-box-padding-top) var(--mng-popover-base-box-padding-right) var(--mng-popover-base-box-padding-bottom) var(--mng-popover-base-box-padding-left);
+  background: var(--mng-popover-base-box-background); border-radius: var(--mng-popover-base-box-border-radius);
+  /* 1px inside edge (Figma inside stroke), plus shadow/lg. */
+  box-shadow: inset 0 0 0 var(--mng-popover-base-box-border-width) var(--mng-popover-base-box-border-color), var(--mng-shadow-lg);
+}
+/* Content: a row, 8px (spacing/100) apart; the box hugs it. */
+.mngds-popover__content { display: flex; align-items: center; gap: var(--mng-spacing-100); }
+.mngds-popover__caret { position: relative; z-index: 1; flex-shrink: 0; display: block; width: var(--mng-popover-base-caret-width); height: var(--mng-popover-base-caret-height); }
+.mngds-popover--top .mngds-popover__caret { margin-top: var(--mng-popover-base-root-gap); }
+.mngds-popover--bottom .mngds-popover__caret { margin-bottom: var(--mng-popover-base-root-gap); }
+.mngds-popover__caret-border, .mngds-popover__caret-fill { position: absolute; left: 50%; transform: translateX(-50%); display: block; }
+.mngds-popover__caret-border { width: var(--mng-popover-base-caret-caret-border-width); height: var(--mng-popover-base-caret-caret-border-height); background: var(--mng-popover-base-caret-caret-border-background); }
+.mngds-popover__caret-fill { width: var(--mng-popover-base-caret-caret-fill-width); height: var(--mng-popover-base-caret-caret-fill-height); background: var(--mng-popover-base-caret-caret-fill-background); }
+.mngds-popover--top .mngds-popover__caret-border, .mngds-popover--top .mngds-popover__caret-fill { top: 0; clip-path: polygon(0 0, 100% 0, 50% 100%); }
+.mngds-popover--bottom .mngds-popover__caret-border, .mngds-popover--bottom .mngds-popover__caret-fill { bottom: 0; clip-path: polygon(50% 0, 100% 100%, 0 100%); }
+/* Anchored to a trigger (a position: relative wrapper): centered on it, 8px between the trigger and the caret tip. */
+.mngds-popover--anchored { position: absolute; left: 50%; transform: translateX(-50%); z-index: 10; }
+.mngds-popover--anchored.mngds-popover--bottom { top: calc(100% + var(--mng-spacing-100)); }
+.mngds-popover--anchored.mngds-popover--top { bottom: calc(100% + var(--mng-spacing-100)); }

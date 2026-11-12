@@ -1,0 +1,33 @@
+<!-- @dsCard group="WordPress Elements" height=900 subtitle="Figma: SocialButtons · 5 variants (Theme) + a show/hide property per button + More open" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>SocialButtons</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.demo-pad{padding-bottom:72px;}
+.demo-label{font-family:var(--mng-font-family-noto-sans);font-size:14px;font-weight:700;color:var(--mng-color-gray-min);margin:0 0 8px;}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var SITES = [
+    ['ocregister.com', 'bold-coastal', 'Bold Coastal', true, ['Facebook', 'Reddit', 'X', 'Print', 'Gift']],
+    ['chicagotribune.com', 'measured-vibrant', 'Measured Vibrant', false, ['Facebook', 'Bluesky', 'X', 'Print', 'Email', 'Gift']],
+    ['canoncitydailyrecord.com, mcall.com', 'modern-earthy', 'Modern Earthy', false, ['Facebook', 'X', 'Gift']]
+  ];
+  function Saveable(p) { var s = React.useState(false); return h(NS.SocialButtons, Object.assign({ saved: s[0], onSave: s[1] }, p)); }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Theme + the buttons each site turns on', note: 'Save, a 1px gray/500 divider, then the share buttons 8px apart, in one order (Facebook, Bluesky, Reddit, X, Print, Email, LinkedIn, Link, then Gift). Each row is forced to its theme with data-theme; other sites in a theme get its style in their own colors.' },
+      h(I.Specimen, { items: SITES.map(function (s) {
+        return { label: s[0] + ' (' + s[2] + ')', white: true, node: h('div', { 'data-theme': s[1] }, h(Saveable, { theme: s[2], save: s[3], networks: s[4] })) };
+      }) })),
+    h(I.SpecimenSection, { title: 'More: more than 6 share buttons', note: 'Up to 6 share buttons show; with more than 6, the first 6 show (Gift always one of them) and More is the 7th, opening a Popover below it with the rest (Karl, 2026-11-12). Twin Cities: Facebook, Bluesky, Reddit, X, Print, Gift, then More (Email, LinkedIn). Click More, or Tab to it and press Enter; arrows move, Esc closes.' },
+      h(I.Specimen, { items: [
+        { label: 'twincities.com, panel open (forced)', white: true, node: h('div', { 'data-theme': 'bold-coastal', className: 'demo-pad' }, h(NS.SocialButtons, { theme: 'TwinCities', save: false, moreOpen: true, networks: ['Facebook', 'Bluesky', 'Reddit', 'X', 'Print', 'Email', 'LinkedIn', 'Gift'] })) },
+        { label: 'Try it', white: true, node: h('div', { 'data-theme': 'bold-coastal', className: 'demo-pad' }, h(NS.SocialButtons, { theme: 'TwinCities', save: false, networks: ['Facebook', 'Bluesky', 'Reddit', 'X', 'Print', 'Email', 'LinkedIn', 'Gift'] })) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Obituaries', note: '"Share this obituary": the same feature (Karl, 2026-11-12). Theme=Endless Tributes: the filled style in the obituaries colors (#8D092D, hover #C00C3D), 40x40, 8px apart, 18px icons.' },
+      h(I.Specimen, { items: [{ label: 'Share this obituary', white: true, node: h('div', null, h('p', { className: 'demo-label' }, 'Share this obituary:'),
+        h(NS.SocialButtons, { theme: 'Endless Tributes', save: false, label: 'Share this obituary', networks: ['Facebook', 'Email', 'Link'] })) }] }))));
+</script>
+</body>
+</html>

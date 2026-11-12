@@ -1,0 +1,6 @@
+- Cleaned up in place in WordPress Elements on 2026-11-12 (Karl), checked against the 6 review sites plus twincities.com. The three old variants were reused, so existing instances stay linked.
+- Karl chose a Network menu over an icon swap, so Modern Earthy's brand colors come with the network.
+- Icons are 18px (gift 22px), matching production (Karl, 2026-11-12); obituaries use the same 18px icons.
+- Modern Earthy uses the current brand colors (Karl, 2026-11-12): Facebook #1877F2, Bluesky #1185FE, Reddit #FF4500, X black, LinkedIn #0A66C2. Production still shows the old Facebook #3B5998 and Twitter #00ACED (design-vs-production 39.2). These are vendor colors, not MNG tokens.
+- `component.css` is generated from `social-media-button.tokens.json` (every Network × Theme × interaction combination); outlines are inset `box-shadow`s, so they add no size. The focus ring is an `outline` 1px outside, round.
+- Contrast: white icons on the Bold Coastal fills and the outline icons on white are graphics (3:1 needed); production spacing and other differences are design-vs-production 39.

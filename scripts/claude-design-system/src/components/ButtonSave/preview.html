@@ -1,0 +1,20 @@
+<!-- @dsCard group="WordPress Elements" height=360 subtitle="Figma: Button_Save · 8 variants (Checked × interaction × inFocus)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>ButtonSave</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var COLS = [['default', 'Default', 'False'], ['hover', 'hover', 'False'], ['pressed', 'pressed', 'False'], ['focused', 'Default', 'True']];
+  function row(checked) { return COLS.map(function (c) { return { label: (checked ? 'checked' : 'unchecked') + ' / ' + c[0], white: true, node: h(NS.ButtonSave, { checked: checked, interaction: c[1], inFocus: c[2], tabIndex: -1 }) }; }); }
+  function Demo() { var s = React.useState(false); return h(NS.ButtonSave, { checked: s[0], onChange: s[1] }); }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Checked × interaction', note: '40x40, 8px side padding, 24px bookmark (outline unchecked, filled checked) in color/theme/primary; hover and pressed primary-light. Focus: a 2px gray/black ring 1px outside, square.' },
+      h(I.Specimen, { items: row(false) }), h(I.Specimen, { items: row(true) })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'A toggle button: aria-pressed follows the state.' },
+      h(I.Specimen, { items: [{ label: 'Save this article', white: true, node: h(Demo) }] }))));
+</script>
+</body>
+</html>

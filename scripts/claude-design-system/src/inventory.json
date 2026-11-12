@@ -197,18 +197,36 @@
      "note": "Rebuilt in place 2026-11-11 (Embedded Login uses it): pill, 16 variants incl. icon only."
     },
     {
-     "name": "SocialButtons, Social Media Button, Button_Save",
-     "where": "WordPress Elements, Menus and Parts (3788:44356, 3788:44313, 3788:44251)",
-     "status": "To add",
+     "name": "SocialButtons",
+     "where": "WordPress Elements, Menus and Parts (3788:44356)",
+     "status": "In system",
      "updated": "2026-11-12",
-     "note": "The article share bar. Cleaned up in place 2026-11-12 against the 6 review sites plus twincities.com: Social Media Button is Network (10, with LinkedIn) x Theme (Bold Coastal, Measured Vibrant, Modern Earthy) x interaction x inFocus; SocialButtons has a show/hide property per button; Button_Save is Checked x interaction x inFocus. Not exported yet. Drift entry 39. More rule: up to 6 buttons, then More (Popover) as the 7th."
+     "component": "SocialButtons",
+     "note": "The article share bar and the obituary share buttons. Cleaned up in place 2026-11-12 against the 6 review sites plus twincities.com: Theme variants, a show/hide property per button, Save divider, More rule (up to 6 buttons, then More as the 7th, opening a Popover). Drift entry 39."
+    },
+    {
+     "name": "Social Media Button",
+     "where": "WordPress Elements, Menus and Parts (3788:44313)",
+     "status": "In system",
+     "updated": "2026-11-12",
+     "component": "SocialMediaButton",
+     "note": "Network (10, with LinkedIn) x Theme (Bold Coastal, Measured Vibrant, Modern Earthy) x interaction x inFocus; 40x40, 18px icons; Modern Earthy uses current brand colors (2026-11-12)."
+    },
+    {
+     "name": "Button_Save",
+     "where": "WordPress Elements, Menus and Parts (3788:44251)",
+     "status": "In system",
+     "updated": "2026-11-12",
+     "component": "ButtonSave",
+     "note": "Checked x interaction x inFocus; 24px bookmark in color/theme/primary (2026-11-12)."
     },
     {
      "name": "Popover",
      "where": "Main file, Tooltips page (7574:28804)",
-     "status": "To add",
+     "status": "In system",
      "updated": "2026-11-12",
-     "note": "A floating panel for buttons or links, opened by a trigger; the Toggletip's look with a Content slot; Placement Top / Bottom. First use: the share bar's More panel. Not exported yet."
+     "component": "Popover",
+     "note": "A floating panel for buttons or links, opened by a trigger; the Toggletip's look with a Content slot; Placement Top / Bottom. First use: the share bar's More panel. Exported 2026-11-12 (popover)."
     },
     {
      "name": "Action Button (older set)",

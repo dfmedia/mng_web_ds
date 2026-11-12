@@ -1,0 +1,14 @@
+/* 40x40 with 8px (spacing/100) side padding; 24px bookmark in color/theme/primary; hover and pressed primary-light.
+   Focus: 2px gray/black ring 1px outside the box, square corners. */
+.mngds-button-save {
+  appearance: none; margin: 0; border: 0; font: inherit; background: none; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box;
+  width: var(--mng-button-save-base-root-width); height: var(--mng-button-save-base-root-height);
+  padding: 0 var(--mng-button-save-base-root-padding-right) 0 var(--mng-button-save-base-root-padding-left);
+  color: var(--mng-button-save-interaction-default-icon-icon-color);
+}
+.mngds-button-save.is-hover, .mngds-button-save:hover { color: var(--mng-button-save-interaction-hover-icon-icon-color); }
+.mngds-button-save.is-pressed, .mngds-button-save:active { color: var(--mng-button-save-interaction-pressed-icon-icon-color); }
+.mngds-button-save.is-infocus, .mngds-button-save:focus-visible {
+  outline: var(--mng-button-save-infocus-true-focus-ring-border-width) solid var(--mng-button-save-infocus-true-focus-ring-border-color); outline-offset: 1px;
+}

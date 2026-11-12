@@ -1,0 +1,24 @@
+<!-- @dsCard group="Core" height=420 subtitle="Figma: Popover · 2 variants (Placement), Content slot" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Popover</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.demo-anchor{position:relative;display:inline-flex;margin:8px 64px 96px;}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  function items() { return ['Print', 'Email', 'LinkedIn'].map(function (n) { return h(NS.SocialMediaButton, { key: n, network: n, tabIndex: -1 }); }); }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Placement', note: 'The Toggletip\'s look: white box, 1px border, 4px corners, shadow/lg, a 12x6 caret centered on the box. 8px padding; items in a row, 8px apart. Top: above the trigger (caret below); Bottom: below it (caret on top).' },
+      h(I.Specimen, { items: [
+        { label: 'Placement=Top', node: h(NS.Popover, { placement: 'Top', 'aria-label': 'More share options' }, items()) },
+        { label: 'Placement=Bottom', node: h(NS.Popover, { placement: 'Bottom', 'aria-label': 'More share options' }, items()) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Anchored to a trigger', note: 'Centered on the trigger, 8px between the trigger and the caret tip. First use: the share bar\'s More panel (SocialButtons).' },
+      h(I.Specimen, { items: [{ label: 'More button + Popover, Placement=Bottom', white: true, node: h('span', { className: 'demo-anchor' },
+        h(NS.SocialMediaButton, { network: 'Share more', 'aria-expanded': 'true', tabIndex: -1 }),
+        h(NS.Popover, { placement: 'Bottom', anchored: true, 'aria-label': 'More share options' }, items())) }] }))));
+</script>
+</body>
+</html>
