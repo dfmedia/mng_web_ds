@@ -9,7 +9,7 @@ h(UserImage, { graphic: 'unknown' })                              // logged out
 
 | Prop | Values | Default |
 |---|---|---|
-| `size` | `'small'` (32px), `'medium'` (40px), `'large'` (64px) | `'small'` |
+| `size` | `'small'` (30px), `'medium'` (40px), `'large'` (64px) | `'small'` |
 | `graphic` | `'unknown'`, `'monogram'`, `'monogramPP'`, `'social'` | from `src` / `name` |
 | `src` | photo URL (social) | |
 | `initials`, `name` | monogram text (2 letters) | |

@@ -1,6 +1,6 @@
 /* UserPic (WordPress Elements, Menus and Parts, 456:5674): the avatar (UserImage) with two AlertLevel dots
    (Karl, 2026-11-13). Top left, Active Dot: the reader is active (status = 'Active'). Bottom right, Alert Dot: the reader
-   has an alert or message to see (`alert` = low / medium / high). Size = Small (32px), Medium (40px), Large (64px; 16px
+   has an alert or message to see (`alert` = low / medium / high). Size = Small (30px), Medium (40px), Large (64px; 16px
    dots). The chevron that opens the account menu belongs to AccountMenu, so this is not a button by itself. */
 function UserPic(props) {
   var size = String(props.size || 'Small');

@@ -8,7 +8,7 @@ h('button', { 'aria-label': 'Account menu, Gritty McGee, 1 alert', 'aria-haspopu
 
 | Prop | Values | Default |
 |---|---|---|
-| `size` | `'Small'` (32px), `'Medium'` (40px), `'Large'` (64px, 16px dots) | `'Small'` |
+| `size` | `'Small'` (30px), `'Medium'` (40px), `'Large'` (64px, 16px dots) | `'Small'` |
 | `status` | `'Default'`, `'Active'` (green dot, top left) | `'Default'` |
 | `alert` | `'none'`, `'low'`, `'medium'`, `'high'` (dot, bottom right) | `'none'` |
 | `src`, `name`, `initials`, `graphic`, `background`, `color`, `alt` | passed to UserImage | |

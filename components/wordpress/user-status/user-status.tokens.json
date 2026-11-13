@@ -42,14 +42,14 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 32,
+            "value": 30,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 32,
+            "value": 30,
             "unit": "px"
           }
         }

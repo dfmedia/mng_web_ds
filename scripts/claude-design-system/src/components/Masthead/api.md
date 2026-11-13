@@ -31,7 +31,7 @@ h(Masthead, { state: 'Scrolled', device: 'XL-Desktop' })                        
 | `navItems`, `trending` | strings or `{ label, href, onClick }` | the Figma sample (Section Front has its own nav sample) |
 | `date`, `temperature`, `eEditionLabel`, `eEditionHref` | weather bug text (1040px and up; `WeatherBug`, Location = Masthead) | the Figma sample |
 | `eveningEdition`, `eveningLabel`, `eveningHref` | the second e-Edition link (several markets) | off |
-| `user` | `{ name, initials, imageSrc, status, alert }`: the subscriber's avatar (UserPic Small, 32px); `status: 'Active'` and `alert` show its dots | initials of "Reader" |
+| `user` | `{ name, initials, imageSrc, status, alert }`: the subscriber's avatar (UserPic Small, 30px); `status: 'Active'` and `alert` show its dots | initials of "Reader" |
 | `onMenuClick`, `menuOpen`, `menuId` | the All Sections / hamburger button (`aria-expanded`, `aria-controls`) | |
 | `onSearchClick`, `onSubscribe`, `onLogIn`, `subscribeHref`, `logInHref`, `onAccountClick` | actions | |
 | `logo`, `siteName`, `homeHref` | replace the Fakeville Daily News placeholder | placeholder |

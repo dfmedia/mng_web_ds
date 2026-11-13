@@ -101,7 +101,7 @@ function MastheadSectionToggle(p) {
     showTitle ? h('span', { className: 'mngds-masthead__menu-title' }, p.label) : null);
 }
 
-/* UserPic (Size = Small, 32px; production 30px, Karl 2026-11-13) with UserImage inside: the reader's photo, initials
+/* UserPic (Size = Small, 30px as production, Karl 2026-11-13) with UserImage inside: the reader's photo, initials
    (monogram) or the generic user icon (unknown). user.status = 'Active' and user.alert show the status dots. */
 function MastheadAvatar(p) {
   var u = p.user || {};

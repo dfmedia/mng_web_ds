@@ -1,5 +1,5 @@
 export interface UserImageProps extends React.HTMLAttributes<HTMLSpanElement> {
-  /** Figma Size: 'small' 32px (masthead), 'medium' 40px, 'large' 64px. Default 'small'. */
+  /** Figma Size: 'small' 30px (masthead), 'medium' 40px, 'large' 64px. Default 'small'. */
   size?: 'small' | 'medium' | 'large';
   /** Figma Graphic. Default: 'social' when `src` is given, 'monogram' when `initials` or `name` is given, else 'unknown'.
       'social' / 'socialPhillip' without `src` fall back to the monogram. */

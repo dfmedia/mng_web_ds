@@ -1,5 +1,5 @@
 export interface UserPicProps extends React.HTMLAttributes<HTMLSpanElement> {
-  /** Figma Size: 'Small' 32px (masthead, Account Dropdown Menu), 'Medium' 40px, 'Large' 64px (Reader Dashboard profile). Default 'Small'. */
+  /** Figma Size: 'Small' 30px (masthead, Account Dropdown Menu), 'Medium' 40px, 'Large' 64px (Reader Dashboard profile). Default 'Small'. */
   size?: 'Small' | 'Medium' | 'Large';
   /** Figma Status: 'Active' shows the green Active Dot (top left): the reader is active. Default 'Default'. */
   status?: 'Default' | 'Active';

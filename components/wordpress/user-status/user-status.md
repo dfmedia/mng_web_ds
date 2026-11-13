@@ -34,9 +34,9 @@ exported: 2026-11-13
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `none / Desktop` | 240×40 | [456:5729](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5729) | 24 | ![](previews/user-status--none-desktop.png) |
-| `none / mobile` | 32×32 | [456:5740](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5740) | 61 | ![](previews/user-status--none-mobile.png) |
-| `nonSub / Desktop` | 174×40 | [456:5734](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5734) | 1 | ![](previews/user-status--nonsub-desktop.png) |
-| `subscriber / Desktop` | 32×32 | [456:5738](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5738) | 171 | ![](previews/user-status--subscriber-desktop.png) |
+| `none / mobile` | 30×30 | [456:5740](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5740) | 61 | ![](previews/user-status--none-mobile.png) |
+| `nonSub / Desktop` | 172×40 | [456:5734](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5734) | 1 | ![](previews/user-status--nonsub-desktop.png) |
+| `subscriber / Desktop` | 30×30 | [456:5738](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5738) | 171 | ![](previews/user-status--subscriber-desktop.png) |
 
 ## Anatomy
 
@@ -54,8 +54,8 @@ From `user-status.tokens.json`. References point at system tokens (`tokens/core/
 |---|---|
 | `user-status.base.button-primary.height` | 40px |
 | `user-status.base.root.gap` | `{spacing.200}` |
-| `user-status.base.userpic.height` | 32px |
-| `user-status.base.userpic.width` | 32px |
+| `user-status.base.userpic.height` | 30px |
+| `user-status.base.userpic.width` | 30px |
 | `user-status.status-none.button-primary.width` | 98px |
 | `user-status.status-nonsub.button-primary.width` | 126px |
 | `user-status.device-mobile.userpic.icon-color` | `{color.gray.max}` |

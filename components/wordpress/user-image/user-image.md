@@ -14,7 +14,7 @@ exported: 2026-11-13
 
 # UserImage
 
-> The reader's avatar art, a circle. Size = small (32px) / medium (40px) / large (64px); Graphic = unknown, monogram, monogramPP, social, socialPhillip. The photo and the monogram color change by reader; the sample readers are Gritty McGee and Phillie Phanatic (mockups only).
+> The reader's avatar art, a circle. Size = small (30px) / medium (40px) / large (64px); Graphic = unknown, monogram, monogramPP, social, socialPhillip. The photo and the monogram color change by reader; the sample readers are Gritty McGee and Phillie Phanatic (mockups only).
 
 ## Figma
 
@@ -33,14 +33,14 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `unknown / small` | 32×32 | [456:5715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5715) | 62 | ![](previews/user-image--unknown-small.png) |
+| `unknown / small` | 30×30 | [456:5715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5715) | 62 | ![](previews/user-image--unknown-small.png) |
 | `unknown / large` | 64×64 | [712:1495](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-1495) | 0 | ![](previews/user-image--unknown-large.png) |
 | `unknown / medium` | 40×40 | [712:6283](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6283) | 0 | ![](previews/user-image--unknown-medium.png) |
-| `monogram / small` | 32×32 | [456:5718](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5718) | 0 | ![](previews/user-image--monogram-small.png) |
+| `monogram / small` | 30×30 | [456:5718](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5718) | 0 | ![](previews/user-image--monogram-small.png) |
 | `monogram / large` | 64×64 | [456:5720](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5720) | 0 | ![](previews/user-image--monogram-large.png) |
 | `monogram / medium` | 40×40 | [712:6286](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6286) | 0 | ![](previews/user-image--monogram-medium.png) |
 | `monogramPP / large` | 64×64 | [456:5722](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5722) | 0 | ![](previews/user-image--monogrampp-large.png) |
-| `social / small` | 32×32 | [456:5709](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5709) | 181 | ![](previews/user-image--social-small.png) |
+| `social / small` | 30×30 | [456:5709](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5709) | 181 | ![](previews/user-image--social-small.png) |
 | `social / large` | 64×64 | [456:5711](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5711) | 3 | ![](previews/user-image--social-large.png) |
 | `social / medium` | 40×40 | [712:6288](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6288) | 2 | ![](previews/user-image--social-medium.png) |
 | `socialPhillip / large` | 64×64 | [456:5713](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5713) | 0 | ![](previews/user-image--socialphillip-large.png) |
@@ -50,7 +50,7 @@ exported: 2026-11-13
 
 Default variant `unknown / small` (hidden layers marked):
 
-- **Size=small, Graphic=unknown** `COMPONENT`: 32×32, horizontal, gap 0, padding 0/0/0/0, fixed×fixed
+- **Size=small, Graphic=unknown** `COMPONENT`: 30×30, horizontal, gap 0, padding 0/0/0/0, fixed×fixed
   - **Icons** `INSTANCE`: 16×16, horizontal, gap 8, padding 0/0/0/0, fixed×fixed, instance of Icons (Name=user)
 
 ## Component tokens
@@ -62,9 +62,9 @@ From `user-image.tokens.json`. References point at system tokens (`tokens/core/`
 | `user-image.size-small.icons.height` | 16px |
 | `user-image.size-small.icons.width` | 16px |
 | `user-image.size-small.initials.font-size` | `{font.size.12}` |
-| `user-image.size-small.photo.height` | 32px |
-| `user-image.size-small.root.height` | 32px |
-| `user-image.size-small.root.width` | 32px |
+| `user-image.size-small.photo.height` | 30px |
+| `user-image.size-small.root.height` | 30px |
+| `user-image.size-small.root.width` | 30px |
 | `user-image.size-large.icons.height` | 24px |
 | `user-image.size-large.icons.width` | 24px |
 | `user-image.size-large.initials.font-size` | `{font.size.26}` |
@@ -91,7 +91,7 @@ From `user-image.tokens.json`. References point at system tokens (`tokens/core/`
 No Breakpoint property: one size at every width.
 
 - Used inside UserPic.
-- **Sizes:** small 32px (masthead; production 30px: a 4 / 8 tie, Karl 2026-11-13: 32), medium 40px, large 64px. A full circle.
+- **Sizes:** small 30px (masthead; production's size, kept off the 4 / 8 grid, Karl 2026-11-13), medium 40px, large 64px. A full circle.
 - **unknown:** the user icon in `color/gray/min` on `color/gray/max`, 16px (small) or 24px.
 - **monogram:** initials, Noto Sans Regular 12 / 16 / 26 (`font/size/12`, `/16`, `/26`; about 40% of the circle; were 12 / 22 / 27 until 2026-11-13), centered. The background is avatar art and changes by reader (production draws the picture on its server, in many colors; Karl, 2026-11-13). Samples: #FF702C with `color/gray/min` initials (6.7:1); monogramPP `color/feedback/low-success` with `color/gray/max` initials (5.0:1; was gray/min, 3.7:1).
 - **social:** the reader's profile photo cropped to the circle (production loads it from the reader's Google account).

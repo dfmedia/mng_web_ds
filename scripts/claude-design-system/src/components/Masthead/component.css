@@ -42,7 +42,7 @@
 }
 .mngds-masthead__search { width: 30px; justify-content: center; }
 .mngds-masthead__chevron { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; }
-/* The avatar is the UserPic component (Small, 32px). */
+/* The avatar is the UserPic component (Small, 30px). */
 .mngds-masthead__menu-toggle:focus-visible, .mngds-masthead__account:focus-visible, .mngds-masthead__search:focus-visible,
 .mngds-masthead__logo-link:focus-visible, .mngds-masthead a:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }
 

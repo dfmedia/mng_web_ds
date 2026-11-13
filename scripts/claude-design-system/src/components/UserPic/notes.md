@@ -1,3 +1,3 @@
 - **Dots** (Karl, 2026-11-13): top left = active (AlertLevel low); bottom right = alert or message (low / medium / high). 8px on Small and Medium, 16px on Large, flush with the corners.
-- **Sizes:** 32px (production 30px; a 4 / 8 tie, Karl chose 32), 40px, 64px.
+- **Sizes:** 30px (production's size, kept off the 4 / 8 grid, Karl 2026-11-13), 40px, 64px.
 - **Production** shows a 30px photo and a chevron, no dots, and no focus style on the account link (`outline: none`): design-vs-production 10.9. The Masthead here uses UserPic Small inside its account button, with a visible focus ring.

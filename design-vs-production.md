@@ -1502,7 +1502,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Status:** Open, focus required. Added 2026-11-06. Team: CMS.
 
-### 10.9 Masthead avatar — 30px, no status dots, no focus style
+### 10.9 Masthead avatar — no status dots, no focus style
 
 **Found:** 2026-11-13, logged in, on all 6 review sites (`#anchorProfileDropDown` in `mng-digisubs.styles.css`; Denver Post also at 360, 700 and 1100px). **Team:** digisubs.
 
@@ -1510,14 +1510,13 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 | Property | Production | Design |
 |---|---|---|
-| Avatar size | 30 × 30 (`.rounded-circle { max-width: 30px }`), every width | 32px (a 4 / 8 tie, Karl 2026-11-13: 32) |
 | Shape | `border-radius: 60%` | a full circle |
 | Status dots | none | top left: the reader is active (green); bottom right: an alert or message to see (low / medium / high) (Karl, 2026-11-13) |
 | Keyboard focus | `outline: none` on the link and the image: no visible focus | a visible 2px `color/gray/black` focus ring (as on the other components) |
 
-**Action needed:** avatar 32px; add `:focus-visible { outline: 2px solid #000; outline-offset: 2px }` to `#anchorProfileDropDown` (WCAG 2.4.7). The status dots are a design proposal: add them when the account data can drive them (active reader; unread alerts), and name them in the link's label (color alone isn't enough).
+**Action needed:** add `:focus-visible { outline: 2px solid #000; outline-offset: 2px }` to `#anchorProfileDropDown` (WCAG 2.4.7). The status dots are a design proposal: add them when the account data can drive them (active reader; unread alerts), and name them in the link's label (color alone isn't enough).
 
-**Status:** Open, focus required. Added 2026-11-13.
+**Status:** Open, focus required. Added 2026-11-13. The 30px avatar size matches the design (Karl, 2026-11-13: the design uses production's 30px), so it was taken out of this entry the same day.
 
 ### 10.10 Masthead Subscribe button — 15px SemiBold, 45px tall, 15px from the avatar
 

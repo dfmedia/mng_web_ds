@@ -1137,10 +1137,10 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5708",
       "documentationFrame": "3812:50016",
-      "description": "The reader's avatar art, a circle. Size = small (32px) / medium (40px) / large (64px); Graphic = unknown, monogram, monogramPP, social, socialPhillip. The photo and the monogram color change by reader; the sample readers are Gritty McGee and Phillie Phanatic (mockups only).",
+      "description": "The reader's avatar art, a circle. Size = small (30px) / medium (40px) / large (64px); Graphic = unknown, monogram, monogramPP, social, socialPhillip. The photo and the monogram color change by reader; the sample readers are Gritty McGee and Phillie Phanatic (mockups only).",
       "rules": [
         "Used inside UserPic.",
-        "**Sizes:** small 32px (masthead; production 30px: a 4 / 8 tie, Karl 2026-11-13: 32), medium 40px, large 64px. A full circle.",
+        "**Sizes:** small 30px (masthead; production's size, kept off the 4 / 8 grid, Karl 2026-11-13), medium 40px, large 64px. A full circle.",
         "**unknown:** the user icon in `color/gray/min` on `color/gray/max`, 16px (small) or 24px.",
         "**monogram:** initials, Noto Sans Regular 12 / 16 / 26 (`font/size/12`, `/16`, `/26`; about 40% of the circle; were 12 / 22 / 27 until 2026-11-13), centered. The background is avatar art and changes by reader (production draws the picture on its server, in many colors; Karl, 2026-11-13). Samples: #FF702C with `color/gray/min` initials (6.7:1); monogramPP `color/feedback/low-success` with `color/gray/max` initials (5.0:1; was gray/min, 3.7:1).",
         "**social:** the reader's profile photo cropped to the circle (production loads it from the reader's Google account).",
@@ -1162,10 +1162,10 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5674",
       "documentationFrame": "3812:50085",
-      "description": "The avatar button: UserImage with two AlertLevel dots (Karl, 2026-11-13). Size = Small (32px) / Medium (40px) / Large (64px); Status = Default / Active (Active = the reader is active: green dot top left). The bottom-right Alert Dot shows an alert or message (set its Level).",
+      "description": "The avatar button: UserImage with two AlertLevel dots (Karl, 2026-11-13). Size = Small (30px) / Medium (40px) / Large (64px); Status = Default / Active (Active = the reader is active: green dot top left). The bottom-right Alert Dot shows an alert or message (set its Level).",
       "rules": [
         "UserImage inside; the chevron that opens the account menu belongs to AccountMenu.",
-        "**Sizes:** Small 32px (masthead, Account Dropdown Menu), Medium 40px, Large 64px (Reader Dashboard profile).",
+        "**Sizes:** Small 30px (masthead, Account Dropdown Menu), Medium 40px, Large 64px (Reader Dashboard profile).",
         "**Active Dot** (top left, flush with the corner): Status = Active shows AlertLevel low (green); Default shows none.",
         "**Alert Dot** (bottom right, flush with the corner): AlertLevel, Level none by default; set low, medium or high. 8px dots on Small and Medium, 16px on Large.",
         "Use the reader's name, and any active or alert state, in the button's accessible label (production: \"Account menu dropdown\")."

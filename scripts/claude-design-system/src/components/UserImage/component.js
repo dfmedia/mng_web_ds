@@ -1,4 +1,4 @@
-/* UserImage (WordPress Elements, Menus and Parts, 456:5708): the reader's avatar art, a circle. Size = small (32px,
+/* UserImage (WordPress Elements, Menus and Parts, 456:5708): the reader's avatar art, a circle. Size = small (30px,
    masthead; production 30px, Karl 2026-11-13: 32), medium (40px), large (64px). Graphic = unknown (user icon),
    monogram / monogramPP (initials on avatar art that changes by reader), social (the reader's photo: pass `src`). */
 var USER_IMAGE_ICON = { small: 16, medium: 24, large: 24 };

@@ -12,7 +12,7 @@
   var graphics = [['unknown', {}], ['monogram', { name: 'Gritty McGee' }], ['monogramPP', { name: 'Phillie Phanatic', graphic: 'monogramPP' }], ['social', { src: PHOTO }]];
   ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
     ['small', 'medium', 'large'].map(function (s) {
-      return h(I.SpecimenSection, { key: s, title: 'Size = ' + s + ' (' + { small: 32, medium: 40, large: 64 }[s] + 'px)', note: s === 'small' ? 'The masthead avatar (production 30px). Initials are about 40% of the circle; the monogram colors and the photo change by reader (sample art here).' : null },
+      return h(I.SpecimenSection, { key: s, title: 'Size = ' + s + ' (' + { small: 30, medium: 40, large: 64 }[s] + 'px)', note: s === 'small' ? 'The masthead avatar (30px, as production). Initials are about 40% of the circle; the monogram colors and the photo change by reader (sample art here).' : null },
         h(I.Specimen, { items: graphics.map(function (g) { return { label: 'Graphic=' + g[0], node: h(NS.UserImage, Object.assign({ size: s, graphic: g[0] }, g[1])) }; }) }));
     })));
 </script>
