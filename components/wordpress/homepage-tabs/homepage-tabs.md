@@ -9,7 +9,7 @@ component_key: f6f0992bc1126f8cfc17158b13600b3a8318213e
 variants: 2
 tokens: homepage-tabs.tokens.json
 skeleton: homepage-tabs.html
-exported: 2026-11-04
+exported: 2026-11-13
 ---
 
 # Homepage Tabs
@@ -104,4 +104,4 @@ None open.
 - `homepage-tabs.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

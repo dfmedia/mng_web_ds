@@ -11,7 +11,7 @@
       },
       "production": "Production account dropdown (Bootstrap-style dropdown, open item 1); shadow gap: design-vs-production 11.",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-13"
     }
   },
   "account-menu": {
@@ -3932,7 +3932,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 32,
+              "value": 30,
               "unit": "px"
             }
           },
@@ -6786,7 +6786,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 32,
+              "value": 30,
               "unit": "px"
             }
           },
@@ -8366,7 +8366,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 32,
+              "value": 30,
               "unit": "px"
             }
           },
@@ -8405,14 +8405,14 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 32,
+            "value": 40,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 239,
+            "value": 240,
             "unit": "px"
           }
         },
@@ -8449,7 +8449,7 @@
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 32,
+              "value": 30,
               "unit": "px"
             }
           },

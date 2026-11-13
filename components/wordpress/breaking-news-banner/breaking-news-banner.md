@@ -9,7 +9,7 @@ component_key: fac66df253d4a1f179dbe7a4229be9f3dadd7a46
 variants: 3
 tokens: breaking-news-banner.tokens.json
 skeleton: breaking-news-banner.html
-exported: 2026-11-12
+exported: 2026-11-13
 ---
 
 # Breaking News Banner
@@ -142,4 +142,4 @@ Production `.breaking-bar > .breaking-bar-inner` (h2.widget-title, article.headl
 - `breaking-news-banner.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

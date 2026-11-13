@@ -9,7 +9,7 @@ component_key: 20dc946d8602b998c7cb522bb6e28d102459bf66
 variants: 6
 tokens: zone-1-lead-article-card.tokens.json
 skeleton: zone-1-lead-article-card.html
-exported: 2026-11-03
+exported: 2026-11-13
 ---
 
 # Zone 1 Lead Article Card
@@ -202,4 +202,4 @@ Production `.feature-primary .feature-large` (Zone 1 lead).
 - `zone-1-lead-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

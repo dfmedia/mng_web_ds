@@ -9,7 +9,7 @@ component_key: f1b1194ce0b623c078b7912e50aa8ce3342d7c9f
 variants: 8
 tokens: button-save.tokens.json
 skeleton: button-save.html
-exported: 2026-11-12
+exported: 2026-11-13
 ---
 
 # Button_Save
@@ -108,4 +108,4 @@ None open.
 - `button-save.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

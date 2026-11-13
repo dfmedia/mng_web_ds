@@ -9,7 +9,7 @@ component_key: 21db80b6ccdb88eb2a61326e46bce299f7aa1693
 variants: 21
 tokens: account-menu.tokens.json
 skeleton: account-menu.html
-exported: 2026-10-30
+exported: 2026-11-13
 ---
 
 # AccountMenu
@@ -65,7 +65,7 @@ exported: 2026-10-30
 | `XL-Desktop / loggedIn / PremSub / Open` | 300×826 | [910:16763](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16763) | 6 | ![](previews/account-menu--xl-desktop-loggedin-premsub-open.png) |
 | `XL-Desktop / loggedIn / groupSub / Open` | 300×870 | [910:16839](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16839) | 0 | ![](previews/account-menu--xl-desktop-loggedin-groupsub-open.png) |
 | `XL-Desktop / loggedIn / GroupAnon / Open` | 300×870 | [910:16913](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16913) | 0 | ![](previews/account-menu--xl-desktop-loggedin-groupanon-open.png) |
-| `XL-Desktop / loggedOut / loggedOut / Closed` | 293×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 23 | ![](previews/account-menu--xl-desktop-loggedout-loggedout-closed.png) |
+| `XL-Desktop / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 23 | ![](previews/account-menu--xl-desktop-loggedout-loggedout-closed.png) |
 | `XL-Desktop / alert / PremSub / Open` | 300×1092 | [910:17087](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-17087) | 0 | ![](previews/account-menu--xl-desktop-alert-premsub-open.png) |
 | `LG-TabletH / loggedIn / loggedIn / Closed` | 104×64 | [3414:51875](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3414-51875) | 9 | ![](previews/account-menu--lg-tableth-loggedin-loggedin-closed.png) |
 | `LG-TabletH / loggedOut / loggedOut / Closed` | 104×64 | [3407:50999](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3407-50999) | 9 | ![](previews/account-menu--lg-tableth-loggedout-loggedout-closed.png) |
@@ -98,7 +98,7 @@ Default variant `XS-Fold / alert / PremSub / Open` (hidden layers marked):
       - **Vector** `VECTOR`: 9.8×14.21, fixed×fixed
     - **Profile Container** `FRAME`: 96×64, horizontal, gap 8, padding 0/8/0/0, hug×fill
       - **Profile Image Container** `FRAME`: 50×64, horizontal, gap 4, padding 0/0/0/0, hug×fill
-        - **UserStatus** `INSTANCE`: 30×64, horizontal, gap 15, padding 0/0/0/0, hug×fill, instance of UserStatus (Device=Desktop, status=subscriber)
+        - **UserStatus** `INSTANCE`: 30×64, horizontal, gap 16, padding 0/0/0/0, hug×fill, instance of UserStatus (Device=Desktop, status=subscriber)
         - **Profile Image** `FRAME`: 16×64, vertical, gap 8, padding 0/0/0/0, hug×fill
           - **Icons** `INSTANCE`: 16×16, vertical, gap 8, padding 3/2/3/2, fixed×fixed, instance of Icons (Name=arrow-upSmall)
       - **Search** `SLOT`: 30×64, fixed×fill
@@ -540,7 +540,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.container.icon.icons.height` | 16px |
 | `account-menu.base.container.icon.icons.icon-color` | `{color.gray.min}` |
 | `account-menu.base.container.icon.icons.width` | 16px |
-| `account-menu.base.container.userstatus.height` | 32px |
+| `account-menu.base.container.userstatus.height` | 30px |
 | `account-menu.base.container.userstatus.width` | 30px |
 | `account-menu.base.item.padding-bottom` | `{spacing.200}` |
 | `account-menu.base.item.padding-top` | `{spacing.200}` |
@@ -812,7 +812,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.profile-picture.arrow-icon.icons.height` | 16px |
 | `account-menu.base.profile-picture.arrow-icon.icons.icon-color` | `{color.gray.min}` |
 | `account-menu.base.profile-picture.arrow-icon.icons.width` | 16px |
-| `account-menu.base.profile-picture.userstatus.height` | 32px |
+| `account-menu.base.profile-picture.userstatus.height` | 30px |
 | `account-menu.base.profile-picture.userstatus.width` | 30px |
 | `account-menu.base.section-item.background` | `{color.gray.max}` |
 | `account-menu.base.section-item.container.background` | `{color.gray.max}` |
@@ -962,16 +962,16 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.user-icon.arrow-icon.icons.height` | 16px |
 | `account-menu.base.user-icon.arrow-icon.icons.icon-color` | `{color.gray.min}` |
 | `account-menu.base.user-icon.arrow-icon.icons.width` | 16px |
-| `account-menu.base.user-icon.userstatus.height` | 32px |
+| `account-menu.base.user-icon.userstatus.height` | 30px |
 | `account-menu.base.user-icon.userstatus.icon-color` | `{color.gray.max}` |
 | `account-menu.base.user-icon.userstatus.width` | 30px |
 | `account-menu.base.userstatus.gap` | `{spacing.050}` |
-| `account-menu.base.userstatus.height` | 32px |
-| `account-menu.base.userstatus.width` | 239px |
+| `account-menu.base.userstatus.height` | 40px |
+| `account-menu.base.userstatus.width` | 240px |
 | `account-menu.base.userstatus.arrowdown.icons.height` | 16px |
 | `account-menu.base.userstatus.arrowdown.icons.icon-color` | `{color.gray.min}` |
 | `account-menu.base.userstatus.arrowdown.icons.width` | 16px |
-| `account-menu.base.userstatus.userstatus.height` | 32px |
+| `account-menu.base.userstatus.userstatus.height` | 30px |
 | `account-menu.base.userstatus.userstatus.icon-color` | `{color.gray.max}` |
 | `account-menu.base.userstatus.userstatus.width` | 30px |
 | `account-menu.device-xs-fold.body.ad-container.ad-content-container.ad-image-container.ad-sample-1.height` | 184px |
@@ -1128,4 +1128,4 @@ Production account dropdown (Bootstrap-style dropdown, open item 1); shadow gap:
 - `account-menu.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

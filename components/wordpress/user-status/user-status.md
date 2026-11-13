@@ -36,7 +36,7 @@ exported: 2026-11-13
 | `none / Desktop` | 240×40 | [456:5729](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5729) | 24 | ![](previews/user-status--none-desktop.png) |
 | `none / mobile` | 30×30 | [456:5740](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5740) | 61 | ![](previews/user-status--none-mobile.png) |
 | `nonSub / Desktop` | 172×40 | [456:5734](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5734) | 1 | ![](previews/user-status--nonsub-desktop.png) |
-| `subscriber / Desktop` | 30×30 | [456:5738](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5738) | 171 | ![](previews/user-status--subscriber-desktop.png) |
+| `subscriber / Desktop` | 30×30 | [456:5738](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5738) | 188 | ![](previews/user-status--subscriber-desktop.png) |
 
 ## Anatomy
 
@@ -77,9 +77,9 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **257**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **274**.
 
-Inside components: Masthead ×82, ObitMastHead ×26, AccountMenu ×21.
+Inside components: Masthead ×84, ObitMastHead ×41, AccountMenu ×21.
 Placed on pages: Menus and Parts ×98, Homepage ×4, Article Page ×2, Section Front ×1.
 23 instances are nested inside other instances.
 

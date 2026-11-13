@@ -9,7 +9,7 @@ component_key: d527b9d45b9d427355fa4f71183d2232ca6eaf27
 variants: 2
 tokens: 1col-article-card.tokens.json
 skeleton: 1col-article-card.html
-exported: 2026-11-02
+exported: 2026-11-13
 ---
 
 # 1Col Article Card
@@ -133,4 +133,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `1col-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

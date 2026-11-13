@@ -33,7 +33,7 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Small / Default` | 30×30 | [456:5675](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5675) | 240 | ![](previews/user-pic--small-default.png) |
+| `Small / Default` | 30×30 | [456:5675](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5675) | 257 | ![](previews/user-pic--small-default.png) |
 | `Small / Active` | 30×30 | [712:6222](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6222) | 1 | ![](previews/user-pic--small-active.png) |
 | `Large / Default` | 64×64 | [712:6226](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6226) | 0 | ![](previews/user-pic--large-default.png) |
 | `Large / Active` | 64×64 | [712:6295](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6295) | 1 | ![](previews/user-pic--large-active.png) |
@@ -100,11 +100,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **242**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **259**.
 
 Inside components: UserStatus ×3.
 Placed on pages: Menus and Parts ×1.
-233 instances are nested inside other instances.
+250 instances are nested inside other instances.
 
 **Built from:** AlertLevel ×12, UserImage ×6
 

@@ -40,7 +40,7 @@ exported: 2026-11-13
 | `monogram / large` | 64×64 | [456:5720](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5720) | 0 | ![](previews/user-image--monogram-large.png) |
 | `monogram / medium` | 40×40 | [712:6286](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6286) | 0 | ![](previews/user-image--monogram-medium.png) |
 | `monogramPP / large` | 64×64 | [456:5722](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5722) | 0 | ![](previews/user-image--monogrampp-large.png) |
-| `social / small` | 30×30 | [456:5709](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5709) | 181 | ![](previews/user-image--social-small.png) |
+| `social / small` | 30×30 | [456:5709](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5709) | 198 | ![](previews/user-image--social-small.png) |
 | `social / large` | 64×64 | [456:5711](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5711) | 3 | ![](previews/user-image--social-large.png) |
 | `social / medium` | 40×40 | [712:6288](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6288) | 2 | ![](previews/user-image--social-medium.png) |
 | `socialPhillip / large` | 64×64 | [456:5713](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5713) | 0 | ![](previews/user-image--socialphillip-large.png) |
@@ -105,10 +105,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **248**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **265**.
 
 Inside components: UserPic ×6.
-242 instances are nested inside other instances.
+259 instances are nested inside other instances.
 
 **Built from:** Icons ×3
 Icon variants: `user` ×3.

@@ -9,7 +9,7 @@ component_key: 9d3371e98d00532989e69d29025b4d6193a60848
 variants: 5
 tokens: footer.tokens.json
 skeleton: footer.html
-exported: 2026-10-30
+exported: 2026-11-13
 ---
 
 # Footer
@@ -689,4 +689,4 @@ Production footer (`ul.footer-menus`, `div.colophon`), breakpoints audited on oc
 - `footer.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
