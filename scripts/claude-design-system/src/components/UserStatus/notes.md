@@ -1,0 +1,3 @@
+- **Buttons are Button Primary** (40px). Production's header Subscribe is `color/theme/primary-dark`, Noto Sans SemiBold 15 / 26px, 45px tall (design-vs-production 10.10).
+- **16px between the parts** (`spacing/200`; production 15px).
+- Logged-in production shows the avatar and chevron at every width; logged-out production wasn't rechecked on 2026-11-13 (the review sites are signed in).

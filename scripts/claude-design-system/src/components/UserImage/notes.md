@@ -1,0 +1,4 @@
+- **32px small** (Karl, 2026-11-13): production's avatar is 30px, a tie on the 4 / 8 grid; medium 40, large 64.
+- **The photo and the monogram color change by reader** (Karl, 2026-11-13): production makes the initials picture on its server, in many colors. Figma's sample readers are Gritty McGee and Phillie Phanatic (mockups only); this preview uses a neutral sample photo.
+- **Initials** Noto Sans Regular 12 / 16 / 26 (about 40% of the circle; were 12 / 22 / 27). monogramPP's initials are white (5.0:1; near-black was 3.7:1).
+- Production: `img.rounded-circle` (30 × 30, `border-radius: 60%`), alt "Profile image" (design-vs-production 10.9).

@@ -1502,6 +1502,38 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Status:** Open, focus required. Added 2026-11-06. Team: CMS.
 
+### 10.9 Masthead avatar — 30px, no status dots, no focus style
+
+**Found:** 2026-11-13, logged in, on all 6 review sites (`#anchorProfileDropDown` in `mng-digisubs.styles.css`; Denver Post also at 360, 700 and 1100px). **Team:** digisubs.
+
+**Design:** WordPress Elements ▸ Menus and Parts ▸ **UserPic** (`456:5674`) with **UserImage** (`456:5708`) and **AlertLevel** (`456:5683`), rebuilt 2026-11-13.
+
+| Property | Production | Design |
+|---|---|---|
+| Avatar size | 30 × 30 (`.rounded-circle { max-width: 30px }`), every width | 32px (a 4 / 8 tie, Karl 2026-11-13: 32) |
+| Shape | `border-radius: 60%` | a full circle |
+| Status dots | none | top left: the reader is active (green); bottom right: an alert or message to see (low / medium / high) (Karl, 2026-11-13) |
+| Keyboard focus | `outline: none` on the link and the image: no visible focus | a visible 2px `color/gray/black` focus ring (as on the other components) |
+
+**Action needed:** avatar 32px; add `:focus-visible { outline: 2px solid #000; outline-offset: 2px }` to `#anchorProfileDropDown` (WCAG 2.4.7). The status dots are a design proposal: add them when the account data can drive them (active reader; unread alerts), and name them in the link's label (color alone isn't enough).
+
+**Status:** Open, focus required. Added 2026-11-13.
+
+### 10.10 Masthead Subscribe button — 15px SemiBold, 45px tall, 15px from the avatar
+
+**Found:** 2026-11-13 on all 6 review sites (`#dfm-digisubs-menu .subscribe-visibility a`, shown to readers who aren't subscribers). **Team:** digisubs.
+
+**Design:** WordPress Elements ▸ Menus and Parts ▸ **UserStatus** (`456:5728`): Subscribe (and Log In when logged out) is **Button Primary**, 16px (`spacing/200`) from the next part.
+
+| Property | Production | Design |
+|---|---|---|
+| Button | `color/theme/primary-dark` fill, white Noto Sans SemiBold 15 / 26px, padding 10 / 7px, 120 × 45, 4px corners | Button Primary: `color/theme/primary`, Noto Sans Bold 16, 40px tall, 4px corners |
+| Space to the avatar | 15px | 16px (`spacing/200`) |
+
+**Action needed:** style the header Subscribe link as Button Primary (the same fix as the `.subscribe-button` CTA in entry 6) and set the gap to 16px.
+
+**Status:** Open. Added 2026-11-13.
+
 ---
 
 ## 11. Account menu — dropdown shadow isn't the design token

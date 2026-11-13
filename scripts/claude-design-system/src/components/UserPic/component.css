@@ -1,0 +1,7 @@
+/* UserPic: values from components/wordpress/user-pic. The dots sit flush with the top-left and bottom-right corners. */
+.mngds-user-pic { position: relative; display: inline-flex; flex-shrink: 0; vertical-align: middle; }
+.mngds-user-pic--small { width: var(--mng-user-pic-size-small-root-width); height: var(--mng-user-pic-size-small-root-height); }
+.mngds-user-pic--medium { width: var(--mng-user-pic-size-medium-root-width); height: var(--mng-user-pic-size-medium-root-height); }
+.mngds-user-pic--large { width: var(--mng-user-pic-size-large-root-width); height: var(--mng-user-pic-size-large-root-height); }
+.mngds-user-pic__active { position: absolute; left: 0; top: 0; }
+.mngds-user-pic__alert { position: absolute; right: 0; bottom: 0; }

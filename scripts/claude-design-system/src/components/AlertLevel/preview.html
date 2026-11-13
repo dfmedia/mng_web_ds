@@ -1,0 +1,18 @@
+<!-- @dsCard group="WordPress Elements" height=260 subtitle="Figma: AlertLevel · 8 variants (Level × Size)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AlertLevel</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var levels = ['none', 'low', 'medium', 'high'];
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    ['Small', 'Large'].map(function (s) {
+      return h(I.SpecimenSection, { key: s, title: 'Size = ' + s, note: s === 'Small' ? '8px: the masthead avatar and the Account Dropdown Menu.' : '16px: the Reader Dashboard profile.' },
+        h(I.Specimen, { items: levels.map(function (l) { return { label: 'Level=' + l + (l === 'none' ? ' (no dot)' : ''), node: h(NS.AlertLevel, { level: l, size: s }) }; }) }));
+    })));
+</script>
+</body>
+</html>

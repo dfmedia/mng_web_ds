@@ -9,22 +9,13 @@
         "componentSet": "UserImage",
         "page": "Menus and Parts"
       },
-      "production": "Production avatar service image (120×120 shown at 30×30).",
+      "production": "Production `#anchorProfileDropDown img.rounded-circle`: the reader's photo or a server-made initials picture, 30 × 30 (all 6 review sites, logged in, 2026-11-13).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-13"
     }
   },
   "user-image": {
     "size-small": {
-      "gritty-1": {
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 30,
-            "unit": "px"
-          }
-        }
-      },
       "icons": {
         "height": {
           "$type": "dimension",
@@ -54,60 +45,12 @@
           }
         }
       },
-      "root": {
+      "photo": {
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
-          }
-        },
-        "width": {
-          "$type": "dimension",
-          "$value": {
-            "value": 30,
-            "unit": "px"
-          }
-        }
-      }
-    },
-    "size-medium": {
-      "gritty-1": {
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 40,
-            "unit": "px"
-          }
-        }
-      },
-      "icons": {
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 24,
-            "unit": "px"
-          }
-        },
-        "width": {
-          "$type": "dimension",
-          "$value": {
-            "value": 24,
-            "unit": "px"
-          }
-        }
-      },
-      "initials": {
-        "font-size": {
-          "$type": "dimension",
-          "$value": {
-            "value": 22,
-            "unit": "px"
-          },
-          "$extensions": {
-            "com.mng": {
-              "unbound": true
-            }
           }
         }
       },
@@ -115,14 +58,14 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 40,
+            "value": 32,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 40,
+            "value": 32,
             "unit": "px"
           }
         }
@@ -148,13 +91,12 @@
       "initials": {
         "font-size": {
           "$type": "dimension",
-          "$value": {
-            "value": 27,
-            "unit": "px"
-          },
+          "$value": "{font.size.26}",
           "$extensions": {
             "com.mng": {
-              "unbound": true
+              "figma": {
+                "variable": "Type Primitives/font/size/26"
+              }
             }
           }
         }
@@ -171,6 +113,62 @@
           "$type": "dimension",
           "$value": {
             "value": 64,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "size-medium": {
+      "icons": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 24,
+            "unit": "px"
+          }
+        }
+      },
+      "initials": {
+        "font-size": {
+          "$type": "dimension",
+          "$value": "{font.size.16}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Type Primitives/font/size/16"
+              }
+            }
+          }
+        }
+      },
+      "photo": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 40,
+            "unit": "px"
+          }
+        }
+      },
+      "root": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 40,
+            "unit": "px"
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 40,
             "unit": "px"
           }
         }
@@ -204,7 +202,7 @@
         }
       }
     },
-    "base": {
+    "graphic-monogram": {
       "initials": {
         "color": {
           "$type": "color",
@@ -216,7 +214,60 @@
               }
             }
           }
-        },
+        }
+      },
+      "root": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              1.0,
+              0.4392,
+              0.1725
+            ],
+            "alpha": 1,
+            "hex": "#ff702c"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(255, 112, 44, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "graphic-monogrampp": {
+      "initials": {
+        "color": {
+          "$type": "color",
+          "$value": "{color.gray.max}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/max"
+              }
+            }
+          }
+        }
+      },
+      "root": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.feedback.low-success}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/feedback/low-success"
+              }
+            }
+          }
+        }
+      }
+    },
+    "base": {
+      "initials": {
         "font-family": {
           "$type": "fontFamily",
           "$value": "{font.family.noto-sans}",
@@ -250,44 +301,6 @@
           "$extensions": {
             "com.mng": {
               "unbound": true
-            }
-          }
-        }
-      }
-    },
-    "graphic-monogram": {
-      "root": {
-        "background": {
-          "$type": "color",
-          "$value": {
-            "colorSpace": "srgb",
-            "components": [
-              1.0,
-              0.4392,
-              0.1725
-            ],
-            "alpha": 1,
-            "hex": "#ff702c"
-          },
-          "$extensions": {
-            "com.mng": {
-              "rgba": "rgba(255, 112, 44, 1)",
-              "unbound": true
-            }
-          }
-        }
-      }
-    },
-    "graphic-monogrampp": {
-      "root": {
-        "background": {
-          "$type": "color",
-          "$value": "{color.feedback.low-success}",
-          "$extensions": {
-            "com.mng": {
-              "figma": {
-                "variable": "Colors/color/feedback/low-success"
-              }
             }
           }
         }

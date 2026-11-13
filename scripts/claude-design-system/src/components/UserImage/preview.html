@@ -1,0 +1,20 @@
+<!-- @dsCard group="WordPress Elements" height=420 subtitle="Figma: UserImage · 12 variants (Size × Graphic)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>UserImage</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  /* A neutral sample photo (no real person): sky, sun and hills. */
+  var PHOTO = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#7fb3d5"/><circle cx="44" cy="20" r="9" fill="#f7dc6f"/><path d="M0 46 L20 30 L34 42 L46 32 L64 46 V64 H0Z" fill="#52805a"/><path d="M0 54 L18 44 L40 56 L64 48 V64 H0Z" fill="#3b5e43"/></svg>');
+  var graphics = [['unknown', {}], ['monogram', { name: 'Gritty McGee' }], ['monogramPP', { name: 'Phillie Phanatic', graphic: 'monogramPP' }], ['social', { src: PHOTO }]];
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    ['small', 'medium', 'large'].map(function (s) {
+      return h(I.SpecimenSection, { key: s, title: 'Size = ' + s + ' (' + { small: 32, medium: 40, large: 64 }[s] + 'px)', note: s === 'small' ? 'The masthead avatar (production 30px). Initials are about 40% of the circle; the monogram colors and the photo change by reader (sample art here).' : null },
+        h(I.Specimen, { items: graphics.map(function (g) { return { label: 'Graphic=' + g[0], node: h(NS.UserImage, Object.assign({ size: s, graphic: g[0] }, g[1])) }; }) }));
+    })));
+</script>
+</body>
+</html>

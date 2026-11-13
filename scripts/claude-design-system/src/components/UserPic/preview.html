@@ -1,0 +1,22 @@
+<!-- @dsCard group="WordPress Elements" height=520 subtitle="Figma: UserPic · 6 variants (Size × Status), Alert Dot level" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>UserPic</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var PHOTO = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#7fb3d5"/><circle cx="44" cy="20" r="9" fill="#f7dc6f"/><path d="M0 46 L20 30 L34 42 L46 32 L64 46 V64 H0Z" fill="#52805a"/><path d="M0 54 L18 44 L40 56 L64 48 V64 H0Z" fill="#3b5e43"/></svg>');
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size × Status', note: 'Status = Active shows the green dot top left (the reader is active). Sample photo; the reader’s own photo or initials go here.' },
+      h(I.Specimen, { items: ['Small', 'Medium', 'Large'].reduce(function (a, s) {
+        return a.concat(['Default', 'Active'].map(function (st) { return { label: 'Size=' + s + ', Status=' + st, node: h(NS.UserPic, { size: s, status: st, src: PHOTO }) }; }));
+      }, []) })),
+    h(I.SpecimenSection, { title: 'Alert Dot (bottom right)', note: 'An alert or message to see: low, medium or high. Say it in the account button’s name too.' },
+      h(I.Specimen, { items: [['Small', 'low'], ['Small', 'medium'], ['Small', 'high'], ['Large', 'medium']].map(function (x) {
+        return { label: 'Size=' + x[0] + ', alert=' + x[1], node: h(NS.UserPic, { size: x[0], status: 'Active', alert: x[1], name: 'Gritty McGee' }) };
+      }) }))));
+</script>
+</body>
+</html>

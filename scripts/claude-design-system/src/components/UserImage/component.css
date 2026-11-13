@@ -1,0 +1,17 @@
+/* UserImage: values from components/wordpress/user-image. A full circle; the photo or the initials fill it. */
+.mngds-user-image {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; box-sizing: border-box; overflow: hidden;
+  border-radius: 50%; vertical-align: middle;
+  font-family: var(--mng-user-image-base-initials-font-family); font-weight: var(--mng-user-image-base-initials-font-weight); line-height: 1;
+}
+.mngds-user-image--small { width: var(--mng-user-image-size-small-root-width); height: var(--mng-user-image-size-small-root-height); font-size: var(--mng-user-image-size-small-initials-font-size); }
+.mngds-user-image--medium { width: var(--mng-user-image-size-medium-root-width); height: var(--mng-user-image-size-medium-root-height); font-size: var(--mng-user-image-size-medium-initials-font-size); }
+.mngds-user-image--large { width: var(--mng-user-image-size-large-root-width); height: var(--mng-user-image-size-large-root-height); font-size: var(--mng-user-image-size-large-initials-font-size); }
+/* unknown: the user icon, color/gray/min on color/gray/max. */
+.mngds-user-image--unknown { background: var(--mng-user-image-graphic-unknown-root-background); color: var(--mng-user-image-graphic-unknown-icons-icon-color); }
+/* monogram: sample avatar art #FF702C with color/gray/min initials (6.7:1); monogramPP color/feedback/low-success with
+   color/gray/max initials (5.0:1). Pass `background` / `color` for a reader's own colors. */
+.mngds-user-image--monogram { background: var(--mng-user-image-graphic-monogram-root-background); color: var(--mng-user-image-graphic-monogram-initials-color); }
+.mngds-user-image--monogrampp { background: var(--mng-user-image-graphic-monogrampp-root-background); color: var(--mng-user-image-graphic-monogrampp-initials-color); }
+.mngds-user-image__photo { width: 100%; height: 100%; object-fit: cover; display: block; }
+.mngds-user-image__initials { display: block; text-align: center; }

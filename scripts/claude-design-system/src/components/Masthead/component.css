@@ -34,7 +34,7 @@
 
 /* AccountMenu, Closed: 8px padding and gap; UserStatus; SearchBar (20px icon) */
 .mngds-masthead__account-menu { display: flex; align-items: center; gap: var(--mng-spacing-100); height: 64px; padding: 0 var(--mng-spacing-100); }
-.mngds-masthead__buttons { display: flex; align-items: center; gap: 15px; }
+.mngds-masthead__buttons { display: flex; align-items: center; gap: var(--mng-user-status-base-root-gap); }
 .mngds-masthead__buttons .mngds-button-primary { padding: 0; }
 .mngds-masthead__account, .mngds-masthead__search {
   display: inline-flex; align-items: center; gap: var(--mng-spacing-050); margin: 0; padding: 0; border: 0; background: none;
@@ -42,12 +42,7 @@
 }
 .mngds-masthead__search { width: 30px; justify-content: center; }
 .mngds-masthead__chevron { display: inline-flex; align-items: center; justify-content: center; width: 16px; height: 16px; }
-.mngds-masthead__avatar {
-  display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border-radius: 50%; overflow: hidden;
-  background: var(--mng-color-gray-max); color: var(--mng-color-gray-min); flex-shrink: 0;
-}
-.mngds-masthead__avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.mngds-masthead__avatar--monogram { background: #ff702c; font-size: var(--mng-font-size-12); font-weight: var(--mng-font-weight-regular); line-height: 1; }
+/* The avatar is the UserPic component (Small, 32px). */
 .mngds-masthead__menu-toggle:focus-visible, .mngds-masthead__account:focus-visible, .mngds-masthead__search:focus-visible,
 .mngds-masthead__logo-link:focus-visible, .mngds-masthead a:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }
 

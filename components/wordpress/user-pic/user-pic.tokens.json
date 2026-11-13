@@ -9,14 +9,30 @@
         "componentSet": "UserPic",
         "page": "Menus and Parts"
       },
-      "production": "Production logged-in avatar.",
+      "production": "Production `#anchorProfileDropDown` (all 6 review sites, logged in, 2026-11-13; Denver Post also at 360, 700 and 1100px).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-13"
     }
   },
   "user-pic": {
     "size-small": {
-      "alertlevel": {
+      "active-dot": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          }
+        }
+      },
+      "alert-dot": {
         "height": {
           "$type": "dimension",
           "$value": {
@@ -36,14 +52,14 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
           }
         }
@@ -52,21 +68,37 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
           }
         }
       }
     },
     "size-large": {
-      "alertlevel": {
+      "active-dot": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 16,
+            "unit": "px"
+          }
+        }
+      },
+      "alert-dot": {
         "height": {
           "$type": "dimension",
           "$value": {
@@ -116,7 +148,23 @@
       }
     },
     "size-medium": {
-      "alertlevel": {
+      "active-dot": {
+        "height": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          }
+        },
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 8,
+            "unit": "px"
+          }
+        }
+      },
+      "alert-dot": {
         "height": {
           "$type": "dimension",
           "$value": {
@@ -166,7 +214,20 @@
       }
     },
     "base": {
-      "alertlevel": {
+      "active-dot": {
+        "icon-color": {
+          "$type": "color",
+          "$value": "{color.feedback.low-success}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/feedback/low-success"
+              }
+            }
+          }
+        }
+      },
+      "alert-dot": {
         "icon-color": {
           "$type": "color",
           "$value": "{color.feedback.low-success}",

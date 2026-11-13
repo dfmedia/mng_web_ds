@@ -1026,6 +1026,22 @@
       "exported": "2026-10-30"
     },
     {
+      "slug": "alert-level",
+      "name": "AlertLevel",
+      "group": "navigation",
+      "layer": "wordpress",
+      "path": "components/wordpress/alert-level/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "456:5683",
+        "set": "AlertLevel"
+      },
+      "variants": 8,
+      "instances": 496,
+      "knownIssues": 1,
+      "exported": "2026-11-13"
+    },
+    {
       "slug": "footer",
       "name": "Footer",
       "group": "navigation",
@@ -1181,9 +1197,9 @@
         "set": "UserImage"
       },
       "variants": 12,
-      "instances": 259,
-      "knownIssues": 2,
-      "exported": "2026-10-30"
+      "instances": 248,
+      "knownIssues": 3,
+      "exported": "2026-11-13"
     },
     {
       "slug": "user-pic",
@@ -1197,9 +1213,9 @@
         "set": "UserPic"
       },
       "variants": 6,
-      "instances": 253,
-      "knownIssues": 0,
-      "exported": "2026-10-30"
+      "instances": 242,
+      "knownIssues": 1,
+      "exported": "2026-11-13"
     },
     {
       "slug": "user-status",
@@ -1213,9 +1229,9 @@
         "set": "UserStatus"
       },
       "variants": 4,
-      "instances": 274,
+      "instances": 257,
       "knownIssues": 2,
-      "exported": "2026-10-30"
+      "exported": "2026-11-13"
     },
     {
       "slug": "weather-bug",

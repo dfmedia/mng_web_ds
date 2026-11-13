@@ -1,0 +1,4 @@
+- **Two dots in UserPic** (Karl, 2026-11-13): top left = the reader is active (low, green); bottom right = the reader has an alert or message to see (low, medium or high).
+- **Colors:** `color/feedback/low-success` #2E8000, `color/feedback/medium` #856A00, `color/feedback/high-error` #CC2B27: 5.0, 5.2 and 5.3:1 on white.
+- **Level = none draws nothing** (fixed in Figma 2026-11-13; it drew a green dot).
+- **Production:** the WordPress masthead avatar shows no dots; they are a design proposal (design-vs-production 10.9).

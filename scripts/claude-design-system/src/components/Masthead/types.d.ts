@@ -1,6 +1,6 @@
 export type MastheadDevice = 'XL-Desktop' | 'LG-TabletH' | 'MD-TabletV' | 'SM-Mobile' | 'XS-Fold';
 export interface MastheadLink { label: React.ReactNode; href?: string; onClick?: (e: React.MouseEvent) => void; id?: string; }
-export interface MastheadUser { name?: string; initials?: string; imageSrc?: string; }
+export interface MastheadUser { name?: string; initials?: string; imageSrc?: string; /** UserPic dots: 'Active' = the reader is active (top left); alert = an alert or message (bottom right). */ status?: 'Default' | 'Active'; alert?: 'none' | 'low' | 'medium' | 'high'; background?: string; color?: string; }
 export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   /** Figma Page. Default 'Home'. */
   page?: 'Home' | 'SectionFront' | 'Article' | 'Obituaries' | 'Dashboard';

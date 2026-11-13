@@ -1133,65 +1133,78 @@
       "name": "UserImage",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 10,
+      "order": 11,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5708",
-      "documentationFrame": null,
-      "description": "The reader's avatar art. Size = small / medium / large; Graphic = unknown, monogram, monogramPP, social, socialPhillip.",
+      "documentationFrame": "3812:50016",
+      "description": "The reader's avatar art, a circle. Size = small (32px) / medium (40px) / large (64px); Graphic = unknown, monogram, monogramPP, social, socialPhillip. The photo and the monogram color change by reader; the sample readers are Gritty McGee and Phillie Phanatic (mockups only).",
       "rules": [
         "Used inside UserPic.",
-        "Monogram text sizes (22, 27px) are avatar art, not type tokens (Karl, 2026-10-08)."
+        "**Sizes:** small 32px (masthead; production 30px: a 4 / 8 tie, Karl 2026-11-13: 32), medium 40px, large 64px. A full circle.",
+        "**unknown:** the user icon in `color/gray/min` on `color/gray/max`, 16px (small) or 24px.",
+        "**monogram:** initials, Noto Sans Regular 12 / 16 / 26 (`font/size/12`, `/16`, `/26`; about 40% of the circle; were 12 / 22 / 27 until 2026-11-13), centered. The background is avatar art and changes by reader (production draws the picture on its server, in many colors; Karl, 2026-11-13). Samples: #FF702C with `color/gray/min` initials (6.7:1); monogramPP `color/feedback/low-success` with `color/gray/max` initials (5.0:1; was gray/min, 3.7:1).",
+        "**social:** the reader's profile photo cropped to the circle (production loads it from the reader's Google account).",
+        "Give the avatar an accessible name (production: alt \"Profile image\")."
       ],
       "breakpoints": null,
       "knownIssues": [
-        "Raw values: 80px circle radius, #FF702C monogram background."
+        "Raw values: the 80px corner radius (a full circle) and the #FF702C sample monogram background (avatar art, not a token).",
+        "Production's avatar is 30px with `border-radius: 60%` (design-vs-production 10.9)."
       ],
-      "production": "Production avatar service image (120×120 shown at 30×30)."
+      "production": "Production `#anchorProfileDropDown img.rounded-circle`: the reader's photo or a server-made initials picture, 30 × 30 (all 6 review sites, logged in, 2026-11-13)."
     },
     {
       "slug": "user-pic",
       "name": "UserPic",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 11,
+      "order": 12,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5674",
-      "documentationFrame": null,
-      "description": "The circular avatar button in the masthead. Size = Small / Medium / Large; Status = Default / Active (menu open).",
+      "documentationFrame": "3812:50085",
+      "description": "The avatar button: UserImage with two AlertLevel dots (Karl, 2026-11-13). Size = Small (32px) / Medium (40px) / Large (64px); Status = Default / Active (Active = the reader is active: green dot top left). The bottom-right Alert Dot shows an alert or message (set its Level).",
       "rules": [
-        "UserImage inside.",
-        "Use the reader's name in the button's accessible label."
+        "UserImage inside; the chevron that opens the account menu belongs to AccountMenu.",
+        "**Sizes:** Small 32px (masthead, Account Dropdown Menu), Medium 40px, Large 64px (Reader Dashboard profile).",
+        "**Active Dot** (top left, flush with the corner): Status = Active shows AlertLevel low (green); Default shows none.",
+        "**Alert Dot** (bottom right, flush with the corner): AlertLevel, Level none by default; set low, medium or high. 8px dots on Small and Medium, 16px on Large.",
+        "Use the reader's name, and any active or alert state, in the button's accessible label (production: \"Account menu dropdown\")."
       ],
       "breakpoints": null,
-      "knownIssues": [],
-      "production": "Production logged-in avatar."
+      "knownIssues": [
+        "Production shows a 30px photo and a chevron with no dots and no focus style (`outline: none`) (design-vs-production 10.9)."
+      ],
+      "production": "Production `#anchorProfileDropDown` (all 6 review sites, logged in, 2026-11-13; Denver Post also at 360, 700 and 1100px)."
     },
     {
       "slug": "user-status",
       "name": "UserStatus",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 12,
+      "order": 13,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "456:5728",
-      "documentationFrame": "456:5671",
+      "documentationFrame": "3812:50150",
       "description": "The account area of the masthead. status = none (logged out), nonSub, subscriber; Device = Desktop / mobile. Nested in AccountMenu; it decides buttons vs avatar in every Masthead variant.",
       "rules": [
-        "Logged out on Desktop: Subscribe (Button Primary) and Log In; on mobile: the account icon.",
-        "Logged in: the avatar (UserPic)."
+        "Logged out on Desktop: Subscribe and Log In (Button Primary); on mobile: the account icon (UserPic with UserImage unknown).",
+        "nonSub: Subscribe, then the avatar (UserPic Small). subscriber: the avatar only.",
+        "**Spacing:** 16px (`spacing/200`) between the parts (production 15px), centered vertically.",
+        "AccountMenu adds the chevron next to the avatar."
       ],
       "breakpoints": null,
       "knownIssues": [
-        "Raw value: 15px gap."
+        "Production's header Subscribe is `color/theme/primary-dark`, Noto Sans SemiBold 15 / 26px, padding 10 / 7px, 45px tall; the design keeps Button Primary (design-vs-production 10.10).",
+        "Logged-out production wasn't checked this time (Karl is logged in on the review sites)."
       ],
-      "production": "Production masthead account area."
+      "production": "Production `#dfm-digisubs-menu` (all 6 review sites, logged in, 2026-11-13)."
     },
     {
       "slug": "weather-bug",
       "name": "Weather Bug",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 13,
+      "order": 14,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "654:10020",
       "documentationFrame": null,
@@ -1212,7 +1225,7 @@
       "name": "Footer",
       "group": "navigation",
       "layer": "wordpress",
-      "order": 14,
+      "order": 15,
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "354:1282",
       "documentationFrame": "803:1835",
@@ -1974,6 +1987,27 @@
         "Below 800px the component tokens carry the headline's values for the \"Headline and Date\" text layer (the exporter reads its first text run); the date's values (Noto Sans Regular 12 / 18.75px, `color/gray/100`) are in the rules above."
       ],
       "production": "Production `.breaking-bar > .breaking-bar-inner` (h2.widget-title, article.headline-only > .breaking-header > h3.entry-title a + time, a.icon-close) on the homepage, all 6 review sites, measured 2026-11-12 at 1728px and at 360 / 640 / 800 / 1040px on Cañon City's live bar."
+    },
+    {
+      "slug": "alert-level",
+      "name": "AlertLevel",
+      "group": "navigation",
+      "layer": "wordpress",
+      "order": 10,
+      "file": "b1iZxkFwtAYq9rElmnCAzd",
+      "node": "456:5683",
+      "documentationFrame": "3812:50002",
+      "description": "A status dot. Level = none (no dot), low, medium, high; Size = Small (8px: masthead, Account Dropdown Menu) / Large (16px: Reader Dashboard profile). UserPic uses two: top left, the reader is active; bottom right, the reader has an alert or message to see (Karl, 2026-11-13).",
+      "rules": [
+        "**Dot:** a circle, 8px (Small) or 16px (Large); the component is the dot's own size, with no padding. Level = none draws nothing (fixed 2026-11-13: it drew a green dot).",
+        "**Colors:** low `color/feedback/low-success` (#2E8000), medium `color/feedback/medium` (#856A00), high `color/feedback/high-error` (#CC2B27): 5.0, 5.2 and 5.3:1 on white (a dot is a graphic and needs 3:1).",
+        "**Meaning** comes from where it sits in UserPic: top left = active, bottom right = alert or message. Say it in text too (for example in the avatar's accessible name): color alone isn't enough."
+      ],
+      "breakpoints": null,
+      "knownIssues": [
+        "Production's masthead avatar shows no dots: they are a design proposal (design-vs-production 10.9)."
+      ],
+      "production": "Not in the WordPress masthead (checked on all 6 review sites, logged in, 2026-11-13)."
     }
   ]
 }

@@ -1,0 +1,21 @@
+<!-- @dsCard group="WordPress Elements" height=360 subtitle="Figma: UserStatus · 4 variants (Device × status)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>UserStatus</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var reader = { name: 'Gritty McGee' };
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    h(I.SpecimenSection, { title: 'Device × status', note: 'Subscribe and Log In are Button Primary, 16px (spacing/200) apart. The avatar is UserPic Small; AccountMenu adds the chevron and the menu button.' },
+      h(I.Specimen, { items: [
+        { label: 'Device=Desktop, status=none', node: h(NS.UserStatus, { status: 'none' }) },
+        { label: 'Device=Desktop, status=nonSub', node: h(NS.UserStatus, { status: 'nonSub', user: reader }) },
+        { label: 'Device=Desktop, status=subscriber', node: h(NS.UserStatus, { status: 'subscriber', user: reader }) },
+        { label: 'Device=mobile, status=none', node: h(NS.UserStatus, { status: 'none', device: 'mobile' }) }
+      ] })));
+</script>
+</body>
+</html>

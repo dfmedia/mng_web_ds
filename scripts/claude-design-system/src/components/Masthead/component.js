@@ -101,13 +101,13 @@ function MastheadSectionToggle(p) {
     showTitle ? h('span', { className: 'mngds-masthead__menu-title' }, p.label) : null);
 }
 
-/* UserPic / UserImage (Size = small, 30px): the reader's photo, initials (monogram) or the generic person (unknown). */
+/* UserPic (Size = Small, 32px; production 30px, Karl 2026-11-13) with UserImage inside: the reader's photo, initials
+   (monogram) or the generic user icon (unknown). user.status = 'Active' and user.alert show the status dots. */
 function MastheadAvatar(p) {
   var u = p.user || {};
-  if (p.unknown) return h('span', { className: 'mngds-masthead__avatar mngds-masthead__avatar--unknown', 'aria-hidden': 'true' }, h(Icon, { name: 'user', size: 16 }));
-  if (u.imageSrc) return h('span', { className: 'mngds-masthead__avatar', 'aria-hidden': 'true' }, h('img', { src: u.imageSrc, alt: '' }));
-  var initials = u.initials || String(u.name || 'Reader').split(/\s+/).map(function (w) { return w.charAt(0); }).join('').slice(0, 2).toUpperCase();
-  return h('span', { className: 'mngds-masthead__avatar mngds-masthead__avatar--monogram', 'aria-hidden': 'true' }, initials);
+  if (p.unknown) return h(UserPic, { size: 'Small', graphic: 'unknown' });
+  return h(UserPic, { size: 'Small', src: u.imageSrc || u.src, name: u.name, initials: u.initials, status: u.status, alert: u.alert,
+    background: u.background, color: u.color });
 }
 
 /* AccountMenu, View = Closed (UserStatus inside), plus the SearchBar (Status = Default) slot. */

@@ -9,9 +9,9 @@
         "componentSet": "UserStatus",
         "page": "Menus and Parts"
       },
-      "production": "Production masthead account area.",
+      "production": "Production `#dfm-digisubs-menu` (all 6 review sites, logged in, 2026-11-13).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-13"
     }
   },
   "user-status": {
@@ -28,21 +28,13 @@
       "root": {
         "gap": {
           "$type": "dimension",
-          "$value": {
-            "value": 15,
-            "unit": "px"
-          },
+          "$value": "{spacing.200}",
           "$extensions": {
             "com.mng": {
-              "unbound": true
+              "figma": {
+                "variable": "Spacing & Radius/spacing/200"
+              }
             }
-          }
-        },
-        "height": {
-          "$type": "dimension",
-          "$value": {
-            "value": 32,
-            "unit": "px"
           }
         }
       },
@@ -50,14 +42,14 @@
         "height": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
           }
         },
         "width": {
           "$type": "dimension",
           "$value": {
-            "value": 30,
+            "value": 32,
             "unit": "px"
           }
         }

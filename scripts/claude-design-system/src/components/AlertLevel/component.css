@@ -1,0 +1,8 @@
+/* AlertLevel: values from components/wordpress/alert-level. A circle the size of the component; none draws nothing. */
+.mngds-alert-level { display: inline-block; flex-shrink: 0; border-radius: 50%; box-sizing: border-box; }
+.mngds-alert-level--small { width: var(--mng-alert-level-size-small-root-width); height: var(--mng-alert-level-size-small-root-height); }
+.mngds-alert-level--large { width: var(--mng-alert-level-size-large-root-width); height: var(--mng-alert-level-size-large-root-height); }
+/* low / medium / high: 5.0, 5.2 and 5.3:1 on white (a graphic needs 3:1). */
+.mngds-alert-level--low { background: var(--mng-alert-level-level-low-indicator-dot-background); }
+.mngds-alert-level--medium { background: var(--mng-alert-level-level-medium-indicator-dot-background); }
+.mngds-alert-level--high { background: var(--mng-alert-level-level-high-indicator-dot-background); }
