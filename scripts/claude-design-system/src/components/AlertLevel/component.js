@@ -1,4 +1,4 @@
-/* AlertLevel (WordPress Elements, Menus and Parts, 456:5683): a status dot. Level = none (no dot), low, medium, high;
+/* AlertLevel (MNG Web Design System, User Avatars and Status, 7594:29470; moved from WordPress Elements 2026-11-13): a status dot. Level = none (no dot), low, medium, high;
    Size = Small (8px: masthead, Account Dropdown Menu) / Large (16px: Reader Dashboard profile). UserPic uses two:
    top left = the reader is active, bottom right = an alert or message to see (Karl, 2026-11-13). */
 function AlertLevel(props) {

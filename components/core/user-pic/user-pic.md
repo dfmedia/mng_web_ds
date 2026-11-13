@@ -1,11 +1,11 @@
 ---
 name: UserPic
 slug: user-pic
-layer: wordpress
-figma_file: b1iZxkFwtAYq9rElmnCAzd
+layer: core
+figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "UserPic"
-figma_node: "456:5674"
-component_key: b0a98e06e6e220ea1c7d4a247494ff5525fe0dd7
+figma_node: "7594:29564"
+component_key: bdbfbf90470bc7c0352b592d4ac69bddbe3834bf
 variants: 6
 tokens: user-pic.tokens.json
 skeleton: user-pic.html
@@ -18,9 +18,9 @@ exported: 2026-11-13
 
 ## Figma
 
-- File: **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`), page **Menus and Parts**
-- Component set: [`UserPic` · 456:5674](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5674) · key `b0a98e06e6e220ea1c7d4a247494ff5525fe0dd7`
-- Documentation frame: [UserPic Container](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3812-50085) · overview: [previews/user-pic--documentation.png](previews/user-pic--documentation.png)
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **User Avatars and Status | 2026.11.13**
+- Component set: [`UserPic` · 7594:29564](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29564) · key `bdbfbf90470bc7c0352b592d4ac69bddbe3834bf`
+- Documentation frame: [UserPic Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29556) · overview: [previews/user-pic--documentation.png](previews/user-pic--documentation.png)
 
 ## Properties
 
@@ -33,12 +33,12 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Small / Default` | 30×30 | [456:5675](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5675) | 257 | ![](previews/user-pic--small-default.png) |
-| `Small / Active` | 30×30 | [712:6222](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6222) | 1 | ![](previews/user-pic--small-active.png) |
-| `Large / Default` | 64×64 | [712:6226](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6226) | 0 | ![](previews/user-pic--large-default.png) |
-| `Large / Active` | 64×64 | [712:6295](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6295) | 1 | ![](previews/user-pic--large-active.png) |
-| `Medium / Default` | 40×40 | [456:5678](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5678) | 0 | ![](previews/user-pic--medium-default.png) |
-| `Medium / Active` | 40×40 | [712:6292](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6292) | 0 | ![](previews/user-pic--medium-active.png) |
+| `Small / Default` | 30×30 | [7594:29565](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29565) | 14 | ![](previews/user-pic--small-default.png) |
+| `Small / Active` | 30×30 | [7594:29569](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29569) | 1 | ![](previews/user-pic--small-active.png) |
+| `Large / Default` | 64×64 | [7594:29581](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29581) | 0 | ![](previews/user-pic--large-default.png) |
+| `Large / Active` | 64×64 | [7594:29585](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29585) | 1 | ![](previews/user-pic--large-active.png) |
+| `Medium / Default` | 40×40 | [7594:29573](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29573) | 22 | ![](previews/user-pic--medium-default.png) |
+| `Medium / Active` | 40×40 | [7594:29577](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29577) | 6 | ![](previews/user-pic--medium-active.png) |
 
 ## Anatomy
 
@@ -100,11 +100,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **259**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **44**.
 
-Inside components: UserStatus ×3.
-Placed on pages: Menus and Parts ×1.
-250 instances are nested inside other instances.
+Inside components: InLineMessage ×14, UserStatus ×3.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×14, User Avatars and Status | 2026.11.13 ×1.
+7 instances are nested inside other instances.
 
 **Built from:** AlertLevel ×12, UserImage ×6
 

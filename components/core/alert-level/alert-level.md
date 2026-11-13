@@ -1,11 +1,11 @@
 ---
 name: AlertLevel
 slug: alert-level
-layer: wordpress
-figma_file: b1iZxkFwtAYq9rElmnCAzd
+layer: core
+figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "AlertLevel"
-figma_node: "456:5683"
-component_key: 9196a8bca6b630f7ea65099a7307f7429a80d2c2
+figma_node: "7594:29470"
+component_key: fadcf46b7db712900f8fe8f81d4675d3fce0f66f
 variants: 8
 tokens: alert-level.tokens.json
 skeleton: alert-level.html
@@ -18,9 +18,9 @@ exported: 2026-11-13
 
 ## Figma
 
-- File: **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`), page **Menus and Parts**
-- Component set: [`AlertLevel` · 456:5683](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5683) · key `9196a8bca6b630f7ea65099a7307f7429a80d2c2`
-- Documentation frame: [AlertLevel Container](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3812-50002) · overview: [previews/alert-level--documentation.png](previews/alert-level--documentation.png)
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **User Avatars and Status | 2026.11.13**
+- Component set: [`AlertLevel` · 7594:29470](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29470) · key `fadcf46b7db712900f8fe8f81d4675d3fce0f66f`
+- Documentation frame: [AlertLevel Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29462) · overview: [previews/alert-level--documentation.png](previews/alert-level--documentation.png)
 
 ## Properties
 
@@ -33,14 +33,14 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `none / Small` | 8×8 | [456:5684](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5684) | 501 | ![](previews/alert-level--none-small.png) |
-| `none / Large` | 16×16 | [456:5696](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5696) | 3 | ![](previews/alert-level--none-large.png) |
-| `low / Small` | 8×8 | [456:5687](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5687) | 4 | ![](previews/alert-level--low-small.png) |
-| `low / Large` | 16×16 | [456:5699](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5699) | 2 | ![](previews/alert-level--low-large.png) |
-| `medium / Small` | 8×8 | [456:5690](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5690) | 1 | ![](previews/alert-level--medium-small.png) |
-| `medium / Large` | 16×16 | [456:5702](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5702) | 1 | ![](previews/alert-level--medium-large.png) |
-| `high / Small` | 8×8 | [456:5693](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5693) | 18 | ![](previews/alert-level--high-small.png) |
-| `high / Large` | 16×16 | [456:5705](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5705) | 0 | ![](previews/alert-level--high-large.png) |
+| `none / Small` | 8×8 | [7594:29471](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29471) | 81 | ![](previews/alert-level--none-small.png) |
+| `none / Large` | 16×16 | [7594:29483](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29483) | 3 | ![](previews/alert-level--none-large.png) |
+| `low / Small` | 8×8 | [7594:29474](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29474) | 10 | ![](previews/alert-level--low-small.png) |
+| `low / Large` | 16×16 | [7594:29486](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29486) | 2 | ![](previews/alert-level--low-large.png) |
+| `medium / Small` | 8×8 | [7594:29477](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29477) | 1 | ![](previews/alert-level--medium-small.png) |
+| `medium / Large` | 16×16 | [7594:29489](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29489) | 1 | ![](previews/alert-level--medium-large.png) |
+| `high / Small` | 8×8 | [7594:29480](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29480) | 2 | ![](previews/alert-level--high-small.png) |
+| `high / Large` | 16×16 | [7594:29492](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29492) | 0 | ![](previews/alert-level--high-large.png) |
 
 ## Anatomy
 
@@ -84,10 +84,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **530**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **100**.
 
 Inside components: UserPic ×12.
-518 instances are nested inside other instances.
+88 instances are nested inside other instances.
 
 **Built from:** no nested components.
 

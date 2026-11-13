@@ -442,6 +442,38 @@
      "where": "Elements to be detailed still",
      "status": "Not a component",
      "note": "Superseded by Reader Dashboard v2.0."
+    },
+    {
+     "status": "In system",
+     "updated": "2026-11-13",
+     "name": "UserImage",
+     "where": "User Avatars and Status, 7594:29516 (12 variants)",
+     "component": "UserImage",
+     "note": "The reader's avatar art: 30px small (production's size, Karl 2026-11-13), 40, 64. Photo and monogram colors change by reader; sample readers Gritty McGee and Phillie Phanatic in Figma only. Initials 12 / 16 / 26; white on the green sample (5.0:1). Moved from WordPress Elements to the main library 2026-11-13 (Karl)."
+    },
+    {
+     "status": "In system",
+     "updated": "2026-11-13",
+     "name": "UserPic",
+     "where": "User Avatars and Status, 7594:29564 (6 variants)",
+     "component": "UserPic",
+     "note": "The avatar with two AlertLevel dots (Karl, 2026-11-13): top left = active, bottom right = alert or message. The Masthead uses it. Production has no dots and no focus style: design-vs-production 10.9. Moved from WordPress Elements to the main library 2026-11-13 (Karl)."
+    },
+    {
+     "status": "In system",
+     "updated": "2026-11-13",
+     "name": "UserStatus",
+     "where": "User Avatars and Status, 7594:29617 (4 variants)",
+     "component": "UserStatus",
+     "note": "The masthead account area by reader status (none, nonSub, subscriber); Button Primary, 16px gap (production 15). Production's header Subscribe differs: design-vs-production 10.10. Moved from WordPress Elements to the main library 2026-11-13 (Karl)."
+    },
+    {
+     "name": "AlertLevel",
+     "where": "User Avatars and Status, 7594:29470 (8 variants)",
+     "status": "In system",
+     "note": "A status dot (none, low, medium, high; 8 or 16px). Level none draws nothing (fixed 2026-11-13). Used twice in UserPic. Moved from WordPress Elements to the main library 2026-11-13 (Karl).",
+     "component": "AlertLevel",
+     "updated": "2026-11-13"
     }
    ]
   },
@@ -777,38 +809,6 @@
      "where": "Menus and Parts, 910:16425",
      "status": "To add",
      "note": "Exported 2026-10-30. The closed control is drawn inside Masthead; the dropdown isn’t built."
-    },
-    {
-     "status": "In system",
-     "updated": "2026-11-13",
-     "name": "UserImage",
-     "where": "Menus and Parts, 456:5708 (12 variants)",
-     "component": "UserImage",
-     "note": "The reader's avatar art: 32px small (production 30, a 4 / 8 tie, Karl 2026-11-13), 40, 64. Photo and monogram colors change by reader; sample readers Gritty McGee and Phillie Phanatic in Figma only. Initials 12 / 16 / 26; white on the green sample (5.0:1)."
-    },
-    {
-     "status": "In system",
-     "updated": "2026-11-13",
-     "name": "UserPic",
-     "where": "Menus and Parts, 456:5674 (6 variants)",
-     "component": "UserPic",
-     "note": "The avatar with two AlertLevel dots (Karl, 2026-11-13): top left = active, bottom right = alert or message. The Masthead uses it. Production has no dots and no focus style: design-vs-production 10.9."
-    },
-    {
-     "status": "In system",
-     "updated": "2026-11-13",
-     "name": "UserStatus",
-     "where": "Menus and Parts, 456:5728 (4 variants)",
-     "component": "UserStatus",
-     "note": "The masthead account area by reader status (none, nonSub, subscriber); Button Primary, 16px gap (production 15). Production's header Subscribe differs: design-vs-production 10.10."
-    },
-    {
-     "name": "AlertLevel",
-     "where": "Menus and Parts, 456:5683 (8 variants)",
-     "status": "In system",
-     "note": "A status dot (none, low, medium, high; 8 or 16px). Level none draws nothing (fixed 2026-11-13). Used twice in UserPic.",
-     "component": "AlertLevel",
-     "updated": "2026-11-13"
     },
     {
      "name": "SearchBar",

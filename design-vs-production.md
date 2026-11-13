@@ -1506,7 +1506,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Found:** 2026-11-13, logged in, on all 6 review sites (`#anchorProfileDropDown` in `mng-digisubs.styles.css`; Denver Post also at 360, 700 and 1100px). **Team:** digisubs.
 
-**Design:** WordPress Elements ▸ Menus and Parts ▸ **UserPic** (`456:5674`) with **UserImage** (`456:5708`) and **AlertLevel** (`456:5683`), rebuilt 2026-11-13.
+**Design:** MNG Web Design System (main library) ▸ User Avatars and Status ▸ **UserPic** (`7594:29564`) with **UserImage** (`7594:29516`) and **AlertLevel** (`7594:29470`), rebuilt 2026-11-13 and moved from WordPress Elements the same day.
 
 | Property | Production | Design |
 |---|---|---|
@@ -1522,7 +1522,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Found:** 2026-11-13 on all 6 review sites (`#dfm-digisubs-menu .subscribe-visibility a`, shown to readers who aren't subscribers). **Team:** digisubs.
 
-**Design:** WordPress Elements ▸ Menus and Parts ▸ **UserStatus** (`456:5728`): Subscribe (and Log In when logged out) is **Button Primary**, 16px (`spacing/200`) from the next part.
+**Design:** MNG Web Design System (main library) ▸ User Avatars and Status ▸ **UserStatus** (`7594:29617`): Subscribe (and Log In when logged out) is **Button Primary**, 16px (`spacing/200`) from the next part.
 
 | Property | Production | Design |
 |---|---|---|

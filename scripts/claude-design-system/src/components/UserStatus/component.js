@@ -1,4 +1,4 @@
-/* UserStatus (WordPress Elements, Menus and Parts, 456:5728): the masthead's account area before AccountMenu adds the
+/* UserStatus (MNG Web Design System, User Avatars and Status, 7594:29617; moved from WordPress Elements 2026-11-13): the masthead's account area before AccountMenu adds the
    chevron. status = none (logged out: Subscribe and Log In on Desktop, the user icon on mobile), nonSub (Subscribe and
    the avatar), subscriber (the avatar). Parts 16px (spacing/200) apart (production 15px). The avatar is decorative here:
    AccountMenu wraps it in the menu button. */

@@ -1,11 +1,11 @@
 ---
 name: UserImage
 slug: user-image
-layer: wordpress
-figma_file: b1iZxkFwtAYq9rElmnCAzd
+layer: core
+figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "UserImage"
-figma_node: "456:5708"
-component_key: 72a3f7d5c88a366288aae1b0835999779027f8ea
+figma_node: "7594:29516"
+component_key: 590ca97e5568b532489ca65eba72777af3fd950e
 variants: 12
 tokens: user-image.tokens.json
 skeleton: user-image.html
@@ -18,9 +18,9 @@ exported: 2026-11-13
 
 ## Figma
 
-- File: **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`), page **Menus and Parts**
-- Component set: [`UserImage` · 456:5708](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5708) · key `72a3f7d5c88a366288aae1b0835999779027f8ea`
-- Documentation frame: [UserImage Container](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3812-50016) · overview: [previews/user-image--documentation.png](previews/user-image--documentation.png)
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **User Avatars and Status | 2026.11.13**
+- Component set: [`UserImage` · 7594:29516](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29516) · key `590ca97e5568b532489ca65eba72777af3fd950e`
+- Documentation frame: [UserImage Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29508) · overview: [previews/user-image--documentation.png](previews/user-image--documentation.png)
 
 ## Properties
 
@@ -33,18 +33,18 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `unknown / small` | 30×30 | [456:5715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5715) | 62 | ![](previews/user-image--unknown-small.png) |
-| `unknown / large` | 64×64 | [712:1495](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-1495) | 0 | ![](previews/user-image--unknown-large.png) |
-| `unknown / medium` | 40×40 | [712:6283](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6283) | 0 | ![](previews/user-image--unknown-medium.png) |
-| `monogram / small` | 30×30 | [456:5718](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5718) | 0 | ![](previews/user-image--monogram-small.png) |
-| `monogram / large` | 64×64 | [456:5720](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5720) | 0 | ![](previews/user-image--monogram-large.png) |
-| `monogram / medium` | 40×40 | [712:6286](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6286) | 0 | ![](previews/user-image--monogram-medium.png) |
-| `monogramPP / large` | 64×64 | [456:5722](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5722) | 0 | ![](previews/user-image--monogrampp-large.png) |
-| `social / small` | 30×30 | [456:5709](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5709) | 198 | ![](previews/user-image--social-small.png) |
-| `social / large` | 64×64 | [456:5711](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5711) | 3 | ![](previews/user-image--social-large.png) |
-| `social / medium` | 40×40 | [712:6288](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6288) | 2 | ![](previews/user-image--social-medium.png) |
-| `socialPhillip / large` | 64×64 | [456:5713](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5713) | 0 | ![](previews/user-image--socialphillip-large.png) |
-| `socialPhillip / medium` | 40×40 | [712:6290](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=712-6290) | 0 | ![](previews/user-image--socialphillip-medium.png) |
+| `unknown / small` | 30×30 | [7594:29537](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29537) | 14 | ![](previews/user-image--unknown-small.png) |
+| `unknown / large` | 64×64 | [7594:29521](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29521) | 0 | ![](previews/user-image--unknown-large.png) |
+| `unknown / medium` | 40×40 | [7594:29531](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29531) | 12 | ![](previews/user-image--unknown-medium.png) |
+| `monogram / small` | 30×30 | [7594:29539](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29539) | 6 | ![](previews/user-image--monogram-small.png) |
+| `monogram / large` | 64×64 | [7594:29523](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29523) | 0 | ![](previews/user-image--monogram-large.png) |
+| `monogram / medium` | 40×40 | [7594:29533](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29533) | 0 | ![](previews/user-image--monogram-medium.png) |
+| `monogramPP / large` | 64×64 | [7594:29525](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29525) | 0 | ![](previews/user-image--monogrampp-large.png) |
+| `social / small` | 30×30 | [7594:29535](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29535) | 9 | ![](previews/user-image--social-small.png) |
+| `social / large` | 64×64 | [7594:29517](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29517) | 3 | ![](previews/user-image--social-large.png) |
+| `social / medium` | 40×40 | [7594:29527](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29527) | 8 | ![](previews/user-image--social-medium.png) |
+| `socialPhillip / large` | 64×64 | [7594:29519](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29519) | 10 | ![](previews/user-image--socialphillip-large.png) |
+| `socialPhillip / medium` | 40×40 | [7594:29529](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29529) | 8 | ![](previews/user-image--socialphillip-medium.png) |
 
 ## Anatomy
 
@@ -105,10 +105,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **265**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **70**.
 
-Inside components: UserPic ×6.
-259 instances are nested inside other instances.
+Inside components: ModalsOffset ×18, UserPic ×6, InLineMessage ×1.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×1.
+44 instances are nested inside other instances.
 
 **Built from:** Icons ×3
 Icon variants: `user` ×3.

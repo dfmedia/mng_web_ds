@@ -1,11 +1,11 @@
 ---
 name: UserStatus
 slug: user-status
-layer: wordpress
-figma_file: b1iZxkFwtAYq9rElmnCAzd
+layer: core
+figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "UserStatus"
-figma_node: "456:5728"
-component_key: 4c1b4132e858b8a7bef12375fa03f44cb6177947
+figma_node: "7594:29617"
+component_key: 07fcdba468fb281768372247ea738bb81fa0c953
 variants: 4
 tokens: user-status.tokens.json
 skeleton: user-status.html
@@ -18,9 +18,9 @@ exported: 2026-11-13
 
 ## Figma
 
-- File: **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`), page **Menus and Parts**
-- Component set: [`UserStatus` · 456:5728](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5728) · key `4c1b4132e858b8a7bef12375fa03f44cb6177947`
-- Documentation frame: [UserStatus Container](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3812-50150) · overview: [previews/user-status--documentation.png](previews/user-status--documentation.png)
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **User Avatars and Status | 2026.11.13**
+- Component set: [`UserStatus` · 7594:29617](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29617) · key `07fcdba468fb281768372247ea738bb81fa0c953`
+- Documentation frame: [UserStatus Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29609) · overview: [previews/user-status--documentation.png](previews/user-status--documentation.png)
 
 ## Properties
 
@@ -33,10 +33,10 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `none / Desktop` | 240×40 | [456:5729](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5729) | 24 | ![](previews/user-status--none-desktop.png) |
-| `none / mobile` | 30×30 | [456:5740](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5740) | 61 | ![](previews/user-status--none-mobile.png) |
-| `nonSub / Desktop` | 172×40 | [456:5734](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5734) | 1 | ![](previews/user-status--nonsub-desktop.png) |
-| `subscriber / Desktop` | 30×30 | [456:5738](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5738) | 188 | ![](previews/user-status--subscriber-desktop.png) |
+| `none / Desktop` | 240×40 | [7594:29618](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29618) | 1 | ![](previews/user-status--none-desktop.png) |
+| `none / mobile` | 30×30 | [7594:29626](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29626) | 7 | ![](previews/user-status--none-mobile.png) |
+| `nonSub / Desktop` | 172×40 | [7594:29621](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29621) | 0 | ![](previews/user-status--nonsub-desktop.png) |
+| `subscriber / Desktop` | 30×30 | [7594:29624](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29624) | 0 | ![](previews/user-status--subscriber-desktop.png) |
 
 ## Anatomy
 
@@ -77,11 +77,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **274**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **8**.
 
-Inside components: Masthead ×84, ObitMastHead ×41, AccountMenu ×21.
-Placed on pages: Menus and Parts ×98, Homepage ×4, Article Page ×2, Section Front ×1.
-23 instances are nested inside other instances.
+Placed on pages: Modal Panels | 2026.11.10 ×7.
+1 instances are nested inside other instances.
 
 **Built from:** Button Primary ×3, UserPic ×3
 
