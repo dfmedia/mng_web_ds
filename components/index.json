@@ -818,6 +818,22 @@
       "exported": "2026-11-02"
     },
     {
+      "slug": "breaking-news-banner",
+      "name": "Breaking News Banner",
+      "group": "homepage",
+      "layer": "wordpress",
+      "path": "components/wordpress/breaking-news-banner/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "506:5632",
+        "set": "Breaking News Banner"
+      },
+      "variants": 3,
+      "instances": 15,
+      "knownIssues": 6,
+      "exported": "2026-11-12"
+    },
+    {
       "slug": "feature-list-content-block",
       "name": "Feature + List Content Block",
       "group": "homepage",

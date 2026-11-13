@@ -98,6 +98,7 @@ COMPONENTS = [
     ("section-rail-card-wide", "SectionRailCardWide", "Section Rail Card Wide", "WordPress Elements"),
     ("photos-block", "PhotosBlock", "Photos Block", "WordPress Elements"),
     ("top-zone-block", "TopZoneBlock", "TOP ZONE Block", "WordPress Elements"),
+    ("breaking-news-banner", "BreakingNewsBanner", "Breaking News Banner", "WordPress Elements"),
     ("weather-bug", "WeatherBug", "Weather Bug", "WordPress Elements"),
     ("section-menu-header", "SectionMenuHeader", "SectionMenuHeader", "WordPress Elements"),
     ("section-menu-item", "SectionMenuItem", "SectionMenuItem", "WordPress Elements"),

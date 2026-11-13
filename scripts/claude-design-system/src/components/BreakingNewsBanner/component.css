@@ -1,0 +1,67 @@
+/* Breaking News Banner: values from components/wordpress/breaking-news-banner (component tokens -> system tokens).
+   Matches production on the 4 / 8 grid (Karl, 2026-11-12). Fills its column (Figma draws 360 / 640 / 1280). */
+.mngds-breaking-news-banner {
+  box-sizing: border-box; display: flex; align-items: center; width: 100%; min-width: 0;
+  margin: 0 0 var(--mng-spacing-200);
+  background: var(--mng-breaking-news-banner-base-root-background);
+  gap: var(--mng-breaking-news-banner-device-xs-639px-root-gap);
+  padding: var(--mng-breaking-news-banner-base-root-padding-top) var(--mng-breaking-news-banner-base-root-padding-right)
+    var(--mng-breaking-news-banner-base-root-padding-bottom) var(--mng-breaking-news-banner-base-root-padding-left);
+}
+.mngds-breaking-news-banner *, .mngds-breaking-news-banner *::before, .mngds-breaking-news-banner *::after { box-sizing: border-box; }
+.mngds-breaking-news-banner__content { flex: 1 1 auto; min-width: 0; margin: 0; }
+/* Title: theme small-headline family Bold 18 / 18, uppercase, 160px wide, near-black. */
+.mngds-breaking-news-banner__title {
+  display: inline-block; width: 160px; margin: 0 var(--mng-spacing-250) 0 0; vertical-align: baseline;
+  font-family: var(--mng-breaking-news-banner-base-content-title-font-family);
+  font-size: var(--mng-breaking-news-banner-base-content-title-font-size);
+  font-weight: var(--mng-breaking-news-banner-base-content-title-font-weight);
+  line-height: var(--mng-breaking-news-banner-base-content-title-line-height);
+  color: var(--mng-breaking-news-banner-base-content-title-color); text-transform: uppercase;
+}
+/* Headline: theme heading family Regular 16 / 20, near-black; 16px before the date (inline margin, so a wrapped date
+   starts at the left edge as in production). */
+.mngds-breaking-news-banner__headline {
+  margin-right: var(--mng-spacing-200); text-decoration: none;
+  font-family: var(--mng-breaking-news-banner-base-content-headline-and-date-font-family);
+  font-size: var(--mng-breaking-news-banner-base-content-headline-and-date-font-size);
+  font-weight: var(--mng-breaking-news-banner-base-content-headline-and-date-font-weight);
+  line-height: var(--mng-breaking-news-banner-base-content-headline-and-date-line-height);
+  color: var(--mng-breaking-news-banner-base-content-headline-and-date-color);
+}
+.mngds-breaking-news-banner__headline:hover { text-decoration: underline; }
+/* Date: Noto Sans Regular 12 / 18.75, color/gray/100; never breaks. */
+.mngds-breaking-news-banner__date {
+  display: inline-block; white-space: nowrap;
+  font-family: var(--mng-breaking-news-banner-device-800px-content-headline-group-date-font-family);
+  font-size: var(--mng-breaking-news-banner-device-800px-content-headline-group-date-font-size);
+  font-weight: var(--mng-breaking-news-banner-device-800px-content-headline-group-date-font-weight);
+  line-height: var(--mng-breaking-news-banner-device-800px-content-headline-group-date-line-height);
+  color: var(--mng-breaking-news-banner-device-800px-content-headline-group-date-color);
+}
+/* S (640-799px): 12px after the title on the first line. */
+.mngds-breaking-news-banner--s { gap: var(--mng-breaking-news-banner-device-s-640-799px-root-gap); }
+.mngds-breaking-news-banner--s .mngds-breaking-news-banner__title { margin-right: var(--mng-spacing-150); }
+/* (≥800px): one row, at least 36px, 12px sides, no top or bottom padding; 16px before the close button. */
+.mngds-breaking-news-banner--row {
+  min-height: var(--mng-breaking-news-banner-device-800px-root-min-height); padding-top: 0; padding-bottom: 0;
+  gap: var(--mng-breaking-news-banner-device-800px-root-gap);
+}
+.mngds-breaking-news-banner--row .mngds-breaking-news-banner__content {
+  display: flex; align-items: center; gap: var(--mng-breaking-news-banner-device-800px-content-gap);
+}
+.mngds-breaking-news-banner--row .mngds-breaking-news-banner__title { flex: 0 0 160px; margin: 0; }
+.mngds-breaking-news-banner__group {
+  display: flex; align-items: center; min-width: 0; gap: var(--mng-breaking-news-banner-device-800px-content-headline-group-gap);
+}
+.mngds-breaking-news-banner--row .mngds-breaking-news-banner__headline { margin-right: 0; }
+/* Close button: 28 x 28 close icon, near-black. */
+.mngds-breaking-news-banner__close {
+  flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; padding: 0; margin: 0; border: 0;
+  background: none; cursor: pointer;
+  width: var(--mng-breaking-news-banner-base-close-width); height: var(--mng-breaking-news-banner-base-close-height);
+  color: var(--mng-breaking-news-banner-base-close-icon-color);
+}
+.mngds-breaking-news-banner__close:focus-visible, .mngds-breaking-news-banner__headline:focus-visible {
+  outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px;
+}

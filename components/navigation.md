@@ -1,6 +1,6 @@
 # Navigation
 
-> **Updated 2026-11-09** for the Weather Bug's second e-Edition link and market labels (§3.11), and the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
+> **Updated 2026-11-12** for the top nav item count on all 97 sites (§10). **2026-11-09** for the Weather Bug's second e-Edition link and market labels (§3.11), and the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
 >
 > **Updated 2026-09-25 — read this first.**
 > - **Where the header lives now.** The production-accurate header is the **Masthead** component set (`456:2572`, 75 variants: Device × State × Page) on the "Menus and Parts" page of **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`, formerly "Website Page Templates"). Its breakpoint audit is `breakpoint-audit.md` (this folder), and its production gaps are design-vs-production entries 7, 9, 28.2 and 33. The account dropdown's source is **AccountMenu** (`910:16425`) in the same file. The pilot Header, Account Trigger, Off-Canvas Section Panel and Account Dropdown Menu components mentioned in §3.2 and §9 were retired on 2026-09-25; the measurements in those sections are still valid.
@@ -479,3 +479,114 @@ This project already ran into this exact tension once before: `tokens/colors/col
   - **Reference-only / target** — exists in the idealized design file, no live pilot site confirmed to have it yet; still worth building as the system's intended direction, just don't hand it to engineering as "this is what site X does today"
   - **Drifted** — a live site has it, but the real content differs from the reference file's should-be version (the Endless Tributes precedent)
 - This same rule already explains an earlier decision without us naming it as a policy yet: choosing the audited 1039px breakpoint over the reference file's declared tablet tier was "prefer live content over reference content" in miniature. Worth treating as the same policy, not a one-off.
+
+
+## 10. Top nav items on every site (97-site audit, 2026-11-12)
+
+*Karl asked which sites have as many top nav items as Chicago Tribune or more.* Counted from the masthead's primary nav list (`.nav-primary ul.menu`, top-level items only) on the homepage of every site in the cluster audit, 2026-11-12. Chicago Tribune has **11**.
+
+**15 sites have 11 or more, besides Chicago Tribune:**
+- **12:** Hartford Courant, Vacaville Reporter, Vallejo Times-Herald.
+- **11:** Orlando Sentinel, Daily Press, The Virginian-Pilot, The Mercury News, East Bay Times, The Press Democrat, Petaluma Argus-Courier, The Sonoma Index-Tribune, Woodland Daily Democrat, Scranton Times-Tribune, The Citizens' Voice, Standard-Speaker (its list has "Newsletters" twice).
+
+Counts across all sites: 12 items (3 sites), 11 (13 including Chicago), 10 (11), 9 (24), 8 (24), 7 (10), 6 (3), 5 (1), 4 (1). Seven domains have no list of their own: five redirect to another site (Sonoma County Gazette, BoCoPreps, BuffZone, Brush News-Tribune, South Platte Sentinel), and Daily Herald and Sonoma Magazine aren't on the WordPress themes.
+
+| Items | Site | Domain | Items in order |
+|---|---|---|---|
+| 12 | Hartford Courant | courant.com | Local News · Politics · Sports · Top Workplaces · Opinion · Business · Things to Do · Obituaries · e-Edition · Advertising · Classifieds · BestReviews |
+| 12 | Vacaville Reporter | thereporter.com | News · Sports · Lifestyle · Obituaries · Opinion · Black Issues · Advertise · Special Sections · e-Edition · A&E Source · 2025 Best of Magaz · BestReviews |
+| 12 | Vallejo Times-Herald | timesheraldonline.com | News · Sports · Lifestyle · Obituaries · Place Obit · Opinion · Advertise · Special Sections · e-Edition · A&E Source · 2025 Best of Magaz · BestReviews |
+| 11 | Chicago Tribune | chicagotribune.com | Business · Entertainment · Education · Immigration · Opinion · Politics · Sports · Suburbs · Chicago Magazine · Obituaries · BestReviews |
+| 11 | Daily Press | dailypress.com | News · Local News · Weather · Sports · 757Teamz · Business · Things to do · Opinion · Obituaries · E-Edition · BestReviews |
+| 11 | East Bay Times | eastbaytimes.com | News · Local · Obituaries · Sports · Things to Do · Business · Real Estate · Opinion · Marketplace · e-Edition · BestReviews |
+| 11 | Orlando Sentinel | orlandosentinel.com | Hurricanes · News · Sports · Business · Opinion · Entertainment · Restaurants, Food  · Weather · Puzzles · Obituaries · BestReviews |
+| 11 | Petaluma Argus-Courier | petalumanews.com | News · Education · Obituaries · Sports · Opinion · Business · Food & Drink · Arts & Entertainme · Events · Sonoma Magazine · BestReviews |
+| 11 | Scranton Times-Tribune | thetimes-tribune.com | News · Obituaries · Sports · Opinion · Business · Things to Do · Newsletters · Comics · Submission Forms · Public Notices · BestReviews |
+| 11 | Standard-Speaker (Hazleton) | standardspeaker.com | News · Sports · Opinion · Obituaries · Newsletters · Hazleton Hoy · Submission Forms · Events · Newsletters · Public Notices · BestReviews |
+| 11 | The Citizens' Voice (Wilkes-Barre) | citizensvoice.com | News · Obituaries · Opinion · Business · Sports · Things to do · Newsletters · Comics · Submission Forms · Public Notices · BestReviews |
+| 11 | The Mercury News | mercurynews.com | News · Local · Sports · Obituaries · Things to Do · Business · Real Estate · Opinion · Marketplace · e-Edition · BestReviews |
+| 11 | The Press Democrat | pressdemocrat.com | News · Sports · Obituaries · Opinion · Business · Napa · Dining, Wine & Foo · Entertainment · Events · Sonoma Magazine · BestReviews |
+| 11 | The Sonoma Index-Tribune | sonomanews.com | News · Education · Sports · Obituaries · Opinion · Business · Dining, Wine & Foo · Entertainment · Events · Sonoma Magazine · BestReviews |
+| 11 | The Virginian-Pilot | pilotonline.com | News · Local News · Weather · Sports · 757Teamz · Business · Things to do · Opinion · Obituaries · e-Pilot · BestReviews |
+| 11 | Woodland Daily Democrat | dailydemocrat.com | News · Sports · Lifestyle · Obituaries · Opinion · Advertise · Special Sections · e-Edition · A&E Source · 2025 Best of Magaz · BestReviews |
+| 10 | Boston Herald | bostonherald.com | News · Opinion · Sports · Politics · Entertainment · Lifestyle · Multimedia/Video · Photo · Obituaries · BestReviews |
+| 10 | Chico Enterprise-Record | chicoer.com | News · Events · Sports · Lifestyle · Obituaries · Opinion · Advertise · Special Sections · e-Edition · BestReviews |
+| 10 | Eureka Times-Standard | times-standard.com | 2026 Best Of Magaz · News · Sports · Lifestyle · Obituaries · Opinion · Advertising Articl · Special Sections · e-Edition · BestReviews |
+| 10 | Norristown Times Herald | timesherald.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · Sponsored Content · Public Notices · BestReviews |
+| 10 | Paradise Post | paradisepost.com | News · Camp Fire · Sports · Lifestyle · News Obituaries · Opinion · Advertise · Special Sections · e-Edition · BestReviews |
+| 10 | Red Bluff Daily News | redbluffdailynews.com | News · Sports · Agriculture · Obituaries · Lifestyle · Opinion · Advertise · Special Sections · e-Edition · BestReviews |
+| 10 | Republican Herald (Pottsville) | republicanherald.com | News · Sports · Things to do · Opinion · Obituaries · Classifieds · Newsletters · Submission Forms · Public Notices · BestReviews |
+| 10 | San Diego Union-Tribune | sandiegouniontribune.com | Sports · Business · Things to do · Opinion · Real Estate · eNewspaper · Obituaries · Newsletters · The T.E.A. · BestReviews |
+| 10 | Santa Cruz Sentinel | santacruzsentinel.com | News · Neighborhoods · Sports · Lifestyle · Obituaries · Opinion · Advertise · Special Sections · e-Edition · BestReviews |
+| 10 | South Florida Sun Sentinel | sun-sentinel.com | Storms & Hurricane · Sports · Local News · Restaurants · Real Estate · Things To Do · Opinion · Puzzles · Obituaries · BestReviews |
+| 10 | The Morning Call | mcall.com | News · Local News · Sports · Business · Opinion · Entertainment · Photos and Videos · Obituaries · Public Notices · BestReviews |
+| 9 | Boulder Daily Camera | dailycamera.com | News · Sports · Local News · Things to Do · Opinion · Obituaries · Election · Marketplace · BestReviews |
+| 9 | Capital Gazette | capitalgazette.com | eNewspaper · Latest News · Sports · High School Sports · Death Notices · Things To Do · Opinion · Weather · BestReviews |
+| 9 | Cañon City Daily Record | canoncitydailyrecord.com | News · Local News · Sports · Things to Do · Opinion · Obituaries · Marketplace · On the Record · BestReviews |
+| 9 | Delaware County Times | delcotimes.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · Public Notices · BestReviews |
+| 9 | Fort Bragg Advocate-News | advocate-news.com | News · Sports · Lifestyle · Obituaries · Opinion · Advertising · e-Edition · Special Sections · BestReviews |
+| 9 | Julesburg Advocate | julesburgadvocate.com | News · Sports · Business · Lifestyles · Obituaries · Opinion · Marketplace · Local Events · BestReviews |
+| 9 | Lake County News-Herald | news-herald.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · e-Edition · BestReviews |
+| 9 | Lake County Record-Bee | record-bee.com | News · Sports · Entertainment · Obituaries · Opinion · Advertise · e-Edition · Special Sections · BestReviews |
+| 9 | Marin Independent Journal | marinij.com | News · Local · Sports · Entertainment · Zest · Obituaries · Opinion · e-Edition · BestReviews |
+| 9 | Monterey Herald | montereyherald.com | News · Sports · Lifestyle · Obituaries · Opinion · Advertise · Special Sections · e-Edition · BestReviews |
+| 9 | New York Daily News | nydailynews.com | E-Newspaper · National News · NYC Crime · Sports · SNYDE · Photos · Puzzles & Games · Obituaries · BestReviews |
+| 9 | Oroville Mercury-Register | orovillemr.com | News · Sports · Lifestyle · News Obituaries · Opinion · Advertise · Special Sections · e-Edition · Best Reviews |
+| 9 | Reading Eagle | readingeagle.com | News · Sports · Things to Do · Business · Opinion · Obituaries · Classifieds · Public Notices · BestReviews |
+| 9 | St. Paul Pioneer Press | twincities.com | News · Local · Sports · Food · Things to Do · Opinion · Obituaries · Marketplace · BestReviews |
+| 9 | The Baltimore Sun | baltimoresun.com | eNewspaper · Latest Headlines · Sports · News Obituaries · Death Notices · Things To Do · Opinion · Weather · BestReviews |
+| 9 | The Denver Post | denverpost.com | News · Sports · Business · The Know · Outdoors · Opinion · Classifieds · Obituaries · BestReviews |
+| 9 | The Lansdale Reporter | thereporteronline.com | News · Sports · Things To Do · Opinion · Obituaries · Classifieds · Contests · Public Notices · BestReviews |
+| 9 | The Mendocino Beacon | mendocinobeacon.com | News · Sports · Lifestyle · Obituaries · Opinion · Special Sections · Advertise · e-Edition · BestReviews |
+| 9 | The News-Herald (Southgate) | thenewsherald.com | News · Sports · Opinion · Obituaries · Things to Do · Contests · Classifieds · e-Edition · BestReviews |
+| 9 | The Pottstown Mercury | pottsmerc.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · Public Notices · BestReviews |
+| 9 | Trentonian | trentonian.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · Public Notices · BestReviews |
+| 9 | Ukiah Daily Journal | ukiahdailyjournal.com | News · Sports · Lifestyle · Obituaries · Opinion · Advertise · e-Edition · Special Sections · BestReviews |
+| 9 | West Chester Daily Local | dailylocal.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · Public Notices · BestReviews |
+| 9 | Wyoming County Examiner | wcexaminer.com | News · Sports · Opinion · Obituaries · Calendar · Classified · Newsletters · Public Notices · BestReviews |
+| 8 | Broomfield Enterprise | broomfieldenterprise.com | News · Sports · Entertainment · Opinion · Election · Obituaries · Marketplace · BestReviews |
+| 8 | Colorado Hometown Weekly | coloradohometownweekly.com | News · Sports · Things to Do · Election · Obituaries · Opinion · Marketplace · BestReviews |
+| 8 | Daily Oakland Press | theoaklandpress.com | News · Sports · Things to Do · Obituaries · Opinion · Marketplace · Contests · BestReviews |
+| 8 | Estes Park Trail-Gazette | eptrail.com | News · Sports · Entertainment · Lifestyles · Obituaries · Opinion · Marketplace · BestReviews |
+| 8 | Fort Morgan Times | fortmorgantimes.com | News · Sports · Entertainment · Obituaries · Opinion · Milestones · Marketplace · BestReviews |
+| 8 | Inland Valley Daily Bulletin | dailybulletin.com | News · Local News · Sports · Obituaries · Things to Do · Opinion · The T.E.A. · BestReviews |
+| 8 | LA Daily News | dailynews.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | Long Beach Press-Telegram | presstelegram.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | Longmont Times-Call | timescall.com | News · Sports · Things to Do · Opinion · Obituaries · Election · Marketplace · BestReviews |
+| 8 | Lorain Morning Journal | morningjournal.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · BestReviews |
+| 8 | Loveland Reporter-Herald | reporterherald.com | News · Sports · Entertainment · Lifestyles · Obituaries · Opinion · Marketplace · BestReviews |
+| 8 | Macomb Daily | macombdaily.com | News · Sports · Things to Do · Opinion · Obituaries · Marketplace · Contests · BestReviews |
+| 8 | Main Line Media News | mainlinemedianews.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · Contests · BestReviews |
+| 8 | Mount Pleasant Morning Sun | themorningsun.com | News · Sports · Things to Do · Obituaries · Opinion · Marketplace · Contests · BestReviews |
+| 8 | Orange County Register | ocregister.com | News · Orange County · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | Pasadena Star-News | pasadenastarnews.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | Press Enterprise (Riverside) | pressenterprise.com | News · Local · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | Redlands Daily Facts | redlandsdailyfacts.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | San Bernardino Sun | sbsun.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | San Gabriel Valley Tribune | sgvtribune.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 8 | Sterling Journal-Advocate | journal-advocate.com | News · Business and Ag · Sports · Lifestyles · Opinion · Obituaries · Marketplace · BestReviews |
+| 8 | The Willits News | willitsnews.com | News · Sports · Lifestyle · News Obituaries · Opinion · Special Sections · Advertise · BestReviews |
+| 8 | Torrance Daily Breeze | dailybreeze.com | News · Local News · Sports · Obituaries · Things to Do · Opinion · The T.E.A. · BestReviews |
+| 8 | Whittier Daily News | whittierdailynews.com | News · Local News · Sports · Things to Do · Obituaries · Opinion · The T.E.A. · BestReviews |
+| 7 | Akron News-Reporter | akronnewsreporter.com | News · Sports · Opinion · Obituaries · Things to Do · Marketplace · BestReviews |
+| 7 | Greeley Tribune | greeleytribune.com | News · Sports · Things to Do · Opinion · Obituaries · Marketplace · BestReviews |
+| 7 | GrowthSpotter | growthspotter.com | Downtown Orlando · Lake County · Orange County · Osceola County · Polk County · Seminole County · Volusia County |
+| 7 | Kingston Daily Freeman | dailyfreeman.com | News · Sports · Things to Do · Opinion · Obituaries · Classifieds · BestReviews |
+| 7 | Lowell Sun | lowellsun.com | News · Sports · Entertainment · Lifestyle · Obituaries · Opinion · BestReviews |
+| 7 | Nashoba Valley Voice | nashobavalleyvoice.com | News · Sports · Entertainment · Lifestyle · Obituaries · Opinion · BestReviews |
+| 7 | Oneida Daily Dispatch | oneidadispatch.com | News · Sports · Things to Do · Obituaries · Opinion · Classifieds · BestReviews |
+| 7 | Saratogian | saratogian.com | News · Sports · Things to Do · Obituaries · Opinion · Classifieds · BestReviews |
+| 7 | Sentinel & Enterprise (Fitchburg) | sentinelandenterprise.com | News · Sports · Entertainment · Lifestyle · Obituaries · Opinion · BestReviews |
+| 7 | The Troy Record | troyrecord.com | News · Sports · Things to Do · Obituaries · Opinion · Classifieds · BestReviews |
+| 6 | Excelsior California | excelsiorcalifornia.com | Noticias · Local · Entretenimiento · Deportes · Opinion · Especiales |
+| 6 | Lamar Ledger | lamarledger.com | News · Sports · Things to Do · Obituaries · e-Edition · Marketplace |
+| 6 | Silicon Valley | siliconvalley.com | Business · Technology · Commercial Real Es · Housing · Marketplace · The Mercury News |
+| 5 | The Burlington Record | burlington-record.com | News · Sports · Things to Do · Obituaries · Marketplace |
+| 4 | Colorado Daily | coloradodaily.com | News · Sports · Things to Do · Classifieds |
+| — | Sonoma County Gazette | sonomacountygazette.com | redirects to pressdemocrat.com |
+| — | BoCoPreps | bocopreps.com | redirects to dailycamera.com (sports section) |
+| — | Brush News-Tribune | brushnewstribune.com | redirects to fortmorgantimes.com |
+| — | Buffzone | buffzone.com | redirects to dailycamera.com (sports section) |
+| — | South Platte Sentinel | southplattesentinel.com | redirects to journal-advocate.com |
+| — | Daily Herald | dailyherald.com | not on the WordPress themes |
+| — | Sonoma Magazine | sonomamag.com | not on the WordPress themes |

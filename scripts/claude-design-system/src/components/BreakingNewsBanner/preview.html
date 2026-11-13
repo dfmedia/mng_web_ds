@@ -1,0 +1,25 @@
+<!-- @dsCard group="WordPress Elements" height=620 subtitle="Figma: Breaking News Banner · 3 variants (Device = production breakpoints)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>BreakingNewsBanner</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['XS (≤639px)', 360], ['S (640–799px)', 640], ['(≥800px)', 1280]];
+  function Demo() {
+    var s = React.useState(true);
+    return s[0] ? h(NS.BreakingNewsBanner, { device: '(≥800px)', headline: 'Close me: the consumer hides the bar on onClose', onClose: function () { s[1](false); } })
+      : h('button', { type: 'button', onClick: function () { s[1](true); } }, 'Show the bar again');
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Device', note: 'Device values are production’s breakpoints for this bar (640 / 800px, the same on the three themes). Below 800px the title, headline and date flow as one paragraph; from 800px they sit in one row at least 36px tall. color/theme/secondary bar, near-black text, color/gray/100 date, 28px close button. Drawn at the Figma widths; the bar fills its column.' },
+      h(I.Specimen, { items: devices.map(function (d) {
+        return { label: 'Device=' + d[0] + ' (built ' + d[1] + 'px)', width: d[1] + 32, node: h('div', { style: { width: d[1] } }, h(NS.BreakingNewsBanner, { device: d[0] })) };
+      }) })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Press the close button.' },
+      h(I.Specimen, { items: [{ label: '(≥800px) with onClose', width: 1312, node: h('div', { style: { width: 1280 } }, h(Demo)) }] }))));
+</script>
+</body>
+</html>

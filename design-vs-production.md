@@ -24,7 +24,7 @@
   - [10. Navigation menus — section menu drawer, avatar, hidden duplicate links and device-class timing](#10-navigation-menus--section-menu-drawer-avatar-hidden-duplicate-links-and-device-class-timing)
   - [11. Account menu — dropdown shadow isn't the design token](#11-account-menu--dropdown-shadow-isnt-the-design-token)
   - [12. Homepage tabs (World Cup tabs) — font, colors, spacing and breakpoint off the design system](#12-homepage-tabs-world-cup-tabs--font-colors-spacing-and-breakpoint-off-the-design-system)
-  - [13. Breaking News bar — Denver Post uses primary-lighter instead of secondary](#13-breaking-news-bar--denver-post-uses-primary-lighter-instead-of-secondary)
+  - [13. Breaking News bar — red overrides on 8 sites (ADA issues), sizes and date](#13-breaking-news-bar--red-overrides-on-8-sites-ada-issues-sizes-and-date)
   - [36. Footer — legal links fail WCAG AA contrast in the design (URGENT)](#36-footer--legal-links-fail-wcag-aa-contrast-in-the-design-urgent)
 - **Homepage blocks**
   - [14. Section title (eyebrow) — color, underline and spacing don't match the design](#14-section-title-eyebrow--color-underline-and-spacing-dont-match-the-design)
@@ -1541,26 +1541,48 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 ---
 
-## 13. Breaking News bar — Denver Post uses primary-lighter instead of secondary
+## 13. Breaking News bar — red overrides on 8 sites (ADA issues), sizes and date
 
-**Found:** 2026-10-02, live check of the six review sites (theme CSS read on `#page`; no breaking bar was active, so the color was read from the site's own `.breaking-bar` rule).
+**Found:** 2026-10-02 (Denver Post's color); **updated 2026-11-12:** the six review sites rechecked (CSS scan, test bar built from each site's markup, live bars on Cañon City, Denver Post and Morning Call), the bar color read on all 97 sites in the cluster audit, and the component rebuilt in Figma. Details and the full site table: `components/breaking-news-banner.md`.
 
-**Figma spec (source of truth):** the Breaking News Banner (WordPress Elements, `506:5632`) background is `color/theme/secondary` and its text is `color/theme/near-black` (bound 2026-10-02).
+**Design:** WordPress Elements ▸ Menus and Parts ▸ **Breaking News Banner** (`506:5632`), `Device` = `XS (≤639px)` / `S (640–799px)` / `(≥800px)`. Bar `color/theme/secondary`; title and headline `color/theme/near-black`; date `color/gray/100`; close icon `color/theme/near-black`. Production's breakpoints (640 / 800) are the component's own (`components/breakpoint-audit.md`), not drift.
 
-**Production:**
+### 13.1 Eight sites override the bar to red: kept as they are; their contrast fails (ADA)
 
-| Site | `.breaking-bar` background | Text | Token |
-|---|---|---|---|
-| ocregister.com | #FFEA00 | #0A0908 | secondary |
-| chicagotribune.com | #EEFF41 | #1F1E1C | secondary |
-| orlandosentinel.com | #EEFF41 | #1F1E1C | secondary |
-| canoncitydailyrecord.com | #EEFF41 | #141414 | secondary |
-| mcall.com | #EEFF41 | #141414 | secondary |
-| **denverpost.com** | **#AF1628** | #0A0908 | **primary-lighter** (Denver Post override) |
+**Decision (Karl, 2026-11-12):** the overrides stay as they are; they are not moved to `secondary`. Their contrast failures are ADA issues for Engineering. (On 2026-10-02 only Denver Post was red; the others have been added since.)
 
-**Open question (Karl):** keep Denver Post's red bar as a documented Denver Post exception, or have Engineering align it to `secondary` (`#003459`, navy, on Denver Post). Until decided, Figma stays on `secondary`.
+| Site | Bar | Fails |
+|---|---|---|
+| The Denver Post (`.breaking-bar { background: var(--primary-lighter) }`) | #AF1628 | close icon #0A0908 2.8:1 (needs 3:1); date #5D5B5A 1.1:1 (the live bar hides the date) |
+| The Morning Call (`#content .breaking-bar`) | #AD1700 | close icon #141414 2.5:1 |
+| Orlando Sentinel, South Florida Sun Sentinel, The Virginian-Pilot (`#content .breaking-bar`) | #D80000 | date #5D5B5A 1.3:1 |
+| Capital Gazette (`#content .breaking-bar`) | #D80000 | date #5D5B5A 1.3:1 |
+| Daily Press (`#content .breaking-bar`) | #F22400 | white title and headline 4.2:1 (needs 4.5:1); date #5D5B5A 1.6:1 |
+| The Baltimore Sun (`#content .breaking-bar`) | #D80000 | none (white text 5.4:1, white date, close #0A0908 3.7:1) |
 
-**Status:** Open, waiting on that decision.
+**Fix (Engineering, ADA):** on each red bar make the date white (as The Morning Call and The Baltimore Sun already do) and the close icon white; on Daily Press darken the red to #D80000 (white 5.4:1) like the other Tribune sites.
+
+### 13.2 Sizes and spacing
+
+| Property | Production | Design (4 / 8 grid) |
+|---|---|---|
+| Bar height, 800px and up | `min-height: 35px`, padding 0 / 10px | at least 36px, 12px (`spacing/150`) sides |
+| Padding below 800px | 10 / 10 / 5px | 12 / 12 / 4px (`spacing/150`, `spacing/050`) |
+| Title to headline | 11.25px (21.25px below 640) | 12px (`spacing/150`), 20px below 640 |
+| Close button from the right | 10px | 12px (`spacing/150`) |
+| Space before the close button, 800px and up | none: a long headline pushes the date under the close button (seen at 800px) | at least 16px (`spacing/200`) |
+
+The 10px values were a tie between 8 and 12 (Karl, 2026-11-12: 12). Title width 160px, close icon 28px, type sizes and line heights already match.
+
+**Fix:** padding 0 12px and `min-height: 36px` from 800px; `padding: 12px 12px 4px` below 800; title `margin-right: 12px` (and the headline's first-line offset 20px below 640); close button `right: 12px`; from 800px reserve 44px on the right (`padding-right` on `.breaking-bar-inner`) so the date can't run under the close button.
+
+### 13.3 Date color
+
+Production's date is #5D5B5A on every site. It fails on The Mercury News (#FFC518, 4.3:1) and the four Michigan sites with the #9DAABD secondary (The Oakland Press, The Macomb Daily, The Morning Sun, The News-Herald: 2.9:1), and on the red bars (13.1). Design: `color/gray/100` (#393938): 4.9:1 or more on every light secondary (Karl, 2026-11-12).
+
+**Fix:** `.breaking-bar .headline-only time` to #393938 on the three themes.
+
+**Status:** Open. 13.1 waits on Engineering (ADA); 13.2 and 13.3 are ready for Engineering.
 
 ---
 

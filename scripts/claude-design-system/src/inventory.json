@@ -734,9 +734,11 @@
     },
     {
      "name": "Breaking News Banner",
-     "where": "Menus and Parts, 506:5632; Article Page, 148:640",
-     "status": "To add",
-     "note": "Two copies."
+     "where": "Menus and Parts, 506:5632 (3 variants)",
+     "status": "In system",
+     "note": "Built 2026-11-12 to match production on the 4 / 8 grid after the six-site check and a 97-site bar-color audit (components/breaking-news-banner.md). Device = production breakpoints: XS (≤639px), S (640–799px), (≥800px). The Article Page duplicate (148:640) was deleted. Eight sites keep their red override (ADA issues): design-vs-production 13.",
+     "component": "BreakingNewsBanner",
+     "updated": "2026-11-12"
     },
     {
      "name": "SectionMenu (section menu toggle and drawer)",
