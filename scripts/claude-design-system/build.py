@@ -376,7 +376,7 @@ def build_tokens(notes):
 
     tokens = {
         "name": TITLE, "version": 1,
-        "meta": {"source": "github", "repo": "kuscholdMNG/mng_web_ds", "ref": "main@" + git_ref(),
+        "meta": {"source": "github", "repo": "dfmedia/mng_web_ds", "ref": "main@" + git_ref(),
                  "paths": {"tokens": ["tokens/core/", "tokens/themes/", "tokens/wordpress/"],
                            "fonts": ["tokens/icons/icomoon.woff2"], "assets": ["logos/", "tokens/icons/svg-missing/"],
                            "docs": ["components/"]},
@@ -508,7 +508,7 @@ def md_sections(md):
 
 def fix_links(text, rel):
     """Spec-relative links (previews/x.png, ../x.md) -> GitHub links."""
-    gh = "https://github.com/kuscholdMNG/mng_web_ds/blob/main/"
+    gh = "https://github.com/dfmedia/mng_web_ds/blob/main/"
     def rep(m):
         label, href = m.group(1), m.group(2)
         if re.match(r"https?:", href):
@@ -533,7 +533,7 @@ def component_readme(slug, ident, figma, sec, layer):
     lead = summary if summary else f"{figma}."
     url = spec_figma_url(slug, layer)
     lines += [lead, "",
-              f"**Part of:** {sec} · **Figma:** [{figma}]({url}) · **Spec:** [`{rel}/{slug}.md`](https://github.com/kuscholdMNG/mng_web_ds/blob/main/{rel}/{slug}.md)", ""]
+              f"**Part of:** {sec} · **Figma:** [{figma}]({url}) · **Spec:** [`{rel}/{slug}.md`](https://github.com/dfmedia/mng_web_ds/blob/main/{rel}/{slug}.md)", ""]
     if api:
         lines += ["## Use", "", api, ""]
     if notes:

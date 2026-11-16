@@ -25,4 +25,4 @@ h(Icon, { name: 'close', size: 16, label: 'Close' })    // meaningful on its own
 ## Known issues
 
 - The next font build (17 new icons and new `notification` / `notification2` artwork) is not in production. Its SVG artwork is in the **Icons Next Build** asset group; those names don't render through `Icon` until the font ships.
-- Where production's icon classes differ from the design (wrong glyph, missing class, production-only classes), see the drift doc, [`design-vs-production.md` entry 1](https://github.com/kuscholdMNG/mng_web_ds/blob/main/design-vs-production.md). This component always draws the design glyph.
+- Where production's icon classes differ from the design (wrong glyph, missing class, production-only classes), see the drift doc, [`design-vs-production.md` entry 1](https://github.com/dfmedia/mng_web_ds/blob/main/design-vs-production.md). This component always draws the design glyph.

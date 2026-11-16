@@ -8,7 +8,7 @@ Every value below is an existing MNG Web Design System token (hex shown for Bold
 
 In `claude-design-v3/Main.dc.html`, update the For You prototype to match the MNG Web Design System components built from it. Use only the values given below. Don't add new colors, sizes or spacing, and don't change anything else on the page. When you're done, check at 340, 360, 768, 1024 and 1280 that nothing overflows the page.
 
-Reference specs for every component below (exported 2026-10-28; Markdown spec, DTCG tokens, an HTML/CSS skeleton and previews per component): https://github.com/kuscholdMNG/mng_web_ds/tree/main/components (`core/` for the MNG Web Design System, `wordpress/` for WordPress Elements; list in `components/index.json`). If a spec and this prompt disagree, follow this prompt and tell me.
+Reference specs for every component below (exported 2026-10-28; Markdown spec, DTCG tokens, an HTML/CSS skeleton and previews per component): https://github.com/dfmedia/mng_web_ds/tree/main/components (`core/` for the MNG Web Design System, `wordpress/` for WordPress Elements; list in `components/index.json`). If a spec and this prompt disagree, follow this prompt and tell me.
 
 Which design-system component each part of the page matches (all in WordPress Elements unless noted; specs under `components/wordpress/<slug>/`):
 - Feed cards (`.card`): **Blocks Card** (`blocks-card`).

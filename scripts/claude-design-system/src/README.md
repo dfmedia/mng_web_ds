@@ -12,7 +12,7 @@ The MNG Web Design System is MediaNews Group's design system for its news websit
 - **Read a component's guidance.** On the Components page, the note button at the right of each row opens its guidance: what it's for, its variants, accessibility, and how production differs from the design. Each sample starts with a header that names the component in full, says whether it belongs to **Core** or **WordPress Elements**, and links to it in Figma.
 - **Design in Claude.** When you make a mock-up, prototype or canvas in Claude, ask it to use the **MNG Web Design System**. It then uses these components, colors, fonts and icons directly, so the result matches the system.
 - **Figma is the source of truth.** If something here looks wrong, check Figma. Changes are made in Figma first, then this system is rebuilt from it; nothing here is edited by hand.
-- **Production differences** (where a live site doesn't match the design yet) are tracked for Engineering in the [drift doc](https://github.com/kuscholdMNG/mng_web_ds/blob/main/design-vs-production.md), not here.
+- **Production differences** (where a live site doesn't match the design yet) are tracked for Engineering in the [drift doc](https://github.com/dfmedia/mng_web_ds/blob/main/design-vs-production.md), not here.
 
 ## Where things live in Figma
 
@@ -108,7 +108,7 @@ The icons are the production icon font (the same file on every MNG site): 171 ic
 
 ## Logos
 
-- **Publication logos** aren't part of this system. Find them in Figma, [Newspaper Logos, Favicons, User Pics](https://www.figma.com/design/oXaN4tEoa4GsH4x7kWpAFZ/?node-id=0-1), and as SVG files in the repo's [logos folder](https://github.com/kuscholdMNG/mng_web_ds/tree/main/logos). Never draw or approximate a logo; a publication without artwork gets its name in plain type.
+- **Publication logos** aren't part of this system. Find them in Figma, [Newspaper Logos, Favicons, User Pics](https://www.figma.com/design/oXaN4tEoa4GsH4x7kWpAFZ/?node-id=0-1), and as SVG files in the repo's [logos folder](https://github.com/dfmedia/mng_web_ds/tree/main/logos). Never draw or approximate a logo; a publication without artwork gets its name in plain type.
 - **Placeholder logos** (fake newspapers for mock-ups) are in **Assets › Placeholder Logos**. Use them in prototypes unless the work is for a specific publication.
 
 ## Sample content
@@ -119,7 +119,7 @@ The icons are the production icon font (the same file on every MNG site): 171 ic
 
 ## Rules
 
-- Design (Figma) is the source of truth. Production gaps go in the [drift doc](https://github.com/kuscholdMNG/mng_web_ds/blob/main/design-vs-production.md), one entry per component; the system never changes to match production.
+- Design (Figma) is the source of truth. Production gaps go in the [drift doc](https://github.com/dfmedia/mng_web_ds/blob/main/design-vs-production.md), one entry per component; the system never changes to match production.
 - No off-system values in new work: round a production value to the nearest token and log the production value in the drift doc. Breakpoints are the exception: components keep production's ranges for now (see Breakpoints).
 - Accessibility as specced: real buttons and links, tabs and dialogs marked up as such, decorative icons hidden from screen readers, a label on icon-only controls, visible focus rings, readable text (WCAG AA).
 - Each component's guidance keeps its known issues and production notes. Read them before using it in a layout.
@@ -128,7 +128,7 @@ The icons are the production icon font (the same file on every MNG site): 171 ic
 
 ## For developers
 
-Everything here is generated from the exports in [kuscholdMNG/mng_web_ds](https://github.com/kuscholdMNG/mng_web_ds) (`{{REF}}`) by `scripts/claude-design-system/build.py`. Never type a value in by hand: change Figma, re-export, rebuild.
+Everything here is generated from the exports in [dfmedia/mng_web_ds](https://github.com/dfmedia/mng_web_ds) (`{{REF}}`) by `scripts/claude-design-system/build.py`. Never type a value in by hand: change Figma, re-export, rebuild.
 
 - **Namespace:** every component is on the global `window.{{NAMESPACE}}` (the bundle `components/bundle.js`, a classic script that needs React 18 and ReactDOM 18 on the page first). Example: `const { ButtonPrimary, BlocksCard, Icon } = window.{{NAMESPACE}};`
 - **Load order on a canvas or page:** `tokens.css`, then `components/bundle.css`, then React 18, ReactDOM 18, then `components/bundle.js`.

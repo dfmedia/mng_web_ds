@@ -9,7 +9,7 @@ Oct 29, 2026 · @Karl
 The For You Hi-fi v4 prototype is now built only from the [MNG Web Design System](https://claude.ai/artifact/RKJ37zyXP7Wcvm1SDU7nzz) in Claude. Ten components it needs are still missing, so the prototype shows each one as a magenta placeholder labeled with the component name and Figma node.
 
 - **Prototype:** [For You Tab MVP — Hi-fi v4](https://claude.ai/artifact/8C2rMAtGVyfqhtByzStWrr)
-- **Export path for each component:** Figma (MNG Web Design System `jFHYqhZbJjvWQmDI4myCsd` / WordPress Elements `b1iZxkFwtAYq9rElmnCAzd`) → GitHub [kuscholdMNG/mng\_web\_ds](https://github.com/kuscholdMNG/mng_web_ds) (spec, tokens, skeleton, previews) → rebuild the Claude DS (`scripts/claude-design-system/build.py`).
+- **Export path for each component:** Figma (MNG Web Design System `jFHYqhZbJjvWQmDI4myCsd` / WordPress Elements `b1iZxkFwtAYq9rElmnCAzd`) → GitHub [dfmedia/mng\_web\_ds](https://github.com/dfmedia/mng_web_ds) (spec, tokens, skeleton, previews) → rebuild the Claude DS (`scripts/claude-design-system/build.py`).
 - **Rule from the For You project:** Editor's Picks uses only the production (WordPress Elements) components; the For You tab uses only the Blocks components. Nothing missing gets hand-built in the prototype.
 
 ## P1: Page chrome (shows on every screen)
