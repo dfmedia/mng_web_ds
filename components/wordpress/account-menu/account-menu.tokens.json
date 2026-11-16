@@ -672,6 +672,28 @@
             }
           }
         },
+        "padding-left": {
+          "$type": "dimension",
+          "$value": "{spacing.200}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/200"
+              }
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": "{spacing.200}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/200"
+              }
+            }
+          }
+        },
         "padding-top": {
           "$type": "dimension",
           "$value": "{spacing.400}",
@@ -686,22 +708,22 @@
         "container": {
           "padding-left": {
             "$type": "dimension",
-            "$value": "{spacing.450}",
+            "$value": "{spacing.150}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Spacing & Radius/spacing/450"
+                  "variable": "Spacing & Radius/spacing/150"
                 }
               }
             }
           },
           "padding-right": {
             "$type": "dimension",
-            "$value": "{spacing.450}",
+            "$value": "{spacing.150}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Spacing & Radius/spacing/450"
+                  "variable": "Spacing & Radius/spacing/150"
                 }
               }
             }
@@ -728,7 +750,7 @@
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 228,
+                "value": 244,
                 "unit": "px"
               }
             }
@@ -881,22 +903,22 @@
             },
             "padding-left": {
               "$type": "dimension",
-              "$value": "{spacing.250}",
+              "$value": "{spacing.150}",
               "$extensions": {
                 "com.mng": {
                   "figma": {
-                    "variable": "Spacing & Radius/spacing/250"
+                    "variable": "Spacing & Radius/spacing/150"
                   }
                 }
               }
             },
             "padding-right": {
               "$type": "dimension",
-              "$value": "{spacing.250}",
+              "$value": "{spacing.150}",
               "$extensions": {
                 "com.mng": {
                   "figma": {
-                    "variable": "Spacing & Radius/spacing/250"
+                    "variable": "Spacing & Radius/spacing/150"
                   }
                 }
               }
@@ -923,7 +945,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 228,
+                  "value": 244,
                   "unit": "px"
                 }
               }
@@ -1014,6 +1036,28 @@
                 }
               }
             },
+            "padding-left": {
+              "$type": "dimension",
+              "$value": "{spacing.200}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Spacing & Radius/spacing/200"
+                  }
+                }
+              }
+            },
+            "padding-right": {
+              "$type": "dimension",
+              "$value": "{spacing.200}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Spacing & Radius/spacing/200"
+                  }
+                }
+              }
+            },
             "padding-top": {
               "$type": "dimension",
               "$value": "{spacing.400}",
@@ -1026,28 +1070,6 @@
               }
             },
             "newsletter-container": {
-              "padding-left": {
-                "$type": "dimension",
-                "$value": "{spacing.200}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/200"
-                    }
-                  }
-                }
-              },
-              "padding-right": {
-                "$type": "dimension",
-                "$value": "{spacing.200}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Spacing & Radius/spacing/200"
-                    }
-                  }
-                }
-              },
               "newsletter-text": {
                 "color": {
                   "$type": "color",
@@ -1098,22 +1120,22 @@
             "signup-container": {
               "padding-left": {
                 "$type": "dimension",
-                "$value": "{spacing.450}",
+                "$value": "{spacing.150}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Spacing & Radius/spacing/450"
+                      "variable": "Spacing & Radius/spacing/150"
                     }
                   }
                 }
               },
               "padding-right": {
                 "$type": "dimension",
-                "$value": "{spacing.450}",
+                "$value": "{spacing.150}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Spacing & Radius/spacing/450"
+                      "variable": "Spacing & Radius/spacing/150"
                     }
                   }
                 }
@@ -1140,7 +1162,7 @@
                 "width": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 228,
+                    "value": 244,
                     "unit": "px"
                   }
                 }

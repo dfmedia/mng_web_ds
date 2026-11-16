@@ -52,7 +52,9 @@
 .mngds-account-menu__email { font-size: var(--mng-account-menu-base-section-item-section-item-container-user-email-font-size); font-weight: var(--mng-account-menu-base-section-item-section-item-container-user-email-font-weight); }
 /* Non-subscribers: Button Primary, full width, 8px (spacing/100) below the email. */
 .mngds-account-menu__subscribe { display: flex; padding-top: var(--mng-account-menu-usertype-nonsub-section-item-section-item-container-button-padding-top); }
-.mngds-account-menu__subscribe > *, .mngds-account-menu__newsletter-button > *, .mngds-account-menu__signin > * { flex: 1 1 auto; width: 100%; }
+/* Button Primary keeps its 8px side margins, so its edges sit 24px (header) and 36px (sign-in, newsletter) from the panel's sides. */
+.mngds-account-menu__subscribe > .mngds-button-primary, .mngds-account-menu__newsletter-button > .mngds-button-primary, .mngds-account-menu__signin > .mngds-button-primary { flex: 0 0 auto; width: 100%; }
+.mngds-account-menu__subscribe .mngds-button-primary__button, .mngds-account-menu__newsletter-button .mngds-button-primary__button, .mngds-account-menu__signin .mngds-button-primary__button { width: 100%; }
 /* Status = alert: InLineMessage (Priority High, HeaderAlert): color/gray/600, radius/utility, 16px padding and gaps. */
 .mngds-account-menu__alert {
   display: flex; flex-direction: column; align-items: flex-start; gap: var(--mng-spacing-200); margin-top: var(--mng-spacing-100);
@@ -92,10 +94,10 @@
   border-bottom: var(--mng-account-menu-base-section-item-divider-border-width) solid var(--mng-account-menu-base-section-item-divider-border-color);
 }
 .mngds-account-menu__marketing > * { max-width: 268px; }
-/* Newsletter: prompt Bold 14 centered; Sign Up 12px below it, 36px from the sides; 32px above and below. */
-.mngds-account-menu__newsletter { padding: var(--mng-account-menu-base-item-padding-top) 0 var(--mng-account-menu-base-item-padding-bottom); background: var(--mng-color-gray-max); }
+/* Newsletter: prompt Bold 14 centered; Sign Up 12px below it, its edges 36px from the sides (16 + 12 + its 8px margin); 32px above and below. */
+.mngds-account-menu__newsletter { padding: var(--mng-account-menu-base-item-padding-top) var(--mng-account-menu-base-item-padding-right) var(--mng-account-menu-base-item-padding-bottom) var(--mng-account-menu-base-item-padding-left); background: var(--mng-color-gray-max); }
 .mngds-account-menu__newsletter-prompt {
-  margin: 0; padding: 0 var(--mng-account-menu-base-menu-main-menu-footer-item-newsletter-container-padding-left); text-align: center; line-height: normal;
+  margin: 0; padding: 0; text-align: center; line-height: normal;
   font-size: var(--mng-account-menu-base-item-container-newsletter-prompt-font-size); font-weight: var(--mng-account-menu-base-item-container-newsletter-prompt-font-weight);
   color: var(--mng-account-menu-base-item-container-newsletter-prompt-color);
 }
@@ -110,7 +112,7 @@
 }
 @keyframes mngds-account-menu-slide { from { transform: translateX(100%); } to { transform: none; } }
 @media (prefers-reduced-motion: reduce) { .mngds-account-menu__panel--slide { animation: none; } }
-/* Subscribe and Log In: Button Primary, 24px (spacing/300) above and between, 36px from the sides (16 + 20); 48px or more below. */
+/* Subscribe and Log In: Button Primary, 24px (spacing/300) above and between, edges 36px from the sides (16 + 12 + its 8px margin); 48px or more below. */
 .mngds-account-menu__signin {
   display: flex; flex-direction: column; gap: var(--mng-account-menu-base-menu-main-body-signin-gap);
   min-height: var(--mng-account-menu-base-menu-main-body-height);
@@ -119,13 +121,13 @@
 .mngds-account-menu__footer { border-top: var(--mng-account-menu-base-menu-main-divider-border-width) solid var(--mng-account-menu-base-menu-main-divider-border-color); }
 
 /* inline: the open panel in the page flow (documentation). */
-.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) { width: var(--mng-account-menu-view-open-root-width); }
-.mngds-account-menu--inline.is-open.mngds-account-menu--full-width:not(.mngds-account-menu--loggedout) { width: 100%; }
-.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__bar { display: block; height: 0; padding: 0; }
-.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__search { display: none; }
-.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__anchor { position: static; display: block; }
-.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__trigger { position: absolute; top: 17px; right: var(--mng-account-menu-base-section-item-section-item-container-container-padding-right); }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) { width: var(--mng-account-menu-view-open-root-width); }
+.mngds-account-menu--inline.is-open.mngds-account-menu--full-width:not(.mngds-account-menu--logged-out) { width: 100%; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__bar { display: block; height: auto; padding: 0; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__search { display: none; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__anchor { position: static; display: block; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__trigger { position: absolute; top: 17px; right: var(--mng-account-menu-base-section-item-section-item-container-container-padding-right); }
 .mngds-account-menu--inline .mngds-account-menu__panel--dropdown { position: relative; top: 0; right: 0; left: auto; width: 100%; max-height: none; }
-.mngds-account-menu--inline.mngds-account-menu--loggedout.is-open { width: var(--mng-account-menu-view-open-root-width); }
-.mngds-account-menu--inline.mngds-account-menu--loggedout .mngds-account-menu__bar { justify-content: flex-end; }
+.mngds-account-menu--inline.mngds-account-menu--logged-out.is-open { width: var(--mng-account-menu-view-open-root-width); }
+.mngds-account-menu--inline.mngds-account-menu--logged-out .mngds-account-menu__bar { justify-content: flex-end; }
 .mngds-account-menu--inline .mngds-account-menu__panel--slide { position: relative; top: 0; width: 100%; animation: none; }

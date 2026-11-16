@@ -61,16 +61,16 @@ Default variant `(up to 1039px) / loggedOut / loggedOut / Open` (hidden layers m
     - **Header** `FRAME`: 300×64, horizontal, gap 0, padding 0/0/0/0, fill×hug
       - **AccountMenu** `INSTANCE`: 108×64, horizontal, gap 16, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=(up to 1039px), UserType=loggedOut)
     - **Body** `FRAME`: 300×432, vertical, gap 8, padding 0/16/48/16, fill×fixed
-      - **Signin** `FRAME`: 268×152, vertical, gap 24, padding 24/20/24/20, fill×hug
-        - **Button Primary** `INSTANCE`: 228×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
-        - **Button Primary** `INSTANCE`: 228×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
+      - **Signin** `FRAME`: 268×152, vertical, gap 24, padding 24/12/24/12, fill×hug
+        - **Button Primary** `INSTANCE`: 244×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
+        - **Button Primary** `INSTANCE`: 244×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
     - **Divider** `LINE`: 300×0, fill×fixed
     - **Menu Footer** `FRAME`: 300×154, vertical, gap 0, padding 0/0/0/0, fill×hug
-      - **Item** `FRAME`: 300×154, vertical, gap 0, padding 32/0/32/0, fill×hug
-        - **Newsletter Container** `FRAME`: 300×38, horizontal, gap 8, padding 0/16/0/16, fill×hug
+      - **Item** `FRAME`: 300×154, vertical, gap 0, padding 32/16/32/16, fill×hug
+        - **Newsletter Container** `FRAME`: 268×38, horizontal, gap 8, padding 0/0/0/0, fill×hug
           - **Newsletter Text** `TEXT`: 268×38, fill×hug, "Get Morning Report and other email newsl", Noto Sans Bold 14px
-        - **Signup Container** `FRAME`: 300×52, horizontal, gap 0, padding 12/36/0/36, fill×hug
-          - **Button Primary** `INSTANCE`: 228×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
+        - **Signup Container** `FRAME`: 268×52, horizontal, gap 0, padding 12/12/0/12, fill×hug
+          - **Button Primary** `INSTANCE`: 244×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
 
 ## Component tokens
 
@@ -138,12 +138,14 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.usertype-loggedin.container.userstatus.height` | 30px |
 | `account-menu.usertype-loggedin.container.userstatus.width` | 30px |
 | `account-menu.base.item.padding-bottom` | `{spacing.400}` |
+| `account-menu.base.item.padding-left` | `{spacing.200}` |
+| `account-menu.base.item.padding-right` | `{spacing.200}` |
 | `account-menu.base.item.padding-top` | `{spacing.400}` |
-| `account-menu.base.item.container.padding-left` | `{spacing.450}` |
-| `account-menu.base.item.container.padding-right` | `{spacing.450}` |
+| `account-menu.base.item.container.padding-left` | `{spacing.150}` |
+| `account-menu.base.item.container.padding-right` | `{spacing.150}` |
 | `account-menu.base.item.container.padding-top` | `{spacing.150}` |
 | `account-menu.base.item.container.button-primary.height` | 40px |
-| `account-menu.base.item.container.button-primary.width` | 228px |
+| `account-menu.base.item.container.button-primary.width` | 244px |
 | `account-menu.base.item.container.newsletter-prompt.color` | `{color.gray.min}` |
 | `account-menu.base.item.container.newsletter-prompt.font-family` | `{font.family.noto-sans}` |
 | `account-menu.base.item.container.newsletter-prompt.font-size` | `{font.size.14}` |
@@ -158,11 +160,11 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.menu-main.body.padding-right` | `{spacing.200}` |
 | `account-menu.base.menu-main.body.signin.gap` | `{spacing.300}` |
 | `account-menu.base.menu-main.body.signin.padding-bottom` | `{spacing.300}` |
-| `account-menu.base.menu-main.body.signin.padding-left` | `{spacing.250}` |
-| `account-menu.base.menu-main.body.signin.padding-right` | `{spacing.250}` |
+| `account-menu.base.menu-main.body.signin.padding-left` | `{spacing.150}` |
+| `account-menu.base.menu-main.body.signin.padding-right` | `{spacing.150}` |
 | `account-menu.base.menu-main.body.signin.padding-top` | `{spacing.300}` |
 | `account-menu.base.menu-main.body.signin.button-primary.height` | 40px |
-| `account-menu.base.menu-main.body.signin.button-primary.width` | 228px |
+| `account-menu.base.menu-main.body.signin.button-primary.width` | 244px |
 | `account-menu.base.menu-main.divider.border-color` | `{color.gray.min}` |
 | `account-menu.base.menu-main.divider.border-style` | solid |
 | `account-menu.base.menu-main.divider.border-width` | 1px |
@@ -172,18 +174,18 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.menu-main.header.accountmenu.width` | 108px |
 | `account-menu.base.menu-main.menu-footer.background` | `{color.gray.max}` |
 | `account-menu.base.menu-main.menu-footer.item.padding-bottom` | `{spacing.400}` |
+| `account-menu.base.menu-main.menu-footer.item.padding-left` | `{spacing.200}` |
+| `account-menu.base.menu-main.menu-footer.item.padding-right` | `{spacing.200}` |
 | `account-menu.base.menu-main.menu-footer.item.padding-top` | `{spacing.400}` |
-| `account-menu.base.menu-main.menu-footer.item.newsletter-container.padding-left` | `{spacing.200}` |
-| `account-menu.base.menu-main.menu-footer.item.newsletter-container.padding-right` | `{spacing.200}` |
 | `account-menu.base.menu-main.menu-footer.item.newsletter-container.newsletter-text.color` | `{color.gray.min}` |
 | `account-menu.base.menu-main.menu-footer.item.newsletter-container.newsletter-text.font-family` | `{font.family.noto-sans}` |
 | `account-menu.base.menu-main.menu-footer.item.newsletter-container.newsletter-text.font-size` | `{font.size.14}` |
 | `account-menu.base.menu-main.menu-footer.item.newsletter-container.newsletter-text.font-weight` | `{font.weight.bold}` |
-| `account-menu.base.menu-main.menu-footer.item.signup-container.padding-left` | `{spacing.450}` |
-| `account-menu.base.menu-main.menu-footer.item.signup-container.padding-right` | `{spacing.450}` |
+| `account-menu.base.menu-main.menu-footer.item.signup-container.padding-left` | `{spacing.150}` |
+| `account-menu.base.menu-main.menu-footer.item.signup-container.padding-right` | `{spacing.150}` |
 | `account-menu.base.menu-main.menu-footer.item.signup-container.padding-top` | `{spacing.150}` |
 | `account-menu.base.menu-main.menu-footer.item.signup-container.button-primary.height` | 40px |
-| `account-menu.base.menu-main.menu-footer.item.signup-container.button-primary.width` | 228px |
+| `account-menu.base.menu-main.menu-footer.item.signup-container.button-primary.width` | 244px |
 | `account-menu.base.root.background` | `{color.gray.max}` |
 | `account-menu.base.section-item.background` | `{color.gray.max}` |
 | `account-menu.base.section-item.container.gap` | `{spacing.200}` |
@@ -336,12 +338,12 @@ Production's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in
 - **Header:** User name Noto Sans Bold 20 (`font/size/20`) and User email Regular 14 (`font/size/14`), `color/gray/min` (18.4:1), one line each with an ellipsis; 8px (`spacing/100`) above, 16px (`spacing/200`) at the sides and below; a 1px `color/gray/500` line.
 - **Rows:** Reader Dashboard, Subscription (with the Subscription type, Regular 16), Gifted Articles, Saved Articles, Contact us, Log Out. 16px (`spacing/200`) padding, label Bold 16 `color/gray/min`, 16px chevron (`arrow-rightSMALL`; none on Log Out), 1px `color/gray/500` line. Saved Articles always shows (Karl, 2026-11-16). The whole row is the link.
 - **Row states:** hover `color/gray/600` (16.0:1); pressed `color/gray/500` with a `color/gray/400` line (11.3:1); keyboard focus a 2px `color/gray/black` line inside the row.
-- **UserType = nonSub:** Button Primary "Subscribe Now" under the email, full width, 8px (`spacing/100`) above; Gifted and Saved Articles add a `color/theme/primary` link, Regular 16 underlined (4.7:1 or better on white on every site).
+- **UserType = nonSub:** Button Primary "Subscribe Now" under the email, as wide as the column (its edges 24px from the panel's sides, as production), 8px (`spacing/100`) above; Gifted and Saved Articles add a `color/theme/primary` link, Regular 16 underlined (4.7:1 or better on white on every site).
 - **Status = alert:** InLineMessage (Priority High, Location AcctMenu, HeaderAlert) under the email: Payment Issue with Update Payment Info.
 - **Group and anonymous readers** (were the groupSub and GroupAnon variants): Subscription type is the partner text, e.g. "Ad-Free Partner Access sitewide provided by Colorado State University at Denver"; anonymous: User name "Anonymous User", User email the account ID, UserImage Graphic = unknown.
 - **Marketing slot** (in production's code, always hidden): 16px padding, at most 268px wide, about 190px tall, flexes to its content.
-- **Newsletter:** prompt Bold 14 (`font/size/14`) centered, Button Primary Sign Up 12px (`spacing/150`) below it and 36px (`spacing/450`) from the sides, 32px (`spacing/400`) above and below.
-- **Open, logged out (up to 1039px):** slides in from the right under the masthead (250ms ease-in-out), 300px wide, full height, `color/gray/max`, a 1px `color/gray/min` line at the top, 50% black scrim. Subscribe and Log In are Button Primary, 24px (`spacing/300`) above and between, 36px (`spacing/450`) from the sides; 48px (`spacing/600`) or more below; a 1px `color/gray/min` line; then the newsletter block.
+- **Newsletter:** prompt Bold 14 (`font/size/14`) centered, Button Primary Sign Up 12px (`spacing/150`) below it, its edges 36px from the panel's sides (`spacing/200` + `spacing/150` + Button Primary's 8px margin), 32px (`spacing/400`) above and below.
+- **Open, logged out (up to 1039px):** slides in from the right under the masthead (250ms ease-in-out), 300px wide, full height, `color/gray/max`, a 1px `color/gray/min` line at the top, 50% black scrim. Subscribe and Log In are Button Primary, 24px (`spacing/300`) above and between, their edges 36px from the panel's sides (`spacing/200` + `spacing/150` + Button Primary's 8px margin; production 35px); 48px (`spacing/600`) or more below; a 1px `color/gray/min` line; then the newsletter block.
 - **Long menus** scroll inside the panel; the header stays and gets a line below it once scrolling starts.
 
 ## Accessibility

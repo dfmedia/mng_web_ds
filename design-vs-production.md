@@ -1615,9 +1615,9 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Production (Orlando Sentinel, a "Limited Access" account):** `.digisubs-subscribe-now-button` is 254 × 43px, Noto Sans Bold 14, 12px top and bottom padding, 4px corners, inset 8px inside a 270px wrapper (`.digisubs-user-information-subscribe-button`) that overflows the 268px column by 2px.
 
-**Design:** Button Primary (Noto Sans Bold 16, 40px tall, 4px corners), the full width of the column, 8px (`spacing/100`) below the email.
+**Design:** Button Primary (Noto Sans Bold 16, 40px tall, 4px corners), 8px (`spacing/100`) below the email; Button Primary's 8px margins put its edges 24px from the panel's sides, the same as production (252px wide).
 
-**Action needed:** style the link as Button Primary at full column width and remove the 270px wrapper width.
+**Action needed:** style the link as Button Primary and remove the 270px wrapper width.
 
 **Status:** Open. Added 2026-11-16.
 
@@ -1625,7 +1625,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Production (all 6 sites, 1024px):** the panel slides in from the right under the masthead, 300px wide, with a 50% scrim. Subscribe and Log In are 230 × 41px, Noto Sans SemiBold 14.06px, 5px corners, 24px above and between them, 35px from the sides (Cañon City: full-width text rows on `#FAFAFA` instead of buttons). The newsletter block has 15px margin plus 15px padding above and below; Sign Up is 230 × 40px. The panel's top line and the line above the newsletter are the theme's near-black (`#0A0908`, `#1F1E1C`, `#141414`). Focus stays inside the panel (good), but Esc doesn't close it and focus goes to `body` on close.
 
-**Design:** Button Primary for Subscribe and Log In, 24px (`spacing/300`) above and between, 36px (`spacing/450`) from the sides; newsletter 32px (`spacing/400`) above and below, Sign Up 36px from the sides; lines `color/gray/min`. Esc closes the panel and focus returns to the user icon.
+**Design:** Button Primary for Subscribe and Log In, 24px (`spacing/300`) above and between, their edges 36px from the panel's sides (`spacing/200` + `spacing/150` + Button Primary's 8px margin; 228px wide); newsletter 32px (`spacing/400`) above and below, Sign Up the same 36px from the sides; lines `color/gray/min`. Esc closes the panel and focus returns to the user icon.
 
 **Action needed:** style the two links as Button Primary (as in 10.10), round the spacing to the values above, use the buttons on Cañon City (NEPA-PMP) too, and add Esc and focus return.
 
