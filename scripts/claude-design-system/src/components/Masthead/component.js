@@ -248,7 +248,9 @@ function Masthead(props) {
      masthead has scrolled away. */
   var whole = page === 'Obituaries' || dashboard;
   var threshold = props.scrollThreshold != null ? props.scrollThreshold : (xl ? 55 : 1);
-  var sentinelStyle = props.scrollThreshold == null && whole ? { bottom: 0 } : { top: threshold + 'px' };
+  /* The 1px sentinel ends at `threshold`, so it leaves the scroll area (and the bar takes over) at threshold + 1px of
+     scrolling: 56px for 55, as production (still the full masthead at 55px). */
+  var sentinelStyle = props.scrollThreshold == null && whole ? { bottom: 0 } : { top: Math.max(0, threshold - 1) + 'px' };
   return h(React.Fragment, null,
     h('header', Object.assign(rest(props, MASTHEAD_PROPS), { ref: dv[1], className: cls }),
       sticky ? h('span', { ref: sentinel, className: 'mngds-masthead__sentinel', style: sentinelStyle, 'aria-hidden': 'true' }) : null,
