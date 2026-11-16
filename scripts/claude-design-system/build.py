@@ -111,6 +111,7 @@ COMPONENTS = [
     ("social-media-button", "SocialMediaButton", "Social Media Button", "WordPress Elements"),
     ("button-save", "ButtonSave", "Button_Save", "WordPress Elements"),
     ("social-buttons", "SocialButtons", "SocialButtons", "WordPress Elements"),
+    ("account-menu", "AccountMenu", "AccountMenu", "WordPress Elements"),
     ("masthead", "Masthead", "Masthead", "WordPress Elements"),
     ("footer", "Footer", "Footer", "WordPress Elements"),
     ("ad-blocks", "AdBlocks", "Ad Blocks", "WordPress Elements"),

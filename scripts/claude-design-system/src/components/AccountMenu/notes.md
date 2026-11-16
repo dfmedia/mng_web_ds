@@ -1,0 +1,6 @@
+- Built 2026-11-16 from the 7-variant Figma set (Karl cut it from 21 the same day). Production (design-vs-production 11) differs in 10 places; this component follows the design: Esc and focus return, real links for every row (Log Out included), a scrim that takes the click, newsletter in the logged-in menu, full width at 340px and below, the panel's right edge 24px past the chevron at every width.
+- The open panel sits under the trigger (as production: the avatar and up chevron show through its top 48px, 17px down) instead of repeating the avatar inside it, so the trigger keeps focus and its `aria-expanded` state.
+- The scrim colors (40% and 50% black) come from production; there is no opacity token, so they are `color-mix()` on `color/gray/black`.
+- The payment alert is drawn here (Priority High, HeaderAlert look: `color/gray/600`, `radius/utility`, title `color/feedback/high-error` 4.6:1, text `color/gray/min` 16.0:1) because InLineMessage's alert variants aren't in the system yet (open item 6).
+- Chevrons use the icon font's `arrow-down`, `arrow-up` and `arrow-right` at 12px in a 16px box (Figma: arrow-downSMALL, arrow-upSmall, arrow-rightSMALL).
+- Masthead draws its closed account area with this component since 2026-11-16.

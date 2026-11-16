@@ -2,7 +2,7 @@
    Top of the page (Default / AdFree) in flow; the condensed content (Scrolled / AdFree-Scrolled) sticks to the top of the
    scroll area once the reader scrolls (production: headroom.js .headroom--not-top). The device comes from the rendered width
    (WordPress grid: 1040 / 800 / 640 / 360) unless `device` forces one. Parts drawn here: SectionMenu (closed), AccountMenu
-   (closed: UserStatus, UserPic, the search button), WeatherBug (its own component since 2026-11-09), SocialButtons, NavMenu (closed), Ad Blocks. */
+   (its own component since 2026-11-16, with the search button), WeatherBug (its own component since 2026-11-09), SocialButtons, NavMenu (closed), Ad Blocks. */
 var MASTHEAD_NAV = ['News', 'Fakeville Local', 'Sportsball', 'Stuff Happening', 'Obituaries', 'Sponsored Content',
   'Public Notices', 'Business', 'Politics', 'Entertainment', 'Suburbs'];
 var MASTHEAD_TRENDING = ['Dragon sightings near Fakeville shire', 'Pseudonyms up 3-1', 'Fire Storms in the forecast',
@@ -101,33 +101,14 @@ function MastheadSectionToggle(p) {
     showTitle ? h('span', { className: 'mngds-masthead__menu-title' }, p.label) : null);
 }
 
-/* UserPic (Size = Small, 30px as production, Karl 2026-11-13) with UserImage inside: the reader's photo, initials
-   (monogram) or the generic user icon (unknown). user.status = 'Active' and user.alert show the status dots. */
-function MastheadAvatar(p) {
-  var u = p.user || {};
-  if (p.unknown) return h(UserPic, { size: 'Small', graphic: 'unknown' });
-  return h(UserPic, { size: 'Small', src: u.imageSrc || u.src, name: u.name, initials: u.initials, status: u.status, alert: u.alert,
-    background: u.background, color: u.color });
-}
-
-/* AccountMenu, View = Closed (UserStatus inside), plus the SearchBar (Status = Default) slot. */
+/* AccountMenu (closed until the reader opens it; its own component since 2026-11-16), with the SearchBar slot. */
 function MastheadAccount(p) {
   var xl = p.device === 'XL-Desktop';
-  var search = h('button', { type: 'button', className: 'mngds-masthead__search', 'aria-label': p.searchLabel || 'Search', onClick: p.onSearchClick },
-    h(Icon, { name: 'search', size: 20 }));
-  var status;
-  if (!p.adFree && xl) {
-    status = h('span', { className: 'mngds-masthead__buttons' },
-      h(ButtonPrimary, { label: p.subscribeLabel || 'Subscribe', href: p.subscribeHref, onClick: p.onSubscribe }),
-      h(ButtonPrimary, { label: p.logInLabel || 'Log In', href: p.logInHref, onClick: p.onLogIn }));
-  } else {
-    var name = p.adFree ? 'Account menu' + (p.user && p.user.name ? ', ' + p.user.name : '') : 'Log in or subscribe';
-    status = h('button', { type: 'button', className: 'mngds-masthead__account', 'aria-haspopup': 'true', 'aria-expanded': 'false',
-        'aria-label': p.accountLabel || name, onClick: p.onAccountClick },
-      h(MastheadAvatar, { user: p.user, unknown: !p.adFree }),
-      h('span', { className: 'mngds-masthead__chevron' }, h(Icon, { name: 'arrow-down', size: 12 })));
-  }
-  return h('div', { className: 'mngds-masthead__account-menu' }, status, search);
+  return h(AccountMenu, { className: 'mngds-masthead__account-menu', status: p.adFree ? 'loggedIn' : 'loggedOut',
+    device: p.adFree ? '(all widths)' : (xl ? '(1040px and up)' : '(up to 1039px)'), user: p.user, accountLabel: p.accountLabel,
+    onOpenChange: p.onAccountClick, onSearchClick: p.onSearchClick, searchLabel: p.searchLabel,
+    subscribeHref: p.subscribeHref, onSubscribe: p.onSubscribe, logInHref: p.logInHref, onLogIn: p.onLogIn,
+    subscribeLabel: p.subscribeLabel, logInLabel: p.logInLabel });
 }
 
 function MastheadAd(p) {

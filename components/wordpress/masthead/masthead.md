@@ -9,7 +9,7 @@ component_key: 5cf04e3021e4ccd5357b9d77f3d03e02ed41dc28
 variants: 90
 tokens: masthead.tokens.json
 skeleton: masthead.html
-exported: 2026-11-09
+exported: 2026-11-16
 ---
 
 # Masthead
@@ -51,7 +51,7 @@ exported: 2026-11-09
 | `Default / MD-TabletV (640–799px) / Article` | 768×186 | [824:5147](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5147) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-article.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / SectionFront` | 360×130 | [456:3230](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3230) | 1 | ![](previews/masthead--default-sm-mobile-639px-built-360px-sectionfront.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Obituaries` | 360×353 | [456:3531](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3531) | 0 | ![](previews/masthead--default-sm-mobile-639px-built-360px-obituaries.png) |
-| `Default / SM-Mobile (≤639px · built 360px) / Dashboard` | 360×104 | [456:3300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3300) | 12 | ![](previews/masthead--default-sm-mobile-639px-built-360px-dashboard.png) |
+| `Default / SM-Mobile (≤639px · built 360px) / Dashboard` | 360×104 | [456:3300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3300) | 8 | ![](previews/masthead--default-sm-mobile-639px-built-360px-dashboard.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Home` | 360×130 | [456:3201](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3201) | 11 | ![](previews/masthead--default-sm-mobile-639px-built-360px-home.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Article` | 360×130 | [824:5173](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5173) | 0 | ![](previews/masthead--default-sm-mobile-639px-built-360px-article.png) |
 | `Default / XS-Fold (≤639px · built 340px) / SectionFront` | 340×180 | [736:1647](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-1647) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-sectionfront.png) |
@@ -155,7 +155,7 @@ Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers
             - **Vector** `VECTOR`: 31.91×22.5, fixed×fixed
             - **Vector** `VECTOR`: 15.79×22.89, fixed×fixed
         - **AccountMenu Container** `FRAME`: 300×64, horizontal, gap 16, padding 0/40/0/0, fixed×fixed
-          - **AccountMenu** `INSTANCE`: 293×64, horizontal, gap 8, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=XL-Desktop, UserType=loggedOut)
+          - **AccountMenu** `INSTANCE`: 294×64, horizontal, gap 8, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=(1040px and up), UserType=loggedOut)
     - **Container** `FRAME`: 1040×64, horizontal, gap 14, padding 8/40/8/40, fill×fixed
       - **Weather Bug** `INSTANCE`: 285.78×40.73, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead, Evening e-Edition=Off)
       - **Section Name** `TEXT`: 278×54, hug×hug, "Section Name", Noto Serif Bold 40px
@@ -344,14 +344,14 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.accountmenu.width` | 104px |
+| `masthead.base.masthead-container.accountmenu.width` | 108px |
 | `masthead.base.masthead-container.accountmenu-container.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.accountmenu-container.height` | 64px |
 | `masthead.base.masthead-container.accountmenu-container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.accountmenu-container.width` | 300px |
 | `masthead.base.masthead-container.accountmenu-container.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.accountmenu-container.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.accountmenu-container.accountmenu.width` | 104px |
+| `masthead.base.masthead-container.accountmenu-container.accountmenu.width` | 108px |
 | `masthead.base.masthead-container.ad-container.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.ad-container.padding-bottom` | `{spacing.200}` |
 | `masthead.base.masthead-container.ad-container.padding-top` | `{spacing.200}` |
@@ -445,7 +445,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.section-menu-desktop.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.container.section-menu-desktop.width` | 300px |
 | `masthead.base.masthead-container.container.section-menu-desktop.accountmenu.height` | 64px |
-| `masthead.base.masthead-container.container.section-menu-desktop.accountmenu.width` | 104px |
+| `masthead.base.masthead-container.container.section-menu-desktop.accountmenu.width` | 108px |
 | `masthead.base.masthead-container.container.section-name.color` | `{color.theme.primary}` |
 | `masthead.base.masthead-container.container.section-name.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.container.section-name.font-size` | `{font.size.40}` |
@@ -489,7 +489,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.header.section-menu-desktop.width` | 300px |
 | `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.width` | 104px |
+| `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.width` | 108px |
 | `masthead.base.masthead-container.header.sectionmenu.height` | 64px |
 | `masthead.base.masthead-container.header.sectionmenu.icon-color` | `{color.gray.max}` |
 | `masthead.base.masthead-container.icon-group.height` | 29.79px |
@@ -587,7 +587,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.section-menu-desktop.width` | 300px |
 | `masthead.base.masthead-container.section-menu-desktop.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.section-menu-desktop.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.section-menu-desktop.accountmenu.width` | 104px |
+| `masthead.base.masthead-container.section-menu-desktop.accountmenu.width` | 108px |
 | `masthead.base.masthead-container.section-title.color` | `{color.theme.primary-dark}` |
 | `masthead.base.masthead-container.section-title.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.section-title.font-size` | `{font.size.16}` |
@@ -607,7 +607,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.sectionmenu.height` | 64px |
 | `masthead.base.masthead-container.sectionmenu.icon-color` | `{color.gray.max}` |
 | `masthead.base.masthead-container.socialbuttons.height` | 40px |
-| `masthead.base.masthead-container.socialbuttons.width` | 328px |
+| `masthead.base.masthead-container.socialbuttons.width` | 329px |
 | `masthead.base.masthead-container.sponsorship-row.ad-blocks.height` | 50px |
 | `masthead.base.masthead-container.sponsorship-row.ad-blocks.icon-color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.sponsorship-row.ad-blocks.width` | 300px |
@@ -1136,24 +1136,24 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.page-obituaries.masthead-container.container.container.width` | 235.25px |
 | `masthead.state-default.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 293px |
+| `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.page-dashboard.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-dashboard.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 104px |
+| `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
 | `masthead.state-default.page-article.masthead-container.container.padding-bottom` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.container.padding-top` | `{spacing.200}` |
-| `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 293px |
+| `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 104px |
+| `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 104px |
+| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
 | `masthead.state-default.masthead-container.container.weather-bug.width` | 285.78px |
-| `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 293px |
+| `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.section-menu.navmenu.width` | 366px |
 | `masthead.state-adfree.masthead-container.container.weather-bug.width` | 333px |
-| `masthead.state-adfree.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 104px |
+| `masthead.state-adfree.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 108px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.height` | 29.79px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.width` | 146px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.vector.height` | 14.21px |
@@ -1240,11 +1240,11 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.logo.vector.width` | 11.84px |
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.sectionmenu.width` | 64px |
 | `masthead.device-xl-desktop-1040px.page-article.root.width` | 1040px |
-| `masthead.state-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 293px |
-| `masthead.state-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 293px |
+| `masthead.state-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 294px |
+| `masthead.state-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-scrolled.section-menu.navmenu.width` | 768px |
-| `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 104px |
-| `masthead.state-adfree-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 104px |
+| `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 108px |
+| `masthead.state-adfree-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.root.width` | 1024px |
 | `masthead.device-lg-tableth-800-1039px.page-dashboard.masthead-container.sectionmenu.width` | 300px |
@@ -1291,9 +1291,9 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **70**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **66**.
 
-Placed on pages: Menus and Parts ×55, Homepage ×6, Article Page ×4, Section Front ×2.
+Placed on pages: Menus and Parts ×51, Homepage ×6, Article Page ×4, Section Front ×2.
 
 **Built from:** SectionMenu ×90, AccountMenu ×88, Icons ×40, Ad Blocks ×29, Weather Bug ×11, NavMenu ×6, SocialButtons ×2
 Icon variants: `search` ×20, `equalizer2` ×20.
@@ -1320,4 +1320,4 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 - `masthead.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-16 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

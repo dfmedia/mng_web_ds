@@ -1,0 +1,131 @@
+/* AccountMenu. Values from account-menu.tokens.json and the system tokens. */
+.mngds-account-menu { position: relative; display: inline-flex; flex-direction: column; box-sizing: border-box; font-family: var(--mng-font-family-noto-sans); color: var(--mng-color-gray-min); }
+.mngds-account-menu *, .mngds-account-menu *::before, .mngds-account-menu *::after { box-sizing: border-box; }
+/* Closed: 64px row, 8px sides; the account control and the search button 16px (spacing/200) apart (8px next to the 1040px-and-up buttons). */
+.mngds-account-menu__bar {
+  display: flex; align-items: center; height: var(--mng-account-menu-view-closed-root-height);
+  padding: 0 var(--mng-account-menu-view-closed-root-padding-right) 0 var(--mng-account-menu-view-closed-root-padding-left);
+  gap: var(--mng-account-menu-device-all-widths-root-gap); background: var(--mng-color-gray-max);
+}
+.mngds-account-menu--wide .mngds-account-menu__bar { gap: var(--mng-account-menu-device-1040px-and-up-root-gap); }
+.mngds-account-menu__anchor { position: relative; display: flex; align-items: center; }
+/* Trigger: UserPic Small (30px) and the 16px chevron, no gap (production 0). It sits on top of the open panel. */
+.mngds-account-menu__trigger {
+  appearance: none; margin: 0; padding: 0; border: 0; background: transparent; font: inherit; color: inherit; cursor: pointer;
+  display: inline-flex; align-items: center; gap: 0; position: relative; z-index: 2;
+}
+.mngds-account-menu__chevron {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: var(--mng-account-menu-usertype-loggedin-container-icon-icons-width); height: var(--mng-account-menu-usertype-loggedin-container-icon-icons-height);
+  color: var(--mng-account-menu-usertype-loggedin-container-icon-icons-icon-color);
+}
+.mngds-account-menu__search {
+  appearance: none; margin: 0; padding: 0; border: 0; background: transparent; cursor: pointer; color: var(--mng-color-gray-min);
+  display: inline-flex; align-items: center; justify-content: center; width: var(--mng-account-menu-view-closed-search-width); height: var(--mng-account-menu-view-closed-search-width);
+}
+/* Keyboard focus: a 2px color/gray/black ring 2px outside (design-vs-production 10.9). */
+.mngds-account-menu__trigger:focus-visible, .mngds-account-menu__search:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }
+
+/* Open, logged in: 300px, right edge 24px (spacing/300) past the chevron, top 17px above the avatar (production),
+   color/gray/max, bottom corners radius/utility, shadow/lg; the avatar row shows through the top 48px. */
+.mngds-account-menu__panel--dropdown {
+  position: absolute; z-index: 1; top: -17px; right: calc(-1 * var(--mng-account-menu-base-section-item-section-item-container-container-padding-right));
+  width: var(--mng-account-menu-view-open-root-width);
+  padding-top: var(--mng-account-menu-base-section-item-section-item-container-container-height);
+  background: var(--mng-account-menu-base-root-background);
+  border-radius: 0 0 var(--mng-radius-utility) var(--mng-radius-utility); box-shadow: var(--mng-shadow-lg); overflow: hidden;
+  max-height: calc(100vh - 16px); overflow-y: auto;
+}
+/* 340px and below: the full width of the screen (Karl, 2026-11-16). */
+.mngds-account-menu--full-width .mngds-account-menu__panel--dropdown { position: fixed; top: 0; left: 0; right: 0; width: auto; }
+/* 40% black scrim behind (production rgba(0,0,0,.4)); 50% behind the logged-out panel. It takes the click that closes the menu. */
+.mngds-account-menu__scrim { position: fixed; inset: 0; z-index: 0; background: color-mix(in srgb, var(--mng-color-gray-black) 40%, transparent); }
+.mngds-account-menu__scrim--panel { background: color-mix(in srgb, var(--mng-color-gray-black) 50%, transparent); }
+
+.mngds-account-menu__header {
+  display: flex; flex-direction: column; min-width: 0;
+  padding: var(--mng-account-menu-base-section-item-section-item-container-padding-top) var(--mng-account-menu-base-section-item-section-item-container-padding-right) var(--mng-account-menu-base-section-item-section-item-padding-bottom) var(--mng-account-menu-base-section-item-section-item-container-padding-left);
+  border-bottom: var(--mng-account-menu-base-section-item-divider-border-width) solid var(--mng-account-menu-base-section-item-divider-border-color);
+}
+.mngds-account-menu__name, .mngds-account-menu__email { margin: 0; line-height: normal; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--mng-color-gray-min); }
+.mngds-account-menu__name { font-size: var(--mng-account-menu-base-section-item-section-item-container-user-name-font-size); font-weight: var(--mng-account-menu-base-section-item-section-item-container-user-name-font-weight); }
+.mngds-account-menu__email { font-size: var(--mng-account-menu-base-section-item-section-item-container-user-email-font-size); font-weight: var(--mng-account-menu-base-section-item-section-item-container-user-email-font-weight); }
+/* Non-subscribers: Button Primary, full width, 8px (spacing/100) below the email. */
+.mngds-account-menu__subscribe { display: flex; padding-top: var(--mng-account-menu-usertype-nonsub-section-item-section-item-container-button-padding-top); }
+.mngds-account-menu__subscribe > *, .mngds-account-menu__newsletter-button > *, .mngds-account-menu__signin > * { flex: 1 1 auto; width: 100%; }
+/* Status = alert: InLineMessage (Priority High, HeaderAlert): color/gray/600, radius/utility, 16px padding and gaps. */
+.mngds-account-menu__alert {
+  display: flex; flex-direction: column; align-items: flex-start; gap: var(--mng-spacing-200); margin-top: var(--mng-spacing-100);
+  padding: var(--mng-spacing-200); background: var(--mng-color-gray-600); border-radius: var(--mng-radius-utility);
+}
+.mngds-account-menu__alert-title { margin: 0; display: flex; align-items: center; gap: var(--mng-spacing-100); font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-bold); line-height: normal; color: var(--mng-color-feedback-high-error); }
+.mngds-account-menu__alert-body { display: flex; flex-direction: column; gap: var(--mng-spacing-100); }
+.mngds-account-menu__alert-text { margin: 0; font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-regular); line-height: normal; color: var(--mng-color-gray-min); }
+
+/* Rows: 16px padding and gap, Bold 16 color/gray/min, 16px chevron, 1px color/gray/500 line. The whole row is the link. */
+.mngds-account-menu__rows { list-style: none; margin: 0; padding: 0; }
+.mngds-account-menu__row {
+  appearance: none; margin: 0; font: inherit; text-align: left; cursor: pointer; text-decoration: none; color: var(--mng-color-gray-min);
+  display: flex; align-items: center; width: 100%; gap: var(--mng-account-menu-base-section-item-container-gap);
+  padding: var(--mng-account-menu-base-section-item-container-padding-top) var(--mng-account-menu-base-section-item-container-padding-right) var(--mng-account-menu-base-section-item-container-padding-bottom) var(--mng-account-menu-base-section-item-container-padding-left);
+  background: var(--mng-account-menu-base-section-item-background); border: 0;
+  border-bottom: var(--mng-account-menu-base-section-item-divider-border-width) solid var(--mng-account-menu-base-section-item-divider-border-color);
+}
+.mngds-account-menu__row-text { display: flex; flex-direction: column; flex: 1 1 auto; min-width: 0; }
+.mngds-account-menu__row-label { font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-bold); line-height: normal; }
+.mngds-account-menu__row-sub { font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-regular); line-height: normal; }
+.mngds-account-menu__row-sub--link { color: var(--mng-account-menu-usertype-nonsub-section-item-container-container-section-subtitle-color); text-decoration: underline; }
+.mngds-account-menu__row-chevron {
+  display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0;
+  width: var(--mng-account-menu-base-section-item-container-icons-width); height: var(--mng-account-menu-base-section-item-container-icons-height);
+  color: var(--mng-account-menu-base-section-item-container-icons-icon-color);
+}
+/* Hover color/gray/600 (16.0:1); pressed color/gray/500 with a color/gray/400 line (11.3:1); focus a 2px color/gray/black line inside. */
+@media (hover: hover) and (pointer: fine) { .mngds-account-menu__row:hover { background: var(--mng-color-gray-600); } }
+.mngds-account-menu__row.is-hover { background: var(--mng-color-gray-600); }
+.mngds-account-menu__row:active, .mngds-account-menu__row.is-pressed { background: var(--mng-color-gray-500); border-bottom-color: var(--mng-color-gray-400); }
+.mngds-account-menu__row:focus-visible, .mngds-account-menu__row.is-focus { outline: 2px solid var(--mng-color-gray-black); outline-offset: -2px; }
+
+/* Marketing slot: 16px padding, at most 268px wide, flexes to its content. */
+.mngds-account-menu__marketing {
+  padding: var(--mng-spacing-200); font-size: var(--mng-font-size-16); font-weight: var(--mng-font-weight-regular);
+  border-bottom: var(--mng-account-menu-base-section-item-divider-border-width) solid var(--mng-account-menu-base-section-item-divider-border-color);
+}
+.mngds-account-menu__marketing > * { max-width: 268px; }
+/* Newsletter: prompt Bold 14 centered; Sign Up 12px below it, 36px from the sides; 32px above and below. */
+.mngds-account-menu__newsletter { padding: var(--mng-account-menu-base-item-padding-top) 0 var(--mng-account-menu-base-item-padding-bottom); background: var(--mng-color-gray-max); }
+.mngds-account-menu__newsletter-prompt {
+  margin: 0; padding: 0 var(--mng-account-menu-base-menu-main-menu-footer-item-newsletter-container-padding-left); text-align: center; line-height: normal;
+  font-size: var(--mng-account-menu-base-item-container-newsletter-prompt-font-size); font-weight: var(--mng-account-menu-base-item-container-newsletter-prompt-font-weight);
+  color: var(--mng-account-menu-base-item-container-newsletter-prompt-color);
+}
+.mngds-account-menu__newsletter-button { display: flex; padding: var(--mng-account-menu-base-item-container-padding-top) var(--mng-account-menu-base-item-container-padding-right) 0 var(--mng-account-menu-base-item-container-padding-left); }
+
+/* Open, logged out (below 1040px): slides in from the right under the masthead, 300px, full height, a 1px color/gray/min line at the top. */
+.mngds-account-menu__panel--slide {
+  position: fixed; z-index: 1; top: var(--mng-account-menu-view-closed-root-height); right: 0; bottom: 0; width: var(--mng-account-menu-view-open-root-width);
+  display: flex; flex-direction: column; overflow-y: auto; background: var(--mng-account-menu-base-menu-main-background);
+  border-top: var(--mng-account-menu-base-menu-main-body-border-top-width) solid var(--mng-account-menu-base-menu-main-body-border-color);
+  animation: mngds-account-menu-slide 250ms ease-in-out;
+}
+@keyframes mngds-account-menu-slide { from { transform: translateX(100%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) { .mngds-account-menu__panel--slide { animation: none; } }
+/* Subscribe and Log In: Button Primary, 24px (spacing/300) above and between, 36px from the sides (16 + 20); 48px or more below. */
+.mngds-account-menu__signin {
+  display: flex; flex-direction: column; gap: var(--mng-account-menu-base-menu-main-body-signin-gap);
+  min-height: var(--mng-account-menu-base-menu-main-body-height);
+  padding: var(--mng-account-menu-base-menu-main-body-signin-padding-top) calc(var(--mng-account-menu-base-menu-main-body-padding-right) + var(--mng-account-menu-base-menu-main-body-signin-padding-right)) var(--mng-account-menu-base-menu-main-body-padding-bottom) calc(var(--mng-account-menu-base-menu-main-body-padding-left) + var(--mng-account-menu-base-menu-main-body-signin-padding-left));
+}
+.mngds-account-menu__footer { border-top: var(--mng-account-menu-base-menu-main-divider-border-width) solid var(--mng-account-menu-base-menu-main-divider-border-color); }
+
+/* inline: the open panel in the page flow (documentation). */
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) { width: var(--mng-account-menu-view-open-root-width); }
+.mngds-account-menu--inline.is-open.mngds-account-menu--full-width:not(.mngds-account-menu--loggedout) { width: 100%; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__bar { display: block; height: 0; padding: 0; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__search { display: none; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__anchor { position: static; display: block; }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--loggedout) .mngds-account-menu__trigger { position: absolute; top: 17px; right: var(--mng-account-menu-base-section-item-section-item-container-container-padding-right); }
+.mngds-account-menu--inline .mngds-account-menu__panel--dropdown { position: relative; top: 0; right: 0; left: auto; width: 100%; max-height: none; }
+.mngds-account-menu--inline.mngds-account-menu--loggedout.is-open { width: var(--mng-account-menu-view-open-root-width); }
+.mngds-account-menu--inline.mngds-account-menu--loggedout .mngds-account-menu__bar { justify-content: flex-end; }
+.mngds-account-menu--inline .mngds-account-menu__panel--slide { position: relative; top: 0; width: 100%; animation: none; }

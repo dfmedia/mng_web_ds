@@ -11,7 +11,7 @@
       },
       "production": "WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / `--not-top`), audited on the 6 review sites 2026-09-15 (`components/breakpoint-audit.md`), logged out and as an ad-free subscriber. Gaps: design-vs-production 9, 10, 11, 24 and 33.",
       "layer": "wordpress",
-      "exported": "2026-11-09"
+      "exported": "2026-11-16"
     }
   },
   "masthead": {
@@ -1585,7 +1585,7 @@
           "width": {
             "$type": "dimension",
             "$value": {
-              "value": 104,
+              "value": 108,
               "unit": "px"
             }
           }
@@ -1649,7 +1649,7 @@
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 104,
+                "value": 108,
                 "unit": "px"
               }
             }
@@ -2604,7 +2604,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 104,
+                  "value": 108,
                   "unit": "px"
                 }
               }
@@ -3032,7 +3032,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 104,
+                  "value": 108,
                   "unit": "px"
                 }
               }
@@ -3951,7 +3951,7 @@
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 104,
+                "value": 108,
                 "unit": "px"
               }
             }
@@ -4169,7 +4169,7 @@
           "width": {
             "$type": "dimension",
             "$value": {
-              "value": 328,
+              "value": 329,
               "unit": "px"
             }
           }
@@ -9724,7 +9724,7 @@
                 "width": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 293,
+                    "value": 294,
                     "unit": "px"
                   }
                 }
@@ -9767,7 +9767,7 @@
                 "width": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 104,
+                    "value": 108,
                     "unit": "px"
                   }
                 }
@@ -9810,7 +9810,7 @@
                 "width": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 293,
+                    "value": 294,
                     "unit": "px"
                   }
                 }
@@ -9853,7 +9853,7 @@
                 "width": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 104,
+                    "value": 108,
                     "unit": "px"
                   }
                 }
@@ -9896,7 +9896,7 @@
                 "width": {
                   "$type": "dimension",
                   "$value": {
-                    "value": 104,
+                    "value": 108,
                     "unit": "px"
                   }
                 }
@@ -9925,7 +9925,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 293,
+                  "value": 294,
                   "unit": "px"
                 }
               }
@@ -9964,7 +9964,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 104,
+                  "value": 108,
                   "unit": "px"
                 }
               }
@@ -10755,7 +10755,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 293,
+                  "value": 294,
                   "unit": "px"
                 }
               }
@@ -10770,7 +10770,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 293,
+                  "value": 294,
                   "unit": "px"
                 }
               }
@@ -10798,7 +10798,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 104,
+                  "value": 108,
                   "unit": "px"
                 }
               }
@@ -10813,7 +10813,7 @@
               "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 104,
+                  "value": 108,
                   "unit": "px"
                 }
               }

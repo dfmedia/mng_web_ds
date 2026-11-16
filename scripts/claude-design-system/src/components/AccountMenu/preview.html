@@ -1,0 +1,52 @@
+<!-- @dsCard group="WordPress Elements" height=2900 subtitle="Figma: AccountMenu · 7 variants (Status × View × Device × UserType)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>AccountMenu</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.demo-try{display:flex;justify-content:flex-end;width:420px;min-height:520px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var PHOTO = 'data:image/svg+xml,' + encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#7fb3d5"/><circle cx="44" cy="20" r="9" fill="#f7dc6f"/><path d="M0 46 L20 30 L34 42 L46 32 L64 46 V64 H0Z" fill="#52805a"/><path d="M0 54 L18 44 L40 56 L64 48 V64 H0Z" fill="#3b5e43"/></svg>');
+  var USER = { src: PHOTO, name: 'Gritty McGee' };
+  var GROUP = 'Ad-Free Partner Access sitewide provided by Colorado State University at Denver';
+  var MKT = h('div', { style: { height: '190px', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px dashed var(--mng-color-gray-400)', fontFamily: 'var(--mng-font-family-noto-sans)', fontSize: 'var(--mng-font-size-16)' } }, 'Marketing slot (268 × about 190px)');
+  function Try() {
+    return h('div', { className: 'demo-try' }, h(NS.AccountMenu, { status: 'loggedIn', user: USER }));
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Closed', note: 'Logged in: UserPic Small (30px) and the 16px chevron, no gap; the search button 16px to the right. Logged out: the user icon below 1040px, Subscribe and Log In from 1040px up (no menu).' },
+      h(I.Specimen, { items: [
+        { label: 'Status=loggedOut, View=Closed, Device=(up to 1039px), UserType=loggedOut', node: h(NS.AccountMenu, { status: 'loggedOut', view: 'Closed', device: '(up to 1039px)' }) },
+        { label: 'Status=loggedOut, View=Closed, Device=(1040px and up), UserType=loggedOut', node: h(NS.AccountMenu, { status: 'loggedOut', view: 'Closed', device: '(1040px and up)' }) },
+        { label: 'Status=loggedIn, View=Closed, Device=(all widths), UserType=loggedIn', node: h(NS.AccountMenu, { status: 'loggedIn', view: 'Closed', user: USER }) },
+        { label: 'Closed, reader active with an alert (UserPic dots)', node: h(NS.AccountMenu, { status: 'alert', view: 'Closed', user: { src: PHOTO, name: 'Gritty McGee', status: 'Active', alert: 'high' }, accountLabel: 'Account menu, Gritty McGee, 1 alert' }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Open, logged in (all widths)', note: '300px; the avatar and up chevron show through the top, 17px down; right edge 24px past the chevron; bottom corners radius/utility; shadow/lg. Saved Articles always shows.' },
+      h(I.Specimen, { items: [
+        { label: 'Status=loggedIn, View=Open, Device=(all widths), UserType=subscriber', node: h(NS.AccountMenu, { status: 'loggedIn', view: 'Open', inline: true, user: USER, marketing: MKT }) },
+        { label: 'Status=loggedIn, View=Open, Device=(all widths), UserType=nonSub', node: h(NS.AccountMenu, { status: 'loggedIn', userType: 'nonSub', view: 'Open', inline: true, user: USER }) },
+        { label: 'Status=alert, View=Open, Device=(all widths), UserType=subscriber', node: h(NS.AccountMenu, { status: 'alert', view: 'Open', inline: true, user: USER }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Open, logged out (up to 1039px)', note: 'The panel slides in from the right under the masthead (shown here under the 64px row): Subscribe and Log In (Button Primary), then the newsletter sign-up.' },
+      h(I.Specimen, { items: [
+        { label: 'Status=loggedOut, View=Open, Device=(up to 1039px), UserType=loggedOut', node: h(NS.AccountMenu, { status: 'loggedOut', view: 'Open', inline: true }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Examples: text properties and 340px', note: 'Group and anonymous wording from the earlier groupSub and GroupAnon variants (Karl, 2026-11-16). At 340px and below the menu spans the full width.' },
+      h(I.Specimen, { items: [
+        { label: '340px and below: full width', width: 340, node: h(NS.AccountMenu, { view: 'Open', inline: true, fullWidth: true, user: USER, showNewsletter: false }) },
+        { label: 'Basic subscriber', node: h(NS.AccountMenu, { view: 'Open', inline: true, user: USER, subscriptionType: 'Basic Digital Subscriber', showNewsletter: false }) },
+        { label: 'Group subscriber (partner access)', node: h(NS.AccountMenu, { view: 'Open', inline: true, user: USER, subscriptionType: GROUP, showNewsletter: false }) },
+        { label: 'Group, anonymous', node: h(NS.AccountMenu, { view: 'Open', inline: true, user: { graphic: 'unknown' }, userName: 'Anonymous User', userEmail: '12345678-anon', subscriptionType: GROUP, showNewsletter: false }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Row states', note: 'Hover color/gray/600; pressed color/gray/500 with a color/gray/400 line; keyboard focus a 2px color/gray/black line inside the row.' },
+      h(I.Specimen, { items: [
+        { label: 'Reader Dashboard hover, Subscription pressed, Gifted Articles focus', node: h(NS.AccountMenu, { view: 'Open', inline: true, user: USER, showNewsletter: false,
+          rowState: { 'Reader Dashboard': 'hover', 'Subscription': 'pressed', 'Gifted Articles': 'focus' } }) }
+      ] })),
+    h(I.SpecimenSection, { title: 'Try it', note: 'Click the avatar (or Tab to it and press Enter): focus moves into the menu; Esc, a click on the scrim or tabbing past Log Out closes it and focus returns to the avatar.' },
+      h(Try))));
+</script>
+</body>
+</html>

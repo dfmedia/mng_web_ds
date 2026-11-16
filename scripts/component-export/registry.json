@@ -1095,18 +1095,35 @@
       "file": "b1iZxkFwtAYq9rElmnCAzd",
       "node": "910:16425",
       "documentationFrame": "910:15618",
-      "description": "The account control in the masthead and the dropdown it opens. Status = loggedIn, loggedOut, alert; View = Closed / Open; Device; UserType = loggedIn, loggedOut, nonSub, BasicSub, PremSub, groupSub, GroupAnon. Search is a slot property.",
+      "description": "The account control at the right of the masthead (Closed) and the menu it opens (Open). Status = loggedOut, loggedIn, alert; View = Closed, Open; Device = (up to 1039px), (1040px and up) for logged out, (all widths) for logged in; UserType = loggedOut, loggedIn (Closed), nonSub, subscriber. Text properties: User name, User email, Subscription type. Cut from 21 to 7 variants on 2026-11-16 (Karl); matches production (digisubs, all 6 review sites, 2026-11-13) on the 4 / 8 grid.",
       "rules": [
-        "**Closed:** UserStatus decides what shows: Subscribe and Log In (logged out, 1040px and up), the account icon (logged out, below 1040px) or the avatar (logged in).",
-        "**Open:** a dropdown panel with `shadow/lg` (production's differs: design-vs-production 11).",
-        "**Accessibility:** the trigger is a button with aria-expanded and aria-haspopup; the panel is a list of links."
+        "**Closed, logged in (all widths):** UserPic Small (30px, production's size) and the 16px chevron (`arrow-downSMALL`) with no gap (production 0); the masthead search icon follows 16px (`spacing/200`) to the right, centered on the avatar.",
+        "**Closed, logged out:** below 1040px the user icon and chevron (opens the slide-in panel); from 1040px up the Subscribe and Log In buttons (UserStatus; design-vs-production 10.10) and no menu.",
+        "**Open, logged in:** a 300px panel; at 340px and below it spans the full width of the screen (Karl, 2026-11-16). Its right edge is 24px (`spacing/300`) past the chevron; the avatar and up chevron show at its top, 17px down; it covers the masthead search icon (production). `color/gray/max`, bottom corners `radius/utility` (5px), `shadow/lg`, a 40% black scrim behind.",
+        "**Header:** User name Noto Sans Bold 20 (`font/size/20`) and User email Regular 14 (`font/size/14`), `color/gray/min` (18.4:1), one line each with an ellipsis; 8px (`spacing/100`) above, 16px (`spacing/200`) at the sides and below; a 1px `color/gray/500` line.",
+        "**Rows:** Reader Dashboard, Subscription (with the Subscription type, Regular 16), Gifted Articles, Saved Articles, Contact us, Log Out. 16px (`spacing/200`) padding, label Bold 16 `color/gray/min`, 16px chevron (`arrow-rightSMALL`; none on Log Out), 1px `color/gray/500` line. Saved Articles always shows (Karl, 2026-11-16). The whole row is the link.",
+        "**Row states:** hover `color/gray/600` (16.0:1); pressed `color/gray/500` with a `color/gray/400` line (11.3:1); keyboard focus a 2px `color/gray/black` line inside the row.",
+        "**UserType = nonSub:** Button Primary \"Subscribe Now\" under the email, full width, 8px (`spacing/100`) above; Gifted and Saved Articles add a `color/theme/primary` link, Regular 16 underlined (4.7:1 or better on white on every site).",
+        "**Status = alert:** InLineMessage (Priority High, Location AcctMenu, HeaderAlert) under the email: Payment Issue with Update Payment Info.",
+        "**Group and anonymous readers** (were the groupSub and GroupAnon variants): Subscription type is the partner text, e.g. \"Ad-Free Partner Access sitewide provided by Colorado State University at Denver\"; anonymous: User name \"Anonymous User\", User email the account ID, UserImage Graphic = unknown.",
+        "**Marketing slot** (in production's code, always hidden): 16px padding, at most 268px wide, about 190px tall, flexes to its content.",
+        "**Newsletter:** prompt Bold 14 (`font/size/14`) centered, Button Primary Sign Up 12px (`spacing/150`) below it and 36px (`spacing/450`) from the sides, 32px (`spacing/400`) above and below.",
+        "**Open, logged out (up to 1039px):** slides in from the right under the masthead (250ms ease-in-out), 300px wide, full height, `color/gray/max`, a 1px `color/gray/min` line at the top, 50% black scrim. Subscribe and Log In are Button Primary, 24px (`spacing/300`) above and between, 36px (`spacing/450`) from the sides; 48px (`spacing/600`) or more below; a 1px `color/gray/min` line; then the newsletter block.",
+        "**Long menus** scroll inside the panel; the header stays and gets a line below it once scrolling starts."
       ],
-      "breakpoints": "| Device | Viewport | Built at |\n|---|---|---|\n| XS-Fold | below 640px | 340px |\n| SM-Mobile | below 640px | 360px |\n| MD-TabletV | 640–799px | 768px |\n| LG-TabletH | 800–1039px | 1024px |\n| XL-Desktop | 1040px and up | 1040px (Masthead) / 1280px |",
+      "breakpoints": "| Device | Viewport | Built at |\n|---|---|---|\n| (up to 1039px) | logged out, below 1040px: user icon and slide-in panel | 300px panel |\n| (1040px and up) | logged out: Subscribe and Log In buttons, no menu | 294px |\n| (all widths) | logged in: the same menu at every width; full width at 340px and below | 300px panel |\n\nProduction's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in menu's position changes at 1024, 820, 770 and 450px (design-vs-production 11.6). Future MNG Device breakpoint for the 1040px switch: 1024 (not adopted yet).",
       "knownIssues": [
-        "Several Open, XL-Desktop variants (nonSub / BasicSub / GroupAnon / PremSub) render empty or broken (set description).",
-        "Raw values with no token: 15px and 296px spacing, 80px avatar radius; the alert dot is #FFCC00, not a token."
+        "Production differs in 10 places (design-vs-production 11.1–11.10): shadow spread, Esc and focus handling, Log Out without href, clicks through the scrim, the 340px full-width rule, the menu's position, no newsletter when logged in, the Subscribe Now button, the logged-out panel's buttons and spacing, Saved Articles on 3 of 6 sites.",
+        "Not checked in production: the payment alert (no test account had one), group and anonymous accounts, the logged-out panel at widths other than 1024px.",
+        "The marketing slot's sample art and its yellow (#ffcc00) label are placeholder content, not tokens."
       ],
-      "production": "Production account dropdown (Bootstrap-style dropdown, open item 1); shadow gap: design-vs-production 11."
+      "production": "digisubs plugin: `#anchorProfileDropDown` and `#account-content` (logged in), `#digisubs-toggle` and `.wrapper-nav-subs` (logged out, below 1040px). Checked on all 6 review sites at 340, 360, 768, 1024 and 1175px logged in and at 1024px logged out, 2026-11-13. Differences: design-vs-production 11.",
+      "accessibility": [
+        "**Trigger:** a button named \"Account menu\" with `aria-haspopup=\"true\"` and `aria-expanded`. Keyboard focus: a 2px `color/gray/black` ring 2px outside (design-vs-production 10.9).",
+        "**Keyboard:** Enter or Space opens the menu and moves focus to the first link; Tab and Shift+Tab move through the links; Esc, tabbing past the last link or a click outside closes it, and focus returns to the trigger. Every row is a real link, Log Out included (production's isn't: 11.3).",
+        "**Scrim:** takes the click that closes the menu; it doesn't pass the click to the page (production does: 11.4).",
+        "**Logged-out panel:** keeps focus inside while open (as production) and closes on Esc, returning focus to the user icon."
+      ]
     },
     {
       "slug": "search-bar",

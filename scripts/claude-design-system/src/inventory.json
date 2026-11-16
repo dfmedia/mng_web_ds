@@ -760,8 +760,8 @@
      "name": "Masthead",
      "where": "Menus and Parts, 456:2572 (90 variants)",
      "status": "In system",
-     "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. Not built here: the account dropdown and search field (the open section menu is SectionMenu).",
-     "updated": "2026-11-09",
+     "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. The account area is AccountMenu since 2026-11-16. Not built here: the search field (the open section menu is SectionMenu).",
+     "updated": "2026-11-16",
      "component": "Masthead"
     },
     {
@@ -806,9 +806,11 @@
     },
     {
      "name": "AccountMenu",
-     "where": "Menus and Parts, 910:16425",
-     "status": "To add",
-     "note": "Exported 2026-10-30. The closed control is drawn inside Masthead; the dropdown isn’t built."
+     "where": "Menus and Parts, 910:16425 (7 variants)",
+     "note": "Built 2026-11-16 after the six-site check (design-vs-production 11) and the cut from 21 to 7 variants (Karl): closed (logged in, logged out below and from 1040px), the open dropdown (subscriber, nonSub, payment alert; full width at 340px and below) and the logged-out slide-in panel. Masthead draws its account area with it.",
+     "component": "AccountMenu",
+     "status": "In system",
+     "updated": "2026-11-16"
     },
     {
      "name": "SearchBar",

@@ -1084,10 +1084,10 @@
         "node": "910:16425",
         "set": "AccountMenu"
       },
-      "variants": 21,
-      "instances": 246,
-      "knownIssues": 3,
-      "exported": "2026-11-13"
+      "variants": 7,
+      "instances": 233,
+      "knownIssues": 4,
+      "exported": "2026-11-16"
     },
     {
       "slug": "footer",
@@ -1149,9 +1149,9 @@
         "set": "Masthead"
       },
       "variants": 90,
-      "instances": 70,
+      "instances": 66,
       "knownIssues": 9,
-      "exported": "2026-11-09"
+      "exported": "2026-11-16"
     },
     {
       "slug": "search-bar",

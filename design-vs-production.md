@@ -22,7 +22,7 @@
 - **Masthead and navigation**
   - [9. Masthead — nav overflow, article scrolled-state headline and nav bottom border](#9-masthead--nav-overflow-article-scrolled-state-headline-and-nav-bottom-border)
   - [10. Navigation menus — section menu drawer, avatar, hidden duplicate links and device-class timing](#10-navigation-menus--section-menu-drawer-avatar-hidden-duplicate-links-and-device-class-timing)
-  - [11. Account menu — dropdown shadow isn't the design token](#11-account-menu--dropdown-shadow-isnt-the-design-token)
+  - [11. Account menu — shadow, keyboard, width, position and missing parts](#11-account-menu--shadow-keyboard-width-position-and-missing-parts)
   - [12. Homepage tabs (World Cup tabs) — font, colors, spacing and breakpoint off the design system](#12-homepage-tabs-world-cup-tabs--font-colors-spacing-and-breakpoint-off-the-design-system)
   - [13. Breaking News bar — red overrides on 8 sites (ADA issues), sizes and date](#13-breaking-news-bar--red-overrides-on-8-sites-ada-issues-sizes-and-date)
   - [36. Footer — legal links fail WCAG AA contrast in the design (URGENT)](#36-footer--legal-links-fail-wcag-aa-contrast-in-the-design-urgent)
@@ -1535,13 +1535,113 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 ---
 
-## 11. Account menu — dropdown shadow isn't the design token
+## 11. Account menu — shadow, keyboard, width, position and missing parts
 
-**Found:** 2026-10-23, in `mng-digisubs.styles.css` (loaded on every review site): `.dropdown-menu { box-shadow: 0 8px 16px -4px rgba(0,0,0,.2) }`. **Team:** digisubs.
+**Found:** 2026-10-23 (shadow) and 2026-11-13 (everything else), logged in on all 6 review sites at 340, 360, 768, 1024 and 1175px, and logged out at 1024px. Production is the digisubs plugin: `#anchorProfileDropDown` and `#account-content` (logged in, every width), `#digisubs-toggle` and `.wrapper-nav-subs` (logged out, below 1040px), styles in `mng-digisubs.styles.css` and the theme CSS. **Team:** digisubs.
 
-**Design:** the account menu uses the effect style **shadow/lg**, `0 8px 16px 0 rgba(0,0,0,.2)`, like every floating element (Karl, 2026-10-23). Applied in WordPress Elements ▸ Menus and Parts ▸ AccountMenu (`910:16425`) and its documentation frames (56 layers; Figma used 8px 6px 16px 0 · 25% before).
+**Design:** WordPress Elements ▸ Menus and Parts ▸ **AccountMenu** (`910:16425`), 7 variants since 2026-11-16 (Karl), documented in the white container `910:15618`. Its avatar parts are in the main library (UserStatus, UserPic; entry 10.9). The closed avatar and chevron now sit with no gap, as production; the open panel's avatar sits 17px from the top and the name 8px below the avatar row, as production.
+
+### 11.1 Dropdown shadow isn't the design token
+
+**Production:** `.dropdown-menu { box-shadow: 0 8px 16px -4px rgba(0,0,0,.2) }`.
+
+**Design:** the effect style **shadow/lg**, `0 8px 16px 0 rgba(0,0,0,.2)`, like every floating element (Karl, 2026-10-23).
 
 **Fix:** change the spread from −4px to 0: `box-shadow: 0 8px 16px 0 rgba(0,0,0,.2)`. The digisubs `.dropdown-content`, `.digisubs-modal-skin` and the e-edition menu already use exactly this value; `.paywall-container` (`0 9px 16px 0 rgba(0,0,0,.25)`) should move to it too.
+
+**Status:** Open. Added 2026-10-23.
+
+### 11.2 Keyboard and screen readers — Esc doesn't close the menu, focus isn't managed
+
+**Production (logged in, all 6 sites):** the trigger is `<a id="anchorProfileDropDown" tabindex="0" aria-label="Account menu dropdown" aria-expanded>` with no `aria-haspopup`. Esc does nothing. Tab moves through the links and then out to the search icon and the rest of the masthead while the menu stays open. Clicking outside closes it, but focus goes to `body`, not back to the avatar. The focus indicator is the browser's default ring (Chrome's blue), no designed style.
+
+**Design:** a button named "Account menu" with `aria-haspopup="true"` and `aria-expanded`. Enter or Space opens the menu and moves focus to the first link; Tab and Shift+Tab move through the links; Esc, tabbing past the last link or a click outside closes it, and focus returns to the trigger. Focus: a 2px `color/gray/black` ring 2px outside the trigger (entry 10.9) and a 2px `color/gray/black` line inside each row.
+
+**Action needed:** add the Esc and focus-out handling, return focus to the trigger on close, add `aria-haspopup`, and style `:focus-visible` (WCAG 2.1.1, 2.4.3, 2.4.7).
+
+**Status:** Open, accessibility. Added 2026-11-16.
+
+### 11.3 Log Out and the marketing link can't be reached with the keyboard
+
+**Production:** Log Out (`a.dropdown-item` > `.digisubs-logout-content`) and the marketing slot's wrapper (`a.dropdown-item` > `.digisubs-marketing-content`) are `<a>` elements with no `href`, so they aren't focusable and aren't announced as links. Log Out only works with a mouse.
+
+**Design:** every row is a real link or button; Log Out is reachable with Tab and works with Enter.
+
+**Action needed:** give Log Out an `href` (or make it a `<button>`), and do the same for the marketing link when the slot is used (WCAG 2.1.1).
+
+**Status:** Open, accessibility. Added 2026-11-16.
+
+### 11.4 A click outside goes through the scrim to the page
+
+**Production:** the 40% black scrim (`#account-content-container::before`, `rgba(0,0,0,.4)`) sits on a container with `pointer-events: none`, so a click outside the menu closes it **and** activates whatever is under it (a test click opened an article).
+
+**Design:** the scrim takes the click; a click outside only closes the menu.
+
+**Action needed:** let the scrim receive pointer events and close the menu on click, without passing the click through.
+
+**Status:** Open. Added 2026-11-16.
+
+### 11.5 At 340px and below the menu should span the full width
+
+**Production:** `@media (max-width: 340px) { #account-content { width: 100%; min-width: 300px; min-height: 100% } }` has no effect: 100% of the 46px avatar link is less than 300px, so the menu stays 300px wide, 6px from the right edge, at 340px.
+
+**Design:** at 340px and below the open menu spans the full width of the screen (Karl, 2026-11-16); above that it is 300px.
+
+**Action needed:** size the menu to the viewport at 340px and below (e.g. `position: fixed; left: 0; right: 0; width: auto`).
+
+**Status:** Open. Added 2026-11-16.
+
+### 11.6 The menu's position moves with the width
+
+**Production:** `.dropdown-menu` uses `right: -120%` (1024px and below), `-93%` (820px and below), `-90%` (770px and below) and `-70%` (450px and below), so the menu's right edge sits 25px past the chevron at 1040px and up, 55px at 1024, 42px at 768 and 32px at 360 and 340px. The top is always 17px above the avatar (matches).
+
+**Design:** the right edge 24px (`spacing/300`) past the chevron at every width from 341px up; full width at 340px and below (11.5).
+
+**Action needed:** replace the percentage offsets with one fixed offset.
+
+**Status:** Open, low priority. Added 2026-11-16.
+
+### 11.7 No newsletter sign-up in the logged-in menu
+
+**Production:** the logged-in menu ends with Log Out (and the hidden marketing slot). The newsletter prompt and Sign Up button appear only in the logged-out panel.
+
+**Design:** the newsletter block (prompt Bold 14 centered, Button Primary "Sign Up") closes every open menu, logged in or out.
+
+**Action needed:** add the newsletter block to `#account-content` after the marketing slot.
+
+**Status:** Open. Added 2026-11-16.
+
+### 11.8 Subscribe Now (non-subscribers) — size and overflow
+
+**Production (Orlando Sentinel, a "Limited Access" account):** `.digisubs-subscribe-now-button` is 254 × 43px, Noto Sans Bold 14, 12px top and bottom padding, 4px corners, inset 8px inside a 270px wrapper (`.digisubs-user-information-subscribe-button`) that overflows the 268px column by 2px.
+
+**Design:** Button Primary (Noto Sans Bold 16, 40px tall, 4px corners), the full width of the column, 8px (`spacing/100`) below the email.
+
+**Action needed:** style the link as Button Primary at full column width and remove the 270px wrapper width.
+
+**Status:** Open. Added 2026-11-16.
+
+### 11.9 Logged-out panel (below 1040px) — buttons, spacing and keyboard
+
+**Production (all 6 sites, 1024px):** the panel slides in from the right under the masthead, 300px wide, with a 50% scrim. Subscribe and Log In are 230 × 41px, Noto Sans SemiBold 14.06px, 5px corners, 24px above and between them, 35px from the sides (Cañon City: full-width text rows on `#FAFAFA` instead of buttons). The newsletter block has 15px margin plus 15px padding above and below; Sign Up is 230 × 40px. The panel's top line and the line above the newsletter are the theme's near-black (`#0A0908`, `#1F1E1C`, `#141414`). Focus stays inside the panel (good), but Esc doesn't close it and focus goes to `body` on close.
+
+**Design:** Button Primary for Subscribe and Log In, 24px (`spacing/300`) above and between, 36px (`spacing/450`) from the sides; newsletter 32px (`spacing/400`) above and below, Sign Up 36px from the sides; lines `color/gray/min`. Esc closes the panel and focus returns to the user icon.
+
+**Action needed:** style the two links as Button Primary (as in 10.10), round the spacing to the values above, use the buttons on Cañon City (NEPA-PMP) too, and add Esc and focus return.
+
+**Status:** Open. Added 2026-11-16.
+
+### 11.10 Saved Articles is missing on 3 of the 6 review sites
+
+**Production:** the Saved Articles row shows on OC Register, Denver Post and Cañon City, and is missing on Chicago Tribune, Orlando Sentinel and The Morning Call.
+
+**Design:** Saved Articles always shows, between Gifted Articles and Contact us (Karl, 2026-11-16: every site will have it).
+
+**Action needed:** none until saved articles launch on those sites; then show the row.
+
+**Status:** Open, waiting on the feature. Added 2026-11-16.
+
+**Not checked:** the payment alert (Status = alert; no test account had a payment issue), group and anonymous group accounts, and the logged-out panel at widths other than 1024px (its CSS is the same 300px panel at every width below 1040px).
 
 ---
 
