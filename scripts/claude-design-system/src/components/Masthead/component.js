@@ -252,11 +252,18 @@ function Masthead(props) {
      scrolling: 56px for 55, as production (still the full masthead at 55px). */
   var sentinelStyle = props.scrollThreshold == null && whole ? { bottom: 0 } : { top: Math.max(0, threshold - 1) + 'px' };
   return h(React.Fragment, null,
-    h('header', Object.assign(rest(props, MASTHEAD_PROPS), { ref: dv[1], className: cls }),
-      sticky ? h('span', { ref: sentinel, className: 'mngds-masthead__sentinel', style: sentinelStyle, 'aria-hidden': 'true' }) : null,
-      top,
-      leaderboard ? h(MastheadAd, { device: device, renderAd: props.renderAd }) : null),
+    /* The condensed bar's zero-height sticky wrapper comes BEFORE the header, so it is pinned to the top of the scroll
+       area from the first pixel and appears there at the threshold (production: the header turns position: fixed,
+       top: 0). After the header, it only reached the top once the whole masthead had scrolled away and showed under
+       the full masthead until then. */
     sticky ? h('div', { className: cx('mngds-masthead__sticky', stuck[0] && 'is-stuck'), 'aria-hidden': stuck[0] ? undefined : 'true' },
       h('div', { className: cx('mngds-masthead', 'mngds-masthead--' + slug(device), 'mngds-masthead--page-' + slug(page), adFree && 'mngds-masthead--ad-free', 'mngds-masthead--scrolled') },
-        mastheadCondensed(page, device, common, extra))) : null);
+        mastheadCondensed(page, device, common, extra))) : null,
+    /* Once the condensed bar shows, the full masthead is hidden but keeps its space (production swaps the header for an
+       empty .header-placeholder of the same height), so only one masthead shows and the page doesn't jump. The Top
+       Leaderboard isn't part of production's header, so it stays and scrolls away. */
+    h('header', Object.assign(rest(props, MASTHEAD_PROPS), { ref: dv[1], className: cx(cls, sticky && stuck[0] && 'is-placeheld') }),
+      sticky ? h('span', { ref: sentinel, className: 'mngds-masthead__sentinel', style: sentinelStyle, 'aria-hidden': 'true' }) : null,
+      top,
+      leaderboard ? h(MastheadAd, { device: device, renderAd: props.renderAd }) : null));
 }

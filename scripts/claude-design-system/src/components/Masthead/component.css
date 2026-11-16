@@ -71,10 +71,11 @@
 /* The sticky wrapper takes no height, so the condensed content (64px, or more on Obituaries) overlays the page. */
 .mngds-masthead__sticky {
   position: sticky; top: 0; z-index: 100; height: 0; overflow: visible; visibility: hidden; opacity: 0; pointer-events: none;
-  transition: opacity 0.15s ease;
 }
 .mngds-masthead__sticky.is-stuck { visibility: visible; opacity: 1; pointer-events: auto; }
-@media (prefers-reduced-motion: reduce) { .mngds-masthead__sticky { transition: none; } }
+/* While the condensed bar shows, the full masthead keeps its space but isn't drawn (production's .header-placeholder);
+   the Top Leaderboard stays. The switch is instant, as production's, so the two never show together. */
+.mngds-masthead.is-placeheld > :not(.mngds-masthead__ad):not(.mngds-masthead__sentinel) { visibility: hidden; }
 
 /* ---- Section Front and Article, 1040px and up: logo in the menus row, the section name in the weather row ---- */
 .mngds-masthead__menus-middle { display: flex; align-items: center; justify-content: center; }
