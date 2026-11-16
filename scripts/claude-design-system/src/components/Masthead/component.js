@@ -243,10 +243,11 @@ function Masthead(props) {
     top = h(React.Fragment, null, h(MastheadBar, common), h('div', { className: 'mngds-masthead__rule' }));
   }
 
-  /* Where the condensed bar takes over: 450px at 1040px and up on Home, Section Front and Article (production headroom offset),
-     1px below; Obituaries and Dashboard once the whole masthead has scrolled away. */
+  /* Where the condensed bar takes over on Home, Section Front and Article: 55px at 1040px and up (XL-Desktop; production's
+     headroom offset, checked 2026-11-16 on denverpost.com and mcall.com), 1px below; Obituaries and Dashboard once the whole
+     masthead has scrolled away. */
   var whole = page === 'Obituaries' || dashboard;
-  var threshold = props.scrollThreshold != null ? props.scrollThreshold : (xl ? 450 : 1);
+  var threshold = props.scrollThreshold != null ? props.scrollThreshold : (xl ? 55 : 1);
   var sentinelStyle = props.scrollThreshold == null && whole ? { bottom: 0 } : { top: threshold + 'px' };
   return h(React.Fragment, null,
     h('header', Object.assign(rest(props, MASTHEAD_PROPS), { ref: dv[1], className: cls }),

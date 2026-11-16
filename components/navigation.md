@@ -1,6 +1,6 @@
 # Navigation
 
-> **Updated 2026-11-12** for the top nav item count on all 97 sites (§10). **2026-11-09** for the Weather Bug's second e-Edition link and market labels (§3.11), and the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
+> **Updated 2026-11-16** for when the header switches to its scrolled state (§2.2: 56px of scrolling, headroom offset 55px). **2026-11-12** for the top nav item count on all 97 sites (§10). **2026-11-09** for the Weather Bug's second e-Edition link and market labels (§3.11), and the five-width check of the section menu drawer and Karl's changes (§3.8, §3.9). **Earlier, 2026-11-06,** for the six-site section menu audit and Karl's decisions (§3).
 >
 > **Updated 2026-09-25 — read this first.**
 > - **Where the header lives now.** The production-accurate header is the **Masthead** component set (`456:2572`, 75 variants: Device × State × Page) on the "Menus and Parts" page of **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`, formerly "Website Page Templates"). Its breakpoint audit is `breakpoint-audit.md` (this folder), and its production gaps are design-vs-production entries 7, 9, 28.2 and 33. The account dropdown's source is **AccountMenu** (`910:16425`) in the same file. The pilot Header, Account Trigger, Off-Canvas Section Panel and Account Dropdown Menu components mentioned in §3.2 and §9 were retired on 2026-09-25; the measurements in those sections are still valid.
@@ -58,6 +58,8 @@ Real visual change on scroll is background/elevation only:
 | `position` | relative | fixed, `top: 0` |
 | `background` | transparent | `#FBFBFB` / `rgb(251,251,251)` |
 | `box-shadow` | none | `0 3px 3px rgba(0,0,0,0.25)` |
+
+**When it switches** (checked 2026-11-16 by Karl's team in a 1728px window on denverpost.com and mcall.com): `header.site-header` gets `headroom--not-top` and becomes `position: fixed`, 65px tall (64px row + 1px rule), at **56px** of scrolling; at 55px it's still the full masthead. So production's headroom offset is 55px, not the ~450px recorded earlier (that was how far the 2026-09-15 check scrolled). The condensed bar stays shown scrolling down (`headroom--unpinned`) and back up (`headroom--pinned`). Its content and height match the Masthead's Scrolled / AdFree-Scrolled variants. The Claude design system's `Masthead` uses 55px at 1040px and up; 1040–1279px wasn't measured separately.
 
 ### 2.3 Logged-out vs. logged-in
 

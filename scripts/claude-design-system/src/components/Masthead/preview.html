@@ -38,7 +38,7 @@
     var el = React.useState(null);
     return h('div', { ref: el[1], style: { height: 420, overflow: 'auto', background: 'var(--mng-color-gray-max)', boxShadow: 'inset 0 0 0 1px var(--mng-color-gray-500)' } },
       el[0] ? h(React.Fragment, null,
-        h(M, { key: p.page, page: p.page, scrollRoot: el[0], scrollThreshold: p.page === 'Obituaries' || p.page === 'Dashboard' ? undefined : 200, user: { name: 'Gina Moreno' } }),
+        h(M, { key: p.page, page: p.page, scrollRoot: el[0], user: { name: 'Gina Moreno' } }),
         Array.from({ length: 30 }).map(function (_, i) {
           return h('p', { key: i, style: { margin: '0 24px 16px', fontFamily: 'var(--mng-font-family-noto-sans)', fontSize: 16, lineHeight: '24px', color: 'var(--mng-color-gray-200)' } },
             'Page content line ' + (i + 1) + '. Scroll this box: the condensed masthead appears and sticks to the top.');
@@ -53,7 +53,7 @@
       h('ul', { className: 'pv-pages', 'aria-label': 'Page' }, pages.map(function (x) {
         return h('li', { key: x[0] }, h('button', { type: 'button', 'aria-pressed': x[0] === page ? 'true' : 'false', onClick: function () { pg[1](x[0]); } }, 'Page=' + x[0]));
       })),
-      h(I.SpecimenSection, { title: 'Live: Page=' + page + ', scroll behavior', note: info[1] + ' The masthead takes its device from its width. Scroll the box: on Home, Section Front and Article the condensed state takes over after 450px at 1040px and up in production (200px here so the demo is short; 1px below 1040px); on Obituaries and Dashboard once the whole masthead has scrolled away.' },
+      h(I.SpecimenSection, { title: 'Live: Page=' + page + ', scroll behavior', note: info[1] + ' The masthead takes its device from its width. Scroll the box: on Home, Section Front and Article the condensed state takes over after 55px of scrolling at 1040px and up and 1px below, as in production; on Obituaries and Dashboard once the whole masthead has scrolled away.' },
         h(I.Specimen, { items: [{ label: 'At the card width', width: '100%', node: h(Demo, { page: page }) }] })),
       states.map(function (s) { return sec(page, s); }));
   }

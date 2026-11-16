@@ -25,7 +25,7 @@ h(Masthead, { state: 'Scrolled', device: 'XL-Desktop' })                        
 | `device` | `'XL-Desktop'`, `'LG-TabletH'`, `'MD-TabletV'`, `'SM-Mobile'`, `'XS-Fold'` | from the width |
 | `state` | `'Default'`, `'AdFree'`, `'Scrolled'`, `'AdFree-Scrolled'` (documentation: renders that variant only, no sticking) | unset |
 | `sticky` | the condensed bar appears on scroll | `true` |
-| `scrollThreshold` | px of scroll before the condensed masthead appears | Home, Section Front, Article: `450` at 1040px and up, `1` below. Obituaries, Dashboard: when the whole masthead has scrolled away |
+| `scrollThreshold` | px of scroll before the condensed masthead appears | Home, Section Front, Article: `55` at 1040px and up (production's headroom offset), `1` below. Obituaries, Dashboard: when the whole masthead has scrolled away |
 | `scrollRoot` | scroll container element, when it isn't the page | viewport |
 | `ads`, `renderAd(name)` | show or replace the Sponsorship 1 / Top Leaderboard placeholders | `true` |
 | `navItems`, `trending` | strings or `{ label, href, onClick }` | the Figma sample (Section Front has its own nav sample) |

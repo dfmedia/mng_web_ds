@@ -18,7 +18,7 @@ export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   sticky?: boolean;
   /** Scroll container when it isn't the page (IntersectionObserver root). */
   scrollRoot?: Element | null;
-  /** Pixels of scrolling before the condensed masthead appears. Default 450 at 1040px and up, 1 below (production), on Home, Section Front and Article; on Obituaries and Dashboard, once the whole masthead has scrolled away. */
+  /** Pixels of scrolling before the condensed masthead appears. Default on Home, Section Front and Article: 55 at 1040px and up (XL-Desktop; production's headroom offset, checked 2026-11-16 on denverpost.com and mcall.com), 1 below. Obituaries and Dashboard: once the whole masthead has scrolled away. */
   scrollThreshold?: number;
   navItems?: Array<string | MastheadLink>;
   navLabel?: string;
