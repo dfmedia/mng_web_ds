@@ -1,12 +1,12 @@
-/* Homepage Tabs (WordPress Elements, Menus and Parts, 3629:44974).
+/* Tab Nav (WordPress Elements, Menus and Parts, 3629:44974).
    Full-width color/gray/max bar with a 1px color/gray/300 bottom rule; Nav (1200 max, centered, 24px sides at Desktop,
-   none at Mobile) holding a ul[role=tablist] of HomepageTab (24px apart, sideways scroll with the scrollbar hidden).
+   none at Mobile) holding a ul[role=tablist] of TabNavItem (24px apart, sideways scroll with the scrollbar hidden).
    Controlled with `selectedIndex` + `onChange`, or uncontrolled from `defaultSelectedIndex`.
    Keyboard (WAI-ARIA Tabs pattern, manual activation; Karl, 2026-11-04): only the selected tab is in the Tab order
    (tabindex 0, the others -1); Left / Right arrows move focus to the previous / next tab (wrapping), Home / End to the
    first / last; Enter or Space selects the focused tab (it's a button). Activation is manual because choosing For You can
    open the Welcome modal, which shouldn't happen just from arrowing past it. */
-function HomepageTabs(props) {
+function TabNav(props) {
   var bp = props.breakpoint || 'Desktop';
   var tabs = props.tabs || [{ label: "Editor's Picks" }, { label: 'For You' }];
   var inner = React.useState(props.defaultSelectedIndex || 0);
@@ -26,17 +26,17 @@ function HomepageTabs(props) {
     btns[to].focus();
   }
   return h('div', Object.assign(rest(props, ['breakpoint', 'tabs', 'selectedIndex', 'defaultSelectedIndex', 'onChange', 'aria-label', 'className']), {
-      className: cx('mngds-homepage-tabs', 'mngds-homepage-tabs--' + slug(bp), props.className)
+      className: cx('mngds-tab-nav', 'mngds-tab-nav--' + slug(bp), props.className)
     }),
-    h('div', { className: 'mngds-homepage-tabs__nav' },
-      h('ul', { className: 'mngds-homepage-tabs__tab-list', role: 'tablist', 'aria-label': props['aria-label'] || undefined, onKeyDown: onKey },
+    h('div', { className: 'mngds-tab-nav__nav' },
+      h('ul', { className: 'mngds-tab-nav__tab-list', role: 'tablist', 'aria-label': props['aria-label'] || undefined, onKeyDown: onKey },
         tabs.map(function (t, i) {
           var on = i === selected;
-          return h('li', { key: t.id || i, role: 'presentation', className: 'mngds-homepage-tabs__item' },
-            h(HomepageTab, {
+          return h('li', { key: t.id || i, role: 'presentation', className: 'mngds-tab-nav__item' },
+            h(TabNavItem, {
               id: t.id, label: t.label, controls: t.panelId, selected: on, tabIndex: on ? 0 : -1,
               onClick: function (e) { pick(i, e); }
             }));
         }))),
-    h('span', { className: 'mngds-homepage-tabs__bottom-border', 'aria-hidden': 'true' }));
+    h('span', { className: 'mngds-tab-nav__bottom-border', 'aria-hidden': 'true' }));
 }

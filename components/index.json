@@ -1106,38 +1106,6 @@
       "exported": "2026-11-13"
     },
     {
-      "slug": "homepage-tab",
-      "name": "Homepage Tab",
-      "group": "navigation",
-      "layer": "wordpress",
-      "path": "components/wordpress/homepage-tab/",
-      "figma": {
-        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
-        "node": "3629:44949",
-        "set": "Homepage Tab"
-      },
-      "variants": 4,
-      "instances": 6,
-      "knownIssues": 0,
-      "exported": "2026-10-28"
-    },
-    {
-      "slug": "homepage-tabs",
-      "name": "Homepage Tabs",
-      "group": "navigation",
-      "layer": "wordpress",
-      "path": "components/wordpress/homepage-tabs/",
-      "figma": {
-        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
-        "node": "3629:44974",
-        "set": "Homepage Tabs"
-      },
-      "variants": 2,
-      "instances": 0,
-      "knownIssues": 0,
-      "exported": "2026-11-13"
-    },
-    {
       "slug": "masthead",
       "name": "Masthead",
       "group": "navigation",
@@ -1232,6 +1200,38 @@
       "instances": 1064,
       "knownIssues": 3,
       "exported": "2026-11-09"
+    },
+    {
+      "slug": "tab-nav",
+      "name": "Tab Nav",
+      "group": "navigation",
+      "layer": "wordpress",
+      "path": "components/wordpress/tab-nav/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3629:44974",
+        "set": "Tab Nav"
+      },
+      "variants": 2,
+      "instances": 0,
+      "knownIssues": 0,
+      "exported": "2026-11-16"
+    },
+    {
+      "slug": "tab-nav-item",
+      "name": "Tab Nav Item",
+      "group": "navigation",
+      "layer": "wordpress",
+      "path": "components/wordpress/tab-nav-item/",
+      "figma": {
+        "fileKey": "b1iZxkFwtAYq9rElmnCAzd",
+        "node": "3629:44949",
+        "set": "Tab Nav Item"
+      },
+      "variants": 4,
+      "instances": 6,
+      "knownIssues": 0,
+      "exported": "2026-11-16"
     },
     {
       "slug": "weather-bug",

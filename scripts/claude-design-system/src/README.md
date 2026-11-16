@@ -36,7 +36,7 @@ The MNG Web Design System is MediaNews Group's design system for its news websit
 The system has two parts, matching the two Figma libraries:
 
 - **Core** (the main MNG Web Design System file) holds the building blocks used everywhere, on WordPress sites, the Reader Dashboard and anything new: buttons, links, icons, tooltips, modals and in-line messages.
-- **WordPress Elements** holds the parts of our WordPress news sites, built from Core: homepage tabs and section titles, article cards and their pieces (kicker, author, timestamp), slideshows and the gallery badge.
+- **WordPress Elements** holds the parts of our WordPress news sites, built from Core: tab nav and section titles, article cards and their pieces (kicker, author, timestamp), slideshows and the gallery badge.
 
 ### Core
 

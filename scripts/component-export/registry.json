@@ -501,11 +501,11 @@
       "production": "Production `article.slideshow.feature-large > .article-slideshow` (mng-gallery slider), seen on develop.denverpost.com."
     },
     {
-      "slug": "homepage-tab",
-      "name": "Homepage Tab",
+      "slug": "tab-nav-item",
+      "name": "Tab Nav Item",
       "order": 1,
       "node": "3629:44949",
-      "description": "One homepage tab (For You feature: Editor's Picks / For You). State = Default, Hover, Active, Focus; Label text property.",
+      "description": "One tab in the Tab Nav bar (For You feature: Editor's Picks / For You). Named Homepage Tab until 2026-11-16. State = Default, Hover, Active, Focus; Label text property.",
       "rules": [
         "**Text:** Noto Sans SemiBold 12 (`font/size/12`, `font/style/semibold`), line height auto, letter spacing 0, uppercase.",
         "**Colors:** Default `color/gray/200`; Hover `color/gray/min`; Active `color/gray/black` with a 2px `color/theme/primary` underline; Focus a 2px `color/gray/black` ring set 3px inside the tab.",
@@ -521,11 +521,11 @@
       "production": "Production World Cup tabs (`ul.sr-nav-tabs > button.tab-btn`, staging.dailylocal.com/world-cup/); differences are design-vs-production entry 12."
     },
     {
-      "slug": "homepage-tabs",
-      "name": "Homepage Tabs",
+      "slug": "tab-nav",
+      "name": "Tab Nav",
       "order": 2,
       "node": "3629:44974",
-      "description": "The homepage tab bar built from Homepage Tab. Breakpoint = Desktop, Mobile.",
+      "description": "The tab nav bar built from Tab Nav Item. Breakpoint = Desktop, Mobile. Named Homepage Tabs until 2026-11-16.",
       "rules": [
         "**Bar:** full width, `color/gray/max`, with a 1px `color/gray/300` rule along the bottom; the active underline sits over it.",
         "**Nav:** max width 1280px, centered, 8px (`spacing/100`) side padding at every width, so the first tab lines up with the page content's left edge (Karl, 2026-11-03; was 1200px with 24px (`spacing/300`) sides at 640px and up and no side padding below).",

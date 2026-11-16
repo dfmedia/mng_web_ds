@@ -1,26 +1,26 @@
 ---
-name: Homepage Tabs
-slug: homepage-tabs
+name: Tab Nav
+slug: tab-nav
 layer: wordpress
 figma_file: b1iZxkFwtAYq9rElmnCAzd
-figma_set: "Homepage Tabs"
+figma_set: "Tab Nav"
 figma_node: "3629:44974"
 component_key: f6f0992bc1126f8cfc17158b13600b3a8318213e
 variants: 2
-tokens: homepage-tabs.tokens.json
-skeleton: homepage-tabs.html
-exported: 2026-11-13
+tokens: tab-nav.tokens.json
+skeleton: tab-nav.html
+exported: 2026-11-16
 ---
 
-# Homepage Tabs
+# Tab Nav
 
-> The homepage tab bar built from Homepage Tab. Breakpoint = Desktop, Mobile.
+> The tab nav bar built from Tab Nav Item. Breakpoint = Desktop, Mobile. Named Homepage Tabs until 2026-11-16.
 
 ## Figma
 
 - File: **WordPress Elements** (`b1iZxkFwtAYq9rElmnCAzd`), page **Menus and Parts**
-- Component set: [`Homepage Tabs` · 3629:44974](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44974) · key `f6f0992bc1126f8cfc17158b13600b3a8318213e`
-- Documentation frame: [Homepage Tabs Container](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44928) · overview: [previews/homepage-tabs--documentation.png](previews/homepage-tabs--documentation.png)
+- Component set: [`Tab Nav` · 3629:44974](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44974) · key `f6f0992bc1126f8cfc17158b13600b3a8318213e`
+- Documentation frame: [Tab Nav Container](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44928) · overview: [previews/tab-nav--documentation.png](previews/tab-nav--documentation.png)
 
 ## Properties
 
@@ -32,8 +32,8 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Desktop` | 1280×42 | [3629:44950](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44950) | 0 | ![](previews/homepage-tabs--desktop.png) |
-| `Mobile` | 360×42 | [3629:44962](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44962) | 0 | ![](previews/homepage-tabs--mobile.png) |
+| `Desktop` | 1280×42 | [3629:44950](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44950) | 0 | ![](previews/tab-nav--desktop.png) |
+| `Mobile` | 360×42 | [3629:44962](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44962) | 0 | ![](previews/tab-nav--mobile.png) |
 
 ## Anatomy
 
@@ -43,26 +43,26 @@ Default variant `Desktop` (hidden layers marked):
   - **Bottom Border** `RECTANGLE`: 1280×1, fixed×fixed, absolute
   - **Nav** `FRAME`: 1280×42, horizontal, gap 0, padding 0/8/0/8, fixed×hug
     - **Tab List** `FRAME`: 232×42, horizontal, gap 24, padding 0/0/0/0, hug×hug
-      - **Tab** `INSTANCE`: 123×42, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of Homepage Tab (State=Active)
-      - **Tab** `INSTANCE`: 85×42, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of Homepage Tab (State=Default)
+      - **Tab** `INSTANCE`: 123×42, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of Tab Nav Item (State=Active)
+      - **Tab** `INSTANCE`: 85×42, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of Tab Nav Item (State=Default)
 
 ## Component tokens
 
-From `homepage-tabs.tokens.json`. References point at system tokens (`tokens/core/`, `tokens/themes/`); the CSS variable is `--mng-` + the token path. A literal value means the Figma layer isn't bound to a token.
+From `tab-nav.tokens.json`. References point at system tokens (`tokens/core/`, `tokens/themes/`); the CSS variable is `--mng-` + the token path. A literal value means the Figma layer isn't bound to a token.
 
 | Token | Value |
 |---|---|
-| `homepage-tabs.base.bottom-border.background` | `{color.gray.300}` |
-| `homepage-tabs.base.nav.padding-left` | `{spacing.100}` |
-| `homepage-tabs.base.nav.padding-right` | `{spacing.100}` |
-| `homepage-tabs.base.nav.tab-list.gap` | `{spacing.300}` |
-| `homepage-tabs.base.nav.tab-list.tab.height` | 42px |
-| `homepage-tabs.base.nav.tab-list.tab.icon-color` | `{color.gray.200}` |
-| `homepage-tabs.base.nav.tab-list.tab.width` | 85px |
-| `homepage-tabs.base.root.background` | `{color.gray.max}` |
-| `homepage-tabs.breakpoint-desktop.nav.width` | 1280px |
-| `homepage-tabs.breakpoint-desktop.root.width` | 1280px |
-| `homepage-tabs.breakpoint-mobile.root.width` | 360px |
+| `tab-nav.base.bottom-border.background` | `{color.gray.300}` |
+| `tab-nav.base.nav.padding-left` | `{spacing.100}` |
+| `tab-nav.base.nav.padding-right` | `{spacing.100}` |
+| `tab-nav.base.nav.tab-list.gap` | `{spacing.300}` |
+| `tab-nav.base.nav.tab-list.tab.height` | 42px |
+| `tab-nav.base.nav.tab-list.tab.icon-color` | `{color.gray.200}` |
+| `tab-nav.base.nav.tab-list.tab.width` | 85px |
+| `tab-nav.base.root.background` | `{color.gray.max}` |
+| `tab-nav.breakpoint-desktop.nav.width` | 1280px |
+| `tab-nav.breakpoint-desktop.root.width` | 1280px |
+| `tab-nav.breakpoint-mobile.root.width` | 360px |
 
 ## Behavior and breakpoints
 
@@ -88,7 +88,7 @@ From `homepage-tabs.tokens.json`. References point at system tokens (`tokens/cor
 Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **0**.
 
 
-**Built from:** Homepage Tab ×4
+**Built from:** Tab Nav Item ×4
 
 ## Production
 
@@ -100,8 +100,8 @@ None open.
 
 ## Files
 
-- `homepage-tabs.tokens.json`: component tokens (DTCG 2025.10).
-- `homepage-tabs.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
+- `tab-nav.tokens.json`: component tokens (DTCG 2025.10).
+- `tab-nav.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-16 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

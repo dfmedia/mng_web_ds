@@ -23,7 +23,7 @@
   - [9. Masthead — nav overflow, article scrolled-state headline and nav bottom border](#9-masthead--nav-overflow-article-scrolled-state-headline-and-nav-bottom-border)
   - [10. Navigation menus — section menu drawer, avatar, hidden duplicate links and device-class timing](#10-navigation-menus--section-menu-drawer-avatar-hidden-duplicate-links-and-device-class-timing)
   - [11. Account menu — shadow, keyboard, width, position and missing parts](#11-account-menu--shadow-keyboard-width-position-and-missing-parts)
-  - [12. Homepage tabs (World Cup tabs) — font, colors, spacing and breakpoint off the design system](#12-homepage-tabs-world-cup-tabs--font-colors-spacing-and-breakpoint-off-the-design-system)
+  - [12. Tab Nav (World Cup tabs) — font, colors, spacing and breakpoint off the design system](#12-tab-nav-world-cup-tabs--font-colors-spacing-and-breakpoint-off-the-design-system)
   - [13. Breaking News bar — red overrides on 8 sites (ADA issues), sizes and date](#13-breaking-news-bar--red-overrides-on-8-sites-ada-issues-sizes-and-date)
   - [36. Footer — legal links fail WCAG AA contrast in the design (URGENT)](#36-footer--legal-links-fail-wcag-aa-contrast-in-the-design-urgent)
 - **Homepage blocks**
@@ -1645,11 +1645,11 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 ---
 
-## 12. Homepage tabs (World Cup tabs) — font, colors, spacing and breakpoint off the design system
+## 12. Tab Nav (World Cup tabs) — font, colors, spacing and breakpoint off the design system
 
 **Found:** 2026-10-23, on staging.dailylocal.com/world-cup/ (`ul.sr-nav-tabs` > `button.tab-btn`), while building the For You tab bar. **Team:** CMS.
 
-**Design:** WordPress Elements ▸ Menus and Parts ▸ **Homepage Tabs** (set `3629:44974`, Breakpoint = Desktop / Mobile) built from **Homepage Tab** (set `3629:44949`, State = Default / Hover / Active / Focus). The layout is production's. Every value is an existing MNG token: where production uses a value with no token, it's rounded to the nearest one, and production should change to match (Karl, 2026-10-23).
+**Design:** WordPress Elements ▸ Menus and Parts ▸ **Tab Nav** (set `3629:44974`, Breakpoint = Desktop / Mobile) built from **Tab Nav Item** (set `3629:44949`, State = Default / Hover / Active / Focus). The layout is production's. Every value is an existing MNG token: where production uses a value with no token, it's rounded to the nearest one, and production should change to match (Karl, 2026-10-23).
 
 | Property | Production | Design |
 |---|---|---|

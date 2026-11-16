@@ -1,7 +1,7 @@
 # For You tab: interaction and accessibility (developer notes)
 
 > **Updated 2026-11-04** (Karl). This is how the For You tab is meant to behave for keyboard, screen reader, pointer and reduced-motion users. Engineering should build to it.
-> - **Scope:** the For You panel, plus getting there from the homepage tab bar. The rest of Editor's Picks is out of scope.
+> - **Scope:** the For You panel, plus getting there from the Tab Nav bar. The rest of Editor's Picks is out of scope.
 > - **Reference build:** the Hi-fi v4 canvas (https://claude.ai/artifact/8C2rMAtGVyfqhtByzStWrr) on the MNG Web Design System in Claude (https://claude.ai/artifact/RKJ37zyXP7Wcvm1SDU7nzz).
 > - **Component specs:** `components/wordpress/<slug>/<slug>.md`. Code notes are in `scripts/claude-design-system/src/components/<Component>/`.
 
@@ -14,9 +14,9 @@ It also passed the keyboard walk-through in §9.
 
 ---
 
-## 1. Getting to For You: Homepage Tabs
+## 1. Getting to For You: Tab Nav
 
-Component: Homepage Tabs (`homepage-tabs`) with Homepage Tab (`homepage-tab`). It follows the WAI-ARIA Tabs pattern with **manual activation**.
+Component: Tab Nav (`tab-nav`) with Tab Nav Item (`tab-nav-item`). It follows the WAI-ARIA Tabs pattern with **manual activation**.
 
 **Markup:**
 ```html

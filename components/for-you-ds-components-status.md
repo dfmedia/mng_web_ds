@@ -86,7 +86,7 @@ Bold Coastal token values:
 
 | # | Element | Prototype class | Closest existing | Status / next step |
 |---|---|---|---|---|
-| 1 | Homepage tabs (Editor's Picks / For You) | `.tabs` | Production World Cup tabs | **Built 2026-10-23** in WordPress Elements ▸ Menus and Parts: Homepage Tab `3629:44949`, Homepage Tabs `3629:44974`. |
+| 1 | Tab Nav (Editor's Picks / For You) | `.tabs` | Production World Cup tabs | **Built 2026-10-23** in WordPress Elements ▸ Menus and Parts: Tab Nav Item `3629:44949`, Tab Nav `3629:44974`. |
 | 2 | Feed header "While You Were Away" | `.fyh .eb` | WP Section Title / Eyebrow, Style=Underline (`3333:42278`) | **Exists.** The "Based on what you read." subhead line is new. |
 | 3 | Info tooltip | `.tip` | none (the `info` icon U+E937 exists) | **Built 2026-10-23** in the MNG Web Design System, new page "Tooltips \| 2026.10.23": Tooltip set `7372:25744` (Type=Tooltip / Toggletip × Placement=Top / Bottom). |
 | 4 | Featured story | `.lead` | Zone 1 Lead Article Card (set `3336:46157`) | **Built 2026-10-23:** `Style=For You` × Mobile / Tablet / Desktop (`3628:44769` / `3628:44822` / `3628:44874`). |
@@ -199,7 +199,7 @@ References: production's article "type of work" popup (`#tiPopupContent` on ocre
 
 Production follow-up: logged 2026-10-27 as design-vs-production entry 35 (the article type-of-work popup should be the Toggletip; its `aria-controls` points at a missing id). Also open item 7 in the main status doc.
 
-### Homepage tabs (production, staging.dailylocal.com/world-cup/)
+### Tab Nav (production, staging.dailylocal.com/world-cup/)
 
 - **Markup:** `<ul class="sr-nav-tabs" role="tablist">` > `<li role="presentation">` > `<button class="tab-btn [active]" role="tab" aria-selected aria-controls>`.
 - **Nav:** max width 1200, padding 0 24px (0 at ≤500px). Tab list: flex, 32px gap, scrolls sideways with the scrollbar hidden. Bar height 40.
@@ -217,12 +217,12 @@ Production follow-up: logged 2026-10-27 as design-vs-production entry 35 (the ar
   - #FAFAFA / #808080 → MNG grays.
 - The prototype's current tabs: white bar, 1px #CCCAC7 bottom border, inner width 896, 24px padding (4px on mobile). They also differ from production in the tab itself: Noto Sans 600 14/20, 0.35px letter spacing, 12px 24px padding, gray/200 text, active teal text with a 3px teal underline, and the tabs spread with space-between. **To do: update the prototype to match the built component.**
 
-**Built (2026-10-23)** in WordPress Elements ▸ **Menus and Parts** (Karl's choice), in a new "Homepage Tabs Documentation" frame (`3629:44928`) after the Breaking News Banner:
+**Built (2026-10-23)** in WordPress Elements ▸ **Menus and Parts** (Karl's choice), in a new "Tab Nav Documentation" frame (`3629:44928`) after the Breaking News Banner:
 
 | Component | Node | Notes |
 |---|---|---|
-| Homepage Tab | set `3629:44949`: `State=Default` `3629:44932`, `Hover` `3629:44936`, `Active` `3629:44940`, `Focus` `3629:44944`; text property `Label#3629:8` | Label Container (spacing/150 top/bottom, spacing/200 sides) over a 2px Underline. Noto Sans SemiBold 12 (font/size/12, font/style/semibold), line height auto, no letter spacing, uppercase. Default gray/200; Hover gray/min; Active gray/black with a theme/primary underline; Focus: absolute 2px gray/black ring inset 3px. |
-| Homepage Tabs | set `3629:44974`: `Breakpoint=Desktop` `3629:44950` (1280), `Mobile` `3629:44962` (360) | gray/max bar, absolute 1px gray/300 Bottom Border behind the tabs (so the active underline covers it, like production's −1px margin). Nav 1200 wide with spacing/300 side padding (Desktop) or full width with no padding (Mobile, ≤639px). Tab List: spacing/300 gap; Editor's Picks (Active) and For You (Default). |
+| Tab Nav Item | set `3629:44949`: `State=Default` `3629:44932`, `Hover` `3629:44936`, `Active` `3629:44940`, `Focus` `3629:44944`; text property `Label#3629:8` | Label Container (spacing/150 top/bottom, spacing/200 sides) over a 2px Underline. Noto Sans SemiBold 12 (font/size/12, font/style/semibold), line height auto, no letter spacing, uppercase. Default gray/200; Hover gray/min; Active gray/black with a theme/primary underline; Focus: absolute 2px gray/black ring inset 3px. |
+| Tab Nav | set `3629:44974`: `Breakpoint=Desktop` `3629:44950` (1280), `Mobile` `3629:44962` (360) | gray/max bar, absolute 1px gray/300 Bottom Border behind the tabs (so the active underline covers it, like production's −1px margin). Nav 1200 wide with spacing/300 side padding (Desktop) or full width with no padding (Mobile, ≤639px). Tab List: spacing/300 gap; Editor's Picks (Active) and For You (Default). |
 
 Color mapping (nearest MNG gray, with readable contrast): #6B7280 → gray/200 (gray/300 is closer in value but too light for 12px text on white), #111827 → gray/min, #000 → gray/black, #C62828 → theme/primary, #FAFAFA → gray/max, #808080 → gray/300. Logged as design-vs-production entry 12 and as a row in the "Other fixes" tab of the color fixes sheet.
 
@@ -232,7 +232,7 @@ Color mapping (nearest MNG gray, with readable contrast): #6B7280 → gray/200 (
 
 ## Next steps
 
-Done 2026-10-23: imports working again; timestamp 13px (prototype `.tm` updated); the 3 atoms; the card, row and featured-story variants; Homepage Tab / Tabs; Tooltip; shadow tokens; masthead rule and shadows; CTA panel decision (reuse InLineMessage DashSubsNonSub).
+Done 2026-10-23: imports working again; timestamp 13px (prototype `.tm` updated); the 3 atoms; the card, row and featured-story variants; Tab Nav Item / Tab Nav; Tooltip; shadow tokens; masthead rule and shadows; CTA panel decision (reuse InLineMessage DashSubsNonSub).
 
 Still to do, in order (Karl, 2026-10-23: finish the For You components first, then clean up, then export):
 
@@ -271,7 +271,7 @@ Everything touched for the For You tab, by library. Check each item, then add th
 | 1Col Article Card, Style=For You | `3628:44640` | ✅ **Done 2026-10-23.** Variant description rewritten; "Specifications · Style=For You" section in the set's container (`3484:67695`): detached sample with green padding markers (16, 8, 12, 8), a magenta 16px card-gap demo, and spec text (unused properties and the space-between note documented). Grid: 3-up from 800px, 2-up at 640–799, 1-up below 640 (corrected from "2-up above 639"). Registry entry `1col-article-card`. Hover still parked. |
 | Horizontal Thumbnail Card, Style=For You | `3628:44666` / `44686` / `44706` | ✅ **Done 2026-10-23.** Variant descriptions rewritten (widths explained: 848 = 896 feed column minus 24px padding each side; the row only changes at 640px); "Specifications · Style=For You" section in the container (`3484:67724`) with Mobile and Tablet/Desktop detached samples (green markers) and a magenta 16px row-gap demo; Show Gallery Icon documented as Standard-only; registry entry `horizontal-thumbnail-card`. Variant order on the canvas is fine (Mobile, Tablet, Desktop). Hover still parked. **2026-10-26 (Karl):** Gallery Icon Badge added to all three For You rows and to the 1Col For You card (new Show Gallery Icon property on 1Col Article Card), 28px, 6px in from the image's bottom-right corner like Style=Standard; Standard Tablet's badge was not bound to Show Gallery Icon (fixed). Mobile row image is now 90×54 (Standard's 90px width at the larger rows' 5:3 ratio), pinned top-left with white space below. Specs updated in both containers. |
 | Zone 1 Lead Article Card, Style=For You | `3628:44769` / `44822` / `44874` | Excerpt gap 4 vs prototype 6 (open). Byline top padding mixes spacing/050 (Mobile) and spacing/100 (Tablet, Desktop) to reach 12px: simplify. | **2026-10-26:** Show Gallery Icon property added, then replaced the same day by `Gallery = Image / Slideshow` (Zone 1 gallery leads show the Zone 1 Slideshow, not the badge; Karl). ✅ **Done 2026-10-26.** Variant descriptions rewritten; "Specifications · Style=For You" section in the container (`3484:67601`) with Desktop and Mobile detached samples (green markers, gallery badge shown on) and spec text; registry entry `zone-1-lead-article-card`. Excerpt gap kept at 4px (production's Standard lead; prototype had 6). Byline spacing left as is and documented (12px = parent gap + byline top padding). New known issue: on Tablet the image (391) is wider than its 358 column, in both styles.
-| Homepage Tab / Homepage Tabs | `3629:44949` / `3629:44974` | ✅ Done 2026-10-26: container `3629:44928` renamed "Homepage Tabs Container" and restyled to the white format; state and breakpoint labels on the variant grid; Focus ring confirmed (117×36, 3px inset on a 123×42 tab); Specifications section with a 2× Active tab sample and a Desktop bar sample (green padding/gap, magenta nav padding); registry entries `homepage-tab` and `homepage-tabs`. |
+| Tab Nav Item / Tab Nav | `3629:44949` / `3629:44974` | ✅ Done 2026-10-26: container `3629:44928` renamed "Tab Nav Container" and restyled to the white format; state and breakpoint labels on the variant grid; Focus ring confirmed (117×36, 3px inset on a 123×42 tab); Specifications section with a 2× Active tab sample and a Desktop bar sample (green padding/gap, magenta nav padding); registry entries `tab-nav-item` and `tab-nav`. |
 | Masthead | `456:2572` | New: shadow/masthead on Scrolled; no shadow at the top; gray/400 rule on every variant. Variant descriptions don't mention these. The masthead search bar (production `0 3px 3px` · 25%) not checked. |
 | ObitMastHead | `1139:22369` | Now matches Masthead (shadow/masthead when scrolled, gray/400 rule). The mobile Scrolled variants show a gray edge on the sides: check. |
 | AccountMenu | `910:16425` | Uses shadow/lg from the library. Documentation frames ("AccountMenu Desktop", Frame 12800) also updated. |

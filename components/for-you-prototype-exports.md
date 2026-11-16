@@ -53,7 +53,7 @@ None of these block the prototype today; each is a clean-up or a later need.
 
 The prototype already mounts these real components:
 
-- **For You tab:** Homepage Tabs, Section Title / Eyebrow, Tooltip (Toggletip), Blocks Lead Article Card (with Zone 1 Slideshow), Blocks Card, Blocks Article Row, Article Section Kicker / Author / Timestamp, Gallery Icon Badge, Show More Affordance, InLineMessage DashSubsNonSub, ModalsCenter, Button Primary, Button Modal Close, Icon.
+- **For You tab:** Tab Nav, Section Title / Eyebrow, Tooltip (Toggletip), Blocks Lead Article Card (with Zone 1 Slideshow), Blocks Card, Blocks Article Row, Article Section Kicker / Author / Timestamp, Gallery Icon Badge, Show More Affordance, InLineMessage DashSubsNonSub, ModalsCenter, Button Primary, Button Modal Close, Icon.
 - **Editor's Picks:** Zone 1 Lead Article Card, 1Col Article Card, Section Title / Eyebrow, Show More Affordance.
 - **Foundations:** color tokens for Bold Coastal, Measured Vibrant and Modern Earthy, typography, spacing, radius, shadows, the icon font and the Placeholder Logos.
 

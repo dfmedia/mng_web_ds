@@ -72,8 +72,8 @@ COMPONENTS = [
     ("user-pic", "UserPic", "UserPic", "Core"),
     ("user-status", "UserStatus", "UserStatus", "Core"),
     # WordPress Elements
-    ("homepage-tabs", "HomepageTabs", "Homepage Tabs", "WordPress Elements"),
-    ("homepage-tab", "HomepageTab", "Homepage Tab", "WordPress Elements"),
+    ("tab-nav", "TabNav", "Tab Nav", "WordPress Elements"),
+    ("tab-nav-item", "TabNavItem", "Tab Nav Item", "WordPress Elements"),
     ("section-title-eyebrow", "SectionTitleEyebrow", "Section Title / Eyebrow", "WordPress Elements"),
     ("blocks-card", "BlocksCard", "Blocks Card", "WordPress Elements"),
     ("blocks-article-row", "BlocksArticleRow", "Blocks Article Row", "WordPress Elements"),

@@ -1,0 +1,25 @@
+.mngds-tab-nav-item {
+  position: relative; box-sizing: border-box; display: inline-flex; flex-direction: column; align-items: stretch; flex-shrink: 0;
+  margin: 0; padding: 0; border: 0; background: none; font: inherit; text-align: left; cursor: pointer; outline: none;
+}
+.mngds-tab-nav-item__label-container {
+  display: flex;
+  padding: var(--mng-tab-nav-item-base-label-container-padding-top) var(--mng-tab-nav-item-base-label-container-padding-right) var(--mng-tab-nav-item-base-label-container-padding-bottom) var(--mng-tab-nav-item-base-label-container-padding-left);
+}
+.mngds-tab-nav-item__label {
+  font-family: var(--mng-tab-nav-item-base-label-container-label-font-family);
+  font-size: var(--mng-tab-nav-item-base-label-container-label-font-size);
+  font-weight: var(--mng-tab-nav-item-base-label-container-label-font-weight);
+  line-height: normal; letter-spacing: 0; white-space: nowrap; text-transform: uppercase;
+  color: var(--mng-tab-nav-item-state-default-label-container-label-color);
+}
+.mngds-tab-nav-item__underline { display: block; height: var(--mng-tab-nav-item-base-underline-height); background: transparent; }
+.mngds-tab-nav-item:hover .mngds-tab-nav-item__label, .mngds-tab-nav-item.is-hover .mngds-tab-nav-item__label { color: var(--mng-tab-nav-item-state-hover-label-container-label-color); }
+.mngds-tab-nav-item.is-active .mngds-tab-nav-item__label { color: var(--mng-tab-nav-item-state-active-label-container-label-color); }
+.mngds-tab-nav-item.is-active .mngds-tab-nav-item__underline { background: var(--mng-tab-nav-item-state-active-underline-background); }
+/* Focus: a 2px color/gray/black ring set 3px inside the tab (outline 2px at offset -(3+2)px). */
+.mngds-tab-nav-item:focus-visible, .mngds-tab-nav-item.is-focus {
+  outline: var(--mng-tab-nav-item-state-focus-focus-ring-border-width) var(--mng-tab-nav-item-state-focus-focus-ring-border-style) var(--mng-tab-nav-item-state-focus-focus-ring-border-color);
+  outline-offset: calc(-3px - var(--mng-tab-nav-item-state-focus-focus-ring-border-width));
+}
+.mngds-tab-nav-item:focus-visible .mngds-tab-nav-item__label, .mngds-tab-nav-item.is-focus .mngds-tab-nav-item__label { color: var(--mng-tab-nav-item-state-focus-label-container-label-color); }

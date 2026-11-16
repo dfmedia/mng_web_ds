@@ -1,7 +1,7 @@
-<!-- @dsCard group="WordPress Elements" height=200 subtitle="Figma: Homepage Tab · 4 variants" -->
+<!-- @dsCard group="WordPress Elements" height=200 subtitle="Figma: Tab Nav Item · 4 variants" -->
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><title>HomepageTab</title>
+<head><meta charset="utf-8"><title>TabNavItem</title>
 <style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
 <body>
 <div id="root"></div>
@@ -9,7 +9,7 @@
   var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
   var items = ['Default', 'Hover', 'Active', 'Focus'].map(function (st) {
     return { label: 'State=' + st, white: true,
-      node: h('div', { role: 'tablist', 'aria-label': 'State ' + st }, h(NS.HomepageTab, { state: st, label: "Editor's Picks", tabIndex: -1 })) };
+      node: h('div', { role: 'tablist', 'aria-label': 'State ' + st }, h(NS.TabNavItem, { state: st, label: "Editor's Picks", tabIndex: -1 })) };
   });
   ReactDOM.createRoot(document.getElementById('root')).render(
     h(I.SpecimenSection, { title: 'State', note: 'Tabs sit on the bar’s color/gray/max background (shown white). Active: 2px color/theme/primary underline. Focus: 2px color/gray/black ring 3px inside the tab.' },

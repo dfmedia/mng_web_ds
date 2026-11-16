@@ -1,0 +1,16 @@
+.mngds-tab-nav { position: relative; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; width: 100%; background: var(--mng-tab-nav-base-root-background); }
+.mngds-tab-nav__bottom-border { position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--mng-tab-nav-base-bottom-border-background); }
+/* Nav: 8px (spacing/100) sides at every width, so the first tab lines up with the page content's left edge
+   (Karl, 2026-11-03; was 1200px with 24px sides at 640px and up, no padding below). Desktop: 1280px max, centered. */
+.mngds-tab-nav__nav {
+  position: relative; z-index: 1; box-sizing: border-box; display: flex; width: 100%; min-width: 0;
+  padding: 0 var(--mng-tab-nav-base-nav-padding-right) 0 var(--mng-tab-nav-base-nav-padding-left);
+}
+.mngds-tab-nav--desktop .mngds-tab-nav__nav { max-width: var(--mng-tab-nav-breakpoint-desktop-nav-width); }
+.mngds-tab-nav__tab-list {
+  display: flex; gap: var(--mng-tab-nav-base-nav-tab-list-gap); justify-content: flex-start; align-items: flex-start;
+  margin: 0; padding: 0; list-style: none; min-width: 0; max-width: 100%;
+  overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -ms-overflow-style: none;
+}
+.mngds-tab-nav__tab-list::-webkit-scrollbar { display: none; }
+.mngds-tab-nav__item { display: flex; flex-shrink: 0; margin: 0; padding: 0; }

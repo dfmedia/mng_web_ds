@@ -1,9 +1,9 @@
-One tab of the homepage For You tab bar. Normally used through `HomepageTabs`; use it alone only inside your own `role="tablist"`. Consumer supplies `label`, `selected`, `controls` (the panel id) and `onClick`.
+One tab of the homepage For You tab bar. Normally used through `TabNav`; use it alone only inside your own `role="tablist"`. Consumer supplies `label`, `selected`, `controls` (the panel id) and `onClick`.
 
 ```js
-const { HomepageTab } = window.mng_web_design_system;
-h(HomepageTab, { label: "Editor's Picks", selected: true, controls: 'panel-picks', id: 'tab-picks', onClick: show })
-h(HomepageTab, { label: 'For You', controls: 'panel-for-you', id: 'tab-for-you', onClick: show })
+const { TabNavItem } = window.mng_web_design_system;
+h(TabNavItem, { label: "Editor's Picks", selected: true, controls: 'panel-picks', id: 'tab-picks', onClick: show })
+h(TabNavItem, { label: 'For You', controls: 'panel-for-you', id: 'tab-for-you', onClick: show })
 ```
 
 | Prop | Values | Default |

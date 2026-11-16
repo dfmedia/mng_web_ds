@@ -16,12 +16,12 @@ Which design-system component each part of the page matches (all in WordPress El
 - Featured story (`.fy-lead`): **Blocks Lead Article Card** (`blocks-lead-article-card`), with **Zone 1 Slideshow** for galleries.
 - Gallery badge: **Gallery Icon Badge** (`gallery-icon-badge`).
 - Kicker, author and timestamp: **Article Section Kicker**, **Article Author**, **Article Timestamp**.
-- Tab bar: **Homepage Tabs** / **Homepage Tab**. Feed header: **Section Title / Eyebrow**. Load More: **Show More Affordance**.
+- Tab bar: **Tab Nav** / **Tab Nav Item**. Feed header: **Section Title / Eyebrow**. Load More: **Show More Affordance**.
 - Toggletip: **Tooltip** (MNG Web Design System, `components/core/tooltip/`). CTA panel: **InLineMessage DashSubsNonSub** (`components/core/inline-message-dashsubsnonsub/`). Welcome modal: **ModalsCenter** (`components/core/modals-center/`).
 
 The card and row hover (`border-color` and a 1px `box-shadow` ring in #007580, headline #007580) and their focus outline (2px solid #000000, offset 1px) already match Blocks Card and Blocks Article Row: keep them.
 
-## 1. Homepage tab bar (Editor's Picks / For You)
+## 1. Tab Nav bar (Editor's Picks / For You)
 
 Rebuild the tab bar to match the production World Cup tabs (staging.dailylocal.com/world-cup/), with token values. Keep the tab labels, the order and the existing tab-switching behavior (`st.tab`).
 

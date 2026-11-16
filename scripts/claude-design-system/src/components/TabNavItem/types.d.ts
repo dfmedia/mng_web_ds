@@ -1,4 +1,4 @@
-export interface HomepageTabProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface TabNavItemProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   /** Forced Figma State for documentation; leave unset in real layouts (use `selected`). 'Active' also selects the tab. */
   state?: 'Default' | 'Hover' | 'Active' | 'Focus';
   /** Selected tab: Active styling (theme-primary underline) and aria-selected="true". Default false (true when state='Active'). */
@@ -9,4 +9,4 @@ export interface HomepageTabProps extends React.ButtonHTMLAttributes<HTMLButtonE
   controls?: string;
   onClick?: (e: React.MouseEvent) => void;
 }
-export declare function HomepageTab(props: HomepageTabProps): React.ReactElement;
+export declare function TabNavItem(props: TabNavItemProps): React.ReactElement;
