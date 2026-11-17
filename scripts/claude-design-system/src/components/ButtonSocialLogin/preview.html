@@ -18,7 +18,7 @@
       ['None', 'left', 'right', 'only'].map(function (p) { return h(I.Specimen, { key: p, items: row('None', p) }); })),
     h(I.SpecimenSection, { title: 'Brand: Apple, Google, Facebook', note: 'Drawn the way each vendor requires (Karl, 2026-11-17). Apple: black, 17px label, 21:1. Google: Light theme, #747775 border, Google Sans Flex Medium 14, 16.5:1. Facebook: brand blue #1877F2, white text 4.2:1 (fails AA at 16px; accepted by Karl). The blue Facebook circle is not allowed by Facebook; kept at Karl\u2019s request. Logos are placeholders until the vendors\u2019 artwork is used.' },
       ['Apple', 'Google', 'Facebook'].reduce(function (a, b) { return a.concat([h(I.Specimen, { key: b + 'l', items: row(b, 'left') }), h(I.Specimen, { key: b + 'o', items: row(b, 'only') })]); }, [])),
-    h(I.SpecimenSection, { title: 'Embedded Login', note: 'Sign-in buttons fill the column; the round icon buttons sit 16px apart (two 8px margins); the Email circle and Continue / Create Account are Brand None.' },
+    h(I.SpecimenSection, { title: 'Embedded Login', note: 'Sign-in buttons fill the column; the round icon buttons sit 16px apart (two 8px margins); Continue / Create Account and the Email circle are Brand None. Embedded Login no longer uses the Email circle (Karl, 2026-11-17); it stays for future use.' },
       h(I.Specimen, { items: [
         { label: 'Sign-in (fill)', node: h('div', { className: 'demo-col' },
           h(NS.ButtonSocialLogin, { brand: 'Apple', fill: true }),
