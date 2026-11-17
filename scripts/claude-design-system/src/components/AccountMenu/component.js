@@ -1,7 +1,7 @@
 /* AccountMenu (WordPress Elements, Menus and Parts, 910:16425; 7 variants since 2026-11-16, Karl): the account control
    at the right of the masthead (Closed) and the menu it opens (Open). Matches production (digisubs, all 6 review
    sites, 2026-11-13) on the 4 / 8 grid; differences are design-vs-production 11.
-   Closed, logged in: UserPic Small (30px) and the 16px chevron with no gap, then the search button 16px away.
+   Closed, logged in: UserPic Small (30px) and the 16px chevron 4px apart, then the search button 16px away.
    Closed, logged out: below 1040px the user icon and chevron (opens the slide-in panel); from 1040px up the Subscribe
    and Log In buttons (UserStatus) and no menu.
    Open, logged in (all widths): a 300px panel under the trigger (the avatar and up chevron show through its top,

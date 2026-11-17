@@ -16,7 +16,7 @@
     return h('div', { className: 'demo-try' }, h(NS.AccountMenu, { status: 'loggedIn', user: USER }));
   }
   ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
-    h(I.SpecimenSection, { title: 'Closed', note: 'Logged in: UserPic Small (30px) and the 16px chevron, no gap; the search button 16px to the right. Logged out: the user icon below 1040px, Subscribe and Log In from 1040px up (no menu).' },
+    h(I.SpecimenSection, { title: 'Closed', note: 'Logged in: UserPic Small (30px) and the 16px chevron, 4px apart; the search button 16px to the right. Logged out: the user icon below 1040px, Subscribe and Log In from 1040px up (no menu).' },
       h(I.Specimen, { items: [
         { label: 'Status=loggedOut, View=Closed, Device=(up to 1039px), UserType=loggedOut', node: h(NS.AccountMenu, { status: 'loggedOut', view: 'Closed', device: '(up to 1039px)' }) },
         { label: 'Status=loggedOut, View=Closed, Device=(1040px and up), UserType=loggedOut', node: h(NS.AccountMenu, { status: 'loggedOut', view: 'Closed', device: '(1040px and up)' }) },

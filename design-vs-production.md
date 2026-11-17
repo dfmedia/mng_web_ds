@@ -1539,7 +1539,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Found:** 2026-10-23 (shadow) and 2026-11-13 (everything else), logged in on all 6 review sites at 340, 360, 768, 1024 and 1175px, and logged out at 1024px. Production is the digisubs plugin: `#anchorProfileDropDown` and `#account-content` (logged in, every width), `#digisubs-toggle` and `.wrapper-nav-subs` (logged out, below 1040px), styles in `mng-digisubs.styles.css` and the theme CSS. **Team:** digisubs.
 
-**Design:** WordPress Elements ▸ Menus and Parts ▸ **AccountMenu** (`910:16425`), 7 variants since 2026-11-16 (Karl), documented in the white container `910:15618`. Its avatar parts are in the main library (UserStatus, UserPic; entry 10.9). The closed avatar and chevron now sit with no gap, as production; the open panel's avatar sits 17px from the top and the name 8px below the avatar row, as production.
+**Design:** WordPress Elements ▸ Menus and Parts ▸ **AccountMenu** (`910:16425`), 7 variants since 2026-11-16 (Karl), documented in the white container `910:15618`. Its avatar parts are in the main library (UserStatus, UserPic; entry 10.9). The closed avatar and chevron sit 4px apart (`spacing/050`; Karl, 2026-11-17: no gap looked too tight, see 11.11); the open panel's avatar sits 17px from the top and the name 8px below the avatar row, as production.
 
 ### 11.1 Dropdown shadow isn't the design token
 
@@ -1640,6 +1640,16 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 **Action needed:** none until saved articles launch on those sites; then show the row.
 
 **Status:** Open, waiting on the feature. Added 2026-11-16.
+
+### 11.11 Avatar to chevron: 5px of padding inside the caret
+
+**Production (logged in, all 6 sites):** the avatar (30px) and `span#icon-caret` (16.2 × 30px) touch, but the caret has `padding-left: 5px`, so the 11.2px icomoon glyph sits about 5px from the avatar.
+
+**Design:** UserPic Small and the 16px chevron icon 4px (`spacing/050`) apart (Karl, 2026-11-17; a 0 gap, tried on 2026-11-16, left only the icon's own 2px). The glyph sits about 6px from the avatar.
+
+**Action needed:** make the caret's left padding 4px, or replace it with a 4px gap between the avatar and the caret.
+
+**Status:** Open. Added 2026-11-17.
 
 **Not checked:** the payment alert (Status = alert; no test account had a payment issue), group and anonymous group accounts, and the logged-out panel at widths other than 1024px (its CSS is the same 300px panel at every width below 1040px).
 

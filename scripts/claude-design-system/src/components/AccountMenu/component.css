@@ -9,10 +9,11 @@
 }
 .mngds-account-menu--wide .mngds-account-menu__bar { gap: var(--mng-account-menu-device-1040px-and-up-root-gap); }
 .mngds-account-menu__anchor { position: relative; display: flex; align-items: center; }
-/* Trigger: UserPic Small (30px) and the 16px chevron, no gap (production 0). It sits on top of the open panel. */
+/* Trigger: UserPic Small (30px) and the 16px chevron, 4px (spacing/050) apart (Karl, 2026-11-17; production's caret has 5px
+   of padding inside its box). It sits on top of the open panel. */
 .mngds-account-menu__trigger {
   appearance: none; margin: 0; padding: 0; border: 0; background: transparent; font: inherit; color: inherit; cursor: pointer;
-  display: inline-flex; align-items: center; gap: 0; position: relative; z-index: 2;
+  display: inline-flex; align-items: center; gap: var(--mng-spacing-050); position: relative; z-index: 2;
 }
 .mngds-account-menu__chevron {
   display: inline-flex; align-items: center; justify-content: center;
