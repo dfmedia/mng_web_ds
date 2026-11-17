@@ -9,7 +9,7 @@ component_key: 21db80b6ccdb88eb2a61326e46bce299f7aa1693
 variants: 7
 tokens: account-menu.tokens.json
 skeleton: account-menu.html
-exported: 2026-11-16
+exported: 2026-11-17
 ---
 
 # AccountMenu
@@ -45,9 +45,9 @@ exported: 2026-11-16
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `(up to 1039px) / loggedOut / loggedOut / Open` | 300×650 | [910:16443](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16443) | 4 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-open.png) |
-| `(up to 1039px) / loggedOut / loggedOut / Closed` | 108×64 | [910:16436](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16436) | 58 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-closed.png) |
-| `(1040px and up) / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 23 | ![](previews/account-menu--1040px-and-up-loggedout-loggedout-closed.png) |
-| `(all widths) / loggedIn / loggedIn / Closed` | 108×64 | [910:16508](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16508) | 111 | ![](previews/account-menu--all-widths-loggedin-loggedin-closed.png) |
+| `(up to 1039px) / loggedOut / loggedOut / Closed` | 112×64 | [910:16436](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16436) | 51 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-closed.png) |
+| `(1040px and up) / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 18 | ![](previews/account-menu--1040px-and-up-loggedout-loggedout-closed.png) |
+| `(all widths) / loggedIn / loggedIn / Closed` | 112×64 | [910:16508](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16508) | 111 | ![](previews/account-menu--all-widths-loggedin-loggedin-closed.png) |
 | `(all widths) / loggedIn / nonSub / Open` | 300×954 | [910:16526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16526) | 7 | ![](previews/account-menu--all-widths-loggedin-nonsub-open.png) |
 | `(all widths) / loggedIn / subscriber / Open` | 300×840 | [910:16763](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16763) | 26 | ![](previews/account-menu--all-widths-loggedin-subscriber-open.png) |
 | `(all widths) / alert / subscriber / Open` | 300×1098 | [910:17087](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-17087) | 4 | ![](previews/account-menu--all-widths-alert-subscriber-open.png) |
@@ -59,7 +59,7 @@ Default variant `(up to 1039px) / loggedOut / loggedOut / Open` (hidden layers m
 - **Status=loggedOut, View=Open, Device=(up to 1039px), UserType=loggedOut** `COMPONENT`: 300×650, vertical, gap 0, padding 0/0/0/0, fixed×hug
   - **Menu Main** `FRAME`: 300×650, vertical, gap 0, padding 0/0/0/0, fill×hug
     - **Header** `FRAME`: 300×64, horizontal, gap 0, padding 0/0/0/0, fill×hug
-      - **AccountMenu** `INSTANCE`: 108×64, horizontal, gap 16, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=(up to 1039px), UserType=loggedOut)
+      - **AccountMenu** `INSTANCE`: 112×64, horizontal, gap 16, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=(up to 1039px), UserType=loggedOut)
     - **Body** `FRAME`: 300×432, vertical, gap 8, padding 0/16/48/16, fill×fixed
       - **Signin** `FRAME`: 268×152, vertical, gap 24, padding 24/12/24/12, fill×hug
         - **Button Primary** `INSTANCE`: 244×40, vertical, gap 8, padding 0/8/0/8, fill×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
@@ -132,6 +132,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.usertype-subscriber.section-item.container.container.subscription.font-family` | `{font.family.noto-sans}` |
 | `account-menu.usertype-subscriber.section-item.container.container.subscription.font-size` | `{font.size.16}` |
 | `account-menu.usertype-subscriber.section-item.container.container.subscription.font-weight` | `{font.weight.bold}` |
+| `account-menu.usertype-loggedin.container.gap` | `{spacing.050}` |
 | `account-menu.usertype-loggedin.container.icon.icons.height` | 16px |
 | `account-menu.usertype-loggedin.container.icon.icons.icon-color` | `{color.gray.min}` |
 | `account-menu.usertype-loggedin.container.icon.icons.width` | 16px |
@@ -171,7 +172,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.menu-main.divider.height` | 0px |
 | `account-menu.base.menu-main.header.accountmenu.height` | 64px |
 | `account-menu.base.menu-main.header.accountmenu.icon-color` | `{color.gray.max}` |
-| `account-menu.base.menu-main.header.accountmenu.width` | 108px |
+| `account-menu.base.menu-main.header.accountmenu.width` | 112px |
 | `account-menu.base.menu-main.menu-footer.background` | `{color.gray.max}` |
 | `account-menu.base.menu-main.menu-footer.item.padding-bottom` | `{spacing.400}` |
 | `account-menu.base.menu-main.menu-footer.item.padding-left` | `{spacing.200}` |
@@ -209,6 +210,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.section-item.section-item.container.container.height` | 48px |
 | `account-menu.base.section-item.section-item.container.container.padding-right` | `{spacing.300}` |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.background` | `{color.gray.max}` |
+| `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.gap` | `{spacing.050}` |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.padding-top` | `{spacing.200}` |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.icons.height` | 16px |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.icons.icon-color` | `{color.gray.min}` |
@@ -223,6 +225,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.section-item.section-item.container.user-name.font-family` | `{font.family.noto-sans}` |
 | `account-menu.base.section-item.section-item.container.user-name.font-size` | `{font.size.20}` |
 | `account-menu.base.section-item.section-item.container.user-name.font-weight` | `{font.weight.bold}` |
+| `account-menu.base.userstatus.gap` | `{spacing.050}` |
 | `account-menu.base.userstatus.arrowdown.icons.height` | 16px |
 | `account-menu.base.userstatus.arrowdown.icons.icon-color` | `{color.gray.min}` |
 | `account-menu.base.userstatus.arrowdown.icons.width` | 16px |
@@ -238,6 +241,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.status-alert.section-item.container.container.container.padding-right` | `{spacing.300}` |
 | `account-menu.status-alert.section-item.container.container.container.padding-top` | `{spacing.100}` |
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.background` | `{color.gray.max}` |
+| `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.gap` | `{spacing.050}` |
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.padding-top` | `{spacing.200}` |
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.icons.height` | 16px |
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.icons.icon-color` | `{color.gray.min}` |
@@ -332,7 +336,7 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 
 Production's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in menu's position changes at 1024, 820, 770 and 450px (design-vs-production 11.6). Future MNG Device breakpoint for the 1040px switch: 1024 (not adopted yet).
 
-- **Closed, logged in (all widths):** UserPic Small (30px, production's size) and the 16px chevron (`arrow-downSMALL`) with no gap (production 0); the masthead search icon follows 16px (`spacing/200`) to the right, centered on the avatar.
+- **Closed, logged in (all widths):** UserPic Small (30px, production's size) and the 16px chevron (`arrow-downSMALL`) 4px (`spacing/050`) apart (Karl, 2026-11-17; production's caret has 5px of padding: design-vs-production 11.11); the masthead search icon follows 16px (`spacing/200`) to the right, centered on the avatar.
 - **Closed, logged out:** below 1040px the user icon and chevron (opens the slide-in panel); from 1040px up the Subscribe and Log In buttons (UserStatus; design-vs-production 10.10) and no menu.
 - **Open, logged in:** a 300px panel; at 340px and below it spans the full width of the screen (Karl, 2026-11-16). Its right edge is 24px (`spacing/300`) past the chevron; the avatar and up chevron show at its top, 17px down; it covers the masthead search icon (production). `color/gray/max`, bottom corners `radius/utility` (5px), `shadow/lg`, a 40% black scrim behind.
 - **Header:** User name Noto Sans Bold 20 (`font/size/20`) and User email Regular 14 (`font/size/14`), `color/gray/min` (18.4:1), one line each with an ellipsis; 8px (`spacing/100`) above, 16px (`spacing/200`) at the sides and below; a 1px `color/gray/500` line.
@@ -358,10 +362,10 @@ Production's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **233**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **221**.
 
 Inside components: Masthead ×90, ObitMastHead ×28, AccountMenu ×1.
-Placed on pages: Menus and Parts ×95, Homepage ×6, Article Page ×4, Section Front ×2.
+Placed on pages: Menus and Parts ×95.
 
 **Built from:** Icons ×20, Button Primary ×7, UserStatus ×6, SearchBar ×3, AccountMenu ×1, InLineMessage ×1
 Icon variants: `arrow-rightSMALL` ×15, `arrow-upSmall` ×3, `arrow-downSMALL` ×2.
@@ -372,7 +376,7 @@ digisubs plugin: `#anchorProfileDropDown` and `#account-content` (logged in), `#
 
 ## Known issues
 
-1. Production differs in 10 places (design-vs-production 11.1–11.10): shadow spread, Esc and focus handling, Log Out without href, clicks through the scrim, the 340px full-width rule, the menu's position, no newsletter when logged in, the Subscribe Now button, the logged-out panel's buttons and spacing, Saved Articles on 3 of 6 sites.
+1. Production differs in 11 places (design-vs-production 11.1–11.11): shadow spread, Esc and focus handling, Log Out without href, clicks through the scrim, the 340px full-width rule, the menu's position, no newsletter when logged in, the Subscribe Now button, the logged-out panel's buttons and spacing, Saved Articles on 3 of 6 sites, the caret's 5px padding.
 2. Not checked in production: the payment alert (no test account had one), group and anonymous accounts, the logged-out panel at widths other than 1024px.
 3. The marketing slot's sample art and its yellow (#ffcc00) label are placeholder content, not tokens.
 4. **Values not bound to a token** (literal in the component tokens): `usertype-subscriber` container.container.container.container background = #ffcc00; `usertype-nonsub` section-item.container.container.container.container background = #ffcc00.
@@ -383,4 +387,4 @@ digisubs plugin: `#anchorProfileDropDown` and `#account-content` (logged in), `#
 - `account-menu.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-16 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

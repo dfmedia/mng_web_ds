@@ -9,7 +9,7 @@ component_key: 5cf04e3021e4ccd5357b9d77f3d03e02ed41dc28
 variants: 90
 tokens: masthead.tokens.json
 skeleton: masthead.html
-exported: 2026-11-16
+exported: 2026-11-17
 ---
 
 # Masthead
@@ -344,14 +344,14 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.accountmenu.width` | 108px |
+| `masthead.base.masthead-container.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.accountmenu-container.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.accountmenu-container.height` | 64px |
 | `masthead.base.masthead-container.accountmenu-container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.accountmenu-container.width` | 300px |
 | `masthead.base.masthead-container.accountmenu-container.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.accountmenu-container.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.accountmenu-container.accountmenu.width` | 108px |
+| `masthead.base.masthead-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.ad-container.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.ad-container.padding-bottom` | `{spacing.200}` |
 | `masthead.base.masthead-container.ad-container.padding-top` | `{spacing.200}` |
@@ -445,7 +445,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.section-menu-desktop.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.container.section-menu-desktop.width` | 300px |
 | `masthead.base.masthead-container.container.section-menu-desktop.accountmenu.height` | 64px |
-| `masthead.base.masthead-container.container.section-menu-desktop.accountmenu.width` | 108px |
+| `masthead.base.masthead-container.container.section-menu-desktop.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.container.section-name.color` | `{color.theme.primary}` |
 | `masthead.base.masthead-container.container.section-name.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.container.section-name.font-size` | `{font.size.40}` |
@@ -489,7 +489,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.header.section-menu-desktop.width` | 300px |
 | `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.width` | 108px |
+| `masthead.base.masthead-container.header.section-menu-desktop.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.header.sectionmenu.height` | 64px |
 | `masthead.base.masthead-container.header.sectionmenu.icon-color` | `{color.gray.max}` |
 | `masthead.base.masthead-container.icon-group.height` | 29.79px |
@@ -587,7 +587,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.section-menu-desktop.width` | 300px |
 | `masthead.base.masthead-container.section-menu-desktop.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.section-menu-desktop.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.section-menu-desktop.accountmenu.width` | 108px |
+| `masthead.base.masthead-container.section-menu-desktop.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.section-title.color` | `{color.theme.primary-dark}` |
 | `masthead.base.masthead-container.section-title.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.section-title.font-size` | `{font.size.16}` |
@@ -1139,21 +1139,21 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.page-dashboard.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-dashboard.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
+| `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.state-default.page-article.masthead-container.container.padding-bottom` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.container.padding-top` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
+| `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
+| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.state-default.masthead-container.container.weather-bug.width` | 285.78px |
 | `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.section-menu.navmenu.width` | 366px |
 | `masthead.state-adfree.masthead-container.container.weather-bug.width` | 333px |
-| `masthead.state-adfree.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 108px |
+| `masthead.state-adfree.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.height` | 29.79px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.width` | 146px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.vector.height` | 14.21px |
@@ -1243,8 +1243,8 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.state-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 294px |
 | `masthead.state-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-scrolled.section-menu.navmenu.width` | 768px |
-| `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 108px |
-| `masthead.state-adfree-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 108px |
+| `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 112px |
+| `masthead.state-adfree-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.root.width` | 1024px |
 | `masthead.device-lg-tableth-800-1039px.page-dashboard.masthead-container.sectionmenu.width` | 300px |
@@ -1320,4 +1320,4 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 - `masthead.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-16 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

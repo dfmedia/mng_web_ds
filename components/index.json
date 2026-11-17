@@ -1085,9 +1085,9 @@
         "set": "AccountMenu"
       },
       "variants": 7,
-      "instances": 233,
+      "instances": 221,
       "knownIssues": 4,
-      "exported": "2026-11-16"
+      "exported": "2026-11-17"
     },
     {
       "slug": "footer",
@@ -1119,7 +1119,7 @@
       "variants": 90,
       "instances": 66,
       "knownIssues": 9,
-      "exported": "2026-11-16"
+      "exported": "2026-11-17"
     },
     {
       "slug": "search-bar",
