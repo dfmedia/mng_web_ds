@@ -27,10 +27,11 @@
 /* Keyboard focus: a 2px color/gray/black ring 2px outside (design-vs-production 10.9). */
 .mngds-account-menu__trigger:focus-visible, .mngds-account-menu__search:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 2px; }
 
-/* Open, logged in: 300px, right edge 24px (spacing/300) past the chevron, top 17px above the avatar (production),
-   color/gray/max, bottom corners radius/utility, shadow/lg; the avatar row shows through the top 48px. */
+/* Open, logged in: 300px, its right edge the closed menu's right edge: the search button's space (16px spacing/200, 30px,
+   8px spacing/100) stays, empty, so the avatar and chevron don't move when it opens (Karl, 2026-11-17). Top 17px above the
+   avatar (production); color/gray/max, bottom corners radius/utility, shadow/lg; the avatar row shows through the top 48px. */
 .mngds-account-menu__panel--dropdown {
-  position: absolute; z-index: 1; top: -17px; right: calc(-1 * var(--mng-account-menu-base-section-item-section-item-container-container-padding-right));
+  position: absolute; z-index: 1; top: -17px; right: calc(-1 * calc(var(--mng-account-menu-base-section-item-section-item-container-container-gap) + var(--mng-account-menu-base-section-item-section-item-container-container-searchbar-width) + var(--mng-account-menu-base-section-item-section-item-container-container-padding-right)));
   width: var(--mng-account-menu-view-open-root-width);
   padding-top: var(--mng-account-menu-base-section-item-section-item-container-container-height);
   background: var(--mng-account-menu-base-root-background);
@@ -127,7 +128,7 @@
 .mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__bar { display: block; height: auto; padding: 0; }
 .mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__search { display: none; }
 .mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__anchor { position: static; display: block; }
-.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__trigger { position: absolute; top: 17px; right: var(--mng-account-menu-base-section-item-section-item-container-container-padding-right); }
+.mngds-account-menu--inline.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__trigger { position: absolute; top: 17px; right: calc(var(--mng-account-menu-base-section-item-section-item-container-container-gap) + var(--mng-account-menu-base-section-item-section-item-container-container-searchbar-width) + var(--mng-account-menu-base-section-item-section-item-container-container-padding-right)); }
 .mngds-account-menu--inline .mngds-account-menu__panel--dropdown { position: relative; top: 0; right: 0; left: auto; width: 100%; max-height: none; }
 .mngds-account-menu--inline.mngds-account-menu--logged-out.is-open { width: var(--mng-account-menu-view-open-root-width); }
 .mngds-account-menu--inline.mngds-account-menu--logged-out .mngds-account-menu__bar { justify-content: flex-end; }

@@ -1393,6 +1393,17 @@
               }
             },
             "container": {
+              "gap": {
+                "$type": "dimension",
+                "$value": "{spacing.200}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/200"
+                    }
+                  }
+                }
+              },
               "height": {
                 "$type": "dimension",
                 "$value": {
@@ -1402,11 +1413,11 @@
               },
               "padding-right": {
                 "$type": "dimension",
-                "$value": "{spacing.300}",
+                "$value": "{spacing.100}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Spacing & Radius/spacing/300"
+                      "variable": "Spacing & Radius/spacing/100"
                     }
                   }
                 }
@@ -1486,6 +1497,22 @@
                       "value": 30,
                       "unit": "px"
                     }
+                  }
+                }
+              },
+              "searchbar": {
+                "height": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 48,
+                    "unit": "px"
+                  }
+                },
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 30,
+                    "unit": "px"
                   }
                 }
               }
@@ -1721,6 +1748,17 @@
               }
             },
             "container": {
+              "gap": {
+                "$type": "dimension",
+                "$value": "{spacing.200}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Spacing & Radius/spacing/200"
+                    }
+                  }
+                }
+              },
               "height": {
                 "$type": "dimension",
                 "$value": {
@@ -1730,11 +1768,11 @@
               },
               "padding-right": {
                 "$type": "dimension",
-                "$value": "{spacing.300}",
+                "$value": "{spacing.100}",
                 "$extensions": {
                   "com.mng": {
                     "figma": {
-                      "variable": "Spacing & Radius/spacing/300"
+                      "variable": "Spacing & Radius/spacing/100"
                     }
                   }
                 }
@@ -1840,6 +1878,22 @@
                   "$type": "dimension",
                   "$value": {
                     "value": 268,
+                    "unit": "px"
+                  }
+                }
+              },
+              "searchbar": {
+                "height": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 48,
+                    "unit": "px"
+                  }
+                },
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 30,
                     "unit": "px"
                   }
                 }

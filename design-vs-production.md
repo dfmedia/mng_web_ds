@@ -1595,9 +1595,9 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 
 **Production:** `.dropdown-menu` uses `right: -120%` (1024px and below), `-93%` (820px and below), `-90%` (770px and below) and `-70%` (450px and below), so the menu's right edge sits 25px past the chevron at 1040px and up, 55px at 1024, 42px at 768 and 32px at 360 and 340px. The top is always 17px above the avatar (matches).
 
-**Design:** the right edge 24px (`spacing/300`) past the chevron at every width from 341px up; full width at 340px and below (11.5).
+**Design:** the right edge 54px past the chevron at every width from 341px up, where the closed menu ends: the search icon's space (16px `spacing/200`, 30px, 8px `spacing/100`) stays, empty, so the avatar and chevron don't move when the menu opens (Karl, 2026-11-17; was 24px). Full width at 340px and below (11.5).
 
-**Action needed:** replace the percentage offsets with one fixed offset.
+**Action needed:** replace the percentage offsets with one fixed offset: the menu's right edge where the closed account area ends, 54px past the chevron. Updated 2026-11-17.
 
 **Status:** Open, low priority. Added 2026-11-16.
 

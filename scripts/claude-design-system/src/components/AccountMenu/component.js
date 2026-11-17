@@ -5,7 +5,7 @@
    Closed, logged out: below 1040px the user icon and chevron (opens the slide-in panel); from 1040px up the Subscribe
    and Log In buttons (UserStatus) and no menu.
    Open, logged in (all widths): a 300px panel under the trigger (the avatar and up chevron show through its top,
-   17px down), right edge 24px past the chevron, bottom corners radius/utility, shadow/lg, 40% scrim. `fullWidth`
+   17px down), right edge where the closed menu ends (the search button's space stays empty, so the avatar and chevron don't move), bottom corners radius/utility, shadow/lg, 40% scrim. `fullWidth`
    (340px and below, Karl 2026-11-16) spans the screen. Open, logged out: a 300px panel that slides in from the right
    under the masthead. `view` forces a documentation state; without it the menu opens and closes itself.
    `inline` draws the open panel in the page flow (documentation). */

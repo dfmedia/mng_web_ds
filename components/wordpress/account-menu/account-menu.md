@@ -45,8 +45,8 @@ exported: 2026-11-17
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `(up to 1039px) / loggedOut / loggedOut / Open` | 300×650 | [910:16443](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16443) | 4 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-open.png) |
-| `(up to 1039px) / loggedOut / loggedOut / Closed` | 112×64 | [910:16436](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16436) | 51 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-closed.png) |
-| `(1040px and up) / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 18 | ![](previews/account-menu--1040px-and-up-loggedout-loggedout-closed.png) |
+| `(up to 1039px) / loggedOut / loggedOut / Closed` | 112×64 | [910:16436](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16436) | 58 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-closed.png) |
+| `(1040px and up) / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 23 | ![](previews/account-menu--1040px-and-up-loggedout-loggedout-closed.png) |
 | `(all widths) / loggedIn / loggedIn / Closed` | 112×64 | [910:16508](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16508) | 111 | ![](previews/account-menu--all-widths-loggedin-loggedin-closed.png) |
 | `(all widths) / loggedIn / nonSub / Open` | 300×954 | [910:16526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16526) | 7 | ![](previews/account-menu--all-widths-loggedin-nonsub-open.png) |
 | `(all widths) / loggedIn / subscriber / Open` | 300×840 | [910:16763](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16763) | 26 | ![](previews/account-menu--all-widths-loggedin-subscriber-open.png) |
@@ -207,8 +207,9 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.section-item.section-item.container.padding-left` | `{spacing.200}` |
 | `account-menu.base.section-item.section-item.container.padding-right` | `{spacing.200}` |
 | `account-menu.base.section-item.section-item.container.padding-top` | `{spacing.100}` |
+| `account-menu.base.section-item.section-item.container.container.gap` | `{spacing.200}` |
 | `account-menu.base.section-item.section-item.container.container.height` | 48px |
-| `account-menu.base.section-item.section-item.container.container.padding-right` | `{spacing.300}` |
+| `account-menu.base.section-item.section-item.container.container.padding-right` | `{spacing.100}` |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.background` | `{color.gray.max}` |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.gap` | `{spacing.050}` |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.padding-top` | `{spacing.200}` |
@@ -217,6 +218,8 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.icons.width` | 16px |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.userstatus.height` | 30px |
 | `account-menu.base.section-item.section-item.container.container.accountmenu-desktop.userstatus.width` | 30px |
+| `account-menu.base.section-item.section-item.container.container.searchbar.height` | 48px |
+| `account-menu.base.section-item.section-item.container.container.searchbar.width` | 30px |
 | `account-menu.base.section-item.section-item.container.user-email.color` | `{color.gray.min}` |
 | `account-menu.base.section-item.section-item.container.user-email.font-family` | `{font.family.noto-sans}` |
 | `account-menu.base.section-item.section-item.container.user-email.font-size` | `{font.size.14}` |
@@ -237,8 +240,9 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.status-alert.item.container.newsletter-info.font-size` | `{font.size.14}` |
 | `account-menu.status-alert.item.container.newsletter-info.font-weight` | `{font.weight.bold}` |
 | `account-menu.status-alert.section-item.container.container.padding-top` | `{spacing.100}` |
+| `account-menu.status-alert.section-item.container.container.container.gap` | `{spacing.200}` |
 | `account-menu.status-alert.section-item.container.container.container.height` | 48px |
-| `account-menu.status-alert.section-item.container.container.container.padding-right` | `{spacing.300}` |
+| `account-menu.status-alert.section-item.container.container.container.padding-right` | `{spacing.100}` |
 | `account-menu.status-alert.section-item.container.container.container.padding-top` | `{spacing.100}` |
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.background` | `{color.gray.max}` |
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.gap` | `{spacing.050}` |
@@ -250,6 +254,8 @@ From `account-menu.tokens.json`. References point at system tokens (`tokens/core
 | `account-menu.status-alert.section-item.container.container.container.accountmenu-desktop.userstatus.width` | 30px |
 | `account-menu.status-alert.section-item.container.container.container.inlinemessage.height` | 250px |
 | `account-menu.status-alert.section-item.container.container.container.inlinemessage.width` | 268px |
+| `account-menu.status-alert.section-item.container.container.container.searchbar.height` | 48px |
+| `account-menu.status-alert.section-item.container.container.container.searchbar.width` | 30px |
 | `account-menu.status-alert.section-item.container.container.email.color` | `{color.gray.min}` |
 | `account-menu.status-alert.section-item.container.container.email.font-family` | `{font.family.noto-sans}` |
 | `account-menu.status-alert.section-item.container.container.email.font-size` | `{font.size.14}` |
@@ -338,7 +344,7 @@ Production's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in
 
 - **Closed, logged in (all widths):** UserPic Small (30px, production's size) and the 16px chevron (`arrow-downSMALL`) 4px (`spacing/050`) apart (Karl, 2026-11-17; production's caret has 5px of padding: design-vs-production 11.11); the masthead search icon follows 16px (`spacing/200`) to the right, centered on the avatar.
 - **Closed, logged out:** below 1040px the user icon and chevron (opens the slide-in panel); from 1040px up the Subscribe and Log In buttons (UserStatus; design-vs-production 10.10) and no menu.
-- **Open, logged in:** a 300px panel; at 340px and below it spans the full width of the screen (Karl, 2026-11-16). Its right edge is 24px (`spacing/300`) past the chevron; the avatar and up chevron show at its top, 17px down; it covers the masthead search icon (production). `color/gray/max`, bottom corners `radius/utility` (5px), `shadow/lg`, a 40% black scrim behind.
+- **Open, logged in:** a 300px panel; at 340px and below it spans the full width of the screen (Karl, 2026-11-16). Its right edge is the closed menu's right edge: the search icon's space (16px `spacing/200`, 30px, 8px `spacing/100`) stays, empty, so the avatar and chevron don't move when it opens (Karl, 2026-11-17). The avatar and up chevron show at its top, 17px down; the search icon is hidden while it's open (production). `color/gray/max`, bottom corners `radius/utility` (5px), `shadow/lg`, a 40% black scrim behind.
 - **Header:** User name Noto Sans Bold 20 (`font/size/20`) and User email Regular 14 (`font/size/14`), `color/gray/min` (18.4:1), one line each with an ellipsis; 8px (`spacing/100`) above, 16px (`spacing/200`) at the sides and below; a 1px `color/gray/500` line.
 - **Rows:** Reader Dashboard, Subscription (with the Subscription type, Regular 16), Gifted Articles, Saved Articles, Contact us, Log Out. 16px (`spacing/200`) padding, label Bold 16 `color/gray/min`, 16px chevron (`arrow-rightSMALL`; none on Log Out), 1px `color/gray/500` line. Saved Articles always shows (Karl, 2026-11-16). The whole row is the link.
 - **Row states:** hover `color/gray/600` (16.0:1); pressed `color/gray/500` with a `color/gray/400` line (11.3:1); keyboard focus a 2px `color/gray/black` line inside the row.
@@ -362,12 +368,12 @@ Production's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **221**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **233**.
 
 Inside components: Masthead ×90, ObitMastHead ×28, AccountMenu ×1.
-Placed on pages: Menus and Parts ×95.
+Placed on pages: Menus and Parts ×95, Homepage ×6, Article Page ×4, Section Front ×2.
 
-**Built from:** Icons ×20, Button Primary ×7, UserStatus ×6, SearchBar ×3, AccountMenu ×1, InLineMessage ×1
+**Built from:** Icons ×20, Button Primary ×7, UserStatus ×6, SearchBar ×6, AccountMenu ×1, InLineMessage ×1
 Icon variants: `arrow-rightSMALL` ×15, `arrow-upSmall` ×3, `arrow-downSMALL` ×2.
 
 ## Production
