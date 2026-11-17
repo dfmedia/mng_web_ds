@@ -193,9 +193,9 @@
      "name": "Button Social-Login",
      "where": "Buttons, 6516:5394",
      "status": "In system",
-     "updated": "2026-11-11",
+     "updated": "2026-11-17",
      "component": "ButtonSocialLogin",
-     "note": "Rebuilt in place 2026-11-11 (Embedded Login uses it): pill, 16 variants incl. icon only."
+     "note": "Rebuilt in place 2026-11-11 (Embedded Login uses it); Brand None / Apple / Google / Facebook added 2026-11-17 (vendor-required looks; the Vendor proposal set merged in). 40 variants."
     },
     {
      "name": "SocialButtons",

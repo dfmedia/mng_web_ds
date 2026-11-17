@@ -9,7 +9,7 @@ component_key: 578eab1eda8ca02fce640d874b3aa22e81ba341f
 variants: 9
 tokens: modals-offset.tokens.json
 skeleton: modals-offset.html
-exported: 2026-11-12
+exported: 2026-11-17
 ---
 
 # ModalsOffset
@@ -89,11 +89,11 @@ From `modals-offset.tokens.json`. References point at system tokens (`tokens/cor
 |---|---|
 | `modals-offset.base.button-in-line-close.height` | 40px |
 | `modals-offset.base.button-in-line-close.width` | 40px |
-| `modals-offset.base.contents.button-social-login-vendor.height` | 40px |
-| `modals-offset.base.contents.button-social-login-vendor.width` | 292px |
+| `modals-offset.base.contents.button-social-login.height` | 40px |
+| `modals-offset.base.contents.button-social-login.width` | 292px |
 | `modals-offset.base.contents.frame-11508.gap` | `{spacing.200}` |
-| `modals-offset.base.contents.frame-11508.button-social-login-vendor.height` | 40px |
-| `modals-offset.base.contents.frame-11508.button-social-login-vendor.width` | 292px |
+| `modals-offset.base.contents.frame-11508.button-social-login.height` | 40px |
+| `modals-offset.base.contents.frame-11508.button-social-login.width` | 292px |
 | `modals-offset.base.contents.frame-11508.frame-12903.gap` | `{spacing.100}` |
 | `modals-offset.base.contents.frame-11508.frame-12903.frame-12905.padding-top` | `{spacing.050}` |
 | `modals-offset.base.contents.frame-11508.frame-12903.frame-12905.width` | 18px |
@@ -289,8 +289,8 @@ From `modals-offset.tokens.json`. References point at system tokens (`tokens/cor
 | `modals-offset.base.panel.contents-frame.gap` | `{spacing.200}` |
 | `modals-offset.base.panel.contents-frame.main.padding-bottom` | `{spacing.100}` |
 | `modals-offset.base.panel.contents-frame.main.padding-top` | `{spacing.100}` |
-| `modals-offset.base.panel.contents-frame.main.button-social-login-vendor.height` | 40px |
-| `modals-offset.base.panel.contents-frame.main.button-social-login-vendor.width` | 292px |
+| `modals-offset.base.panel.contents-frame.main.button-social-login.height` | 40px |
+| `modals-offset.base.panel.contents-frame.main.button-social-login.width` | 292px |
 | `modals-offset.base.panel.contents-frame.title.gap` | `{spacing.100}` |
 | `modals-offset.base.panel.contents-frame.title.icon.padding-top` | `{spacing.050}` |
 | `modals-offset.base.panel.contents-frame.title.icon.width` | 18px |
@@ -345,7 +345,7 @@ From `modals-offset.tokens.json`. References point at system tokens (`tokens/cor
 - **Panel:** `color/gray/max`, 1px `color/gray/500` border, `radius/utility` (5px), `shadow/lg`; Button In-Line Close (40×40) at the top right.
 - **Float (desktop):** 546px wide; 24px (`spacing/300`) padding; 16px (`spacing/200`) between the title and the buttons; 8px (`spacing/100`) inside the groups.
 - **FixedFooter (360, 340):** 328 / 308px wide, 16px from each screen edge; 16px (`spacing/200`) padding and gap; the title keeps 32px (`spacing/400`) on its right to clear the close button.
-- **Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Sign in with Apple button is Button Social-Login Vendor, Brand=Apple (proposal; replaced Button Pay 2026-11-12).
+- **Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Sign in with Apple button is Button Social-Login, Brand=Apple, label "Sign in with Apple" (2026-11-17; replaced Button Pay 2026-11-12, then the Vendor proposal set).
 - **Google account chooser** (GOTcustom, AllOptions): Google's own UI, shown for reference; not tokenized.
 
 ## Accessibility
@@ -364,7 +364,7 @@ From `modals-offset.tokens.json`. References point at system tokens (`tokens/cor
 Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **0**.
 
 
-**Built from:** UserImage ×18, Button In-Line Close ×9, Icons ×9, Button Social-Login Vendor ×6
+**Built from:** UserImage ×18, Button In-Line Close ×9, Icons ×9, Button Social-Login ×6
 Icon variants: `google-color` ×3, `appleinc` ×3, `padlock` ×3.
 
 ## Production
@@ -382,4 +382,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `modals-offset.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

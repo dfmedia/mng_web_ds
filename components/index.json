@@ -140,10 +140,10 @@
         "node": "6516:5394",
         "set": "Button Social-Login"
       },
-      "variants": 16,
-      "instances": 11,
-      "knownIssues": 1,
-      "exported": "2026-11-11"
+      "variants": 40,
+      "instances": 28,
+      "knownIssues": 2,
+      "exported": "2026-11-17"
     },
     {
       "slug": "button-tertiary",
@@ -495,7 +495,7 @@
       "variants": 9,
       "instances": 0,
       "knownIssues": 2,
-      "exported": "2026-11-12"
+      "exported": "2026-11-17"
     },
     {
       "slug": "popover",

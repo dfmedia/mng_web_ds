@@ -11,7 +11,7 @@
       },
       "production": null,
       "layer": "core",
-      "exported": "2026-11-12"
+      "exported": "2026-11-17"
     }
   },
   "modals-offset": {
@@ -33,7 +33,7 @@
         }
       },
       "contents": {
-        "button-social-login-vendor": {
+        "button-social-login": {
           "height": {
             "$type": "dimension",
             "$value": {
@@ -61,7 +61,7 @@
               }
             }
           },
-          "button-social-login-vendor": {
+          "button-social-login": {
             "height": {
               "$type": "dimension",
               "$value": {
@@ -2179,7 +2179,7 @@
                 }
               }
             },
-            "button-social-login-vendor": {
+            "button-social-login": {
               "height": {
                 "$type": "dimension",
                 "$value": {

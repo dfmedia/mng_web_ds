@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&family=Noto+Serif:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@500&display=swap"); /* Button Social-Login Brand=Google only */
 /* MNG Web Design System: component stylesheet (scripts/claude-design-system/). Load after tokens.css.
    Every value here is a token variable (--mng-*) from tokens.css, the per-theme block below, or the
    component tokens further down; component-only raw values are copied from the component token files. */

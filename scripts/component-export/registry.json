@@ -815,7 +815,7 @@
         "**Panel:** `color/gray/max`, 1px `color/gray/500` border, `radius/utility` (5px), `shadow/lg`; Button In-Line Close (40×40) at the top right.",
         "**Float (desktop):** 546px wide; 24px (`spacing/300`) padding; 16px (`spacing/200`) between the title and the buttons; 8px (`spacing/100`) inside the groups.",
         "**FixedFooter (360, 340):** 328 / 308px wide, 16px from each screen edge; 16px (`spacing/200`) padding and gap; the title keeps 32px (`spacing/400`) on its right to clear the close button.",
-        "**Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Sign in with Apple button is Button Social-Login Vendor, Brand=Apple (proposal; replaced Button Pay 2026-11-12).",
+        "**Title:** Noto Sans Bold 20 (`font/size/20`), `color/gray/min`, with the Apple or Google mark. The Sign in with Apple button is Button Social-Login, Brand=Apple, label \"Sign in with Apple\" (2026-11-17; replaced Button Pay 2026-11-12, then the Vendor proposal set).",
         "**Google account chooser** (GOTcustom, AllOptions): Google's own UI, shown for reference; not tokenized."
       ],
       "breakpoints": "| Device | Location | Width |\n|---|---|---|\n| XLDesktop | Float | 546px |\n| SMMobile (360) | FixedFooter | 328px |\n| XSFold (340) | FixedFooter | 308px |",
@@ -1869,21 +1869,24 @@
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "6516:5394",
       "documentationFrame": "7558:5006",
-      "description": "Social sign-in and secondary pill button (Embedded Login: Apple ID, Facebook and Google sign-in, the round icon buttons, Continue, Create Account). Icon position = None, left, right, only (round, icon only); interaction = Default, hover, pressed; inFocus adds the focus ring. Rebuilt in place 2026-11-11 so Embedded Login's instances keep their labels and icons. Renamed from Button Social 2026-11-11 (Karl).",
+      "description": "Social sign-in and secondary pill button (Embedded Login: the Apple, Google and Facebook sign-in buttons, the round icon buttons, Continue, Create Account; ModalsOffset: Sign in with Apple). Brand = None (our gray button), Apple, Google, Facebook, each drawn the way the vendor requires (Karl, 2026-11-17; merged in from the Button Social-Login Vendor proposal). Icon position = None, left, right, only (round, icon only); brands have left and only. interaction = Default, hover, pressed; inFocus adds the focus ring. Rebuilt in place 2026-11-11 so Embedded Login's instances keep their labels and icons. Renamed from Button Social 2026-11-11 (Karl).",
       "rules": [
-        "**Size:** 40px tall. The `Button` fills the instance's width inside the 8px margin (the variant root has a fixed width that hugs the label by default), so an instance set wider fills its column, as Embedded Login does (Karl, 2026-11-11). 16px `spacing/200` side padding; `Icon position=only` is a 40x40 circle that stays round.",
+        "**Size:** 40px tall. The `Button` fills the instance's width inside the 8px margin (the variant root has a fixed width that hugs the label by default), so an instance set wider fills its column, as Embedded Login does (Karl, 2026-11-11). 16px `spacing/200` side padding (Google 12px); `Icon position=only` is a 40x40 circle that stays round. In Figma, changing Brand resets an instance to the variant's width, so set it wide again.",
         "**Margin:** the variant root keeps an 8px (`spacing/100`) left and right margin, like Button Tertiary, so the visible button is 16px narrower than the instance (Karl, 2026-11-11).",
-        "**Shape:** fully round ends at any height: the corner radius is half the height. Figma uses 999; CSS `border-radius: 9999px`. No token (Karl, 2026-11-11: the radius depends only on the height).",
-        "**Contents:** Icon (16px, the `Icon` instance-swap property) and Label (Noto Sans Regular 16px, `color/gray/min`, the `Label` text property) with an 8px (`spacing/100`) gap. Each variant holds only the icon it shows.",
-        "**Colors:** Default `color/gray/600` with a 1px inside `color/gray/400` border (label 16:1); hover and pressed `color/gray/max` with a 1px inside `color/gray/500` border (label 18:1), the same as Button Tertiary (Karl, 2026-11-11).",
-        "**Focus ring:** the Default button plus a `Focus Ring` frame 1px outside it, 2px `color/gray/black`, round like the button. In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;`.",
-        "**Brand icons** keep their own colors (Google's multicolor G; Facebook blue in Embedded Login).",
-        "**Accessibility:** a button (or link) named by its label; an icon-only button needs an accessible name (e.g. `aria-label=\"Continue with Apple\"`). Icons are decorative.",
-        "**Borders:** faint on a white page (`color/gray/400` 2.4:1, hover `color/gray/500` 1.6:1), as on Button Tertiary; accepted (Karl, 2026-11-11)."
+        "**Shape:** fully round ends at any height: the corner radius is half the height. Figma uses 999; CSS `border-radius: 9999px`. No token (Karl, 2026-11-11: the radius depends only on the height). Apple and Google both allow the pill.",
+        "**Brand=None:** Icon (16px, the `Icon` instance-swap property) and Label (Noto Sans Regular 16px, `color/gray/min`, the `Label` text property) with an 8px (`spacing/100`) gap. Each variant holds only the icon it shows. Default `color/gray/600` with a 1px inside `color/gray/400` border (label 16:1); hover and pressed `color/gray/max` with a 1px inside `color/gray/500` border (label 18:1), the same as Button Tertiary (Karl, 2026-11-11). Used for Continue, Create Account and the Email circle.",
+        "**Brand=Apple:** `color/gray/black`, white Apple logo and \"Continue with Apple\" (Apple allows Sign in / Sign up / Continue with Apple), Noto Sans Regular 17px (43% of the 40px height, Apple's rule; no token), 8px gap. White on black 21:1; hover #141414 (18.4:1), pressed #1F1F1F (16.5:1).",
+        "**Brand=Google:** Google's Light theme: white with a 1px inside #747775 border, the multicolor G at 18px, 10px gap, 12px side padding, \"Continue with Google\" in Google Sans Flex Medium 14 / 20, #1F1F1F (16.5:1). Hover #EDEDED (14.1:1), pressed #E4E4E4 (13.0:1). These are Google's required values, not MNG tokens.",
+        "**Brand=Facebook:** Facebook brand blue #1877F2, white \"f\" and \"Continue with Facebook\", Noto Sans Regular 16px, 8px gap. **White on #1877F2 is 4.2:1 and fails WCAG AA at 16px regular (4.5:1); Karl accepted it (2026-11-17)** to keep Facebook's brand blue. Hover #166DDF (4.9:1), pressed #1569D5 (5.2:1).",
+        "**Icon only:** Apple (black) and Google (white, #747775 border) are allowed by the vendors. **The blue Facebook circle is not allowed by Facebook** (no \"f\" without a call to action); kept at Karl's request (2026-11-17).",
+        "**Brand label and logo are fixed in the variant** (not bound to the `Label` or `Icon` property), so they can't be swapped by mistake; the label can still be overridden (ModalsOffset: \"Sign in with Apple\"). Logos are placeholders from our icon font until the vendors' own artwork is used.",
+        "**Focus ring:** a `Focus Ring` frame 1px outside the button, 2px `color/gray/black`, round like the button. In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;`.",
+        "**Accessibility:** a button (or link) named by its label; an icon-only button needs an accessible name (e.g. `aria-label=\"Continue with Apple\"`). Icons and logos are decorative.",
+        "**Borders:** Brand=None borders are faint on a white page (`color/gray/400` 2.4:1, hover `color/gray/500` 1.6:1), as on Button Tertiary; accepted (Karl, 2026-11-11)."
       ],
       "breakpoints": null,
       "knownIssues": [],
-      "production": "Used in the Embedded Login designs; not checked against production."
+      "production": "Used in the Embedded Login designs and ModalsOffset; not checked against production. Vendor rules checked 2026-11-11 (Apple Human Interface Guidelines, Google Sign-In branding, Facebook brand guidelines)."
     },
     {
       "slug": "social-media-button",

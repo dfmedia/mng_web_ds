@@ -9,13 +9,13 @@
         "componentSet": "Button Social-Login",
         "page": "Buttons | 2026.09.30"
       },
-      "production": "Used in the Embedded Login designs; not checked against production.",
+      "production": "Used in the Embedded Login designs and ModalsOffset; not checked against production. Vendor rules checked 2026-11-11 (Apple Human Interface Guidelines, Google Sign-In branding, Facebook brand guidelines).",
       "layer": "core",
-      "exported": "2026-11-11"
+      "exported": "2026-11-17"
     }
   },
   "button-social-login": {
-    "interaction-default": {
+    "interaction-default.brand-none": {
       "button": {
         "background": {
           "$type": "color",
@@ -41,7 +41,79 @@
         }
       }
     },
-    "interaction-hover": {
+    "interaction-default.brand-apple": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.gray.black}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/black"
+              }
+            }
+          }
+        }
+      }
+    },
+    "interaction-default.brand-google": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.gray.max}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/max"
+              }
+            }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4549,
+              0.4667,
+              0.4588
+            ],
+            "alpha": 1,
+            "hex": "#747775"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(116, 119, 117, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "interaction-default.brand-facebook": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0941,
+              0.4667,
+              0.949
+            ],
+            "alpha": 1,
+            "hex": "#1877f2"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(24, 119, 242, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "interaction-hover.brand-none": {
       "button": {
         "background": {
           "$type": "color",
@@ -67,7 +139,87 @@
         }
       }
     },
-    "interaction-pressed": {
+    "interaction-hover.brand-apple": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.gray.min}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/min"
+              }
+            }
+          }
+        }
+      }
+    },
+    "interaction-hover.brand-google": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.9294,
+              0.9294,
+              0.9294
+            ],
+            "alpha": 1,
+            "hex": "#ededed"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(237, 237, 237, 1)",
+              "unbound": true
+            }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4549,
+              0.4667,
+              0.4588
+            ],
+            "alpha": 1,
+            "hex": "#747775"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(116, 119, 117, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "interaction-hover.brand-facebook": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0863,
+              0.4275,
+              0.8745
+            ],
+            "alpha": 1,
+            "hex": "#166ddf"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(22, 109, 223, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "interaction-pressed.brand-none": {
       "button": {
         "background": {
           "$type": "color",
@@ -88,6 +240,94 @@
               "figma": {
                 "variable": "Colors/color/gray/500"
               }
+            }
+          }
+        }
+      }
+    },
+    "interaction-pressed.brand-apple": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.1216,
+              0.1216,
+              0.1216
+            ],
+            "alpha": 1,
+            "hex": "#1f1f1f"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(31, 31, 31, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "interaction-pressed.brand-google": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.8941,
+              0.8941,
+              0.8941
+            ],
+            "alpha": 1,
+            "hex": "#e4e4e4"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(228, 228, 228, 1)",
+              "unbound": true
+            }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.4549,
+              0.4667,
+              0.4588
+            ],
+            "alpha": 1,
+            "hex": "#747775"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(116, 119, 117, 1)",
+              "unbound": true
+            }
+          }
+        }
+      }
+    },
+    "interaction-pressed.brand-facebook": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.0824,
+              0.4118,
+              0.8353
+            ],
+            "alpha": 1,
+            "hex": "#1569d5"
+          },
+          "$extensions": {
+            "com.mng": {
+              "rgba": "rgba(21, 105, 213, 1)",
+              "unbound": true
             }
           }
         }
@@ -125,6 +365,45 @@
             "unit": "px"
           }
         },
+        "content": {
+          "label": {
+            "line-height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      },
+      "root": {
+        "padding-left": {
+          "$type": "dimension",
+          "$value": "{spacing.100}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/100"
+              }
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": "{spacing.100}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/100"
+              }
+            }
+          }
+        }
+      }
+    },
+    "brand-none": {
+      "button": {
         "padding-left": {
           "$type": "dimension",
           "$value": "{spacing.200}",
@@ -233,26 +512,354 @@
             }
           }
         }
-      },
-      "root": {
+      }
+    },
+    "brand-apple": {
+      "button": {
         "padding-left": {
           "$type": "dimension",
-          "$value": "{spacing.100}",
+          "$value": "{spacing.200}",
           "$extensions": {
             "com.mng": {
               "figma": {
-                "variable": "Spacing & Radius/spacing/100"
+                "variable": "Spacing & Radius/spacing/200"
               }
             }
           }
         },
         "padding-right": {
           "$type": "dimension",
-          "$value": "{spacing.100}",
+          "$value": "{spacing.200}",
           "$extensions": {
             "com.mng": {
               "figma": {
-                "variable": "Spacing & Radius/spacing/100"
+                "variable": "Spacing & Radius/spacing/200"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "font-family": {
+              "$type": "fontFamily",
+              "$value": "{font.family.noto-sans}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/family/noto-sans"
+                  }
+                }
+              }
+            },
+            "font-size": {
+              "$type": "dimension",
+              "$value": {
+                "value": 17,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            },
+            "font-weight": {
+              "$type": "fontWeight",
+              "$value": "{font.weight.regular}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/style/regular"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "brand-google": {
+      "button": {
+        "padding-left": {
+          "$type": "dimension",
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": {
+            "value": 12,
+            "unit": "px"
+          },
+          "$extensions": {
+            "com.mng": {
+              "unbound": true
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": {
+              "value": 10,
+              "unit": "px"
+            },
+            "$extensions": {
+              "com.mng": {
+                "unbound": true
+              }
+            }
+          },
+          "icon-left": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 18,
+                "unit": "px"
+              }
+            },
+            "icon-color": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.2588,
+                  0.5216,
+                  0.9569
+                ],
+                "alpha": 1,
+                "hex": "#4285f4"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "rgba": "rgba(66, 133, 244, 1)",
+                  "unbound": true
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 18,
+                "unit": "px"
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": {
+                "colorSpace": "srgb",
+                "components": [
+                  0.1216,
+                  0.1216,
+                  0.1216
+                ],
+                "alpha": 1,
+                "hex": "#1f1f1f"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "rgba": "rgba(31, 31, 31, 1)",
+                  "unbound": true
+                }
+              }
+            },
+            "font-family": {
+              "$type": "fontFamily",
+              "$value": "Google Sans Flex",
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            },
+            "font-size": {
+              "$type": "dimension",
+              "$value": "{font.size.14}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/size/14"
+                  }
+                }
+              }
+            },
+            "font-weight": {
+              "$type": "fontWeight",
+              "$value": 500,
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "brand-facebook": {
+      "button": {
+        "padding-left": {
+          "$type": "dimension",
+          "$value": "{spacing.200}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/200"
+              }
+            }
+          }
+        },
+        "padding-right": {
+          "$type": "dimension",
+          "$value": "{spacing.200}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Spacing & Radius/spacing/200"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "font-family": {
+              "$type": "fontFamily",
+              "$value": "{font.family.noto-sans}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/family/noto-sans"
+                  }
+                }
+              }
+            },
+            "font-size": {
+              "$type": "dimension",
+              "$value": "{font.size.16}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/size/16"
+                  }
+                }
+              }
+            },
+            "font-weight": {
+              "$type": "fontWeight",
+              "$value": "{font.weight.regular}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/style/regular"
+                  }
+                }
               }
             }
           }
@@ -339,6 +946,116 @@
               "value": 2,
               "unit": "px"
             }
+          }
+        }
+      }
+    },
+    "brand-none.icon-position-none": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 147,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-none.icon-position-left": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 171,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-none.icon-position-right": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 171,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-none.icon-position-only": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 56,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-apple.icon-position-left": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 234,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-apple.icon-position-only": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 56,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-google.icon-position-left": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 217,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-google.icon-position-only": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 56,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-facebook.icon-position-left": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 253,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "brand-facebook.icon-position-only": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 56,
+            "unit": "px"
           }
         }
       }
