@@ -53,11 +53,12 @@ Every site uses one of three shared WordPress themes, and many sites have their 
 | Theme | Example sites | Headlines / body text | Eyebrow (section label) |
 |---|---|---|---|
 | Bold Coastal (default) | ocregister.com, denverpost.com (own colors) | Noto Serif / Noto Sans | Noto Sans 20, Regular |
-| Measured Vibrant | chicagotribune.com, orlandosentinel.com (own colors) | Noto Serif / Noto Sans | Noto Sans 17, Bold |
+| Measured Vibrant | chicagotribune.com (own colors), orlandosentinel.com (own colors) | Noto Serif / Noto Sans | Noto Sans 17, Bold |
 | Modern Earthy | canoncitydailyrecord.com (NEPA-PMP), mcall.com (own colors) | Noto Sans / Noto Serif | Noto Serif 21, Regular |
 
 - Type sizes, weights and spacing are the same in every theme; only the font families and the eyebrow change.
 - `color/theme/subsite-custom` isn't shown yet: only Bold Coastal has a value (`#0097a7`); Measured Vibrant and Modern Earthy have none. The sub-theme values (Denver Post `#000000`, The Press Democrat `#eeeeee`, St. Paul Pioneer Press `#ffffff`, The Baltimore Sun `#1c2551`, South Florida Sun Sentinel `#000000`) come with the per-site themes.
+- Chicago Tribune has its own colors since 2026-11-18: primary-lighter `#1583db`, primary-light `#1378c8`, primary `#1063a5`, primary-dark `#0e5995`, primary-darker `#0c4b7e`, secondary `#eeff41`, tertiary `#eb5300` (Figma: [Chicago Tribune style guide](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7632-22566)). Like the other per-site colors, they come with the per-site themes; until then the Measured Vibrant theme gives Chicago Tribune's fonts and eyebrow, not its colors.
 - Obituaries (Endless Tributes) look the same on every site: use the `mng-color-tributes-*` colors, whatever the theme.
 
 ## Color
