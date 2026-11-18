@@ -1505,14 +1505,14 @@
           "name": "Chicago Tribune",
           "level": "sub-theme",
           "parentTheme": "measured-vibrant",
-          "loads": "measuredvibrant.css (Measured Vibrant values; own Figma mode)",
+          "loads": "measuredvibrant.css (no Customizer override on div#page yet)",
           "figmaMode": "Chicago Tribune",
-          "productionAudit": null,
-          "mismatchCount": 2,
+          "productionAudit": "2026-11-18",
+          "mismatchCount": 6,
           "sites": [
             "chicagotribune.com"
           ],
-          "note": "No style guide of its own; audited under Measured Vibrant, whose production callouts apply."
+          "note": "Own palette since 2026-11-18 (Karl; approved by Kristen 2026-11-18) and its own style guide on the Color Pallets page. Verified live 2026-11-18: loads measuredvibrant.css only, no Customizer override on div#page, so production still shows the Measured Vibrant defaults."
         },
         "south-florida-sun-sentinel": {
           "name": "South Florida Sun Sentinel",
@@ -2688,7 +2688,7 @@
             "measured-vibrant",
             "chicago-tribune"
           ],
-          "mismatchCount": 2,
+          "mismatchCount": 6,
           "overrides": "sites/chicagotribune-com.tokens.json"
         },
         "mcall.com": {

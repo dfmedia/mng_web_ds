@@ -192,7 +192,7 @@ The same two stacks apply on every theme; each theme only chooses which one its 
 
 ## 5. Color Tokens — theme and sub-theme color fixes (every publication)
 
-**Source:** the production columns of the Color Pallets style guides, audited 2026-08-03 (PMP 2026-09-24, Hartford Courant 2026-09-25, NEPA and the disputed Tribune sites 2026-10-01, The Mercury News, East Bay Times, Chicago Tribune and Cañon City 2026-10-19).
+**Source:** the production columns of the Color Pallets style guides, audited 2026-08-03 (PMP 2026-09-24, Hartford Courant 2026-09-25, NEPA and the disputed Tribune sites 2026-10-01, The Mercury News, East Bay Times and Cañon City 2026-10-19, Chicago Tribune 2026-11-18 with its new palette).
 
 **Figma spec (source of truth):** each theme's or sub-theme's design spec column on the Color Pallets page, and the matching Colors collection mode. Every row in the tables below is a red-dashed callout in that theme's "in Production" column. Fix production; don't change the tokens.
 
@@ -1064,16 +1064,20 @@ Loads: `measuredvibrant.css`. Figma mode: MeasuredVibrant. Production audited 20
 
 ##### Sub-theme: Chicago Tribune
 
-Loads: `measuredvibrant.css (Measured Vibrant values; own Figma mode)`. Figma mode: Chicago Tribune.
+Loads: `measuredvibrant.css (no Customizer override on div#page yet)`. Figma mode: Chicago Tribune. Production audited 2026-11-18.
 
-> No style guide of its own; audited under Measured Vibrant, whose production callouts apply.
+> Own palette since 2026-11-18 (Karl; approved by Kristen 2026-11-18) and its own style guide on the Color Pallets page. Verified live 2026-11-18: loads measuredvibrant.css only, no Customizer override on div#page, so production still shows the Measured Vibrant defaults.
 
-**Chicago Tribune** (chicagotribune.com) · sub-theme Chicago Tribune · 2 fixes
+**Chicago Tribune** (chicagotribune.com) · sub-theme Chicago Tribune · 6 fixes
 
 | Token | Design | Production | Fix |
 |---|---|---|---|
-| `--primary-lighter` | `#717fd1` | `MISSING` (inherits shared default #47b6ff) | Define --primary-lighter: #717fd1 (measuredvibrant.css, body). It isn't set today; the page falls back to #47b6ff. |
-| `--tertiary` | `#eb5300` | `#303f9f` (Theme default (body)) | Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body). |
+| `--primary-lighter` | `#1583db` | `MISSING` (inherits shared default #47b6ff) | Define --primary-lighter: #1583db (Customizer, div#page). It isn't set today; the page falls back to #47b6ff. |
+| `--primary-light` | `#1378c8` | `#5869ca` (Measured Vibrant default (body)) | Change --primary-light from #5869ca to #1378c8 (Customizer, div#page). |
+| `--primary` | `#1063a5` | `#3f51b5` (Measured Vibrant default (body)) | Change --primary from #3f51b5 to #1063a5 (Customizer, div#page). |
+| `--primary-dark` | `#0e5995` | `#32408f` (Measured Vibrant default (body)) | Change --primary-dark from #32408f to #0e5995 (Customizer, div#page). |
+| `--primary-darker` | `#0c4b7e` | `#171e44` (Measured Vibrant default (body)) | Change --primary-darker from #171e44 to #0c4b7e (Customizer, div#page). |
+| `--tertiary` | `#eb5300` | `#303f9f` (Measured Vibrant default (body)) | Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body; the Measured Vibrant theme fix covers it). |
 
 ##### Sub-theme: GrowthSpotter
 
@@ -1232,7 +1236,7 @@ Ordered theme > cluster > sub-theme > site, as above.
 | Measured Vibrant | Tribune | — | Daily Press | dailypress.com | 2 |
 | Measured Vibrant | Tribune | — | New York Daily News | nydailynews.com | 2 |
 | Measured Vibrant | Tribune | — | The Virginian-Pilot | pilotonline.com | 2 |
-| Measured Vibrant | Tribune | Chicago Tribune | Chicago Tribune | chicagotribune.com | 2 |
+| Measured Vibrant | Tribune | Chicago Tribune | Chicago Tribune | chicagotribune.com | 6 |
 | Measured Vibrant | Tribune | GrowthSpotter | GrowthSpotter | growthspotter.com | 2 |
 | Measured Vibrant | Tribune | Hartford Courant | Hartford Courant | courant.com | 6 |
 | Measured Vibrant | Tribune | Orlando Sentinel | Orlando Sentinel | orlandosentinel.com | 2 |

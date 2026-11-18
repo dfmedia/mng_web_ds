@@ -238,11 +238,11 @@
 
 /* Chicago Tribune (sub-theme, on Measured Vibrant) */
 [data-mng-theme="chicago-tribune"] {
-  --primary-lighter: #717fd1;
-  --primary-light: #5869ca;
-  --primary: #3f51b5;
-  --primary-dark: #32408f;
-  --primary-darker: #171e44;
+  --primary-lighter: #1583db;
+  --primary-light: #1378c8;
+  --primary: #1063a5;
+  --primary-dark: #0e5995;
+  --primary-darker: #0c4b7e;
   --secondary: #eeff41;
   --tertiary: #eb5300;
   --near-black: #1f1e1c;
@@ -1493,12 +1493,12 @@
   --subsite-text: #f9f9f9; /* site override */
 }
 /* Sub-theme: Chicago Tribune */
-[data-mng-site="chicagotribune.com"] { /* Chicago Tribune · 2 engineering fixes */
-  --primary-lighter: #717fd1;
-  --primary-light: #5869ca;
-  --primary: #3f51b5;
-  --primary-dark: #32408f;
-  --primary-darker: #171e44;
+[data-mng-site="chicagotribune.com"] { /* Chicago Tribune · 6 engineering fixes */
+  --primary-lighter: #1583db;
+  --primary-light: #1378c8;
+  --primary: #1063a5;
+  --primary-dark: #0e5995;
+  --primary-darker: #0c4b7e;
   --secondary: #eeff41;
   --tertiary: #eb5300;
   --near-black: #1f1e1c;

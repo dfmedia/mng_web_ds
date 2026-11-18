@@ -64,8 +64,8 @@
   "notes": "> One color sub-theme for two groups: the 19 PMP sites (shared site-pmp stylesheet) and the 5 NEPA sites (each site's own plugin stylesheet). Verified live 2026-10-01: NEPA sets the same six variables on body with identical values, and renders the same type as PMP.\n\nGreeley Tribune's `div#page` override of `--primary`, `--primary-light` and `--primary-dark` is a documented exception (Karl, 2026-09-30): it's noted under the NEPA-PMP style guide without red outlines and needs no fix."
  },
  "Chicago Tribune": {
-  "loads": "`measuredvibrant.css (Measured Vibrant values; own Figma mode)`. Figma mode: Chicago Tribune.",
-  "notes": "> No style guide of its own; audited under Measured Vibrant, whose production callouts apply."
+  "loads": "`measuredvibrant.css (no Customizer override on div#page yet)`. Figma mode: Chicago Tribune. Production audited 2026-11-18.",
+  "notes": "> Own palette since 2026-11-18 (Karl; approved by Kristen 2026-11-18) and its own style guide on the Color Pallets page. Verified live 2026-11-18: loads measuredvibrant.css only, no Customizer override on div#page, so production still shows the Measured Vibrant defaults."
  },
  "South Florida Sun Sentinel": {
   "loads": "`measuredvibrant.css + Customizer override (div#page)`. Figma mode: South Florida Sun Sentinel. Production audited 2026-08-03.",

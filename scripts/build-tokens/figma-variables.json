@@ -1,7 +1,7 @@
 {
  "$description": "Snapshot of the MNG Web Design System Figma variables and shadow/* effect styles (file jFHYqhZbJjvWQmDI4myCsd), from one full read with scripts/build-tokens/extract.js through the Desktop Bridge plugin, saved by scripts/build-tokens/save-snapshot.py; never edit by hand. \"read\" is the date of that read; \"counts\" and \"hashes\" are what the read reported, and the saved data matches them. Input for make-tokens.py. Dashboard Typography is not included yet (Reader Dashboard tokens are added to core when ready).",
  "file": "jFHYqhZbJjvWQmDI4myCsd",
- "read": "2026-11-09",
+ "read": "2026-11-18",
  "counts": {
   "collections": {
    "Colors": 33,
@@ -14,7 +14,7 @@
  },
  "hashes": {
   "collections": {
-   "Colors": "1b2a14680521c5",
+   "Colors": "061fba8d76905f",
    "Type Primitives": "03e9b7706ae082",
    "Typeography Tokens": "0b5b4326362dd5",
    "Typography Theme": "003945fc31d96f",
@@ -265,6 +265,36 @@
     ]
    },
    {
+    "name": "color/theme/primary-lighter",
+    "type": "COLOR",
+    "values": {
+     "MeasuredVibrant": "#717fd1",
+     "ModernEarthy": "#fe521e",
+     "BoldCoastal": "#1799a5",
+     "DenverPost": "#c81632",
+     "Endless Tributes": "#f15f87",
+     "Chicago Tribune": "#1583db",
+     "South Florida Sun Sentinel": "#4a92af",
+     "Orlando Sentinel": "#5c95dd",
+     "Daily Herald": "#3b97dc",
+     "The Mercury News + East Bay Times": "#a0d0ed",
+     "St. Paul Pioneer Press": "#0187e0",
+     "Petaluma Argus-Courier": "#a8681a",
+     "The Press Democrat": "#d10f14",
+     "The Sonoma Index-Tribune": "#149de6",
+     "Morning Call": "#5399c4",
+     "21C Michigan Sites (Combined)": "#3e7cb2",
+     "NEPA-PMP": "#717fd1",
+     "Boston Herald": "#3c81c7",
+     "Hartford Courant": "#5796bd",
+     "GrowthSpotter": "#529950"
+    },
+    "description": "Theme primary ramp — lighter step, Endless Tributes mode. Corrected 2026.08.27 to match MNG Design System's confirmed color/tributes/primary-lighter (#F15F87) — the prior UI Style Guide value (#A39C8A) was a row-misalignment error that actually matched the Tan swatch, not this ramp step.",
+    "scopes": [
+     "ALL_SCOPES"
+    ]
+   },
+   {
     "name": "color/gray/max",
     "type": "COLOR",
     "values": {
@@ -295,36 +325,6 @@
     ]
    },
    {
-    "name": "color/theme/primary-lighter",
-    "type": "COLOR",
-    "values": {
-     "MeasuredVibrant": "#717fd1",
-     "ModernEarthy": "#fe521e",
-     "BoldCoastal": "#1799a5",
-     "DenverPost": "#c81632",
-     "Endless Tributes": "#f15f87",
-     "Chicago Tribune": "#717fd1",
-     "South Florida Sun Sentinel": "#4a92af",
-     "Orlando Sentinel": "#5c95dd",
-     "Daily Herald": "#3b97dc",
-     "The Mercury News + East Bay Times": "#a0d0ed",
-     "St. Paul Pioneer Press": "#0187e0",
-     "Petaluma Argus-Courier": "#a8681a",
-     "The Press Democrat": "#d10f14",
-     "The Sonoma Index-Tribune": "#149de6",
-     "Morning Call": "#5399c4",
-     "21C Michigan Sites (Combined)": "#3e7cb2",
-     "NEPA-PMP": "#717fd1",
-     "Boston Herald": "#3c81c7",
-     "Hartford Courant": "#5796bd",
-     "GrowthSpotter": "#529950"
-    },
-    "description": "Theme primary ramp — lighter step, Endless Tributes mode. Corrected 2026.08.27 to match MNG Design System's confirmed color/tributes/primary-lighter (#F15F87) — the prior UI Style Guide value (#A39C8A) was a row-misalignment error that actually matched the Tan swatch, not this ramp step.",
-    "scopes": [
-     "ALL_SCOPES"
-    ]
-   },
-   {
     "name": "color/theme/primary-light",
     "type": "COLOR",
     "values": {
@@ -333,7 +333,7 @@
      "BoldCoastal": "#00838f",
      "DenverPost": "#af1628",
      "Endless Tributes": "#c00c3d",
-     "Chicago Tribune": "#5869ca",
+     "Chicago Tribune": "#1378c8",
      "South Florida Sun Sentinel": "#2a728f",
      "Orlando Sentinel": "#1879c9",
      "Daily Herald": "#087abe",
@@ -363,7 +363,7 @@
      "BoldCoastal": "#007580",
      "DenverPost": "#8e1024",
      "Endless Tributes": "#8d092d",
-     "Chicago Tribune": "#3f51b5",
+     "Chicago Tribune": "#1063a5",
      "South Florida Sun Sentinel": "#136383",
      "Orlando Sentinel": "#1776c4",
      "Daily Herald": "#0072b4",
@@ -393,7 +393,7 @@
      "BoldCoastal": "#0a5962",
      "DenverPost": "#7d161e",
      "Endless Tributes": "#770000",
-     "Chicago Tribune": "#32408f",
+     "Chicago Tribune": "#0e5995",
      "South Florida Sun Sentinel": "#115975",
      "Orlando Sentinel": "#156cb4",
      "Daily Herald": "#0066a2",
@@ -423,7 +423,7 @@
      "BoldCoastal": "#014a52",
      "DenverPost": "#641614",
      "Endless Tributes": "#4d0000",
-     "Chicago Tribune": "#171e44",
+     "Chicago Tribune": "#0c4b7e",
      "South Florida Sun Sentinel": "#0f4f68",
      "Orlando Sentinel": "#1360a0",
      "Daily Herald": "#0e598b",
