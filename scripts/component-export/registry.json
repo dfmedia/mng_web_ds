@@ -1278,7 +1278,7 @@
         "**Production:** an empty Google Publisher Tag container (div) the size of the unit, centered in its slot. The slot keeps the unit's height so the page doesn't jump when the creative loads.",
         "**Production slots:** Sponsorship 1 `sponsorship_1`; Top Leaderboard `top_leaderboard`; Sponsorship 2 `sponsorship_2` / `_3` / `_4`; Cube 1 / 2 / 3 `cube1_rrail_atf` / `cube2_rrail_mid` / `cube3_rrail_lower`; Cube Article `cube_article`; Outstream Video `outstream_video`; Bottom Leaderboard `bottom_leaderboard`; Mobile Adhesion `mobile_adhesion`. Sidebar Rectangle is a generic 300x250 (also in Upcoming Events); Mid-Article Banner has no production slot (open item 8b).",
         "**Responsive:** each width gets its own unit. Full-width slots step down 970x250 (800px and up) → 728x90 (640–799px) → 320x50 or 320x100 (below 640px); right-rail cubes are 300x600 or 300x1050 at 800px and up and 300x250 below. The 970x90, 300x50 and 160x600 sizes are in the Ad Team's map but not placed yet.",
-        "**Mobile Adhesion:** fixed to the bottom of the viewport on phones and tablets; the close button is a 20px `color/gray/min` circle with a 2px white × set 4px in from the top right.",
+        "**Mobile Adhesion:** fixed to the bottom of the viewport on phones and tablets; the close button is a 20px `color/gray/min` circle with a 2px white × set 4px in from the top right. **Stacking (production, all 6 review sites, checked 2026-11-18):** the ad itself (Seedtag inScreen, `.st-placement.inScreen .st-adunit-ad`) is `z-index: 100000 !important`, set by Aditude on 2026-11-17 because Seedtag wrote its own maximum z-index inline and covered the mobile login modal; the theme's `#mobile-adhesion` wrapper is 9999 and its close button 99999. Anything that must cover the adhesion, such as modals and the login modal (`#digisubs-modalContainer`, 2147483647), stacks above 100000. Ad refresh only runs while the unit is at least 50% in view and not `display: none` (Aditude). Source: the Ad Map's Mobile tab.",
         "**Who sees ads:** readers without an ad-free subscription. The Masthead's AdFree states have none."
       ],
       "breakpoints": "| Width | Full-width slots | Right rail / in-feed cubes | Adhesion |\n|---|---|---|---|\n| 1040px and up | 970x250 | 300x600, 300x1050 (TOP ZONE) | none |\n| 800–1039px | 970x250 | 300x600, 300x1050 | none |\n| 640–799px | 728x90 | 300x250 | 728x90 |\n| below 640px | 320x50 (360) or 320x100 (340) | 300x250 | 320x50 |",
@@ -1289,7 +1289,7 @@
         "PLACE HOLDER isn't an ad unit (0 instances).",
         "Production: no visible ad disclosure label (design-vs-production 28.4); slot sizes and lazy loading 28.1–28.3; empty adhesion bar at 1024px and up 28.5."
       ],
-      "production": "Production GPT slots from the Ad Team's WordPress Ad Map, matched 2026-10-02; legacy export `figma-exports/mng-ads-export/` (2026-10-09, frozen)."
+      "production": "Production GPT slots from the Ad Team's [MNG/Tribune – WordPress Ad Map](https://docs.google.com/spreadsheets/d/12p8rvDIj4a58vzR1vxjferjJ58rCS-ekcpW7deLEOZw/edit?gid=103080138#gid=103080138) (Google Sheet; Desktop, Tablet and Mobile tabs), matched 2026-10-02 and rechecked 2026-11-18 (the only change since: the Mobile Adhesion z-index note, see Behavior); legacy export `figma-exports/mng-ads-export/` (2026-10-09, frozen)."
     },
     {
       "slug": "blocks-footer",

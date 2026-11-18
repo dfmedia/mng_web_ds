@@ -1,6 +1,6 @@
 # Containers, Images & Ad Units
 
-> **Updated 2026-09-01** (last change recorded in this doc). Current project status is in `MNG-Web-Design-System-Status.md`.
+> **Updated 2026-11-18** for the Mobile Adhesion z-index (§3.1d): Aditude dropped the ad's z-index to 100000 on 2026-11-17 so it no longer covers the mobile login modal; confirmed on all 6 review sites. The Ad Team's map is linked in §3.1c. **Earlier, 2026-09-01** (last change before that). Current project status is in `MNG-Web-Design-System-Status.md`.
 
 **Status:** Grid/image treatment audited (live sites, homepage, desktop width only) — not yet built in Figma. Ad units fully re-audited 2026-08-31 across all 6 pilot sites, homepage + article, desktop + mobile (see §3), and cross-checked 2026-09-01 against the Ad Team's own "WordPress Ad Map" documentation (§3.1c) — strong agreement, plus new coverage of APP/AMP/vendor-widget surfaces we hadn't audited live.
 **Pilot sites:** Chicago Tribune (CT), Denver Post (DP), Orange County Register (OCR), Orlando Sentinel (OS) — audited. Greeley Tribune and mcall.com (both on the Modern Earthy shared theme) joined the pilot set 2026-08-27; ad units on both are now confirmed (2026-08-31, see §3) and match the CT/OCR/DP taxonomy. The grid/container and image-treatment findings in §1–§2 are still CT/DP/OCR/OS only — Greeley/mcall haven't been checked for those yet.
@@ -76,6 +76,8 @@ Unlike the other 5 pilot sites (which use a numbered `#htlad-N-gpt` element-id c
 
 ### 3.1c Cross-checked against the Ad Team's own documentation — "MNG/Tribune – WordPress Ad Map" (updated 2025-12-26)
 
+The sheet: [MNG/Tribune – WordPress Ad Map](https://docs.google.com/spreadsheets/d/12p8rvDIj4a58vzR1vxjferjJ58rCS-ekcpW7deLEOZw/edit?gid=103080138#gid=103080138) (Google Sheet, view only; tabs Desktop, Tablet, Mobile, APP, AMP, Vendor Ad Slots, Newsletter overview, Obits Newsletters). Recheck it whenever the ad components change.
+
 Karl located the Ad team's internal ad-slot reference sheet (Google Sheet, view-only) and it strongly corroborates the GPT-scan findings above — but it's for a different MNG property (**The Press Democrat**, on the same shared WordPress ad system as our 6 pilot sites) and, critically, covers several surfaces our live-site scans never touched (APP, AMP, and third-party vendor widgets). Cross-checked 2026-09-01:
 
 - **Confirms every desktop/mobile slot name and size we measured**, independently: `sponsorship_1` (`300x50`/`320x50`), `top_leaderboard`/`bottom_leaderboard` (`728x90,970x90,970x250` desktop → `300x50,320x50,320x100` mobile), `cube1_rrail_atf` (`300x250,300x600,300x1050,160x600` desktop → `300x250` mobile), `cube2_rrail_mid`/`cube3_rrail_lower` (`300x250,300x600`), `sponsorship_2/3/4` (`728x90,970x90,970x250` desktop → `320x50,300x50` mobile), and `interstitial` (`1x1`, annotated "Not Pictured" — consistent with our finding that it never renders as a visible box). The sheet doesn't mention `fluid` as an option anywhere, which may mean that's a more recent addition on top of this map (updated Dec 2025) rather than a documentation gap on our side.
@@ -89,6 +91,22 @@ Karl located the Ad team's internal ad-slot reference sheet (Google Sheet, view-
 - The sheet also has **Newsletter overview** and **Obits Newsletters** tabs (ad placements inside MNG's email newsletters) — not reviewed in depth this pass; flagged as a separate surface if newsletter ad units ever need documenting here.
 
 **Open item #12 is resolved** — the Ad Team documentation Karl found is genuinely useful and has been cross-checked in full above.
+
+### 3.1d Mobile Adhesion stacking (z-index), 2026-11-18
+
+The Ad Team added a note to the Mobile tab of the [MNG/Tribune – WordPress Ad Map](https://docs.google.com/spreadsheets/d/12p8rvDIj4a58vzR1vxjferjJ58rCS-ekcpW7deLEOZw/edit?gid=103080138#gid=103080138) next to `Mobile_Adhesion`: on 2026-11-17 Aditude lowered the adhesion's z-index because it covered the mobile login modal. The cause was Seedtag's inScreen placement on the adhesion unit, which wrote its own maximum z-index inline; Aditude's custom CSS overrides it to **100000** ("still pretty high, just not covering your modal"). Aditude also notes that ad refresh only runs while the unit is at least 50% in view and not `display: none`.
+
+Checked live 2026-11-18 on all 6 review sites (ocregister, denverpost, chicagotribune, orlandosentinel, canoncitydailyrecord, mcall), loaded stylesheets at desktop width; identical on every site:
+
+| Layer | Selector | z-index |
+|---|---|---|
+| Theme wrapper | `#mobile-adhesion` | 9999 |
+| Close button | `#mobile-adhesion .close-mobile-adhesion` | 99999 |
+| The ad (Aditude override of Seedtag inScreen) | `.st-placement.inScreen .st-adunit-ad` | 100000 `!important` |
+| Account drawer | `#account-content` / `#anchorProfileDropDown` | 149999 / 150000 |
+| Login modal (DigiSubs) | `#digisubs-modalContainer` | 2147483647 |
+
+So the order is now adhesion < account drawer < login modal. Design rule (Ad Blocks spec, Behavior): anything that must cover the adhesion, such as modals, stacks above 100000. The design system has no z-index tokens yet.
 
 ### 3.2 No visible "Advertisement" text label found
 

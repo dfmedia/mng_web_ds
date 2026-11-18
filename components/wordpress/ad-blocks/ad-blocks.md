@@ -9,7 +9,7 @@ component_key: 5da625d2f68424f0047851c324cef05324a2964c
 variants: 37
 tokens: ad-blocks.tokens.json
 skeleton: ad-blocks.html
-exported: 2026-10-30
+exported: 2026-11-18
 ---
 
 # Ad Blocks
@@ -57,7 +57,7 @@ exported: 2026-10-30
 | `Mobile / Outstream Video 300x250` | 300×250 | [3536:36854](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36854) | 0 | ![](previews/ad-blocks--mobile-outstream-video-300x250.png) |
 | `All / Sponsorship 1 320x50` | 320×50 | [526:8814](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=526-8814) | 16 | ![](previews/ad-blocks--all-sponsorship-1-320x50.png) |
 | `All / Sponsorship 1 300x50` | 300×50 | [526:8809](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=526-8809) | 41 | ![](previews/ad-blocks--all-sponsorship-1-300x50.png) |
-| `All / Top Leaderboard 728x90` | 728×90 | [517:10300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10300) | 23 | ![](previews/ad-blocks--all-top-leaderboard-728x90.png) |
+| `All / Top Leaderboard 728x90` | 728×90 | [517:10300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10300) | 21 | ![](previews/ad-blocks--all-top-leaderboard-728x90.png) |
 | `All / Cube 1 RRail ATF 300x600` | 300×600 | [527:2551](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=527-2551) | 4 | ![](previews/ad-blocks--all-cube-1-rrail-atf-300x600.png) |
 | `All / Cube 1 RRail ATF 160x600` | 160×600 | [530:2651](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=530-2651) | 0 | ![](previews/ad-blocks--all-cube-1-rrail-atf-160x600.png) |
 | `All / Cube Article 300x250` | 300×250 | [527:2495](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=527-2495) | 0 | ![](previews/ad-blocks--all-cube-article-300x250.png) |
@@ -531,7 +531,7 @@ From `ad-blocks.tokens.json`. References point at system tokens (`tokens/core/`,
 - **Production:** an empty Google Publisher Tag container (div) the size of the unit, centered in its slot. The slot keeps the unit's height so the page doesn't jump when the creative loads.
 - **Production slots:** Sponsorship 1 `sponsorship_1`; Top Leaderboard `top_leaderboard`; Sponsorship 2 `sponsorship_2` / `_3` / `_4`; Cube 1 / 2 / 3 `cube1_rrail_atf` / `cube2_rrail_mid` / `cube3_rrail_lower`; Cube Article `cube_article`; Outstream Video `outstream_video`; Bottom Leaderboard `bottom_leaderboard`; Mobile Adhesion `mobile_adhesion`. Sidebar Rectangle is a generic 300x250 (also in Upcoming Events); Mid-Article Banner has no production slot (open item 8b).
 - **Responsive:** each width gets its own unit. Full-width slots step down 970x250 (800px and up) → 728x90 (640–799px) → 320x50 or 320x100 (below 640px); right-rail cubes are 300x600 or 300x1050 at 800px and up and 300x250 below. The 970x90, 300x50 and 160x600 sizes are in the Ad Team's map but not placed yet.
-- **Mobile Adhesion:** fixed to the bottom of the viewport on phones and tablets; the close button is a 20px `color/gray/min` circle with a 2px white × set 4px in from the top right.
+- **Mobile Adhesion:** fixed to the bottom of the viewport on phones and tablets; the close button is a 20px `color/gray/min` circle with a 2px white × set 4px in from the top right. **Stacking (production, all 6 review sites, checked 2026-11-18):** the ad itself (Seedtag inScreen, `.st-placement.inScreen .st-adunit-ad`) is `z-index: 100000 !important`, set by Aditude on 2026-11-17 because Seedtag wrote its own maximum z-index inline and covered the mobile login modal; the theme's `#mobile-adhesion` wrapper is 9999 and its close button 99999. Anything that must cover the adhesion, such as modals and the login modal (`#digisubs-modalContainer`, 2147483647), stacks above 100000. Ad refresh only runs while the unit is at least 50% in view and not `display: none` (Aditude). Source: the Ad Map's Mobile tab.
 - **Who sees ads:** readers without an ad-free subscription. The Masthead's AdFree states have none.
 
 ## Accessibility
@@ -542,17 +542,17 @@ From `ad-blocks.tokens.json`. References point at system tokens (`tokens/core/`,
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **241**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **239**.
 
 Inside components: Masthead ×44, Upcoming Events Block ×40, ObitMastHead ×20, TOP ZONE Block ×5.
-Placed on pages: Homepage ×53, Menus and Parts ×38, Section Front ×23, Article Page ×10.
+Placed on pages: Homepage ×53, Menus and Parts ×36, Section Front ×23, Article Page ×10.
 6 instances are nested inside other instances.
 
 **Built from:** no nested components.
 
 ## Production
 
-Production GPT slots from the Ad Team's WordPress Ad Map, matched 2026-10-02; legacy export `figma-exports/mng-ads-export/` (2026-10-09, frozen).
+Production GPT slots from the Ad Team's [MNG/Tribune – WordPress Ad Map](https://docs.google.com/spreadsheets/d/12p8rvDIj4a58vzR1vxjferjJ58rCS-ekcpW7deLEOZw/edit?gid=103080138#gid=103080138) (Google Sheet; Desktop, Tablet and Mobile tabs), matched 2026-10-02 and rechecked 2026-11-18 (the only change since: the Mobile Adhesion z-index note, see Behavior); legacy export `figma-exports/mng-ads-export/` (2026-10-09, frozen).
 
 ## Known issues
 
@@ -569,4 +569,4 @@ Production GPT slots from the Ad Team's WordPress Ad Map, matched 2026-10-02; le
 - `ad-blocks.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-18 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

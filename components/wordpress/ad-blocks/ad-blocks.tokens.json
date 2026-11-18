@@ -9,9 +9,9 @@
         "componentSet": "Ad Blocks",
         "page": "Ads and Sponsored"
       },
-      "production": "Production GPT slots from the Ad Team's WordPress Ad Map, matched 2026-10-02; legacy export `figma-exports/mng-ads-export/` (2026-10-09, frozen).",
+      "production": "Production GPT slots from the Ad Team's [MNG/Tribune – WordPress Ad Map](https://docs.google.com/spreadsheets/d/12p8rvDIj4a58vzR1vxjferjJ58rCS-ekcpW7deLEOZw/edit?gid=103080138#gid=103080138) (Google Sheet; Desktop, Tablet and Mobile tabs), matched 2026-10-02 and rechecked 2026-11-18 (the only change since: the Mobile Adhesion z-index note, see Behavior); legacy export `figma-exports/mng-ads-export/` (2026-10-09, frozen).",
       "layer": "wordpress",
-      "exported": "2026-10-30"
+      "exported": "2026-11-18"
     }
   },
   "ad-blocks": {

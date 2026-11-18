@@ -264,7 +264,7 @@
      "name": "ModalsCenter",
      "where": "Modal Panels | 2026.11.10, 3040:2262",
      "status": "In system",
-     "updated": "2026-11-10",
+     "updated": "2026-11-18",
      "component": "ModalsCenter"
     },
     {
@@ -867,8 +867,8 @@
      "name": "Ad Blocks",
      "where": "Ads and Sponsored, 517:4304 (37 variants)",
      "status": "In system",
-     "note": "All 37 units; Mobile Adhesion close button and fixed position.",
-     "updated": "2026-10-30",
+     "note": "All 37 units; Mobile Adhesion close button, fixed position and stacking under modals (production z-index 100000, 2026-11-17).",
+     "updated": "2026-11-18",
      "component": "AdBlocks"
     },
     {

@@ -541,9 +541,9 @@
         "set": "Ad Blocks"
       },
       "variants": 37,
-      "instances": 241,
+      "instances": 239,
       "knownIssues": 6,
-      "exported": "2026-10-30"
+      "exported": "2026-11-18"
     },
     {
       "slug": "article-author",
