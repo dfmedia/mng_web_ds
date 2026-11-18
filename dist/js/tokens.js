@@ -724,11 +724,11 @@ export const themes = {
   "chicago-tribune": {
     "color": {
       "theme": {
-        "primary-lighter": "#717fd1",
-        "primary-light": "#5869ca",
-        "primary": "#3f51b5",
-        "primary-dark": "#32408f",
-        "primary-darker": "#171e44",
+        "primary-lighter": "#1583db",
+        "primary-light": "#1378c8",
+        "primary": "#1063a5",
+        "primary-dark": "#0e5995",
+        "primary-darker": "#0c4b7e",
         "secondary": "#eeff41",
         "tertiary": "#eb5300",
         "near-black": "#1f1e1c",

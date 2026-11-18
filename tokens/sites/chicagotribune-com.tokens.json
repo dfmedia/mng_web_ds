@@ -8,19 +8,43 @@
       "theme": "Measured Vibrant",
       "subTheme": "Chicago Tribune",
       "tokenSource": "chicago-tribune",
-      "mismatchCount": 2,
+      "mismatchCount": 6,
       "fixes": [
         {
           "token": "primary-lighter",
-          "design": "#717fd1",
+          "design": "#1583db",
           "production": "MISSING",
-          "fix": "Define --primary-lighter: #717fd1 (measuredvibrant.css, body). It isn't set today; the page falls back to #47b6ff."
+          "fix": "Define --primary-lighter: #1583db (Customizer, div#page). It isn't set today; the page falls back to #47b6ff."
+        },
+        {
+          "token": "primary-light",
+          "design": "#1378c8",
+          "production": "#5869ca",
+          "fix": "Change --primary-light from #5869ca to #1378c8 (Customizer, div#page)."
+        },
+        {
+          "token": "primary",
+          "design": "#1063a5",
+          "production": "#3f51b5",
+          "fix": "Change --primary from #3f51b5 to #1063a5 (Customizer, div#page)."
+        },
+        {
+          "token": "primary-dark",
+          "design": "#0e5995",
+          "production": "#32408f",
+          "fix": "Change --primary-dark from #32408f to #0e5995 (Customizer, div#page)."
+        },
+        {
+          "token": "primary-darker",
+          "design": "#0c4b7e",
+          "production": "#171e44",
+          "fix": "Change --primary-darker from #171e44 to #0c4b7e (Customizer, div#page)."
         },
         {
           "token": "tertiary",
           "design": "#eb5300",
           "production": "#303f9f",
-          "fix": "Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body)."
+          "fix": "Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body; the Measured Vibrant theme fix covers it)."
         }
       ]
     }
@@ -32,21 +56,21 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.4431,
-            0.498,
-            0.8196
+            0.0824,
+            0.5137,
+            0.8588
           ],
           "alpha": 1,
-          "hex": "#717fd1"
+          "hex": "#1583db"
         },
         "$extensions": {
           "com.mng": {
-            "rgba": "rgba(113, 127, 209, 1)",
+            "rgba": "rgba(21, 131, 219, 1)",
             "figma": null,
             "production": {
               "matches": false,
               "productionValue": "MISSING",
-              "fix": "Define --primary-lighter: #717fd1 (measuredvibrant.css, body). It isn't set today; the page falls back to #47b6ff.",
+              "fix": "Define --primary-lighter: #1583db (Customizer, div#page). It isn't set today; the page falls back to #47b6ff.",
               "differencesEntry": 5
             },
             "resolvedFrom": "color.theme.chicago-tribune.primary-lighter"
@@ -57,17 +81,23 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.3451,
-            0.4118,
-            0.7922
+            0.0745,
+            0.4706,
+            0.7843
           ],
           "alpha": 1,
-          "hex": "#5869ca"
+          "hex": "#1378c8"
         },
         "$extensions": {
           "com.mng": {
-            "rgba": "rgba(88, 105, 202, 1)",
+            "rgba": "rgba(19, 120, 200, 1)",
             "figma": null,
+            "production": {
+              "matches": false,
+              "productionValue": "#5869ca",
+              "fix": "Change --primary-light from #5869ca to #1378c8 (Customizer, div#page).",
+              "differencesEntry": 5
+            },
             "resolvedFrom": "color.theme.chicago-tribune.primary-light"
           }
         }
@@ -76,17 +106,23 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.2471,
-            0.3176,
-            0.7098
+            0.0627,
+            0.3882,
+            0.6471
           ],
           "alpha": 1,
-          "hex": "#3f51b5"
+          "hex": "#1063a5"
         },
         "$extensions": {
           "com.mng": {
-            "rgba": "rgba(63, 81, 181, 1)",
+            "rgba": "rgba(16, 99, 165, 1)",
             "figma": null,
+            "production": {
+              "matches": false,
+              "productionValue": "#3f51b5",
+              "fix": "Change --primary from #3f51b5 to #1063a5 (Customizer, div#page).",
+              "differencesEntry": 5
+            },
             "resolvedFrom": "color.theme.chicago-tribune.primary"
           }
         }
@@ -95,17 +131,23 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.1961,
-            0.251,
-            0.5608
+            0.0549,
+            0.349,
+            0.5843
           ],
           "alpha": 1,
-          "hex": "#32408f"
+          "hex": "#0e5995"
         },
         "$extensions": {
           "com.mng": {
-            "rgba": "rgba(50, 64, 143, 1)",
+            "rgba": "rgba(14, 89, 149, 1)",
             "figma": null,
+            "production": {
+              "matches": false,
+              "productionValue": "#32408f",
+              "fix": "Change --primary-dark from #32408f to #0e5995 (Customizer, div#page).",
+              "differencesEntry": 5
+            },
             "resolvedFrom": "color.theme.chicago-tribune.primary-dark"
           }
         }
@@ -114,17 +156,23 @@
         "$value": {
           "colorSpace": "srgb",
           "components": [
-            0.0902,
-            0.1176,
-            0.2667
+            0.0471,
+            0.2941,
+            0.4941
           ],
           "alpha": 1,
-          "hex": "#171e44"
+          "hex": "#0c4b7e"
         },
         "$extensions": {
           "com.mng": {
-            "rgba": "rgba(23, 30, 68, 1)",
+            "rgba": "rgba(12, 75, 126, 1)",
             "figma": null,
+            "production": {
+              "matches": false,
+              "productionValue": "#171e44",
+              "fix": "Change --primary-darker from #171e44 to #0c4b7e (Customizer, div#page).",
+              "differencesEntry": 5
+            },
             "resolvedFrom": "color.theme.chicago-tribune.primary-darker"
           }
         }
@@ -166,7 +214,7 @@
             "production": {
               "matches": false,
               "productionValue": "#303f9f",
-              "fix": "Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body).",
+              "fix": "Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body; the Measured Vibrant theme fix covers it).",
               "differencesEntry": 5
             },
             "resolvedFrom": "color.theme.chicago-tribune.tertiary"

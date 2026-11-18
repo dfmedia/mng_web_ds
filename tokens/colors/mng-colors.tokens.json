@@ -515,11 +515,11 @@
     }
    },
    "chicago-tribune": {
-    "primary-lighter": {"$value": "#717fd1"},
-    "primary-light": {"$value": "#5869ca"},
-    "primary": {"$value": "#3f51b5"},
-    "primary-dark": {"$value": "#32408f"},
-    "primary-darker": {"$value": "#171e44"},
+    "primary-lighter": {"$value": "#1583db"},
+    "primary-light": {"$value": "#1378c8"},
+    "primary": {"$value": "#1063a5"},
+    "primary-dark": {"$value": "#0e5995"},
+    "primary-darker": {"$value": "#0c4b7e"},
     "secondary": {"$value": "#eeff41"},
     "tertiary": {"$value": "#eb5300"},
     "near-black": {"$value": "#1f1e1c"},
@@ -530,17 +530,21 @@
       "name": "Chicago Tribune",
       "level": "sub-theme",
       "parentTheme": "Measured Vibrant",
-      "loads": "measuredvibrant.css (Measured Vibrant values; own Figma mode)",
+      "loads": "measuredvibrant.css (no Customizer override on div#page yet)",
       "inFigma": true,
       "figmaMode": "Chicago Tribune",
-      "productionAudit": null,
-      "mismatchCount": 2,
+      "productionAudit": "2026-11-18",
+      "mismatchCount": 6,
       "mismatches": [
-       { "token": "primary-lighter", "design": "#717fd1", "production": "MISSING", "productionSource": "inherits shared default #47b6ff", "fix": "Define --primary-lighter: #717fd1 (measuredvibrant.css, body). It isn't set today; the page falls back to #47b6ff.", "scope": "sub-theme (audited under Measured Vibrant)", "figmaCallout": true },
-       { "token": "tertiary", "design": "#eb5300", "production": "#303f9f", "productionSource": "Theme default (body)", "fix": "Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body).", "scope": "sub-theme (audited under Measured Vibrant)", "figmaCallout": true }
+       { "token": "primary-lighter", "design": "#1583db", "production": "MISSING", "productionSource": "inherits shared default #47b6ff", "fix": "Define --primary-lighter: #1583db (Customizer, div#page). It isn't set today; the page falls back to #47b6ff.", "scope": "sub-theme", "figmaCallout": true },
+       { "token": "primary-light", "design": "#1378c8", "production": "#5869ca", "productionSource": "Measured Vibrant default (body)", "fix": "Change --primary-light from #5869ca to #1378c8 (Customizer, div#page).", "scope": "sub-theme", "figmaCallout": true },
+       { "token": "primary", "design": "#1063a5", "production": "#3f51b5", "productionSource": "Measured Vibrant default (body)", "fix": "Change --primary from #3f51b5 to #1063a5 (Customizer, div#page).", "scope": "sub-theme", "figmaCallout": true },
+       { "token": "primary-dark", "design": "#0e5995", "production": "#32408f", "productionSource": "Measured Vibrant default (body)", "fix": "Change --primary-dark from #32408f to #0e5995 (Customizer, div#page).", "scope": "sub-theme", "figmaCallout": true },
+       { "token": "primary-darker", "design": "#0c4b7e", "production": "#171e44", "productionSource": "Measured Vibrant default (body)", "fix": "Change --primary-darker from #171e44 to #0c4b7e (Customizer, div#page).", "scope": "sub-theme", "figmaCallout": true },
+       { "token": "tertiary", "design": "#eb5300", "production": "#303f9f", "productionSource": "Measured Vibrant default (body)", "fix": "Change --tertiary from #303f9f to #eb5300 (measuredvibrant.css, body; the Measured Vibrant theme fix covers it).", "scope": "sub-theme", "figmaCallout": true }
       ],
       "sites": [ "chicagotribune.com" ],
-      "note": "No style guide of its own; audited under Measured Vibrant, whose production callouts apply."
+      "note": "Own palette since 2026-11-18 (Karl; approved by Kristen 2026-11-18) and its own style guide on the Color Pallets page. Verified live 2026-11-18: loads measuredvibrant.css only, no Customizer override on div#page, so production still shows the Measured Vibrant defaults."
      }
     }
    },
@@ -2815,7 +2819,7 @@
      "theme": "Measured Vibrant",
      "subTheme": "Chicago Tribune",
      "tokenSource": "color.theme.chicago-tribune",
-     "mismatchCount": 2,
+     "mismatchCount": 6,
      "fixesFrom": "color.theme.chicago-tribune"
     }
    }

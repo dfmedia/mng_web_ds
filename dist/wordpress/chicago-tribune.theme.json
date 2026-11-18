@@ -123,27 +123,27 @@
         {
           "slug": "theme-primary-lighter",
           "name": "Theme Primary Lighter",
-          "color": "#717fd1"
+          "color": "#1583db"
         },
         {
           "slug": "theme-primary-light",
           "name": "Theme Primary Light",
-          "color": "#5869ca"
+          "color": "#1378c8"
         },
         {
           "slug": "theme-primary",
           "name": "Theme Primary",
-          "color": "#3f51b5"
+          "color": "#1063a5"
         },
         {
           "slug": "theme-primary-dark",
           "name": "Theme Primary Dark",
-          "color": "#32408f"
+          "color": "#0e5995"
         },
         {
           "slug": "theme-primary-darker",
           "name": "Theme Primary Darker",
-          "color": "#171e44"
+          "color": "#0c4b7e"
         },
         {
           "slug": "theme-secondary",
