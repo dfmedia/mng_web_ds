@@ -8,7 +8,7 @@
 - Focus rule: when a field in the body gets focus, the body scrolls (never the page) so the field's top sits at least 24px below the top of the Body Container and its bottom stays above the CTA area. The rule re-runs when the keyboard opens or the visible area changes.
 - A scrolling body with nothing focusable gets `tabindex="0"`, `role="region"` and the title as its name (the spec asks for the name; a name needs a role), with a 2px `color/gray/black` focus ring inside its edge, like the other components' focus rings.
 - Hidden Figma layers become slots: Form Field → `children` (use `FormField`), InLineMessage (ModalError) → `message`.
-- Stacking: in fixed mode the overlay and card (z-index 1000) cover every ad, including `AdBlocks` with `fixed` (90), as production does since 2026-11-17 (the Mobile Adhesion ad at 100000, the login modal at 2147483647; `components/modal.md`).
+- Stacking: in fixed mode the overlay and card sit on the modal layer (`--mngds-layer-modal`, 1000) and cover every ad, including `AdBlocks` with `fixed` (90), and open menus (200), as production does since 2026-11-17 (the Mobile Adhesion ad at 100000, the login modal at 2147483647; `components/modal.md`).
 - Esc closes in fixed mode (Accessibility, Keyboard). `role: 'alertdialog'` is for a short message that needs an answer (confirm / cancel).
 - The "On the screen" previews are drawn with CSS `zoom: 0.3`; at that scale Chrome rounds a few line boxes (the card reads 338px instead of 347px). At 100% every Device matches the Figma card size.
 - Title Noto Sans Bold 20 is 27px in Figma; browsers compute `line-height: normal` as 27.24px, so text-only measurements may differ by under 1px.

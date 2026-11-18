@@ -4,6 +4,18 @@
    Every value here is a token variable (--mng-*) from tokens.css, the per-theme block below, or the
    component tokens further down; component-only raw values are copied from the component token files. */
 
+/* ---- Stacking order (Karl, 2026-11-18). Code only, not design tokens: Figma has no z-index and production keeps its own
+   numbers. Same order as production (ad 100000 < account drawer 149999 < login modal 2147483647, checked 2026-11-18):
+   page content 0-10, the Mobile Adhesion ad, the sticky condensed masthead, open menus and drawers, modals.
+   A page or canvas that builds its own overlay uses these layers too. */
+:root {
+  --mngds-layer-page: 1;
+  --mngds-layer-ad: 90;
+  --mngds-layer-masthead: 100;
+  --mngds-layer-menu: 200;
+  --mngds-layer-modal: 1000;
+}
+
 /* ---- Icon font (tokens/icons/icomoon.css rules; the @font-face is in tokens.css) */
 .mngds-icon {
   font-family: "icomoon" !important; speak: never; font-style: normal; font-weight: normal; font-variant: normal;

@@ -18,4 +18,4 @@ h(SectionMenu, { device: 'SM-Mobile', view: open ? 'Open' : 'Closed', userType: 
 | `weather` | WeatherBug props for the weather row | |
 | `homeLabel`, `homeHref`, `subscribeHref`, `logInHref`, `logOutHref`, `menuId`, `label`, `onToggle` | | |
 
-Esc should close the drawer and return focus to the toggle; the page supplies the black 50% overlay.
+Esc should close the drawer and return focus to the toggle; the page supplies the black 50% overlay. Put the open drawer and its overlay on the open-menu layer (`z-index: var(--mngds-layer-menu)`), so they cover the page, the sticky masthead and the Mobile Adhesion ad.

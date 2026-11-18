@@ -28,6 +28,6 @@
 }
 .mngds-ad-blocks__close-dot::after { transform: rotate(-45deg); }
 .mngds-ad-blocks__close:focus-visible { outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px; }
-/* Stacking: under the Masthead's condensed bar (100) and modals (ModalsCenter 1000), the same order as production since 2026-11-17:
-   ad 100000 (Aditude) < sticky header 999999998 < login modal 2147483647. The numbers here are this system's own scale. */
-.mngds-ad-blocks--fixed { position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); z-index: 90; overflow: visible; }
+/* Stacking (base.css layers): under the Masthead's condensed bar, open menus and modals, as production since 2026-11-17
+   (ad 100000, Aditude, under the login modal 2147483647). */
+.mngds-ad-blocks--fixed { position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); z-index: var(--mngds-layer-ad); overflow: visible; }

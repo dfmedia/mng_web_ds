@@ -70,7 +70,7 @@
 .mngds-masthead--scrolled { box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.25); border-bottom: 1px solid var(--mng-color-gray-400); }
 /* The sticky wrapper takes no height, so the condensed content (64px, or more on Obituaries) overlays the page. */
 .mngds-masthead__sticky {
-  position: sticky; top: 0; z-index: 100; height: 0; overflow: visible; visibility: hidden; opacity: 0; pointer-events: none;
+  position: sticky; top: 0; z-index: var(--mngds-layer-masthead); height: 0; overflow: visible; visibility: hidden; opacity: 0; pointer-events: none;
 }
 .mngds-masthead__sticky.is-stuck { visibility: visible; opacity: 1; pointer-events: auto; }
 /* While the condensed bar shows, the full masthead keeps its space but isn't drawn (production's .header-placeholder);

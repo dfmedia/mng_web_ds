@@ -761,7 +761,7 @@
      "where": "Menus and Parts, 456:2572 (90 variants)",
      "status": "In system",
      "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. The account area is AccountMenu since 2026-11-16. The condensed bar takes over after 55px of scrolling at 1040px and up, as production (was 450px; 2026-11-16). Not built here: the search field (the open section menu is SectionMenu).",
-     "updated": "2026-11-16",
+     "updated": "2026-11-18",
      "component": "Masthead"
     },
     {
@@ -778,7 +778,7 @@
      "note": "Built 2026-11-09 after the six-site audit and the five-width check (components/navigation.md §3): toggle, drawer with Subscribe Now, weather row below 1040px, Home, sections (one open at a time), account rows by reader type, newsletter sign-up. Drift: design-vs-production 10.4–10.8.",
      "component": "SectionMenu",
      "status": "In system",
-     "updated": "2026-11-09"
+     "updated": "2026-11-18"
     },
     {
      "name": "SectionMenuHeader",
@@ -810,7 +810,7 @@
      "note": "Built 2026-11-16 after the six-site check (design-vs-production 11) and the cut from 21 to 7 variants (Karl): closed (logged in, logged out below and from 1040px), the open dropdown (subscriber, nonSub, payment alert; full width at 340px and below) and the logged-out slide-in panel. Masthead draws its account area with it.",
      "component": "AccountMenu",
      "status": "In system",
-     "updated": "2026-11-16"
+     "updated": "2026-11-18"
     },
     {
      "name": "SearchBar",

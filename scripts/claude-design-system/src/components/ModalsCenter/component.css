@@ -196,7 +196,7 @@
   box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: center;
   padding: var(--mc-root-pt, 0) var(--mc-root-pr, 0) var(--mc-root-pb, 0) var(--mc-root-pl, 0);
   background: var(--mng-modals-center-base-root-background);
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 1000; overflow: hidden;
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: var(--mngds-layer-modal); overflow: hidden;
 }
 .mngds-modals-center--inline { position: relative; z-index: auto; width: var(--mc-root-w); height: var(--mc-root-h); max-width: 100%; }
 /* Keyboard open: 8px (spacing/100) gaps top and bottom instead of the margin; left and right stay. */

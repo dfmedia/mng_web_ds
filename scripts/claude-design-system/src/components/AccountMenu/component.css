@@ -1,5 +1,8 @@
 /* AccountMenu. Values from account-menu.tokens.json and the system tokens. */
 .mngds-account-menu { position: relative; display: inline-flex; flex-direction: column; box-sizing: border-box; font-family: var(--mng-font-family-noto-sans); color: var(--mng-color-gray-min); }
+/* Open, it lifts itself (with its scrim and panel) above the page and the sticky masthead: the open-menu layer in base.css
+   (Karl, 2026-11-18; it opened behind page content that has its own z-index). The inline documentation view stays in the flow. */
+.mngds-account-menu.is-open:not(.mngds-account-menu--inline) { z-index: var(--mngds-layer-menu); }
 .mngds-account-menu *, .mngds-account-menu *::before, .mngds-account-menu *::after { box-sizing: border-box; }
 /* Closed: 64px row, 8px sides; the account control and the search button 16px (spacing/200) apart (8px next to the 1040px-and-up buttons). */
 .mngds-account-menu__bar {
