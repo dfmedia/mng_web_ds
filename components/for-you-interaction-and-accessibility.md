@@ -1,6 +1,6 @@
 # For You tab: interaction and accessibility (developer notes)
 
-> **Updated 2026-11-04** (Karl). This is how the For You tab is meant to behave for keyboard, screen reader, pointer and reduced-motion users. Engineering should build to it.
+> **Updated 2026-11-20** for the Welcome modal's close button, now inside the card (§2, §11). **2026-11-04** (Karl). This is how the For You tab is meant to behave for keyboard, screen reader, pointer and reduced-motion users. Engineering should build to it.
 > - **Scope:** the For You panel, plus getting there from the Tab Nav bar. The rest of Editor's Picks is out of scope.
 > - **Reference build:** the Hi-fi v4 canvas (https://claude.ai/artifact/8C2rMAtGVyfqhtByzStWrr) on the MNG Web Design System in Claude (https://claude.ai/artifact/RKJ37zyXP7Wcvm1SDU7nzz).
 > - **Component specs:** `components/wordpress/<slug>/<slug>.md`. Code notes are in `scripts/claude-design-system/src/components/<Component>/`.
@@ -49,20 +49,23 @@ Component: Tab Nav (`tab-nav`) with Tab Nav Item (`tab-nav-item`). It follows th
 
 ## 2. Welcome to For You modal (first visit)
 
-Component: ModalsCenter (`modals-center`), with Button Primary "Got it" and Button Modal Close.
+Component: ModalsCenter (`modals-center`), with Button Primary "Got it" and Button In-Line Close (`in-line-close`) inside the card's top-right corner, flush with its top and right edges (design of 2026-11-10; it was Button Modal Close centered on the corner).
 
 **Markup:**
 - `role="dialog"`, `aria-modal="true"`
 - `aria-labelledby` points at the title "Welcome to For You"
 - `aria-describedby` points at the subtitle
+- The title is an `h2`.
+- Close is a real `button` named "Close" (`aria-label`), icon `aria-hidden`, with a 40×40 target.
 
 **Opening:**
 - Shows the first time a reader selects For You.
-- Focus moves into the dialog (the dialog itself, then "Got it").
+- Focus moves to the title (`tabindex="-1"`), so a screen reader announces the dialog and reads on.
 
 **While open:**
-- Tab and Shift+Tab cycle between **Got it** and **Close** only (focus is trapped).
-- The page behind is inert.
+- Tab and Shift+Tab cycle between **Got it** and **Close** only, in that order (Close is last), and wrap (focus is trapped).
+- Everything outside the modal is `inert` and the page can't scroll. The modal is rendered as a direct child of `body`, so it isn't made inert with the page.
+- A click on the overlay outside the card also closes it (pointer only; not in the Tab order).
 
 **Closing:**
 - Got it, Close and **Esc** all close the modal.
@@ -199,7 +202,7 @@ Component: InLineMessage DashSubsNonSub: a heading (`h2`), a description and a "
 ## 11. Keyboard walk-through (as built, 2026-11-04, at 1280)
 
 1. **Tab bar:** the For You tab, then Enter to select it.
-2. **Modal:** focus is on the dialog; Got it and Close cycle; Esc closes and focus returns to the For You tab.
+2. **Modal:** focus is on the title; Got it, then Close, cycle; Esc closes and focus returns to the For You tab. (Close moved inside the card on 2026-11-20; axe and this walk-through weren't re-run after that.)
 3. **Info button:** "About this feed"; Enter opens the toggletip; Esc closes it and focus returns.
 4. **Lead headline link.**
 5. **Slideshow:** Previous, then Next.
