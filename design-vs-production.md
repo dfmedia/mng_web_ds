@@ -1681,6 +1681,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 | Nav side padding | 24px | `spacing/100` (8) at every width, so the first tab lines up with the page content (Karl, 2026-11-03; was `spacing/300` (24)) |
 | No side padding below | `(max-width: 500px)` | None: 8px at every width (was none below 640px) |
 | Nav width | — | 1280px max, centered (was 1200px) |
+| More tabs than fit | Not checked live yet (the staging page's tabs fit) | The last visible tab is cut in half, never truncated: the list ends at the middle of the last tab whose middle fits; labels never get an ellipsis (Karl, 2026-11-23) |
 
 **Fix:** update the `sr-nav-tabs` styles to the design column.
 

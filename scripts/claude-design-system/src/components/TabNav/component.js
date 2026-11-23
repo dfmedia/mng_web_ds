@@ -5,12 +5,36 @@
    Keyboard (WAI-ARIA Tabs pattern, manual activation; Karl, 2026-11-04): only the selected tab is in the Tab order
    (tabindex 0, the others -1); Left / Right arrows move focus to the previous / next tab (wrapping), Home / End to the
    first / last; Enter or Space selects the focused tab (it's a button). Activation is manual because choosing For You can
-   open the Welcome modal, which shouldn't happen just from arrowing past it. */
+   open the Welcome modal, which shouldn't happen just from arrowing past it.
+   Overflow (Karl, 2026-11-23): when the tabs don't all fit, the last visible tab is cut in half, never truncated. The list
+   ends at the middle of the last tab whose middle fits (re-measured on resize and when fonts load); the bar keeps its full
+   width. Scrolled sideways to the end, every tab shows in full. */
 function TabNav(props) {
   var bp = props.breakpoint || 'Desktop';
   var tabs = props.tabs || [{ label: "Editor's Picks" }, { label: 'For You' }];
   var inner = React.useState(props.defaultSelectedIndex || 0);
   var selected = props.selectedIndex != null ? props.selectedIndex : inner[0];
+  var listRef = React.useRef(null);
+  var labels = tabs.map(function (t) { return t.label; }).join('\u0001');
+  React.useLayoutEffect(function () {
+    var list = listRef.current, nav = list && list.parentNode;
+    if (!list || !nav) return undefined;
+    function fit() {
+      list.style.maxWidth = '';
+      var cs = window.getComputedStyle(nav);
+      var avail = nav.clientWidth - parseFloat(cs.paddingLeft || 0) - parseFloat(cs.paddingRight || 0);
+      var items = list.children, n = items.length;
+      if (!n || items[n - 1].offsetLeft + items[n - 1].offsetWidth <= avail + 1) return;
+      var k = -1;
+      for (var i = 0; i < n; i++) if (items[i].offsetLeft + items[i].offsetWidth / 2 <= avail) k = i;
+      if (k > 0) list.style.maxWidth = Math.round(items[k].offsetLeft + items[k].offsetWidth / 2) + 'px';
+    }
+    fit();
+    var ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(fit) : null;
+    if (ro) ro.observe(nav); else window.addEventListener('resize', fit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(fit);
+    return function () { if (ro) ro.disconnect(); else window.removeEventListener('resize', fit); };
+  }, [labels, bp]);
   function pick(i, e) {
     if (props.selectedIndex == null) inner[1](i);
     if (props.onChange) props.onChange(i, e);
@@ -24,12 +48,13 @@ function TabNav(props) {
     e.preventDefault();
     for (var k = 0; k < n; k++) btns[k].setAttribute('tabindex', k === to ? '0' : '-1');
     btns[to].focus();
+    btns[to].scrollIntoView({ block: 'nearest', inline: 'nearest' });
   }
   return h('div', Object.assign(rest(props, ['breakpoint', 'tabs', 'selectedIndex', 'defaultSelectedIndex', 'onChange', 'aria-label', 'className']), {
       className: cx('mngds-tab-nav', 'mngds-tab-nav--' + slug(bp), props.className)
     }),
     h('div', { className: 'mngds-tab-nav__nav' },
-      h('ul', { className: 'mngds-tab-nav__tab-list', role: 'tablist', 'aria-label': props['aria-label'] || undefined, onKeyDown: onKey },
+      h('ul', { ref: listRef, className: 'mngds-tab-nav__tab-list', role: 'tablist', 'aria-label': props['aria-label'] || undefined, onKeyDown: onKey },
         tabs.map(function (t, i) {
           var on = i === selected;
           return h('li', { key: t.id || i, role: 'presentation', className: 'mngds-tab-nav__item' },

@@ -9,7 +9,7 @@ component_key: f6f0992bc1126f8cfc17158b13600b3a8318213e
 variants: 2
 tokens: tab-nav.tokens.json
 skeleton: tab-nav.html
-exported: 2026-11-16
+exported: 2026-11-23
 ---
 
 # Tab Nav
@@ -74,6 +74,7 @@ From `tab-nav.tokens.json`. References point at system tokens (`tokens/core/`, `
 - **Bar:** full width, `color/gray/max`, with a 1px `color/gray/300` rule along the bottom; the active underline sits over it.
 - **Nav:** max width 1280px, centered, 8px (`spacing/100`) side padding at every width, so the first tab lines up with the page content's left edge (Karl, 2026-11-03; was 1200px with 24px (`spacing/300`) sides at 640px and up and no side padding below).
 - **Tabs:** left-aligned, 24px (`spacing/300`) apart; they scroll sideways (scrollbar hidden) if they don't fit.
+- **More tabs than fit** (Karl, 2026-11-23): the last visible tab is cut in half, never truncated (no ellipsis; labels always whole). The tab list ends at the middle of the last tab whose middle fits, measured again when the width changes or fonts load; the bar and its bottom rule still run full width. Arrow keys scroll the focused tab into view, and scrolled to the end every tab shows in full. Figma: overflow sample in the Tab Nav Container's Specifications.
 - **Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`.
 - **Keyboard** (WAI-ARIA Tabs pattern, manual activation; Karl, 2026-11-04): only the selected tab is in the Tab order (`tabindex` 0, the others −1); Left / Right move focus between tabs and wrap, Home / End go to the first / last; Enter or Space selects. Manual, not automatic, activation because choosing For You can open the Welcome modal. Developer notes: `components/for-you-interaction-and-accessibility.md`.
 
@@ -104,4 +105,4 @@ None open.
 - `tab-nav.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-16 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-23 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
