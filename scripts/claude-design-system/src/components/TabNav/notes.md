@@ -47,6 +47,7 @@ Feature: Tab Nav
       When the page loads
       Then the tab at the right edge shows part way and fades out
       And a right chevron shows at the edge, with no left chevron
+      # the edge tab always shows part way: if it wouldn't, the gap narrows or widens in 4px steps (12, 4, 16px)
 
     Scenario: The reader selects the right chevron
       Given there are more tabs to the right

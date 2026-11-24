@@ -7,14 +7,17 @@
    first / last; Enter or Space selects the focused tab (it's a button). Activation is manual because choosing For You can
    open the Welcome modal, which shouldn't happen just from arrowing past it.
    Overflow, option C1 (Karl, 2026-11-24; replaces the 2026-11-23 cut-in-half rule): when the tabs don't all fit, the
-   bar stays full width, the tabs stay 8px apart (spacing/100; Karl, 2026-11-24, was 24px with narrowing to 12px), so the
-   tab at the edge shows partly; the side with more tabs fades over 48px, and a chevron button (16px arrow-left /
+   bar stays full width, the tabs are 8px apart (spacing/100; Karl, 2026-11-24, was 24px), and the tab at the edge always
+   shows part way: if it wouldn't, the gap narrows or widens in 4px steps (12, 4, 16px; Karl, 2026-11-24) until the
+   edge tab shows 35-75% (else the step closest to half); the side with more tabs fades over 48px, and a chevron button (16px arrow-left /
    arrow-right, color/gray/300) sits on that side. The fade ends just inside the 36px chevron, so the cut tab still shows. A chevron
    scrolls about 80% of the visible width, sliding in 250ms ease-in-out, the section menu drawer's (Push Nav) speed
    (Karl, 2026-11-24: the browser's smooth scroll was too abrupt); instant with reduced motion. Chevrons are pointer
    aids: keyboard and screen-reader users move with the tablist's arrow keys, so the chevrons are aria-hidden and out
    of the Tab order. Re-measured on resize, on scroll and when fonts load. */
 var TAB_NAV_CHEVRON = 36, TAB_NAV_FADE = 48, TAB_NAV_SLIDE_MS = 250;
+/* Gap steps tried when the tabs overflow, nearest the 8px default first: 8, 12, 4, 16 (spacing/100, 150, 050, 200). */
+var TAB_NAV_GAP_STEPS = [0, 4, -4, 8];
 /* CSS ease-in-out, cubic-bezier(0.42, 0, 0.58, 1): solve x(t) = p by Newton steps, return y(t). */
 function tabNavEase(p) {
   var t = p;
@@ -42,7 +45,25 @@ function TabNav(props) {
   React.useLayoutEffect(function () {
     var list = listRef.current;
     if (!list) return undefined;
-    function fit() { measure(); }
+    function fit() {
+      list.style.gap = '';
+      var base = parseFloat(window.getComputedStyle(list).columnGap) || 8;
+      var items = list.children, n = items.length;
+      if (!n || list.scrollWidth <= list.clientWidth + 1) { measure(); return; }
+      var w = [], i; for (i = 0; i < n; i++) w.push(items[i].offsetWidth);
+      var edge = list.clientWidth - TAB_NAV_CHEVRON, best = base, bestScore = Infinity;
+      for (var k = 0; k < TAB_NAV_GAP_STEPS.length; k++) {
+        var g = base + TAB_NAV_GAP_STEPS[k], left = 0, f = -1;
+        for (i = 0; i < n; i++) {
+          if (left + w[i] > edge) { f = left >= edge ? -1 : (edge - left) / w[i]; break; }
+          left += w[i] + g;
+        }
+        if (f >= 0.35 && f <= 0.75) { best = g; break; }
+        if (f > 0 && Math.abs(f - 0.55) < bestScore) { bestScore = Math.abs(f - 0.55); best = g; }
+      }
+      if (best !== base) list.style.gap = best + 'px';
+      measure();
+    }
     fit();
     var ro = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(fit) : null;
     if (ro) ro.observe(list.parentNode); else window.addEventListener('resize', fit);
