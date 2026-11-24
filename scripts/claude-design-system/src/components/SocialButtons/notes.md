@@ -20,8 +20,8 @@ Feature: Share bar (SocialButtons)
       Then <shown>
 
       Examples:
-        | count       | shown                                                         |
-        | 6 or fewer  | every button shows, with no More                              |
+        | count       | shown                                                          |
+        | 6 or fewer  | every button shows, with no More                               |
         | more than 6 | the first 6 show, Gift always one of them, and More is the 7th |
 
   Scenario: The reader opens More

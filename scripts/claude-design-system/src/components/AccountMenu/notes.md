@@ -81,8 +81,8 @@ Feature: AccountMenu
       Then the panel shows <content>
 
       Examples:
-        | state                             | content                          |
-        | a non-subscriber                  | "Subscribe Now" under the email  |
-        | a subscriber with a payment issue | the "Payment Issue" message      |
+        | state                             | content                             |
+        | a non-subscriber                  | "Subscribe Now" under the email     |
+        | a subscriber with a payment issue | the "Payment Issue" message         |
         | an anonymous group reader         | "Anonymous User" and the account ID |
 ```

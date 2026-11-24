@@ -19,8 +19,8 @@ Feature: Latest Headlines
     Then the list is <width>
 
     Examples:
-      | range         | width                                          |
-      | XS (≤639px)   | the page's full width, up to 540px, centered   |
-      | S (640–799px) | the column's full width                        |
-      | (≥800px)      | the side column beside the Zone 1 lead         |
+      | range         | width                                        |
+      | XS (≤639px)   | the page's full width, up to 540px, centered |
+      | S (640–799px) | the column's full width                      |
+      | (≥800px)      | the side column beside the Zone 1 lead       |
 ```

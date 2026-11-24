@@ -21,9 +21,9 @@ Feature: Zone 1 Slideshow
       Then the arrows are <arrows> and the caption and count are <text>
 
       Examples:
-        | range        | arrows             | text |
-        | 800px and up | 40×60, 30px icons  | 13px |
-        | below 800px  | 35×53, 26px icons  | 11px |
+        | range        | arrows            | text |
+        | 800px and up | 40×60, 30px icons | 13px |
+        | below 800px  | 35×53, 26px icons | 11px |
 
   Rule: The gallery loops
     Scenario: Next on the last slide

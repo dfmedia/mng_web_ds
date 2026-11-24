@@ -18,8 +18,8 @@ Feature: Blueconic Block
     Then the 10 items sit in <columns>
 
     Examples:
-      | range          | columns                                  |
-      | XS (≤639px)    | one column                               |
-      | (640–1039px)   | two columns, 5 per column                |
-      | (≥1040px)      | two columns, larger list spacing         |
+      | range        | columns                          |
+      | XS (≤639px)  | one column                       |
+      | (640–1039px) | two columns, 5 per column        |
+      | (≥1040px)    | two columns, larger list spacing |
 ```

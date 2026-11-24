@@ -23,13 +23,13 @@ Feature: Form Field · Validation
       Then the field shows <state>
 
       Examples:
-        | field              | value                          | state   |
-        | Email              | a valid email address          | Success |
-        | Email              | text with no @                 | Error   |
-        | Create Password    | a password that meets the rules | Success |
-        | Re-enter Password  | the same password              | Success |
-        | Re-enter Password  | a different password           | Error   |
-        | Sign-in Password   | anything                       | no state |
+        | field             | value                           | state    |
+        | Email             | a valid email address           | Success  |
+        | Email             | text with no @                  | Error    |
+        | Create Password   | a password that meets the rules | Success  |
+        | Re-enter Password | the same password               | Success  |
+        | Re-enter Password | a different password            | Error    |
+        | Sign-in Password  | anything                        | no state |
 
     Scenario: A required field is left empty
       Given a required field is empty
@@ -64,9 +64,9 @@ Feature: Form Field · Validation
       Then focus moves to <target>
 
       Examples:
-        | fix                    | target                                            |
-        | typing in a field      | the first field in error (the keyboard stays open) |
-        | anything larger        | the banner (the keyboard closes)                   |
+        | fix               | target                                             |
+        | typing in a field | the first field in error (the keyboard stays open) |
+        | anything larger   | the banner (the keyboard closes)                   |
 
   Scenario: Keyboard focus doesn't move anything
     When the reader tabs to a field

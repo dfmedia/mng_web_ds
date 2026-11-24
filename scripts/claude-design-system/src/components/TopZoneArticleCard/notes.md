@@ -18,10 +18,10 @@ Feature: TopZone Article Card
     Then the cards sit <per_row> per row as <layout>
 
     Examples:
-      | range            | per_row | layout                          |
-      | XL (≥1280px)     | 2       | image above, 336×189            |
-      | L (1040–1279px)  | 1       | thumbnail row, 280×157, no rule |
-      | M (800–1039px)   | 2       | image above, 197×111            |
-      | S (640–799px)    | 2       | thumbnail row, 97×54            |
-      | XS (≤639px)      | 1       | thumbnail row, 100×67           |
+      | range           | per_row | layout                          |
+      | XL (≥1280px)    | 2       | image above, 336×189            |
+      | L (1040–1279px) | 1       | thumbnail row, 280×157, no rule |
+      | M (800–1039px)  | 2       | image above, 197×111            |
+      | S (640–799px)   | 2       | thumbnail row, 97×54            |
+      | XS (≤639px)     | 1       | thumbnail row, 100×67           |
 ```

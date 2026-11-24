@@ -25,11 +25,11 @@ Feature: Tab Nav
       Then focus moves to <target>
 
       Examples:
-        | key         | target                                   |
-        | Right Arrow | the next tab (from the last, the first)  |
+        | key         | target                                      |
+        | Right Arrow | the next tab (from the last, the first)     |
         | Left Arrow  | the previous tab (from the first, the last) |
-        | Home        | the first tab                            |
-        | End         | the last tab                             |
+        | Home        | the first tab                               |
+        | End         | the last tab                                |
 
     Scenario: The reader selects a tab
       Given a tab has focus

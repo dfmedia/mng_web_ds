@@ -20,10 +20,10 @@ Feature: Breaking News Banner
       Then the title, headline and date sit <layout>
 
       Examples:
-        | range         | layout                                          |
+        | range         | layout                                               |
         | XS (≤639px)   | in one paragraph; the headline wraps under the title |
-        | S (640–799px) | in one paragraph, as XS, with 12px side padding |
-        | (≥800px)      | on one line, centered vertically                |
+        | S (640–799px) | in one paragraph, as XS, with 12px side padding      |
+        | (≥800px)      | on one line, centered vertically                     |
 
   Rule: The date never breaks across lines
     Scenario: A long headline on a small screen
@@ -31,11 +31,30 @@ Feature: Breaking News Banner
       When the banner wraps
       Then the date moves to the next line whole
 
-  Scenario: The reader opens the story
-    When the reader selects the headline
-    Then the story opens
+  Rule: The headline links to the story
+    Scenario: The reader opens the story
+      When the reader selects the headline
+      Then the story opens
 
-  Scenario: The reader closes the banner
-    When the reader selects the close button
-    Then the banner is removed from the page
+  Rule: A closed banner stays closed for that story, in that tab
+    # production (all 6 review sites, 2026-11-24): sessionStorage "breakingArticleKey" = article id + its time
+    Scenario: The reader closes the banner
+      Given a breaking news story is showing
+      When the reader selects the close button or presses Enter on it
+      Then the banner is removed from the page
+      And the story is remembered for this browser tab
+      # the close button is a link; production's label is "Click here to close"
+
+    Scenario Outline: After closing, the reader <action>
+      Given the reader closed the banner for a story
+      When the reader <action>
+      Then the banner <result>
+
+      Examples:
+        | action                                 | result       |
+        | opens another page in the same tab     | stays hidden |
+        | reloads the page                       | stays hidden |
+        | opens the site in a new tab or window  | shows again  |
+        | sees the story updated with a new time | shows again  |
+        | sees a different story go live         | shows again  |
 ```

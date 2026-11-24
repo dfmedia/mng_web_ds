@@ -18,10 +18,10 @@ Feature: Button states (every button family)
     Then the button shows <state>
 
     Examples:
-      | action                                | state                                 |
-      | points at it                          | Hover                                 |
-      | presses it or taps it                 | Pressed                               |
-      | tabs to it                            | InFocus: a focus ring around Default  |
+      | action                | state                                |
+      | points at it          | Hover                                |
+      | presses it or taps it | Pressed                              |
+      | tabs to it            | InFocus: a focus ring around Default |
 
   Scenario: Keyboard focus doesn't move anything
     When the reader tabs to a button

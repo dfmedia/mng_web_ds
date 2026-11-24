@@ -18,11 +18,11 @@ Feature: Footer
       Then the link groups sit in <layout>
 
       Examples:
-        | range         | layout                                      |
-        | 1040px and up | 5 columns; Subscribe Now alone in the last  |
-        | 800–1039px    | 3 columns                                   |
-        | 640–799px     | 2 columns                                   |
-        | below 640px   | accordion rows; Subscribe Now full width    |
+        | range         | layout                                     |
+        | 1040px and up | 5 columns; Subscribe Now alone in the last |
+        | 800–1039px    | 3 columns                                  |
+        | 640–799px     | 2 columns                                  |
+        | below 640px   | accordion rows; Subscribe Now full width   |
 
   Rule: Accordion below 640px
     Scenario: The reader opens a link group

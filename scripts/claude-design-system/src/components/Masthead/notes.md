@@ -34,10 +34,10 @@ Feature: Masthead
       Then the name is centered under the logo <how>
 
       Examples:
-        | name                             | how                                               |
-        | "Things To Do"                   | on one line                                       |
-        | "Restaurants, Food And Drink"    | on two lines, and the row grows taller            |
-        | one word wider than its column   | with the word broken onto the next line, no hyphen |
+        | name                           | how                                                |
+        | "Things To Do"                 | on one line                                        |
+        | "Restaurants, Food And Drink"  | on two lines, and the row grows taller             |
+        | one word wider than its column | with the word broken onto the next line, no hyphen |
 
   Rule: The masthead condenses when the reader scrolls (1040px and up)
 

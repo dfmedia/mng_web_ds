@@ -38,11 +38,11 @@ Feature: Pop-up modal (ModalsCenter)
       And focus returns to the control that opened it, or its replacement, or the start of the main content
 
       Examples:
-        | action                               |
-        | selects the close button             |
-        | presses Esc                          |
-        | selects an inline text link          |
-        | clicks or taps outside the card      |
+        | action                          |
+        | selects the close button        |
+        | presses Esc                     |
+        | selects an inline text link     |
+        | clicks or taps outside the card |
       # Clicking outside is for pointers only: it isn't in the Tab order and isn't announced.
 
   Rule: Keyboard
