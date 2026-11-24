@@ -11,7 +11,7 @@
       },
       "production": "Production World Cup tabs (`ul.sr-nav-tabs > button.tab-btn`, staging.dailylocal.com/world-cup/); differences are design-vs-production entry 12.",
       "layer": "wordpress",
-      "exported": "2026-11-23"
+      "exported": "2026-11-24"
     }
   },
   "tab-nav": {
@@ -52,16 +52,219 @@
             }
           }
         },
+        "overflow-left-fade-chevron": {
+          "chevron-slot": {
+            "background": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 41,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 36,
+                "unit": "px"
+              }
+            },
+            "tab-nav-chevron": {
+              "height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 42,
+                  "unit": "px"
+                }
+              },
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 36,
+                  "unit": "px"
+                }
+              }
+            }
+          },
+          "fade-48px": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 41,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              }
+            }
+          },
+          "padding-strip": {
+            "background": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 41,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 8,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            }
+          }
+        },
+        "overflow-right-fade-chevron": {
+          "chevron-slot": {
+            "background": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 41,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 36,
+                "unit": "px"
+              }
+            },
+            "tab-nav-chevron": {
+              "height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 42,
+                  "unit": "px"
+                }
+              },
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 36,
+                  "unit": "px"
+                }
+              }
+            }
+          },
+          "fade-48px": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 41,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              }
+            }
+          },
+          "padding-strip": {
+            "background": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 41,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 8,
+                "unit": "px"
+              },
+              "$extensions": {
+                "com.mng": {
+                  "unbound": true
+                }
+              }
+            }
+          }
+        },
         "tab-list": {
           "gap": {
             "$type": "dimension",
-            "$value": "{spacing.300}",
+            "$value": "{spacing.100}",
             "$extensions": {
               "com.mng": {
                 "figma": {
-                  "variable": "Spacing & Radius/spacing/300"
+                  "variable": "Spacing & Radius/spacing/100"
                 }
               }
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 216,
+              "unit": "px"
             }
           },
           "tab": {
@@ -81,13 +284,6 @@
                     "variable": "Colors/color/gray/200"
                   }
                 }
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 85,
-                "unit": "px"
               }
             }
           }
@@ -123,6 +319,126 @@
           "$value": {
             "value": 1280,
             "unit": "px"
+          }
+        }
+      }
+    },
+    "breakpoint-desktop.overflow-none": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 69,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-desktop.overflow-start": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 102,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-desktop.overflow-middle": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 102,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-desktop.overflow-end": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 82,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-mobile.overflow-none": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 69,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-mobile.overflow-start": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 125,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-mobile.overflow-middle": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 149,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "breakpoint-mobile.overflow-end": {
+      "nav": {
+        "tab-list": {
+          "tab": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 149,
+                "unit": "px"
+              }
+            }
           }
         }
       }

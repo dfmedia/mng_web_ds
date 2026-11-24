@@ -7,7 +7,7 @@ export interface TabNavItem {
   panelId?: string;
 }
 export interface TabNavProps extends React.HTMLAttributes<HTMLDivElement> {
-  /** Figma Breakpoint. Desktop (>=640px): nav 1200px max, centered, 24px side padding. Mobile (<=639px): no side padding. Default 'Desktop'. */
+  /** Figma Breakpoint. Desktop (>=640px): nav 1280px max, centered, 8px side padding. Mobile (<=639px): 8px side padding. Tabs 8px apart. Default 'Desktop'. */
   breakpoint?: 'Desktop' | 'Mobile';
   /** The tabs. Default [{ label: "Editor's Picks" }, { label: 'For You' }] (the Figma sample). */
   tabs?: TabNavItem[];

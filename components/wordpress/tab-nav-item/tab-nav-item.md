@@ -9,7 +9,7 @@ component_key: 555019e430769d437d2dc590677f75803092cc5e
 variants: 4
 tokens: tab-nav-item.tokens.json
 skeleton: tab-nav-item.html
-exported: 2026-11-16
+exported: 2026-11-24
 ---
 
 # Tab Nav Item
@@ -36,19 +36,19 @@ exported: 2026-11-16
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default` | 123×42 | [3629:44932](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44932) | 3 | ![](previews/tab-nav-item--default.png) |
-| `Hover` | 123×42 | [3629:44936](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44936) | 0 | ![](previews/tab-nav-item--hover.png) |
-| `Active` | 123×42 | [3629:44940](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44940) | 3 | ![](previews/tab-nav-item--active.png) |
-| `Focus` | 123×42 | [3629:44944](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44944) | 0 | ![](previews/tab-nav-item--focus.png) |
+| `Default` | 107×42 | [3629:44932](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44932) | 84 | ![](previews/tab-nav-item--default.png) |
+| `Hover` | 107×42 | [3629:44936](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44936) | 0 | ![](previews/tab-nav-item--hover.png) |
+| `Active` | 107×42 | [3629:44940](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44940) | 10 | ![](previews/tab-nav-item--active.png) |
+| `Focus` | 107×42 | [3629:44944](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3629-44944) | 0 | ![](previews/tab-nav-item--focus.png) |
 
 ## Anatomy
 
 Default variant `Default` (hidden layers marked):
 
-- **State=Default** `COMPONENT`: 123×42, vertical, gap 0, padding 0/0/0/0, hug×hug
-  - **Label Container** `FRAME`: 123×40, horizontal, gap 0, padding 12/16/12/16, hug×hug
+- **State=Default** `COMPONENT`: 107×42, vertical, gap 0, padding 0/0/0/0, hug×hug
+  - **Label Container** `FRAME`: 107×40, horizontal, gap 0, padding 12/8/12/8, hug×hug
     - **Label** `TEXT`: 91×16, hug×hug, "Editor's Picks", Noto Sans SemiBold 12px
-  - **Underline** `RECTANGLE`: 123×2, fill×fixed
+  - **Underline** `RECTANGLE`: 107×2, fill×fixed
 
 ## Component tokens
 
@@ -61,8 +61,8 @@ From `tab-nav-item.tokens.json`. References point at system tokens (`tokens/core
 | `tab-nav-item.state-focus.focus-ring.border-width` | 2px |
 | `tab-nav-item.state-focus.label-container.label.color` | `{color.gray.black}` |
 | `tab-nav-item.base.label-container.padding-bottom` | `{spacing.150}` |
-| `tab-nav-item.base.label-container.padding-left` | `{spacing.200}` |
-| `tab-nav-item.base.label-container.padding-right` | `{spacing.200}` |
+| `tab-nav-item.base.label-container.padding-left` | `{spacing.100}` |
+| `tab-nav-item.base.label-container.padding-right` | `{spacing.100}` |
 | `tab-nav-item.base.label-container.padding-top` | `{spacing.150}` |
 | `tab-nav-item.base.label-container.label.font-family` | `{font.family.noto-sans}` |
 | `tab-nav-item.base.label-container.label.font-size` | `{font.size.12}` |
@@ -79,7 +79,7 @@ No Breakpoint property: one size at every width.
 
 - **Text:** Noto Sans SemiBold 12 (`font/size/12`, `font/style/semibold`), line height auto, letter spacing 0, uppercase.
 - **Colors:** Default `color/gray/200`; Hover `color/gray/min`; Active `color/gray/black` with a 2px `color/theme/primary` underline; Focus a 2px `color/gray/black` ring set 3px inside the tab.
-- **Padding:** 12px (`spacing/150`) top and bottom, 16px (`spacing/200`) left and right, then a 2px underline (transparent unless Active) that overlaps the bar's 1px rule.
+- **Padding:** 12px (`spacing/150`) top and bottom, 8px (`spacing/100`) left and right (Karl, 2026-11-24; was 16px), then a 2px underline (transparent unless Active) that overlaps the bar's 1px rule.
 - **Accessibility:** a button with `role=tab`, `aria-selected` and `aria-controls`; keyboard focus shows the Focus state.
 
 ## Accessibility
@@ -90,7 +90,7 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **6**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **94**.
 
 
 **Built from:** no nested components.
@@ -109,4 +109,4 @@ None open.
 - `tab-nav-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-16 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

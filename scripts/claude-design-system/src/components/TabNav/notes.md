@@ -39,7 +39,7 @@ Feature: Tab Nav
       # Manual activation, because choosing For You can open the Welcome modal.
 
   Rule: More tabs than fit (option C1, Karl 2026-11-24)
-    # The bar stays full width. Fade 48px; chevron 36px, 16px arrow icon, no fill or shadow.
+    # The bar stays full width; tabs 8px apart. Fade 48px; chevron 36px, 16px arrow icon in gray/100, no fill or shadow.
     # Chevrons are aria-hidden and out of the Tab order: keyboard users use the arrow keys.
 
     Scenario: The bar first shows
@@ -47,12 +47,12 @@ Feature: Tab Nav
       When the page loads
       Then the tab at the right edge shows part way and fades out
       And a right chevron shows at the edge, with no left chevron
-      # if a gap would land at the edge, the gap narrows (down to 12px) so a tab shows part way
 
     Scenario: The reader selects the right chevron
       Given there are more tabs to the right
       When the reader selects the right chevron
-      Then the tabs scroll left by about one screen
+      Then the tabs slide left by about one screen in 250ms, ease-in-out
+      # the same speed as the section menu drawer (Push Nav)
       And a left chevron and a left fade show
 
     Scenario Outline: The reader scrolls to <end>
