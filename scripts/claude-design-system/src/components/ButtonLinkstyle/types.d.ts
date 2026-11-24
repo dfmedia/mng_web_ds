@@ -5,7 +5,7 @@ export interface ButtonLinkstyleProps extends Omit<React.HTMLAttributes<HTMLElem
    *  An object is treated as ordinary inline CSS instead. Default '1 Row'. */
   style?: '1 Row' | 'Stacked' | React.CSSProperties;
   /** Forced Figma State for documentation; leave unset in real layouts. */
-  state?: 'Default' | 'Hover' | 'Pressed' | 'InFocus';
+  state?: 'Default' | 'Hover' | 'Pressed' | 'InFocus' | 'Disabled';
   /** Icon font name for Icon=Left/Right. Default 'new-tab' (the Figma sample). */
   iconName?: string;
   /** Button text (Figma "Label"). Children work too. Default 'Linkstyle Button'. */

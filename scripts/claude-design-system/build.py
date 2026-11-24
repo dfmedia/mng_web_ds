@@ -47,6 +47,7 @@ COMPONENTS = [
     ("action-button", "ButtonAction", "Button Action", "Core"),
     ("in-line-close", "ButtonInLineClose", "Button In-Line Close", "Core"),
     ("pop-up-modal-close", "ButtonModalClose", "Button Modal Close", "Core"),
+    ("spinner", "Spinner", "Spinner", "Core"),
     ("non-button-hyperlink", "Hyperlink", "Hyperlink", "Core"),
     ("tooltip", "Tooltip", "Tooltip", "Core"),
     ("popover", "Popover", "Popover", "Core"),

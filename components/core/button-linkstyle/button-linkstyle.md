@@ -6,10 +6,10 @@ figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "Button Linkstyle"
 figma_node: "5428:3953"
 component_key: f2989bf6601dd76f26f1ecd1ee39d25551450390
-variants: 24
+variants: 30
 tokens: button-linkstyle.tokens.json
 skeleton: button-linkstyle.html
-exported: 2026-10-28
+exported: 2026-11-24
 ---
 
 # Button Linkstyle
@@ -28,36 +28,42 @@ exported: 2026-10-28
 |---|---|---|
 | Icon | None | None, Left, Right |
 | Style | 1 Row | 1 Row, Stacked |
-| State | Default | Default, Hover, Pressed, InFocus |
+| State | Default | Default, Hover, Pressed, InFocus, Disabled |
 
 ## Variants
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `None / 1 Row / Default` | 138×38 | [5428:3880](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3880) | 78 | ![](previews/button-linkstyle--none-1-row-default.png) |
+| `None / 1 Row / Default` | 138×38 | [5428:3880](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3880) | 122 | ![](previews/button-linkstyle--none-1-row-default.png) |
 | `None / 1 Row / Hover` | 138×38 | [5428:3882](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3882) | 1 | ![](previews/button-linkstyle--none-1-row-hover.png) |
 | `None / 1 Row / Pressed` | 138×38 | [7078:7616](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7078-7616) | 1 | ![](previews/button-linkstyle--none-1-row-pressed.png) |
 | `None / 1 Row / InFocus` | 138×38 | [5428:3884](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3884) | 2 | ![](previews/button-linkstyle--none-1-row-infocus.png) |
+| `None / 1 Row / Disabled` | 138×38 | [7673:28813](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28813) | 0 | ![](previews/button-linkstyle--none-1-row-disabled.png) |
 | `None / Stacked / Default` | 91×60 | [5428:3881](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3881) | 0 | ![](previews/button-linkstyle--none-stacked-default.png) |
 | `None / Stacked / Hover` | 91×60 | [5428:3883](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3883) | 0 | ![](previews/button-linkstyle--none-stacked-hover.png) |
 | `None / Stacked / Pressed` | 91×60 | [7078:7620](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7078-7620) | 0 | ![](previews/button-linkstyle--none-stacked-pressed.png) |
 | `None / Stacked / InFocus` | 91×60 | [5428:3885](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5428-3885) | 0 | ![](previews/button-linkstyle--none-stacked-infocus.png) |
+| `None / Stacked / Disabled` | 91×60 | [7673:28823](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28823) | 0 | ![](previews/button-linkstyle--none-stacked-disabled.png) |
 | `Left / 1 Row / Default` | 162×38 | [7236:30032](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30032) | 0 | ![](previews/button-linkstyle--left-1-row-default.png) |
 | `Left / 1 Row / Hover` | 162×38 | [7236:30046](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30046) | 0 | ![](previews/button-linkstyle--left-1-row-hover.png) |
 | `Left / 1 Row / Pressed` | 162×38 | [7236:30076](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30076) | 0 | ![](previews/button-linkstyle--left-1-row-pressed.png) |
 | `Left / 1 Row / InFocus` | 162×38 | [7236:30060](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30060) | 0 | ![](previews/button-linkstyle--left-1-row-infocus.png) |
+| `Left / 1 Row / Disabled` | 162×38 | [7673:28833](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28833) | 0 | ![](previews/button-linkstyle--left-1-row-disabled.png) |
 | `Left / Stacked / Default` | 115×60 | [7236:30039](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30039) | 1 | ![](previews/button-linkstyle--left-stacked-default.png) |
 | `Left / Stacked / Hover` | 115×60 | [7236:30053](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30053) | 0 | ![](previews/button-linkstyle--left-stacked-hover.png) |
 | `Left / Stacked / Pressed` | 115×60 | [7236:30083](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30083) | 0 | ![](previews/button-linkstyle--left-stacked-pressed.png) |
 | `Left / Stacked / InFocus` | 115×60 | [7236:30068](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30068) | 0 | ![](previews/button-linkstyle--left-stacked-infocus.png) |
+| `Left / Stacked / Disabled` | 115×60 | [7673:28843](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28843) | 0 | ![](previews/button-linkstyle--left-stacked-disabled.png) |
 | `Right / 1 Row / Default` | 162×38 | [7236:30090](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30090) | 1 | ![](previews/button-linkstyle--right-1-row-default.png) |
 | `Right / 1 Row / Hover` | 162×38 | [7236:30110](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30110) | 0 | ![](previews/button-linkstyle--right-1-row-hover.png) |
 | `Right / 1 Row / Pressed` | 162×38 | [7236:30152](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30152) | 0 | ![](previews/button-linkstyle--right-1-row-pressed.png) |
 | `Right / 1 Row / InFocus` | 162×38 | [7236:30130](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30130) | 0 | ![](previews/button-linkstyle--right-1-row-infocus.png) |
+| `Right / 1 Row / Disabled` | 162×38 | [7673:28853](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28853) | 0 | ![](previews/button-linkstyle--right-1-row-disabled.png) |
 | `Right / Stacked / Default` | 115×60 | [7236:30100](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30100) | 1 | ![](previews/button-linkstyle--right-stacked-default.png) |
 | `Right / Stacked / Hover` | 115×60 | [7236:30120](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30120) | 0 | ![](previews/button-linkstyle--right-stacked-hover.png) |
 | `Right / Stacked / Pressed` | 115×60 | [7236:30162](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30162) | 0 | ![](previews/button-linkstyle--right-stacked-pressed.png) |
 | `Right / Stacked / InFocus` | 115×60 | [7236:30141](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7236-30141) | 0 | ![](previews/button-linkstyle--right-stacked-infocus.png) |
+| `Right / Stacked / Disabled` | 115×60 | [7673:28863](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28863) | 0 | ![](previews/button-linkstyle--right-stacked-disabled.png) |
 
 ## Anatomy
 
@@ -86,13 +92,25 @@ From `button-linkstyle.tokens.json`. References point at system tokens (`tokens/
 | `button-linkstyle.state-infocus.focus-ring.border-radius` | `{radius.sm}` |
 | `button-linkstyle.state-infocus.focus-ring.border-style` | solid |
 | `button-linkstyle.state-infocus.focus-ring.border-width` | 2px |
+| `button-linkstyle.state-infocus.icon-left.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-infocus.icon-right.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-infocus.label.color` | `{color.theme.primary}` |
 | `button-linkstyle.icon-left.icon-left.height` | 16px |
-| `button-linkstyle.icon-left.icon-left.icon-color` | `{color.gray.min}` |
 | `button-linkstyle.icon-left.icon-left.width` | 16px |
+| `button-linkstyle.state-default.icon-left.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-default.icon-right.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-default.label.color` | `{color.theme.primary}` |
+| `button-linkstyle.state-hover.icon-left.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-hover.icon-right.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-hover.label.color` | `{color.theme.primary}` |
+| `button-linkstyle.state-pressed.icon-left.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-pressed.icon-right.icon-color` | `{color.gray.min}` |
+| `button-linkstyle.state-pressed.label.color` | `{color.theme.primary}` |
+| `button-linkstyle.state-disabled.icon-left.icon-color` | `{color.gray.400}` |
+| `button-linkstyle.state-disabled.icon-right.icon-color` | `{color.gray.400}` |
+| `button-linkstyle.state-disabled.label.color` | `{color.gray.400}` |
 | `button-linkstyle.icon-right.icon-right.height` | 16px |
-| `button-linkstyle.icon-right.icon-right.icon-color` | `{color.gray.min}` |
 | `button-linkstyle.icon-right.icon-right.width` | 16px |
-| `button-linkstyle.base.label.color` | `{color.theme.primary}` |
 | `button-linkstyle.base.label.font-family` | `{font.family.noto-sans}` |
 | `button-linkstyle.base.label.font-size` | `{font.size.16}` |
 | `button-linkstyle.base.label.font-weight` | `{font.weight.regular}` |
@@ -116,6 +134,7 @@ No Breakpoint property: one size at every width.
 - **Text alignment when the label wraps:** `Icon=Left` is left-justified; `Icon=None` and `Icon=Right` are right-justified.
 - **Focus ring:** InFocus adds one `Focus Ring` frame, absolutely positioned 1px outside the element, with a 2px OUTSIDE stroke bound to `color/gray/black`. It draws outside the component and never changes its size or moves anything inside or around it (a 40px button reads as 46px with the ring). In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;` or an absolutely positioned pseudo-element; never a border or padding change.
 - **New-tab links:** the icon is decorative (`aria-hidden="true"`). A link that opens in a new tab also needs visually hidden text such as "(opens in a new tab)".
+- **Disabled** (Karl, 2026-11-24): label and icons `color/gray/400`, with no underline; no box on hover or press; not focusable (`disabled`, or `aria-disabled="true"` on a link). Below 4.5:1 on purpose: WCAG 1.4.3 exempts disabled controls (CLAUDE.md).
 
 ## Accessibility
 
@@ -125,13 +144,13 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **85**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **129**.
 
-Inside components: InLineMessage ×15, Modals ×14, ModalsCenter ×12, Form Field ×6.
-Placed on pages: Modal Panels | 2025.12.29 ×24, In-Line Content Containers | 2026.01.02 ×3, Buttons | 2026.09.30 ×2.
+Inside components: OverlayContainers ×21, InLineMessage ×15, ModalsCenter ×12, Modals ×12, Form Field OLD ×6, Body ×5, Footer STICKY ×1.
+Placed on pages: Modal Panels | 2026.11.10 ×30, Embedded Login | 2026.11.20 ×13, In-Line Content Containers | 2026.01.02 ×3, Buttons | 2026.09.30 ×2.
 
-**Built from:** Icons ×16
-Icon variants: `new-tab` ×16.
+**Built from:** Icons ×20
+Icon variants: `new-tab` ×20.
 
 ## Production
 
@@ -147,4 +166,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `button-linkstyle.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

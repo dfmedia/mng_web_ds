@@ -11,7 +11,7 @@
       },
       "production": null,
       "layer": "core",
-      "exported": "2026-11-10"
+      "exported": "2026-11-24"
     }
   },
   "in-line-close": {
@@ -140,17 +140,6 @@
                 "unit": "px"
               }
             },
-            "icon-color": {
-              "$type": "color",
-              "$value": "{color.gray.min}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Colors/color/gray/min"
-                  }
-                }
-              }
-            },
             "width": {
               "$type": "dimension",
               "$value": {
@@ -162,7 +151,81 @@
         }
       }
     },
+    "state-default": {
+      "button": {
+        "box": {
+          "icon": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.min}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/min"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-hover": {
+      "button": {
+        "box": {
+          "icon": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.min}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/min"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-pressed": {
+      "button": {
+        "box": {
+          "icon": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.min}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/min"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "state-infocus": {
+      "button": {
+        "box": {
+          "icon": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.min}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/min"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
       "focus-ring": {
         "border-color": {
           "$type": "color",
@@ -195,6 +258,25 @@
           "$value": {
             "value": 2,
             "unit": "px"
+          }
+        }
+      }
+    },
+    "state-disabled": {
+      "button": {
+        "box": {
+          "icon": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.400}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/400"
+                  }
+                }
+              }
+            }
           }
         }
       }

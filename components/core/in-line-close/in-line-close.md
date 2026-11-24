@@ -6,10 +6,10 @@ figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "Button In-Line Close"
 figma_node: "5335:16200"
 component_key: f0d7dc9ffa766ef6e54c1d46416a37d1405acaa6
-variants: 4
+variants: 5
 tokens: in-line-close.tokens.json
 skeleton: in-line-close.html
-exported: 2026-11-10
+exported: 2026-11-24
 ---
 
 # In-Line Close
@@ -26,16 +26,17 @@ exported: 2026-11-10
 
 | Property | Default | Options |
 |---|---|---|
-| State | Default | Default, Hover, Pressed, InFocus |
+| State | Default | Default, Hover, Pressed, InFocus, Disabled |
 
 ## Variants
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default` | 40×40 | [5335:16197](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16197) | 104 | ![](previews/in-line-close--default.png) |
+| `Default` | 40×40 | [5335:16197](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16197) | 161 | ![](previews/in-line-close--default.png) |
 | `Hover` | 40×40 | [5335:16198](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16198) | 2 | ![](previews/in-line-close--hover.png) |
 | `Pressed` | 40×40 | [7078:7697](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7078-7697) | 1 | ![](previews/in-line-close--pressed.png) |
 | `InFocus` | 40×40 | [5335:16199](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5335-16199) | 1 | ![](previews/in-line-close--infocus.png) |
+| `Disabled` | 40×40 | [7682:25701](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7682-25701) | 0 | ![](previews/in-line-close--disabled.png) |
 
 ## Anatomy
 
@@ -73,12 +74,16 @@ From `in-line-close.tokens.json`. References point at system tokens (`tokens/cor
 | `in-line-close.base.button.box.padding-right` | `{spacing.100}` |
 | `in-line-close.base.button.box.padding-top` | `{spacing.100}` |
 | `in-line-close.base.button.box.icon.height` | 12px |
-| `in-line-close.base.button.box.icon.icon-color` | `{color.gray.min}` |
 | `in-line-close.base.button.box.icon.width` | 12px |
+| `in-line-close.state-default.button.box.icon.icon-color` | `{color.gray.min}` |
+| `in-line-close.state-hover.button.box.icon.icon-color` | `{color.gray.min}` |
+| `in-line-close.state-pressed.button.box.icon.icon-color` | `{color.gray.min}` |
+| `in-line-close.state-infocus.button.box.icon.icon-color` | `{color.gray.min}` |
 | `in-line-close.state-infocus.focus-ring.border-color` | `{color.gray.black}` |
 | `in-line-close.state-infocus.focus-ring.border-radius` | `{radius.sm}` |
 | `in-line-close.state-infocus.focus-ring.border-style` | solid |
 | `in-line-close.state-infocus.focus-ring.border-width` | 2px |
+| `in-line-close.state-disabled.button.box.icon.icon-color` | `{color.gray.400}` |
 
 ## Behavior and breakpoints
 
@@ -88,6 +93,7 @@ No Breakpoint property: one size at every width.
 - Every state has the same layers (`Button` › `Box` › `Icon`); the `Box` has no fill or border in Default and InFocus.
 - Usually placed top-right of an InLineMessage panel, with the hit area aligned to the panel padding.
 - **Focus ring:** InFocus adds one `Focus Ring` frame, absolutely positioned 1px outside the element, with a 2px OUTSIDE stroke bound to `color/gray/black`. It draws outside the component and never changes its size or moves anything inside or around it (the ring surrounds the 40px hit area with 4px corners, matching the Hover/Pressed box). In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;` or an absolutely positioned pseudo-element; never a border or padding change.
+- **Disabled** (Karl, 2026-11-24, option C2): the 12px icon is `color/gray/400`, with no box on hover or press; not focusable. Used on a modal's close button while the modal is busy (for example while signing in), so the reader can't close it halfway.
 
 ## Accessibility
 
@@ -97,13 +103,14 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **108**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **165**.
 
-Inside components: InLineMessage ×59, ModalsOffset ×9, Tooltip ×8, ModalsCenter ×6.
-Placed on pages: Modal Panels | 2026.11.10 ×17, Buttons | 2026.09.30 ×2, Tooltips | 2026.10.23 ×1.
+Inside components: InLineMessage ×59, Tooltip ×10, ModalsOffset ×9, ModalsCenter ×6, Header STICKY ×1.
+Placed on pages: Modal Panels | 2026.11.10 ×17, In-Line Content Containers | 2026.01.02 ×5, Alerts and Icons ×3, Tooltips | 2026.10.23 ×2, Embedded Login | 2026.11.20 ×1, Buttons | 2026.09.30 ×1.
+45 instances are nested inside other instances.
 
-**Built from:** Icons ×4
-Icon variants: `close` ×4.
+**Built from:** Icons ×5
+Icon variants: `close` ×5.
 
 ## Production
 
@@ -120,4 +127,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `in-line-close.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-10 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

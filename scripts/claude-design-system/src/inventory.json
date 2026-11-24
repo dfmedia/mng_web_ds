@@ -168,6 +168,14 @@
      "component": "ButtonInLineClose"
     },
     {
+     "name": "Spinner",
+     "where": "Style Guide | Loading Animation, 7673:28421",
+     "status": "In system",
+     "note": "Size 20 (in a button) / 48 (content area) × Color On dark / On light; Button Primary / Tertiary State=Loading draw it.",
+     "updated": "2026-11-24",
+     "component": "Spinner"
+    },
+    {
      "name": "Hyperlink",
      "where": "Buttons, 6282:5568",
      "status": "In system",
@@ -414,10 +422,10 @@
      "note": "Cursor set; decide whether it belongs."
     },
     {
-     "name": "Date selector, progress indicators, loading animation",
+     "name": "Date selector, progress indicators",
      "where": "Style Guide pages (no components)",
      "status": "To design",
-     "note": "Loading animation needs timing and easing docs (open item 4)."
+     "note": "The loading animation is now the Spinner component (2026-11-24)."
     },
     {
      "name": "Themes style guide",

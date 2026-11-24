@@ -9,12 +9,18 @@ function ButtonLinkstyle(props) {
   var cssStyle = props.style && typeof props.style === 'object' ? props.style : undefined;
   var iconName = props.iconName || 'new-tab';
   var Tag = props.href ? 'a' : 'button';
-  var el = Object.assign(rest(props, ['icon', 'style', 'state', 'iconName', 'label', 'href', 'target', 'type', 'disabled', 'newTabText', 'className']), {
-    className: cx('mngds-button-linkstyle', 'mngds-button-linkstyle--icon-' + slug(icon), 'mngds-button-linkstyle--' + slug(figmaStyle), stateClass(props.state), props.className),
-    style: cssStyle
+  /* Disabled (Karl, 2026-11-24): gray/400 label and icons, no underline, no box; not focusable. */
+  var off = !!props.disabled || props.state === 'Disabled';
+  var el = Object.assign(rest(props, ['icon', 'style', 'state', 'iconName', 'label', 'href', 'target', 'type', 'disabled', 'newTabText', 'onClick', 'className']), {
+    className: cx('mngds-button-linkstyle', 'mngds-button-linkstyle--icon-' + slug(icon), 'mngds-button-linkstyle--' + slug(figmaStyle), stateClass(props.state), off && 'is-disabled', props.className),
+    style: cssStyle,
+    onClick: off ? undefined : props.onClick
   });
-  if (Tag === 'a') { el.href = props.href; if (props.target) { el.target = props.target; el.rel = 'noopener'; } }
-  else { el.type = props.type || 'button'; el.disabled = props.disabled; }
+  if (Tag === 'a') {
+    if (off) el['aria-disabled'] = 'true'; else el.href = props.href;
+    if (props.target) { el.target = props.target; el.rel = 'noopener'; }
+  }
+  else { el.type = props.type || 'button'; el.disabled = off; }
   var newTab = Tag === 'a' && props.target === '_blank';
   return h(Tag, el,
     icon === 'Left' ? h(Icon, { name: iconName, size: 16, className: 'mngds-button-linkstyle__icon mngds-button-linkstyle__icon--left' }) : null,

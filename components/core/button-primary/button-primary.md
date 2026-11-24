@@ -6,10 +6,10 @@ figma_file: jFHYqhZbJjvWQmDI4myCsd
 figma_set: "Button Primary"
 figma_node: "5328:15928"
 component_key: 6bd2bc0fe1532df6beb4cd56593b624012dbe8c4
-variants: 24
+variants: 36
 tokens: button-primary.tokens.json
 skeleton: button-primary.html
-exported: 2026-10-28
+exported: 2026-11-24
 ---
 
 # Button Primary
@@ -28,36 +28,48 @@ exported: 2026-10-28
 |---|---|---|
 | Breakpoint | Desktop | Desktop, Mobile |
 | Icon | None | None, Left, Right |
-| State | Default | Default, Hover, Pressed, InFocus |
+| State | Default | Default, Hover, Pressed, InFocus, Loading, Disabled |
 
 ## Variants
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Desktop / None / Default` | 323.75×40 | [5328:15927](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5328-15927) | 103 | ![](previews/button-primary--desktop-none-default.png) |
+| `Desktop / None / Default` | 323.75×40 | [5328:15927](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5328-15927) | 118 | ![](previews/button-primary--desktop-none-default.png) |
 | `Desktop / None / Hover` | 323.75×40 | [5401:5129](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5401-5129) | 1 | ![](previews/button-primary--desktop-none-hover.png) |
 | `Desktop / None / Pressed` | 323.75×40 | [6942:1550](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6942-1550) | 1 | ![](previews/button-primary--desktop-none-pressed.png) |
 | `Desktop / None / InFocus` | 323.75×40 | [6942:6604](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6942-6604) | 1 | ![](previews/button-primary--desktop-none-infocus.png) |
-| `Desktop / Left / Default` | 323.75×40 | [5328:15929](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5328-15929) | 10 | ![](previews/button-primary--desktop-left-default.png) |
+| `Desktop / None / Loading` | 323.75×40 | [7673:28561](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28561) | 0 | ![](previews/button-primary--desktop-none-loading.png) |
+| `Desktop / None / Disabled` | 323.75×40 | [7673:28570](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28570) | 0 | ![](previews/button-primary--desktop-none-disabled.png) |
+| `Desktop / Left / Default` | 323.75×40 | [5328:15929](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5328-15929) | 9 | ![](previews/button-primary--desktop-left-default.png) |
 | `Desktop / Left / Hover` | 323.75×40 | [5401:5135](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5401-5135) | 0 | ![](previews/button-primary--desktop-left-hover.png) |
 | `Desktop / Left / Pressed` | 323.75×40 | [6942:1556](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6942-1556) | 0 | ![](previews/button-primary--desktop-left-pressed.png) |
 | `Desktop / Left / InFocus` | 323.75×40 | [6942:6616](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6942-6616) | 0 | ![](previews/button-primary--desktop-left-infocus.png) |
+| `Desktop / Left / Loading` | 323.75×40 | [7673:28582](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28582) | 0 | ![](previews/button-primary--desktop-left-loading.png) |
+| `Desktop / Left / Disabled` | 323.75×40 | [7673:28591](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28591) | 0 | ![](previews/button-primary--desktop-left-disabled.png) |
 | `Desktop / Right / Default` | 323.75×40 | [5328:15941](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5328-15941) | 0 | ![](previews/button-primary--desktop-right-default.png) |
 | `Desktop / Right / Hover` | 323.75×40 | [5401:5141](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5401-5141) | 0 | ![](previews/button-primary--desktop-right-hover.png) |
 | `Desktop / Right / Pressed` | 323.75×40 | [6942:1562](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6942-1562) | 0 | ![](previews/button-primary--desktop-right-pressed.png) |
 | `Desktop / Right / InFocus` | 323.75×40 | [5417:3605](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5417-3605) | 0 | ![](previews/button-primary--desktop-right-infocus.png) |
-| `Mobile / None / Default` | 323.75×40 | [7012:34428](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34428) | 0 | ![](previews/button-primary--mobile-none-default.png) |
+| `Desktop / Right / Loading` | 323.75×40 | [7673:28603](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28603) | 0 | ![](previews/button-primary--desktop-right-loading.png) |
+| `Desktop / Right / Disabled` | 323.75×40 | [7673:28612](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28612) | 0 | ![](previews/button-primary--desktop-right-disabled.png) |
+| `Mobile / None / Default` | 323.75×40 | [7012:34428](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34428) | 2 | ![](previews/button-primary--mobile-none-default.png) |
 | `Mobile / None / Hover` | 323.75×40 | [7012:34440](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34440) | 0 | ![](previews/button-primary--mobile-none-hover.png) |
 | `Mobile / None / Pressed` | 323.75×40 | [7012:34471](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34471) | 0 | ![](previews/button-primary--mobile-none-pressed.png) |
 | `Mobile / None / InFocus` | 323.75×40 | [7012:34581](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34581) | 0 | ![](previews/button-primary--mobile-none-infocus.png) |
+| `Mobile / None / Loading` | 323.75×40 | [7673:28624](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28624) | 0 | ![](previews/button-primary--mobile-none-loading.png) |
+| `Mobile / None / Disabled` | 323.75×40 | [7673:28633](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28633) | 0 | ![](previews/button-primary--mobile-none-disabled.png) |
 | `Mobile / Left / Default` | 323.75×40 | [7012:34434](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34434) | 0 | ![](previews/button-primary--mobile-left-default.png) |
 | `Mobile / Left / Hover` | 323.75×40 | [7012:34446](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34446) | 0 | ![](previews/button-primary--mobile-left-hover.png) |
 | `Mobile / Left / Pressed` | 323.75×40 | [7012:34477](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34477) | 0 | ![](previews/button-primary--mobile-left-pressed.png) |
 | `Mobile / Left / InFocus` | 323.75×40 | [7012:34496](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34496) | 0 | ![](previews/button-primary--mobile-left-infocus.png) |
+| `Mobile / Left / Loading` | 323.75×40 | [7673:28645](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28645) | 0 | ![](previews/button-primary--mobile-left-loading.png) |
+| `Mobile / Left / Disabled` | 323.75×40 | [7673:28654](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28654) | 0 | ![](previews/button-primary--mobile-left-disabled.png) |
 | `Mobile / Right / Default` | 323.75×40 | [7012:34458](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34458) | 0 | ![](previews/button-primary--mobile-right-default.png) |
 | `Mobile / Right / Hover` | 323.75×40 | [7012:34452](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34452) | 0 | ![](previews/button-primary--mobile-right-hover.png) |
 | `Mobile / Right / Pressed` | 323.75×40 | [7012:34483](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34483) | 0 | ![](previews/button-primary--mobile-right-pressed.png) |
 | `Mobile / Right / InFocus` | 323.75×40 | [7012:34464](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34464) | 0 | ![](previews/button-primary--mobile-right-infocus.png) |
+| `Mobile / Right / Loading` | 323.75×40 | [7673:28666](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28666) | 0 | ![](previews/button-primary--mobile-right-loading.png) |
+| `Mobile / Right / Disabled` | 323.75×40 | [7673:28675](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28675) | 0 | ![](previews/button-primary--mobile-right-disabled.png) |
 
 ## Anatomy
 
@@ -87,14 +99,46 @@ From `button-primary.tokens.json`. References point at system tokens (`tokens/co
 | Token | Value |
 |---|---|
 | `button-primary.state-default.button.background` | `{color.theme.primary}` |
+| `button-primary.state-default.button.border-color` | `{color.theme.primary-dark}` |
+| `button-primary.state-default.button.content.gap` | `{spacing.200}` |
+| `button-primary.state-default.button.content.icon-left.icon-color` | `{color.gray.max}` |
+| `button-primary.state-default.button.content.icon-right.icon-color` | `{color.gray.max}` |
+| `button-primary.state-default.button.content.label.color` | `{color.gray.max}` |
 | `button-primary.state-hover.button.background` | `{color.theme.primary-light}` |
+| `button-primary.state-hover.button.border-color` | `{color.theme.primary-dark}` |
+| `button-primary.state-hover.button.content.gap` | `{spacing.200}` |
+| `button-primary.state-hover.button.content.icon-left.icon-color` | `{color.gray.max}` |
+| `button-primary.state-hover.button.content.icon-right.icon-color` | `{color.gray.max}` |
+| `button-primary.state-hover.button.content.label.color` | `{color.gray.max}` |
 | `button-primary.state-pressed.button.background` | `{color.theme.primary-light}` |
+| `button-primary.state-pressed.button.border-color` | `{color.theme.primary-dark}` |
+| `button-primary.state-pressed.button.content.gap` | `{spacing.200}` |
+| `button-primary.state-pressed.button.content.icon-left.icon-color` | `{color.gray.max}` |
+| `button-primary.state-pressed.button.content.icon-right.icon-color` | `{color.gray.max}` |
+| `button-primary.state-pressed.button.content.label.color` | `{color.gray.max}` |
 | `button-primary.state-infocus.button.background` | `{color.theme.primary}` |
+| `button-primary.state-infocus.button.border-color` | `{color.theme.primary-dark}` |
+| `button-primary.state-infocus.button.content.gap` | `{spacing.200}` |
+| `button-primary.state-infocus.button.content.icon-left.icon-color` | `{color.gray.max}` |
+| `button-primary.state-infocus.button.content.icon-right.icon-color` | `{color.gray.max}` |
+| `button-primary.state-infocus.button.content.label.color` | `{color.gray.max}` |
 | `button-primary.state-infocus.button.focus-ring.border-color` | `{color.gray.black}` |
 | `button-primary.state-infocus.button.focus-ring.border-radius` | `{radius.sm}` |
 | `button-primary.state-infocus.button.focus-ring.border-style` | solid |
 | `button-primary.state-infocus.button.focus-ring.border-width` | 2px |
-| `button-primary.base.button.border-color` | `{color.theme.primary-dark}` |
+| `button-primary.state-loading.button.background` | `{color.theme.primary}` |
+| `button-primary.state-loading.button.border-color` | `{color.theme.primary-dark}` |
+| `button-primary.state-loading.button.content.gap` | `{spacing.100}` |
+| `button-primary.state-loading.button.content.label.color` | `{color.gray.max}` |
+| `button-primary.state-loading.button.content.spinner.height` | 20px |
+| `button-primary.state-loading.button.content.spinner.icon-color` | `{color.gray.max}` |
+| `button-primary.state-loading.button.content.spinner.width` | 20px |
+| `button-primary.state-disabled.button.background` | `{color.gray.600}` |
+| `button-primary.state-disabled.button.border-color` | `{color.gray.500}` |
+| `button-primary.state-disabled.button.content.gap` | `{spacing.200}` |
+| `button-primary.state-disabled.button.content.icon-left.icon-color` | `{color.gray.300}` |
+| `button-primary.state-disabled.button.content.icon-right.icon-color` | `{color.gray.300}` |
+| `button-primary.state-disabled.button.content.label.color` | `{color.gray.300}` |
 | `button-primary.base.button.border-radius` | `{radius.sm}` |
 | `button-primary.base.button.border-style` | solid |
 | `button-primary.base.button.border-width` | 1px |
@@ -103,19 +147,15 @@ From `button-primary.tokens.json`. References point at system tokens (`tokens/co
 | `button-primary.base.button.padding-left` | `{spacing.200}` |
 | `button-primary.base.button.padding-right` | `{spacing.200}` |
 | `button-primary.base.button.padding-top` | `{spacing.100}` |
-| `button-primary.base.button.content.gap` | `{spacing.200}` |
-| `button-primary.base.button.content.label.color` | `{color.gray.max}` |
+| `button-primary.base.button.content.icon-left.height` | 16px |
+| `button-primary.base.button.content.icon-left.width` | 16px |
+| `button-primary.base.button.content.icon-right.height` | 16px |
+| `button-primary.base.button.content.icon-right.width` | 16px |
 | `button-primary.base.button.content.label.font-family` | `{font.family.noto-sans}` |
 | `button-primary.base.button.content.label.font-size` | `{font.size.16}` |
 | `button-primary.base.button.content.label.font-weight` | `{font.weight.bold}` |
 | `button-primary.base.root.padding-left` | `{spacing.100}` |
 | `button-primary.base.root.padding-right` | `{spacing.100}` |
-| `button-primary.icon-left.button.content.icon-left.height` | 16px |
-| `button-primary.icon-left.button.content.icon-left.icon-color` | `{color.gray.max}` |
-| `button-primary.icon-left.button.content.icon-left.width` | 16px |
-| `button-primary.icon-right.button.content.icon-right.height` | 16px |
-| `button-primary.icon-right.button.content.icon-right.icon-color` | `{color.gray.max}` |
-| `button-primary.icon-right.button.content.icon-right.width` | 16px |
 
 ## Behavior and breakpoints
 
@@ -131,6 +171,8 @@ From `button-primary.tokens.json`. References point at system tokens (`tokens/co
 - **Height:** 40px in every state (8px top/bottom padding with a 40px min-height). It grows only when the label wraps to a second line.
 - The breakpoint split is Desktop vs Mobile only; there are no per-template variants (340/768/1024/1100/1280). Use Mobile below 640px and Desktop from 640px up unless a layout says otherwise.
 - **Focus ring:** InFocus adds one `Focus Ring` frame, absolutely positioned 1px outside the element, with a 2px OUTSIDE stroke bound to `color/gray/black`. It draws outside the component and never changes its size or moves anything inside or around it (a 40px button reads as 46px with the ring). In CSS: `outline: 2px solid var(--mng-color-gray-black); outline-offset: 1px;` or an absolutely positioned pseudo-element; never a border or padding change.
+- **Loading** (Karl, 2026-11-24, option M2): a 20px Spinner (`Color=On dark`, `color/gray/max`) 8px before a waiting label ("Loading…" by default; say what is happening, e.g. "Signing in…"), on the Default fill; the icons are hidden. The button keeps its place and can't be pressed again (`aria-disabled="true"`, `aria-busy="true"`). The design prefers a 48px Spinner in the content area wherever possible; this state is for when the wait belongs to the button.
+- **Disabled** (Karl, 2026-11-24, option D3): `color/gray/600` fill, 1px `color/gray/500` border, `color/gray/300` label and icons (3.3:1 on the fill; WCAG 1.4.3 exempts disabled controls, so it's below 4.5:1 on purpose, CLAUDE.md). Not focusable, no hover or pressed change (`disabled`, or `aria-disabled="true"` on a link).
 
 ## Accessibility
 
@@ -140,13 +182,13 @@ From `button-primary.tokens.json`. References point at system tokens (`tokens/co
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **116**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **132**.
 
-Inside components: InLineMessage ×61, Modals ×7, ModalsCenter ×6.
-Placed on pages: In-Line Content Containers | 2026.01.02 ×17, Modal Panels | 2025.12.29 ×12, Alerts and Icons ×6, Buttons | 2026.09.30 ×3.
+Inside components: InLineMessage ×61, Modals ×6, ModalsCenter ×6, ReaderDash Tempates ×5, Regiwall ×5, UserStatus ×3, Page Body Templates ×1.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×17, Modal Panels | 2026.11.10 ×15, Alerts and Icons ×6, Buttons | 2026.09.30 ×2, User Avatars and Status | 2026.11.13 ×1.
 
-**Built from:** Icons ×16
-Icon variants: `new-tab` ×16.
+**Built from:** Icons ×20, Spinner ×6
+Icon variants: `new-tab` ×20.
 
 ## Production
 
@@ -162,4 +204,4 @@ None open.
 - `button-primary.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

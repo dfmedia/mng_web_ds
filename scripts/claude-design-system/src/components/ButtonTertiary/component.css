@@ -10,16 +10,16 @@
   text-decoration: none; cursor: pointer; font: inherit; outline: none;
 }
 .mngds-button-tertiary--mobile .mngds-button-tertiary__button { width: 100%; }
-.mngds-button-tertiary__content { display: inline-flex; align-items: center; justify-content: center; gap: var(--mng-button-tertiary-base-button-content-gap); }
+.mngds-button-tertiary__content { display: inline-flex; align-items: center; justify-content: center; gap: var(--mng-button-tertiary-state-default-button-content-gap); }
 .mngds-button-tertiary__label {
   font-family: var(--mng-button-tertiary-base-button-content-label-font-family);
   font-size: var(--mng-button-tertiary-base-button-content-label-font-size);
   font-weight: var(--mng-button-tertiary-base-button-content-label-font-weight);
-  line-height: normal; color: var(--mng-button-tertiary-base-button-content-label-color);
+  line-height: normal; color: var(--mng-button-tertiary-state-default-button-content-label-color);
   text-align: center; text-transform: capitalize;
 }
-.mngds-button-tertiary__icon--left { width: var(--mng-button-tertiary-icon-left-button-content-icon-left-width); height: var(--mng-button-tertiary-icon-left-button-content-icon-left-height); color: var(--mng-button-tertiary-icon-left-button-content-icon-left-icon-color); }
-.mngds-button-tertiary__icon--right { width: var(--mng-button-tertiary-icon-right-button-content-icon-right-width); height: var(--mng-button-tertiary-icon-right-button-content-icon-right-height); color: var(--mng-button-tertiary-icon-right-button-content-icon-right-icon-color); }
+.mngds-button-tertiary__icon--left { width: var(--mng-button-tertiary-base-button-content-icon-left-width); height: var(--mng-button-tertiary-base-button-content-icon-left-height); color: var(--mng-button-tertiary-state-default-button-content-icon-left-icon-color); }
+.mngds-button-tertiary__icon--right { width: var(--mng-button-tertiary-base-button-content-icon-right-width); height: var(--mng-button-tertiary-base-button-content-icon-right-height); color: var(--mng-button-tertiary-state-default-button-content-icon-right-icon-color); }
 .mngds-button-tertiary__button:hover, .mngds-button-tertiary__button.is-hover {
   background: var(--mng-button-tertiary-state-hover-button-background);
   box-shadow: inset 0 0 0 var(--mng-button-tertiary-base-button-border-width) var(--mng-button-tertiary-state-hover-button-border-color);
@@ -34,3 +34,20 @@
   outline: var(--mng-button-tertiary-state-infocus-button-focus-ring-border-width) var(--mng-button-tertiary-state-infocus-button-focus-ring-border-style) var(--mng-button-tertiary-state-infocus-button-focus-ring-border-color);
   outline-offset: 1px;
 }
+
+/* Loading (Karl, 2026-11-24): 20px Spinner 8px before the waiting label; no hover / pressed change. */
+.mngds-button-tertiary__button.is-loading, .mngds-button-tertiary__button.is-loading:hover, .mngds-button-tertiary__button.is-loading:active {
+  background: var(--mng-button-tertiary-state-loading-button-background); cursor: progress;
+  box-shadow: inset 0 0 0 var(--mng-button-tertiary-base-button-border-width) var(--mng-button-tertiary-state-loading-button-border-color);
+}
+.mngds-button-tertiary__button.is-loading .mngds-button-tertiary__content { gap: var(--mng-button-tertiary-state-loading-button-content-gap); }
+.mngds-button-tertiary__button.is-loading .mngds-button-tertiary__label { color: var(--mng-button-tertiary-state-loading-button-content-label-color); }
+/* Disabled (Karl, 2026-11-24, option D3): gray/600 fill, gray/500 border, gray/300 label and icons (3.3:1; WCAG 1.4.3 exempts
+   disabled controls). Not focusable; no hover / pressed change. */
+.mngds-button-tertiary__button:disabled, .mngds-button-tertiary__button.is-disabled,
+.mngds-button-tertiary__button.is-disabled:hover, .mngds-button-tertiary__button.is-disabled:active {
+  background: var(--mng-button-tertiary-state-disabled-button-background); cursor: not-allowed; outline: none;
+  box-shadow: inset 0 0 0 var(--mng-button-tertiary-base-button-border-width) var(--mng-button-tertiary-state-disabled-button-border-color);
+}
+.mngds-button-tertiary__button.is-disabled .mngds-button-tertiary__label { color: var(--mng-button-tertiary-state-disabled-button-content-label-color); }
+.mngds-button-tertiary__button.is-disabled .mngds-button-tertiary__icon { color: var(--mng-button-tertiary-state-disabled-button-content-icon-left-icon-color); }

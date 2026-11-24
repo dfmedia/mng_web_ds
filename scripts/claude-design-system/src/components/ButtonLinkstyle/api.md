@@ -10,10 +10,11 @@ h(ButtonLinkstyle, { label: 'Privacy policy', icon: 'Right', iconName: 'new-tab'
 |---|---|---|
 | `icon` | `'None'`, `'Left'`, `'Right'` | `'None'` |
 | `style` | `'1 Row'`, `'Stacked'` (Figma Style; an object is inline CSS) | `'1 Row'` |
-| `state` | `'Default'`, `'Hover'`, `'Pressed'`, `'InFocus'` (documentation only) | unset |
+| `state` | `'Default'`, `'Hover'`, `'Pressed'`, `'InFocus'`, `'Disabled'` (documentation only) | unset |
 | `iconName` | an `Icon` name | `'new-tab'` |
 | `label` | text | `'Linkstyle Button'` |
 | `href`, `target`, `newTabText` | renders a link; new-tab links get visually hidden text | |
-| `onClick`, `disabled`, `type` | button attributes | |
+| `disabled` | the Disabled look (`color/gray/400` label and icons, no underline, no box); not focusable | `false` |
+| `onClick`, `type` | button attributes | |
 
 The button always hugs its label (`display: inline-flex; max-width: 100%`) and wraps only when its container is narrower. `Style=Stacked` is the documented wrapped case; real layouts normally keep `'1 Row'` and let the container constrain it. When wrapped, `Icon=Left` is left-justified, `None` and `Right` right-justified. One size at every breakpoint (38px tall on one line).

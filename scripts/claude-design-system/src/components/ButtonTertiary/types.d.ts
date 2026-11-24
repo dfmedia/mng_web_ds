@@ -6,7 +6,7 @@ export interface ButtonTertiaryProps extends React.HTMLAttributes<HTMLDivElement
   /** Icon font name for Icon=Left/Right. Default 'new-tab' (the Figma default). */
   iconName?: string;
   /** Forced Figma State for documentation; leave unset in real layouts. */
-  state?: 'Default' | 'Hover' | 'Pressed' | 'InFocus';
+  state?: 'Default' | 'Hover' | 'Pressed' | 'InFocus' | 'Loading' | 'Disabled';
   /** Button text (Figma "Label"). Children work too. Default 'Tertiary Button'. */
   label?: React.ReactNode;
   /** Renders an <a> instead of a <button>. */
@@ -14,6 +14,10 @@ export interface ButtonTertiaryProps extends React.HTMLAttributes<HTMLDivElement
   target?: string;
   onClick?: (e: React.MouseEvent) => void;
   disabled?: boolean;
+  /** Waiting: a 20px Spinner (On light) before `loadingLabel`; the button can't be pressed again (aria-busy, aria-disabled). */
+  loading?: boolean;
+  /** The waiting label while loading; say what is happening. Default 'Loading…'. */
+  loadingLabel?: React.ReactNode;
   type?: 'button' | 'submit' | 'reset';
 }
 export declare function ButtonTertiary(props: ButtonTertiaryProps): React.ReactElement;

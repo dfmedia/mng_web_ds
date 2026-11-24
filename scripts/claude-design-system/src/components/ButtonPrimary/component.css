@@ -4,21 +4,21 @@
   min-height: var(--mng-button-primary-base-button-min-height);
   padding: var(--mng-button-primary-base-button-padding-top) var(--mng-button-primary-base-button-padding-right) var(--mng-button-primary-base-button-padding-bottom) var(--mng-button-primary-base-button-padding-left);
   border: 0; /* Figma's 1px stroke is inside the button: drawn as an inset shadow so sizes match Figma */
-  box-shadow: inset 0 0 0 var(--mng-button-primary-base-button-border-width) var(--mng-button-primary-base-button-border-color);
+  box-shadow: inset 0 0 0 var(--mng-button-primary-base-button-border-width) var(--mng-button-primary-state-default-button-border-color);
   border-radius: var(--mng-button-primary-base-button-border-radius);
   background: var(--mng-button-primary-state-default-button-background);
   text-decoration: none; cursor: pointer; font: inherit; outline: none;
 }
 .mngds-button-primary--mobile .mngds-button-primary__button { width: 100%; }
-.mngds-button-primary__content { display: inline-flex; align-items: center; justify-content: center; gap: var(--mng-button-primary-base-button-content-gap); }
+.mngds-button-primary__content { display: inline-flex; align-items: center; justify-content: center; gap: var(--mng-button-primary-state-default-button-content-gap); }
 .mngds-button-primary__label {
   font-family: var(--mng-button-primary-base-button-content-label-font-family);
   font-size: var(--mng-button-primary-base-button-content-label-font-size);
   font-weight: var(--mng-button-primary-base-button-content-label-font-weight);
-  line-height: normal; color: var(--mng-button-primary-base-button-content-label-color);
+  line-height: normal; color: var(--mng-button-primary-state-default-button-content-label-color);
   text-align: center; text-transform: capitalize;
 }
-.mngds-button-primary__icon { width: var(--mng-button-primary-icon-left-button-content-icon-left-width); height: var(--mng-button-primary-icon-left-button-content-icon-left-height); color: var(--mng-button-primary-icon-left-button-content-icon-left-icon-color); }
+.mngds-button-primary__icon { width: var(--mng-button-primary-base-button-content-icon-left-width); height: var(--mng-button-primary-base-button-content-icon-left-height); color: var(--mng-button-primary-state-default-button-content-icon-left-icon-color); }
 .mngds-button-primary__button:hover, .mngds-button-primary__button.is-hover { background: var(--mng-button-primary-state-hover-button-background); }
 .mngds-button-primary__button:active, .mngds-button-primary__button.is-pressed { background: var(--mng-button-primary-state-pressed-button-background); }
 .mngds-button-primary__button:focus-visible, .mngds-button-primary__button.is-infocus {
@@ -26,3 +26,20 @@
   outline: var(--mng-button-primary-state-infocus-button-focus-ring-border-width) var(--mng-button-primary-state-infocus-button-focus-ring-border-style) var(--mng-button-primary-state-infocus-button-focus-ring-border-color);
   outline-offset: 1px;
 }
+
+/* Loading (Karl, 2026-11-24): 20px Spinner 8px before the waiting label; no hover / pressed change. */
+.mngds-button-primary__button.is-loading, .mngds-button-primary__button.is-loading:hover, .mngds-button-primary__button.is-loading:active {
+  background: var(--mng-button-primary-state-loading-button-background); cursor: progress;
+  box-shadow: inset 0 0 0 var(--mng-button-primary-base-button-border-width) var(--mng-button-primary-state-loading-button-border-color);
+}
+.mngds-button-primary__button.is-loading .mngds-button-primary__content { gap: var(--mng-button-primary-state-loading-button-content-gap); }
+.mngds-button-primary__button.is-loading .mngds-button-primary__label { color: var(--mng-button-primary-state-loading-button-content-label-color); }
+/* Disabled (Karl, 2026-11-24, option D3): gray/600 fill, gray/500 border, gray/300 label and icons (3.3:1; WCAG 1.4.3 exempts
+   disabled controls). Not focusable; no hover / pressed change. */
+.mngds-button-primary__button:disabled, .mngds-button-primary__button.is-disabled,
+.mngds-button-primary__button.is-disabled:hover, .mngds-button-primary__button.is-disabled:active {
+  background: var(--mng-button-primary-state-disabled-button-background); cursor: not-allowed; outline: none;
+  box-shadow: inset 0 0 0 var(--mng-button-primary-base-button-border-width) var(--mng-button-primary-state-disabled-button-border-color);
+}
+.mngds-button-primary__button.is-disabled .mngds-button-primary__label { color: var(--mng-button-primary-state-disabled-button-content-label-color); }
+.mngds-button-primary__button.is-disabled .mngds-button-primary__icon { color: var(--mng-button-primary-state-disabled-button-content-icon-left-icon-color); }

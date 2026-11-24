@@ -1,0 +1,23 @@
+<!-- @dsCard group="Core" height=330 subtitle="Figma: Spinner · 4 variants (Size × Color)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Spinner</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}
+.pv-dark{display:inline-flex;align-items:center;justify-content:center;padding:16px;background:var(--mng-color-theme-primary);border-radius:4px;}
+.pv-area{display:flex;flex-direction:column;align-items:center;gap:var(--mng-spacing-200);padding:24px 16px;font-family:var(--font-noto-sans);font-size:16px;color:var(--mng-color-gray-min);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  function item(size, color) {
+    var sp = h(NS.Spinner, { size: size, color: color });
+    return { label: 'Size=' + size + ', Color=' + color, node: color === 'On dark' ? h('span', { className: 'pv-dark' }, sp) : sp };
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Size × Color', note: '20px inside a button (2.5px ring), 48px in a content area (4px ring). On dark = color/gray/max, On light = color/gray/min; the track is the same color at 30%. One turn every 0.8s; 2s with reduced motion.' },
+      h(I.Specimen, { items: [item(20, 'On light'), item(20, 'On dark'), item(48, 'On light'), item(48, 'On dark')] })),
+    h(I.SpecimenSection, { title: 'Preferred: in the content area', note: 'Centered where the content will appear, with a short message 16px below it. The area carries aria-busy="true".' },
+      h('div', { className: 'pv-area', 'aria-busy': 'true' }, h(NS.Spinner, { size: 48 }), h('span', null, 'Checking your subscription…')))));
+</script>
+</body>
+</html>

@@ -14,7 +14,7 @@
 .mngds-in-line-close__icon {
   width: var(--mng-in-line-close-base-button-box-icon-width); height: var(--mng-in-line-close-base-button-box-icon-height);
   display: inline-flex; align-items: center; justify-content: center;
-  color: var(--mng-in-line-close-base-button-box-icon-icon-color);
+  color: var(--mng-in-line-close-state-default-button-box-icon-icon-color);
 }
 /* Hover and Pressed: white box with a 1px inside border (drawn inside so the box stays 28px, as in the skeleton). */
 .mngds-in-line-close:hover .mngds-in-line-close__box, .mngds-in-line-close.is-hover .mngds-in-line-close__box,
@@ -30,3 +30,9 @@
   border-radius: var(--mng-in-line-close-state-infocus-focus-ring-border-radius);
   outline: var(--mng-in-line-close-state-infocus-focus-ring-border-width) var(--mng-in-line-close-state-infocus-focus-ring-border-style) var(--mng-in-line-close-state-infocus-focus-ring-border-color);
 }
+/* Disabled (Karl, 2026-11-24, option C2): the 12px icon in color/gray/400, no box on hover or press; not focusable. */
+.mngds-in-line-close:disabled, .mngds-in-line-close.is-disabled { cursor: not-allowed; }
+.mngds-in-line-close.is-disabled .mngds-in-line-close__box,
+.mngds-in-line-close.is-disabled:hover .mngds-in-line-close__box, .mngds-in-line-close.is-disabled:active .mngds-in-line-close__box { background: none; box-shadow: none; }
+.mngds-in-line-close.is-disabled .mngds-in-line-close__icon { color: var(--mng-in-line-close-state-disabled-button-box-icon-icon-color); }
+.mngds-in-line-close.is-disabled::after { content: none; }

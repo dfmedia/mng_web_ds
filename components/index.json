@@ -92,10 +92,10 @@
         "node": "5428:3953",
         "set": "Button Linkstyle"
       },
-      "variants": 24,
-      "instances": 85,
+      "variants": 30,
+      "instances": 129,
       "knownIssues": 1,
-      "exported": "2026-10-28"
+      "exported": "2026-11-24"
     },
     {
       "slug": "button-primary",
@@ -108,10 +108,10 @@
         "node": "5328:15928",
         "set": "Button Primary"
       },
-      "variants": 24,
-      "instances": 116,
+      "variants": 36,
+      "instances": 132,
       "knownIssues": 0,
-      "exported": "2026-10-28"
+      "exported": "2026-11-24"
     },
     {
       "slug": "button-secondary",
@@ -156,10 +156,10 @@
         "node": "5333:16089",
         "set": "Button Tertiary"
       },
-      "variants": 24,
-      "instances": 18,
+      "variants": 36,
+      "instances": 20,
       "knownIssues": 0,
-      "exported": "2026-10-28"
+      "exported": "2026-11-24"
     },
     {
       "slug": "in-line-close",
@@ -172,10 +172,10 @@
         "node": "5335:16200",
         "set": "Button In-Line Close"
       },
-      "variants": 4,
-      "instances": 108,
+      "variants": 5,
+      "instances": 165,
       "knownIssues": 2,
-      "exported": "2026-11-10"
+      "exported": "2026-11-24"
     },
     {
       "slug": "non-button-hyperlink",
@@ -208,6 +208,22 @@
       "instances": 11,
       "knownIssues": 2,
       "exported": "2026-11-10"
+    },
+    {
+      "slug": "spinner",
+      "name": "Spinner",
+      "group": "feedback",
+      "layer": "core",
+      "path": "components/core/spinner/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7673:28421",
+        "set": "Spinner"
+      },
+      "variants": 4,
+      "instances": 19,
+      "knownIssues": 0,
+      "exported": "2026-11-24"
     },
     {
       "slug": "address-block",

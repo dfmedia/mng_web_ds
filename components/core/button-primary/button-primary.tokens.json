@@ -11,7 +11,7 @@
       },
       "production": null,
       "layer": "core",
-      "exported": "2026-10-28"
+      "exported": "2026-11-24"
     }
   },
   "button-primary": {
@@ -24,6 +24,69 @@
             "com.mng": {
               "figma": {
                 "variable": "Colors/color/theme/primary"
+              }
+            }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.200}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/200"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "icon-right": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
               }
             }
           }
@@ -42,6 +105,69 @@
               }
             }
           }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.200}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/200"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "icon-right": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -57,6 +183,69 @@
               }
             }
           }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.200}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/200"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "icon-right": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          }
         }
       }
     },
@@ -69,6 +258,69 @@
             "com.mng": {
               "figma": {
                 "variable": "Colors/color/theme/primary"
+              }
+            }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.theme.primary-dark}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary-dark"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.200}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/200"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "icon-right": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
               }
             }
           }
@@ -110,8 +362,19 @@
         }
       }
     },
-    "base": {
+    "state-loading": {
       "button": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.theme.primary}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/theme/primary"
+              }
+            }
+          }
+        },
         "border-color": {
           "$type": "color",
           "$value": "{color.theme.primary-dark}",
@@ -123,6 +386,141 @@
             }
           }
         },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            }
+          },
+          "spinner": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              }
+            },
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.max}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/max"
+                  }
+                }
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 20,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-disabled": {
+      "button": {
+        "background": {
+          "$type": "color",
+          "$value": "{color.gray.600}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/600"
+              }
+            }
+          }
+        },
+        "border-color": {
+          "$type": "color",
+          "$value": "{color.gray.500}",
+          "$extensions": {
+            "com.mng": {
+              "figma": {
+                "variable": "Colors/color/gray/500"
+              }
+            }
+          }
+        },
+        "content": {
+          "gap": {
+            "$type": "dimension",
+            "$value": "{spacing.200}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/200"
+                }
+              }
+            }
+          },
+          "icon-left": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.300}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/300"
+                  }
+                }
+              }
+            }
+          },
+          "icon-right": {
+            "icon-color": {
+              "$type": "color",
+              "$value": "{color.gray.300}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/300"
+                  }
+                }
+              }
+            }
+          },
+          "label": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.gray.300}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/gray/300"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "base": {
+      "button": {
         "border-radius": {
           "$type": "dimension",
           "$value": "{radius.sm}",
@@ -197,29 +595,39 @@
           }
         },
         "content": {
-          "gap": {
-            "$type": "dimension",
-            "$value": "{spacing.200}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Spacing & Radius/spacing/200"
-                }
+          "icon-left": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            }
+          },
+          "icon-right": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 16,
+                "unit": "px"
               }
             }
           },
           "label": {
-            "color": {
-              "$type": "color",
-              "$value": "{color.gray.max}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Colors/color/gray/max"
-                  }
-                }
-              }
-            },
             "font-family": {
               "$type": "fontFamily",
               "$value": "{font.family.noto-sans}",
@@ -275,72 +683,6 @@
             "com.mng": {
               "figma": {
                 "variable": "Spacing & Radius/spacing/100"
-              }
-            }
-          }
-        }
-      }
-    },
-    "icon-left": {
-      "button": {
-        "content": {
-          "icon-left": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 16,
-                "unit": "px"
-              }
-            },
-            "icon-color": {
-              "$type": "color",
-              "$value": "{color.gray.max}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Colors/color/gray/max"
-                  }
-                }
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 16,
-                "unit": "px"
-              }
-            }
-          }
-        }
-      }
-    },
-    "icon-right": {
-      "button": {
-        "content": {
-          "icon-right": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 16,
-                "unit": "px"
-              }
-            },
-            "icon-color": {
-              "$type": "color",
-              "$value": "{color.gray.max}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Colors/color/gray/max"
-                  }
-                }
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 16,
-                "unit": "px"
               }
             }
           }

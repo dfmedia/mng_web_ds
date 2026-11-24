@@ -14,13 +14,13 @@
   font-family: var(--mng-button-linkstyle-base-label-font-family);
   font-size: var(--mng-button-linkstyle-base-label-font-size);
   font-weight: var(--mng-button-linkstyle-base-label-font-weight);
-  line-height: normal; color: var(--mng-button-linkstyle-base-label-color);
+  line-height: normal; color: var(--mng-button-linkstyle-state-default-label-color);
   text-align: right; text-decoration: underline;
 }
 .mngds-button-linkstyle--icon-left .mngds-button-linkstyle__label { text-align: left; }
 .mngds-button-linkstyle__icon { flex: none; }
-.mngds-button-linkstyle__icon--left { width: var(--mng-button-linkstyle-icon-left-icon-left-width); height: var(--mng-button-linkstyle-icon-left-icon-left-height); color: var(--mng-button-linkstyle-icon-left-icon-left-icon-color); }
-.mngds-button-linkstyle__icon--right { width: var(--mng-button-linkstyle-icon-right-icon-right-width); height: var(--mng-button-linkstyle-icon-right-icon-right-height); color: var(--mng-button-linkstyle-icon-right-icon-right-icon-color); }
+.mngds-button-linkstyle__icon--left { width: var(--mng-button-linkstyle-icon-left-icon-left-width); height: var(--mng-button-linkstyle-icon-left-icon-left-height); color: var(--mng-button-linkstyle-state-default-icon-left-icon-color); }
+.mngds-button-linkstyle__icon--right { width: var(--mng-button-linkstyle-icon-right-icon-right-width); height: var(--mng-button-linkstyle-icon-right-icon-right-height); color: var(--mng-button-linkstyle-state-default-icon-right-icon-color); }
 .mngds-button-linkstyle__sr { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 /* Hover / Pressed / InFocus: the underline goes, a 1px brand-primary box surrounds label and icon. */
 .mngds-button-linkstyle:hover, .mngds-button-linkstyle.is-hover,
@@ -35,3 +35,9 @@
   outline: var(--mng-button-linkstyle-state-infocus-focus-ring-border-width) var(--mng-button-linkstyle-state-infocus-focus-ring-border-style) var(--mng-button-linkstyle-state-infocus-focus-ring-border-color);
   outline-offset: 1px;
 }
+/* Disabled (Karl, 2026-11-24): label and icons color/gray/400, no underline, no box on hover or press; not focusable.
+   Below 4.5:1 on purpose (WCAG 1.4.3 exempts disabled controls). */
+.mngds-button-linkstyle:disabled, .mngds-button-linkstyle.is-disabled,
+.mngds-button-linkstyle.is-disabled:hover, .mngds-button-linkstyle.is-disabled:active { box-shadow: none; outline: none; cursor: not-allowed; }
+.mngds-button-linkstyle.is-disabled .mngds-button-linkstyle__label { color: var(--mng-button-linkstyle-state-disabled-label-color); text-decoration: none; }
+.mngds-button-linkstyle.is-disabled .mngds-button-linkstyle__icon { color: var(--mng-button-linkstyle-state-disabled-icon-left-icon-color); }
