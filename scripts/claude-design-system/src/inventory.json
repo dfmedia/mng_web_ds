@@ -119,7 +119,7 @@
      "name": "Button Primary",
      "where": "Buttons | 2026.09.30, 5328:15928",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-24",
      "component": "ButtonPrimary"
     },
     {
@@ -133,14 +133,14 @@
      "name": "Button Tertiary",
      "where": "Buttons, 5333:16089",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-24",
      "component": "ButtonTertiary"
     },
     {
      "name": "Button Linkstyle",
      "where": "Buttons, 5428:3953",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-24",
      "component": "ButtonLinkstyle"
     },
     {
@@ -164,7 +164,7 @@
      "where": "Buttons, 5335:16200",
      "status": "In system",
      "note": "Exported as In-Line Close.",
-     "updated": "2026-11-10",
+     "updated": "2026-11-24",
      "component": "ButtonInLineClose"
     },
     {
@@ -225,7 +225,7 @@
      "name": "Popover",
      "where": "Main file, Tooltips page (7574:28804)",
      "status": "In system",
-     "updated": "2026-11-12",
+     "updated": "2026-11-24",
      "component": "Popover",
      "note": "A floating panel for buttons or links, opened by a trigger; the Toggletip's look with a Content slot; Placement Top / Bottom. First use: the share bar's More panel. Exported 2026-11-12 (popover)."
     },
@@ -257,14 +257,14 @@
      "name": "Tooltip / Toggletip",
      "where": "Tooltips | 2026.10.23, 7372:25744",
      "status": "In system",
-     "updated": "2026-10-29",
+     "updated": "2026-11-24",
      "component": "Tooltip"
     },
     {
      "name": "ModalsCenter",
      "where": "Modal Panels | 2026.11.10, 3040:2262",
      "status": "In system",
-     "updated": "2026-11-18",
+     "updated": "2026-11-24",
      "component": "ModalsCenter"
     },
     {
@@ -292,21 +292,21 @@
      "name": "CheckBox",
      "where": "Check Boxes | 2026.11.04, 4693:690",
      "status": "In system",
-     "updated": "2026-11-04",
+     "updated": "2026-11-24",
      "component": "CheckBox"
     },
     {
      "name": "Toggle Switch",
      "where": "Toggle Switches | 2026.11.10, 5216:61",
      "status": "In system",
-     "updated": "2026-11-10",
+     "updated": "2026-11-24",
      "component": "ToggleSwitch"
     },
     {
      "name": "Dropdown Menu",
      "where": "Dropdown Menus | 2026.11.11, 7543:1880",
      "status": "In system",
-     "updated": "2026-11-11",
+     "updated": "2026-11-24",
      "component": "DropdownMenu",
      "note": "Replaced Button ActionMenu (2026-11-11). Production not updated yet: design-vs-production.md entry 38."
     },
@@ -322,7 +322,7 @@
      "name": "Radio Button",
      "where": "Radio Buttons | 2026.11.12, 7589:29335",
      "status": "In system",
-     "updated": "2026-11-12",
+     "updated": "2026-11-24",
      "component": "RadioButton"
     },
     {
@@ -330,7 +330,7 @@
      "where": "Form Fields | 2026.11.04, 6963:6863",
      "status": "In system",
      "note": "The older set 2832:766 (Device x Flavor, still used by Embedded Login) isn't in the system.",
-     "updated": "2026-11-04",
+     "updated": "2026-11-24",
      "component": "FormField"
     },
     {
@@ -372,14 +372,14 @@
      "name": "Form Field Assembly / Password",
      "where": "Form Fields | 2026.11.04, 7003:28940",
      "status": "In system",
-     "updated": "2026-11-04",
+     "updated": "2026-11-24",
      "component": "Password"
     },
     {
      "name": "Form Field Assembly / Verification Code",
      "where": "Form Fields | 2026.11.04, 7003:29223",
      "status": "In system",
-     "updated": "2026-11-04",
+     "updated": "2026-11-24",
      "component": "VerificationCode"
     },
     {
@@ -484,7 +484,7 @@
      "name": "Tab Nav",
      "where": "Menus and Parts, 3629:44974",
      "status": "In system",
-     "updated": "2026-11-23",
+     "updated": "2026-11-24",
      "component": "TabNav"
     },
     {
@@ -761,7 +761,7 @@
      "where": "Menus and Parts, 456:2572 (90 variants)",
      "status": "In system",
      "note": "All 5 pages built (Home, Section Front, Article, Obituaries, Dashboard) with every state at all 5 devices and the sticky condensed state on scroll. AdFree-Scrolled added for Home, Section Front and Article 2026-10-30. Top Nav items Bold 15 / 26px 2026-11-02 (what production renders). Weather block is WeatherBug and \"All Sections\" SemiBold since 2026-11-09. The account area is AccountMenu since 2026-11-16. The condensed bar takes over after 55px of scrolling at 1040px and up, as production (was 450px; 2026-11-16). Not built here: the search field (the open section menu is SectionMenu).",
-     "updated": "2026-11-18",
+     "updated": "2026-11-24",
      "component": "Masthead"
     },
     {

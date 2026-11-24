@@ -16,3 +16,56 @@
 - The Weather Bug temperature is a third-party widget and stays Helvetica Bold, in Figma and here (Karl, 2026-10-30): `Helvetica, Arial, sans-serif` (Arial where Helvetica isn't installed). The date and E Edition link are Noto Sans.
 - **Fixed 2026-10-30:** the 800–1039px and 640–799px rules never applied (the CSS used `--lg-tableth` / `--md-tabletv`; the class names are `--lg-tablet-h` / `--md-tablet-v`). The 800–1039px bar now spreads its three columns and the 640–799px hamburger is 88px, as in Figma.
 - **Raw values on the other pages:** the 3px search-field radius (no radius token; `radius/sm` is 4px), the 10% "Powered by" tracking (no letter-spacing token), the 14px title-row gap and the 2px gap in the small "Powered by" lockup, all from Figma.
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: Masthead
+  # A header landmark; the section links are in a nav (aria-label "Main").
+  # The hamburger is a button with aria-expanded; search is a button with a label.
+
+  Rule: The Section Front name wraps instead of being cut
+
+    Scenario Outline: A Section Front at 1040px and up
+      Given the section is named <name>
+      When the page loads
+      Then the name is centered under the logo <how>
+
+      Examples:
+        | name                             | how                                               |
+        | "Things To Do"                   | on one line                                       |
+        | "Restaurants, Food And Drink"    | on two lines, and the row grows taller            |
+        | one word wider than its column   | with the word broken onto the next line, no hyphen |
+
+  Rule: The masthead condenses when the reader scrolls (1040px and up)
+
+    Scenario: The reader scrolls down
+      Given the reader is at the top of the page
+      When the reader scrolls past 55px
+      Then the full masthead is replaced by the 64px bar pinned to the top
+      And the ads under it scroll away
+
+    Scenario: The reader scrolls back to the top
+      Given the bar is pinned
+      When the reader scrolls back to the top
+      Then the full masthead returns, with no shadow
+
+    Scenario: An article page
+      Given the reader is on an article
+      When the bar is pinned
+      Then it shows the section name, the headline and the share buttons
+
+  Scenario: More Top Nav items than fit
+    Given a site has more Top Nav items than fit (11 on Chicago Tribune and Orlando Sentinel)
+    When the masthead shows
+    Then the Top Nav keeps its natural width and is clipped at the edges
+    # As production does; design-vs-production 9.1.
+
+  Scenario: Keyboard focus near the top of the page
+    Given the bar is pinned
+    When the reader tabs to a control near the top
+    Then the page scrolls so the control is not hidden under the bar
+    # scroll-padding-top: 65px.
+```
