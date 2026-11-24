@@ -34,3 +34,4 @@ Feature: Password requirements
     Then each requirement is read with its state, met or not met
     # Announce changes politely, not on every keystroke. Met is never shown by color alone.
 ```
+- **Masked value:** the dots that show while the password is hidden have 10% letter spacing on the 16px value (CSS `letter-spacing: 0.1em`, 1.6px), so they don't run together; the same in Reader Dashboard (Karl, 2026-11-24: no token needed, documented in the spec).
