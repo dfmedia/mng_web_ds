@@ -1,0 +1,12 @@
+/* Blocks Footer: the Footer's layout (mngds-footer) on tokens: 8px (spacing/100) gutter below 640px and 16px (spacing/200)
+   link spacing (the production Footer has 10px and 15px). */
+.mngds-blocks-footer .mngds-footer__group, .mngds-blocks-footer .mngds-footer__links { gap: var(--mng-spacing-200); }
+.mngds-blocks-footer .mngds-footer__group { padding-top: var(--mng-spacing-200); }
+.mngds-blocks-footer.mngds-footer--sm-mobile .mngds-footer__content, .mngds-blocks-footer.mngds-footer--sm-mobile .mngds-footer__bottom,
+.mngds-blocks-footer.mngds-footer--xs-fold .mngds-footer__content, .mngds-blocks-footer.mngds-footer--xs-fold .mngds-footer__bottom {
+  padding-left: var(--mng-spacing-100); padding-right: var(--mng-spacing-100);
+}
+/* Stay Informed: rule, heading, then the form 4px (spacing/050) below it, as in Figma. */
+.mngds-blocks-footer .mngds-blocks-footer__signup { gap: var(--mng-spacing-050); }
+.mngds-blocks-footer__form { display: flex; flex-direction: column; gap: var(--mng-spacing-200); margin: 0; }
+.mngds-blocks-footer__form .mngds-form-field { width: 100%; }

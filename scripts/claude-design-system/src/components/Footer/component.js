@@ -26,7 +26,9 @@ function footerLink(item, i, cls) {
   return h('li', { key: it.id || i, className: cls + '-item' }, h('a', { className: cls, href: it.href || '#', onClick: it.onClick }, it.label));
 }
 
-function Footer(props) {
+/* Shared by Footer and BlocksFooter. opts: columns (per device), parts (extra blocks by id, e.g. 'signup'),
+   mobileTop (ids placed above the accordion rows), className, used (props to keep off the root). */
+function footerView(props, opts) {
   var dv = useDevice(props.device);
   var device = dv[0];
   var pub = props.publication || 'OC Register';
@@ -55,15 +57,16 @@ function Footer(props) {
       h('ul', { className: 'mngds-footer__links' }, g.links.map(function (l, j) { return footerLink(l, j, 'mngds-footer__link'); })));
   }
 
+  var parts = Object.assign({ cta: cta }, opts.parts ? opts.parts(accordion) : {});
   var body;
   if (accordion) {
-    body = h('div', { className: 'mngds-footer__list' }, groups.map(group), cta);
+    body = h('div', { className: 'mngds-footer__list' }, (opts.mobileTop || []).map(function (id) { return parts[id]; }), groups.map(group), cta);
   } else {
-    var cols = FOOTER_COLUMNS[device];
+    var cols = (opts.columns || FOOTER_COLUMNS)[device];
     var placed = {};
     body = h('div', { className: 'mngds-footer__columns' }, cols.map(function (ids, c) {
       return h('div', { key: c, className: 'mngds-footer__column' }, ids.map(function (id) {
-        if (id === 'cta') return cta;
+        if (parts[id]) return parts[id];
         placed[id] = true; return byId[id] ? group(byId[id], id) : null;
       }));
     }));
@@ -72,8 +75,8 @@ function Footer(props) {
     if (extra.length) body = h(React.Fragment, null, body, h('div', { className: 'mngds-footer__columns' }, h('div', { className: 'mngds-footer__column' }, extra.map(group))));
   }
 
-  return h('footer', Object.assign(rest(props, ['device', 'publication', 'groups', 'legalLinks', 'subscribeLabel', 'subscribeHref', 'onSubscribe', 'logo', 'siteName', 'homeHref', 'className']), {
-      ref: dv[1], className: cx('mngds-footer', 'mngds-footer--' + slug(device), props.className) }),
+  return h('footer', Object.assign(rest(props, ['device', 'publication', 'groups', 'legalLinks', 'subscribeLabel', 'subscribeHref', 'onSubscribe', 'logo', 'siteName', 'homeHref', 'className'].concat(opts.used || [])), {
+      ref: dv[1], className: cx('mngds-footer', 'mngds-footer--' + slug(device), opts.className, props.className) }),
     h('div', { className: 'mngds-footer__content' },
       h('a', { className: 'mngds-footer__logo-link', href: props.homeHref || '/', 'aria-label': props.siteName || 'Fakeville Daily News' },
         props.logo || h(PlaceholderLogo, { className: 'mngds-footer__logo', decorative: true })),
@@ -81,3 +84,5 @@ function Footer(props) {
     h('div', { className: 'mngds-footer__bottom' },
       h('ul', { className: 'mngds-footer__legal' }, legal.map(function (l, j) { return footerLink(l, j, 'mngds-footer__legal-link'); }))));
 }
+
+function Footer(props) { return footerView(props, {}); }

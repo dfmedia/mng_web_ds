@@ -1,0 +1,20 @@
+<!-- @dsCard group="WordPress Elements" height=5200 subtitle="Figma: Blocks Footer · 5 variants" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>BlocksFooter</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  var devices = [['XL-Desktop', 1280, '1040px and up: 5 columns'], ['LG-TabletH', 1024, '800–1039px: 3 columns'], ['MD-TabletV', 768, '640–799px: 2 columns'], ['SM-Mobile', 360, 'below 640px: Stay Informed, then accordion groups, built 360'], ['XS-Fold', 340, 'below 640px, built 340']];
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'Device', note: 'The future footer with the Stay Informed email signup (not in production yet). Click into the email field: the Terms and Conditions appear (not drawn in Figma yet; sample text). Below 640px the group headings open and close.' },
+      h(I.Specimen, { items: devices.map(function (d) {
+        return { label: 'Device=' + d[0] + ' (' + d[2] + ')', width: d[1] + 32, node: h('div', { style: { width: d[1] } }, h(NS.BlocksFooter, { device: d[0] })) };
+      }) })),
+    h(I.SpecimenSection, { title: 'Terms shown', note: 'After the reader starts the form (forced here with showTerms).' },
+      h(I.Specimen, { items: [{ label: 'Device=SM-Mobile, terms shown', width: 360 + 32, node: h('div', { style: { width: 360 } }, h(NS.BlocksFooter, { device: 'SM-Mobile', showTerms: true })) }] }))));
+</script>
+</body>
+</html>

@@ -533,8 +533,10 @@
     {
      "name": "Blocks Footer (was Footer_w_signup)",
      "where": "Homepage, Blocks section, 801:1755",
-     "status": "To add",
-     "note": "Future footer with the email signup. Exported 2026-10-30; left out of the Claude system for now (Karl, 2026-10-30)."
+     "status": "In system",
+     "note": "Future footer with the Stay Informed email signup (not in production yet). In the system 2026-11-24 (Karl); its Terms and Conditions and a sign-up button aren't drawn in Figma yet.",
+     "updated": "2026-11-24",
+     "component": "BlocksFooter"
     },
     {
      "name": "Gallery Icon Badge",

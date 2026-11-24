@@ -115,6 +115,7 @@ COMPONENTS = [
     ("account-menu", "AccountMenu", "AccountMenu", "WordPress Elements"),
     ("masthead", "Masthead", "Masthead", "WordPress Elements"),
     ("footer", "Footer", "Footer", "WordPress Elements"),
+    ("blocks-footer", "BlocksFooter", "Blocks Footer", "WordPress Elements"),
     ("ad-blocks", "AdBlocks", "Ad Blocks", "WordPress Elements"),
 ]
 # ModalsOffset is left out on purpose (Karl, 2026-10-29: not part of the design system).

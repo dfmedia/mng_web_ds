@@ -3,7 +3,7 @@
 - **Accordion open state** isn't in Figma (only closed rows): an open group shows its links under the heading with the same 15px spacing, and the chevron turns to `arrow-up`.
 - **Subscribe Now** is `ButtonPrimary` without its 8px side margin. Figma shows the label in capitals; `ButtonPrimary` capitalizes words ("Subscribe Now").
 - The legal links keep the 1040px order (copyright first) at every width; the Figma mobile variant lists copyright last.
-- The future footer with the email signup is **Blocks Footer** (`801:1755`, WordPress Elements ▸ Homepage ▸ Blocks): exported, left out of the Claude system for now (Karl, 2026-10-30).
+- The future footer with the email signup is **Blocks Footer** (`801:1755`, WordPress Elements ▸ Homepage ▸ Blocks): `BlocksFooter`, built on this layout (2026-11-24).
 
 ### Behavior (Gherkin)
 

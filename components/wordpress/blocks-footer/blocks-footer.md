@@ -9,12 +9,12 @@ component_key: 5ed851a93d8fb8b8dd00daf164dc25b74af9edab
 variants: 5
 tokens: blocks-footer.tokens.json
 skeleton: blocks-footer.html
-exported: 2026-11-13
+exported: 2026-11-24
 ---
 
 # Blocks Footer
 
-> The future site footer with the "Stay Informed" email signup (was Footer_w_signup; renamed and moved to WordPress Elements ▸ Homepage ▸ Blocks on 2026-10-30, Karl). Device = the 5 WordPress grid widths. Not in production yet, and not in the Claude design system yet (Karl, 2026-10-30).
+> The future site footer with the "Stay Informed" email signup (was Footer_w_signup; renamed and moved to WordPress Elements ▸ Homepage ▸ Blocks on 2026-10-30, Karl). Device = the 5 WordPress grid widths. Not in production yet; in the Claude design system as `BlocksFooter` since 2026-11-24 (Karl).
 
 ## Figma
 
@@ -688,7 +688,8 @@ None yet: a future design. Built from the production Footer (`354:1282`).
 
 1. No production reference on the 6 review sites; the signup's column placement is a design decision, not an audited fact.
 2. The XL-Desktop email field is narrower than its placeholder text ("email@address.c…").
-3. **Values not bound to a token** (literal in the component tokens): `base` footer-content.link-list-wrapper.link-list.link-row.about-oc-register-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.advertising-solutions-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.contact-us-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.marketplace-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.partners-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.subscribe-link gap = 15px.
+3. **Not drawn yet** (2026-11-24): the Stay Informed Terms and Conditions (the Gherkin shows them once the reader starts the form; the Claude design system uses CheckboxTerms with sample text) and a sign-up button (Enter submits there).
+4. **Values not bound to a token** (literal in the component tokens): `base` footer-content.link-list-wrapper.link-list.link-row.about-oc-register-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.advertising-solutions-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.contact-us-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.marketplace-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.partners-link gap = 15px; `base` footer-content.link-list-wrapper.link-list.link-row.subscribe-link gap = 15px.
 
 ## Files
 
@@ -696,4 +697,4 @@ None yet: a future design. Built from the production Footer (`354:1282`).
 - `blocks-footer.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

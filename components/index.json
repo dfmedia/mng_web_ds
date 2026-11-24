@@ -686,8 +686,8 @@
       },
       "variants": 5,
       "instances": 0,
-      "knownIssues": 3,
-      "exported": "2026-11-13"
+      "knownIssues": 4,
+      "exported": "2026-11-24"
     },
     {
       "slug": "blocks-lead-article-card",
