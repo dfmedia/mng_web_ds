@@ -8,8 +8,8 @@
    open the Welcome modal, which shouldn't happen just from arrowing past it.
    Overflow, option C1 (Karl, 2026-11-24; replaces the 2026-11-23 cut-in-half rule): when the tabs don't all fit, the
    bar stays full width, the tabs stay 8px apart (spacing/100; Karl, 2026-11-24, was 24px with narrowing to 12px), so the
-   tab at the edge shows partly; the side with more tabs fades over 48px, and a chevron button (16px arrow-outline-left /
-   arrow-outline-right, the outline arrow with a tail, color/gray/100) sits on that side. The fade ends just inside the 36px chevron, so the cut tab still shows. A chevron
+   tab at the edge shows partly; the side with more tabs fades over 48px, and a chevron button (16px arrow-left /
+   arrow-right, color/gray/300) sits on that side. The fade ends just inside the 36px chevron, so the cut tab still shows. A chevron
    scrolls about 80% of the visible width, sliding in 250ms ease-in-out, the section menu drawer's (Push Nav) speed
    (Karl, 2026-11-24: the browser's smooth scroll was too abrupt); instant with reduced motion. Chevrons are pointer
    aids: keyboard and screen-reader users move with the tablist's arrow keys, so the chevrons are aria-hidden and out
@@ -92,7 +92,7 @@ function TabNav(props) {
     return h('button', { type: 'button', tabIndex: -1, 'aria-hidden': 'true',
         className: cx('mngds-tab-nav__chevron', 'mngds-tab-nav__chevron--' + (dir < 0 ? 'left' : 'right')),
         onClick: function () { page(dir); } },
-      h(Icon, { name: dir < 0 ? 'arrow-outline-left' : 'arrow-outline-right', size: 16 }));
+      h(Icon, { name: dir < 0 ? 'arrow-left' : 'arrow-right', size: 16 }));
   }
   return h('div', Object.assign(rest(props, ['breakpoint', 'tabs', 'selectedIndex', 'defaultSelectedIndex', 'onChange', 'aria-label', 'className']), {
       className: cx('mngds-tab-nav', 'mngds-tab-nav--' + slug(bp), props.className)
