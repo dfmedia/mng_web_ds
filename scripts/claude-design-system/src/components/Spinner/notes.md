@@ -1,5 +1,5 @@
 - **Where it goes** (Karl, 2026-11-24): the design prefers the 48px Spinner in the content area wherever possible, so the buttons keep their labels; inside a button it is 20px with a waiting label (Button Primary / Tertiary State=Loading). Production shows it inside buttons today.
-- **Speed:** one turn every 0.8s is the speed of the loading-screen mockups Karl reviewed (2026-11-24); Figma doesn't set it yet, so confirm it there.
+- **Speed** (Karl, 2026-11-24): one turn every 0.8s, linear; with reduced motion, one turn every 2s.
 
 ### Behavior (Gherkin)
 
