@@ -7,3 +7,45 @@
 - Drag / swipe: a mostly horizontal pointer move at least one arrow-width long pages the slideshow (the spec gives no threshold; the arrow width is the nearest repo value). No dots, no autoplay, no disabled style (the gallery loops), as the spec says.
 - Caption text line height is `normal` (spec "auto"); Chromium's rounding matches the Figma heights here (356×359, 358×319, 340×309).
 - Previews are shown on white (the page background) rather than the `color/gray/500` documentation stage, so the caption gray reads as it ships; the arrows' white focus outline shows against the image.
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec in WordPress Elements (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: Zone 1 Slideshow
+
+  Rule: Control sizes follow the screen width
+    Scenario Outline: Controls at <range>
+      When the page loads at <range>
+      Then the arrows are <arrows> and the caption and count are <text>
+
+      Examples:
+        | range        | arrows             | text |
+        | 800px and up | 40×60, 30px icons  | 13px |
+        | below 800px  | 35×53, 26px icons  | 11px |
+
+  Rule: The gallery loops
+    Scenario: Next on the last slide
+      Given the last slide is showing
+      When the reader selects "Next"
+      Then the first slide shows
+
+    Scenario: Previous on the first slide
+      Given the first slide is showing
+      When the reader selects "Previous"
+      Then the last slide shows
+      # so production's disabled style (20% opacity) never shows
+
+    Scenario: The reader swipes
+      When the reader drags or swipes the image strip
+      Then the next or previous slide shows
+      # no dots, no autoplay
+
+  Rule: Screen readers hear the slide change
+    Scenario: The photo changes
+      Given a screen reader is running
+      When the photo changes
+      Then the new slide count is announced
+      # aria-live="polite" on the count; not in production yet (design-vs-production 17.2)
+```

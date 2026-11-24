@@ -4,3 +4,22 @@
 - **Title** is the theme eyebrow (family, size and weight per theme) in `color/theme/primary`, as production; it isn't Section Title / Eyebrow, which is gray with a short underline.
 - **Bold Coastal is drawn:** production sets the list padding and column gap in em of the theme's eyebrow size, and Measured Vibrant has no rule; Figma and this component use Bold Coastal's values on every theme.
 - Blueconic also serves a card template on some sites (14 items in 300×136 cards, orlandosentinel and mcall on 2026-11-02); it isn't designed yet (to-do).
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec in WordPress Elements (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: Blueconic Block
+  # Breakpoints: production .dfm-most-popular-flex-container ul
+
+  Scenario Outline: Block at <range>
+    When the page loads at <range>
+    Then the 10 items sit in <columns>
+
+    Examples:
+      | range          | columns                                  |
+      | XS (≤639px)    | one column                               |
+      | (640–1039px)   | two columns, 5 per column                |
+      | (≥1040px)      | two columns, larger list spacing         |
+```

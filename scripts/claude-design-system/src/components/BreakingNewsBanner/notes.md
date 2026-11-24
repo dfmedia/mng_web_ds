@@ -4,3 +4,38 @@
 - **Date** is `color/gray/100` (Karl, 2026-11-12); production's #5D5B5A fails on The Mercury News (4.3:1) and the Michigan #9DAABD sites (2.9:1). Design contrast: near-black 7.4:1 or more and the date 4.9:1 or more on every light secondary.
 - **Eight sites override the bar to red** and keep it (Karl, 2026-11-12): Denver Post, Morning Call, Orlando Sentinel, South Florida Sun Sentinel, The Virginian-Pilot, Daily Press, Capital Gazette, The Baltimore Sun. Their contrast failures are ADA issues (design-vs-production 13.1); this component draws the design (secondary).
 - From 800px the close button keeps at least 16px from the text; production reserves none, so a long headline can push the date under it (13.2).
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec in WordPress Elements (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: Breaking News Banner
+  # Breakpoints: production .breaking-bar, max-width 39.9375em / min-width 50em
+
+  Rule: The layout follows the screen width
+    Scenario Outline: Banner at <range>
+      Given a breaking news story is live
+      When the page loads at <range>
+      Then the title, headline and date sit <layout>
+
+      Examples:
+        | range         | layout                                          |
+        | XS (≤639px)   | in one paragraph; the headline wraps under the title |
+        | S (640–799px) | in one paragraph, as XS, with 12px side padding |
+        | (≥800px)      | on one line, centered vertically                |
+
+  Rule: The date never breaks across lines
+    Scenario: A long headline on a small screen
+      Given the headline runs past the first line
+      When the banner wraps
+      Then the date moves to the next line whole
+
+  Scenario: The reader opens the story
+    When the reader selects the headline
+    Then the story opens
+
+  Scenario: The reader closes the banner
+    When the reader selects the close button
+    Then the banner is removed from the page
+```

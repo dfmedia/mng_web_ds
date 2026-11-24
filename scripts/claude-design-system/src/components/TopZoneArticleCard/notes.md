@@ -4,3 +4,24 @@
 - **The headline group's 15px gap is raw on purpose** (Karl, 2026-10-30: no token for it). It only shows once the Article Status Badge does.
 - **Article Status Badge** is hidden in every Figma variant and no property turns it on, so it isn't drawn here.
 - Stacked images keep 16:9 at the column width (336×189, 197×111 in Figma); row thumbnails are fixed (280×157, 100×67).
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec in WordPress Elements (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: TopZone Article Card
+  # Breakpoints: production .busy .feature-small
+
+  Scenario Outline: Card at <range>
+    When the page loads at <range>
+    Then the cards sit <per_row> per row as <layout>
+
+    Examples:
+      | range            | per_row | layout                          |
+      | XL (≥1280px)     | 2       | image above, 336×189            |
+      | L (1040–1279px)  | 1       | thumbnail row, 280×157, no rule |
+      | M (800–1039px)   | 2       | image above, 197×111            |
+      | S (640–799px)    | 2       | thumbnail row, 97×54            |
+      | XS (≤639px)      | 1       | thumbnail row, 100×67           |
+```

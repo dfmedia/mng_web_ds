@@ -5,3 +5,22 @@
 - **Newsletter Signup** (`NewsletterSignup`) ends the list: `(≤799px)` below 800px, `(≥800px)` in the side column. Pass `newsletter` to put your own node there, or `showNewsletter: false` for the subscriber view.
 - The title is Section Title / Eyebrow, Style = Underline, with no chevron (as in Figma); its production color and underline differ (design-vs-production 14).
 - **Title fills the column** (Karl, 2026-11-03): Section Title / Eyebrow sizes to its text by default, so the Underline style's underline stopped at the end of "LATEST HEADLINES". Figma's Header Container draws it at the column width and production's underline spans the column (OC Register, Daily News), so the title now gets `width: 100%`, as Section Rail Card Wide / Narrow and Photos Block already did. (Sun Sentinel uses the Bold style, which has no underline.)
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec in WordPress Elements (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: Latest Headlines
+  # Breakpoints: production .busy .headline-list; one column at every width
+
+  Scenario Outline: List at <range>
+    When the page loads at <range>
+    Then the list is <width>
+
+    Examples:
+      | range         | width                                          |
+      | XS (≤639px)   | the page's full width, up to 540px, centered   |
+      | S (640–799px) | the column's full width                        |
+      | (≥800px)      | the side column beside the Zone 1 lead         |
+```

@@ -4,3 +4,38 @@
 - **Subscribe Now** is `ButtonPrimary` without its 8px side margin. Figma shows the label in capitals; `ButtonPrimary` capitalizes words ("Subscribe Now").
 - The legal links keep the 1040px order (copyright first) at every width; the Figma mobile variant lists copyright last.
 - The future footer with the email signup is **Blocks Footer** (`801:1755`, WordPress Elements ▸ Homepage ▸ Blocks): exported, left out of the Claude system for now (Karl, 2026-10-30).
+
+### Behavior (Gherkin)
+
+The same Gherkin as the Figma spec in WordPress Elements (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+
+```gherkin
+Feature: Footer
+
+  Rule: Columns follow the screen width
+    Scenario Outline: Footer at <range>
+      When the page loads at <range>
+      Then the link groups sit in <layout>
+
+      Examples:
+        | range         | layout                                      |
+        | 1040px and up | 5 columns; Subscribe Now alone in the last  |
+        | 800–1039px    | 3 columns                                   |
+        | 640–799px     | 2 columns                                   |
+        | below 640px   | accordion rows; Subscribe Now full width    |
+
+  Rule: Accordion below 640px
+    Scenario: The reader opens a link group
+      Given the screen is below 640px
+      And a link group is closed
+      When the reader selects its heading
+      Then its links open below the heading
+      And the heading's aria-expanded is "true"
+
+    Scenario: The reader closes a link group
+      Given the screen is below 640px
+      And a link group is open
+      When the reader selects its heading
+      Then its links close
+      And the heading's aria-expanded is "false"
+```
