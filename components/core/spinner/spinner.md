@@ -76,7 +76,7 @@ No Breakpoint property: one size at every width.
 
 - **Preferred:** the 48px Spinner in the content area, centered where the new content will appear, with a short message 16px (`spacing/200`) below it (Noto Sans Regular 16, `color/gray/min`). The buttons keep their labels.
 - **Inside a button:** 20px, 8px (`spacing/100`) before a waiting label (Button Primary / Tertiary State=Loading).
-- **Ring:** 2.5px at 20px, 4px at 48px (inner radius 75% and 83.3%); the track is the same color at 30% opacity; the arc is a quarter turn, from 12 to 3 o'clock at rest.
+- **Ring:** always 1/8 of the size, so it scales with the spinner: 2.5px at 20px, 6px at 48px (inner radius 75%; Karl, 2026-11-24, was 4px at 48px); the track is the same color at 30% opacity; the arc is a quarter turn, from 12 to 3 o'clock at rest.
 - **Motion:** one turn every 0.8s, linear (Karl, 2026-11-24); with reduced motion, one turn every 2 seconds instead of stopping (Karl, 2026-11-24), so the page still shows it is working.
 - **Accessibility:** the Spinner is decorative (`aria-hidden="true"`); the area or button that is waiting carries `aria-busy="true"`, and the message (or the button's waiting label) says what is happening.
 

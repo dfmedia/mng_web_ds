@@ -1,15 +1,17 @@
-/* Spinner: both layers are the same ring (a mask cut from a filled circle); the arc is a 90deg conic slice that turns. */
+/* Spinner: both layers are the same ring (a mask cut from a filled circle); the arc is a 90deg conic slice that turns.
+   The ring is always 1/8 of the size (the mask keeps the inner 75% of the radius clear), so it scales with the
+   spinner: 2.5px at 20px, 6px at 48px (Karl, 2026-11-24). */
 .mngds-spinner {
   position: relative; display: inline-block; flex: none; vertical-align: middle;
   width: var(--mng-spinner-size-48-root-width); height: var(--mng-spinner-size-48-root-height);
-  --mngds-spinner-ring: 4px; color: var(--mng-spinner-color-on-light-arc-background);
+  color: var(--mng-spinner-color-on-light-arc-background);
 }
-.mngds-spinner--size-20 { width: var(--mng-spinner-size-20-root-width); height: var(--mng-spinner-size-20-root-height); --mngds-spinner-ring: 2.5px; }
+.mngds-spinner--size-20 { width: var(--mng-spinner-size-20-root-width); height: var(--mng-spinner-size-20-root-height); }
 .mngds-spinner--on-dark { color: var(--mng-spinner-color-on-dark-arc-background); }
 .mngds-spinner__track, .mngds-spinner__arc {
   position: absolute; inset: 0; border-radius: 50%;
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - var(--mngds-spinner-ring)), #000 calc(100% - var(--mngds-spinner-ring)));
-  mask: radial-gradient(farthest-side, transparent calc(100% - var(--mngds-spinner-ring)), #000 calc(100% - var(--mngds-spinner-ring)));
+  -webkit-mask: radial-gradient(farthest-side, transparent 75%, #000 75%);
+  mask: radial-gradient(farthest-side, transparent 75%, #000 75%);
 }
 .mngds-spinner__track { background: currentColor; opacity: var(--mng-spinner-base-track-opacity); }
 .mngds-spinner__arc { background: conic-gradient(currentColor 0 90deg, transparent 90deg 360deg); animation: mngds-spinner-turn 0.8s linear infinite; }
