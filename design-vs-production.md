@@ -65,7 +65,7 @@
 
 **Found:** 2026-08-28 to 2026-08-31, icon font audit (`components/icons.md` §3, §5, §6). Added here 2026-09-25: `icons.md` said these were in this handoff, but they had never been logged.
 
-**Figma spec (source of truth):** the `Icons` component set in the main MNG Web Design System file (node `4693:5`, 95 variants) and the documented icon list on its Icons page.
+**Figma spec (source of truth):** the `Icons` component set in the main MNG Web Design System file (node `4693:5`, 103 variants as of 2026-11-24) and the documented icon list on its Icons page.
 
 **Production (live icon font, checked on chicagotribune.com):**
 
@@ -1681,7 +1681,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 | Nav side padding | 24px | `spacing/100` (8) at every width, so the first tab lines up with the page content (Karl, 2026-11-03; was `spacing/300` (24)) |
 | No side padding below | `(max-width: 500px)` | None: 8px at every width (was none below 640px) |
 | Nav width | — | 1280px max, centered (was 1200px) |
-| More tabs than fit | Not checked live yet (the staging page's tabs fit) | Option C1 (Karl, 2026-11-24): the bar stays full width; the tabs stay 8px apart and the tab at the edge shows partly; the side with more tabs fades over 48px; a 36px chevron (16px arrow icon in `color/gray/100`, no fill or shadow) on that side slides about one screen of tabs in 250ms ease-in-out (the section menu drawer's speed); the fade ends inside the chevron. Chevrons are aria-hidden pointer aids; arrow keys work as before. Labels never get an ellipsis. Replaces the 2026-11-23 cut-in-half rule. |
+| More tabs than fit | Not checked live yet (the staging page's tabs fit) | Option C1 (Karl, 2026-11-24): the bar stays full width; the tabs stay 8px apart and the tab at the edge shows partly; the side with more tabs fades over 48px; a 36px chevron (16px `arrow-outline-left` / `arrow-outline-right` icon in `color/gray/100`, no fill or shadow) on that side slides about one screen of tabs in 250ms ease-in-out (the section menu drawer's speed); the fade ends inside the chevron. Chevrons are aria-hidden pointer aids; arrow keys work as before. Labels never get an ellipsis. Replaces the 2026-11-23 cut-in-half rule. |
 
 **Fix:** update the `sr-nav-tabs` styles to the design column.
 

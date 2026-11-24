@@ -39,7 +39,7 @@ Feature: Tab Nav
       # Manual activation, because choosing For You can open the Welcome modal.
 
   Rule: More tabs than fit (option C1, Karl 2026-11-24)
-    # The bar stays full width; tabs 8px apart. Fade 48px; chevron 36px, 16px arrow icon in gray/100, no fill or shadow.
+    # The bar stays full width; tabs 8px apart. Fade 48px; chevron 36px, 16px arrow-outline icon in gray/100, no fill or shadow.
     # Chevrons are aria-hidden and out of the Tab order: keyboard users use the arrow keys.
 
     Scenario: The bar first shows
