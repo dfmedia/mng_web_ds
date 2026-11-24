@@ -38,18 +38,32 @@ Feature: Tab Nav
       And focus stays on the tab
       # Manual activation, because choosing For You can open the Welcome modal.
 
-  Rule: More tabs than fit
-    # Built today: the list ends in the middle of the last tab whose middle fits.
-    # Pending Karl's pick (2026-11-24): C peek + fade, C1 peek + fade + chevrons, or E a More menu.
+  Rule: More tabs than fit (option C1, Karl 2026-11-24)
+    # The bar stays full width. Fade 48px; chevron 36px, 16px arrow icon, no fill or shadow.
+    # Chevrons are aria-hidden and out of the Tab order: keyboard users use the arrow keys.
 
     Scenario: The bar first shows
       Given the tabs are wider than the bar
       When the page loads
-      Then the last visible tab is cut part way, and every label before it shows in full
+      Then the tab at the right edge shows part way and fades out
+      And a right chevron shows at the edge, with no left chevron
+      # if a gap would land at the edge, the gap narrows (down to 12px) so a tab shows part way
 
-    Scenario: The reader scrolls the tabs
-      When the reader swipes or scrolls the tab list sideways
-      Then the hidden tabs come into view, and at the end every tab shows in full
+    Scenario: The reader selects the right chevron
+      Given there are more tabs to the right
+      When the reader selects the right chevron
+      Then the tabs scroll left by about one screen
+      And a left chevron and a left fade show
+
+    Scenario Outline: The reader scrolls to <end>
+      When the reader swipes, scrolls or uses a chevron to reach <end>
+      Then the <side> chevron and fade go away
+      And every tab at that end shows in full
+
+      Examples:
+        | end           | side  |
+        | the last tab  | right |
+        | the first tab | left  |
 
     Scenario: A keyboard user reaches a hidden tab
       When the reader arrows onto a tab that is cut or hidden
@@ -57,5 +71,10 @@ Feature: Tab Nav
 
     Scenario: The width changes
       When the reader rotates the device or resizes the window
-      Then the cut is measured again
+      Then the partly shown tab, the fade and the chevrons are measured again
+
+    Scenario: The reader prefers reduced motion
+      Given the reader's device asks for reduced motion
+      When the reader selects a chevron
+      Then the tabs jump instead of sliding
 ```

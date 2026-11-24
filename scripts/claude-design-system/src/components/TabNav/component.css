@@ -9,8 +9,19 @@
 .mngds-tab-nav--desktop .mngds-tab-nav__nav { max-width: var(--mng-tab-nav-breakpoint-desktop-nav-width); }
 .mngds-tab-nav__tab-list {
   display: flex; gap: var(--mng-tab-nav-base-nav-tab-list-gap); justify-content: flex-start; align-items: flex-start;
-  position: relative; margin: 0; padding: 0; list-style: none; min-width: 0; max-width: 100%;
+  position: relative; flex: 1 1 auto; margin: 0; padding: 0; list-style: none; min-width: 0; max-width: 100%;
   overflow-x: auto; overflow-y: hidden; scrollbar-width: none; -ms-overflow-style: none;
 }
 .mngds-tab-nav__tab-list::-webkit-scrollbar { display: none; }
 .mngds-tab-nav__item { display: flex; flex-shrink: 0; margin: 0; padding: 0; }
+/* Overflow chevrons (option C1, Karl 2026-11-24): 36px wide, the tab row's height, no fill or shadow; the list's fade ends
+   just inside them. Pointer aids only (aria-hidden, tabindex -1). Icon 16px color/gray/min; hover color/theme/primary. */
+.mngds-tab-nav__chevron {
+  position: absolute; top: 0; z-index: 2; width: 36px; height: var(--mng-tab-nav-base-nav-tab-list-tab-height);
+  display: flex; align-items: center; justify-content: center; margin: 0; padding: 0; border: 0; background: transparent;
+  color: var(--mng-color-gray-min); cursor: pointer;
+}
+.mngds-tab-nav__chevron:hover { color: var(--mng-color-theme-primary); }
+.mngds-tab-nav__chevron--left { left: var(--mng-tab-nav-base-nav-padding-left); }
+.mngds-tab-nav__chevron--right { right: var(--mng-tab-nav-base-nav-padding-right); }
+@media (prefers-reduced-motion: reduce) { .mngds-tab-nav__tab-list { scroll-behavior: auto; } }

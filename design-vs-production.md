@@ -1681,7 +1681,7 @@ Lines: the drawer's top border (under the header, the full 300px) and the divide
 | Nav side padding | 24px | `spacing/100` (8) at every width, so the first tab lines up with the page content (Karl, 2026-11-03; was `spacing/300` (24)) |
 | No side padding below | `(max-width: 500px)` | None: 8px at every width (was none below 640px) |
 | Nav width | — | 1280px max, centered (was 1200px) |
-| More tabs than fit | Not checked live yet (the staging page's tabs fit) | The last visible tab is cut in half, never truncated: the list ends at the middle of the last tab whose middle fits; labels never get an ellipsis (Karl, 2026-11-23) |
+| More tabs than fit | Not checked live yet (the staging page's tabs fit) | Option C1 (Karl, 2026-11-24): the bar stays full width; the tab at the edge shows partly (a gap at the edge narrows, down to 12px); the side with more tabs fades over 48px; a 36px chevron (16px arrow icon, no fill or shadow) on that side scrolls about one screen of tabs; the fade ends inside the chevron. Chevrons are aria-hidden pointer aids; arrow keys work as before. Labels never get an ellipsis. Replaces the 2026-11-23 cut-in-half rule. |
 
 **Fix:** update the `sr-nav-tabs` styles to the design column.
 
