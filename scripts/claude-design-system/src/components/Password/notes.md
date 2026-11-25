@@ -1,10 +1,10 @@
-- The hint stays `color/feedback/low-success` (green) all the time (Karl, 2026-11-04), even before anything is checked; it reads as guidance.
+- Figma now shows the requirements as a list of 3 Password Requirement rows (2026-11-23). Each row starts near-black and turns green when it's met (Karl, 2026-11-25): Not met is an open circle with icon and text in `color/gray/min` (18.4:1 on white), and Met is a check with icon and text in `color/feedback/low-success` (5.0:1). This component doesn't have the rows yet. It still draws the older single hint, which stays `color/feedback/low-success` (green) all the time (Karl, 2026-11-04).
 - Confirm Password's error row is drawn by this component (the FormField inside has `errorRow: false`) so it can show an error for either field; it looks the same as Form Field's row (25px Desktop, 22px Mobile, from the spec).
 - Token names for the hint come from its Figma layer name (the text itself), hence the long CSS variable names.
 
 ### Behavior (Gherkin)
 
-The same Gherkin as the Figma spec (2026-11-24). Behavior only; sizes, colors and tokens are in the spec above.
+The same Gherkin as the Figma spec (2026-11-25). Behavior only; sizes, colors and tokens are in the spec above.
 
 ```gherkin
 Feature: Password requirements
@@ -13,10 +13,11 @@ Feature: Password requirements
 
   Background:
     Given the requirements list shows under Create Password with none met
+    And each requirement shows as not met (near-black open circle and text)
 
   Scenario: A requirement becomes met while typing
     When the reader types a password that meets a requirement
-    Then that requirement shows as met right away
+    Then that requirement shows as met (green check, green text)
     And the requirements not yet met still show as not met
 
   Scenario: A met requirement stops being met
