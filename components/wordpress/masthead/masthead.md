@@ -1173,37 +1173,38 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.page-dashboard.masthead-container.accountmenu.width` | 112px |
 | `masthead.page-dashboard.masthead-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.page-dashboard.masthead-container.container.container.width` | 235.25px |
-| `masthead.state-default.page-dashboard.masthead-container.container.height` | 80px |
-| `masthead.state-default.page-dashboard.masthead-container.container.padding-bottom` | `{spacing.100}` |
-| `masthead.state-default.page-dashboard.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
-| `masthead.state-default.page-article.masthead-container.container.height` | 66px |
-| `masthead.state-default.page-article.masthead-container.container.padding-bottom` | `{spacing.200}` |
-| `masthead.state-default.page-article.masthead-container.container.padding-top` | `{spacing.200}` |
-| `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
-| `masthead.state-adfree.page-article.masthead-container.container.height` | 64px |
-| `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
-| `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
-| `masthead.state-scrolled.page-obituaries.masthead-container.container.height` | 48px |
-| `masthead.state-adfree-scrolled.page-obituaries.masthead-container.container.height` | 48px |
+| `masthead.state-default.masthead-container.container.height` | 80px |
+| `masthead.state-default.masthead-container.container.ad-blocks.height` | 250px |
+| `masthead.state-default.masthead-container.container.ad-blocks.width` | 970px |
+| `masthead.state-default.masthead-container.container.weather-bug.width` | 285.78px |
+| `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-default.section-menu.navmenu.width` | 366px |
+| `masthead.state-scrolled.masthead-container.container.height` | 48px |
+| `masthead.state-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 294px |
+| `masthead.state-scrolled.section-menu.navmenu.width` | 768px |
+| `masthead.state-adfree-scrolled.masthead-container.container.height` | 48px |
+| `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 112px |
 | `masthead.state-default.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-default.page-dashboard.masthead-container.container.padding-bottom` | `{spacing.100}` |
+| `masthead.state-default.page-dashboard.masthead-container.container.padding-top` | `{spacing.100}` |
+| `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-default.page-article.masthead-container.container.padding-bottom` | `{spacing.200}` |
+| `masthead.state-default.page-article.masthead-container.container.padding-top` | `{spacing.200}` |
+| `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.page-bestreviews.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-bestreviews.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-default.page-bestreviews.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 256px |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
+| `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
+| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.state-adfree.page-bestreviews.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-bestreviews.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-bestreviews.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 66px |
-| `masthead.state-default.masthead-container.container.ad-blocks.height` | 250px |
-| `masthead.state-default.masthead-container.container.ad-blocks.width` | 970px |
-| `masthead.state-default.masthead-container.container.weather-bug.width` | 285.78px |
-| `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 294px |
-| `masthead.state-default.section-menu.navmenu.width` | 366px |
 | `masthead.state-adfree.masthead-container.container.ad-blocks.height` | 50px |
 | `masthead.state-adfree.masthead-container.container.ad-blocks.width` | 300px |
 | `masthead.state-adfree.masthead-container.container.weather-bug.width` | 333px |
@@ -1311,9 +1312,6 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.logo.vector.width` | 11.84px |
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.sectionmenu.width` | 64px |
 | `masthead.device-xl-desktop-1040px.page-article.root.width` | 1040px |
-| `masthead.state-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 294px |
-| `masthead.state-scrolled.section-menu.navmenu.width` | 768px |
-| `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 112px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.root.width` | 1024px |
 | `masthead.device-lg-tableth-800-1039px.page-dashboard.masthead-container.sectionmenu.width` | 300px |
@@ -1354,7 +1352,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 - **Bar:** `color/gray/max`; every variant ends in a 1px `color/gray/400` rule (production #9D9A98, design-vs-production 9.3).
 - **Below 1040px:** one 64px row: hamburger (SectionMenu) left, logo centered, account icon or avatar (AccountMenu) and search right. The Top Leaderboard sits under the rule: 970x250 at 800–1039px and 728x90 at 640–799px with 16px (`spacing/200`) around it; 320x50 at 360px and 320x100 at 340px with 8px (`spacing/100`) around it.
 - **1040px and up, top of the page:** a 64px menus row (All Sections left; Subscribe / Log In or the avatar, then search, 40px `spacing/500` right padding); the weather, date and logo row with Sponsorship 1 320x50 (8px `spacing/100` top and bottom, 40px `spacing/500` sides); the Top Nav (48px tall with the items centered in it, as production; items 32px `spacing/400` apart, centered); the rule; the Trending row (8px top and bottom, 40px sides, 32px apart); then the Top Leaderboard 970x250 with 16px above and below.
-- **Type:** Top Nav items Noto Sans Bold 15 (`font/size/15`, `font/style/bold`), 26px line height, `color/gray/min` (18.4:1); matches what production renders (Karl, 2026-11-02; was Bold 16, auto line height). Production's CSS is 15px / 600 / 26px, but the themes load only the 400, 700 and 800 Noto Sans faces, so it renders Bold (design-vs-production 9.4). Trending label Noto Sans Bold 14 uppercase `color/theme/primary` (4.75:1 or more on every site; 5.5:1 Bold Coastal); Trending items Noto Sans Regular 15 `color/gray/min`. Section front: the section name under the logo.
+- **Type:** Top Nav items Noto Sans Bold 15 (`font/size/15`, `font/style/bold`), 26px line height, `color/gray/min` (18.4:1); matches what production renders (Karl, 2026-11-02; was Bold 16, auto line height). Production's CSS is 15px / 600 / 26px, but the themes load only the 400, 700 and 800 Noto Sans faces, so it renders Bold (design-vs-production 9.4). Trending label Noto Sans Bold 14 uppercase `color/theme/primary` (4.75:1 or more on every site; 5.5:1 Bold Coastal); Trending items Noto Sans Regular 15 `color/gray/min`. Section front: the section name under the logo. Section name (Section Front, Article, BestReviews at 1040px and up): Noto Serif Bold 40, line height 100%, as production (40px / 40px on the 6 review sites, 2026-11-25). The weather row with the Sponsorship is 66px on every page (8px, `spacing/100`, above and below the ad).
 - **Top Nav overflow:** the row keeps its natural width and is clipped at both edges when a site has more items than fit (11 on Chicago Tribune and Orlando Sentinel), as production does (design-vs-production 9.1).
 - **Scroll (Scrolled / AdFree-Scrolled):** after 55px of scrolling at 1040px and up (production's headroom offset: `.headroom--not-top` and `position: fixed` at 56px; checked 2026-11-16 on denverpost.com and mcall.com) and from the first pixel below 1040px, the masthead becomes a 64px bar fixed to the top of the viewport, with the rule and `shadow/masthead` (0 3px 3px, black 25%, production's value). The ads under it scroll away. No shadow at the top of the page. It stays shown scrolling down and back up (production's `headroom--unpinned` / `--pinned` don't hide it). On articles at 1040px and up the bar shows the section name, headline and share buttons instead of All Sections / Subscribe / Log In.
 - **Subscribers (AdFree, AdFree-Scrolled):** no ads; the avatar (AccountMenu, loggedIn) replaces Subscribe / Log In. Below 1040px the subscriber bar is the same at the top and when scrolled. AdFree-Scrolled for Home, Section Front and Article added 2026-10-30 (Karl).

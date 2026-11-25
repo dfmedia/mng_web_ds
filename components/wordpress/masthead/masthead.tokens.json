@@ -9873,7 +9873,7 @@
         }
       }
     },
-    "state-default.page-dashboard": {
+    "state-default": {
       "masthead-container": {
         "container": {
           "height": {
@@ -9883,6 +9883,167 @@
               "unit": "px"
             }
           },
+          "ad-blocks": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 250,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 970,
+                "unit": "px"
+              }
+            }
+          },
+          "weather-bug": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 285.78,
+                "unit": "px"
+              }
+            }
+          }
+        },
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 294,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      },
+      "section-menu": {
+        "navmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 366,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "state-scrolled": {
+      "masthead-container": {
+        "container": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 48,
+              "unit": "px"
+            }
+          }
+        },
+        "masthead-container": {
+          "section-menu-desktop": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 294,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      },
+      "section-menu": {
+        "navmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 768,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "state-adfree-scrolled": {
+      "masthead-container": {
+        "container": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 48,
+              "unit": "px"
+            }
+          }
+        },
+        "masthead-container": {
+          "section-menu-desktop": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 112,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-default.page-sectionfront": {
+      "masthead-container": {
+        "container": {
+          "padding-bottom": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "padding-top": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          }
+        },
+        "mastheadtop": {
+          "menus-container": {
+            "accountmenu-container": {
+              "accountmenu": {
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 294,
+                    "unit": "px"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-default.page-dashboard": {
+      "masthead-container": {
+        "container": {
           "padding-bottom": {
             "$type": "dimension",
             "$value": "{spacing.100}",
@@ -9926,13 +10087,6 @@
     "state-default.page-article": {
       "masthead-container": {
         "container": {
-          "height": {
-            "$type": "dimension",
-            "$value": {
-              "value": 66,
-              "unit": "px"
-            }
-          },
           "padding-bottom": {
             "$type": "dimension",
             "$value": "{spacing.200}",
@@ -9951,125 +10105,6 @@
               "com.mng": {
                 "figma": {
                   "variable": "Spacing & Radius/spacing/200"
-                }
-              }
-            }
-          }
-        },
-        "mastheadtop": {
-          "menus-container": {
-            "accountmenu-container": {
-              "accountmenu": {
-                "width": {
-                  "$type": "dimension",
-                  "$value": {
-                    "value": 294,
-                    "unit": "px"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "state-adfree.page-article": {
-      "masthead-container": {
-        "container": {
-          "height": {
-            "$type": "dimension",
-            "$value": {
-              "value": 64,
-              "unit": "px"
-            }
-          },
-          "padding-bottom": {
-            "$type": "dimension",
-            "$value": "{spacing.100}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Spacing & Radius/spacing/100"
-                }
-              }
-            }
-          },
-          "padding-top": {
-            "$type": "dimension",
-            "$value": "{spacing.100}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Spacing & Radius/spacing/100"
-                }
-              }
-            }
-          }
-        },
-        "mastheadtop": {
-          "menus-container": {
-            "accountmenu-container": {
-              "accountmenu": {
-                "width": {
-                  "$type": "dimension",
-                  "$value": {
-                    "value": 112,
-                    "unit": "px"
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "state-scrolled.page-obituaries": {
-      "masthead-container": {
-        "container": {
-          "height": {
-            "$type": "dimension",
-            "$value": {
-              "value": 48,
-              "unit": "px"
-            }
-          }
-        }
-      }
-    },
-    "state-adfree-scrolled.page-obituaries": {
-      "masthead-container": {
-        "container": {
-          "height": {
-            "$type": "dimension",
-            "$value": {
-              "value": 48,
-              "unit": "px"
-            }
-          }
-        }
-      }
-    },
-    "state-default.page-sectionfront": {
-      "masthead-container": {
-        "container": {
-          "padding-bottom": {
-            "$type": "dimension",
-            "$value": "{spacing.100}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Spacing & Radius/spacing/100"
-                }
-              }
-            }
-          },
-          "padding-top": {
-            "$type": "dimension",
-            "$value": "{spacing.100}",
-            "$extensions": {
-              "com.mng": {
-                "figma": {
-                  "variable": "Spacing & Radius/spacing/100"
                 }
               }
             }
@@ -10178,6 +10213,49 @@
         }
       }
     },
+    "state-adfree.page-article": {
+      "masthead-container": {
+        "container": {
+          "padding-bottom": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "padding-top": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          }
+        },
+        "mastheadtop": {
+          "menus-container": {
+            "accountmenu-container": {
+              "accountmenu": {
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 112,
+                    "unit": "px"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "state-adfree.page-bestreviews": {
       "masthead-container": {
         "container": {
@@ -10216,61 +10294,6 @@
                   }
                 }
               }
-            }
-          }
-        }
-      }
-    },
-    "state-default": {
-      "masthead-container": {
-        "container": {
-          "ad-blocks": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 250,
-                "unit": "px"
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 970,
-                "unit": "px"
-              }
-            }
-          },
-          "weather-bug": {
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 285.78,
-                "unit": "px"
-              }
-            }
-          }
-        },
-        "menus-container": {
-          "accountmenu-container": {
-            "accountmenu": {
-              "width": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 294,
-                  "unit": "px"
-                }
-              }
-            }
-          }
-        }
-      },
-      "section-menu": {
-        "navmenu": {
-          "width": {
-            "$type": "dimension",
-            "$value": {
-              "value": 366,
-              "unit": "px"
             }
           }
         }
@@ -11243,51 +11266,6 @@
           "$value": {
             "value": 1040,
             "unit": "px"
-          }
-        }
-      }
-    },
-    "state-scrolled": {
-      "masthead-container": {
-        "masthead-container": {
-          "section-menu-desktop": {
-            "accountmenu": {
-              "width": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 294,
-                  "unit": "px"
-                }
-              }
-            }
-          }
-        }
-      },
-      "section-menu": {
-        "navmenu": {
-          "width": {
-            "$type": "dimension",
-            "$value": {
-              "value": 768,
-              "unit": "px"
-            }
-          }
-        }
-      }
-    },
-    "state-adfree-scrolled": {
-      "masthead-container": {
-        "masthead-container": {
-          "section-menu-desktop": {
-            "accountmenu": {
-              "width": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 112,
-                  "unit": "px"
-                }
-              }
-            }
           }
         }
       }

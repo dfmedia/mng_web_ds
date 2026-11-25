@@ -83,7 +83,8 @@
   margin: 0; flex-shrink: 0; text-align: center; font-family: var(--mng-font-family-noto-serif); font-weight: var(--mng-font-weight-bold);
   line-height: normal; color: var(--mng-color-theme-primary);
 }
-.mngds-masthead__section-name { font-size: var(--mng-font-size-40); }
+/* Section Front, Article and BestReviews: line height 100% (production 40px / 40px on the 6 review sites, 2026-11-25) */
+.mngds-masthead__section-name { font-size: var(--mng-font-size-40); line-height: 1; }
 /* Section Front and BestReviews, 1040px and up (Figma rebuilt 2026-11-24): the weather row is three equal columns (Left
    column, Section Name, Right column). The name is centered in the middle one, line height 100%, and wraps instead of being
    cut: a long name takes two lines and the row (64px minimum) grows; a word wider than its column breaks onto the next line
