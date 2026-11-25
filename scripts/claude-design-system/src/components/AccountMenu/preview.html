@@ -23,7 +23,7 @@
         { label: 'Status=loggedIn, View=Closed, Device=(all widths), UserType=loggedIn', node: h(NS.AccountMenu, { status: 'loggedIn', view: 'Closed', user: USER }) },
         { label: 'Closed, reader active with an alert (UserPic dots)', node: h(NS.AccountMenu, { status: 'alert', view: 'Closed', user: { src: PHOTO, name: 'Gritty McGee', status: 'Active', alert: 'high' }, accountLabel: 'Account menu, Gritty McGee, 1 alert' }) }
       ] })),
-    h(I.SpecimenSection, { title: 'Open, logged in (all widths)', note: '300px; the avatar and up chevron show through the top, 17px down, where they sit when closed (the search button's space stays empty); bottom corners radius/utility; shadow/lg. Saved Articles always shows.' },
+    h(I.SpecimenSection, { title: 'Open, logged in (all widths)', note: '300px; the avatar and up chevron show through the top, 17px down, where they sit when closed (the search button’s space stays empty); bottom corners radius/utility; shadow/lg. Saved Articles always shows.' },
       h(I.Specimen, { items: [
         { label: 'Status=loggedIn, View=Open, Device=(all widths), UserType=subscriber', node: h(NS.AccountMenu, { status: 'loggedIn', view: 'Open', inline: true, user: USER, marketing: MKT }) },
         { label: 'Status=loggedIn, View=Open, Device=(all widths), UserType=nonSub', node: h(NS.AccountMenu, { status: 'loggedIn', userType: 'nonSub', view: 'Open', inline: true, user: USER }) },
