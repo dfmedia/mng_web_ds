@@ -2902,6 +2902,10 @@
                   }
                 }
               }
+            },
+            "line-height": {
+              "$type": "number",
+              "$value": 1.0
             }
           },
           "vector": {
@@ -4025,6 +4029,10 @@
                   }
                 }
               }
+            },
+            "line-height": {
+              "$type": "number",
+              "$value": 1.0
             }
           }
         },
