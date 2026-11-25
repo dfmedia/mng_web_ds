@@ -9,7 +9,7 @@ component_key: ce167115734b60fe196c4aa1b632535e1350f3e7
 variants: 1
 tokens: inline-message-dashsubsnonsub.tokens.json
 skeleton: inline-message-dashsubsnonsub.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # InLineMessage: DashSubsNonSub (non-subscriber CTA panel)
@@ -124,4 +124,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `inline-message-dashsubsnonsub.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
