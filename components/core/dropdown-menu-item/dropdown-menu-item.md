@@ -9,7 +9,7 @@ component_key: 64855c280414c03e2fbcae4dca6ea89db62a1075
 variants: 8
 tokens: dropdown-menu-item.tokens.json
 skeleton: dropdown-menu-item.html
-exported: 2026-11-11
+exported: 2026-11-25
 ---
 
 # Dropdown Menu Item
@@ -40,11 +40,11 @@ exported: 2026-11-11
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `unselected / Default / False` | 100×40 | [7543:1823](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1823) | 5 | ![](previews/dropdown-menu-item--unselected-default-false.png) |
+| `unselected / Default / False` | 100×40 | [7543:1823](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1823) | 11 | ![](previews/dropdown-menu-item--unselected-default-false.png) |
 | `unselected / Default / True` | 100×40 | [7543:1844](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1844) | 1 | ![](previews/dropdown-menu-item--unselected-default-true.png) |
-| `unselected / hover / False` | 100×40 | [7543:1830](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1830) | 1 | ![](previews/dropdown-menu-item--unselected-hover-false.png) |
+| `unselected / hover / False` | 100×40 | [7543:1830](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1830) | 2 | ![](previews/dropdown-menu-item--unselected-hover-false.png) |
 | `unselected / pressed / False` | 100×40 | [7543:1837](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1837) | 0 | ![](previews/dropdown-menu-item--unselected-pressed-false.png) |
-| `selected / Default / False` | 100×40 | [7543:1851](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1851) | 6 | ![](previews/dropdown-menu-item--selected-default-false.png) |
+| `selected / Default / False` | 100×40 | [7543:1851](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1851) | 13 | ![](previews/dropdown-menu-item--selected-default-false.png) |
 | `selected / Default / True` | 100×40 | [7543:1872](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1872) | 0 | ![](previews/dropdown-menu-item--selected-default-true.png) |
 | `selected / hover / False` | 100×40 | [7543:1858](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1858) | 0 | ![](previews/dropdown-menu-item--selected-hover-false.png) |
 | `selected / pressed / False` | 100×40 | [7543:1865](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7543-1865) | 0 | ![](previews/dropdown-menu-item--selected-pressed-false.png) |
@@ -112,10 +112,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **13**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **27**.
 
-Inside components: Dropdown Menu ×4.
-Placed on pages: Dropdown Menus | 2026.11.11 ×4.
+Inside components: Dropdown Menu ×16.
+Placed on pages: Dropdown Menus | 2026.11.11 ×6.
 
 **Built from:** Icons ×12
 Icon variants: `crown` ×8, `checkmark3` ×4.
@@ -134,4 +134,4 @@ Production (Reader Dashboard Subscription Access) still uses Button ActionMenu's
 - `dropdown-menu-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-11 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

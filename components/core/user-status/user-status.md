@@ -9,7 +9,7 @@ component_key: 07fcdba468fb281768372247ea738bb81fa0c953
 variants: 4
 tokens: user-status.tokens.json
 skeleton: user-status.html
-exported: 2026-11-13
+exported: 2026-11-25
 ---
 
 # UserStatus
@@ -33,8 +33,8 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `none / Desktop` | 240×40 | [7594:29618](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29618) | 1 | ![](previews/user-status--none-desktop.png) |
-| `none / mobile` | 30×30 | [7594:29626](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29626) | 7 | ![](previews/user-status--none-mobile.png) |
+| `none / Desktop` | 240×40 | [7594:29618](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29618) | 0 | ![](previews/user-status--none-desktop.png) |
+| `none / mobile` | 30×30 | [7594:29626](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29626) | 6 | ![](previews/user-status--none-mobile.png) |
 | `nonSub / Desktop` | 172×40 | [7594:29621](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29621) | 0 | ![](previews/user-status--nonsub-desktop.png) |
 | `subscriber / Desktop` | 30×30 | [7594:29624](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29624) | 0 | ![](previews/user-status--subscriber-desktop.png) |
 
@@ -77,10 +77,9 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **8**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **6**.
 
-Placed on pages: Modal Panels | 2026.11.10 ×7.
-1 instances are nested inside other instances.
+Placed on pages: Modal Panels | 2026.11.10 ×6.
 
 **Built from:** Button Primary ×3, UserPic ×3
 
@@ -99,4 +98,4 @@ Production `#dfm-digisubs-menu` (all 6 review sites, logged in, 2026-11-13).
 - `user-status.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: 164caf15375e75c0f1e1bd938426a3d796c32115
 variants: 36
 tokens: button-tertiary.tokens.json
 skeleton: button-tertiary.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Button Tertiary
@@ -52,7 +52,7 @@ exported: 2026-11-24
 | `Desktop / Right / InFocus` | 324×40 | [5417:3785](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5417-3785) | 0 | ![](previews/button-tertiary--desktop-right-infocus.png) |
 | `Desktop / Right / Loading` | 324×40 | [7673:28729](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28729) | 0 | ![](previews/button-tertiary--desktop-right-loading.png) |
 | `Desktop / Right / Disabled` | 324×40 | [7673:28738](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28738) | 0 | ![](previews/button-tertiary--desktop-right-disabled.png) |
-| `Mobile / None / Default` | 324×40 | [7015:34896](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7015-34896) | 3 | ![](previews/button-tertiary--mobile-none-default.png) |
+| `Mobile / None / Default` | 324×40 | [7015:34896](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7015-34896) | 23 | ![](previews/button-tertiary--mobile-none-default.png) |
 | `Mobile / None / Hover` | 324×40 | [7015:34914](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7015-34914) | 0 | ![](previews/button-tertiary--mobile-none-hover.png) |
 | `Mobile / None / Pressed` | 324×40 | [7015:34939](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7015-34939) | 0 | ![](previews/button-tertiary--mobile-none-pressed.png) |
 | `Mobile / None / InFocus` | 324×40 | [7015:34957](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7015-34957) | 0 | ![](previews/button-tertiary--mobile-none-infocus.png) |
@@ -183,10 +183,10 @@ From `button-tertiary.tokens.json`. References point at system tokens (`tokens/c
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **20**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **40**.
 
-Inside components: InLineMessage ×6, Body ×1, Footer STICKY ×1.
-Placed on pages: In-Line Content Containers | 2026.01.02 ×6, Buttons | 2026.09.30 ×1, Embedded Login | 2026.11.20 ×1.
+Inside components: OverlayContainers ×12, InLineMessage ×6, Footer STICKY ×1, Body ×1.
+Placed on pages: Embedded Login | 2026.11.20 ×9, In-Line Content Containers | 2026.01.02 ×6, Buttons | 2026.09.30 ×1.
 
 **Built from:** Icons ×20, Spinner ×6
 Icon variants: `new-tab` ×20.
@@ -205,4 +205,4 @@ None open.
 - `button-tertiary.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

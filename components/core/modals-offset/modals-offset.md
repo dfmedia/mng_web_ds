@@ -9,7 +9,7 @@ component_key: 578eab1eda8ca02fce640d874b3aa22e81ba341f
 variants: 9
 tokens: modals-offset.tokens.json
 skeleton: modals-offset.html
-exported: 2026-11-17
+exported: 2026-11-25
 ---
 
 # ModalsOffset
@@ -382,4 +382,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `modals-offset.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

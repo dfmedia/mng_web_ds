@@ -11,7 +11,7 @@
       },
       "production": "Used in the Embedded Login designs (Apple, Google and Facebook sign-in buttons and circles, Continue, Create Account; switched to the brand variants by Karl 2026-11-17) and ModalsOffset; not checked against production. Vendor rules checked 2026-11-11 (Apple Human Interface Guidelines, Google Sign-In branding, Facebook brand guidelines).",
       "layer": "core",
-      "exported": "2026-11-17"
+      "exported": "2026-11-25"
     }
   },
   "button-social-login": {

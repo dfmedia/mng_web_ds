@@ -9,7 +9,7 @@ component_key: fab5de29ad3a5603f21b7381ec9be63c4ecb63e6
 variants: 2
 tokens: popover.tokens.json
 skeleton: popover.html
-exported: 2026-11-12
+exported: 2026-11-25
 ---
 
 # Popover
@@ -118,4 +118,4 @@ New in the design (2026-11-12). Production's Twin Cities More panel is the close
 - `popover.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

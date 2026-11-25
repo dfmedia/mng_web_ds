@@ -9,7 +9,7 @@ component_key: 790ce7e08b7c4a4da2f4c22f29a5525fdcbea997
 variants: 4
 tokens: pop-up-modal-close.tokens.json
 skeleton: pop-up-modal-close.html
-exported: 2026-11-10
+exported: 2026-11-25
 ---
 
 # Pop-Up Modal Close
@@ -115,4 +115,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `pop-up-modal-close.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-10 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

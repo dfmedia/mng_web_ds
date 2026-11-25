@@ -9,7 +9,7 @@ component_key: 14866950667431f609aecef5e9619766db2e4043
 variants: 2
 tokens: address-block.tokens.json
 skeleton: address-block.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field Assembly / Address block
@@ -118,4 +118,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `address-block.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

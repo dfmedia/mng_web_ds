@@ -9,7 +9,7 @@ component_key: 7c0d7e73c63480ff2ecd5a4d2d360a7d470aaa3c
 variants: 2
 tokens: verification-code.tokens.json
 skeleton: verification-code.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field Assembly / Verification Code
@@ -38,7 +38,7 @@ exported: 2026-11-04
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Desktop` | 236×119 | [7003:29120](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7003-29120) | 2 | ![](previews/verification-code--desktop.png) |
+| `Desktop` | 236×119 | [7003:29120](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7003-29120) | 3 | ![](previews/verification-code--desktop.png) |
 | `Mobile` | 176×97 | [7003:29222](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7003-29222) | 1 | ![](previews/verification-code--mobile.png) |
 
 ## Anatomy
@@ -99,8 +99,9 @@ From `verification-code.tokens.json`. References point at system tokens (`tokens
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **3**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **4**.
 
+Inside components: Body ×1.
 Placed on pages: Form Fields | 2026.11.04 ×3.
 
 **Built from:** Code Box ×12
@@ -119,4 +120,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `verification-code.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

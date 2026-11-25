@@ -9,7 +9,7 @@ component_key: 465145e1ad9b44e38ef9d1d7c5210b70ee9cc32b
 variants: 4
 tokens: spinner.tokens.json
 skeleton: spinner.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Spinner
@@ -108,4 +108,4 @@ None open.
 - `spinner.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: f2989bf6601dd76f26f1ecd1ee39d25551450390
 variants: 30
 tokens: button-linkstyle.tokens.json
 skeleton: button-linkstyle.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Button Linkstyle
@@ -166,4 +166,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `button-linkstyle.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

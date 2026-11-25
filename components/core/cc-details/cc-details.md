@@ -9,7 +9,7 @@ component_key: b8f9b47fc2388d4c04fe6194aa2180c6fabdca84
 variants: 2
 tokens: cc-details.tokens.json
 skeleton: cc-details.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field Assembly / CC details
@@ -121,4 +121,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `cc-details.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

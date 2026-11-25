@@ -9,7 +9,7 @@ component_key: 8dcff697f38c730e4b1fc9c5a834be7a9f96208a
 variants: 20
 tokens: toggle-switch.tokens.json
 skeleton: toggle-switch.html
-exported: 2026-11-11
+exported: 2026-11-25
 ---
 
 # Toggle Switch
@@ -167,4 +167,4 @@ Not in production yet (Karl, 2026-11-10).
 - `toggle-switch.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-11 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: 121a469eea7d108efe028d82b734c60ffbbf6aab
 variants: 4
 tokens: non-button-hyperlink.tokens.json
 skeleton: non-button-hyperlink.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Non-Button Hyperlink
@@ -32,7 +32,7 @@ exported: 2026-10-28
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default` | 133×23 | [6282:5569](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6282-5569) | 4 | ![](previews/non-button-hyperlink--default.png) |
+| `Default` | 133×23 | [6282:5569](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6282-5569) | 118 | ![](previews/non-button-hyperlink--default.png) |
 | `Hover` | 133×23 | [6282:5577](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6282-5577) | 2 | ![](previews/non-button-hyperlink--hover.png) |
 | `Pressed` | 133×23 | [7078:7681](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7078-7681) | 1 | ![](previews/non-button-hyperlink--pressed.png) |
 | `InFocus` | 133×25 | [6282:5585](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6282-5585) | 1 | ![](previews/non-button-hyperlink--infocus.png) |
@@ -97,9 +97,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **8**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **122**.
 
-Inside components: InLineMessage ×3.
+Inside components: OverlayContainers ×51, Error banner ×6, Body ×6, InLineMessage ×3, Footer STICKY ×2.
+Placed on pages: Embedded Login | 2026.11.20 ×49.
 
 **Built from:** no nested components.
 
@@ -117,4 +118,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `non-button-hyperlink.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: b78a5ebf98e6cf2407efa69e070dfe6338390e6c
 variants: 2
 tokens: zip-street.tokens.json
 skeleton: zip-street.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field Assembly / Zip + Street #
@@ -110,4 +110,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `zip-street.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

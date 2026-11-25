@@ -9,7 +9,7 @@ component_key: f0d7dc9ffa766ef6e54c1d46416a37d1405acaa6
 variants: 5
 tokens: in-line-close.tokens.json
 skeleton: in-line-close.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # In-Line Close
@@ -127,4 +127,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `in-line-close.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

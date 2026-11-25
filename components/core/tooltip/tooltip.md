@@ -9,7 +9,7 @@ component_key: 145f2a1ceb3b75e02401b3b60b397df9d4803fcd
 variants: 4
 tokens: tooltip.tokens.json
 skeleton: tooltip.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Tooltip
@@ -138,4 +138,4 @@ No tooltip on the homepage. Article "type of work" popup `#tiPopupContent` (ocre
 - `tooltip.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

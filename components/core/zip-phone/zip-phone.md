@@ -9,7 +9,7 @@ component_key: 9c3b98ff80f9c0bbfcc69598e6ceddb467ad2d28
 variants: 2
 tokens: zip-phone.tokens.json
 skeleton: zip-phone.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field Assembly / Zip + Phone
@@ -110,4 +110,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `zip-phone.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

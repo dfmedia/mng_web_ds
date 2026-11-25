@@ -9,7 +9,7 @@ component_key: bdbfbf90470bc7c0352b592d4ac69bddbe3834bf
 variants: 6
 tokens: user-pic.tokens.json
 skeleton: user-pic.html
-exported: 2026-11-13
+exported: 2026-11-25
 ---
 
 # UserPic
@@ -33,7 +33,7 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Small / Default` | 30×30 | [7594:29565](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29565) | 14 | ![](previews/user-pic--small-default.png) |
+| `Small / Default` | 30×30 | [7594:29565](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29565) | 13 | ![](previews/user-pic--small-default.png) |
 | `Small / Active` | 30×30 | [7594:29569](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29569) | 1 | ![](previews/user-pic--small-active.png) |
 | `Large / Default` | 64×64 | [7594:29581](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29581) | 0 | ![](previews/user-pic--large-default.png) |
 | `Large / Active` | 64×64 | [7594:29585](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29585) | 1 | ![](previews/user-pic--large-active.png) |
@@ -100,11 +100,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **44**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **43**.
 
 Inside components: InLineMessage ×14, UserStatus ×3.
 Placed on pages: In-Line Content Containers | 2026.01.02 ×14, User Avatars and Status | 2026.11.13 ×1.
-7 instances are nested inside other instances.
+6 instances are nested inside other instances.
 
 **Built from:** AlertLevel ×12, UserImage ×6
 
@@ -122,4 +122,4 @@ Production `#anchorProfileDropDown` (all 6 review sites, logged in, 2026-11-13; 
 - `user-pic.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: fadcf46b7db712900f8fe8f81d4675d3fce0f66f
 variants: 8
 tokens: alert-level.tokens.json
 skeleton: alert-level.html
-exported: 2026-11-13
+exported: 2026-11-25
 ---
 
 # AlertLevel
@@ -33,7 +33,7 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `none / Small` | 8×8 | [7594:29471](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29471) | 81 | ![](previews/alert-level--none-small.png) |
+| `none / Small` | 8×8 | [7594:29471](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29471) | 79 | ![](previews/alert-level--none-small.png) |
 | `none / Large` | 16×16 | [7594:29483](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29483) | 3 | ![](previews/alert-level--none-large.png) |
 | `low / Small` | 8×8 | [7594:29474](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29474) | 10 | ![](previews/alert-level--low-small.png) |
 | `low / Large` | 16×16 | [7594:29486](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29486) | 2 | ![](previews/alert-level--low-large.png) |
@@ -84,10 +84,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **100**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **98**.
 
 Inside components: UserPic ×12.
-88 instances are nested inside other instances.
+86 instances are nested inside other instances.
 
 **Built from:** no nested components.
 
@@ -105,4 +105,4 @@ Not in the WordPress masthead (checked on all 6 review sites, logged in, 2026-11
 - `alert-level.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

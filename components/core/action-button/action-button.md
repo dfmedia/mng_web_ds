@@ -9,7 +9,7 @@ component_key: f2d61dd8cfa1619da4987e7b90ac60f2fbb6c102
 variants: 4
 tokens: action-button.tokens.json
 skeleton: action-button.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Action Button
@@ -32,7 +32,7 @@ exported: 2026-10-28
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default` | 95×32 | [7075:6358](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7075-6358) | 1 | ![](previews/action-button--default.png) |
+| `Default` | 95×32 | [7075:6358](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7075-6358) | 91 | ![](previews/action-button--default.png) |
 | `Hover` | 95×32 | [7075:6415](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7075-6415) | 1 | ![](previews/action-button--hover.png) |
 | `Pressed` | 95×32 | [7075:6513](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7075-6513) | 1 | ![](previews/action-button--pressed.png) |
 | `InFocus` | 95×32 | [7075:6464](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7075-6464) | 1 | ![](previews/action-button--infocus.png) |
@@ -102,8 +102,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **4**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **94**.
 
+Inside components: InLineMessage ×45.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×45.
 
 **Built from:** Icons ×4
 Icon variants: `content_copy` ×4.
@@ -125,4 +127,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `action-button.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

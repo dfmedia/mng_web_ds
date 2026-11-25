@@ -9,7 +9,7 @@ component_key: 6c4643d371207bf81cebfc174a02d4dac31de080
 variants: 24
 tokens: button-secondary.tokens.json
 skeleton: button-secondary.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Button Secondary
@@ -161,4 +161,4 @@ None open.
 - `button-secondary.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

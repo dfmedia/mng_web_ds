@@ -9,7 +9,7 @@ component_key: ee63f90bb43e86ecf93d65870821a8291c205a01
 variants: 6
 tokens: modals-center.tokens.json
 skeleton: modals-center.html
-exported: 2026-11-10
+exported: 2026-11-25
 ---
 
 # ModalsCenter
@@ -327,4 +327,4 @@ Reader Dashboard modal (`react-modal`, `.ReactModal__Content`).
 - `modals-center.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-10 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

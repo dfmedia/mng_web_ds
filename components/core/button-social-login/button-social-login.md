@@ -9,7 +9,7 @@ component_key: fd1547f6e1150e102fa02d22d6cf83d8b865a0c3
 variants: 40
 tokens: button-social-login.tokens.json
 skeleton: button-social-login.html
-exported: 2026-11-17
+exported: 2026-11-25
 ---
 
 # Button Social-Login
@@ -44,12 +44,12 @@ exported: 2026-11-17
 | `Default / False / None / left` | 171×40 | [6516:5401](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6516-5401) | 4 | ![](previews/button-social-login--default-false-none-left.png) |
 | `Default / False / None / right` | 171×40 | [6516:5425](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6516-5425) | 0 | ![](previews/button-social-login--default-false-none-right.png) |
 | `Default / False / None / only` | 56×40 | [7557:31815](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7557-31815) | 6 | ![](previews/button-social-login--default-false-none-only.png) |
-| `Default / False / Apple / left` | 234×40 | [7624:22193](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22193) | 10 | ![](previews/button-social-login--default-false-apple-left.png) |
-| `Default / False / Apple / only` | 56×40 | [7624:22214](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22214) | 1 | ![](previews/button-social-login--default-false-apple-only.png) |
-| `Default / False / Google / left` | 217×40 | [7624:22235](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22235) | 1 | ![](previews/button-social-login--default-false-google-left.png) |
-| `Default / False / Google / only` | 56×40 | [7624:22264](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22264) | 1 | ![](previews/button-social-login--default-false-google-only.png) |
-| `Default / False / Facebook / left` | 253×40 | [7624:22293](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22293) | 1 | ![](previews/button-social-login--default-false-facebook-left.png) |
-| `Default / False / Facebook / only` | 56×40 | [7624:22314](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22314) | 1 | ![](previews/button-social-login--default-false-facebook-only.png) |
+| `Default / False / Apple / left` | 234×40 | [7624:22193](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22193) | 37 | ![](previews/button-social-login--default-false-apple-left.png) |
+| `Default / False / Apple / only` | 56×40 | [7624:22214](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22214) | 8 | ![](previews/button-social-login--default-false-apple-only.png) |
+| `Default / False / Google / left` | 217×40 | [7624:22235](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22235) | 28 | ![](previews/button-social-login--default-false-google-left.png) |
+| `Default / False / Google / only` | 56×40 | [7624:22264](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22264) | 8 | ![](previews/button-social-login--default-false-google-only.png) |
+| `Default / False / Facebook / left` | 253×40 | [7624:22293](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22293) | 22 | ![](previews/button-social-login--default-false-facebook-left.png) |
+| `Default / False / Facebook / only` | 56×40 | [7624:22314](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7624-22314) | 8 | ![](previews/button-social-login--default-false-facebook-only.png) |
 | `Default / True / None / None` | 147×40 | [7557:31789](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7557-31789) | 0 | ![](previews/button-social-login--default-true-none-none.png) |
 | `Default / True / None / left` | 171×40 | [7557:31802](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7557-31802) | 0 | ![](previews/button-social-login--default-true-none-left.png) |
 | `Default / True / None / right` | 171×40 | [6516:5431](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6516-5431) | 0 | ![](previews/button-social-login--default-true-none-right.png) |
@@ -206,10 +206,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **28**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **124**.
 
-Inside components: ModalsOffset ×6.
-Placed on pages: Buttons | 2026.09.30 ×9, Modal Panels | 2026.11.10 ×2.
+Inside components: ModalsOffset ×6, Social buttons ×6, OverlayContainers ×6, Body ×2.
+Placed on pages: Buttons | 2026.09.30 ×9, Embedded Login | 2026.11.20 ×4, Modal Panels | 2026.11.10 ×2.
+78 instances are nested inside other instances.
 
 **Built from:** Icons ×36
 Icon variants: `new-tab` ×12, `appleinc` ×8, `google-color` ×8, `facebook` ×8.
@@ -229,4 +230,4 @@ Used in the Embedded Login designs (Apple, Google and Facebook sign-in buttons a
 - `button-social-login.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

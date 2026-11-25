@@ -9,7 +9,7 @@ component_key: 4d7a04191cf151ff9cd05b60e78c1b05c49f20b0
 variants: 14
 tokens: code-box.tokens.json
 skeleton: code-box.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Code Box
@@ -37,7 +37,7 @@ exported: 2026-11-04
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Blank / Desktop` | 36×56 | [6964:6999](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6964-6999) | 16 | ![](previews/code-box--blank-desktop.png) |
+| `Blank / Desktop` | 36×56 | [6964:6999](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6964-6999) | 22 | ![](previews/code-box--blank-desktop.png) |
 | `Blank / Mobile` | 26×40 | [6972:7524](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6972-7524) | 16 | ![](previews/code-box--blank-mobile.png) |
 | `Filled / Desktop` | 36×56 | [6964:7000](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6964-7000) | 6 | ![](previews/code-box--filled-desktop.png) |
 | `Filled / Mobile` | 26×40 | [6972:7532](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6972-7532) | 6 | ![](previews/code-box--filled-mobile.png) |
@@ -147,9 +147,9 @@ From `code-box.tokens.json`. References point at system tokens (`tokens/core/`, 
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **54**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **60**.
 
-Inside components: Form Field Assembly  ×12.
+Inside components: Form Field Assembly  ×12, Body ×6.
 Placed on pages: Form Fields | 2026.11.04 ×6.
 
 **Built from:** no nested components.
@@ -168,4 +168,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `code-box.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

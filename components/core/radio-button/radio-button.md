@@ -9,7 +9,7 @@ component_key: 7aec8a4dc71cfe9ac387a1b741052ca6cf5b85ad
 variants: 20
 tokens: radio-button.tokens.json
 skeleton: radio-button.html
-exported: 2026-11-12
+exported: 2026-11-25
 ---
 
 # Radio Button
@@ -163,4 +163,4 @@ Only on the subscription checkouts (payment-method choice): the same Naviga CSS 
 - `radio-button.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

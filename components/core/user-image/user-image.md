@@ -9,7 +9,7 @@ component_key: 590ca97e5568b532489ca65eba72777af3fd950e
 variants: 12
 tokens: user-image.tokens.json
 skeleton: user-image.html
-exported: 2026-11-13
+exported: 2026-11-25
 ---
 
 # UserImage
@@ -33,7 +33,7 @@ exported: 2026-11-13
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `unknown / small` | 30×30 | [7594:29537](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29537) | 14 | ![](previews/user-image--unknown-small.png) |
+| `unknown / small` | 30×30 | [7594:29537](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29537) | 13 | ![](previews/user-image--unknown-small.png) |
 | `unknown / large` | 64×64 | [7594:29521](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29521) | 0 | ![](previews/user-image--unknown-large.png) |
 | `unknown / medium` | 40×40 | [7594:29531](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29531) | 12 | ![](previews/user-image--unknown-medium.png) |
 | `monogram / small` | 30×30 | [7594:29539](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7594-29539) | 6 | ![](previews/user-image--monogram-small.png) |
@@ -105,11 +105,11 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **70**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **69**.
 
 Inside components: ModalsOffset ×18, UserPic ×6, InLineMessage ×1.
 Placed on pages: In-Line Content Containers | 2026.01.02 ×1.
-44 instances are nested inside other instances.
+43 instances are nested inside other instances.
 
 **Built from:** Icons ×3
 Icon variants: `user` ×3.
@@ -130,4 +130,4 @@ Production `#anchorProfileDropDown img.rounded-circle`: the reader's photo or a 
 - `user-image.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: e32ad97473603da98a47d63eca30342e498b2ab2
 variants: 15
 tokens: checkbox.tokens.json
 skeleton: checkbox.html
-exported: 2026-11-11
+exported: 2026-11-25
 ---
 
 # CheckBox
@@ -139,4 +139,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `checkbox.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-11 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

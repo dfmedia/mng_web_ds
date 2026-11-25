@@ -9,7 +9,7 @@ component_key: 65f91c028cc42238d00387a53f812f839bf58969
 variants: 14
 tokens: form-field.tokens.json
 skeleton: form-field.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field
@@ -49,12 +49,12 @@ exported: 2026-11-04
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Blank / Desktop` | 480×103 | [6962:6663](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6663) | 50 | ![](previews/form-field--blank-desktop.png) |
-| `Blank / Mobile` | 328×81 | [6962:6683](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6683) | 74 | ![](previews/form-field--blank-mobile.png) |
+| `Blank / Desktop` | 480×103 | [6962:6663](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6663) | 51 | ![](previews/form-field--blank-desktop.png) |
+| `Blank / Mobile` | 328×81 | [6962:6683](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6683) | 123 | ![](previews/form-field--blank-mobile.png) |
 | `Filled / Desktop` | 480×103 | [6962:6703](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6703) | 2 | ![](previews/form-field--filled-desktop.png) |
 | `Filled / Mobile` | 328×81 | [6962:6783](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6783) | 0 | ![](previews/form-field--filled-mobile.png) |
 | `Focus / Desktop` | 480×103 | [6962:6723](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6723) | 1 | ![](previews/form-field--focus-desktop.png) |
-| `Focus / Mobile` | 328×81 | [6962:6803](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6803) | 1 | ![](previews/form-field--focus-mobile.png) |
+| `Focus / Mobile` | 328×81 | [6962:6803](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6803) | 7 | ![](previews/form-field--focus-mobile.png) |
 | `Error / Desktop` | 480×103 | [6962:6743](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6743) | 1 | ![](previews/form-field--error-desktop.png) |
 | `Error / Mobile` | 328×81 | [6962:6823](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=6962-6823) | 0 | ![](previews/form-field--error-mobile.png) |
 | `Error Focus / Desktop` | 480×103 | [7501:27409](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7501-27409) | 0 | ![](previews/form-field--error-focus-desktop.png) |
@@ -234,11 +234,11 @@ From `form-field.tokens.json`. References point at system tokens (`tokens/core/`
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **134**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **190**.
 
-Inside components: InLineMessage ×33, Form Field Assembly  ×32, ModalsCenter ×6, Modals ×1.
-Placed on pages: In-Line Content Containers | 2026.01.02 ×27, Modal Panels | 2026.11.04 ×15, Form Fields | 2026.11.04 ×9, Buttons | 2026.09.30 ×3.
-8 instances are nested inside other instances.
+Inside components: InLineMessage ×33, Form Field Assembly  ×32, OverlayContainers ×18, ModalsCenter ×6, Regiwall ×5, Body ×5.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×27, Modal Panels | 2026.11.10 ×15, Embedded Login | 2026.11.20 ×12, Form Fields | 2026.11.04 ×9, Buttons | 2026.09.30 ×2.
+26 instances are nested inside other instances.
 
 **Built from:** Icons ×20
 Icon variants: `email` ×14, `warning` ×4, `checkmark3` ×2.
@@ -258,4 +258,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `form-field.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

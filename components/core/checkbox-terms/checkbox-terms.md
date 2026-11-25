@@ -9,7 +9,7 @@ component_key: 815cbc290cc86fc6abaf1b0fc9f441c19a79100d
 variants: 2
 tokens: checkbox-terms.tokens.json
 skeleton: checkbox-terms.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Form Field Assembly / Checkbox + Terms
@@ -100,7 +100,7 @@ From `checkbox-terms.tokens.json`. References point at system tokens (`tokens/co
 Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **15**.
 
 Inside components: InLineMessage ×3.
-Placed on pages: Check Boxes | 2026.11.04 ×9, In-Line Content Containers | 2026.01.02 ×3.
+Placed on pages: Check Boxes | 2026.11.05 ×9, In-Line Content Containers | 2026.01.02 ×3.
 
 **Built from:** CheckBox ×2
 
@@ -118,4 +118,4 @@ Not checked against production for this export (Karl, 2026-11-04).
 - `checkbox-terms.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

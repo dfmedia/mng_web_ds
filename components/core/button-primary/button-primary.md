@@ -9,7 +9,7 @@ component_key: 6bd2bc0fe1532df6beb4cd56593b624012dbe8c4
 variants: 36
 tokens: button-primary.tokens.json
 skeleton: button-primary.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Button Primary
@@ -52,7 +52,7 @@ exported: 2026-11-24
 | `Desktop / Right / InFocus` | 323.75×40 | [5417:3605](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=5417-3605) | 0 | ![](previews/button-primary--desktop-right-infocus.png) |
 | `Desktop / Right / Loading` | 323.75×40 | [7673:28603](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28603) | 0 | ![](previews/button-primary--desktop-right-loading.png) |
 | `Desktop / Right / Disabled` | 323.75×40 | [7673:28612](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28612) | 0 | ![](previews/button-primary--desktop-right-disabled.png) |
-| `Mobile / None / Default` | 323.75×40 | [7012:34428](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34428) | 2 | ![](previews/button-primary--mobile-none-default.png) |
+| `Mobile / None / Default` | 323.75×40 | [7012:34428](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34428) | 5 | ![](previews/button-primary--mobile-none-default.png) |
 | `Mobile / None / Hover` | 323.75×40 | [7012:34440](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34440) | 0 | ![](previews/button-primary--mobile-none-hover.png) |
 | `Mobile / None / Pressed` | 323.75×40 | [7012:34471](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34471) | 0 | ![](previews/button-primary--mobile-none-pressed.png) |
 | `Mobile / None / InFocus` | 323.75×40 | [7012:34581](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7012-34581) | 0 | ![](previews/button-primary--mobile-none-infocus.png) |
@@ -182,10 +182,10 @@ From `button-primary.tokens.json`. References point at system tokens (`tokens/co
 
 ## Where it is used
 
-Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **132**.
+Scope: instances in the Figma file **MNG Web Design System** only (other files that use the library are not counted). Total: **135**.
 
 Inside components: InLineMessage ×61, Modals ×6, ModalsCenter ×6, ReaderDash Tempates ×5, Regiwall ×5, UserStatus ×3, Page Body Templates ×1.
-Placed on pages: In-Line Content Containers | 2026.01.02 ×17, Modal Panels | 2026.11.10 ×15, Alerts and Icons ×6, Buttons | 2026.09.30 ×2, User Avatars and Status | 2026.11.13 ×1.
+Placed on pages: In-Line Content Containers | 2026.01.02 ×17, Modal Panels | 2026.11.10 ×15, Alerts and Icons ×6, Embedded Login | 2026.11.20 ×3, Buttons | 2026.09.30 ×2, User Avatars and Status | 2026.11.13 ×1.
 
 **Built from:** Icons ×20, Spinner ×6
 Icon variants: `new-tab` ×20.
@@ -204,4 +204,4 @@ None open.
 - `button-primary.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

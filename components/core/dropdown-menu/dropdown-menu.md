@@ -9,7 +9,7 @@ component_key: 60e043d349b4c9b5a7c096d4fce89b45b5a3ef29
 variants: 12
 tokens: dropdown-menu.tokens.json
 skeleton: dropdown-menu.html
-exported: 2026-11-11
+exported: 2026-11-25
 ---
 
 # Dropdown Menu
@@ -144,4 +144,4 @@ Production (Reader Dashboard Subscription Access) was built from Button ActionMe
 - `dropdown-menu.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-11 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
