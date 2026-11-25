@@ -1,4 +1,5 @@
 - Shows as soon as loading starts, with no delay (Karl, 2026-11-25).
+- The other loading animation is the **newspaper pulse**, for longer waits that block the page in a panel (the Embedded Login loading screen): the newspaper glyph pulsing every 3s above the message, with animated dots (2s). It sits beside the Spinner on the Figma Loading Animation page; it isn't a component in this system yet.
 - **Where it goes** (Karl, 2026-11-24): the design prefers the 48px Spinner in the content area wherever possible, so the buttons keep their labels; inside a button it is 20px with a waiting label (Button Primary / Tertiary State=Loading). Production shows it inside buttons today.
 - **Ring** (Karl, 2026-11-24): always 1/8 of the size, so it scales with the spinner: 2.5px at 20px, 6px at 48px (was 4px at 48px).
 - **Speed** (Karl, 2026-11-24): one turn every 0.8s, linear; with reduced motion, one turn every 2s.
