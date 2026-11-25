@@ -37,8 +37,8 @@ exported: 2026-11-25
 | `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×496 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
 | `Default / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [456:3394](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3394) | 0 | ![](previews/masthead--default-xl-desktop-1040px-obituaries.png) |
 | `Default / XL-Desktop (≥1040px) / Dashboard` | 1280×144 | [456:2715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2715) | 7 | ![](previews/masthead--default-xl-desktop-1040px-dashboard.png) |
-| `Default / XL-Desktop (≥1040px) / Home` | 1040×494 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
-| `Default / XL-Desktop (≥1040px) / Article` | 1040×494 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
+| `Default / XL-Desktop (≥1040px) / Home` | 1040×496 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
+| `Default / XL-Desktop (≥1040px) / Article` | 1040×496 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
 | `Default / XL-Desktop (≥1040px) / BestReviews` | 1040×496 | [3902:44552](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3902-44552) | 0 | ![](previews/masthead--default-xl-desktop-1040px-bestreviews.png) |
 | `Default / LG-TabletH (800–1039px) / SectionFront` | 1024×346 | [456:2896](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2896) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-sectionfront.png) |
 | `Default / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [456:3653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3653) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-obituaries.png) |
@@ -768,6 +768,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.weather-ad-row.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.weather-ad-row.gap` | 14px |
 | `masthead.base.masthead-container.weather-ad-row.height` | 64px |
+| `masthead.base.masthead-container.weather-ad-row.min-height` | 64px |
 | `masthead.base.masthead-container.weather-ad-row.padding-bottom` | `{spacing.100}` |
 | `masthead.base.masthead-container.weather-ad-row.padding-left` | `{spacing.500}` |
 | `masthead.base.masthead-container.weather-ad-row.padding-right` | `{spacing.500}` |
@@ -1164,35 +1165,37 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.page-home.masthead-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.page-article.masthead-container.accountmenu.width` | 112px |
 | `masthead.page-article.masthead-container.accountmenu-container.accountmenu.width` | 112px |
-| `masthead.page-article.masthead-container.container.height` | 64px |
 | `masthead.page-article.masthead-container.container.container.width` | 1202px |
 | `masthead.page-bestreviews.masthead-container.accountmenu.width` | 66px |
 | `masthead.page-bestreviews.masthead-container.accountmenu-container.accountmenu.width` | 66px |
 | `masthead.page-obituaries.masthead-container.accountmenu.width` | 112px |
-| `masthead.page-obituaries.masthead-container.container.height` | 48px |
 | `masthead.page-obituaries.masthead-container.container.container.width` | 235.25px |
 | `masthead.page-dashboard.masthead-container.accountmenu.width` | 112px |
 | `masthead.page-dashboard.masthead-container.accountmenu-container.accountmenu.width` | 112px |
-| `masthead.page-dashboard.masthead-container.container.height` | 80px |
 | `masthead.page-dashboard.masthead-container.container.container.width` | 235.25px |
-| `masthead.state-default.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
-| `masthead.state-default.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-default.page-dashboard.masthead-container.container.height` | 80px |
 | `masthead.state-default.page-dashboard.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-dashboard.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-default.page-dashboard.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-default.page-article.masthead-container.container.height` | 66px |
 | `masthead.state-default.page-article.masthead-container.container.padding-bottom` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.container.padding-top` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-adfree.page-article.masthead-container.container.height` | 64px |
+| `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
+| `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
+| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-scrolled.page-obituaries.masthead-container.container.height` | 48px |
+| `masthead.state-adfree-scrolled.page-obituaries.masthead-container.container.height` | 48px |
+| `masthead.state-default.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
+| `masthead.state-default.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
+| `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.page-bestreviews.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-bestreviews.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-default.page-bestreviews.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 256px |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
-| `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
-| `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
-| `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.state-adfree.page-bestreviews.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-bestreviews.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-bestreviews.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 66px |
