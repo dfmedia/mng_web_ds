@@ -32,6 +32,7 @@ export interface AccountMenuProps extends React.HTMLAttributes<HTMLDivElement> {
   inline?: boolean;
   defaultOpen?: boolean;
   onOpenChange?: (open: boolean) => void;
+  /** false: hide the search button but keep its space, empty (production's obituaries). Default true. */
   showSearch?: boolean;
   onSearchClick?: () => void;
   readerDashboardHref?: string;

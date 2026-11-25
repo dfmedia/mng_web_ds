@@ -5,8 +5,8 @@ const { Masthead } = window.mng_web_design_system;
 h(Masthead, { onMenuClick: openSections, onSearchClick: openSearch })               // anonymous: ads, Subscribe / Log In
 h(Masthead, { adFree: true, user: { name: 'Gina Moreno' }, onAccountClick: open })  // subscriber: no ads, avatar
 h(Masthead, { page: 'Article', sectionName: 'Sports', articleTitle: headline, onShare: share })  // article page
-h(Masthead, { page: 'Obituaries', onObitsSearch: findObit, submitObituaryHref: '/submit' })     // Endless Tributes obituaries (no search button)
-h(Masthead, { page: 'BestReviews', adFree: true, navItems: categoryLinks })                   // BestReviews: categories as sub-sections, no search button
+h(Masthead, { page: 'Obituaries', onObitsSearch: findObit, submitObituaryHref: '/submit' })     // Endless Tributes obituaries (search hidden, its space kept)
+h(Masthead, { page: 'BestReviews', adFree: true, navItems: categoryLinks })                   // BestReviews: categories as sub-sections, search hidden, its space kept
 h(Masthead, { page: 'Dashboard', user, onDashboardMenuClick: toggle })                          // Reader Dashboard: logged in, no ads
 h(Masthead, { state: 'Scrolled', device: 'XL-Desktop' })                             // documentation: one Figma variant
 ```
@@ -14,7 +14,7 @@ h(Masthead, { state: 'Scrolled', device: 'XL-Desktop' })                        
 | Prop | Values | Default |
 |---|---|---|
 | `page` | `'Home'`, `'SectionFront'`, `'BestReviews'`, `'Article'`, `'Obituaries'`, `'Dashboard'` | `'Home'` |
-| `showSearch` | the search button beside the account menu (AccountMenu's `showSearch`) | shown; hidden on Obituaries (as production) and BestReviews |
+| `showSearch` | the search button beside the account menu (AccountMenu's `showSearch`) | shown; hidden on Obituaries (as production) and BestReviews, its space kept |
 | `sectionName` | Section Front, BestReviews, Article: the section name (weather row at 1040px and up, wrapping in its column on Section Front and BestReviews; Article's condensed bar) | `'Section Name'`; BestReviews `'BestReviews'` |
 | `articleTitle` | Article: the headline in the condensed bar at 1040px and up (one line, ellipsis); `''` hides it | the Figma sample |
 | `onShare(network, e)`, `onSave`, `saved` | Article share bar (the `SocialButtons` component): `network` is `'Facebook'`, `'Reddit'`, `'X'`, `'Email'`, `'Link'` or `'Gift'`; `saved` / `onSave` are Save's state | |

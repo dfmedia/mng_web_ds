@@ -96,8 +96,12 @@ function AccountMenu(props) {
   var userEmail = accountMenuStr(props.userEmail, u.email || 'gritty@gmail.com');
   var subType = accountMenuStr(props.subscriptionType, userType === 'nonSub' ? 'Limited Access' : 'Premium Digital Subscriber');
 
-  var search = props.showSearch === false ? null : h('button', { type: 'button', className: 'mngds-account-menu__search', 'aria-label': props.searchLabel || 'Search', onClick: props.onSearchClick },
-    h(Icon, { name: 'search', size: 20 }));
+  /* showSearch false (Obituaries, BestReviews): the search button's space stays, empty, as production does (its search icon is
+     visibility: hidden on all 6 review sites' obituaries pages, 2026-11-25, Karl), so the account controls don't move. */
+  var search = props.showSearch === false
+    ? h('span', { className: 'mngds-account-menu__search mngds-account-menu__search--hidden', 'aria-hidden': 'true' }, h(Icon, { name: 'search', size: 20 }))
+    : h('button', { type: 'button', className: 'mngds-account-menu__search', 'aria-label': props.searchLabel || 'Search', onClick: props.onSearchClick },
+      h(Icon, { name: 'search', size: 20 }));
 
   var control;
   if (status === 'loggedOut' && wide) {
@@ -148,7 +152,7 @@ function AccountMenu(props) {
     'onNewsletter', 'alertTitle', 'alertText', 'alertButtonLabel', 'updatePaymentHref', 'onUpdatePayment', 'rowState', 'className', 'id']), {
     ref: rootRef,
     className: cx('mngds-account-menu', 'mngds-account-menu--' + slug(status), open && 'is-open', inline && 'mngds-account-menu--inline',
-      props.fullWidth && 'mngds-account-menu--full-width', wide && 'mngds-account-menu--wide', props.showSearch === false && 'mngds-account-menu--no-search', props.className)
+      props.fullWidth && 'mngds-account-menu--full-width', wide && 'mngds-account-menu--wide', props.className)
   });
   var scrim = open && !inline ? h('div', { className: cx('mngds-account-menu__scrim', status === 'loggedOut' && 'mngds-account-menu__scrim--panel'), 'aria-hidden': 'true',
     onClick: function () { setOpen(false); } }) : null;

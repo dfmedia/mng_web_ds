@@ -6,7 +6,7 @@
 - Masthead draws its closed account area with this component since 2026-11-16.
 - 2026-11-17 (Karl): the avatar and chevron are 4px (`spacing/050`) apart. The 0 gap from 2026-11-16 matched production's element boxes but looked too tight: production's caret has 5px of padding inside its box (design-vs-production 11.11).
 - 2026-11-17 (Karl): open, the panel's right edge is the closed menu's right edge. The search button's space (16 + 30 + 8px) stays empty, so the avatar and chevron don't move when it opens (was 24px past the chevron). The search icon also sits level with the avatar in every Masthead now (leftover SearchBar padding removed).
-- 2026-11-25 (Karl): `showSearch: false` drops the search button (Masthead does this on Obituaries, as production's obituaries, and on BestReviews). With no search space to keep, the open panel's right edge is the closed menu's right edge, 8px (padding) past the chevron (`mngds-account-menu--no-search`).
+- 2026-11-25 (Karl): `showSearch: false` hides the search button but keeps its space, empty (Masthead does this on Obituaries and BestReviews). Production does the same on all 6 review sites' obituaries pages: the search icon is `visibility: hidden`, so its 43–44px stays to the right of the account menu and the account controls sit where they do on every other page. The open panel lines up as usual.
 - Stacking (Karl, 2026-11-18): open, the menu lifts itself to the open-menu layer (`--mngds-layer-menu`, 200), so its scrim and panel cover the page and the sticky condensed masthead even when page content sets its own z-index (in the BestReviews hi-fi the page `main` was z-index 1 and covered the open menu). Modals (1000) still go over it.
 
 ### Behavior (Gherkin)

@@ -4,7 +4,7 @@ export interface MastheadUser { name?: string; initials?: string; imageSrc?: str
 export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   /** Figma Page. Default 'Home'. */
   page?: 'Home' | 'SectionFront' | 'BestReviews' | 'Article' | 'Obituaries' | 'Dashboard';
-  /** The search button beside the account menu. Default: shown, except on Obituaries (as production) and BestReviews (Karl, 2026-11-25). */
+  /** The search button beside the account menu. Default: shown, except on Obituaries (as production) and BestReviews, where its space stays empty (Karl, 2026-11-25). */
   showSearch?: boolean;
   /** Figma Device. Default: from the rendered width (>=1040 XL-Desktop, 800-1039 LG-TabletH, 640-799 MD-TabletV, 360-639 SM-Mobile, below 360 XS-Fold). */
   device?: MastheadDevice;

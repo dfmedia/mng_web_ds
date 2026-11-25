@@ -17,7 +17,7 @@ var MASTHEAD_SECTION_NAV = ['Food & Drink', 'Movies', 'Music', 'Theater & Arts',
    the BestReviews UI decisions log, Miscellaneous hidden), with no search button by the account menu. */
 var MASTHEAD_BESTREVIEWS_NAV = ['Baby, Kids, & Toys', 'Beauty & Personal Care', 'Electronics', 'Fashion & Apparel', 'Health & Wellness',
   'Home & Office', 'Kitchen & Dining', 'Patio, Lawn, & Garden', 'Pets', 'Sports, Outdoors, & Travel', 'Deals'];
-/* Pages with no search button by the account menu (production's obituaries; BestReviews). `showSearch` overrides. */
+/* Pages that hide the search button by the account menu and keep its space (production's obituaries; BestReviews). `showSearch` overrides. */
 var MASTHEAD_NO_SEARCH = ['Obituaries', 'BestReviews'];
 /* SocialButtons (Article, condensed bar at 1040px and up): the networks Figma's Masthead shows, in SocialButtons' order. */
 var MASTHEAD_SOCIAL = ['Facebook', 'Reddit', 'X', 'Email', 'Link', 'Gift'];
