@@ -2072,7 +2072,7 @@
       "file": "jFHYqhZbJjvWQmDI4myCsd",
       "node": "7673:28421",
       "documentationFrame": "7682:25714",
-      "description": "The loading animation (Style Guide | Loading Animation page; moved there from the Icons page 2026-11-24, Karl). A ring with a 30% track and a quarter arc that turns. Size = 20 (inside a button) or 48 (content area); Color = On dark (`color/gray/max`) or On light (`color/gray/min`).",
+      "description": "The loading animation (Loading Animation page; moved there from the Icons page 2026-11-24, Karl). A ring with a 30% track and a quarter arc that turns. Size = 20 (inside a button) or 48 (content area); Color = On dark (`color/gray/max`) or On light (`color/gray/min`).",
       "rules": [
         "**Preferred:** the 48px Spinner in the content area, centered where the new content will appear, with a short message 16px (`spacing/200`) below it (Noto Sans Regular 16, `color/gray/min`). The buttons keep their labels.",
         "**Inside a button:** 20px, 8px (`spacing/100`) before a waiting label (Button Primary / Tertiary State=Loading).",

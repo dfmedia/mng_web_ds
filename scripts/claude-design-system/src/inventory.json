@@ -169,7 +169,7 @@
     },
     {
      "name": "Spinner",
-     "where": "Style Guide | Loading Animation, 7673:28421",
+     "where": "Loading Animation | 2026.11.25, 7673:28421",
      "status": "In system",
      "note": "Size 20 (in a button) / 48 (content area) × Color On dark / On light; Button Primary / Tertiary State=Loading draw it.",
      "updated": "2026-11-24",

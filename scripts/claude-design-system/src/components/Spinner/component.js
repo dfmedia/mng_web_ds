@@ -1,4 +1,4 @@
-/* Spinner (MNG Web Design System, Style Guide | Loading Animation page, 7673:28421).
+/* Spinner (MNG Web Design System, Loading Animation | 2026.11.25 page, 7673:28421).
    A ring: the track (same color at 30% opacity) and a quarter arc that turns, 12 to 3 o'clock at rest.
    Size 20 (inside a button) or 48 (content area); the ring is 1/8 of the size (2.5px, 6px); Color On dark (gray/max) or On light (gray/min).
    Decorative (aria-hidden): the waiting area or button carries aria-busy and says what is happening.

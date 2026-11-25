@@ -14,11 +14,11 @@ exported: 2026-11-25
 
 # Spinner
 
-> The loading animation (Style Guide | Loading Animation page; moved there from the Icons page 2026-11-24, Karl). A ring with a 30% track and a quarter arc that turns. Size = 20 (inside a button) or 48 (content area); Color = On dark (`color/gray/max`) or On light (`color/gray/min`).
+> The loading animation (Loading Animation page; moved there from the Icons page 2026-11-24, Karl). A ring with a 30% track and a quarter arc that turns. Size = 20 (inside a button) or 48 (content area); Color = On dark (`color/gray/max`) or On light (`color/gray/min`).
 
 ## Figma
 
-- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Style Guide | Loading Animation**
+- File: **MNG Web Design System** (`jFHYqhZbJjvWQmDI4myCsd`), page **Loading Animation | 2026.11.25**
 - Component set: [`Spinner` · 7673:28421](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7673-28421) · key `465145e1ad9b44e38ef9d1d7c5210b70ee9cc32b`
 - Documentation frame: [Spinner Container](https://www.figma.com/design/jFHYqhZbJjvWQmDI4myCsd/?node-id=7682-25714) · overview: [previews/spinner--documentation.png](previews/spinner--documentation.png)
 
