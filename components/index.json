@@ -1132,10 +1132,10 @@
         "node": "456:2572",
         "set": "Masthead"
       },
-      "variants": 90,
+      "variants": 110,
       "instances": 66,
       "knownIssues": 9,
-      "exported": "2026-11-17"
+      "exported": "2026-11-25"
     },
     {
       "slug": "search-bar",

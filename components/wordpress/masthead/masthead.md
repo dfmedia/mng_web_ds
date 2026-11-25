@@ -6,10 +6,10 @@ figma_file: b1iZxkFwtAYq9rElmnCAzd
 figma_set: "Masthead"
 figma_node: "456:2572"
 component_key: 5cf04e3021e4ccd5357b9d77f3d03e02ed41dc28
-variants: 90
+variants: 110
 tokens: masthead.tokens.json
 skeleton: masthead.html
-exported: 2026-11-17
+exported: 2026-11-25
 ---
 
 # Masthead
@@ -28,109 +28,129 @@ exported: 2026-11-17
 |---|---|---|
 | State | Default | Default, AdFree, Scrolled, AdFree-Scrolled |
 | Device | XS-Fold (≤639px · built 340px) | XL-Desktop (≥1040px), LG-TabletH (800–1039px), MD-TabletV (640–799px), SM-Mobile (≤639px · built 360px), XS-Fold (≤639px · built 340px) |
-| Page | Home | SectionFront, Obituaries, Dashboard, Home, Article |
+| Page | Home | SectionFront, Obituaries, Dashboard, Home, Article, BestReviews |
 
 ## Variants
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×494 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
+| `Default / XL-Desktop (≥1040px) / SectionFront` | 1040×496 | [456:2653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2653) | 3 | ![](previews/masthead--default-xl-desktop-1040px-sectionfront.png) |
 | `Default / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [456:3394](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3394) | 0 | ![](previews/masthead--default-xl-desktop-1040px-obituaries.png) |
 | `Default / XL-Desktop (≥1040px) / Dashboard` | 1280×144 | [456:2715](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2715) | 7 | ![](previews/masthead--default-xl-desktop-1040px-dashboard.png) |
 | `Default / XL-Desktop (≥1040px) / Home` | 1040×494 | [456:2573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2573) | 9 | ![](previews/masthead--default-xl-desktop-1040px-home.png) |
 | `Default / XL-Desktop (≥1040px) / Article` | 1040×494 | [824:4526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4526) | 0 | ![](previews/masthead--default-xl-desktop-1040px-article.png) |
+| `Default / XL-Desktop (≥1040px) / BestReviews` | 1040×496 | [3902:44552](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3902-44552) | 0 | ![](previews/masthead--default-xl-desktop-1040px-bestreviews.png) |
 | `Default / LG-TabletH (800–1039px) / SectionFront` | 1024×346 | [456:2896](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2896) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-sectionfront.png) |
 | `Default / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [456:3653](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3653) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-obituaries.png) |
 | `Default / LG-TabletH (800–1039px) / Dashboard` | 1024×64 | [456:2996](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2996) | 6 | ![](previews/masthead--default-lg-tableth-800-1039px-dashboard.png) |
 | `Default / LG-TabletH (800–1039px) / Home` | 1024×346 | [819:2854](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-2854) | 1 | ![](previews/masthead--default-lg-tableth-800-1039px-home.png) |
 | `Default / LG-TabletH (800–1039px) / Article` | 1024×346 | [824:5088](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5088) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-article.png) |
+| `Default / LG-TabletH (800–1039px) / BestReviews` | 1024×346 | [3903:44852](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44852) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-bestreviews.png) |
 | `Default / MD-TabletV (640–799px) / SectionFront` | 768×186 | [456:3100](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3100) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-sectionfront.png) |
 | `Default / MD-TabletV (640–799px) / Obituaries` | 768×349 | [456:3726](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3726) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-obituaries.png) |
 | `Default / MD-TabletV (640–799px) / Dashboard` | 768×104 | [456:3152](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3152) | 8 | ![](previews/masthead--default-md-tabletv-640-799px-dashboard.png) |
 | `Default / MD-TabletV (640–799px) / Home` | 768×186 | [456:3071](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3071) | 9 | ![](previews/masthead--default-md-tabletv-640-799px-home.png) |
 | `Default / MD-TabletV (640–799px) / Article` | 768×186 | [824:5147](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5147) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-article.png) |
+| `Default / MD-TabletV (640–799px) / BestReviews` | 768×186 | [3903:45077](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45077) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-bestreviews.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / SectionFront` | 360×130 | [456:3230](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3230) | 1 | ![](previews/masthead--default-sm-mobile-639px-built-360px-sectionfront.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Obituaries` | 360×353 | [456:3531](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3531) | 0 | ![](previews/masthead--default-sm-mobile-639px-built-360px-obituaries.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Dashboard` | 360×104 | [456:3300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3300) | 8 | ![](previews/masthead--default-sm-mobile-639px-built-360px-dashboard.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Home` | 360×130 | [456:3201](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3201) | 11 | ![](previews/masthead--default-sm-mobile-639px-built-360px-home.png) |
 | `Default / SM-Mobile (≤639px · built 360px) / Article` | 360×130 | [824:5173](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5173) | 0 | ![](previews/masthead--default-sm-mobile-639px-built-360px-article.png) |
+| `Default / SM-Mobile (≤639px · built 360px) / BestReviews` | 360×130 | [3903:45244](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45244) | 0 | ![](previews/masthead--default-sm-mobile-639px-built-360px-bestreviews.png) |
 | `Default / XS-Fold (≤639px · built 340px) / SectionFront` | 340×180 | [736:1647](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-1647) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-sectionfront.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Obituaries` | 340×353 | [456:3592](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3592) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-obituaries.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Dashboard` | 340×104 | [456:3324](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3324) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-dashboard.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Home` | 340×180 | [736:2450](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-2450) | 1 | ![](previews/masthead--default-xs-fold-639px-built-340px-home.png) |
 | `Default / XS-Fold (≤639px · built 340px) / Article` | 340×180 | [824:5197](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5197) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-article.png) |
+| `Default / XS-Fold (≤639px · built 340px) / BestReviews` | 340×180 | [3903:45357](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45357) | 0 | ![](previews/masthead--default-xs-fold-639px-built-340px-bestreviews.png) |
 | `AdFree / XL-Desktop (≥1040px) / SectionFront` | 1040×212 | [822:3434](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=822-3434) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-sectionfront.png) |
 | `AdFree / XL-Desktop (≥1040px) / Obituaries` | 1040×261 | [827:6067](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-6067) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-obituaries.png) |
 | `AdFree / XL-Desktop (≥1040px) / Home` | 1040×212 | [819:1845](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1845) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-home.png) |
 | `AdFree / XL-Desktop (≥1040px) / Article` | 1040×212 | [824:4625](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4625) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-article.png) |
+| `AdFree / XL-Desktop (≥1040px) / BestReviews` | 1040×212 | [3903:44671](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44671) | 0 | ![](previews/masthead--adfree-xl-desktop-1040px-bestreviews.png) |
 | `AdFree / LG-TabletH (800–1039px) / SectionFront` | 1024×64 | [823:3812](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3812) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-sectionfront.png) |
 | `AdFree / LG-TabletH (800–1039px) / Obituaries` | 1024×324 | [827:5676](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5676) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-obituaries.png) |
 | `AdFree / LG-TabletH (800–1039px) / Home` | 1024×64 | [823:3758](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3758) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-home.png) |
 | `AdFree / LG-TabletH (800–1039px) / Article` | 1024×64 | [824:4780](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4780) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-article.png) |
+| `AdFree / LG-TabletH (800–1039px) / BestReviews` | 1024×64 | [3903:44913](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44913) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-bestreviews.png) |
 | `AdFree / MD-TabletV (640–799px) / SectionFront` | 768×64 | [823:3969](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3969) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-sectionfront.png) |
 | `AdFree / MD-TabletV (640–799px) / Obituaries` | 768×285 | [827:5573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5573) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-obituaries.png) |
 | `AdFree / MD-TabletV (640–799px) / Home` | 768×64 | [819:1940](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1940) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-home.png) |
 | `AdFree / MD-TabletV (640–799px) / Article` | 768×64 | [824:4885](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4885) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-article.png) |
+| `AdFree / MD-TabletV (640–799px) / BestReviews` | 768×64 | [3903:45024](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45024) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-bestreviews.png) |
 | `AdFree / SM-Mobile (≤639px · built 360px) / SectionFront` | 360×64 | [823:4068](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-4068) | 0 | ![](previews/masthead--adfree-sm-mobile-639px-built-360px-sectionfront.png) |
 | `AdFree / SM-Mobile (≤639px · built 360px) / Obituaries` | 360×295 | [827:5440](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5440) | 0 | ![](previews/masthead--adfree-sm-mobile-639px-built-360px-obituaries.png) |
 | `AdFree / SM-Mobile (≤639px · built 360px) / Home` | 360×64 | [819:1966](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1966) | 0 | ![](previews/masthead--adfree-sm-mobile-639px-built-360px-home.png) |
 | `AdFree / SM-Mobile (≤639px · built 360px) / Article` | 360×64 | [824:4909](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4909) | 0 | ![](previews/masthead--adfree-sm-mobile-639px-built-360px-article.png) |
+| `AdFree / SM-Mobile (≤639px · built 360px) / BestReviews` | 360×64 | [3903:45304](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45304) | 0 | ![](previews/masthead--adfree-sm-mobile-639px-built-360px-bestreviews.png) |
 | `AdFree / XS-Fold (≤639px · built 340px) / SectionFront` | 340×64 | [823:4190](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-4190) | 0 | ![](previews/masthead--adfree-xs-fold-639px-built-340px-sectionfront.png) |
 | `AdFree / XS-Fold (≤639px · built 340px) / Obituaries` | 340×295 | [827:5968](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5968) | 0 | ![](previews/masthead--adfree-xs-fold-639px-built-340px-obituaries.png) |
 | `AdFree / XS-Fold (≤639px · built 340px) / Home` | 340×64 | [819:1992](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1992) | 0 | ![](previews/masthead--adfree-xs-fold-639px-built-340px-home.png) |
 | `AdFree / XS-Fold (≤639px · built 340px) / Article` | 340×64 | [824:4933](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4933) | 0 | ![](previews/masthead--adfree-xs-fold-639px-built-340px-article.png) |
+| `AdFree / XS-Fold (≤639px · built 340px) / BestReviews` | 340×64 | [3903:45191](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45191) | 0 | ![](previews/masthead--adfree-xs-fold-639px-built-340px-bestreviews.png) |
 | `Scrolled / XL-Desktop (≥1040px) / SectionFront` | 1040×64 | [822:3585](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=822-3585) | 0 | ![](previews/masthead--scrolled-xl-desktop-1040px-sectionfront.png) |
 | `Scrolled / XL-Desktop (≥1040px) / Obituaries` | 1040×145 | [456:3468](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3468) | 0 | ![](previews/masthead--scrolled-xl-desktop-1040px-obituaries.png) |
 | `Scrolled / XL-Desktop (≥1040px) / Dashboard` | 1280×64 | [456:2840](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2840) | 0 | ![](previews/masthead--scrolled-xl-desktop-1040px-dashboard.png) |
 | `Scrolled / XL-Desktop (≥1040px) / Home` | 1040×64 | [456:2776](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2776) | 1 | ![](previews/masthead--scrolled-xl-desktop-1040px-home.png) |
 | `Scrolled / XL-Desktop (≥1040px) / Article` | 1040×64 | [456:2800](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2800) | 0 | ![](previews/masthead--scrolled-xl-desktop-1040px-article.png) |
+| `Scrolled / XL-Desktop (≥1040px) / BestReviews` | 1040×64 | [3903:44784](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44784) | 0 | ![](previews/masthead--scrolled-xl-desktop-1040px-bestreviews.png) |
 | `Scrolled / LG-TabletH (800–1039px) / SectionFront` | 1024×64 | [823:3917](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3917) | 0 | ![](previews/masthead--scrolled-lg-tableth-800-1039px-sectionfront.png) |
 | `Scrolled / LG-TabletH (800–1039px) / Obituaries` | 1024×244 | [456:3977](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3977) | 0 | ![](previews/masthead--scrolled-lg-tableth-800-1039px-obituaries.png) |
 | `Scrolled / LG-TabletH (800–1039px) / Dashboard` | 1024×64 | [456:3047](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3047) | 0 | ![](previews/masthead--scrolled-lg-tableth-800-1039px-dashboard.png) |
 | `Scrolled / LG-TabletH (800–1039px) / Home` | 1024×64 | [456:3023](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3023) | 0 | ![](previews/masthead--scrolled-lg-tableth-800-1039px-home.png) |
 | `Scrolled / LG-TabletH (800–1039px) / Article` | 1024×64 | [824:4806](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4806) | 0 | ![](previews/masthead--scrolled-lg-tableth-800-1039px-article.png) |
+| `Scrolled / LG-TabletH (800–1039px) / BestReviews` | 1024×64 | [3903:44969](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44969) | 0 | ![](previews/masthead--scrolled-lg-tableth-800-1039px-bestreviews.png) |
 | `Scrolled / MD-TabletV (640–799px) / SectionFront` | 768×64 | [823:4019](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-4019) | 0 | ![](previews/masthead--scrolled-md-tabletv-640-799px-sectionfront.png) |
 | `Scrolled / MD-TabletV (640–799px) / Obituaries` | 768×212 | [456:3915](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3915) | 0 | ![](previews/masthead--scrolled-md-tabletv-640-799px-obituaries.png) |
 | `Scrolled / MD-TabletV (640–799px) / Dashboard` | 768×104 | [456:3177](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3177) | 0 | ![](previews/masthead--scrolled-md-tabletv-640-799px-dashboard.png) |
 | `Scrolled / MD-TabletV (640–799px) / Home` | 768×64 | [456:3129](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3129) | 0 | ![](previews/masthead--scrolled-md-tabletv-640-799px-home.png) |
 | `Scrolled / MD-TabletV (640–799px) / Article` | 768×64 | [456:2971](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-2971) | 0 | ![](previews/masthead--scrolled-md-tabletv-640-799px-article.png) |
+| `Scrolled / MD-TabletV (640–799px) / BestReviews` | 768×64 | [3903:45137](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45137) | 0 | ![](previews/masthead--scrolled-md-tabletv-640-799px-bestreviews.png) |
 | `Scrolled / SM-Mobile (≤639px · built 360px) / SectionFront` | 360×64 | [823:4092](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-4092) | 0 | ![](previews/masthead--scrolled-sm-mobile-639px-built-360px-sectionfront.png) |
 | `Scrolled / SM-Mobile (≤639px · built 360px) / Obituaries` | 360×215 | [456:3799](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3799) | 0 | ![](previews/masthead--scrolled-sm-mobile-639px-built-360px-obituaries.png) |
 | `Scrolled / SM-Mobile (≤639px · built 360px) / Dashboard` | 360×104 | [456:3348](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3348) | 0 | ![](previews/masthead--scrolled-sm-mobile-639px-built-360px-dashboard.png) |
 | `Scrolled / SM-Mobile (≤639px · built 360px) / Home` | 360×64 | [456:3254](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3254) | 0 | ![](previews/masthead--scrolled-sm-mobile-639px-built-360px-home.png) |
 | `Scrolled / SM-Mobile (≤639px · built 360px) / Article` | 360×64 | [456:3277](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3277) | 0 | ![](previews/masthead--scrolled-sm-mobile-639px-built-360px-article.png) |
+| `Scrolled / SM-Mobile (≤639px · built 360px) / BestReviews` | 360×64 | [3903:45418](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45418) | 0 | ![](previews/masthead--scrolled-sm-mobile-639px-built-360px-bestreviews.png) |
 | `Scrolled / XS-Fold (≤639px · built 340px) / SectionFront` | 340×64 | [823:4167](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-4167) | 0 | ![](previews/masthead--scrolled-xs-fold-639px-built-340px-sectionfront.png) |
 | `Scrolled / XS-Fold (≤639px · built 340px) / Obituaries` | 340×215 | [456:3857](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3857) | 0 | ![](previews/masthead--scrolled-xs-fold-639px-built-340px-obituaries.png) |
 | `Scrolled / XS-Fold (≤639px · built 340px) / Dashboard` | 340×104 | [456:3371](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3371) | 0 | ![](previews/masthead--scrolled-xs-fold-639px-built-340px-dashboard.png) |
 | `Scrolled / XS-Fold (≤639px · built 340px) / Home` | 340×64 | [736:2476](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-2476) | 0 | ![](previews/masthead--scrolled-xs-fold-639px-built-340px-home.png) |
 | `Scrolled / XS-Fold (≤639px · built 340px) / Article` | 340×64 | [736:1671](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=736-1671) | 0 | ![](previews/masthead--scrolled-xs-fold-639px-built-340px-article.png) |
+| `Scrolled / XS-Fold (≤639px · built 340px) / BestReviews` | 340×64 | [3903:45472](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45472) | 0 | ![](previews/masthead--scrolled-xs-fold-639px-built-340px-bestreviews.png) |
 | `AdFree-Scrolled / XL-Desktop (≥1040px) / SectionFront` | 1040×64 | [3676:40813](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40813) | 0 | ![](previews/masthead--adfree-scrolled-xl-desktop-1040px-sectionfront.png) |
 | `AdFree-Scrolled / XL-Desktop (≥1040px) / Obituaries` | 1040×145 | [3415:52128](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3415-52128) | 0 | ![](previews/masthead--adfree-scrolled-xl-desktop-1040px-obituaries.png) |
 | `AdFree-Scrolled / XL-Desktop (≥1040px) / Home` | 1040×64 | [3676:40454](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40454) | 0 | ![](previews/masthead--adfree-scrolled-xl-desktop-1040px-home.png) |
 | `AdFree-Scrolled / XL-Desktop (≥1040px) / Article` | 1040×64 | [3676:41172](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41172) | 0 | ![](previews/masthead--adfree-scrolled-xl-desktop-1040px-article.png) |
+| `AdFree-Scrolled / XL-Desktop (≥1040px) / BestReviews` | 1040×64 | [3903:45526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45526) | 0 | ![](previews/masthead--adfree-scrolled-xl-desktop-1040px-bestreviews.png) |
 | `AdFree-Scrolled / LG-TabletH (800–1039px) / SectionFront` | 1024×64 | [3676:40895](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40895) | 0 | ![](previews/masthead--adfree-scrolled-lg-tableth-800-1039px-sectionfront.png) |
 | `AdFree-Scrolled / LG-TabletH (800–1039px) / Obituaries` | 1024×244 | [3415:52563](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3415-52563) | 0 | ![](previews/masthead--adfree-scrolled-lg-tableth-800-1039px-obituaries.png) |
 | `AdFree-Scrolled / LG-TabletH (800–1039px) / Home` | 1024×64 | [3676:40536](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40536) | 0 | ![](previews/masthead--adfree-scrolled-lg-tableth-800-1039px-home.png) |
 | `AdFree-Scrolled / LG-TabletH (800–1039px) / Article` | 1024×64 | [3676:41350](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41350) | 0 | ![](previews/masthead--adfree-scrolled-lg-tableth-800-1039px-article.png) |
+| `AdFree-Scrolled / LG-TabletH (800–1039px) / BestReviews` | 1024×64 | [3903:45583](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45583) | 0 | ![](previews/masthead--adfree-scrolled-lg-tableth-800-1039px-bestreviews.png) |
 | `AdFree-Scrolled / MD-TabletV (640–799px) / SectionFront` | 768×64 | [3676:40968](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40968) | 0 | ![](previews/masthead--adfree-scrolled-md-tabletv-640-799px-sectionfront.png) |
 | `AdFree-Scrolled / MD-TabletV (640–799px) / Obituaries` | 768×212 | [3415:52455](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3415-52455) | 0 | ![](previews/masthead--adfree-scrolled-md-tabletv-640-799px-obituaries.png) |
 | `AdFree-Scrolled / MD-TabletV (640–799px) / Home` | 768×64 | [3676:40609](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40609) | 0 | ![](previews/masthead--adfree-scrolled-md-tabletv-640-799px-home.png) |
 | `AdFree-Scrolled / MD-TabletV (640–799px) / Article` | 768×64 | [3676:41282](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41282) | 0 | ![](previews/masthead--adfree-scrolled-md-tabletv-640-799px-article.png) |
+| `AdFree-Scrolled / MD-TabletV (640–799px) / BestReviews` | 768×64 | [3903:45637](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45637) | 0 | ![](previews/masthead--adfree-scrolled-md-tabletv-640-799px-bestreviews.png) |
 | `AdFree-Scrolled / SM-Mobile (≤639px · built 360px) / SectionFront` | 360×64 | [3676:41036](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41036) | 0 | ![](previews/masthead--adfree-scrolled-sm-mobile-639px-built-360px-sectionfront.png) |
 | `AdFree-Scrolled / SM-Mobile (≤639px · built 360px) / Obituaries` | 360×215 | [3415:52247](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3415-52247) | 0 | ![](previews/masthead--adfree-scrolled-sm-mobile-639px-built-360px-obituaries.png) |
 | `AdFree-Scrolled / SM-Mobile (≤639px · built 360px) / Home` | 360×64 | [3676:40677](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40677) | 1 | ![](previews/masthead--adfree-scrolled-sm-mobile-639px-built-360px-home.png) |
 | `AdFree-Scrolled / SM-Mobile (≤639px · built 360px) / Article` | 360×64 | [3676:41423](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41423) | 0 | ![](previews/masthead--adfree-scrolled-sm-mobile-639px-built-360px-article.png) |
+| `AdFree-Scrolled / SM-Mobile (≤639px · built 360px) / BestReviews` | 360×64 | [3903:45690](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45690) | 0 | ![](previews/masthead--adfree-scrolled-sm-mobile-639px-built-360px-bestreviews.png) |
 | `AdFree-Scrolled / XS-Fold (≤639px · built 340px) / SectionFront` | 340×64 | [3676:41104](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41104) | 0 | ![](previews/masthead--adfree-scrolled-xs-fold-639px-built-340px-sectionfront.png) |
 | `AdFree-Scrolled / XS-Fold (≤639px · built 340px) / Obituaries` | 340×215 | [3415:52351](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3415-52351) | 0 | ![](previews/masthead--adfree-scrolled-xs-fold-639px-built-340px-obituaries.png) |
 | `AdFree-Scrolled / XS-Fold (≤639px · built 340px) / Home` | 340×64 | [3676:40745](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-40745) | 0 | ![](previews/masthead--adfree-scrolled-xs-fold-639px-built-340px-home.png) |
 | `AdFree-Scrolled / XS-Fold (≤639px · built 340px) / Article` | 340×64 | [3676:41491](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3676-41491) | 0 | ![](previews/masthead--adfree-scrolled-xs-fold-639px-built-340px-article.png) |
+| `AdFree-Scrolled / XS-Fold (≤639px · built 340px) / BestReviews` | 340×64 | [3903:45743](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45743) | 0 | ![](previews/masthead--adfree-scrolled-xs-fold-639px-built-340px-bestreviews.png) |
 
 ## Anatomy
 
 Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers marked):
 
-- **Device=XL-Desktop (≥1040px), State=Default, Page=SectionFront** `COMPONENT`: 1040×494, vertical, gap 0, padding 0/0/0/0, fixed×hug
-  - **Masthead Container** `FRAME`: 1040×494, vertical, gap 0, padding 0/0/0/0, fill×hug
+- **Device=XL-Desktop (≥1040px), State=Default, Page=SectionFront** `COMPONENT`: 1040×496, vertical, gap 0, padding 0/0/0/0, fixed×hug
+  - **Masthead Container** `FRAME`: 1040×496, vertical, gap 0, padding 0/0/0/0, fill×hug
     - **MastheadTop** `FRAME`: 1040×64, vertical, gap 8, padding 0/0/0/0, fill×hug
       - **Menus Container** `FRAME`: 1040×64, horizontal, gap 14, padding 0/0/0/0, fill×fixed
         - **SectionMenu** `INSTANCE`: 300×64, vertical, gap 0, padding 0/0/0/0, hug×hug, instance of SectionMenu (View=Closed, Device=XL-Desktop, UserType=all)
@@ -156,23 +176,25 @@ Default variant `Default / XL-Desktop (≥1040px) / SectionFront` (hidden layers
             - **Vector** `VECTOR`: 15.79×22.89, fixed×fixed
         - **AccountMenu Container** `FRAME`: 300×64, horizontal, gap 16, padding 0/40/0/0, fixed×fixed
           - **AccountMenu** `INSTANCE`: 294×64, horizontal, gap 8, padding 0/8/0/8, hug×fixed, instance of AccountMenu (Status=loggedOut, View=Closed, Device=(1040px and up), UserType=loggedOut)
-    - **Container** `FRAME`: 1040×64, horizontal, gap 14, padding 8/40/8/40, fill×fixed
-      - **Weather Bug** `INSTANCE`: 285.78×40.73, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead, Evening e-Edition=Off)
-      - **Section Name** `TEXT`: 278×54, hug×hug, "Section Name", Noto Serif Bold 40px
-      - **Ad Blocks** `INSTANCE`: 320×50, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Ad Blocks (Device=All, Name=Sponsorship 1 320x50)
+    - **Container** `FRAME`: 1040×66, horizontal, gap 0, padding 8/40/8/40, fill×hug
+      - **Left column** `FRAME`: 320×40.73, horizontal, gap 0, padding 0/0/0/0, fill×hug
+        - **Weather Bug** `INSTANCE`: 285.78×40.73, horizontal, gap 12, padding 0/0/0/0, hug×hug, instance of Weather Bug (Location=Masthead, Evening e-Edition=Off)
+      - **Section Name** `TEXT`: 320×40, fill×hug, "Section Name", Noto Serif Bold 40px
+      - **Right column** `FRAME`: 320×50, horizontal, gap 0, padding 0/0/0/0, fill×hug
+        - **Ad Blocks** `INSTANCE`: 320×50, vertical, gap 8, padding 0/0/0/0, fixed×fixed, instance of Ad Blocks (Device=All, Name=Sponsorship 1 320x50)
     - **Container** `FRAME`: 1040×48, vertical, gap 0, padding 0/0/0/0, fill×hug
-      - **Menu** `FRAME`: 1093×48, horizontal, gap 32, padding 0/0/0/0, hug×fixed
-        - **Menu Item** `TEXT`: 97×26, hug×hug, "Food & Drink", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 53×26, hug×hug, "Movies", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 44×26, hug×hug, "Music", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 109×26, hug×hug, "Theater & Arts", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 58×26, hug×hug, "Casinos", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 46×26, hug×hug, "Travel", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 46×26, hug×hug, "Books", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 54×26, hug×hug, "Comics", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 50×26, hug×hug, "Events", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 145×26, hug×hug, "Amusements Parks", Noto Sans Bold 15px
-        - **Menu Item** `TEXT`: 71×26, hug×hug, "Shopping", Noto Sans Bold 15px
+      - **Sub-Section Nav** `FRAME`: 1086×48, horizontal, gap 32, padding 0/0/0/0, hug×fixed
+        - **Sub-Section List Item** `TEXT`: 97×26, hug×hug, "Food & Drink", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 53×26, hug×hug, "Movies", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 44×26, hug×hug, "Music", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 109×26, hug×hug, "Theater & Arts", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 58×26, hug×hug, "Casinos", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 46×26, hug×hug, "Travel", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 46×26, hug×hug, "Books", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 54×26, hug×hug, "Comics", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 50×26, hug×hug, "Events", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 138×26, hug×hug, "Amusement Parks", Noto Sans Bold 15px
+        - **Sub-Section List Item** `TEXT`: 71×26, hug×hug, "Shopping", Noto Sans Bold 15px
       - **Divider** `LINE`: 1040×0, fill×fixed
     - **Trending** `FRAME`: 1040×36, horizontal, gap 32, padding 8/40/8/40, fill×hug
       - **Trending Label** `TEXT`: 78×19, hug×hug, "Trending:", Noto Sans Bold 14px
@@ -344,14 +366,12 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.accountmenu-container.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.accountmenu-container.height` | 64px |
 | `masthead.base.masthead-container.accountmenu-container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.accountmenu-container.width` | 300px |
 | `masthead.base.masthead-container.accountmenu-container.accountmenu.height` | 64px |
 | `masthead.base.masthead-container.accountmenu-container.accountmenu.icon-color` | `{color.gray.max}` |
-| `masthead.base.masthead-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.base.masthead-container.ad-container.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.ad-container.padding-bottom` | `{spacing.200}` |
 | `masthead.base.masthead-container.ad-container.padding-top` | `{spacing.200}` |
@@ -359,10 +379,16 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.ad-container.ad-blocks.icon-color` | `{color.gray.min}` |
 | `masthead.base.masthead-container.ad-container.ad-blocks.width` | 970px |
 | `masthead.base.masthead-container.container.gap` | 14px |
+| `masthead.base.masthead-container.container.min-height` | 64px |
 | `masthead.base.masthead-container.container.padding-left` | `{spacing.500}` |
 | `masthead.base.masthead-container.container.padding-right` | `{spacing.500}` |
 | `masthead.base.masthead-container.container.width` | 235.25px |
 | `masthead.base.masthead-container.container.ad-blocks.icon-color` | `{color.gray.min}` |
+| `masthead.base.masthead-container.container.bestreviews.color` | `{color.theme.primary}` |
+| `masthead.base.masthead-container.container.bestreviews.font-family` | `{font.family.noto-serif}` |
+| `masthead.base.masthead-container.container.bestreviews.font-size` | `{font.size.40}` |
+| `masthead.base.masthead-container.container.bestreviews.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.bestreviews.line-height` | 1.0 |
 | `masthead.base.masthead-container.container.container.gap` | `{spacing.400}` |
 | `masthead.base.masthead-container.container.container.height` | 48px |
 | `masthead.base.masthead-container.container.container.business.color` | `{color.gray.min}` |
@@ -427,19 +453,20 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.divider.border-style` | solid |
 | `masthead.base.masthead-container.container.divider.border-width` | 1px |
 | `masthead.base.masthead-container.container.divider.height` | 0px |
+| `masthead.base.masthead-container.container.left-column.weather-bug.height` | 40.73px |
+| `masthead.base.masthead-container.container.left-column.weather-bug.icon-color` | `{color.theme.nav-text}` |
+| `masthead.base.masthead-container.container.left-column.weather-bug.width` | 285.78px |
 | `masthead.base.masthead-container.container.logo-container.height` | 29.79px |
 | `masthead.base.masthead-container.container.logo-container.width` | 146px |
 | `masthead.base.masthead-container.container.logo-container.vector.background` | `{color.gray.min}` |
 | `masthead.base.masthead-container.container.logo-container.vector.height` | 14.21px |
 | `masthead.base.masthead-container.container.logo-container.vector.width` | 9.8px |
-| `masthead.base.masthead-container.container.menu.gap` | `{spacing.400}` |
-| `masthead.base.masthead-container.container.menu.height` | 48px |
-| `masthead.base.masthead-container.container.menu.width` | 1202px |
-| `masthead.base.masthead-container.container.menu.menu-item.color` | `{color.gray.min}` |
-| `masthead.base.masthead-container.container.menu.menu-item.font-family` | `{font.family.noto-sans}` |
-| `masthead.base.masthead-container.container.menu.menu-item.font-size` | `{font.size.15}` |
-| `masthead.base.masthead-container.container.menu.menu-item.font-weight` | `{font.weight.bold}` |
-| `masthead.base.masthead-container.container.menu.menu-item.line-height` | 26px |
+| `masthead.base.masthead-container.container.right-column.ad-blocks.height` | 50px |
+| `masthead.base.masthead-container.container.right-column.ad-blocks.icon-color` | `{color.gray.min}` |
+| `masthead.base.masthead-container.container.right-column.ad-blocks.width` | 320px |
+| `masthead.base.masthead-container.container.right-column.weather-bug.height` | 40.73px |
+| `masthead.base.masthead-container.container.right-column.weather-bug.icon-color` | `{color.theme.nav-text}` |
+| `masthead.base.masthead-container.container.right-column.weather-bug.width` | 320px |
 | `masthead.base.masthead-container.container.section-menu-desktop.background` | `{color.gray.max}` |
 | `masthead.base.masthead-container.container.section-menu-desktop.height` | 64px |
 | `masthead.base.masthead-container.container.section-menu-desktop.padding-right` | `{spacing.500}` |
@@ -450,12 +477,22 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.container.section-name.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.container.section-name.font-size` | `{font.size.40}` |
 | `masthead.base.masthead-container.container.section-name.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.section-name.line-height` | 1.0 |
 | `masthead.base.masthead-container.container.section-title.color` | `{color.theme.primary}` |
 | `masthead.base.masthead-container.container.section-title.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.container.section-title.font-size` | `{font.size.40}` |
 | `masthead.base.masthead-container.container.section-title.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.section-title.line-height` | 1.0 |
 | `masthead.base.masthead-container.container.sectionmenu.height` | 64px |
 | `masthead.base.masthead-container.container.sectionmenu.icon-color` | `{color.gray.max}` |
+| `masthead.base.masthead-container.container.sub-section-nav.gap` | `{spacing.400}` |
+| `masthead.base.masthead-container.container.sub-section-nav.height` | 48px |
+| `masthead.base.masthead-container.container.sub-section-nav.width` | 1202px |
+| `masthead.base.masthead-container.container.sub-section-nav.sub-section-list-item.color` | `{color.gray.min}` |
+| `masthead.base.masthead-container.container.sub-section-nav.sub-section-list-item.font-family` | `{font.family.noto-sans}` |
+| `masthead.base.masthead-container.container.sub-section-nav.sub-section-list-item.font-size` | `{font.size.15}` |
+| `masthead.base.masthead-container.container.sub-section-nav.sub-section-list-item.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.container.sub-section-nav.sub-section-list-item.line-height` | 26px |
 | `masthead.base.masthead-container.container.title.color` | `{color.theme.primary}` |
 | `masthead.base.masthead-container.container.title.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.container.title.font-size` | `{font.size.40}` |
@@ -1121,19 +1158,23 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.state-adfree-scrolled.device-xs-fold-639px-built-340px.button-frame.button.background` | `{color.theme.primary}` |
 | `masthead.device-xl-desktop-1040px.masthead-container.padding-bottom` | `{spacing.100}` |
 | `masthead.device-xl-desktop-1040px.masthead-container.padding-top` | `{spacing.500}` |
-| `masthead.page-sectionfront.masthead-container.container.height` | 64px |
-| `masthead.page-sectionfront.masthead-container.container.ad-blocks.height` | 50px |
-| `masthead.page-sectionfront.masthead-container.container.ad-blocks.width` | 320px |
+| `masthead.page-sectionfront.masthead-container.accountmenu.width` | 112px |
+| `masthead.page-sectionfront.masthead-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.page-home.masthead-container.accountmenu.width` | 112px |
+| `masthead.page-home.masthead-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.page-article.masthead-container.accountmenu.width` | 112px |
+| `masthead.page-article.masthead-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.page-article.masthead-container.container.height` | 64px |
+| `masthead.page-article.masthead-container.container.container.width` | 1202px |
+| `masthead.page-bestreviews.masthead-container.accountmenu.width` | 66px |
+| `masthead.page-bestreviews.masthead-container.accountmenu-container.accountmenu.width` | 66px |
+| `masthead.page-obituaries.masthead-container.accountmenu.width` | 112px |
+| `masthead.page-obituaries.masthead-container.container.height` | 48px |
+| `masthead.page-obituaries.masthead-container.container.container.width` | 235.25px |
+| `masthead.page-dashboard.masthead-container.accountmenu.width` | 112px |
+| `masthead.page-dashboard.masthead-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.page-dashboard.masthead-container.container.height` | 80px |
 | `masthead.page-dashboard.masthead-container.container.container.width` | 235.25px |
-| `masthead.page-article.masthead-container.container.height` | 64px |
-| `masthead.page-article.masthead-container.container.ad-blocks.height` | 250px |
-| `masthead.page-article.masthead-container.container.ad-blocks.width` | 970px |
-| `masthead.page-article.masthead-container.container.container.width` | 1202px |
-| `masthead.page-obituaries.masthead-container.container.height` | 48px |
-| `masthead.page-obituaries.masthead-container.container.ad-blocks.height` | 50px |
-| `masthead.page-obituaries.masthead-container.container.ad-blocks.width` | 300px |
-| `masthead.page-obituaries.masthead-container.container.container.width` | 235.25px |
 | `masthead.state-default.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-default.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-default.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
@@ -1143,15 +1184,25 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.state-default.page-article.masthead-container.container.padding-bottom` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.container.padding-top` | `{spacing.200}` |
 | `masthead.state-default.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-default.page-bestreviews.masthead-container.container.padding-bottom` | `{spacing.100}` |
+| `masthead.state-default.page-bestreviews.masthead-container.container.padding-top` | `{spacing.100}` |
+| `masthead.state-default.page-bestreviews.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 256px |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-sectionfront.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-bottom` | `{spacing.100}` |
 | `masthead.state-adfree.page-article.masthead-container.container.padding-top` | `{spacing.100}` |
 | `masthead.state-adfree.page-article.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-adfree.page-bestreviews.masthead-container.container.padding-bottom` | `{spacing.100}` |
+| `masthead.state-adfree.page-bestreviews.masthead-container.container.padding-top` | `{spacing.100}` |
+| `masthead.state-adfree.page-bestreviews.masthead-container.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 66px |
+| `masthead.state-default.masthead-container.container.ad-blocks.height` | 250px |
+| `masthead.state-default.masthead-container.container.ad-blocks.width` | 970px |
 | `masthead.state-default.masthead-container.container.weather-bug.width` | 285.78px |
 | `masthead.state-default.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-default.section-menu.navmenu.width` | 366px |
+| `masthead.state-adfree.masthead-container.container.ad-blocks.height` | 50px |
+| `masthead.state-adfree.masthead-container.container.ad-blocks.width` | 300px |
 | `masthead.state-adfree.masthead-container.container.weather-bug.width` | 333px |
 | `masthead.state-adfree.masthead-container.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.device-md-tabletv-640-799px.page-sectionfront.masthead-container.logo.height` | 29.79px |
@@ -1178,6 +1229,12 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-md-tabletv-640-799px.page-article.masthead-container.logo.vector.width` | 9.8px |
 | `masthead.device-md-tabletv-640-799px.page-article.masthead-container.sectionmenu.width` | 88px |
 | `masthead.device-md-tabletv-640-799px.page-article.root.width` | 768px |
+| `masthead.device-md-tabletv-640-799px.page-bestreviews.masthead-container.logo.height` | 29.79px |
+| `masthead.device-md-tabletv-640-799px.page-bestreviews.masthead-container.logo.width` | 146px |
+| `masthead.device-md-tabletv-640-799px.page-bestreviews.masthead-container.logo.vector.height` | 14.21px |
+| `masthead.device-md-tabletv-640-799px.page-bestreviews.masthead-container.logo.vector.width` | 9.8px |
+| `masthead.device-md-tabletv-640-799px.page-bestreviews.masthead-container.sectionmenu.width` | 88px |
+| `masthead.device-md-tabletv-640-799px.page-bestreviews.root.width` | 768px |
 | `masthead.device-sm-mobile-639px-built-360px.page-sectionfront.masthead-container.logo.height` | 30px |
 | `masthead.device-sm-mobile-639px-built-360px.page-sectionfront.masthead-container.logo.width` | 147.03px |
 | `masthead.device-sm-mobile-639px-built-360px.page-sectionfront.masthead-container.logo.vector.height` | 14.31px |
@@ -1204,6 +1261,11 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-sm-mobile-639px-built-360px.page-article.masthead-container.logo.vector.height` | 14.31px |
 | `masthead.device-sm-mobile-639px-built-360px.page-article.masthead-container.logo.vector.width` | 9.87px |
 | `masthead.device-sm-mobile-639px-built-360px.page-article.masthead-container.sectionmenu.width` | 64px |
+| `masthead.device-sm-mobile-639px-built-360px.page-bestreviews.masthead-container.logo.height` | 30px |
+| `masthead.device-sm-mobile-639px-built-360px.page-bestreviews.masthead-container.logo.width` | 147.03px |
+| `masthead.device-sm-mobile-639px-built-360px.page-bestreviews.masthead-container.logo.vector.height` | 14.31px |
+| `masthead.device-sm-mobile-639px-built-360px.page-bestreviews.masthead-container.logo.vector.width` | 9.87px |
+| `masthead.device-sm-mobile-639px-built-360px.page-bestreviews.masthead-container.sectionmenu.width` | 64px |
 | `masthead.device-xs-fold-639px-built-340px.page-sectionfront.masthead-container.logo.height` | 30px |
 | `masthead.device-xs-fold-639px-built-340px.page-sectionfront.masthead-container.logo.width` | 147.03px |
 | `masthead.device-xs-fold-639px-built-340px.page-sectionfront.masthead-container.logo.vector.height` | 14.31px |
@@ -1234,6 +1296,12 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-xs-fold-639px-built-340px.page-article.masthead-container.logo.vector.width` | 9.87px |
 | `masthead.device-xs-fold-639px-built-340px.page-article.masthead-container.sectionmenu.width` | 64px |
 | `masthead.device-xs-fold-639px-built-340px.page-article.root.width` | 340px |
+| `masthead.device-xs-fold-639px-built-340px.page-bestreviews.masthead-container.logo.height` | 30px |
+| `masthead.device-xs-fold-639px-built-340px.page-bestreviews.masthead-container.logo.width` | 147.03px |
+| `masthead.device-xs-fold-639px-built-340px.page-bestreviews.masthead-container.logo.vector.height` | 14.31px |
+| `masthead.device-xs-fold-639px-built-340px.page-bestreviews.masthead-container.logo.vector.width` | 9.87px |
+| `masthead.device-xs-fold-639px-built-340px.page-bestreviews.masthead-container.sectionmenu.width` | 64px |
+| `masthead.device-xs-fold-639px-built-340px.page-bestreviews.root.width` | 340px |
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.logo.height` | 36px |
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.logo.width` | 176.43px |
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.logo.vector.height` | 17.17px |
@@ -1241,10 +1309,8 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-xl-desktop-1040px.page-article.masthead-container.sectionmenu.width` | 64px |
 | `masthead.device-xl-desktop-1040px.page-article.root.width` | 1040px |
 | `masthead.state-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 294px |
-| `masthead.state-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
 | `masthead.state-scrolled.section-menu.navmenu.width` | 768px |
 | `masthead.state-adfree-scrolled.masthead-container.masthead-container.section-menu-desktop.accountmenu.width` | 112px |
-| `masthead.state-adfree-scrolled.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-lg-tableth-800-1039px.page-sectionfront.root.width` | 1024px |
 | `masthead.device-lg-tableth-800-1039px.page-dashboard.masthead-container.sectionmenu.width` | 300px |
@@ -1253,15 +1319,24 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.device-lg-tableth-800-1039px.page-home.root.width` | 1024px |
 | `masthead.device-lg-tableth-800-1039px.page-article.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-lg-tableth-800-1039px.page-article.root.width` | 1024px |
+| `masthead.device-lg-tableth-800-1039px.page-bestreviews.masthead-container.sectionmenu.width` | 300px |
+| `masthead.device-lg-tableth-800-1039px.page-bestreviews.root.width` | 1024px |
 | `masthead.device-xl-desktop-1040px.page-dashboard.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-xl-desktop-1040px.page-dashboard.root.width` | 1280px |
 | `masthead.device-lg-tableth-800-1039px.page-obituaries.masthead-container.sectionmenu.width` | 300px |
 | `masthead.device-lg-tableth-800-1039px.page-obituaries.root.width` | 1024px |
 | `masthead.device-md-tabletv-640-799px.page-obituaries.masthead-container.sectionmenu.width` | 88px |
 | `masthead.device-md-tabletv-640-799px.page-obituaries.root.width` | 768px |
+| `masthead.state-scrolled.page-sectionfront.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-scrolled.page-home.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 294px |
+| `masthead.state-scrolled.page-bestreviews.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 256px |
+| `masthead.state-adfree-scrolled.page-sectionfront.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-adfree-scrolled.page-home.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 112px |
+| `masthead.state-adfree-scrolled.page-bestreviews.mastheadtop.menus-container.accountmenu-container.accountmenu.width` | 66px |
 | `masthead.device-xl-desktop-1040px.page-sectionfront.root.width` | 1040px |
 | `masthead.device-xl-desktop-1040px.page-obituaries.root.width` | 1040px |
 | `masthead.device-xl-desktop-1040px.page-home.root.width` | 1040px |
+| `masthead.device-xl-desktop-1040px.page-bestreviews.root.width` | 1040px |
 
 ## Behavior and breakpoints
 
@@ -1295,7 +1370,7 @@ Scope: instances in the Figma file **WordPress Elements** only (other files that
 
 Placed on pages: Menus and Parts ×51, Homepage ×6, Article Page ×4, Section Front ×2.
 
-**Built from:** SectionMenu ×90, AccountMenu ×88, Icons ×40, Ad Blocks ×29, Weather Bug ×11, NavMenu ×6, SocialButtons ×2
+**Built from:** SectionMenu ×110, AccountMenu ×108, Icons ×40, Ad Blocks ×35, Weather Bug ×14, NavMenu ×6, SocialButtons ×2
 Icon variants: `search` ×20, `equalizer2` ×20.
 
 ## Production
@@ -1320,4 +1395,4 @@ WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / 
 - `masthead.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

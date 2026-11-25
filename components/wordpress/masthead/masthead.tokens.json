@@ -11,7 +11,7 @@
       },
       "production": "WordPress themes header (`.nav-wrapper-primary`, headroom.js `.headroom--top` / `--not-top`), audited on the 6 review sites 2026-09-15 (`components/breakpoint-audit.md`), logged out and as an ad-free subscriber. Gaps: design-vs-production 9, 10, 11, 24 and 33.",
       "layer": "wordpress",
-      "exported": "2026-11-17"
+      "exported": "2026-11-25"
     }
   },
   "masthead": {
@@ -1581,13 +1581,6 @@
                 }
               }
             }
-          },
-          "width": {
-            "$type": "dimension",
-            "$value": {
-              "value": 112,
-              "unit": "px"
-            }
           }
         },
         "accountmenu-container": {
@@ -1644,13 +1637,6 @@
                     "variable": "Colors/color/gray/max"
                   }
                 }
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 112,
-                "unit": "px"
               }
             }
           }
@@ -1730,6 +1716,13 @@
               }
             }
           },
+          "min-height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 64,
+              "unit": "px"
+            }
+          },
           "padding-left": {
             "$type": "dimension",
             "$value": "{spacing.500}",
@@ -1770,6 +1763,56 @@
                   }
                 }
               }
+            }
+          },
+          "bestreviews": {
+            "color": {
+              "$type": "color",
+              "$value": "{color.theme.primary}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Colors/color/theme/primary"
+                  }
+                }
+              }
+            },
+            "font-family": {
+              "$type": "fontFamily",
+              "$value": "{font.family.noto-serif}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/family/noto-serif"
+                  }
+                }
+              }
+            },
+            "font-size": {
+              "$type": "dimension",
+              "$value": "{font.size.40}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/size/40"
+                  }
+                }
+              }
+            },
+            "font-weight": {
+              "$type": "fontWeight",
+              "$value": "{font.weight.bold}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Type Primitives/font/style/bold"
+                  }
+                }
+              }
+            },
+            "line-height": {
+              "$type": "number",
+              "$value": 1.0
             }
           },
           "container": {
@@ -2433,6 +2476,35 @@
               }
             }
           },
+          "left-column": {
+            "weather-bug": {
+              "height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 40.73,
+                  "unit": "px"
+                }
+              },
+              "icon-color": {
+                "$type": "color",
+                "$value": "{color.theme.nav-text}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Colors/color/theme/nav-text"
+                    }
+                  }
+                }
+              },
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 285.78,
+                  "unit": "px"
+                }
+              }
+            }
+          },
           "logo-container": {
             "height": {
               "$type": "dimension",
@@ -2476,34 +2548,16 @@
               }
             }
           },
-          "menu": {
-            "gap": {
-              "$type": "dimension",
-              "$value": "{spacing.400}",
-              "$extensions": {
-                "com.mng": {
-                  "figma": {
-                    "variable": "Spacing & Radius/spacing/400"
-                  }
+          "right-column": {
+            "ad-blocks": {
+              "height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 50,
+                  "unit": "px"
                 }
-              }
-            },
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 48,
-                "unit": "px"
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 1202,
-                "unit": "px"
-              }
-            },
-            "menu-item": {
-              "color": {
+              },
+              "icon-color": {
                 "$type": "color",
                 "$value": "{color.gray.min}",
                 "$extensions": {
@@ -2514,43 +2568,37 @@
                   }
                 }
               },
-              "font-family": {
-                "$type": "fontFamily",
-                "$value": "{font.family.noto-sans}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Type Primitives/font/family/noto-sans"
-                    }
-                  }
-                }
-              },
-              "font-size": {
-                "$type": "dimension",
-                "$value": "{font.size.15}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Type Primitives/font/size/15"
-                    }
-                  }
-                }
-              },
-              "font-weight": {
-                "$type": "fontWeight",
-                "$value": "{font.weight.bold}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Type Primitives/font/style/bold"
-                    }
-                  }
-                }
-              },
-              "line-height": {
+              "width": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 26,
+                  "value": 320,
+                  "unit": "px"
+                }
+              }
+            },
+            "weather-bug": {
+              "height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 40.73,
+                  "unit": "px"
+                }
+              },
+              "icon-color": {
+                "$type": "color",
+                "$value": "{color.theme.nav-text}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Colors/color/theme/nav-text"
+                    }
+                  }
+                }
+              },
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 320,
                   "unit": "px"
                 }
               }
@@ -2654,6 +2702,10 @@
                   }
                 }
               }
+            },
+            "line-height": {
+              "$type": "number",
+              "$value": 1.0
             }
           },
           "section-title": {
@@ -2700,6 +2752,10 @@
                   }
                 }
               }
+            },
+            "line-height": {
+              "$type": "number",
+              "$value": 1.0
             }
           },
           "sectionmenu": {
@@ -2718,6 +2774,86 @@
                   "figma": {
                     "variable": "Colors/color/gray/max"
                   }
+                }
+              }
+            }
+          },
+          "sub-section-nav": {
+            "gap": {
+              "$type": "dimension",
+              "$value": "{spacing.400}",
+              "$extensions": {
+                "com.mng": {
+                  "figma": {
+                    "variable": "Spacing & Radius/spacing/400"
+                  }
+                }
+              }
+            },
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 48,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 1202,
+                "unit": "px"
+              }
+            },
+            "sub-section-list-item": {
+              "color": {
+                "$type": "color",
+                "$value": "{color.gray.min}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Colors/color/gray/min"
+                    }
+                  }
+                }
+              },
+              "font-family": {
+                "$type": "fontFamily",
+                "$value": "{font.family.noto-sans}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Type Primitives/font/family/noto-sans"
+                    }
+                  }
+                }
+              },
+              "font-size": {
+                "$type": "dimension",
+                "$value": "{font.size.15}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Type Primitives/font/size/15"
+                    }
+                  }
+                }
+              },
+              "font-weight": {
+                "$type": "fontWeight",
+                "$value": "{font.weight.bold}",
+                "$extensions": {
+                  "com.mng": {
+                    "figma": {
+                      "variable": "Type Primitives/font/style/bold"
+                    }
+                  }
+                }
+              },
+              "line-height": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 26,
+                  "unit": "px"
                 }
               }
             }
@@ -9566,6 +9702,74 @@
     },
     "page-sectionfront": {
       "masthead-container": {
+        "accountmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 112,
+              "unit": "px"
+            }
+          }
+        },
+        "accountmenu-container": {
+          "accountmenu": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 112,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "page-home": {
+      "masthead-container": {
+        "accountmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 112,
+              "unit": "px"
+            }
+          }
+        },
+        "accountmenu-container": {
+          "accountmenu": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 112,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "page-article": {
+      "masthead-container": {
+        "accountmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 112,
+              "unit": "px"
+            }
+          }
+        },
+        "accountmenu-container": {
+          "accountmenu": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 112,
+                "unit": "px"
+              }
+            }
+          }
+        },
         "container": {
           "height": {
             "$type": "dimension",
@@ -9574,18 +9778,11 @@
               "unit": "px"
             }
           },
-          "ad-blocks": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 50,
-                "unit": "px"
-              }
-            },
+          "container": {
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 320,
+                "value": 1202,
                 "unit": "px"
               }
             }
@@ -9593,13 +9790,46 @@
         }
       }
     },
-    "page-dashboard": {
+    "page-bestreviews": {
       "masthead-container": {
+        "accountmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 66,
+              "unit": "px"
+            }
+          }
+        },
+        "accountmenu-container": {
+          "accountmenu": {
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 66,
+                "unit": "px"
+              }
+            }
+          }
+        }
+      }
+    },
+    "page-obituaries": {
+      "masthead-container": {
+        "accountmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 112,
+              "unit": "px"
+            }
+          }
+        },
         "container": {
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 80,
+              "value": 48,
               "unit": "px"
             }
           },
@@ -9615,68 +9845,34 @@
         }
       }
     },
-    "page-article": {
+    "page-dashboard": {
       "masthead-container": {
-        "container": {
-          "height": {
+        "accountmenu": {
+          "width": {
             "$type": "dimension",
             "$value": {
-              "value": 64,
+              "value": 112,
               "unit": "px"
             }
-          },
-          "ad-blocks": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 250,
-                "unit": "px"
-              }
-            },
+          }
+        },
+        "accountmenu-container": {
+          "accountmenu": {
             "width": {
               "$type": "dimension",
               "$value": {
-                "value": 970,
-                "unit": "px"
-              }
-            }
-          },
-          "container": {
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 1202,
+                "value": 112,
                 "unit": "px"
               }
             }
           }
-        }
-      }
-    },
-    "page-obituaries": {
-      "masthead-container": {
+        },
         "container": {
           "height": {
             "$type": "dimension",
             "$value": {
-              "value": 48,
+              "value": 80,
               "unit": "px"
-            }
-          },
-          "ad-blocks": {
-            "height": {
-              "$type": "dimension",
-              "$value": {
-                "value": 50,
-                "unit": "px"
-              }
-            },
-            "width": {
-              "$type": "dimension",
-              "$value": {
-                "value": 300,
-                "unit": "px"
-              }
             }
           },
           "container": {
@@ -9820,6 +10016,49 @@
         }
       }
     },
+    "state-default.page-bestreviews": {
+      "masthead-container": {
+        "container": {
+          "padding-bottom": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "padding-top": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          }
+        },
+        "mastheadtop": {
+          "menus-container": {
+            "accountmenu-container": {
+              "accountmenu": {
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 256,
+                    "unit": "px"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "state-adfree.page-sectionfront": {
       "masthead-container": {
         "container": {
@@ -9906,9 +10145,68 @@
         }
       }
     },
+    "state-adfree.page-bestreviews": {
+      "masthead-container": {
+        "container": {
+          "padding-bottom": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          },
+          "padding-top": {
+            "$type": "dimension",
+            "$value": "{spacing.100}",
+            "$extensions": {
+              "com.mng": {
+                "figma": {
+                  "variable": "Spacing & Radius/spacing/100"
+                }
+              }
+            }
+          }
+        },
+        "mastheadtop": {
+          "menus-container": {
+            "accountmenu-container": {
+              "accountmenu": {
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 66,
+                    "unit": "px"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "state-default": {
       "masthead-container": {
         "container": {
+          "ad-blocks": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 250,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 970,
+                "unit": "px"
+              }
+            }
+          },
           "weather-bug": {
             "width": {
               "$type": "dimension",
@@ -9948,6 +10246,22 @@
     "state-adfree": {
       "masthead-container": {
         "container": {
+          "ad-blocks": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 50,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 300,
+                "unit": "px"
+              }
+            }
+          },
           "weather-bug": {
             "width": {
               "$type": "dimension",
@@ -10136,6 +10450,60 @@
       }
     },
     "device-md-tabletv-640-799px.page-article": {
+      "masthead-container": {
+        "logo": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 29.79,
+              "unit": "px"
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 146,
+              "unit": "px"
+            }
+          },
+          "vector": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 14.21,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 9.8,
+                "unit": "px"
+              }
+            }
+          }
+        },
+        "sectionmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 88,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 768,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "device-md-tabletv-640-799px.page-bestreviews": {
       "masthead-container": {
         "logo": {
           "height": {
@@ -10379,6 +10747,51 @@
       }
     },
     "device-sm-mobile-639px-built-360px.page-article": {
+      "masthead-container": {
+        "logo": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 30,
+              "unit": "px"
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 147.03,
+              "unit": "px"
+            }
+          },
+          "vector": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 14.31,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 9.87,
+                "unit": "px"
+              }
+            }
+          }
+        },
+        "sectionmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 64,
+              "unit": "px"
+            }
+          }
+        }
+      }
+    },
+    "device-sm-mobile-639px-built-360px.page-bestreviews": {
       "masthead-container": {
         "logo": {
           "height": {
@@ -10693,6 +11106,60 @@
         }
       }
     },
+    "device-xs-fold-639px-built-340px.page-bestreviews": {
+      "masthead-container": {
+        "logo": {
+          "height": {
+            "$type": "dimension",
+            "$value": {
+              "value": 30,
+              "unit": "px"
+            }
+          },
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 147.03,
+              "unit": "px"
+            }
+          },
+          "vector": {
+            "height": {
+              "$type": "dimension",
+              "$value": {
+                "value": 14.31,
+                "unit": "px"
+              }
+            },
+            "width": {
+              "$type": "dimension",
+              "$value": {
+                "value": 9.87,
+                "unit": "px"
+              }
+            }
+          }
+        },
+        "sectionmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 64,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 340,
+            "unit": "px"
+          }
+        }
+      }
+    },
     "device-xl-desktop-1040px.page-article": {
       "masthead-container": {
         "logo": {
@@ -10763,21 +11230,6 @@
           }
         }
       },
-      "mastheadtop": {
-        "menus-container": {
-          "accountmenu-container": {
-            "accountmenu": {
-              "width": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 294,
-                  "unit": "px"
-                }
-              }
-            }
-          }
-        }
-      },
       "section-menu": {
         "navmenu": {
           "width": {
@@ -10794,21 +11246,6 @@
       "masthead-container": {
         "masthead-container": {
           "section-menu-desktop": {
-            "accountmenu": {
-              "width": {
-                "$type": "dimension",
-                "$value": {
-                  "value": 112,
-                  "unit": "px"
-                }
-              }
-            }
-          }
-        }
-      },
-      "mastheadtop": {
-        "menus-container": {
-          "accountmenu-container": {
             "accountmenu": {
               "width": {
                 "$type": "dimension",
@@ -10910,6 +11347,28 @@
         }
       }
     },
+    "device-lg-tableth-800-1039px.page-bestreviews": {
+      "masthead-container": {
+        "sectionmenu": {
+          "width": {
+            "$type": "dimension",
+            "$value": {
+              "value": 300,
+              "unit": "px"
+            }
+          }
+        }
+      },
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1024,
+            "unit": "px"
+          }
+        }
+      }
+    },
     "device-xl-desktop-1040px.page-dashboard": {
       "masthead-container": {
         "sectionmenu": {
@@ -10976,6 +11435,108 @@
         }
       }
     },
+    "state-scrolled.page-sectionfront": {
+      "mastheadtop": {
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 294,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-scrolled.page-home": {
+      "mastheadtop": {
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 294,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-scrolled.page-bestreviews": {
+      "mastheadtop": {
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 256,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-adfree-scrolled.page-sectionfront": {
+      "mastheadtop": {
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 112,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-adfree-scrolled.page-home": {
+      "mastheadtop": {
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 112,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "state-adfree-scrolled.page-bestreviews": {
+      "mastheadtop": {
+        "menus-container": {
+          "accountmenu-container": {
+            "accountmenu": {
+              "width": {
+                "$type": "dimension",
+                "$value": {
+                  "value": 66,
+                  "unit": "px"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "device-xl-desktop-1040px.page-sectionfront": {
       "root": {
         "width": {
@@ -10999,6 +11560,17 @@
       }
     },
     "device-xl-desktop-1040px.page-home": {
+      "root": {
+        "width": {
+          "$type": "dimension",
+          "$value": {
+            "value": 1040,
+            "unit": "px"
+          }
+        }
+      }
+    },
+    "device-xl-desktop-1040px.page-bestreviews": {
       "root": {
         "width": {
           "$type": "dimension",
