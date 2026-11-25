@@ -1,0 +1,19 @@
+/* Password Requirement: 12px icon, 4px (spacing/050) gap, Noto Sans Regular 13 (Desktop) / 12 (Mobile).
+   Not met: icon and text color/gray/min (18.4:1 on white). Met: icon and text color/feedback/low-success (5.0:1). */
+.mngds-password-requirement {
+  display: flex; align-items: center; gap: var(--mng-password-requirement-base-root-gap); margin: 0; padding: 0; list-style: none;
+  font-family: var(--mng-password-requirement-base-requirement-font-family);
+  font-weight: var(--mng-password-requirement-base-requirement-font-weight);
+  font-size: var(--mng-password-requirement-size-desktop-requirement-font-size);
+  line-height: normal;
+  color: var(--mng-password-requirement-state-not-met-requirement-color);
+}
+.mngds-password-requirement--mobile { font-size: var(--mng-password-requirement-size-mobile-requirement-font-size); }
+.mngds-password-requirement__icon { flex: none; color: var(--mng-password-requirement-state-not-met-icon-icon-color); }
+.mngds-password-requirement--met { color: var(--mng-password-requirement-state-met-requirement-color); }
+.mngds-password-requirement--met .mngds-password-requirement__icon { color: var(--mng-password-requirement-state-met-icon-icon-color); }
+/* The state is for screen readers only; the icon shows it on screen. */
+.mngds-password-requirement__state {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; border: 0;
+}

@@ -1,0 +1,22 @@
+<!-- @dsCard group="Core" height=420 subtitle="Figma: Password Requirement · 4 variants (Size × State)" -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Password Requirement</title>
+<style>body{margin:0;padding:16px;background:var(--mng-color-gray-max);} ul{margin:0;padding:0;}</style></head>
+<body>
+<div id="root"></div>
+<script>
+  var NS = window.mng_web_design_system, h = React.createElement, I = NS._internal;
+  function list(size, met) { return h('ul', null, ['Minimum length is 6', 'Include at least 1 letter', 'Include at least 1 number'].map(function (t, i) { return h(NS.PasswordRequirement, { key: i, size: size, met: met[i] }, t); })); }
+  ReactDOM.createRoot(document.getElementById('root')).render(h('div', null,
+    h(I.SpecimenSection, { title: 'State', note: 'Not met: open circle, near-black. Met: check circle, green (Karl, 2026-11-25).' },
+      h(I.Specimen, { items: [
+        { label: 'Not met', width: 220, node: h(NS.PasswordRequirement, { as: 'div' }) },
+        { label: 'Met', width: 220, node: h(NS.PasswordRequirement, { as: 'div', met: true }) }] })),
+    h(I.SpecimenSection, { title: 'Size', note: 'Desktop 13px, Mobile 12px; one met, two not met.' },
+      h(I.Specimen, { items: [
+        { label: 'Desktop', width: 220, node: list('Desktop', [true, false, false]) },
+        { label: 'Mobile', width: 220, node: list('Mobile', [true, false, false]) }] }))));
+</script>
+</body>
+</html>

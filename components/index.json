@@ -381,9 +381,25 @@
         "set": "Form Field Assembly / Password"
       },
       "variants": 2,
-      "instances": 1,
+      "instances": 10,
       "knownIssues": 1,
-      "exported": "2026-11-04"
+      "exported": "2026-11-25"
+    },
+    {
+      "slug": "password-requirement",
+      "name": "Password Requirement",
+      "group": "forms",
+      "layer": "core",
+      "path": "components/core/password-requirement/",
+      "figma": {
+        "fileKey": "jFHYqhZbJjvWQmDI4myCsd",
+        "node": "7672:27628",
+        "set": "Password Requirement"
+      },
+      "variants": 4,
+      "instances": 36,
+      "knownIssues": 1,
+      "exported": "2026-11-25"
     },
     {
       "slug": "radio-button",

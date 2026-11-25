@@ -377,10 +377,17 @@
      "component": "CcDetails"
     },
     {
+     "name": "Password Requirement",
+     "where": "Form Fields | 2026.11.04, 7672:27628",
+     "status": "In system",
+     "updated": "2026-11-25",
+     "component": "PasswordRequirement"
+    },
+    {
      "name": "Form Field Assembly / Password",
      "where": "Form Fields | 2026.11.04, 7003:28940",
      "status": "In system",
-     "updated": "2026-11-24",
+     "updated": "2026-11-25",
      "component": "Password"
     },
     {

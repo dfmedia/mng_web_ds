@@ -61,6 +61,7 @@ COMPONENTS = [
     ("zip-phone", "ZipPhone", "Form Field Assembly / Zip + Phone", "Core"),
     ("address-block", "AddressBlock", "Form Field Assembly / Address block", "Core"),
     ("cc-details", "CcDetails", "Form Field Assembly / CC details", "Core"),
+    ("password-requirement", "PasswordRequirement", "Password Requirement", "Core"),
     ("password", "Password", "Form Field Assembly / Password", "Core"),
     ("verification-code", "VerificationCode", "Form Field Assembly / Verification Code", "Core"),
     ("checkbox-terms", "CheckboxTerms", "Form Field Assembly / Checkbox + Terms", "Core"),

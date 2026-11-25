@@ -1,26 +1,31 @@
 /* Form Field Assembly / Password (MNG Web Design System, Form Fields page, 7003:28940).
-   Password (no error row), the requirements hint directly under it, then Confirm Password and the only
-   error row, which shows an error for either field (Karl, 2026-11-04). `fields.password` / `fields.confirm`
-   override the FormField props; the field in error points at that row, and Password at the hint. */
+   Password (no error row), the requirements list directly under it (3 PasswordRequirement rows; they start
+   near-black and turn green when met, Karl 2026-11-25), then Confirm Password and the only error row, which
+   shows an error for either field (Karl, 2026-11-04). `fields.password` / `fields.confirm` override the
+   FormField props; the field in error points at that row, and Password at the requirements list. */
+var PASSWORD_RULES = ['Minimum length is 6', 'Include at least 1 letter', 'Include at least 1 number'];
 function Password(props) {
   var size = props.size || 'Desktop';
   var autoId = React.useId();
   var base = props.id || 'mngds-password-' + autoId.replace(/[^A-Za-z0-9_-]/g, '');
-  var hintId = base + '-hint', msgId = base + '-message';
+  var listId = base + '-requirements', msgId = base + '-message';
   var over = props.fields || {};
   var pw = over.password || {}, cf = over.confirm || {};
   function isErr(o) { return o.state === 'Error' || o.state === 'Error Focus'; }
   var pwErr = isErr(pw), cfErr = isErr(cf), anyErr = pwErr || cfErr;
-  var showHint = props.showHint !== false;
-  var hint = props.hint != null ? props.hint : 'Minimum length is 6\nInclude at least 1 letter\nInclude at least 1 number';
+  // showHint / hint: the names before the rows (2026-11-23); still accepted.
+  var show = props.showRequirements != null ? props.showRequirements !== false : props.showHint !== false;
+  var reqs = props.requirements || (typeof props.hint === 'string' ? props.hint.split('\n') : PASSWORD_RULES);
+  reqs = reqs.map(function (r) { return r && typeof r === 'object' && !React.isValidElement(r) ? r : { label: r }; });
   var message = props.errorMessage != null ? props.errorMessage : cfErr && cf.errorMessage != null ? cf.errorMessage : pw.errorMessage != null ? pw.errorMessage : 'Error message text.';
-  return h('div', Object.assign(rest(props, ['size', 'fields', 'hint', 'showHint', 'errorMessage', 'id', 'className']), {
+  return h('div', Object.assign(rest(props, ['size', 'fields', 'requirements', 'showRequirements', 'hint', 'showHint', 'errorMessage', 'id', 'className']), {
       className: cx('mngds-password', 'mngds-password--' + slug(size), props.className)
     }),
     h(FormField, Object.assign({ size: size, label: 'Password', placeholder: 'Password', value: 'Password', type: 'password',
       autoComplete: 'new-password', showIcon: false }, pw,
-      { errorRow: false, 'aria-describedby': cx(showHint && hintId, pwErr && msgId, pw['aria-describedby']) || undefined })),
-    showHint ? h('p', { id: hintId, className: 'mngds-password__hint' }, hint) : null,
+      { errorRow: false, 'aria-describedby': cx(show && listId, pwErr && msgId, pw['aria-describedby']) || undefined })),
+    show ? h('ul', { id: listId, className: 'mngds-password__requirements', 'aria-label': 'Password requirements' },
+      reqs.map(function (r, i) { return h(PasswordRequirement, { key: i, size: size, met: !!r.met, label: r.label }); })) : null,
     h('div', { className: 'mngds-password__confirm' },
       h(FormField, Object.assign({ size: size, label: 'Confirm Password', placeholder: 'Confirm Password', value: 'Confirm Password',
         type: 'password', autoComplete: 'new-password', showIcon: false }, cf,

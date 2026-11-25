@@ -1,6 +1,5 @@
-- Figma now shows the requirements as a list of 3 Password Requirement rows (2026-11-23). Each row starts near-black and turns green when it's met (Karl, 2026-11-25): Not met is an open circle with icon and text in `color/gray/min` (18.4:1 on white), and Met is a check with icon and text in `color/feedback/low-success` (5.0:1). This component doesn't have the rows yet. It still draws the older single hint, which stays `color/feedback/low-success` (green) all the time (Karl, 2026-11-04).
+- The requirements are a list of 3 `PasswordRequirement` rows (Figma, 2026-11-23). They start near-black and turn green when met (Karl, 2026-11-25): Not met = open circle, `color/gray/min` (18.4:1 on white); Met = check circle, `color/feedback/low-success` (5.0:1). Before 2026-11-25 this component drew one always-green hint; `hint` and `showHint` still work (a `hint` string becomes rows, not met).
 - Confirm Password's error row is drawn by this component (the FormField inside has `errorRow: false`) so it can show an error for either field; it looks the same as Form Field's row (25px Desktop, 22px Mobile, from the spec).
-- Token names for the hint come from its Figma layer name (the text itself), hence the long CSS variable names.
 
 ### Behavior (Gherkin)
 
