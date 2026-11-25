@@ -1,4 +1,4 @@
-/* Masthead (WordPress Elements, Menus and Parts, 456:2572): Page = Home, SectionFront, Article, Obituaries, Dashboard.
+/* Masthead (WordPress Elements, Menus and Parts, 456:2572): Page = Home, SectionFront, BestReviews, Article, Obituaries, Dashboard.
    Top of the page (Default / AdFree) in flow; the condensed content (Scrolled / AdFree-Scrolled) sticks to the top of the
    scroll area once the reader scrolls (production: headroom.js .headroom--not-top). The device comes from the rendered width
    (WordPress grid: 1040 / 800 / 640 / 360) unless `device` forces one. Parts drawn here: SectionMenu (closed), AccountMenu
@@ -9,8 +9,16 @@ var MASTHEAD_TRENDING = ['Dragon sightings near Fakeville shire', 'Pseudonyms up
   'New Castle Complex Building Stalled'];
 /* Weather Bug's "tornado" glyph (an external Figma library icon, not in the MNG icon font), exported 2026-10-30. */
 var MASTHEAD_TORNADO = 'M1.82 3.98C1.70 3.77 1.62 3.52 1.62 3.25C1.62 2.82 1.81 2.47 2.04 2.21C2.26 1.96 2.56 1.75 2.87 1.58C3.50 1.24 4.36 0.96 5.34 0.73C7.33 0.27 10.04 0 13 0C15.95 0 18.66 0.27 20.65 0.73C21.63 0.96 22.49 1.24 23.12 1.58C23.43 1.75 23.73 1.96 23.95 2.21C24.18 2.47 24.37 2.82 24.37 3.25C24.37 4.89 23.80 5.86 23.34 6.66C23.27 6.77 23.21 6.88 23.15 6.99C22.92 7.41 22.73 7.81 22.64 8.30C22.57 8.68 22.55 9.15 22.62 9.75C22.87 9.72 23.13 9.79 23.32 9.98C23.64 10.30 23.64 10.81 23.32 11.13C23.22 11.23 23.10 11.34 22.97 11.45C23.30 13.26 23.11 14.68 22.48 15.86C21.75 17.22 20.48 18.10 19.20 18.87C18.87 19.07 18.53 19.27 18.19 19.46C15.85 20.82 13.44 22.21 12.12 25.48C12.03 25.71 11.84 25.89 11.60 25.96C11.37 26.03 11.11 25.99 10.91 25.85L10.91 25.85L10.90 25.85L10.90 25.84L10.88 25.83C10.87 25.82 10.85 25.81 10.82 25.79C10.78 25.76 10.72 25.71 10.64 25.64C10.49 25.52 10.29 25.33 10.07 25.09C9.62 24.62 9.09 23.90 8.73 22.95C8.49 22.33 8.34 21.62 8.32 20.85C8.20 20.70 8.12 20.51 8.12 20.31L8.12 20.30L8.12 20.30L8.12 20.29L8.12 20.28C8.12 20.27 8.12 20.26 8.12 20.24C8.12 20.22 8.13 20.19 8.13 20.15C8.14 20.08 8.16 19.99 8.20 19.89C8.25 19.77 8.33 19.64 8.44 19.52C8.59 18.73 8.88 17.87 9.37 16.97C9.19 16.87 9.04 16.71 8.97 16.50C8.83 16.08 9.06 15.62 9.49 15.47C9.85 15.35 10.18 15.28 10.49 15.24C10.57 15.13 10.65 15.03 10.74 14.92C11.20 14.35 11.39 13.89 11.45 13.53C11.50 13.18 11.43 12.86 11.25 12.52C10.84 11.78 9.92 11.05 8.63 10.20C8.31 9.99 7.98 9.78 7.64 9.56C7.57 9.52 7.51 9.48 7.44 9.43C6.67 9.27 5.99 9.08 5.43 8.89C5.00 8.75 4.77 8.29 4.91 7.86C4.93 7.82 4.94 7.78 4.96 7.74C4.84 7.64 4.71 7.55 4.59 7.45C3.43 6.51 2.37 5.39 1.82 3.98ZM5.03 5.68C5.21 5.85 5.41 6.02 5.61 6.18C6.38 6.80 7.22 7.36 8.07 7.91C10.58 8.42 13.98 8.72 16.90 8.14C17.34 8.05 17.77 8.33 17.85 8.77C17.94 9.21 17.66 9.64 17.22 9.73C15.24 10.12 13.09 10.15 11.11 9.98C11.76 10.51 12.32 11.09 12.67 11.74C13.00 12.35 13.16 13.02 13.05 13.77C12.97 14.30 12.76 14.83 12.42 15.37C12.54 15.40 12.66 15.43 12.77 15.45L12.79 15.46C13.57 15.65 14.19 15.80 15.18 15.47C15.60 15.33 16.06 15.56 16.20 15.99C16.35 16.41 16.12 16.87 15.69 17.02C14.25 17.50 13.24 17.25 12.40 17.04L12.39 17.03C12.03 16.94 11.70 16.86 11.35 16.83C10.74 17.73 10.37 18.54 10.17 19.27C10.40 19.34 10.65 19.44 10.92 19.58C11.32 19.78 11.48 20.27 11.28 20.67C11.08 21.07 10.60 21.23 10.19 21.03C10.11 20.99 10.03 20.95 9.95 20.92C9.97 21.48 10.09 21.96 10.25 22.37C10.47 22.97 10.80 23.46 11.10 23.82C12.72 20.72 15.30 19.24 17.42 18.03C17.75 17.84 18.06 17.66 18.37 17.48C19.62 16.72 20.54 16.03 21.05 15.09C21.40 14.45 21.59 13.62 21.47 12.46C20.17 13.17 18.37 13.81 16.25 13.81C15.80 13.81 15.43 13.44 15.43 13C15.43 12.55 15.80 12.18 16.25 12.18C18.34 12.18 20.06 11.45 21.15 10.77C21.14 10.75 21.14 10.73 21.14 10.72C20.92 9.62 20.91 8.76 21.04 8.01C21.18 7.26 21.46 6.69 21.73 6.20C21.80 6.07 21.87 5.95 21.94 5.83C22.05 5.65 22.15 5.47 22.24 5.30C21.77 5.47 21.23 5.63 20.65 5.76C18.66 6.22 15.95 6.5 13 6.5C10.04 6.5 7.33 6.22 5.34 5.76C5.24 5.74 5.13 5.71 5.03 5.68ZM22.69 3.25C22.62 3.18 22.51 3.10 22.34 3.01C21.90 2.77 21.21 2.53 20.28 2.31C18.45 1.89 15.87 1.62 13 1.62C10.12 1.62 7.54 1.89 5.71 2.31C4.78 2.53 4.09 2.77 3.65 3.01C3.48 3.10 3.37 3.18 3.30 3.25C3.37 3.31 3.48 3.39 3.65 3.48C4.09 3.72 4.78 3.96 5.71 4.18C7.54 4.60 10.12 4.87 13 4.87C15.87 4.87 18.45 4.60 20.28 4.18C21.21 3.96 21.90 3.72 22.34 3.48C22.51 3.39 22.62 3.31 22.69 3.25Z';
+/* Section Front Top Nav: the section's sub-sections (production: the section's own subnav menu, 1040px and up only; Karl,
+   2026-11-25: every Section Front shows sub-section list items, Default and AdFree alike). */
 var MASTHEAD_SECTION_NAV = ['Food & Drink', 'Movies', 'Music', 'Theater & Arts', 'Casinos', 'Travel', 'Books', 'Comics', 'Events',
-  'Amusements Parks', 'Shopping'];
+  'Amusement Parks', 'Shopping'];
+/* BestReviews (Karl, 2026-11-25): a Section Front whose sub-sections are the BestReviews categories (alphabetical, then Deals;
+   the BestReviews UI decisions log, Miscellaneous hidden), with no search button by the account menu. */
+var MASTHEAD_BESTREVIEWS_NAV = ['Baby, Kids, & Toys', 'Beauty & Personal Care', 'Electronics', 'Fashion & Apparel', 'Health & Wellness',
+  'Home & Office', 'Kitchen & Dining', 'Patio, Lawn, & Garden', 'Pets', 'Sports, Outdoors, & Travel', 'Deals'];
+/* Pages with no search button by the account menu (production's obituaries; BestReviews). `showSearch` overrides. */
+var MASTHEAD_NO_SEARCH = ['Obituaries', 'BestReviews'];
 /* SocialButtons (Article, condensed bar at 1040px and up): the networks Figma's Masthead shows, in SocialButtons' order. */
 var MASTHEAD_SOCIAL = ['Facebook', 'Reddit', 'X', 'Email', 'Link', 'Gift'];
 /* Endless Tributes "powered by" logo (partner artwork, WordPress Elements 456:3443), exported 2026-10-30, 106x28. */
@@ -106,7 +114,7 @@ function MastheadAccount(p) {
   var xl = p.device === 'XL-Desktop';
   return h(AccountMenu, { className: 'mngds-masthead__account-menu', status: p.adFree ? 'loggedIn' : 'loggedOut',
     device: p.adFree ? '(all widths)' : (xl ? '(1040px and up)' : '(up to 1039px)'), user: p.user, accountLabel: p.accountLabel,
-    onOpenChange: p.onAccountClick, onSearchClick: p.onSearchClick, searchLabel: p.searchLabel,
+    onOpenChange: p.onAccountClick, showSearch: p.showSearch, onSearchClick: p.onSearchClick, searchLabel: p.searchLabel,
     subscribeHref: p.subscribeHref, onSubscribe: p.onSubscribe, logInHref: p.logInHref, onLogIn: p.onLogIn,
     subscribeLabel: p.subscribeLabel, logInLabel: p.logInLabel });
 }
@@ -131,12 +139,12 @@ function MastheadBar(p) {
 var MASTHEAD_PROPS = ['page', 'device', 'state', 'adFree', 'ads', 'sticky', 'scrollRoot', 'scrollThreshold', 'navItems', 'navLabel', 'trending', 'trendingLabel',
   'date', 'temperature', 'eEditionLabel', 'eEditionHref', 'sectionsLabel', 'onMenuClick', 'menuOpen', 'menuId', 'onSearchClick', 'onSubscribe', 'onLogIn',
   'subscribeHref', 'logInHref', 'onAccountClick', 'user', 'logo', 'siteName', 'homeHref', 'renderAd', 'className', 'sectionName', 'articleTitle',
-  'onShare', 'onSave', 'saved', 'shareTheme', 'shareNetworks', 'pageTitle', 'obitsSearchPlaceholder', 'onObitsSearch', 'onObitsFilter', 'submitObituaryHref', 'onSubmitObituary',
+  'onShare', 'onSave', 'saved', 'shareTheme', 'shareNetworks', 'pageTitle', 'showSearch', 'obitsSearchPlaceholder', 'onObitsSearch', 'onObitsFilter', 'submitObituaryHref', 'onSubmitObituary',
   'dashboardLabel', 'onDashboardMenuClick', 'dashboardMenuOpen'];
 
 function Masthead(props) {
   var page = props.page || 'Home';
-  if (['Home', 'SectionFront', 'Article', 'Obituaries', 'Dashboard'].indexOf(page) < 0 && typeof console !== 'undefined') {
+  if (['Home', 'SectionFront', 'BestReviews', 'Article', 'Obituaries', 'Dashboard'].indexOf(page) < 0 && typeof console !== 'undefined') {
     console.warn('[mng_web_design_system] Masthead: unknown page "' + page + '"; rendering Home.');
     page = 'Home';
   }
@@ -165,11 +173,13 @@ function Masthead(props) {
     return function () { io.disconnect(); };
   }, [sticky, props.scrollRoot, device, page]);
 
-  var sectionName = props.sectionName || 'Section Name';
+  var bestReviews = page === 'BestReviews';
+  var sectionName = props.sectionName || (bestReviews ? 'BestReviews' : 'Section Name');
+  var showSearch = props.showSearch != null ? props.showSearch !== false : MASTHEAD_NO_SEARCH.indexOf(page) < 0;
   var common = {
     device: device, siteName: siteName, logo: props.logo, homeHref: props.homeHref,
     toggle: { device: device, label: props.sectionsLabel || 'All Sections', onClick: props.onMenuClick, menuOpen: props.menuOpen, menuId: props.menuId },
-    account: { device: device, adFree: adFree, user: props.user, onSearchClick: props.onSearchClick, onSubscribe: props.onSubscribe, onLogIn: props.onLogIn,
+    account: { device: device, adFree: adFree, user: props.user, showSearch: showSearch, onSearchClick: props.onSearchClick, onSubscribe: props.onSubscribe, onLogIn: props.onLogIn,
       subscribeHref: props.subscribeHref, logInHref: props.logInHref, onAccountClick: props.onAccountClick }
   };
   var extra = {
@@ -224,12 +234,13 @@ function Masthead(props) {
       if (lgUp) top = h(React.Fragment, null, top, h('div', { className: 'mngds-masthead__rule' }));
     }
   } else if (xl) {
-    var sectionFront = page === 'SectionFront';
-    var nav = props.navItems || (sectionFront ? MASTHEAD_SECTION_NAV : MASTHEAD_NAV);
+    var sectionFront = page === 'SectionFront' || bestReviews;
+    var nav = props.navItems || (bestReviews ? MASTHEAD_BESTREVIEWS_NAV : sectionFront ? MASTHEAD_SECTION_NAV : MASTHEAD_NAV);
     var trending = props.trending || MASTHEAD_TRENDING;
     top = h(React.Fragment, null,
       menusRow(page === 'Home' ? null : logoLarge()),
-      h('div', { className: 'mngds-masthead__weather-row' },
+      /* Section Front (and BestReviews): three equal columns, the name wrapping in the middle one (Figma 2026-11-24). */
+      h('div', { className: cx('mngds-masthead__weather-row', sectionFront && 'mngds-masthead__weather-row--section') },
         weather(),
         page === 'Home' ? logoLarge() : h('p', { className: 'mngds-masthead__section-name' }, sectionName),
         mastheadSponsorship(props, showAds, 'Sponsorship 1 320x50')),

@@ -148,7 +148,7 @@ function AccountMenu(props) {
     'onNewsletter', 'alertTitle', 'alertText', 'alertButtonLabel', 'updatePaymentHref', 'onUpdatePayment', 'rowState', 'className', 'id']), {
     ref: rootRef,
     className: cx('mngds-account-menu', 'mngds-account-menu--' + slug(status), open && 'is-open', inline && 'mngds-account-menu--inline',
-      props.fullWidth && 'mngds-account-menu--full-width', wide && 'mngds-account-menu--wide', props.className)
+      props.fullWidth && 'mngds-account-menu--full-width', wide && 'mngds-account-menu--wide', props.showSearch === false && 'mngds-account-menu--no-search', props.className)
   });
   var scrim = open && !inline ? h('div', { className: cx('mngds-account-menu__scrim', status === 'loggedOut' && 'mngds-account-menu__scrim--panel'), 'aria-hidden': 'true',
     onClick: function () { setOpen(false); } }) : null;

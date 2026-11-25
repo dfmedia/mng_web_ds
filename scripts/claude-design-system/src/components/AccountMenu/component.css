@@ -41,6 +41,9 @@
   border-radius: 0 0 var(--mng-radius-utility) var(--mng-radius-utility); box-shadow: var(--mng-shadow-lg); overflow: hidden;
   max-height: calc(100vh - 16px); overflow-y: auto;
 }
+/* No search button (showSearch false: Obituaries and BestReviews mastheads, Karl 2026-11-25, as production's obituaries):
+   no search space to keep, so the open panel's right edge is the closed menu's right edge, 8px (padding) past the chevron. */
+.mngds-account-menu--no-search .mngds-account-menu__panel--dropdown { right: calc(-1 * var(--mng-account-menu-base-section-item-section-item-container-container-padding-right)); }
 /* 340px and below: the full width of the screen (Karl, 2026-11-16). */
 .mngds-account-menu--full-width .mngds-account-menu__panel--dropdown { position: fixed; top: 0; left: 0; right: 0; width: auto; }
 /* 40% black scrim behind (production rgba(0,0,0,.4)); 50% behind the logged-out panel. It takes the click that closes the menu. */
@@ -136,3 +139,4 @@
 .mngds-account-menu--inline.mngds-account-menu--logged-out.is-open { width: var(--mng-account-menu-view-open-root-width); }
 .mngds-account-menu--inline.mngds-account-menu--logged-out .mngds-account-menu__bar { justify-content: flex-end; }
 .mngds-account-menu--inline .mngds-account-menu__panel--slide { position: relative; top: 0; width: 100%; animation: none; }
+.mngds-account-menu--inline.mngds-account-menu--no-search.is-open:not(.mngds-account-menu--logged-out) .mngds-account-menu__trigger { right: var(--mng-account-menu-base-section-item-section-item-container-container-padding-right); }

@@ -1,4 +1,4 @@
-<!-- @dsCard group="WordPress Elements" height=6600 subtitle="Figma: Masthead · all 90 variants (Page × State × Device); pick the page at the top" -->
+<!-- @dsCard group="WordPress Elements" height=6600 subtitle="Figma: Masthead · all 110 variants (Page × State × Device); pick the page at the top" -->
 <!doctype html>
 <html lang="en">
 <head><meta charset="utf-8"><title>Masthead</title>
@@ -16,9 +16,10 @@
   var devices = [['XL-Desktop', 1040, '1040px and up'], ['LG-TabletH', 1024, '800–1039px'], ['MD-TabletV', 768, '640–799px'], ['SM-Mobile', 360, 'below 640px, built 360'], ['XS-Fold', 340, 'below 640px, built 340']];
   var pages = [
     ['Home', 'Home page.'],
-    ['SectionFront', 'Section front: at 1040px and up the logo moves up to the menus row, the section name (Noto Serif Bold 40, color/theme/primary) takes its place, and the Top Nav lists the section’s own pages. Below 1040px it matches Home.'],
+    ['SectionFront', 'Section front: at 1040px and up the logo moves up to the menus row, the section name (Noto Serif Bold 40, color/theme/primary) takes its place, and the Top Nav lists the section’s sub-sections (the same list with or without ads). Below 1040px it matches Home, as production hides the sub-section list there.'],
+    ['BestReviews', 'BestReviews: the Section Front with the BestReviews categories (then Deals) as its sub-section list and no search button by the account menu; the page’s own BestReviews search replaces it. Name “BestReviews”. Below 1040px it matches Home without the search button.'],
     ['Article', 'Article: the top of the page is the Section Front layout with the main Top Nav. The condensed bar at 1040px and up carries the section name (color/theme/primary-dark) and headline, ellipsized, and the SocialButtons. Below 1040px it matches Home.'],
-    ['Obituaries', 'Obituaries (Endless Tributes): page title centered in its row, Sponsorship 1 300x50 (right of the title at 800px and up, in its own row under it below; no Top Leaderboard), the obituary search, “Powered by” Endless Tributes and Submit an Obituary. The condensed state keeps the search row.'],
+    ['Obituaries', 'Obituaries (Endless Tributes): page title centered in its row, Sponsorship 1 300x50 (right of the title at 800px and up, in its own row under it below; no Top Leaderboard), the obituary search, “Powered by” Endless Tributes and Submit an Obituary. No search button by the account menu, as production. The condensed state keeps the search row.'],
     ['Dashboard', 'Reader Dashboard: always a logged-in reader and no ads, so Figma has Default and Scrolled only. Below 800px the NavMenu (“Reader Dashboard”) sits under the bar.']];
   var notes = {
     Default: 'Top of the page with ads (logged out or non-subscriber).',

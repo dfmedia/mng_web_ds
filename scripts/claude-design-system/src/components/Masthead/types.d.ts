@@ -3,7 +3,9 @@ export interface MastheadLink { label: React.ReactNode; href?: string; onClick?:
 export interface MastheadUser { name?: string; initials?: string; imageSrc?: string; /** UserPic dots: 'Active' = the reader is active (top left); alert = an alert or message (bottom right). */ status?: 'Default' | 'Active'; alert?: 'none' | 'low' | 'medium' | 'high'; background?: string; color?: string; }
 export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   /** Figma Page. Default 'Home'. */
-  page?: 'Home' | 'SectionFront' | 'Article' | 'Obituaries' | 'Dashboard';
+  page?: 'Home' | 'SectionFront' | 'BestReviews' | 'Article' | 'Obituaries' | 'Dashboard';
+  /** The search button beside the account menu. Default: shown, except on Obituaries (as production) and BestReviews (Karl, 2026-11-25). */
+  showSearch?: boolean;
   /** Figma Device. Default: from the rendered width (>=1040 XL-Desktop, 800-1039 LG-TabletH, 640-799 MD-TabletV, 360-639 SM-Mobile, below 360 XS-Fold). */
   device?: MastheadDevice;
   /** Figma State, forced (documentation). Leave unset: adFree and scrolling decide. Dashboard has Default and Scrolled only. */
@@ -18,7 +20,7 @@ export interface MastheadProps extends React.HTMLAttributes<HTMLElement> {
   sticky?: boolean;
   /** Scroll container when it isn't the page (IntersectionObserver root). */
   scrollRoot?: Element | null;
-  /** Pixels of scrolling before the condensed masthead appears. Default on Home, Section Front and Article: 55 at 1040px and up (XL-Desktop; production's headroom offset, checked 2026-11-16 on denverpost.com and mcall.com), 1 below. Obituaries and Dashboard: once the whole masthead has scrolled away. */
+  /** Pixels of scrolling before the condensed masthead appears. Default on Home, Section Front, BestReviews and Article: 55 at 1040px and up (XL-Desktop; production's headroom offset, checked 2026-11-16 on denverpost.com and mcall.com), 1 below. Obituaries and Dashboard: once the whole masthead has scrolled away. */
   scrollThreshold?: number;
   navItems?: Array<string | MastheadLink>;
   navLabel?: string;
