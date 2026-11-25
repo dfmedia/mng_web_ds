@@ -101,11 +101,11 @@ Icon variants: `radio-unchecked` ×2, `checkmark-circle` ×2.
 
 ## Production
 
-Not checked against production for this export.
+No production selector recorded yet. Production gaps go in `design-vs-production.md`.
 
 ## Known issues
 
-1. New in the design (2026-11-23). Not checked against production for this export.
+None open.
 
 ## Files
 

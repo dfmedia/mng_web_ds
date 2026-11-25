@@ -78,7 +78,8 @@ No Breakpoint property: one size at every width.
 - **Inside a button:** 20px, 8px (`spacing/100`) before a waiting label (Button Primary / Tertiary State=Loading).
 - **Ring:** always 1/8 of the size, so it scales with the spinner: 2.5px at 20px, 6px at 48px (inner radius 75%; Karl, 2026-11-24, was 4px at 48px); the track is the same color at 30% opacity; the arc is a quarter turn, from 12 to 3 o'clock at rest.
 - **Motion:** one turn every 0.8s, linear (Karl, 2026-11-24); with reduced motion, one turn every 2 seconds instead of stopping (Karl, 2026-11-24), so the page still shows it is working.
-- **Timing:** the spinner shows as soon as loading starts, with no delay (Karl, 2026-11-25). What happens when loading takes long or fails isn't decided yet.
+- **Timing:** the spinner shows as soon as loading starts, with no delay (Karl, 2026-11-25).
+- **Timeout** (Karl, 2026-11-25): if the wait passes its timeout, an error message replaces the spinner (InLineMessage, Priority=High). The reader can try again or go back to something else, and the message suggests reloading the page if it keeps happening. The timeout length is set per request.
 - **Accessibility:** the Spinner is decorative (`aria-hidden="true"`); the area or button that is waiting carries `aria-busy="true"`, and the message (or the button's waiting label) says what is happening.
 - **Other loading animation: the newspaper pulse** (Karl, 2026-11-24, option A2b), for longer waits that block the page in a panel: the icon font's newspaper glyph (96 × 96, `color/gray/300`) pulsing once every 3s above the message, with animated dots after it (2s cycle); still with reduced motion. Drawn in Body Content=Loading (Embedded Login page, `7686:25912`) and shown beside the Spinner on the Loading Animation page (Newspaper Pulse Container, Karl 2026-11-25).
 
