@@ -9,7 +9,7 @@ component_key: 82f5635bacf305c14f58abc48d2f3eadf4a3258f
 variants: 3
 tokens: blueconic-block.tokens.json
 skeleton: blueconic-block.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Blueconic Block
@@ -146,4 +146,4 @@ Production Blueconic list (`.landing-three-one .dfm-most-popular-flex-container`
 - `blueconic-block.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

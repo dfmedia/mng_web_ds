@@ -9,7 +9,7 @@ component_key: 5d5fd2d5e30e2f0e8fd3e75e4114960b49aa51d6
 variants: 1
 tokens: show-more-affordance.tokens.json
 skeleton: show-more-affordance.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Show More Affordance
@@ -107,4 +107,4 @@ Production `.load-more` / `.show-more-videos`, every width (checked on all 6 rev
 - `show-more-affordance.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

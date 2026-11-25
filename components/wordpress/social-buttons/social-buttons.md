@@ -9,7 +9,7 @@ component_key: f4f69ef49dd7528eea0358079c4ac9c6e1b140d6
 variants: 5
 tokens: social-buttons.tokens.json
 skeleton: social-buttons.html
-exported: 2026-11-12
+exported: 2026-11-25
 ---
 
 # SocialButtons
@@ -142,4 +142,4 @@ None open.
 - `social-buttons.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

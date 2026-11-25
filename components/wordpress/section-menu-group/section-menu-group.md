@@ -9,7 +9,7 @@ component_key: 54e67615dff65517a8eb7b533eb66cc1d90f654f
 variants: 2
 tokens: section-menu-group.tokens.json
 skeleton: section-menu-group.html
-exported: 2026-11-09
+exported: 2026-11-25
 ---
 
 # SectionMenuGroup
@@ -115,4 +115,4 @@ Production `li.menu-item-has-children` with `ul.sub-menu` (all 6 review sites, 2
 - `section-menu-group.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x.
 
-*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

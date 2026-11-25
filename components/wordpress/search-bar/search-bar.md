@@ -9,7 +9,7 @@ component_key: 408765eef4ffc037695dd7789e51f02a61120df8
 variants: 2
 tokens: search-bar.tokens.json
 skeleton: search-bar.html
-exported: 2026-10-30
+exported: 2026-11-25
 ---
 
 # SearchBar
@@ -32,7 +32,7 @@ exported: 2026-10-30
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default` | 30×45 | [456:5911](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5911) | 373 | ![](previews/search-bar--default.png) |
+| `Default` | 30×45 | [456:5911](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5911) | 386 | ![](previews/search-bar--default.png) |
 | `Open` | 480×64 | [456:5913](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5913) | 0 | ![](previews/search-bar--open.png) |
 
 ## Anatomy
@@ -95,10 +95,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **373**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **386**.
 
-Inside components: Masthead ×92, ObitMastHead ×41, AccountMenu ×22.
-Placed on pages: Menus and Parts ×107, null ×99, Homepage ×6, Article Page ×4, Section Front ×2.
+Inside components: Masthead ×110, ObitMastHead ×28, AccountMenu ×22.
+Placed on pages: null ×116, Menus and Parts ×98, Homepage ×6, Article Page ×4, Section Front ×2.
 
 **Built from:** Icons ×2
 Icon variants: `search` ×2.
@@ -118,4 +118,4 @@ Production masthead search.
 - `search-bar.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

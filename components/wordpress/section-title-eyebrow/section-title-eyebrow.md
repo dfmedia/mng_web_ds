@@ -9,7 +9,7 @@ component_key: 5328709ebbc037e3ef524cab212533ccb6fb6465
 variants: 2
 tokens: section-title-eyebrow.tokens.json
 skeleton: section-title-eyebrow.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Section Title / Eyebrow
@@ -39,7 +39,7 @@ exported: 2026-10-28
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Underline` | 214×32 | [3326:41622](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3326-41622) | 105 | ![](previews/section-title-eyebrow--underline.png) |
+| `Underline` | 214×32 | [3326:41622](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3326-41622) | 96 | ![](previews/section-title-eyebrow--underline.png) |
 | `Bold` | 213×27 | [3333:42270](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3333-42270) | 0 | ![](previews/section-title-eyebrow--bold.png) |
 
 ## Anatomy
@@ -97,11 +97,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **105**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **96**.
 
-Inside components: Section Rail Card ×9, Photos Block ×6, Blueconic Block (Most Popular) ×6, Latest Headlines ×3, TOP ZONE Block ×2.
-Placed on pages: Homepage ×69.
-6 instances are nested inside other instances.
+Inside components: Photos Block ×6, TOP ZONE Block ×5, Section Rail Card Wide ×4, Latest Headlines ×3, Section Rail Card ×3, Blueconic Block ×3, Section Rail Card Narrow ×2.
+Placed on pages: Homepage ×66.
 
 **Built from:** Icons ×2
 Icon variants: `arrow-right` ×2.
@@ -121,4 +120,4 @@ Production `.section-highlight h2.entry-title` and `.headline-list-title` (homep
 - `section-title-eyebrow.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

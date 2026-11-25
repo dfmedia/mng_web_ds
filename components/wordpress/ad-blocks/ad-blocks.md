@@ -9,7 +9,7 @@ component_key: 5da625d2f68424f0047851c324cef05324a2964c
 variants: 37
 tokens: ad-blocks.tokens.json
 skeleton: ad-blocks.html
-exported: 2026-11-18
+exported: 2026-11-25
 ---
 
 # Ad Blocks
@@ -33,7 +33,7 @@ exported: 2026-11-18
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Desktop / Top Leaderboard 970x250` | 970×250 | [517:4303](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-4303) | 23 | ![](previews/ad-blocks--desktop-top-leaderboard-970x250.png) |
+| `Desktop / Top Leaderboard 970x250` | 970×250 | [517:4303](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-4303) | 25 | ![](previews/ad-blocks--desktop-top-leaderboard-970x250.png) |
 | `Desktop / Top Leaderboard 970x90` | 970×90 | [1207:17444](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=1207-17444) | 0 | ![](previews/ad-blocks--desktop-top-leaderboard-970x90.png) |
 | `Desktop / Cube 1 RRail ATF 300x1050` | 300×1050 | [530:2611](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=530-2611) | 6 | ![](previews/ad-blocks--desktop-cube-1-rrail-atf-300x1050.png) |
 | `Desktop / Cube 2 RRail Mid 300x600` | 300×600 | [527:2400](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=527-2400) | 8 | ![](previews/ad-blocks--desktop-cube-2-rrail-mid-300x600.png) |
@@ -44,8 +44,8 @@ exported: 2026-11-18
 | `Desktop / Outstream Video 480x360` | 480×360 | [3536:36859](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36859) | 0 | ![](previews/ad-blocks--desktop-outstream-video-480x360.png) |
 | `Desktop / Bottom Leaderboard 970x90` | 970×90 | [3536:36864](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36864) | 0 | ![](previews/ad-blocks--desktop-bottom-leaderboard-970x90.png) |
 | `Desktop / Bottom Leaderboard 970x250` | 970×250 | [3536:36869](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36869) | 3 | ![](previews/ad-blocks--desktop-bottom-leaderboard-970x250.png) |
-| `Mobile / Top Leaderboard 320x100` | 320×100 | [1216:17586](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=1216-17586) | 4 | ![](previews/ad-blocks--mobile-top-leaderboard-320x100.png) |
-| `Mobile / Top Leaderboard 320x50` | 320×50 | [517:10290](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10290) | 15 | ![](previews/ad-blocks--mobile-top-leaderboard-320x50.png) |
+| `Mobile / Top Leaderboard 320x100` | 320×100 | [1216:17586](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=1216-17586) | 5 | ![](previews/ad-blocks--mobile-top-leaderboard-320x100.png) |
+| `Mobile / Top Leaderboard 320x50` | 320×50 | [517:10290](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10290) | 16 | ![](previews/ad-blocks--mobile-top-leaderboard-320x50.png) |
 | `Mobile / Mid-Article Banner 300x250` | 300×250 | [517:10329](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10329) | 0 | ![](previews/ad-blocks--mobile-mid-article-banner-300x250.png) |
 | `Mobile / Bottom Leaderboard 320x100` | 320×100 | [517:10342](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10342) | 2 | ![](previews/ad-blocks--mobile-bottom-leaderboard-320x100.png) |
 | `Mobile / Mobile Adhesion 320x50` | 320×50 | [3432:55710](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3432-55710) | 3 | ![](previews/ad-blocks--mobile-mobile-adhesion-320x50.png) |
@@ -55,9 +55,9 @@ exported: 2026-11-18
 | `Mobile / Mobile Adhesion 300x50` | 300×50 | [3536:36829](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36829) | 0 | ![](previews/ad-blocks--mobile-mobile-adhesion-300x50.png) |
 | `Mobile / Bottom Leaderboard 320x50` | 320×50 | [3536:36834](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36834) | 0 | ![](previews/ad-blocks--mobile-bottom-leaderboard-320x50.png) |
 | `Mobile / Outstream Video 300x250` | 300×250 | [3536:36854](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3536-36854) | 0 | ![](previews/ad-blocks--mobile-outstream-video-300x250.png) |
-| `All / Sponsorship 1 320x50` | 320×50 | [526:8814](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=526-8814) | 16 | ![](previews/ad-blocks--all-sponsorship-1-320x50.png) |
+| `All / Sponsorship 1 320x50` | 320×50 | [526:8814](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=526-8814) | 17 | ![](previews/ad-blocks--all-sponsorship-1-320x50.png) |
 | `All / Sponsorship 1 300x50` | 300×50 | [526:8809](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=526-8809) | 41 | ![](previews/ad-blocks--all-sponsorship-1-300x50.png) |
-| `All / Top Leaderboard 728x90` | 728×90 | [517:10300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10300) | 21 | ![](previews/ad-blocks--all-top-leaderboard-728x90.png) |
+| `All / Top Leaderboard 728x90` | 728×90 | [517:10300](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=517-10300) | 22 | ![](previews/ad-blocks--all-top-leaderboard-728x90.png) |
 | `All / Cube 1 RRail ATF 300x600` | 300×600 | [527:2551](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=527-2551) | 4 | ![](previews/ad-blocks--all-cube-1-rrail-atf-300x600.png) |
 | `All / Cube 1 RRail ATF 160x600` | 160×600 | [530:2651](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=530-2651) | 0 | ![](previews/ad-blocks--all-cube-1-rrail-atf-160x600.png) |
 | `All / Cube Article 300x250` | 300×250 | [527:2495](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=527-2495) | 0 | ![](previews/ad-blocks--all-cube-article-300x250.png) |
@@ -542,9 +542,9 @@ From `ad-blocks.tokens.json`. References point at system tokens (`tokens/core/`,
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **239**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **245**.
 
-Inside components: Masthead ×44, Upcoming Events Block ×40, ObitMastHead ×20, TOP ZONE Block ×5.
+Inside components: Masthead ×50, Upcoming Events Block ×40, ObitMastHead ×20, TOP ZONE Block ×5.
 Placed on pages: Homepage ×53, Menus and Parts ×36, Section Front ×23, Article Page ×10.
 6 instances are nested inside other instances.
 
@@ -569,4 +569,4 @@ Production GPT slots from the Ad Team's [MNG/Tribune – WordPress Ad Map](https
 - `ad-blocks.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-18 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

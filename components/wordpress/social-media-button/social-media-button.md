@@ -9,7 +9,7 @@ component_key: 808fcb91ca83f5f8eefb75e730d71df3f447438f
 variants: 120
 tokens: social-media-button.tokens.json
 skeleton: social-media-button.html
-exported: 2026-11-12
+exported: 2026-11-25
 ---
 
 # Social Media Button
@@ -434,4 +434,4 @@ Article share bars (`#sharing-sticky`, `#sharing-bottom`) checked on the 6 revie
 - `social-media-button.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-12 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

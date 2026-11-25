@@ -9,7 +9,7 @@ component_key: ec64ac51a59dffc8006f2563aa2a26a59e3af327
 variants: 1
 tokens: article-author.tokens.json
 skeleton: article-author.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Article Author
@@ -30,7 +30,7 @@ No variant properties (single component).
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Article Author` | 84×16 | [3609:39115](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3609-39115) | 46 | ![](previews/article-author--default.png) |
+| `Article Author` | 84×16 | [3609:39115](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3609-39115) | 44 | ![](previews/article-author--default.png) |
 
 ## Anatomy
 
@@ -69,10 +69,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **46**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **44**.
 
-Inside components: Blocks Lead Article Card ×12, Blocks Article Row ×10, Zone 1 Lead Article Card ×6, Horizontal Thumbnail Card ×3, Blocks Card ×3, 1Col Article Card ×1, Style=For You ×1.
-Placed on pages: Homepage ×10.
+Inside components: Blocks Lead Article Card ×12, Blocks Article Row ×10, Zone 1 Lead Article Card ×6, Horizontal Thumbnail Card ×3, Blocks Card ×3, Style=For You ×1, 1Col Article Card ×1.
+Placed on pages: Homepage ×8.
 
 **Built from:** no nested components.
 
@@ -90,4 +90,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `article-author.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

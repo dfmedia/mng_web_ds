@@ -9,7 +9,7 @@ component_key: c8e491010e441c0201b947dfc91b0af3a1d466f9
 variants: 20
 tokens: section-menu.tokens.json
 skeleton: section-menu.html
-exported: 2026-11-09
+exported: 2026-11-25
 ---
 
 # SectionMenu
@@ -34,15 +34,15 @@ exported: 2026-11-09
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `XL-Desktop / all / Closed` | 300×64 | [456:5838](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5838) | 86 | ![](previews/section-menu--xl-desktop-all-closed.png) |
+| `XL-Desktop / all / Closed` | 300×64 | [456:5838](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5838) | 92 | ![](previews/section-menu--xl-desktop-all-closed.png) |
 | `XL-Desktop / subscriber / Open` | 300×839 | [456:5844](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5844) | 0 | ![](previews/section-menu--xl-desktop-subscriber-open.png) |
 | `XL-Desktop / nonSub / Open` | 300×939 | [456:5859](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5859) | 0 | ![](previews/section-menu--xl-desktop-nonsub-open.png) |
 | `XL-Desktop / loggedOut / Open` | 300×939 | [3740:34054](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3740-34054) | 0 | ![](previews/section-menu--xl-desktop-loggedout-open.png) |
-| `MD-TabletV / all / Closed` | 88×64 | [456:5840](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5840) | 41 | ![](previews/section-menu--md-tabletv-all-closed.png) |
+| `MD-TabletV / all / Closed` | 88×64 | [456:5840](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5840) | 45 | ![](previews/section-menu--md-tabletv-all-closed.png) |
 | `MD-TabletV / subscriber / Open` | 300×915.87 | [3344:64973](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3344-64973) | 0 | ![](previews/section-menu--md-tabletv-subscriber-open.png) |
 | `MD-TabletV / nonSub / Open` | 300×1015.87 | [3344:64989](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3344-64989) | 0 | ![](previews/section-menu--md-tabletv-nonsub-open.png) |
 | `MD-TabletV / loggedOut / Open` | 300×1015.87 | [3740:36200](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3740-36200) | 0 | ![](previews/section-menu--md-tabletv-loggedout-open.png) |
-| `SM-Mobile / all / Closed` | 64×64 | [456:5842](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5842) | 110 | ![](previews/section-menu--sm-mobile-all-closed.png) |
+| `SM-Mobile / all / Closed` | 64×64 | [456:5842](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5842) | 102 | ![](previews/section-menu--sm-mobile-all-closed.png) |
 | `SM-Mobile / subscriber / Open` | 300×915.87 | [456:5875](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5875) | 0 | ![](previews/section-menu--sm-mobile-subscriber-open.png) |
 | `SM-Mobile / nonSub / Open` | 300×1015.87 | [456:5891](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5891) | 0 | ![](previews/section-menu--sm-mobile-nonsub-open.png) |
 | `SM-Mobile / loggedOut / Open` | 300×1015.87 | [3740:34583](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3740-34583) | 0 | ![](previews/section-menu--sm-mobile-loggedout-open.png) |
@@ -164,10 +164,10 @@ Production switches at 1040px (`max-width: 64.9375em`), checked on Denver Post a
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **237**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **239**.
 
-Inside components: Masthead ×101, ObitMastHead ×41, AccountMenu ×5.
-Placed on pages: Menus and Parts ×78, Homepage ×6, Article Page ×4, Section Front ×2.
+Inside components: Masthead ×121, ObitMastHead ×41, AccountMenu ×5.
+Placed on pages: Menus and Parts ×60, Homepage ×6, Article Page ×4, Section Front ×2.
 
 **Built from:** SectionMenuGroup ×135, SectionMenuItem ×77, SectionMenuHeader ×20
 
@@ -186,4 +186,4 @@ Production section menu (`.wrapper-nav.pushnav`, `ul#pushnav`): six-site audit 2
 - `section-menu.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

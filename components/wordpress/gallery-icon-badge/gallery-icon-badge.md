@@ -9,7 +9,7 @@ component_key: 413ff05306982d5fd49f97e128f9dc35b3f971b7
 variants: 4
 tokens: gallery-icon-badge.tokens.json
 skeleton: gallery-icon-badge.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Gallery Icon Badge
@@ -33,8 +33,8 @@ exported: 2026-10-28
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Default / Small` | 20×20 | [3362:2959](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3362-2959) | 91 | ![](previews/gallery-icon-badge--default-small.png) |
-| `Default / Large` | 33×33 | [3665:32139](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3665-32139) | 17 | ![](previews/gallery-icon-badge--default-large.png) |
+| `Default / Small` | 20×20 | [3362:2959](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3362-2959) | 85 | ![](previews/gallery-icon-badge--default-small.png) |
+| `Default / Large` | 33×33 | [3665:32139](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3665-32139) | 18 | ![](previews/gallery-icon-badge--default-large.png) |
 | `Hover / Small` | 20×20 | [3665:32142](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3665-32142) | 0 | ![](previews/gallery-icon-badge--hover-small.png) |
 | `Hover / Large` | 33×33 | [3665:32145](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3665-32145) | 0 | ![](previews/gallery-icon-badge--hover-large.png) |
 
@@ -88,10 +88,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **108**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **103**.
 
-Inside components: Photos Block ×35, Blocks Article Row ×10, Horizontal Thumbnail Card ×9, TOP ZONE Block ×4, Blocks Card ×3, 1Col Article Card ×1.
-Placed on pages: Homepage ×44.
+Inside components: Photos Block ×36, Blocks Article Row ×10, Horizontal Thumbnail Card ×9, Blocks Card ×3, 1Col Article Card ×1.
+Placed on pages: Homepage ×42.
 
 **Built from:** Icons ×4
 Icon variants: `slideshow` ×4.
@@ -112,4 +112,4 @@ Production `.icon-slideshow` (`.feature-small`, `.feature-medium`, `.feature-lar
 - `gallery-icon-badge.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

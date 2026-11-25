@@ -9,7 +9,7 @@ component_key: a3c41dc84d271d8fadbefb86d033afe3706c21b6
 variants: 3
 tokens: article-status-badge.tokens.json
 skeleton: article-status-badge.html
-exported: 2026-11-03
+exported: 2026-11-25
 ---
 
 # Article Status Badge
@@ -33,7 +33,7 @@ exported: 2026-11-03
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `Subscriber` | 122×23 | [3344:63989](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3344-63989) | 60 | ![](previews/article-status-badge--subscriber.png) |
-| `None` | 0.01×0.01 | [3344:63994](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3344-63994) | 155 | — |
+| `None` | 0.01×0.01 | [3344:63994](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3344-63994) | 155 | ![](previews/article-status-badge--none.png) |
 | `Sponsored` | 149×23 | [3344:63991](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3344-63991) | 33 | ![](previews/article-status-badge--sponsored.png) |
 
 ## Anatomy
@@ -107,4 +107,4 @@ Production `.subscriber-only-tag` (theme stylesheets, identical on all 6 review 
 - `article-status-badge.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

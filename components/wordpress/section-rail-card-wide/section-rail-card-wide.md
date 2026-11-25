@@ -9,7 +9,7 @@ component_key: 2b968c2bc17a88146e8c8d8ef37db3dad272e064
 variants: 4
 tokens: section-rail-card-wide.tokens.json
 skeleton: section-rail-card-wide.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Section Rail Card Wide
@@ -121,4 +121,4 @@ Production `.landing-three-one .section-highlight` (homepage section rail beside
 - `section-rail-card-wide.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

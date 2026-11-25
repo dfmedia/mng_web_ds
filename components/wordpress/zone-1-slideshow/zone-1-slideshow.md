@@ -9,7 +9,7 @@ component_key: d52844d268f315912210d4b2f2051577a5ffc3cb
 variants: 3
 tokens: zone-1-slideshow.tokens.json
 skeleton: zone-1-slideshow.html
-exported: 2026-10-28
+exported: 2026-11-25
 ---
 
 # Zone 1 Slideshow
@@ -157,4 +157,4 @@ Production `article.slideshow.feature-large > .article-slideshow` (mng-gallery s
 - `zone-1-slideshow.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-28 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

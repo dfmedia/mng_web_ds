@@ -9,7 +9,7 @@ component_key: 21db80b6ccdb88eb2a61326e46bce299f7aa1693
 variants: 7
 tokens: account-menu.tokens.json
 skeleton: account-menu.html
-exported: 2026-11-17
+exported: 2026-11-25
 ---
 
 # AccountMenu
@@ -45,9 +45,9 @@ exported: 2026-11-17
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `(up to 1039px) / loggedOut / loggedOut / Open` | 300×650 | [910:16443](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16443) | 4 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-open.png) |
-| `(up to 1039px) / loggedOut / loggedOut / Closed` | 112×64 | [910:16436](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16436) | 58 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-closed.png) |
-| `(1040px and up) / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 23 | ![](previews/account-menu--1040px-and-up-loggedout-loggedout-closed.png) |
-| `(all widths) / loggedIn / loggedIn / Closed` | 112×64 | [910:16508](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16508) | 111 | ![](previews/account-menu--all-widths-loggedin-loggedin-closed.png) |
+| `(up to 1039px) / loggedOut / loggedOut / Closed` | 112×64 | [910:16436](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16436) | 66 | ![](previews/account-menu--up-to-1039px-loggedout-loggedout-closed.png) |
+| `(1040px and up) / loggedOut / loggedOut / Closed` | 294×64 | [910:16426](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16426) | 25 | ![](previews/account-menu--1040px-and-up-loggedout-loggedout-closed.png) |
+| `(all widths) / loggedIn / loggedIn / Closed` | 112×64 | [910:16508](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16508) | 121 | ![](previews/account-menu--all-widths-loggedin-loggedin-closed.png) |
 | `(all widths) / loggedIn / nonSub / Open` | 300×954 | [910:16526](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16526) | 7 | ![](previews/account-menu--all-widths-loggedin-nonsub-open.png) |
 | `(all widths) / loggedIn / subscriber / Open` | 300×840 | [910:16763](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-16763) | 26 | ![](previews/account-menu--all-widths-loggedin-subscriber-open.png) |
 | `(all widths) / alert / subscriber / Open` | 300×1098 | [910:17087](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=910-17087) | 4 | ![](previews/account-menu--all-widths-alert-subscriber-open.png) |
@@ -368,9 +368,9 @@ Production's logged-out switch is 1040px (`max-width: 64.9375em`); the logged-in
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **233**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **253**.
 
-Inside components: Masthead ×90, ObitMastHead ×28, AccountMenu ×1.
+Inside components: Masthead ×110, ObitMastHead ×28, AccountMenu ×1.
 Placed on pages: Menus and Parts ×95, Homepage ×6, Article Page ×4, Section Front ×2.
 
 **Built from:** Icons ×20, Button Primary ×7, UserStatus ×6, SearchBar ×6, AccountMenu ×1, InLineMessage ×1
@@ -393,4 +393,4 @@ digisubs plugin: `#anchorProfileDropDown` and `#account-content` (logged in), `#
 - `account-menu.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-17 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: f6f0992bc1126f8cfc17158b13600b3a8318213e
 variants: 8
 tokens: tab-nav.tokens.json
 skeleton: tab-nav.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Tab Nav
@@ -109,7 +109,7 @@ From `tab-nav.tokens.json`. References point at system tokens (`tokens/core/`, `
 - **Bar:** full width, `color/gray/max`, with a 1px `color/gray/300` rule along the bottom; the active underline sits over it.
 - **Nav:** max width 1280px, centered, 8px (`spacing/100`) side padding at every width, so the first tab lines up with the page content's left edge (Karl, 2026-11-03; was 1200px with 24px (`spacing/300`) sides at 640px and up and no side padding below).
 - **Tabs:** left-aligned, 8px (`spacing/100`) apart (Karl, 2026-11-24; was 24px); they scroll sideways (scrollbar hidden) if they don't fit.
-- **More tabs than fit** (option C1, Karl, 2026-11-24; replaces the 2026-11-23 cut-in-half rule): the bar stays full width and the tabs stay 8px apart, so the tab at the edge shows partly (the gap doesn't change). The side with more tabs fades over 48px, and a chevron button (Tab Nav Chevron: 36px wide, the tab row's height, 16px `arrow-left` / `arrow-right` icon in `color/gray/300` (3.9:1 on white, above the 3:1 an icon needs; Karl, 2026-11-24), no fill or shadow; hover `color/theme/primary`) sits on that side; the fade ends just inside the chevron, so the cut tab still shows. A chevron scrolls about 80% of the visible width, sliding in 250ms ease-in-out, the same as the section menu drawer (Push Nav, `transform 0.25s ease-in-out`; Karl, 2026-11-24: the browser's smooth scroll was too abrupt); instant with reduced motion. Chevrons are pointer aids: aria-hidden and out of the Tab order, since keyboard and screen-reader users move with the tablist's arrow keys, which scroll the focused tab into view. Measured again on resize, on scroll and when fonts load. Labels never get an ellipsis. Variants: Overflow = None (all tabs fit), Start (right side only), Middle (both sides), End (left side only); sample labels are BestReviews kitchen sub-subcategories.
+- **More tabs than fit** (option C1, Karl, 2026-11-24; replaces the 2026-11-23 cut-in-half rule): the bar stays full width and the tabs are 8px apart; the tab at the edge always shows part way: if it wouldn't, the gap between tabs narrows or widens in 4px steps (12, 4, then 16px; `spacing/150`, `spacing/050`, `spacing/200`) until the edge tab shows 35–75%, or the step closest to half (Karl, 2026-11-24). The side with more tabs fades over 48px, and a chevron button (Tab Nav Chevron: 36px wide, the tab row's height, 16px `arrow-left` / `arrow-right` icon in `color/gray/300` (3.9:1 on white, above the 3:1 an icon needs; Karl, 2026-11-24), no fill or shadow; hover `color/theme/primary`) sits on that side; the fade ends just inside the chevron, so the cut tab still shows. A chevron scrolls about 80% of the visible width, sliding in 250ms ease-in-out, the same as the section menu drawer (Push Nav, `transform 0.25s ease-in-out`; Karl, 2026-11-24: the browser's smooth scroll was too abrupt); instant with reduced motion. Chevrons are pointer aids: aria-hidden and out of the Tab order, since keyboard and screen-reader users move with the tablist's arrow keys, which scroll the focused tab into view. Measured again on resize, on scroll and when fonts load. Labels never get an ellipsis. Variants: Overflow = None (all tabs fit), Start (right side only), Middle (both sides), End (left side only); sample labels are BestReviews kitchen sub-subcategories.
 - **Accessibility:** `ul role=tablist`, each `li role=presentation`; panels have matching ids and `role=tabpanel`.
 - **Keyboard** (WAI-ARIA Tabs pattern, manual activation; Karl, 2026-11-04): only the selected tab is in the Tab order (`tabindex` 0, the others −1); Left / Right move focus between tabs and wrap, Home / End go to the first / last; Enter or Space selects. Manual, not automatic, activation because choosing For You can open the Welcome modal. Developer notes: `components/for-you-interaction-and-accessibility.md`.
 
@@ -140,4 +140,4 @@ Production World Cup tabs (`ul.sr-nav-tabs > button.tab-btn`, staging.dailylocal
 - `tab-nav.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

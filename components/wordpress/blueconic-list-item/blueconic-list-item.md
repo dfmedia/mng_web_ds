@@ -9,7 +9,7 @@ component_key: cacae1ac5989962a718f1950312d985fba767ec1
 variants: 2
 tokens: blueconic-list-item.tokens.json
 skeleton: blueconic-list-item.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Blueconic List Item
@@ -33,7 +33,7 @@ exported: 2026-11-02
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `(≤1039px)` | 340×61 | [3352:24171](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3352-24171) | 90 | ![](previews/blueconic-list-item--1039px.png) |
-| `(≥1040px)` | 459×60 | [3704:40671](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3704-40671) | 20 | ![](previews/blueconic-list-item--1040px.png) |
+| `(≥1040px)` | 459×60 | [3704:40671](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3704-40671) | 30 | ![](previews/blueconic-list-item--1040px.png) |
 
 ## Anatomy
 
@@ -98,10 +98,10 @@ From `blueconic-list-item.tokens.json`. References point at system tokens (`toke
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **110**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **120**.
 
 Inside components: Blueconic Block ×60.
-Placed on pages: Homepage ×50.
+Placed on pages: Homepage ×60.
 
 **Built from:** no nested components.
 
@@ -122,4 +122,4 @@ Production Blueconic "Most Popular" / "Recommended For You" list (`.landing-thre
 - `blueconic-list-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

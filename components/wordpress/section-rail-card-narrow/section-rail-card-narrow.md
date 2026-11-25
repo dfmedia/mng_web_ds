@@ -9,7 +9,7 @@ component_key: a190cd2a7299d5dfbfd24bae57f8bf986bf7add6
 variants: 2
 tokens: section-rail-card-narrow.tokens.json
 skeleton: section-rail-card-narrow.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Section Rail Card Narrow
@@ -118,4 +118,4 @@ Production `.landing-four-up .section-highlight` (homepage section rails, four u
 - `section-rail-card-narrow.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

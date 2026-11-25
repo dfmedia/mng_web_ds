@@ -9,7 +9,7 @@ component_key: edece4e844bea8a8dd7526e6e39df1d00a56ad72
 variants: 4
 tokens: weather-bug.tokens.json
 skeleton: weather-bug.html
-exported: 2026-11-09
+exported: 2026-11-25
 ---
 
 # Weather Bug
@@ -33,7 +33,7 @@ exported: 2026-11-09
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `Off / SectionMenu` | 300×60.87 | [654:10019](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=654-10019) | 15 | ![](previews/weather-bug--off-sectionmenu.png) |
-| `Off / Masthead` | 285.78×40.73 | [653:5076](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=653-5076) | 45 | ![](previews/weather-bug--off-masthead.png) |
+| `Off / Masthead` | 285.78×40.73 | [653:5076](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=653-5076) | 48 | ![](previews/weather-bug--off-masthead.png) |
 | `On / SectionMenu` | 300×72.88 | [3758:28804](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3758-28804) | 0 | ![](previews/weather-bug--on-sectionmenu.png) |
 | `On / Masthead` | 285.78×52.66 | [3758:28821](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3758-28821) | 0 | ![](previews/weather-bug--on-masthead.png) |
 
@@ -111,9 +111,9 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **60**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **63**.
 
-Inside components: Masthead ×19, SectionMenuItem ×1.
+Inside components: Masthead ×22, SectionMenuItem ×1.
 Placed on pages: Menus and Parts ×21, Article Page ×2, Homepage ×2, Section Front ×1.
 14 instances are nested inside other instances.
 
@@ -135,4 +135,4 @@ Production `.accuweather-wrap`, measured on Denver Post (one link) and Morning C
 - `weather-bug.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x.
 
-*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

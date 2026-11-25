@@ -9,7 +9,7 @@ component_key: ee1e934379e375720ebe6d4cb298046435b8d9a1
 variants: 12
 tokens: blocks-lead-article-card.tokens.json
 skeleton: blocks-lead-article-card.html
-exported: 2026-11-03
+exported: 2026-11-25
 ---
 
 # Blocks Lead Article Card
@@ -199,4 +199,4 @@ New: the For You tab (prototype `.fy-lead`), based on production's Zone 1 lead (
 - `blocks-lead-article-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

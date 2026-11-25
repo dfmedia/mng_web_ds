@@ -9,7 +9,7 @@ component_key: b49909a16526e6df948efc84d6bfbd5b8ebc3c96
 variants: 4
 tokens: feature-list-content-block.tokens.json
 skeleton: feature-list-content-block.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Feature + List Content Block
@@ -143,4 +143,4 @@ Production `.landing-three-one .section-highlight` content (`.feature-medium` + 
 - `feature-list-content-block.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

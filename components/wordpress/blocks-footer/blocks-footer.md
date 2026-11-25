@@ -9,7 +9,7 @@ component_key: 5ed851a93d8fb8b8dd00daf164dc25b74af9edab
 variants: 5
 tokens: blocks-footer.tokens.json
 skeleton: blocks-footer.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Blocks Footer
@@ -697,4 +697,4 @@ None yet: a future design. Built from the production Footer (`354:1282`).
 - `blocks-footer.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

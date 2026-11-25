@@ -9,7 +9,7 @@ component_key: 9d3371e98d00532989e69d29025b4d6193a60848
 variants: 5
 tokens: footer.tokens.json
 skeleton: footer.html
-exported: 2026-11-13
+exported: 2026-11-25
 ---
 
 # Footer
@@ -33,7 +33,7 @@ exported: 2026-11-13
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `XS-Fold` | 340×871 | [422:522](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=422-522) | 1 | ![](previews/footer--xs-fold.png) |
-| `SM-Mobile` | 360×871 | [354:1199](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=354-1199) | 17 | ![](previews/footer--sm-mobile.png) |
+| `SM-Mobile` | 360×871 | [354:1199](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=354-1199) | 13 | ![](previews/footer--sm-mobile.png) |
 | `MD-TabletV` | 768×878.44 | [354:1106](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=354-1106) | 5 | ![](previews/footer--md-tabletv.png) |
 | `LG-TabletH` | 1024×681.26 | [354:1013](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=354-1013) | 7 | ![](previews/footer--lg-tableth.png) |
 | `XL-Desktop` | 1280×597 | [354:920](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=354-920) | 13 | ![](previews/footer--xl-desktop.png) |
@@ -666,9 +666,9 @@ From `footer.tokens.json`. References point at system tokens (`tokens/core/`, `t
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **43**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **39**.
 
-Placed on pages: Menus and Parts ×29, Homepage ×6, Article Page ×4, Section Front ×2.
+Placed on pages: Menus and Parts ×25, Homepage ×6, Article Page ×4, Section Front ×2.
 
 **Built from:** Icons ×12, Button Primary ×5
 Icon variants: `arrow-down` ×12.
@@ -689,4 +689,4 @@ Production footer (`ul.footer-menus`, `div.colophon`), breakpoints audited on oc
 - `footer.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-13 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -11,7 +11,7 @@
       },
       "production": "Production `.feature-media` (homepage Photos block, Zone 7, in `.three-one-left`). CSS read on all 6 review sites at 1728px; layout measured on mcall.com at 360, 900 and 1100px (fixed-width same-site frames inside the page, so the window wasn't resized), ocregister.com at 778px and denverpost.com at 1728px, 2026-11-02.",
       "layer": "wordpress",
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     }
   },
   "photos-block": {

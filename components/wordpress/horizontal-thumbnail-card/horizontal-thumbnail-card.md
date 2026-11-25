@@ -9,7 +9,7 @@ component_key: c64c9a57e8074d5ae0481728bc08aa3f8c828174
 variants: 3
 tokens: horizontal-thumbnail-card.tokens.json
 skeleton: horizontal-thumbnail-card.html
-exported: 2026-10-30
+exported: 2026-11-25
 ---
 
 # Horizontal Thumbnail Card
@@ -38,8 +38,8 @@ exported: 2026-10-30
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
 | `Standard / Desktop` | 336×98 | [3362:2990](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3362-2990) | 6 | ![](previews/horizontal-thumbnail-card--standard-desktop.png) |
-| `Standard / Mobile` | 336×67 | [3362:2991](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3362-2991) | 29 | ![](previews/horizontal-thumbnail-card--standard-mobile.png) |
-| `Standard / Tablet` | 358×84 | [3383:46153](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46153) | 8 | ![](previews/horizontal-thumbnail-card--standard-tablet.png) |
+| `Standard / Mobile` | 336×67 | [3362:2991](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3362-2991) | 66 | ![](previews/horizontal-thumbnail-card--standard-mobile.png) |
+| `Standard / Tablet` | 358×84 | [3383:46153](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3383-46153) | 0 | ![](previews/horizontal-thumbnail-card--standard-tablet.png) |
 
 ## Anatomy
 
@@ -117,10 +117,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **43**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **72**.
 
-Inside components: Photos Block ×35, TOP ZONE Block ×4.
-Placed on pages: Homepage ×4.
+Inside components: Photos Block ×36.
+Placed on pages: Homepage ×36.
 
 **Built from:** Article Image Placeholder ×3, Gallery Icon Badge ×3
 
@@ -138,4 +138,4 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 - `horizontal-thumbnail-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-10-30 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

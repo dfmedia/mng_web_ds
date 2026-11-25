@@ -9,7 +9,7 @@ component_key: f3543c3d3a1ab06000ea1bced9cef16e9c49ea63
 variants: 9
 tokens: blocks-article-row.tokens.json
 skeleton: blocks-article-row.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Blocks Article Row
@@ -176,4 +176,4 @@ New: the For You tab (prototype `.row`).
 - `blocks-article-row.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

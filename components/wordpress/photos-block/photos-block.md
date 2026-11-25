@@ -9,7 +9,7 @@ component_key: e952aa813910f9c37fe311a21c266b3089bad6ab
 variants: 5
 tokens: photos-block.tokens.json
 skeleton: photos-block.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Photos Block
@@ -177,4 +177,4 @@ Production `.feature-media` (homepage Photos block, Zone 7, in `.three-one-left`
 - `photos-block.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

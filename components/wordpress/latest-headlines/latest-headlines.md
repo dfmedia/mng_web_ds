@@ -9,7 +9,7 @@ component_key: a8093d9af051cf493da6a481a57b6c9119f9cbbf
 variants: 3
 tokens: latest-headlines.tokens.json
 skeleton: latest-headlines.html
-exported: 2026-11-03
+exported: 2026-11-25
 ---
 
 # Latest Headlines
@@ -139,4 +139,4 @@ Production homepage Zone 1 `.feature-primary.busy .headline-list` (`div.headline
 - `latest-headlines.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-03 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

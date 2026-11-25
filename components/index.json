@@ -573,9 +573,9 @@
         "set": "Ad Blocks"
       },
       "variants": 37,
-      "instances": 239,
+      "instances": 245,
       "knownIssues": 6,
-      "exported": "2026-11-18"
+      "exported": "2026-11-25"
     },
     {
       "slug": "article-author",
@@ -589,9 +589,9 @@
         "set": "Article Author"
       },
       "variants": 1,
-      "instances": 46,
+      "instances": 44,
       "knownIssues": 1,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "article-section-kicker",
@@ -605,9 +605,9 @@
         "set": "Article Section Kicker"
       },
       "variants": 1,
-      "instances": 46,
+      "instances": 44,
       "knownIssues": 1,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "article-status-badge",
@@ -623,7 +623,7 @@
       "variants": 3,
       "instances": 248,
       "knownIssues": 3,
-      "exported": "2026-11-03"
+      "exported": "2026-11-25"
     },
     {
       "slug": "article-timestamp",
@@ -637,9 +637,9 @@
         "set": "Article Timestamp"
       },
       "variants": 1,
-      "instances": 48,
+      "instances": 46,
       "knownIssues": 0,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "related-article-list-item",
@@ -655,7 +655,7 @@
       "variants": 1,
       "instances": 75,
       "knownIssues": 5,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "blocks-article-row",
@@ -671,7 +671,7 @@
       "variants": 9,
       "instances": 0,
       "knownIssues": 1,
-      "exported": "2026-11-04"
+      "exported": "2026-11-25"
     },
     {
       "slug": "blocks-card",
@@ -687,7 +687,7 @@
       "variants": 3,
       "instances": 0,
       "knownIssues": 2,
-      "exported": "2026-11-04"
+      "exported": "2026-11-25"
     },
     {
       "slug": "blocks-footer",
@@ -703,7 +703,7 @@
       "variants": 5,
       "instances": 0,
       "knownIssues": 4,
-      "exported": "2026-11-24"
+      "exported": "2026-11-25"
     },
     {
       "slug": "blocks-lead-article-card",
@@ -719,7 +719,7 @@
       "variants": 12,
       "instances": 0,
       "knownIssues": 2,
-      "exported": "2026-11-03"
+      "exported": "2026-11-25"
     },
     {
       "slug": "button-save",
@@ -735,7 +735,7 @@
       "variants": 8,
       "instances": 19,
       "knownIssues": 0,
-      "exported": "2026-11-13"
+      "exported": "2026-11-25"
     },
     {
       "slug": "social-buttons",
@@ -751,7 +751,7 @@
       "variants": 5,
       "instances": 14,
       "knownIssues": 0,
-      "exported": "2026-11-12"
+      "exported": "2026-11-25"
     },
     {
       "slug": "social-media-button",
@@ -767,7 +767,7 @@
       "variants": 120,
       "instances": 238,
       "knownIssues": 1,
-      "exported": "2026-11-12"
+      "exported": "2026-11-25"
     },
     {
       "slug": "1col-article-card",
@@ -783,7 +783,7 @@
       "variants": 2,
       "instances": 56,
       "knownIssues": 1,
-      "exported": "2026-11-13"
+      "exported": "2026-11-25"
     },
     {
       "slug": "gallery-icon-badge",
@@ -797,9 +797,9 @@
         "set": "Gallery Icon Badge"
       },
       "variants": 4,
-      "instances": 108,
+      "instances": 103,
       "knownIssues": 3,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "horizontal-feature-card",
@@ -815,7 +815,7 @@
       "variants": 4,
       "instances": 32,
       "knownIssues": 3,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "horizontal-thumbnail-card",
@@ -829,9 +829,9 @@
         "set": "Horizontal Thumbnail Card"
       },
       "variants": 3,
-      "instances": 43,
+      "instances": 72,
       "knownIssues": 1,
-      "exported": "2026-10-30"
+      "exported": "2026-11-25"
     },
     {
       "slug": "topzone-article-card",
@@ -847,7 +847,7 @@
       "variants": 5,
       "instances": 44,
       "knownIssues": 4,
-      "exported": "2026-11-03"
+      "exported": "2026-11-25"
     },
     {
       "slug": "zone-1-lead-article-card",
@@ -863,7 +863,7 @@
       "variants": 6,
       "instances": 11,
       "knownIssues": 3,
-      "exported": "2026-11-13"
+      "exported": "2026-11-25"
     },
     {
       "slug": "zone-1-slideshow",
@@ -879,7 +879,7 @@
       "variants": 3,
       "instances": 15,
       "knownIssues": 3,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "blueconic-block",
@@ -895,7 +895,7 @@
       "variants": 3,
       "instances": 6,
       "knownIssues": 4,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "blueconic-list-item",
@@ -909,9 +909,9 @@
         "set": "Blueconic List Item"
       },
       "variants": 2,
-      "instances": 110,
+      "instances": 120,
       "knownIssues": 4,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "breaking-news-banner",
@@ -927,7 +927,7 @@
       "variants": 3,
       "instances": 15,
       "knownIssues": 6,
-      "exported": "2026-11-13"
+      "exported": "2026-11-25"
     },
     {
       "slug": "feature-list-content-block",
@@ -943,7 +943,7 @@
       "variants": 4,
       "instances": 28,
       "knownIssues": 3,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "headline-list-item",
@@ -959,7 +959,7 @@
       "variants": 3,
       "instances": 192,
       "knownIssues": 3,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "latest-headlines",
@@ -975,7 +975,7 @@
       "variants": 3,
       "instances": 11,
       "knownIssues": 4,
-      "exported": "2026-11-03"
+      "exported": "2026-11-25"
     },
     {
       "slug": "latest-headlines-list-item",
@@ -991,7 +991,7 @@
       "variants": 3,
       "instances": 112,
       "knownIssues": 5,
-      "exported": "2026-11-03"
+      "exported": "2026-11-25"
     },
     {
       "slug": "newsletter-signup",
@@ -1007,7 +1007,7 @@
       "variants": 2,
       "instances": 14,
       "knownIssues": 4,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "photos-block",
@@ -1023,7 +1023,7 @@
       "variants": 5,
       "instances": 6,
       "knownIssues": 4,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-rail-card-narrow",
@@ -1039,7 +1039,7 @@
       "variants": 2,
       "instances": 30,
       "knownIssues": 4,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-rail-card-wide",
@@ -1055,7 +1055,7 @@
       "variants": 4,
       "instances": 24,
       "knownIssues": 3,
-      "exported": "2026-11-02"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-title-eyebrow",
@@ -1069,9 +1069,9 @@
         "set": "Section Title / Eyebrow"
       },
       "variants": 2,
-      "instances": 105,
+      "instances": 96,
       "knownIssues": 2,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "show-more-affordance",
@@ -1087,7 +1087,7 @@
       "variants": 1,
       "instances": 13,
       "knownIssues": 2,
-      "exported": "2026-10-28"
+      "exported": "2026-11-25"
     },
     {
       "slug": "top-zone-block",
@@ -1103,7 +1103,7 @@
       "variants": 5,
       "instances": 6,
       "knownIssues": 4,
-      "exported": "2026-11-03"
+      "exported": "2026-11-25"
     },
     {
       "slug": "account-menu",
@@ -1117,9 +1117,9 @@
         "set": "AccountMenu"
       },
       "variants": 7,
-      "instances": 233,
+      "instances": 253,
       "knownIssues": 4,
-      "exported": "2026-11-17"
+      "exported": "2026-11-25"
     },
     {
       "slug": "footer",
@@ -1133,9 +1133,9 @@
         "set": "Footer"
       },
       "variants": 5,
-      "instances": 43,
+      "instances": 39,
       "knownIssues": 3,
-      "exported": "2026-11-13"
+      "exported": "2026-11-25"
     },
     {
       "slug": "masthead",
@@ -1165,9 +1165,9 @@
         "set": "SearchBar"
       },
       "variants": 2,
-      "instances": 373,
+      "instances": 386,
       "knownIssues": 2,
-      "exported": "2026-10-30"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-menu",
@@ -1181,9 +1181,9 @@
         "set": "SectionMenu"
       },
       "variants": 20,
-      "instances": 237,
+      "instances": 239,
       "knownIssues": 2,
-      "exported": "2026-11-09"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-menu-group",
@@ -1199,7 +1199,7 @@
       "variants": 2,
       "instances": 135,
       "knownIssues": 2,
-      "exported": "2026-11-09"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-menu-header",
@@ -1213,9 +1213,9 @@
         "set": "SectionMenuHeader"
       },
       "variants": 6,
-      "instances": 259,
+      "instances": 261,
       "knownIssues": 2,
-      "exported": "2026-11-09"
+      "exported": "2026-11-25"
     },
     {
       "slug": "section-menu-item",
@@ -1231,7 +1231,7 @@
       "variants": 27,
       "instances": 1064,
       "knownIssues": 3,
-      "exported": "2026-11-09"
+      "exported": "2026-11-25"
     },
     {
       "slug": "tab-nav",
@@ -1247,7 +1247,7 @@
       "variants": 8,
       "instances": 1,
       "knownIssues": 1,
-      "exported": "2026-11-24"
+      "exported": "2026-11-25"
     },
     {
       "slug": "tab-nav-item",
@@ -1263,7 +1263,7 @@
       "variants": 4,
       "instances": 94,
       "knownIssues": 0,
-      "exported": "2026-11-24"
+      "exported": "2026-11-25"
     },
     {
       "slug": "weather-bug",
@@ -1277,9 +1277,9 @@
         "set": "Weather Bug"
       },
       "variants": 4,
-      "instances": 60,
+      "instances": 63,
       "knownIssues": 3,
-      "exported": "2026-11-09"
+      "exported": "2026-11-25"
     }
   ]
 }

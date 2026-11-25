@@ -9,7 +9,7 @@ component_key: 555019e430769d437d2dc590677f75803092cc5e
 variants: 4
 tokens: tab-nav-item.tokens.json
 skeleton: tab-nav-item.html
-exported: 2026-11-24
+exported: 2026-11-25
 ---
 
 # Tab Nav Item
@@ -109,4 +109,4 @@ None open.
 - `tab-nav-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-24 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

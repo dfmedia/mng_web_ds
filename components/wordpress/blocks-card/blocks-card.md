@@ -9,7 +9,7 @@ component_key: 12f9d565a5107bd87fbbb91de42b3985cd934ed6
 variants: 3
 tokens: blocks-card.tokens.json
 skeleton: blocks-card.html
-exported: 2026-11-04
+exported: 2026-11-25
 ---
 
 # Blocks Card
@@ -141,4 +141,4 @@ New: the For You tab (prototype `.card`). Production's homepage card hover only 
 - `blocks-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-04 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

@@ -9,7 +9,7 @@ component_key: b713574ec2e2bb93789c51812dfb4f34cb971a71
 variants: 1
 tokens: related-article-list-item.tokens.json
 skeleton: related-article-list-item.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Related Article List Item
@@ -106,4 +106,4 @@ Production `.feature-primary ul.primary-related li` (homepage Zone 1 lead, Relat
 - `related-article-list-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

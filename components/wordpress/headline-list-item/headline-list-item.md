@@ -9,7 +9,7 @@ component_key: 57b688027f08b9ff40d6d9687bc1bf4c842851aa
 variants: 3
 tokens: headline-list-item.tokens.json
 skeleton: headline-list-item.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Headline List Item
@@ -106,4 +106,4 @@ Production section rail headline list (`.section-highlight ul.headline-list li a
 - `headline-list-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

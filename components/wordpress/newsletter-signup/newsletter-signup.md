@@ -9,7 +9,7 @@ component_key: 84f47333e168c6d47184245169a01ad2d8be9958
 variants: 2
 tokens: newsletter-signup.tokens.json
 skeleton: newsletter-signup.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Newsletter Signup
@@ -115,4 +115,4 @@ Production `.headline-list li.social-links .newsletter-simple .newsletter-item` 
 - `newsletter-signup.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

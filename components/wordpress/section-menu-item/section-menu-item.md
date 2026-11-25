@@ -9,7 +9,7 @@ component_key: 4739909bf219a46a34480ef19995cbe58b3f99d5
 variants: 27
 tokens: section-menu-item.tokens.json
 skeleton: section-menu-item.html
-exported: 2026-11-09
+exported: 2026-11-25
 ---
 
 # SectionMenuItem
@@ -192,4 +192,4 @@ Production `#pushnav` rows (all 6 review sites, 2026-11-06; widths on Denver Pos
 - `section-menu-item.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x.
 
-*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

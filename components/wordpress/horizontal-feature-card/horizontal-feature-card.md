@@ -9,7 +9,7 @@ component_key: 191b307650a6e2dba4034c1d87cb56da3cf4b027
 variants: 4
 tokens: horizontal-feature-card.tokens.json
 skeleton: horizontal-feature-card.html
-exported: 2026-11-02
+exported: 2026-11-25
 ---
 
 # Horizontal Feature Card
@@ -146,4 +146,4 @@ Production `.landing-three-one .section-highlight .feature-medium`. Measured liv
 - `horizontal-feature-card.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x and the documentation frame.
 
-*Generated 2026-11-02 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*

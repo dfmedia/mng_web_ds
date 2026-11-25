@@ -9,7 +9,7 @@ component_key: ad45b9c389008fe7779922f2aba36ad0a34bb070
 variants: 6
 tokens: section-menu-header.tokens.json
 skeleton: section-menu-header.html
-exported: 2026-11-09
+exported: 2026-11-25
 ---
 
 # SectionMenuHeader
@@ -32,11 +32,11 @@ exported: 2026-11-09
 
 | Variant | Size | Node | Instances | Preview |
 |---|---|---|---|---|
-| `Desktop / Closed` | 300×64 | [456:5746](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5746) | 87 | ![](previews/section-menu-header--desktop-closed.png) |
+| `Desktop / Closed` | 300×64 | [456:5746](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5746) | 93 | ![](previews/section-menu-header--desktop-closed.png) |
 | `Desktop / Open` | 300×64 | [456:5752](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5752) | 3 | ![](previews/section-menu-header--desktop-open.png) |
 | `Mobile / Closed` | 64×64 | [456:5769](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5769) | 0 | ![](previews/section-menu-header--mobile-closed.png) |
 | `Mobile / Open` | 64×64 | [456:5774](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5774) | 14 | ![](previews/section-menu-header--mobile-open.png) |
-| `TabletV / Closed` | 88×64 | [456:5759](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5759) | 155 | ![](previews/section-menu-header--tabletv-closed.png) |
+| `TabletV / Closed` | 88×64 | [456:5759](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5759) | 151 | ![](previews/section-menu-header--tabletv-closed.png) |
 | `TabletV / Open` | 88×64 | [456:5764](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-5764) | 0 | ![](previews/section-menu-header--tabletv-open.png) |
 
 ## Anatomy
@@ -101,10 +101,10 @@ No Breakpoint property: one size at every width.
 
 ## Where it is used
 
-Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **259**.
+Scope: instances in the Figma file **WordPress Elements** only (other files that use the library are not counted). Total: **261**.
 
 Inside components: SectionMenu ×22.
-237 instances are nested inside other instances.
+239 instances are nested inside other instances.
 
 **Built from:** Icons ×6
 Icon variants: `hamburger` ×3, `close` ×3.
@@ -124,4 +124,4 @@ Production `#menu-toggle` (15px padding, `icon-hamburger` / `icon-close`, `.menu
 - `section-menu-header.html`: HTML/CSS skeleton of every variant, using the `dist/` CSS variables (open it in a browser).
 - `previews/`: PNG of every variant @2x.
 
-*Generated 2026-11-09 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
+*Generated 2026-11-25 by `scripts/component-export/export.py` (EXPORT-STANDARD.md section 7). Edit the text in `scripts/component-export/registry.json`, not here.*
