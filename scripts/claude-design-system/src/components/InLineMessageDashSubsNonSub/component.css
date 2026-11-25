@@ -16,7 +16,7 @@
 .mngds-inline-message-dashsubsnonsub--fold .mngds-inline-message-dashsubsnonsub__content { padding: var(--mng-spacing-200); gap: var(--mng-spacing-100); }
 .mngds-inline-message-dashsubsnonsub__header { align-self: stretch; display: flex; flex-direction: column; align-items: flex-start; }
 .mngds-inline-message-dashsubsnonsub__title {
-  margin: 0; display: flex; align-items: center; max-width: 100%;
+  margin: 0; display: flex; align-items: flex-start; max-width: 100%;
   gap: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-gap);
   font-family: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-title-font-family);
   font-size: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-title-font-size);
@@ -24,9 +24,12 @@
   line-height: normal; color: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-title-color);
 }
 .mngds-inline-message-dashsubsnonsub__icon {
-  width: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-icons-width); height: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-icons-height);
+  /* The 16px icon is centered in a box one title line tall (16 x 22), so it lines up with the title's first line
+     when the title wraps (Karl, 2026-11-25). */
+  flex: none;
+  width: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-icon-box-width); height: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-icon-box-height);
   display: inline-flex; align-items: center; justify-content: center;
-  color: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-icons-icon-color);
+  color: var(--mng-inline-message-dashsubsnonsub-base-content-header-icon-and-title-icon-box-icons-icon-color);
 }
 .mngds-inline-message-dashsubsnonsub__description {
   align-self: stretch; margin: 0;

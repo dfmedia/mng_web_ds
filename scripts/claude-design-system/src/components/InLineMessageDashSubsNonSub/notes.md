@@ -3,3 +3,4 @@
 - Button label "Subscribe Now" comes from the documentation PNG (the skeleton's Button Primary instance has no label); title and description defaults are the skeleton's sample text.
 - The Icon and Title frame is a fixed 296px in Figma with a no-wrap title; here it hugs the title and wraps within the panel, so longer titles (the For You copy) don't overflow.
 - Title contrast: `color/feedback/medium` on `color/gray/600` is 4.51:1 in all three themes (passes AA by 0.01).
+- Header icon: the 16px `notification2` sits in a 16 × 22px box (one title line) and the title row is top-aligned, so the icon lines up with the first line of the title when the title wraps (Karl, 2026-11-25; Figma's Icon box).

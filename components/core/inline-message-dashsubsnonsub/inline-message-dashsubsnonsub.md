@@ -43,7 +43,8 @@ Default variant `Device=Desktop, Priority=Medium, Location=DashSubsNonSub, Panel
   - **Content** `FRAME`: 546×164, vertical, gap 16, padding 24/24/24/24, fill×hug
     - **Header** `FRAME`: 498×22, vertical, gap 8, padding 0/0/0/0, fill×hug
       - **Icon and Title** `FRAME`: 296×22, horizontal, gap 8, padding 0/0/0/0, fixed×hug
-        - **Icons** `INSTANCE`: 16×16, horizontal, gap 8, padding 0/0/0/0, fixed×fixed, instance of Icons (Name=notification2)
+        - **Icon box** `FRAME`: 16×22, horizontal, gap 0, padding 0/0/0/0, fixed×fixed
+          - **Icons** `INSTANCE`: 16×16, horizontal, gap 8, padding 0/0/0/0, fixed×fixed, instance of Icons (Name=notification2)
         - **Title** `TEXT`: 180×22, hug×hug, "Subscribe to the news.", Noto Sans Bold 16px
     - **Description** `TEXT`: 498×22, fill×hug, "Get access to the news and other exclusi", Noto Sans Regular 16px
     - **Button Primary** `INSTANCE`: 166×40, vertical, gap 8, padding 0/8/0/8, fixed×hug, instance of Button Primary (Icon=None, State=Default, Breakpoint=Desktop)
@@ -67,9 +68,11 @@ From `inline-message-dashsubsnonsub.tokens.json`. References point at system tok
 | `inline-message-dashsubsnonsub.base.content.description.font-weight` | `{font.weight.regular}` |
 | `inline-message-dashsubsnonsub.base.content.header.icon-and-title.gap` | `{spacing.100}` |
 | `inline-message-dashsubsnonsub.base.content.header.icon-and-title.width` | 296px |
-| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icons.height` | 16px |
-| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icons.icon-color` | `{color.feedback.medium}` |
-| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icons.width` | 16px |
+| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icon-box.height` | 22px |
+| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icon-box.width` | 16px |
+| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icon-box.icons.height` | 16px |
+| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icon-box.icons.icon-color` | `{color.feedback.medium}` |
+| `inline-message-dashsubsnonsub.base.content.header.icon-and-title.icon-box.icons.width` | 16px |
 | `inline-message-dashsubsnonsub.base.content.header.icon-and-title.title.color` | `{color.feedback.medium}` |
 | `inline-message-dashsubsnonsub.base.content.header.icon-and-title.title.font-family` | `{font.family.noto-sans}` |
 | `inline-message-dashsubsnonsub.base.content.header.icon-and-title.title.font-size` | `{font.size.16}` |
@@ -89,7 +92,7 @@ From `inline-message-dashsubsnonsub.tokens.json`. References point at system tok
 - **Panel:** `color/gray/600`, `radius/utility` (5px), no border or shadow. Desktop 546px wide; Mobile 328px and FOLD 308px (16px from each screen edge).
 - **Padding:** 24px (`spacing/300`) Desktop; 16px (`spacing/200`) Mobile and FOLD.
 - **Spacing:** 16px (`spacing/200`) between title, description and button on Desktop, 8px (`spacing/100`) on Mobile and FOLD; 8px (`spacing/100`) between icon and title.
-- **Title:** `notification2` icon (16px) and Noto Sans Bold 16 (`font/size/16`), both `color/feedback/medium` (4.51:1 on `gray/600`); left-aligned with the description.
+- **Title:** `notification2` icon (16px) and Noto Sans Bold 16 (`font/size/16`), both `color/feedback/medium` (4.51:1 on `gray/600`); left-aligned with the description. The icon sits in a 16 × 22px box (one title line) at the top of the row (`align-items: flex-start`), so it lines up with the first line of the title (3px from the top) on every device, also when the title wraps (Karl, 2026-11-25).
 - **Description:** Noto Sans Regular 16, `color/gray/min`, full width.
 - **Button:** Button Primary (Default), centered. Close button hidden in this Location.
 - **For You copy:** title "Your personalized feed is waiting"; description "Subscribe to unlock a feed tailored to what you actually read — local news, sports, tech, and more."; button "Subscribe Now".
@@ -115,7 +118,7 @@ No production selector recorded yet. Production gaps go in `design-vs-production
 
 ## Known issues
 
-1. Mobile and FOLD use a detached `notification2` vector (4px top padding) instead of the Icons component; Button Primary uses Breakpoint=Desktop on every device.
+1. Mobile and FOLD use a detached `notification2` vector instead of the Icons component; Button Primary uses Breakpoint=Desktop on every device.
 2. A simplified, reusable InLineMessage (copy, icon and CTA as properties) is planned after the For You export (Karl, 2026-10-27).
 
 ## Files

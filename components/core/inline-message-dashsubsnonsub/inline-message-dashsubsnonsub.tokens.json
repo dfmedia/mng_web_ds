@@ -154,23 +154,12 @@
                 "unit": "px"
               }
             },
-            "icons": {
+            "icon-box": {
               "height": {
                 "$type": "dimension",
                 "$value": {
-                  "value": 16,
+                  "value": 22,
                   "unit": "px"
-                }
-              },
-              "icon-color": {
-                "$type": "color",
-                "$value": "{color.feedback.medium}",
-                "$extensions": {
-                  "com.mng": {
-                    "figma": {
-                      "variable": "Colors/color/feedback/medium"
-                    }
-                  }
                 }
               },
               "width": {
@@ -178,6 +167,33 @@
                 "$value": {
                   "value": 16,
                   "unit": "px"
+                }
+              },
+              "icons": {
+                "height": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 16,
+                    "unit": "px"
+                  }
+                },
+                "icon-color": {
+                  "$type": "color",
+                  "$value": "{color.feedback.medium}",
+                  "$extensions": {
+                    "com.mng": {
+                      "figma": {
+                        "variable": "Colors/color/feedback/medium"
+                      }
+                    }
+                  }
+                },
+                "width": {
+                  "$type": "dimension",
+                  "$value": {
+                    "value": 16,
+                    "unit": "px"
+                  }
                 }
               }
             },
