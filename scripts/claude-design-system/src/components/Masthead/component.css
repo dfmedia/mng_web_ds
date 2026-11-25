@@ -121,7 +121,7 @@
 .mngds-masthead--sm-mobile .mngds-masthead__sponsorship-row, .mngds-masthead--xs-fold .mngds-masthead__sponsorship-row { padding-bottom: var(--mng-spacing-100); }
 .mngds-masthead--sm-mobile .mngds-masthead__title-row, .mngds-masthead--xs-fold .mngds-masthead__title-row { min-height: 80px; }
 .mngds-masthead__title-row .mngds-masthead__sponsorship { flex: 0 0 300px; }
-.mngds-masthead__page-title { font-size: var(--mng-font-size-26); padding: 0 var(--mng-spacing-200); }
+.mngds-masthead__page-title { font-size: var(--mng-font-size-26); line-height: 1; padding: 0 var(--mng-spacing-200); } /* production: the obituaries .section-header is 1.6em (25.6px) with line height 1em below 1040px, on all 6 review sites */
 .mngds-masthead--xl-desktop .mngds-masthead__page-title { font-size: var(--mng-font-size-40); line-height: 1; padding: 0; } /* the Section Front name's style (production: the same .section-header, 40px / 40px; Karl, 2026-11-25) */
 .mngds-masthead--page-obituaries.mngds-masthead--sm-mobile .mngds-masthead__logo-link .mngds-masthead__logo,
 .mngds-masthead--page-obituaries.mngds-masthead--xs-fold .mngds-masthead__logo-link .mngds-masthead__logo { width: 100px; height: 20.4px; }

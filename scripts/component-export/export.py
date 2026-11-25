@@ -438,7 +438,8 @@ def main():
             sets[r['set']['id']] = r
             fileinfo[r['set']['id']] = (d['fileKey'], d['fileName'])
     pngs = {}
-    for f in sorted(glob.glob(os.path.join(raw, 'previews-*.json'))):
+    # numeric order (previews-2 before previews-10), so a later batch always overrides an earlier one
+    for f in sorted(glob.glob(os.path.join(raw, 'previews-*.json')), key=lambda f: [int(t) if t.isdigit() else t for t in re.split(r'(\d+)', os.path.basename(f))]):
         pngs.update(load(f)['out'])
     order_vals = reg.get('valueOrder', {})
     order_props = reg.get('propertyOrder', [])

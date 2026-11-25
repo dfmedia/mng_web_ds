@@ -47,7 +47,7 @@ exported: 2026-11-25
 | `Default / LG-TabletH (800–1039px) / Article` | 1024×346 | [824:5088](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5088) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-article.png) |
 | `Default / LG-TabletH (800–1039px) / BestReviews` | 1024×346 | [3903:44852](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44852) | 0 | ![](previews/masthead--default-lg-tableth-800-1039px-bestreviews.png) |
 | `Default / MD-TabletV (640–799px) / SectionFront` | 768×186 | [456:3100](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3100) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-sectionfront.png) |
-| `Default / MD-TabletV (640–799px) / Obituaries` | 768×349 | [456:3726](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3726) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-obituaries.png) |
+| `Default / MD-TabletV (640–799px) / Obituaries` | 768×340 | [456:3726](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3726) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-obituaries.png) |
 | `Default / MD-TabletV (640–799px) / Dashboard` | 768×104 | [456:3152](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3152) | 8 | ![](previews/masthead--default-md-tabletv-640-799px-dashboard.png) |
 | `Default / MD-TabletV (640–799px) / Home` | 768×186 | [456:3071](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=456-3071) | 9 | ![](previews/masthead--default-md-tabletv-640-799px-home.png) |
 | `Default / MD-TabletV (640–799px) / Article` | 768×186 | [824:5147](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-5147) | 0 | ![](previews/masthead--default-md-tabletv-640-799px-article.png) |
@@ -75,7 +75,7 @@ exported: 2026-11-25
 | `AdFree / LG-TabletH (800–1039px) / Article` | 1024×64 | [824:4780](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4780) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-article.png) |
 | `AdFree / LG-TabletH (800–1039px) / BestReviews` | 1024×64 | [3903:44913](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-44913) | 0 | ![](previews/masthead--adfree-lg-tableth-800-1039px-bestreviews.png) |
 | `AdFree / MD-TabletV (640–799px) / SectionFront` | 768×64 | [823:3969](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=823-3969) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-sectionfront.png) |
-| `AdFree / MD-TabletV (640–799px) / Obituaries` | 768×285 | [827:5573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5573) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-obituaries.png) |
+| `AdFree / MD-TabletV (640–799px) / Obituaries` | 768×276 | [827:5573](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=827-5573) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-obituaries.png) |
 | `AdFree / MD-TabletV (640–799px) / Home` | 768×64 | [819:1940](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=819-1940) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-home.png) |
 | `AdFree / MD-TabletV (640–799px) / Article` | 768×64 | [824:4885](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=824-4885) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-article.png) |
 | `AdFree / MD-TabletV (640–799px) / BestReviews` | 768×64 | [3903:45024](https://www.figma.com/design/b1iZxkFwtAYq9rElmnCAzd/?node-id=3903-45024) | 0 | ![](previews/masthead--adfree-md-tabletv-640-799px-bestreviews.png) |
@@ -643,6 +643,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.masthead-container.section-title-row.contents-container.title-container.title.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.masthead-container.section-title-row.contents-container.title-container.title.font-size` | `{font.size.26}` |
 | `masthead.base.masthead-container.section-title-row.contents-container.title-container.title.font-weight` | `{font.weight.bold}` |
+| `masthead.base.masthead-container.section-title-row.contents-container.title-container.title.line-height` | 1.0 |
 | `masthead.base.masthead-container.sectionmenu.height` | 64px |
 | `masthead.base.masthead-container.sectionmenu.icon-color` | `{color.gray.max}` |
 | `masthead.base.masthead-container.socialbuttons.height` | 40px |
@@ -1110,6 +1111,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 | `masthead.base.section-title-row.contents-container.title-container.section-title.font-family` | `{font.family.noto-serif}` |
 | `masthead.base.section-title-row.contents-container.title-container.section-title.font-size` | `{font.size.26}` |
 | `masthead.base.section-title-row.contents-container.title-container.section-title.font-weight` | `{font.weight.bold}` |
+| `masthead.base.section-title-row.contents-container.title-container.section-title.line-height` | 1.0 |
 | `masthead.base.sponsorship-row.padding-bottom` | `{spacing.100}` |
 | `masthead.base.sponsorship-row.ad-blocks.height` | 50px |
 | `masthead.base.sponsorship-row.ad-blocks.icon-color` | `{color.gray.min}` |
@@ -1359,7 +1361,7 @@ From `masthead.tokens.json`. References point at system tokens (`tokens/core/`, 
 - **Scroll (Scrolled / AdFree-Scrolled):** after 55px of scrolling at 1040px and up (production's headroom offset: `.headroom--not-top` and `position: fixed` at 56px; checked 2026-11-16 on denverpost.com and mcall.com) and from the first pixel below 1040px, the masthead becomes a 64px bar fixed to the top of the viewport, with the rule and `shadow/masthead` (0 3px 3px, black 25%, production's value). The ads under it scroll away. No shadow at the top of the page. It stays shown scrolling down and back up (production's `headroom--unpinned` / `--pinned` don't hide it). On articles at 1040px and up the bar shows the section name, headline and share buttons instead of All Sections / Subscribe / Log In.
 - **Subscribers (AdFree, AdFree-Scrolled):** no ads; the avatar (AccountMenu, loggedIn) replaces Subscribe / Log In. Below 1040px the subscriber bar is the same at the top and when scrolled. AdFree-Scrolled for Home, Section Front and Article added 2026-10-30 (Karl).
 - **Accessibility:** a `header` landmark with the section links in a `nav` (aria-label "Main"); the hamburger is a button with aria-expanded; search is a labelled button. Keep focused elements clear of the sticky bar (scroll-padding-top 65px).
-- **Obituaries title:** centered horizontally and vertically in its row at every width (Karl, 2026-10-30). At 1040px and up it's styled as the Section Front name: Noto Serif Bold 40, line height 100%, `color/theme/primary` (production's obituaries pages use the same `.section-header`, 40px / 40px, on all 6 review sites; Karl, 2026-11-25). Ads show wherever ads are expected: in Default, Sponsorship 1 300x50 sits to the right of the title at 800px and up and in its own centered row under the title below 800px; AdFree hides it.
+- **Obituaries title:** centered horizontally and vertically in its row at every width (Karl, 2026-10-30). At 1040px and up it's styled as the Section Front name: Noto Serif Bold 40, line height 100%, `color/theme/primary` (production's obituaries pages use the same `.section-header`, 40px / 40px, on all 6 review sites; Karl, 2026-11-25). Below 1040px it's 26px (`font/size/26`), also line height 100% (production 1.6em = 25.6px / 1em at 320–1039px). Section Front, Article and BestReviews have no section name below 1040px: production hides the name row (`.nav-primary-middle`) there on all 6 review sites; only obituaries keep it. Ads show wherever ads are expected: in Default, Sponsorship 1 300x50 sits to the right of the title at 800px and up and in its own centered row under the title below 800px; AdFree hides it.
 
 ## Accessibility
 
